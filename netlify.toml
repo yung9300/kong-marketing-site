@@ -1,0 +1,39 @@
+# Kong geo-redirects — generic homepage (/) is the default.
+# Malaysian visitors -> /malaysia ; Australian visitors -> /australia.
+#
+# Country codes MUST be uppercase ISO-3166-1 alpha-2.
+# force = true is required because / serves a real index.html file.
+# Conditions match GeoIP only, so search bots (crawling from US IPs)
+# are never redirected — no user-agent logic.
+#
+# NOTE: Netlify's own `nf_country` cookie overrides GeoIP. The region
+# switcher sets nf_country=US, so testing after clicking it will keep
+# you on the global site until that cookie is cleared.
+
+[[redirects]]
+  from = "/"
+  to = "/malaysia"
+  status = 302
+  force = true
+  conditions = { Country = ["MY"] }
+
+[[redirects]]
+  from = "/index.html"
+  to = "/malaysia"
+  status = 302
+  force = true
+  conditions = { Country = ["MY"] }
+
+[[redirects]]
+  from = "/"
+  to = "/australia"
+  status = 302
+  force = true
+  conditions = { Country = ["AU"] }
+
+[[redirects]]
+  from = "/index.html"
+  to = "/australia"
+  status = 302
+  force = true
+  conditions = { Country = ["AU"] }

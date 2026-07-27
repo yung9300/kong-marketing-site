@@ -1,0 +1,14 @@
+{
+  "name": "Kong",
+  "short_name": "Kong",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1a0a2e",
+  "background_color": "#1a0a2e",
+  "display": "standalone"
+}

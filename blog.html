@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00DRT0TQW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-00DRT0TQW8');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w180kpzck2");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tour Operator Blog — Booking, Marketing &amp; Licensing Guides | Kong</title>
+<meta name="description" content="Notes from Kong — practical guides for tour operators and class providers across Southeast Asia: online bookings, OTAs, marketing, licensing and pricing.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Kong Blog">
+<meta property="og:description" content="Notes from Kong — practical guides for tour operators and class providers.">
+<meta property="og:url" content="https://www.bookwithkong.com/blog">
+<meta property="og:image" content="https://www.bookwithkong.com/images/og-blog-index.jpg">
+<meta property="og:site_name" content="Kong">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog | Kong">
+<meta name="twitter:description" content="Notes from Kong — practical guides for tour operators and class providers across Southeast Asia: online bookings, OTAs, marketing, licensing and pricing.">
+<meta name="twitter:image" content="https://www.bookwithkong.com/images/og-blog-index.jpg">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1a0a2e">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "The Kong Blog",
+  "description": "Practical guides for tour operators and class providers across Southeast Asia.",
+  "url": "https://www.bookwithkong.com/blog",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kong",
+    "legalName": "Superstring Sdn. Bhd.",
+    "logo": { "@type": "ImageObject", "url": "https://www.bookwithkong.com/images/logo.webp" }
+  }
+}
+</script>
+
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Caveat:wght@500;600&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #1a0a2e;
+  --ink-85: rgba(26, 10, 46, 0.88);
+  --ink-70: rgba(26, 10, 46, 0.72);
+  --ink-60: rgba(26, 10, 46, 0.6);
+  --ink-45: rgba(26, 10, 46, 0.45);
+  --purple: #3B0F5E;
+  --purple-soft: rgba(59, 15, 94, 0.08);
+  --gold: #F5C842;
+  --gold-deep: #c89414;
+  --cream-1: #faf7f2;
+  --cream-2: #f7f4ee;
+  --line: rgba(26, 10, 46, 0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+body {
+  background:
+    radial-gradient(ellipse 1200px 700px at 50% -10%, rgba(245, 200, 66, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 1000px 600px at 50% 20%, rgba(123, 63, 176, 0.07) 0%, transparent 60%),
+    linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* ── Nav ─────────────────────────────────────────────────────────── */
+.kong-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1280px; margin: 0 auto;
+  position: relative; z-index: 10;
+}
+.kong-nav-left { display: flex; align-items: center; gap: 28px; }
+.kong-nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 700; font-size: 17px; color: var(--ink);
+  text-decoration: none;
+}
+.kong-nav-logo img { width: 32px; height: 32px; }
+.kong-nav-right { display: flex; gap: 24px; align-items: center; }
+.kong-nav-items { display: flex; gap: 26px; align-items: center; }
+.kong-nav-item {
+  font-size: 14px; font-weight: 500; color: rgba(26, 10, 46, 0.65);
+  cursor: pointer; transition: color 0.2s;
+  text-decoration: none;
+}
+.kong-nav-item:hover { color: var(--ink); }
+.kong-nav-item.active { color: var(--ink); font-weight: 600; }
+.kong-nav-cta {
+  background: var(--purple); color: white;
+  font-size: 14px; font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(59, 15, 94, 0.18);
+}
+.kong-nav-cta:hover { transform: translateY(-1px); background: #4d1378; box-shadow: 0 4px 14px rgba(59, 15, 94, 0.28); }
+.kong-nav-burger {
+  display: none;
+  background: none; border: none; padding: 8px;
+  width: 40px; height: 40px;
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.kong-nav-burger span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.2s;
+}
+.kong-nav-burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.kong-nav-burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.kong-nav-burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.kong-mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%; left: 12px; right: 12px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(26, 10, 46, 0.12);
+  padding: 12px;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 50;
+}
+.kong-mobile-menu[data-open="true"] { display: flex; }
+.kong-mobile-item {
+  display: block;
+  padding: 12px 14px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px; font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-radius: 10px;
+}
+.kong-mobile-item:hover { background: rgba(26, 10, 46, 0.04); }
+.kong-mobile-cta {
+  display: block;
+  margin-top: 6px;
+  padding: 13px 14px;
+  background: var(--purple); color: white;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px; font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 12px;
+}
+@media (max-width: 760px) {
+  .kong-nav { position: relative; }
+  .kong-nav-right { display: none; }
+  .kong-nav-burger { display: flex; }
+}
+
+/* ── Blog index ──────────────────────────────────────────────────── */
+.blog-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 30px 40px 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.blog-hero {
+  padding: 50px 0 60px;
+  text-align: left;
+  max-width: 880px;
+}
+.blog-hero-eyebrow {
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  color: var(--purple);
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+.blog-hero-h1 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: -2.4px;
+  color: var(--ink);
+  text-wrap: balance;
+  margin-bottom: 22px;
+}
+.blog-hero-sub {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--ink-70);
+  max-width: 640px;
+  text-wrap: pretty;
+}
+
+/* Featured (first / newest) post */
+.blog-featured {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 36px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 16px;
+  margin-bottom: 36px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 14px rgba(26, 10, 46, 0.04);
+}
+.blog-featured:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 44px rgba(26, 10, 46, 0.10);
+}
+.blog-featured-thumb {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: linear-gradient(160deg, #c79be0 0%, #5b1a8e 60%, #3B0F5E 100%);
+  position: relative;
+}
+.blog-featured-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.blog-featured-badge {
+  position: absolute;
+  top: 14px; left: 14px;
+  background: rgba(26, 10, 46, 0.85);
+  color: white;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+.blog-featured-body {
+  padding: 24px 28px 28px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.blog-featured-eyebrow {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+.blog-featured-title {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.7px;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.blog-featured-excerpt {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink-70);
+  text-wrap: pretty;
+}
+.blog-featured-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+.blog-featured-meta-avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(160deg, #c79be0 0%, #5b1a8e 60%, #3B0F5E 100%);
+}
+.blog-featured-meta-avatar img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.blog-featured-meta-text {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13.5px;
+  color: var(--ink-60);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.blog-featured-meta-text strong { color: var(--ink); font-weight: 600; }
+.blog-featured-meta-text .dot {
+  width: 3px; height: 3px;
+  background: var(--ink-45);
+  border-radius: 50%;
+}
+.blog-featured-readmore {
+  margin-top: 4px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--purple);
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.blog-featured-readmore i { transition: transform 0.2s; }
+.blog-featured:hover .blog-featured-readmore i { transform: translateX(4px); }
+
+/* Section heading above the grid */
+.blog-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 18px 4px 22px;
+  border-top: 1px solid var(--line);
+  margin-top: 24px;
+}
+.blog-section-head h2 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+}
+.blog-section-head-count {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13.5px;
+  color: var(--ink-60);
+}
+
+/* Card grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 14px rgba(26, 10, 46, 0.04);
+}
+.blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(26, 10, 46, 0.09);
+}
+.blog-card-thumb {
+  border-radius: 13px;
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  background: linear-gradient(160deg, #c79be0 0%, #5b1a8e 60%, #3B0F5E 100%);
+  margin-bottom: 16px;
+}
+.blog-card-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Custom centre-aligned typographic thumbnail (for posts without a photo) */
+.blog-card-thumb.thumb-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 22px;
+  background:
+    radial-gradient(circle at 50% 14%, rgba(245, 200, 66, 0.30) 0%, rgba(245, 200, 66, 0) 52%),
+    linear-gradient(135deg, #fbf8f3 0%, #f4eef6 58%, #ece3f1 100%);
+}
+.thumb-card-brand { display: flex; align-items: center; justify-content: center; gap: 7px; }
+.thumb-card-brand img { width: 19px; height: 19px; }
+.thumb-card-brand span { font-family: 'Poppins', system-ui, sans-serif; font-weight: 700; font-size: 13px; color: var(--ink); }
+.thumb-card-eyebrow {
+  margin-top: 13px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700; font-size: 9.5px;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: #7b3fb0;
+}
+.thumb-card-title {
+  margin-top: 8px;
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-weight: 800; font-size: 21px;
+  line-height: 1.12; letter-spacing: -0.5px;
+  color: var(--ink); text-wrap: balance;
+}
+.thumb-card-title .hl { color: #7b3fb0; }
+.thumb-card-rule { margin-top: 13px; width: 46px; height: 4px; border-radius: 2px; background: var(--gold); }
+.blog-card-body {
+  padding: 4px 10px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.blog-card-eyebrow {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+.blog-card-title {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.blog-card-excerpt {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-70);
+  text-wrap: pretty;
+}
+.blog-card-meta {
+  margin-top: auto;
+  padding-top: 14px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--ink-60);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.blog-card-meta strong { color: var(--ink); font-weight: 600; }
+.blog-card-meta .dot {
+  width: 3px; height: 3px;
+  background: var(--ink-45);
+  border-radius: 50%;
+}
+
+/* CTA strip at bottom (consistent with site) */
+.blog-cta {
+  position: relative;
+  background: linear-gradient(135deg, #1a0a2e 0%, #3B0F5E 100%);
+  color: white;
+  border-radius: 22px;
+  padding: 50px 50px 46px;
+  overflow: hidden;
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: 1.4fr auto;
+  gap: 36px;
+  align-items: center;
+}
+.blog-cta::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -80px;
+  width: 360px; height: 360px;
+  background: radial-gradient(circle, rgba(245, 200, 66, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.blog-cta-text { position: relative; }
+.blog-cta-eyebrow {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  color: var(--gold);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.blog-cta h2 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+  margin-bottom: 10px;
+  text-wrap: balance;
+}
+.blog-cta p {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 480px;
+}
+.blog-cta-actions {
+  position: relative;
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+.blog-cta-primary {
+  background: var(--gold); color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600; font-size: 15px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: transform 0.15s, box-shadow 0.2s;
+}
+.blog-cta-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(245, 200, 66, 0.35); }
+
+/* ── Footer (matches site) ───────────────────────────────────────── */
+.kong-footer {
+  background: white;
+  border-top: 1px solid var(--line);
+  padding: 60px 40px 30px;
+}
+.kong-footer-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.3fr;
+  gap: 48px;
+  align-items: start;
+}
+.kong-footer-brand h3 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 17px; font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+.kong-footer-subscribe {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--cream-1);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 5px 5px 18px;
+  max-width: 360px;
+}
+.kong-footer-subscribe input {
+  background: transparent; border: none; outline: none;
+  flex: 1;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--ink);
+  padding: 8px 4px;
+}
+.kong-footer-subscribe input::placeholder { color: var(--ink-45); }
+.kong-footer-subscribe button {
+  background: var(--purple); color: white;
+  border: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13.5px; font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.kong-footer-subscribe button:hover { background: #4d1378; }
+.kong-footer-col h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px; font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  margin: 0 0 14px;
+}
+.kong-footer-col ul { list-style: none; margin: 0; padding: 0; }
+.kong-footer-col li { margin-bottom: 10px; }
+.kong-footer-col a {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--ink-70);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.kong-footer-col a:hover { color: var(--ink); }
+.kong-footer-bottom {
+  max-width: 1240px;
+  margin: 48px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 12px;
+  color: var(--ink-45);
+  line-height: 1.7;
+}
+.kong-footer-legal { display: flex; flex-direction: column; gap: 2px; }
+.kong-footer-socials { display: flex; gap: 10px; }
+.kong-footer-socials a {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--ink-60);
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.kong-footer-socials a:hover {
+  color: var(--purple);
+  border-color: var(--purple);
+}
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+@media (max-width: 980px) {
+  .blog-grid { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .blog-featured { grid-template-columns: 1fr; }
+  .blog-featured-body { padding: 8px 18px 22px; }
+}
+@media (max-width: 760px) {
+  .kong-nav-items { gap: 16px; }
+  .kong-nav { padding: 14px 20px; }
+  .blog-shell { padding: 20px 22px 70px; }
+  .blog-hero { padding: 26px 0 36px; }
+  .blog-hero-h1 { font-size: 50px; letter-spacing: -1.6px; }
+  .blog-hero-sub { font-size: 17px; }
+  .blog-grid { grid-template-columns: 1fr; gap: 20px; }
+  .blog-featured-title { font-size: 26px; }
+  .blog-cta { grid-template-columns: 1fr; padding: 32px 26px; }
+  .blog-cta h2 { font-size: 24px; }
+  .kong-footer { padding: 50px 20px 24px; }
+  .kong-footer-inner { grid-template-columns: 1fr; gap: 30px; }
+  .kong-footer-bottom { flex-direction: column; align-items: flex-start; margin-top: 36px; }
+}
+</style>
+<style>
+/* ── Industries nav dropdown ───────────────── */
+.kong-nav-dd { position: relative; display: inline-flex; align-items: center; }
+.kong-nav-dd-trigger {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: none; border: none; cursor: pointer;
+  font-family: inherit; font-size: 14px; font-weight: 500;
+  color: rgba(26,10,46,0.65); padding: 4px 0; transition: color 0.2s;
+}
+.kong-nav-dd-trigger .ti { font-size: 15px; transition: transform 0.25s; }
+.kong-nav-dd:hover .kong-nav-dd-trigger,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger { color: #1a0a2e; }
+.kong-nav-dd:hover .kong-nav-dd-trigger .ti,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger .ti { transform: rotate(180deg); }
+.kong-nav-dd::after { content:''; position:absolute; left:0; right:0; top:100%; height:18px; }
+.kong-nav-dd-menu {
+  position: absolute; top: calc(100% + 16px); left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: #fff; border: 1px solid var(--line, rgba(26,10,46,0.08)); border-radius: 14px;
+  box-shadow: 0 18px 44px -14px rgba(26,10,46,0.22);
+  padding: 8px; min-width: 234px;
+  display: flex; flex-direction: column; gap: 1px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s; z-index: 200;
+}
+.kong-nav-dd:hover .kong-nav-dd-menu,
+.kong-nav-dd:focus-within .kong-nav-dd-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.kong-nav-dd-menu a {
+  display: flex; align-items: center; gap: 11px;
+  padding: 9px 12px; border-radius: 9px;
+  font-size: 14px; font-weight: 500; color: var(--ink-70, rgba(26,10,46,0.7));
+  text-decoration: none; white-space: nowrap; transition: background 0.15s, color 0.15s;
+}
+.kong-nav-dd-menu a:hover { background: var(--purple-soft, rgba(59,15,94,0.08)); color: var(--purple, #3B0F5E); }
+.kong-nav-dd-menu a .ti { font-size: 16px; color: var(--purple, #3B0F5E); opacity: 0.85; }
+.kong-nav-dd-divider { height: 1px; background: var(--line, rgba(26,10,46,0.08)); margin: 6px 4px; }
+.kong-mobile-dd-label {
+  font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-45, rgba(26,10,46,0.45));
+  padding: 6px 0 2px;
+}
+.kong-mobile-sub { padding-left: 14px !important; }
+</style>
+
+<style>
+/* ── Collapsible Industries group in mobile menu ─────────────────── */
+.kong-mobile-acc {
+  display: flex; align-items: center; justify-content: space-between; width: 100%;
+  background: none; border: none; cursor: pointer;
+  padding: 12px 14px; border-radius: 10px;
+  font-family: 'Inter', system-ui, sans-serif; font-size: 15px; font-weight: 500;
+  color: #1a0a2e; text-align: left;
+}
+.kong-mobile-acc:hover { background: rgba(26,10,46,0.04); }
+.kong-mobile-acc-chev { transition: transform 0.2s; font-size: 18px; color: rgba(26,10,46,0.5); }
+.kong-mobile-acc[aria-expanded="true"] .kong-mobile-acc-chev { transform: rotate(180deg); }
+.kong-mobile-acc-panel { display: none; flex-direction: column; gap: 4px; }
+.kong-mobile-acc-panel[data-open="true"] { display: flex; }
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="kong-nav">
+  <div class="kong-nav-left">
+    <a class="kong-nav-logo" href="/">
+      <img src="images/logo.webp" alt="Kong" />
+      Kong
+    </a>
+  </div>
+  <div class="kong-nav-right">
+    <div class="kong-nav-items">
+      <div class="kong-nav-dd">
+        <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Industries<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+        <div class="kong-nav-dd-menu" role="menu">
+          <a href="class-booking-system" role="menuitem"><i class="ti ti-building-store" aria-hidden="true"></i>Workshops &amp; Classes</a>
+          <div class="kong-nav-dd-divider"></div>
+          <a href="atv-tours" role="menuitem"><i class="ti ti-car-off-road" aria-hidden="true"></i>ATV Tours</a>
+          <a href="cooking-classes" role="menuitem"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>Cooking Classes</a>
+          <a href="wine-tours" role="menuitem"><i class="ti ti-glass-full" aria-hidden="true"></i>Wine Tours</a>
+          <a href="charter-bookings" role="menuitem"><i class="ti ti-anchor" aria-hidden="true"></i>Charters</a>
+          <a href="adventure-tours" role="menuitem"><i class="ti ti-mountain" aria-hidden="true"></i>Adventure Tours</a>
+          <a href="food-tours" role="menuitem"><i class="ti ti-soup" aria-hidden="true"></i>Food Tours</a>
+          <a href="dive-centres" role="menuitem"><i class="ti ti-scuba-mask" aria-hidden="true"></i>Dive Centres</a>
+          <a href="snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
+        </div>
+      </div>
+      <a class="kong-nav-item" href="/#pricing">Pricing</a>
+      <a class="kong-nav-item" href="blog">Blog</a>
+      <a class="kong-nav-item" href="about">About</a>
+      <a class="kong-nav-item" href="contact-us">Contact</a>
+    </div>
+    <a class="kong-nav-cta" href="https://app.bookwithkong.com" target="_blank" rel="noopener">Get started free</a>
+  </div>
+  <button class="kong-nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="kong-mobile-menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="kong-mobile-menu" id="kong-mobile-menu" hidden>
+    <button class="kong-mobile-acc" type="button" aria-expanded="false" aria-controls="kong-mobile-industries"><span>Industries</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+    <div class="kong-mobile-acc-panel" id="kong-mobile-industries">
+    <a class="kong-mobile-item kong-mobile-sub" href="class-booking-system">Workshops &amp; Classes</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="atv-tours">ATV Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="cooking-classes">Cooking Classes</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="wine-tours">Wine Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="charter-bookings">Charters</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="adventure-tours">Adventure Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="food-tours">Food Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="dive-centres">Dive Centres</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="snorkelling-tours">Snorkelling Tours</a>
+    </div>
+    <a class="kong-mobile-item" href="/#pricing">Pricing</a>
+    <a class="kong-mobile-item" href="blog">Blog</a>
+    <a class="kong-mobile-item" href="about">About</a>
+    <a class="kong-mobile-item" href="contact-us">Contact</a>
+    <a class="kong-mobile-cta" href="https://app.bookwithkong.com" target="_blank" rel="noopener">Get started free</a>
+  </div>
+</nav>
+
+<!-- ───── Blog index ───── -->
+<main class="blog-shell">
+
+  <header class="blog-hero">
+    <span class="blog-hero-eyebrow">notes from kong</span>
+    <h1 class="blog-hero-h1">Practical guides for operators.</h1>
+    <p class="blog-hero-sub">Field notes, research, and lessons from working with tour operators and class providers across Southeast Asia. Written by the people building Kong.</p>
+  </header>
+
+  <!-- Featured (newest) -->
+  <a class="blog-featured" href="blog/best-booking-software-malaysia">
+    <div class="blog-featured-thumb">
+      <span class="blog-featured-badge">Latest</span>
+      <img src="images/og-best-booking-malaysia.png" alt="Best booking software for tour operators in Malaysia 2026" />
+    </div>
+    <div class="blog-featured-body">
+      <div class="blog-featured-eyebrow">Buyer's guide · Booking software</div>
+      <h2 class="blog-featured-title">Best Booking Software for Tour Operators in Malaysia (2026): An Honest Review</h2>
+      <p class="blog-featured-excerpt">A calibrated, honest comparison of every major booking platform — Rezdy, Checkfront, Bokun, FareHarbor, Amelia, Bookeo and Kong — by an industry insider who spent six years inside the category.</p>
+      <div class="blog-featured-meta">
+        <div class="blog-featured-meta-avatar">
+          <img src="images/author-blake.avif" alt="Blake Ng" />
+        </div>
+        <div class="blog-featured-meta-text">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 5, 2026</span>
+          <span class="dot"></span>
+          <span>~20 min read</span>
+        </div>
+      </div>
+      <span class="blog-featured-readmore">Read the review <i class="ti ti-arrow-right"></i></span>
+    </div>
+  </a>
+
+  <!-- More posts -->
+  <div class="blog-section-head">
+    <h2>More from Kong</h2>
+    <span class="blog-section-head-count">16 posts</span>
+  </div>
+
+  <div class="blog-grid">
+
+    <a class="blog-card" href="blog/geo-ai-search-tour-operators">
+      <div class="blog-card-thumb thumb-card">
+        <div class="thumb-card-brand"><img src="images/logo.webp" alt="Kong" /><span>Kong</span></div>
+        <div class="thumb-card-eyebrow">AI search · 2026</div>
+        <div class="thumb-card-title">The truth about <span class="hl">GEO</span></div>
+        <div class="thumb-card-rule"></div>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Marketing · AI search</div>
+        <h3 class="blog-card-title">The Ultimate Guide to GEO (AI Search Optimisation) for Tour Operators</h3>
+        <p class="blog-card-excerpt">GEO is mostly snake oil. Why good SEO still wins AI search — and how to supercharge it with AI to get found by ChatGPT and Gemini.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>July 15, 2026</span>
+          <span class="dot"></span>
+          <span>13 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/best-channel-manager-tour-operators">
+      <div class="blog-card-thumb">
+        <img src="images/blog-cover-channel-manager.png" alt="A channel manager syncing one pool of 20 seats across GetYourGuide, Viator, Klook, hotel desks and your own website" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Operations · Honest comparison</div>
+        <h3 class="blog-card-title">The Best Channel Managers for Tour Operators in 2026 (And Whether You Need One at All)</h3>
+        <p class="blog-card-excerpt">Eight channel managers compared honestly: real pricing, worked cost examples, Klook and Traveloka coverage, and whether you need one at all.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>July 6, 2026</span>
+          <span class="dot"></span>
+          <span>24 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/getyourguide-vs-viator-vs-klook">
+      <div class="blog-card-thumb thumb-card">
+        <div class="thumb-card-brand"><img src="images/logo.webp" alt="Kong" /><span>Kong</span></div>
+        <div class="thumb-card-eyebrow">Honest comparison · 2026</div>
+        <div class="thumb-card-title">GetYourGuide vs Viator vs <span class="hl">Klook</span></div>
+        <div class="thumb-card-rule"></div>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">OTAs · Honest comparison</div>
+        <h3 class="blog-card-title">GetYourGuide vs Viator vs Klook: An Honest Comparison for Operators</h3>
+        <p class="blog-card-excerpt">Written for operators, not tourists — real 2026 commission rates, payouts and audience fit to decide where to list your tours.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 29, 2026</span>
+          <span class="dot"></span>
+          <span>20 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/how-to-get-more-tour-bookings">
+      <div class="blog-card-thumb thumb-card">
+        <div class="thumb-card-brand"><img src="images/logo.webp" alt="Kong" /><span>Kong</span></div>
+        <div class="thumb-card-eyebrow">Pillar guide · 2026</div>
+        <div class="thumb-card-title">How to get more <span class="hl">tour bookings</span></div>
+        <div class="thumb-card-rule"></div>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Marketing · Pillar guide</div>
+        <h3 class="blog-card-title">How to Get More Bookings for Your Tour Business</h3>
+        <p class="blog-card-excerpt">Every channel that works in 2026 — SEO, OTAs, ads, email, referrals — and how to fit them together without giving away your margin.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 29, 2026</span>
+          <span class="dot"></span>
+          <span>17 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/how-to-become-an-ota-supplier">
+      <div class="blog-card-thumb thumb-card">
+        <div class="thumb-card-brand"><img src="images/logo.webp" alt="Kong" /><span>Kong</span></div>
+        <div class="thumb-card-eyebrow">Step-by-step · 2026</div>
+        <div class="thumb-card-title">How to become an <span class="hl">OTA supplier</span></div>
+        <div class="thumb-card-rule"></div>
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">OTAs · Step-by-step guide</div>
+        <h3 class="blog-card-title">How to Become an OTA Supplier: Viator, GetYourGuide &amp; Klook</h3>
+        <p class="blog-card-excerpt">Step-by-step to list your tours on each platform — what they require, how long approval takes, what it costs, and the honest pros and cons.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 29, 2026</span>
+          <span class="dot"></span>
+          <span>15 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/best-website-builders-malaysia">
+      <div class="blog-card-thumb">
+        <img src="images/og-best-website-builders-malaysia.png" alt="Best website builders in Malaysia 2026 compared" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Website builders · Comparison</div>
+        <h3 class="blog-card-title">Best Website Builders in Malaysia (2026): An Honest Comparison</h3>
+        <p class="blog-card-excerpt">Wix, Squarespace, Shopify, SiteGiant, WordPress and Kong compared — with real RM pricing, local payment support, and which one fits your business.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 29, 2026</span>
+          <span class="dot"></span>
+          <span>16 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/website-cost-malaysia">
+      <div class="blog-card-thumb">
+        <img src="images/og-website-cost-malaysia.png" alt="How much does a website cost in Malaysia 2026" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Pricing · Guide</div>
+        <h3 class="blog-card-title">How Much Does a Website Cost in Malaysia? (2026 Price Guide)</h3>
+        <p class="blog-card-excerpt">Freelancer, agency, DIY builder, AI and free options compared — with real RM prices, the hidden ongoing costs, and whether you need to pay anyone at all.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 29, 2026</span>
+          <span class="dot"></span>
+          <span>15 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/how-to-start-tour-business-malaysia">
+      <div class="blog-card-thumb">
+        <img src="images/blog-how-to-start-tour-business-malaysia.png" alt="How to start a tour business in Malaysia" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Starting out · Guide</div>
+        <h3 class="blog-card-title">How to Start a Tour Business in Malaysia (2026)</h3>
+        <p class="blog-card-excerpt">From idea and company setup to licensing, getting found, and taking your first bookings — the practical, step-by-step guide for new operators.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 26, 2026</span>
+          <span class="dot"></span>
+          <span>14 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/motac-license-guide">
+      <div class="blog-card-thumb">
+        <img src="images/blog-motac-license-guide.png" alt="MOTAC license guide" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Licensing · Guide</div>
+        <h3 class="blog-card-title">MOTAC License: The Complete Guide for Tour Operators</h3>
+        <p class="blog-card-excerpt">Company setup, premises, the TTMC course, capital, fees and timeline — exactly how to get your MOTAC (TOBTAB) licence in 2026.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 26, 2026</span>
+          <span class="dot"></span>
+          <span>12 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/tobtab-licence-explained">
+      <div class="blog-card-thumb">
+        <img src="images/blog-tobtab-licence-explained.png" alt="TOBTAB licence explained" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Licensing · Explainer</div>
+        <h3 class="blog-card-title">TOBTAB Licence Explained</h3>
+        <p class="blog-card-excerpt">What the TOBTAB licence is, what the TTMC course involves, and how they fit into getting MOTAC-licensed — the acronyms untangled.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 26, 2026</span>
+          <span class="dot"></span>
+          <span>6 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/tourism-tax-malaysia">
+      <div class="blog-card-thumb">
+        <img src="images/blog-tourism-tax-malaysia.png" alt="Tourism tax in Malaysia" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Tax · Guide</div>
+        <h3 class="blog-card-title">Tourism Tax in Malaysia: What Operators Need to Know</h3>
+        <p class="blog-card-excerpt">What the RM10 tourism tax is, who pays it, who collects it, and whether it applies to your tour or activity business.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 26, 2026</span>
+          <span class="dot"></span>
+          <span>8 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/website-for-tour-operators">
+      <div class="blog-card-thumb">
+        <img src="images/blog-website-for-tour-operators.png" alt="Website for tour operators" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Getting online · Guide</div>
+        <h3 class="blog-card-title">How to Build a Website for Your Tour Business</h3>
+        <p class="blog-card-excerpt">Your real options, what each costs, and the honest truth: you might not need a full website to start taking bookings.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 26, 2026</span>
+          <span class="dot"></span>
+          <span>11 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/google-reviews-tour-business">
+      <div class="blog-card-thumb">
+        <img src="images/blog-google-reviews-tour-business.png" alt="Get more Google reviews for your tour business" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Marketing · Guide</div>
+        <h3 class="blog-card-title">How to Get More Google Reviews for Your Tour Business</h3>
+        <p class="blog-card-excerpt">When to ask, how to ask, the QR-code trick, and how reviews drive your Google Maps ranking and bookings.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 26, 2026</span>
+          <span class="dot"></span>
+          <span>11 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/google-business-profile-local-seo-tour-operators">
+      <div class="blog-card-thumb">
+        <img src="images/blog-google-business-profile-local-seo-tour-operators.png" alt="Google Business Profile and local SEO for tour operators" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Local SEO · Guide</div>
+        <h3 class="blog-card-title">Google Business Profile &amp; Local SEO for Tour Operators</h3>
+        <p class="blog-card-excerpt">Set up your profile and climb the Google Maps rankings — the playbook that took one operator from position 8 to 1.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 26, 2026</span>
+          <span class="dot"></span>
+          <span>16 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/best-booking-software-australia">
+      <div class="blog-card-thumb">
+        <img src="images/og-best-booking-australia.png" alt="Best tour booking systems in Australia" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Honest review · Booking systems</div>
+        <h3 class="blog-card-title">Best Tour Booking Systems in Australia (2026)</h3>
+        <p class="blog-card-excerpt">An honest comparison of Rezdy, FareHarbor, Bokun, Checkfront, and Kong for Australian operators — including where Kong's AU fit is genuinely narrow.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>June 24, 2026</span>
+          <span class="dot"></span>
+          <span>18 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/what-is-channel-manager-tour-operators">
+      <div class="blog-card-thumb">
+        <img src="images/blog-hero-channel-manager.jpg" alt="Channel manager for tour operators" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Operations · Channel management</div>
+        <h3 class="blog-card-title">What is a Channel Manager for Tour Operators?</h3>
+        <p class="blog-card-excerpt">Most Southeast Asian tour operators don't know channel managers exist — or how they work. What they do, how they save 18+ hours monthly, and how to choose one.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>November 3, 2025</span>
+          <span class="dot"></span>
+          <span>12 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="blog-card" href="blog/choose-right-class-booking-system">
+      <div class="blog-card-thumb">
+        <img src="images/blog-hero-class-booking.jpg" alt="Class booking system" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Operations · Class booking</div>
+        <h3 class="blog-card-title">How to Choose the Right Class Booking System</h3>
+        <p class="blog-card-excerpt">A class booking system can lift conversions 35% and cut no-shows by up to 75%. Here's how to pick the right one for cooking classes, workshops, yoga, and creative sessions.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>August 28, 2025</span>
+          <span class="dot"></span>
+          <span>7 min read</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Bottom CTA -->
+  <section class="blog-cta">
+    <div class="blog-cta-text">
+      <span class="blog-cta-eyebrow">— get started</span>
+      <h2>Built for operators, everywhere.</h2>
+      <p>Kong is the booking and channel platform we wish Southeast Asian operators had. No subscriptions, no upfront costs.</p>
+    </div>
+    <div class="blog-cta-actions">
+      <a class="blog-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
+        Get started free <i class="ti ti-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="kong-footer">
+  <div class="kong-footer-inner">
+    <div class="kong-footer-brand">
+      <h3>Subscribe for the latest Kong updates</h3>
+      <form class="kong-footer-subscribe" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="name@email.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="kong-footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="class-booking-system">Class Booking System</a></li>
+        <li><a href="australia">Kong Australia</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="blog">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="kong-footer-col">
+      <h4>More Resources</h4>
+      <ul>
+        <li><a href="research/malaysia-operator-website-study">Research: State of Operators 2026</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="legal-terms/privacy-policy">Privacy Policy</a></li>
+        <li><a href="legal-terms/refund-policy">Refund Policy</a></li>
+        <li><a href="contact-us">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Industries</h4>
+      <ul>
+        <li><a href="class-booking-system">Workshops &amp; Classes</a></li>
+        <li><a href="atv-tours">ATV Tours</a></li>
+        <li><a href="cooking-classes">Cooking Classes</a></li>
+        <li><a href="wine-tours">Wine Tours</a></li>
+        <li><a href="charter-bookings">Charters</a></li>
+        <li><a href="adventure-tours">Adventure Tours</a></li>
+        <li><a href="food-tours">Food Tours</a></li>
+        <li><a href="dive-centres">Dive Centres</a></li>
+        <li><a href="snorkelling-tours">Snorkelling Tours</a></li>
+      </ul>
+    </div>
+
+      <div class="kong-footer-col">
+      <h4>Compare platforms</h4>
+      <ul>
+        <li><a href="blog/best-booking-software-malaysia">Best Booking Software for Tour Operators in Malaysia</a></li>
+        <li><a href="blog/best-booking-software-australia">Best Tour Booking Systems in Australia</a></li>
+        <li><a href="compare/kong-vs-bokun">Kong vs Bokun</a></li>
+        <li><a href="compare/kong-vs-rezdy">Kong vs Rezdy</a></li>
+        <li><a href="compare/kong-vs-bookeo">Kong vs Bookeo</a></li>
+        <li><a href="compare/kong-vs-fareharbor">Kong vs FareHarbor</a></li>
+        <li><a href="compare/kong-vs-amelia">Kong vs Amelia</a></li>
+        <li><a href="compare/kong-vs-checkfront">Kong vs Checkfront</a></li>
+      </ul>
+    </div>
+</div>
+
+  <div class="kong-footer-bottom">
+    <div class="kong-footer-legal">
+      <span>UEN Company Name: Kong Technologies Pte. Ltd.</span>
+      <span>UEN Company Number: 202608593C</span>
+      <span>SSM Company Name: Superstring Sdn. Bhd.</span>
+      <span>SSM Company Number: 202401016432 (1562282-H)</span>
+    </div>
+    <div class="kong-footer-socials">
+      <a href="https://www.linkedin.com/company/bookwithkong" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#0A66C2;"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile nav burger toggle
+(function() {
+  const burger = document.querySelector('.kong-nav-burger');
+  const menu = document.getElementById('kong-mobile-menu');
+  if (burger && menu) {
+    function close() {
+      burger.setAttribute('aria-expanded', 'false');
+      menu.removeAttribute('data-open');
+      menu.hidden = true;
+    }
+    function open() {
+      burger.setAttribute('aria-expanded', 'true');
+      menu.hidden = false;
+      menu.setAttribute('data-open', 'true');
+    }
+    burger.addEventListener('click', () => {
+      if (burger.getAttribute('aria-expanded') === 'true') close(); else open();
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  }
+})();
+</script>
+
+
+<script>
+/* Mobile Industries accordion */
+(function(){
+  var acc = document.querySelector('.kong-mobile-acc');
+  var panel = document.getElementById('kong-mobile-industries');
+  if(!acc || !panel) return;
+  acc.addEventListener('click', function(){
+    var open = acc.getAttribute('aria-expanded') === 'true';
+    acc.setAttribute('aria-expanded', String(!open));
+    panel.setAttribute('data-open', String(!open));
+  });
+})();
+</script>
+</body>
+</html>
