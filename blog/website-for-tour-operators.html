@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<!--
+  ─────────────────────────────────────────────────────────────────
+  KONG BLOG POST TEMPLATE
+  To add a new post: copy this file, then edit:
+    1. <title> + <meta name="description"> + Open Graph tags
+    2. <script type="application/ld+json"> (JSON-LD article schema)
+    3. Hero block: eyebrow tag, <h1>, author meta (avatar, name, role, date, reading time)
+    4. <figure class="post-hero-image"> — hero image src + alt
+    5. <article class="post-body"> — the content
+    6. <aside class="post-related"> — point to other relevant post
+    7. Nav: keep "active" off any nav item (this is a blog post, not a top-level page)
+  Everything else (nav, footer, post-cta, styles) stays identical.
+  ─────────────────────────────────────────────────────────────────
+-->
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00DRT0TQW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-00DRT0TQW8');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w180kpzck2");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How to Build a Website for Your Tour Business (2026) | Kong</title>
+<meta name="description" content="A practical guide for tour and activity operators getting online — whether you run ATV, rafting, cooking class or jeep tours. The honest truth: you might not need a full website to start taking bookings.">
+<link rel="canonical" href="https://www.bookwithkong.com/blog/website-for-tour-operators">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kong">
+<meta property="og:title" content="How to Build a Website for Your Tour Business (2026)">
+<meta property="og:description" content="A practical guide for tour and activity operators getting online — whether you run ATV, rafting, cooking class or jeep tours. The honest truth: you might not need a full website to start taking bookings.">
+<meta property="og:image" content="https://www.bookwithkong.com/images/og-default.jpg">
+<meta property="og:url" content="https://www.bookwithkong.com/blog/website-for-tour-operators">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Build a Website for Your Tour Business (2026) | Kong">
+<meta name="twitter:description" content="A practical guide for tour and activity operators getting online — whether you run ATV, rafting, cooking class or jeep tours. The honest truth: you might not need a full website to start taking bookings.">
+<meta name="twitter:image" content="https://www.bookwithkong.com/images/og-default.jpg">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1a0a2e">
+<meta property="article:author" content="Blake Ng">
+<meta property="article:published_time" content="2026-06-26">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Build a Website for Your Tour Business (2026)",
+  "description": "A practical guide for tour and activity operators getting online — whether you run ATV, rafting, cooking class or jeep tours. The honest truth: you might not need a full website to start taking bookings.",
+  "image": "https://www.bookwithkong.com/images/og-default.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Blake Ng",
+    "jobTitle": "Co-founder",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Kong"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kong",
+    "legalName": "Superstring Sdn. Bhd.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.bookwithkong.com/images/logo.webp"
+    }
+  },
+  "datePublished": "2026-06-26",
+  "dateModified": "2026-06-29",
+  "mainEntityOfPage": "https://www.bookwithkong.com/blog/website-for-tour-operators"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to build a website for your tour business",
+  "description": "A step-by-step process for a tour or activity operator to get a website live and taking bookings.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Plan your pages before you build anything",
+      "text": "Sketch your site first. Most tour operators need just four or five pages: a Home page, an experience page for each tour, an About page, and a Contact or FAQ page."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Get your assets together first",
+      "text": "Gather 10–20 strong photos of your real experiences, a short paragraph of your story, the details for each tour (duration, price, what's included, what to bring, meeting point), and your logo."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Build the pages",
+      "text": "On a generic builder you pick a template and customise it. On Kong you assemble each page from modules — a hero image, text blocks, image galleries, and product/product-grid modules. Lead each page with a strong image and put a booking option high up."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set up your bookable experiences",
+      "text": "Add each tour as a product with its price, your capacity per session, available dates and times, and any deposit. On a generic builder this is where you choose and wire in a separate booking system; on Kong the experiences are the booking system."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Connect payments",
+      "text": "Connect a payment processor. On Kong you connect your own Stripe or Xendit account (Xendit adds FPX, Touch 'n Go, ShopeePay and DuitNow QR) and money is paid into your own account. Guests pay a 1.8% fee on online bookings."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Test a booking yourself, then go live",
+      "text": "Run a test booking end-to-end, check the confirmation email and details, then publish and share the link on your Google Business Profile, social bios and WhatsApp status."
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do tour operators need a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily a full one. What a tour operator actually needs is a way to be found (a Google Business Profile) and a way to take bookings (a booking page). You can have both without building a traditional website — though a simple site with an About page and galleries does help guests trust you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I build a website that takes bookings without hiring a developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Booking-native builders like Kong let you build a multi-page site with bookings built in, free, with no developer and no code. Generic builders like Wix and Squarespace can also be used without a developer, but you'd add a separate booking system on top."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the best website builder for a tour operator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on what you need. For getting online and taking bookings fast and free, a booking-native builder like Kong fits best. For a fully custom-branded site on your own domain with a blog, a generic builder like Squarespace or Wix (plus a booking add-on) is better. Many operators start with the former and add the latter later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I build an About page and photo galleries on Kong, or just a booking page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can build a multi-page site — a booking page plus as many additional pages as you need, like a Home page, an About page, and pages for your experiences — using modules including text, image galleries, a hero image, product grids, and individual products guests book from. It's more than a booking page; it's a simple website with bookings built in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I get my own domain name with Kong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You get a Kong web address (yourbusiness.bookwithkong.com), not a custom domain like yourbusiness.com. If having your own custom domain matters to you, a generic website builder is the better fit for that specific need — and you can still use Kong for bookings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a website cost for a small tour business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It ranges from free to a few thousand ringgit. A booking-native builder like Kong is free. Generic builders like Wix or Squarespace run roughly RM75–160 a month once you include a plan that takes payments plus a booking add-on. A developer-built WordPress site is typically around RM2,000–3,000 to set up in Malaysia, plus ongoing maintenance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a website or a Google Business Profile first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Google Business Profile, in most cases. It's free and it's how most guests will find you on Google and Google Maps. A booking page is the close second so they can actually book. A fuller website is useful but can come after those two."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes a tour operator's website actually get bookings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The essentials: a clear \"Book now\" or \"Check availability\" button visible the moment the page loads; live availability and real prices shown openly (not \"contact us for rates\"); photos and video of the actual experience rather than stock images; trust signals like your Google review rating and safety credentials right next to the booking button; answers to the questions travellers ask (duration, what's included, what to bring, meeting point); and a booking flow that works smoothly on a phone. A nervous traveller from another country should be able to see the price, trust you, and book on their phone in under two minutes — that's what converts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't I just take bookings over WhatsApp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can, but you'll lose bookings. Many international travellers (from the UK, US, Japan, Australia, Germany) don't use WhatsApp and won't download it to book a tour, and a \"message us to book\" flow loses the people who wanted to book and pay in the moment — including at 2am while you're asleep. A real booking page captures those bookings automatically; WhatsApp stays useful as one option among several, not your only one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What pages does a tour operator website need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most tour operators need just four or five: a Home page (what you do, where, your best photo, a booking button up top), a separate experience page for each tour you run (each with its own photos, details and booking option), an About page (your story, guides and safety record), and a Contact or FAQ page (meeting point, common questions). That's a complete site — you don't need more to start."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I take payments on my tour website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You connect a payment processor. On Kong you connect your own Stripe account (available in Malaysia) or Xendit, which adds local methods like FPX, Touch 'n Go, ShopeePay and DuitNow QR — and the money is paid into your own connected account. Guests pay a 1.8% fee at checkout on online bookings and you keep the rest. On generic builders, you'd sign up for a separate booking or payment tool and integrate it yourself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a tour booking website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your content is ready, a booking-native builder like Kong gets you live in a day — most of the time goes into gathering photos and writing your experience details, not the building itself. A generic builder plus a separate booking system takes longer because of the setup and integration. The slowest part for everyone is having your photos, prices and tour details ready, so prepare those first."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.bookwithkong.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.bookwithkong.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Build a Website for Your Tour Business (2026)",
+      "item": "https://www.bookwithkong.com/blog/website-for-tour-operators"
+    }
+  ]
+}
+</script>
+
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #1a0a2e;
+  --ink-85: rgba(26, 10, 46, 0.88);
+  --ink-70: rgba(26, 10, 46, 0.72);
+  --ink-60: rgba(26, 10, 46, 0.6);
+  --ink-45: rgba(26, 10, 46, 0.45);
+  --purple: #3B0F5E;
+  --purple-soft: rgba(59, 15, 94, 0.08);
+  --purple-softer: rgba(59, 15, 94, 0.04);
+  --gold: #F5C842;
+  --gold-deep: #c89414;
+  --cream-1: #faf7f2;
+  --cream-2: #f7f4ee;
+  --line: rgba(26, 10, 46, 0.08);
+  --line-strong: rgba(26, 10, 46, 0.14);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+body {
+  background:
+    radial-gradient(ellipse 1200px 600px at 50% -10%, rgba(245, 200, 66, 0.10) 0%, transparent 60%),
+    linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* ── Nav (matches about.html / class-booking / contact-us) ───────── */
+.kong-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1280px; margin: 0 auto;
+  position: relative; z-index: 10;
+}
+.kong-nav-left { display: flex; align-items: center; gap: 28px; }
+.kong-nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 700; font-size: 17px; color: var(--ink);
+  text-decoration: none;
+}
+.kong-nav-logo img { width: 32px; height: 32px; }
+.kong-nav-right { display: flex; gap: 24px; align-items: center; }
+.kong-nav-items { display: flex; gap: 26px; align-items: center; }
+.kong-nav-item {
+  font-size: 14px; font-weight: 500; color: rgba(26, 10, 46, 0.65);
+  cursor: pointer; transition: color 0.2s;
+  text-decoration: none;
+}
+.kong-nav-item:hover { color: var(--ink); }
+.kong-nav-item.active { color: var(--ink); font-weight: 600; }
+
+.kong-nav-cta {
+  background: var(--purple); color: white;
+  font-size: 14px; font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(59, 15, 94, 0.18);
+}
+.kong-nav-cta:hover { transform: translateY(-1px); background: #4d1378; box-shadow: 0 4px 14px rgba(59, 15, 94, 0.28); }
+
+.kong-nav-burger {
+  display: none;
+  background: none; border: none; padding: 8px;
+  width: 40px; height: 40px;
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.kong-nav-burger span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.2s;
+}
+.kong-nav-burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.kong-nav-burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.kong-nav-burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.kong-mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%; left: 12px; right: 12px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(26, 10, 46, 0.12);
+  padding: 12px;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 50;
+}
+.kong-mobile-menu[data-open="true"] { display: flex; }
+.kong-mobile-item {
+  display: block;
+  padding: 12px 14px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px; font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-radius: 10px;
+}
+.kong-mobile-item:hover { background: rgba(26, 10, 46, 0.04); }
+.kong-mobile-cta {
+  display: block;
+  margin-top: 6px;
+  padding: 13px 14px;
+  background: var(--purple); color: white;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px; font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 12px;
+}
+@media (max-width: 760px) {
+  .kong-nav { position: relative; }
+  .kong-nav-right { display: none; }
+  .kong-nav-burger { display: flex; }
+}
+
+/* ── Article shell ───────────────────────────────────────────────── */
+.post-shell {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ── Hero block ──────────────────────────────────────────────────── */
+.post-hero {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 28px 0 36px;
+}
+.post-breadcrumb {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--ink-60);
+  margin-bottom: 28px;
+  display: flex; width: fit-content;
+  align-items: center; gap: 8px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.post-breadcrumb i { font-size: 16px; }
+.post-breadcrumb:hover { color: var(--purple); }
+
+.post-eyebrow {
+  display: inline-block;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--purple);
+  background: var(--purple-soft);
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+
+.post-title {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -1.4px;
+  color: var(--ink);
+  text-wrap: balance;
+  margin-bottom: 28px;
+}
+
+.post-meta {
+  display: flex; align-items: center; gap: 14px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.post-meta-avatar {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(160deg, #c79be0 0%, #5b1a8e 60%, #3B0F5E 100%);
+  flex-shrink: 0;
+}
+.post-meta-avatar img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.post-meta-text { display: flex; flex-direction: column; gap: 2px; }
+.post-meta-name {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: var(--ink);
+}
+.post-meta-sub {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13.5px;
+  color: var(--ink-60);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.post-meta-sub .dot {
+  width: 3px; height: 3px;
+  background: var(--ink-45);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Hero image */
+.post-hero-image {
+  max-width: 1080px;
+  margin: 0 auto 64px;
+  border-radius: 22px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: var(--purple-soft);
+  box-shadow: 0 18px 50px rgba(26, 10, 46, 0.10);
+}
+.post-hero-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Body ────────────────────────────────────────────────────────── */
+.post-body {
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink-85);
+  padding-bottom: 80px;
+}
+.post-body > * + * { margin-top: 1.25em; }
+
+.post-body p {
+  font-size: 18px;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+.post-body p strong, .post-body li strong { color: var(--ink); font-weight: 600; }
+
+.post-body h2 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.6px;
+  color: var(--ink);
+  margin-top: 64px;
+  text-wrap: balance;
+}
+.post-body h3 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-top: 44px;
+  letter-spacing: -0.2px;
+}
+.post-body h2 + *, .post-body h3 + * { margin-top: 18px; }
+
+.post-body ul, .post-body ol {
+  padding-left: 24px;
+}
+.post-body li {
+  font-size: 18px;
+  line-height: 1.72;
+  margin-bottom: 10px;
+  text-wrap: pretty;
+}
+.post-body li::marker { color: var(--ink-45); }
+.post-body ol > li::marker { color: var(--purple); font-weight: 600; }
+.post-body li:last-child { margin-bottom: 0; }
+
+.post-body a {
+  color: var(--purple);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+.post-body a:hover { color: var(--ink); text-decoration-color: var(--ink); }
+
+.post-body em { font-style: italic; }
+
+/* Lead paragraph (definition / key-statement after a heading) */
+.post-body p.lead {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--ink);
+  padding: 22px 26px;
+  background: var(--cream-1);
+  border-left: 3px solid var(--purple);
+  border-radius: 4px 12px 12px 4px;
+}
+.post-body p.lead strong { font-weight: 400; }
+
+/* Tables */
+.post-body .table-wrap {
+  margin: 30px 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
+}
+.post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15.5px;
+}
+.post-body th {
+  background: var(--purple-soft);
+  color: var(--ink);
+  padding: 13px 18px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  border-bottom: 1px solid var(--line);
+}
+.post-body td {
+  padding: 14px 18px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-70);
+  line-height: 1.55;
+  vertical-align: top;
+}
+.post-body td:first-child { color: var(--ink); font-weight: 600; }
+.post-body tr:first-child td { border-top: none; }
+
+/* Timeline (9:15 AM scenario) */
+.post-body .timeline {
+  list-style: none;
+  padding: 22px 24px;
+  margin: 28px 0;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.post-body .timeline li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+  padding: 12px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  border-top: 1px dashed var(--line);
+  margin: 0;
+}
+.post-body .timeline li:first-child { border-top: none; }
+.post-body .timeline .time {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--purple);
+  letter-spacing: 0.5px;
+  padding-top: 1px;
+}
+.post-body .timeline li:last-child .time { color: #b91c1c; }
+
+/* ROI: before/after side by side */
+.post-body .roi-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 28px 0 14px;
+}
+.post-body .roi-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px 22px 20px;
+}
+.post-body .roi-card.after {
+  background: linear-gradient(180deg, rgba(245, 200, 66, 0.10) 0%, white 100%);
+  border-color: rgba(200, 148, 20, 0.30);
+}
+.post-body .roi-card h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.post-body .roi-card.before h4 { color: var(--ink-60); }
+.post-body .roi-card.after h4 { color: var(--gold-deep); }
+.post-body .roi-card ul {
+  padding-left: 18px;
+  margin-top: 0;
+}
+.post-body .roi-card li {
+  font-size: 15px;
+  line-height: 1.55;
+  margin-bottom: 8px;
+  color: var(--ink-70);
+}
+
+/* ROI: monthly impact (dark callout) */
+.post-body .roi-impact {
+  background: var(--ink);
+  color: white;
+  border-radius: 16px;
+  padding: 26px 28px;
+  margin: 14px 0 30px;
+}
+.post-body .roi-impact h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 14px;
+}
+.post-body .roi-impact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.post-body .roi-impact li {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15.5px;
+  line-height: 1.6;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.post-body .roi-impact li:first-child { border-top: none; padding-top: 0; }
+.post-body .roi-impact li strong { color: white; font-weight: 600; }
+.post-body .roi-impact li.net {
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--gold);
+}
+.post-body .roi-impact li.net strong { color: var(--gold); }
+
+/* FAQ list (definition list) */
+.post-body .faq {
+  margin: 30px 0;
+  border-top: 1px solid var(--line);
+}
+.post-body .faq dt {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 17.5px;
+  color: var(--ink);
+  padding: 22px 0 10px;
+  line-height: 1.4;
+}
+.post-body .faq dd {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink-85);
+  padding: 0 0 22px;
+  border-bottom: 1px solid var(--line);
+  margin: 0;
+}
+
+/* Pull-quote */
+.post-body .pull-quote {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 36px 0;
+  padding: 4px 0 4px 24px;
+  border-left: 3px solid var(--gold);
+  text-wrap: balance;
+}
+.post-body .pull-quote-attribution {
+  display: block;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  color: var(--ink-60);
+  margin-top: 10px;
+}
+
+/* About Kong block (italic closing card) */
+.post-body .about-kong {
+  margin-top: 60px;
+  padding: 32px 34px;
+  background: linear-gradient(135deg, var(--purple) 0%, #5b1a8e 100%);
+  color: white;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.post-body .about-kong::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(245, 200, 66, 0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.post-body .about-kong h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 12px;
+}
+.post-body .about-kong p {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.55;
+  color: white;
+  margin: 0;
+  text-wrap: pretty;
+  position: relative;
+}
+
+/* ── Post footer: author bio + related + CTA ─────────────────────── */
+.post-after {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 0 80px;
+}
+
+.post-author-card {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 22px;
+  align-items: center;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px 26px;
+  margin-bottom: 40px;
+}
+.post-author-avatar {
+  width: 84px; height: 84px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(160deg, #c79be0 0%, #5b1a8e 60%, #3B0F5E 100%);
+}
+.post-author-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-author-text h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink-60);
+  margin-bottom: 6px;
+}
+.post-author-name {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.2px;
+  margin-bottom: 4px;
+}
+.post-author-bio {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-70);
+}
+
+/* Related */
+.post-related {
+  margin-bottom: 40px;
+}
+.post-related h3 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink-60);
+  margin-bottom: 18px;
+}
+.post-related-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 26px;
+  align-items: center;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.post-related-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(26, 10, 46, 0.08);
+}
+.post-related-thumb {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #c79be0 0%, #5b1a8e 60%, #3B0F5E 100%);
+}
+.post-related-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.post-related-body { padding: 4px 6px 4px 0; }
+.post-related-eyebrow {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--purple);
+  margin-bottom: 6px;
+}
+.post-related-title {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+  letter-spacing: -0.2px;
+  margin-bottom: 6px;
+}
+.post-related-excerpt {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--ink-60);
+  line-height: 1.55;
+}
+
+/* Post CTA */
+.post-cta {
+  position: relative;
+  background: linear-gradient(135deg, #1a0a2e 0%, #3B0F5E 100%);
+  color: white;
+  border-radius: 22px;
+  padding: 44px 44px 40px;
+  overflow: hidden;
+  text-align: left;
+}
+.post-cta::before {
+  content: '';
+  position: absolute;
+  top: -100px; right: -80px;
+  width: 360px; height: 360px;
+  background: radial-gradient(circle, rgba(245, 200, 66, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.post-cta-eyebrow {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 14px;
+  position: relative;
+}
+.post-cta h2 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  margin-bottom: 14px;
+  text-wrap: balance;
+  position: relative;
+  max-width: 520px;
+}
+.post-cta p {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 26px;
+  position: relative;
+  max-width: 520px;
+}
+.post-cta-actions {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  position: relative;
+}
+.post-cta-primary {
+  background: var(--gold); color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600; font-size: 15px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: transform 0.15s, box-shadow 0.2s;
+}
+.post-cta-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(245, 200, 66, 0.35); }
+.post-cta-secondary {
+  background: rgba(255, 255, 255, 0.10);
+  color: white;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600; font-size: 15px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background 0.2s, border-color 0.2s;
+}
+.post-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.30);
+}
+
+/* ── Footer (matches site) ───────────────────────────────────────── */
+.kong-footer {
+  background: white;
+  border-top: 1px solid var(--line);
+  padding: 60px 40px 30px;
+}
+.kong-footer-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.3fr;
+  gap: 48px;
+  align-items: start;
+}
+.kong-footer-brand h3 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 17px; font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+.kong-footer-subscribe {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--cream-1);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 5px 5px 18px;
+  max-width: 360px;
+}
+.kong-footer-subscribe input {
+  background: transparent; border: none; outline: none;
+  flex: 1;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--ink);
+  padding: 8px 4px;
+}
+.kong-footer-subscribe input::placeholder { color: var(--ink-45); }
+.kong-footer-subscribe button {
+  background: var(--purple); color: white;
+  border: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13.5px; font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.kong-footer-subscribe button:hover { background: #4d1378; }
+.kong-footer-col h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 11.5px; font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  margin: 0 0 14px;
+}
+.kong-footer-col ul { list-style: none; margin: 0; padding: 0; }
+.kong-footer-col li { margin-bottom: 10px; }
+.kong-footer-col a {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  color: var(--ink-70);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.kong-footer-col a:hover { color: var(--ink); }
+.kong-footer-bottom {
+  max-width: 1240px;
+  margin: 48px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 12px;
+  color: var(--ink-45);
+  line-height: 1.7;
+}
+.kong-footer-legal { display: flex; flex-direction: column; gap: 2px; }
+.kong-footer-socials { display: flex; gap: 10px; }
+.kong-footer-socials a {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--ink-60);
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.kong-footer-socials a:hover {
+  color: var(--purple);
+  border-color: var(--purple);
+}
+
+/* ── Responsive ──────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .kong-nav-items { gap: 16px; }
+  .kong-nav { padding: 14px 20px; }
+  .post-shell { padding: 0 22px; }
+  .post-hero { padding: 18px 0 26px; }
+  .post-title { font-size: 38px; letter-spacing: -0.8px; }
+  .post-hero-image { margin-bottom: 40px; border-radius: 16px; }
+  .post-body h2 { font-size: 26px; margin-top: 48px; }
+  .post-body h3 { font-size: 19px; margin-top: 36px; }
+  .post-body p, .post-body li { font-size: 17px; }
+  .post-body .roi-compare { grid-template-columns: 1fr; }
+  .post-body .timeline li { grid-template-columns: 70px 1fr; gap: 14px; }
+  .post-author-card { grid-template-columns: 64px 1fr; padding: 18px; }
+  .post-author-avatar { width: 64px; height: 64px; }
+  .post-related-card { grid-template-columns: 1fr; }
+  .post-related-thumb { aspect-ratio: 16/9; max-height: 200px; }
+  .post-cta { padding: 32px 26px; }
+  .post-cta h2 { font-size: 24px; }
+  .kong-footer { padding: 50px 20px 24px; }
+  .kong-footer-inner { grid-template-columns: 1fr; gap: 30px; }
+  .kong-footer-bottom { flex-direction: column; align-items: flex-start; margin-top: 36px; }
+}
+@media (max-width: 560px) {
+  .post-title { font-size: 32px; }
+  .post-body .about-kong { padding: 24px 22px; }
+  .post-body .about-kong p { font-size: 17px; }
+  .post-body p.lead { font-size: 19px; padding: 18px 20px; }
+}
+</style>
+<style>
+/* ── Industries nav dropdown ───────────────── */
+.kong-nav-dd { position: relative; display: inline-flex; align-items: center; }
+.kong-nav-dd-trigger {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: none; border: none; cursor: pointer;
+  font-family: inherit; font-size: 14px; font-weight: 500;
+  color: rgba(26,10,46,0.65); padding: 4px 0; transition: color 0.2s;
+}
+.kong-nav-dd-trigger .ti { font-size: 15px; transition: transform 0.25s; }
+.kong-nav-dd:hover .kong-nav-dd-trigger,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger { color: #1a0a2e; }
+.kong-nav-dd:hover .kong-nav-dd-trigger .ti,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger .ti { transform: rotate(180deg); }
+.kong-nav-dd::after { content:''; position:absolute; left:0; right:0; top:100%; height:18px; }
+.kong-nav-dd-menu {
+  position: absolute; top: calc(100% + 16px); left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: #fff; border: 1px solid var(--line, rgba(26,10,46,0.08)); border-radius: 14px;
+  box-shadow: 0 18px 44px -14px rgba(26,10,46,0.22);
+  padding: 8px; min-width: 234px;
+  display: flex; flex-direction: column; gap: 1px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s; z-index: 200;
+}
+.kong-nav-dd:hover .kong-nav-dd-menu,
+.kong-nav-dd:focus-within .kong-nav-dd-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.kong-nav-dd-menu a {
+  display: flex; align-items: center; gap: 11px;
+  padding: 9px 12px; border-radius: 9px;
+  font-size: 14px; font-weight: 500; color: var(--ink-70, rgba(26,10,46,0.7));
+  text-decoration: none; white-space: nowrap; transition: background 0.15s, color 0.15s;
+}
+.kong-nav-dd-menu a:hover { background: var(--purple-soft, rgba(59,15,94,0.08)); color: var(--purple, #3B0F5E); }
+.kong-nav-dd-menu a .ti { font-size: 16px; color: var(--purple, #3B0F5E); opacity: 0.85; }
+.kong-nav-dd-divider { height: 1px; background: var(--line, rgba(26,10,46,0.08)); margin: 6px 4px; }
+.kong-mobile-dd-label {
+  font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-45, rgba(26,10,46,0.45));
+  padding: 6px 0 2px;
+}
+.kong-mobile-sub { padding-left: 14px !important; }
+</style>
+
+<style>
+/* ── Collapsible Industries group in mobile menu ─────────────────── */
+.kong-mobile-acc {
+  display: flex; align-items: center; justify-content: space-between; width: 100%;
+  background: none; border: none; cursor: pointer;
+  padding: 12px 14px; border-radius: 10px;
+  font-family: 'Inter', system-ui, sans-serif; font-size: 15px; font-weight: 500;
+  color: #1a0a2e; text-align: left;
+}
+.kong-mobile-acc:hover { background: rgba(26,10,46,0.04); }
+.kong-mobile-acc-chev { transition: transform 0.2s; font-size: 18px; color: rgba(26,10,46,0.5); }
+.kong-mobile-acc[aria-expanded="true"] .kong-mobile-acc-chev { transform: rotate(180deg); }
+.kong-mobile-acc-panel { display: none; flex-direction: column; gap: 4px; }
+.kong-mobile-acc-panel[data-open="true"] { display: flex; }
+</style>
+<style>
+.post-body .post-tldr { background: var(--purple-soft); border: 1px solid var(--line-strong); border-radius: 16px; padding: 22px 26px 24px; margin: 30px 0; }
+.post-body .post-tldr h4 { font-family: 'Inter', system-ui, sans-serif; font-size: 11.5px; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; color: var(--purple); margin: 0 0 8px; }
+.post-body .post-tldr ul { margin-top: 10px; }
+.post-body .post-tldr li { font-size: 16.5px; }
+.post-body .build-steps { counter-reset: step; list-style: none; padding: 0; margin: 28px 0; }
+.post-body .build-steps > li { position: relative; padding: 0 0 22px 56px; margin: 0 0 22px; border-bottom: 1px solid var(--line); }
+.post-body .build-steps > li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.post-body .build-steps > li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: -2px; width: 38px; height: 38px; border-radius: 50%; background: var(--purple); color: #fff; font-family: 'Poppins', system-ui, sans-serif; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: center; }
+.post-body .build-steps .step-title { display: block; font-family: 'Poppins', system-ui, sans-serif; font-weight: 700; font-size: 18px; color: var(--ink); margin-bottom: 6px; letter-spacing: -0.2px; }
+.post-body .build-steps ul { margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="kong-nav">
+  <div class="kong-nav-left">
+    <a class="kong-nav-logo" href="/">
+      <img src="../images/logo.webp" alt="Kong" />
+      Kong
+    </a>
+  </div>
+  <div class="kong-nav-right">
+    <div class="kong-nav-items">
+      <div class="kong-nav-dd">
+        <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Industries<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+        <div class="kong-nav-dd-menu" role="menu">
+          <a href="../class-booking-system" role="menuitem"><i class="ti ti-building-store" aria-hidden="true"></i>Workshops &amp; Classes</a>
+          <div class="kong-nav-dd-divider"></div>
+          <a href="../atv-tours" role="menuitem"><i class="ti ti-car-off-road" aria-hidden="true"></i>ATV Tours</a>
+          <a href="../cooking-classes" role="menuitem"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>Cooking Classes</a>
+          <a href="../wine-tours" role="menuitem"><i class="ti ti-glass-full" aria-hidden="true"></i>Wine Tours</a>
+          <a href="../charter-bookings" role="menuitem"><i class="ti ti-anchor" aria-hidden="true"></i>Charters</a>
+          <a href="../adventure-tours" role="menuitem"><i class="ti ti-mountain" aria-hidden="true"></i>Adventure Tours</a>
+          <a href="../food-tours" role="menuitem"><i class="ti ti-soup" aria-hidden="true"></i>Food Tours</a>
+          <a href="../dive-centres" role="menuitem"><i class="ti ti-scuba-mask" aria-hidden="true"></i>Dive Centres</a>
+          <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
+        </div>
+      </div>
+      <a class="kong-nav-item" href="/#pricing">Pricing</a>
+      <a class="kong-nav-item" href="../blog">Blog</a>
+      <a class="kong-nav-item" href="../about">About</a>
+      <a class="kong-nav-item" href="../contact-us">Contact</a>
+    </div>
+    <a class="kong-nav-cta" href="https://app.bookwithkong.com" target="_blank" rel="noopener">Get started free</a>
+  </div>
+  <button class="kong-nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="kong-mobile-menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="kong-mobile-menu" id="kong-mobile-menu" hidden>
+    <button class="kong-mobile-acc" type="button" aria-expanded="false" aria-controls="kong-mobile-industries"><span>Industries</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+    <div class="kong-mobile-acc-panel" id="kong-mobile-industries">
+    <a class="kong-mobile-item kong-mobile-sub" href="../class-booking-system">Workshops &amp; Classes</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../atv-tours">ATV Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../cooking-classes">Cooking Classes</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../wine-tours">Wine Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../charter-bookings">Charters</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../adventure-tours">Adventure Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../food-tours">Food Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
+    </div>
+    <a class="kong-mobile-item" href="/#pricing">Pricing</a>
+    <a class="kong-mobile-item" href="../blog">Blog</a>
+    <a class="kong-mobile-item" href="../about">About</a>
+    <a class="kong-mobile-item" href="../contact-us">Contact</a>
+    <a class="kong-mobile-cta" href="https://app.bookwithkong.com" target="_blank" rel="noopener">Get started free</a>
+  </div>
+</nav>
+
+<div class="post-shell">
+
+  <header class="post-hero">
+    <a class="post-breadcrumb" href="../blog">
+      <i class="ti ti-arrow-left"></i> All posts
+    </a>
+    <div class="post-eyebrow">Getting online · Guide</div>
+    <h1 class="post-title">How to Build a Website for Your Tour Business (2026)</h1>
+    <div class="post-meta">
+      <div class="post-meta-avatar">
+        <img src="../images/author-blake.avif" alt="Blake Ng" />
+      </div>
+      <div class="post-meta-text">
+        <div class="post-meta-name">Blake Ng</div>
+        <div class="post-meta-sub">
+          <span>Co-founder, Kong</span>
+          <span class="dot"></span>
+          <span>Last updated: June 2026</span>
+          <span class="dot"></span>
+          <span>12 min read</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <article class="post-body">
+<p>If you run tours or activities — ATV trails, white water rafting, cooking classes, jeep tours, fishing charters, firefly cruises — and you've searched "how to build a website," this guide is for you. But I want to save you the most common mistake first, because I've watched a lot of operators make it.</p>
+
+<h2>Why you can trust this guide (and the one shortcut worth knowing)</h2>
+<p>I've spent years helping Malaysian tour and activity operators get online and take bookings, and I co-run a website-and-booking platform called Kong, which I'll mention in this guide. I'm telling you that up front because the rest only works if you trust I'm being straight.</p>
+<p>So here's the straight version: most "how to build a website" advice is written for businesses selling <em>things</em>. A tour operator isn't selling things — you're selling seats on the 9am departure. That difference changes everything about what your website needs to do, and it's the part the generic guides get wrong. The biggest mistake I see operators make is spending weeks (and real money) building a beautiful website that can't actually take a booking — and then losing the international guests who wanted to book and pay on the spot.</p>
+<p>This guide walks through your real options, what each costs, how to actually build it step by step, and — most importantly — what makes a tour website <em>convert a looker into a paid booking</em>, which is the only thing that matters.</p>
+<p>For context on how rare that last part is: in <a href="../research/malaysia-operator-website-study">The Digital State of Malaysian Tour Operators 2026</a>, 74% of Malaysian tour operators have no website of their own (Kong, 2026, n=252) — so getting online at all already puts you ahead of most of the market.</p>
+
+<h2>TL;DR — the fastest path for your situation</h2>
+<div class="post-tldr">
+  <h4>Pick by what you need</h4>
+  <ul>
+    <li><strong>Just want to take bookings, fast and free, no tech skills?</strong> → A booking-native builder like <strong>Kong</strong>: a real site <em>and</em> bookings in one, free, live in an afternoon. The trade-off is a Kong web address rather than your own domain.</li>
+    <li><strong>Want a fully branded site on your own .com with a blog?</strong> → A generic builder (<strong>Wix</strong> or <strong>Squarespace</strong>) — but you'll add a separate booking system, pay a monthly fee in US dollars, and put in real setup time.</li>
+    <li><strong>Want the most polished, fully custom result and have the budget?</strong> → <strong>Hire a developer</strong> — usually overkill when you're starting out.</li>
+    <li><strong>Whatever you choose:</strong> sort your <strong>Google Business Profile</strong> too. For most operators it drives more discovery than the website itself.</li>
+  </ul>
+</div>
+<p>The honest, detailed version — including the step-by-step build and the conversion essentials — is below.</p>
+
+<h2>What a tour operator's website actually needs to do</h2>
+<p>Before you build anything, get clear on the three jobs your web presence has to do. Most operators overspend on the first and underinvest in the second.</p>
+<ol><li><strong>Show people what you offer and who you are</strong> — your experiences, your story, photos that sell the trip. An About page and good galleries.</li><li><strong>Take bookings and payments</strong> — let a guest anywhere in the world reserve a spot and pay. This is the part generic website builders don't do on their own.</li><li><strong>Help people find you</strong> — mostly your Google Business Profile, which is separate from your website (more on that at the end).</li></ol>
+
+<h2>Your options, honestly</h2>
+<p>There are three realistic ways for a tour operator to get a website, and the right one depends on what you actually need.</p>
+<p><strong>Option 1: A generic website builder (Wix, Squarespace, WordPress).</strong> These are great for a fully branded site on your own domain, with a blog and full design control. The catch for tour operators: they don't take bookings on their own — you have to bolt on a separate booking system — and they take time, some tech skill, and a monthly subscription. If you want a polished brand site and you're willing to manage the booking side separately, these are solid. Many operators do want one eventually. (If you want to compare all the main builders available in Malaysia, including local options, see our <a href="best-website-builders-malaysia">honest comparison of the best website builders in Malaysia</a>.)</p>
+<p><strong>Option 2: A booking-native website builder (this is Kong).</strong> Build a real multi-page site — a Home page, an About page, pages for your experiences — with <strong>bookings built in natively</strong> rather than bolted on. It's free and you can be live fast. The honest trade-offs: you get a Kong web address (yourbusiness.bookwithkong.com), not your own custom .com, and it's built for your site and bookings, not blogging or SEO content. For a non-tech-savvy operator who wants to be online and taking bookings quickly, this is usually the fastest path.</p>
+<p><strong>Option 3: Hire someone to build it.</strong> A developer or agency gives you the most polished, fully custom result — and it's the most expensive, usually overkill when you're starting out.</p>
+
+<h2>Why "bookings built in" matters more than design</h2>
+<p>Here's the part most "how to build a website" guides miss for tour operators: a beautiful website that makes guests message you on WhatsApp to book will quietly lose you international guests. Travellers from the UK, US, Japan, Australia and Germany often don't use WhatsApp and won't download it to book a tour. If they can't book and pay on the spot, many simply move on.</p>
+<p>That's the real reason a booking-native builder beats a generic one for this audience. It's not about design — generic builders can look great. It's that your website is only doing its job if a guest can complete a booking on it, and that's exactly what a booking-native builder is built for. And it's the step most operators miss: per <a href="../research/malaysia-operator-website-study">Kong's operator research</a>, among operators that do have a live website, 70% still cannot take a booking on it — the site takes enquiries only (Kong, 2026, n=66).</p>
+
+<h2>What actually makes a tour website convert (most guides skip this)</h2>
+<p>This is the section I'd tear out and hand to every operator if I could. Every "how to build a website" guide tells you <em>how to build a site</em>. None of them tell a tour operator what their site needs to do to turn a curious visitor into a paid booking — which is the only thing that matters. Here's what actually moves the needle, in rough order of impact:</p>
+<ul>
+<li><strong>Put a real booking option above the fold.</strong> The single biggest leak is making people hunt for how to book. A clear "Check availability" or "Book now" button visible the moment the page loads — not buried at the bottom — is worth more than any design flourish. If a guest has to message you to find out times and prices, you've already lost a chunk of them.</li>
+<li><strong>Show live availability and prices, don't hide them.</strong> "Contact us for rates" kills bookings, especially with international travellers comparing options at 11pm. Showing your real prices and open dates builds trust and lets people book in the moment. Travellers expect to see the price before they commit, the way they do on Klook or GetYourGuide.</li>
+<li><strong>Lead with photos and video of the actual experience.</strong> Not stock images, not your logo — the trail, the boat, the food, real guests mid-experience. For a tour, the photos <em>are</em> the product; they're what make someone picture themselves there. A short video of the experience converts even better.</li>
+<li><strong>Make trust obvious and immediate.</strong> Travellers booking an adventure activity in a foreign country are nervous. Put your Google review star rating and a few real review quotes near the booking button, state your safety credentials and experience plainly, and show real faces of your guides. Trust signals next to the "Book" button lift conversion more than almost anything else.</li>
+<li><strong>Write for the traveller's actual questions.</strong> Duration, what's included, what to bring, fitness or age suitability, pickup or meeting point, cancellation terms. Answering these on the page removes the friction that otherwise turns into a WhatsApp message you have to answer manually — or a booking that never happens.</li>
+<li><strong>Make it work on a phone.</strong> Most travellers browse and book on their phones, often while already in the country deciding what to do tomorrow. If your booking flow is awkward on mobile, you're losing the majority of your traffic. (This is a hidden advantage of a booking-native builder — the booking flow is built mobile-first, rather than a desktop plugin squeezed onto a phone.)</li>
+<li><strong>Capture the booking, not just the enquiry.</strong> A "request a quote" form is a booking you might get. A live booking-and-pay flow is a booking you <em>have</em>. Every step between "I want to do this" and "it's paid for" is a place people drop off — so the fewer steps, the more bookings.</li>
+</ul>
+<p>The honest takeaway: a tour operator's website lives or dies on whether a nervous traveller from another country can see the price, trust you, and book on their phone in under two minutes. Pretty design helps, but it's a distant second to that. This is exactly why "bookings built in" matters more than which builder has the nicest templates.</p>
+
+<h2>What it costs: the honest comparison</h2>
+<p>Here's what each option actually costs in 2026. Generic builders aren't expensive per month, but remember they need a booking system added on top, and they're priced in US dollars.</p>
+<div class="table-wrap"><table><thead><tr><th>Option</th><th>Setup cost</th><th>Ongoing cost</th><th>Takes bookings?</th><th>Your own domain?</th></tr></thead><tbody><tr><td><strong>Wix</strong></td><td>Free to start</td><td>Free tier (with ads + Wix subdomain); paid plans from ~USD 17/month, and you need around the ~USD 29/month tier to take payments. Plus ~USD 15–20/year for a domain after year one.</td><td>Not on its own — needs a booking add-on</td><td>Yes (on paid plans)</td></tr><tr><td><strong>Squarespace</strong></td><td>Free 14-day trial</td><td>From ~USD 16–19/month (basic), ~USD 23–35/month to avoid transaction fees, plus a booking add-on (Acuity) from ~USD 16/month, plus ~USD 15–20/year domain after year one.</td><td>Not natively — booking is a paid add-on</td><td>Yes</td></tr><tr><td><strong>WordPress (built by a developer)</strong></td><td>~RM 2,000–3,000 typical setup in Malaysia</td><td>Ongoing hosting, plugins, updates and maintenance (varies), plus a booking plugin</td><td>Only with a booking plugin added</td><td>Yes</td></tr><tr><td><strong>Kong</strong></td><td>Free</td><td>Free — no monthly fee, no setup fee</td><td><strong>Yes, built in</strong></td><td>No — Kong web address (yourbusiness.bookwithkong.com)</td></tr></tbody></table></div>
+<p>A few honest notes on the table. The Wix and Squarespace prices are in US dollars because they're global platforms — at current exchange rates that's roughly RM75–160 a month once you're on a plan that takes payments, but it moves with the exchange rate. The WordPress figure is a typical Malaysian setup cost for a developer-built site, plus ongoing maintenance that varies. And to be fair to the generic builders: they're not expensive month to month, and they win on custom domains, blogs and design control. The real difference for a tour operator is that every other option either needs a booking system added on, or real upfront money — while Kong is free with bookings built in. The trade-off you make for that is the subdomain.</p>
+<p><em>(Prices verified mid-2026; check each platform's current pricing before deciding.)</em> For the full picture of website pricing in Malaysia — freelancers, agencies and the hidden ongoing costs — see our guide to <a href="website-cost-malaysia">how much a website costs in Malaysia</a>.</p>
+
+<h2>What you can build on Kong</h2>
+<p>On Kong you can build a real, simple website for your tour business: a booking page plus as many additional pages as you need — a Home page, an About page that tells your story, pages for your experiences. You build them from a set of modules: text, image galleries, a hero image, product grids, and individual product modules that guests book straight from. It's free, live fast, and the bookings are built in — no separate booking system to wire up.</p>
+<p>What it isn't: it's not a custom-domain brand site (you get a Kong web address), and it's not a blog or SEO-content platform. If those specific things matter to you, a generic builder is the better fit — and you can still use Kong for the bookings.</p>
+
+<h2>How to actually build it: a step-by-step</h2>
+<p>Enough theory — here's the actual process of getting from nothing to a live site taking bookings. This works whichever route you choose; we'll note where Kong makes a step disappear.</p>
+<ol class="build-steps">
+  <li><span class="step-title">Plan your pages before you build anything</span>Don't open a builder and start dragging boxes. Sketch your site first — most tour operators need just four or five pages:
+    <ul>
+      <li><strong>Home</strong> — what you do, where, your best photo, and a booking button immediately visible.</li>
+      <li><strong>An experience page for each tour</strong> — one per product (your ATV trail, your sunset cruise), each with its own photos, details, and booking option. This is where bookings actually happen, so give each experience its own page rather than cramming them onto one.</li>
+      <li><strong>About</strong> — your story, your guides, your safety record. This is your trust page.</li>
+      <li><strong>Contact / FAQ</strong> — meeting point, how to reach you, the common questions.</li>
+    </ul>
+    That's a complete tour-operator site. You don't need more to start.</li>
+  <li><span class="step-title">Get your assets together first</span>The thing that actually slows operators down isn't the building — it's not having the content ready. Before you start, gather: 10–20 strong photos of your real experiences (not stock), a short paragraph of your story, the details for each tour (duration, price, what's included, what to bring, meeting point), and your logo if you have one. An afternoon collecting these makes the build itself quick.</li>
+  <li><span class="step-title">Build the pages</span>On a generic builder, you'd pick a template, then customise it. On Kong, you assemble each page from modules — a hero image at the top, text blocks for your story and details, image galleries for your photos, and product/product-grid modules that are the actual bookable experiences. Lead each page with a strong image and put a booking option high up.</li>
+  <li><span class="step-title">Set up your bookable experiences</span>This is the step that's either the hardest or the easiest, depending on your route. On a generic builder, this is where you stop, choose a separate booking system, sign up for it, and wire it in — the part that defeats most operators. On Kong, your experiences <em>are</em> the booking system: you add each tour as a product with its price, your capacity per session, available dates and times, and any deposit, and it's bookable the moment it's on the page. No integration, no second tool.</li>
+  <li><span class="step-title">Connect payments</span>To take money you need a payment processor. On Kong you connect your own Stripe account (available in Malaysia) or Xendit (which adds local methods like FPX, Touch 'n Go, ShopeePay and DuitNow QR), and the money is paid into your own connected account. Guests pay a small 1.8% fee at checkout on online bookings; you keep the rest, and walk-in, phone and WhatsApp bookings are free.</li>
+  <li><span class="step-title">Test a booking yourself, then go live</span>Before you share it, run a test booking end-to-end — book one of your own experiences, check the confirmation email arrives, make sure the price and details are right. Then publish, and put the link everywhere: your Google Business Profile, your Instagram and TikTok bios, your WhatsApp status.</li>
+</ol>
+<p>The honest difference: on a generic builder, Steps 4 and 5 are where most operators stall for weeks (or give up and go back to WhatsApp). On a booking-native builder they're part of building the page. That's the whole reason this category exists.</p>
+
+<h2>What to put on an experience page (the page that actually earns the booking)</h2>
+<p>Your individual experience pages are where the money is made, so they deserve more than a photo and a price. The ones that convert all include, roughly in this order:</p>
+<ol>
+  <li><strong>A strong hero image or video</strong> of the actual experience at its best moment.</li>
+  <li><strong>A one-line promise</strong> — what the guest gets, in their words ("Half-day mangrove kayaking through Langkawi's UNESCO geopark, small groups, licensed guides").</li>
+  <li><strong>The booking option, high up</strong> — price, duration, and a "Check availability" button before they have to scroll.</li>
+  <li><strong>What's included and what to bring</strong> — removes the questions that otherwise become messages.</li>
+  <li><strong>The practical details</strong> — meeting point, start times, fitness or age suitability, what happens if it rains.</li>
+  <li><strong>Trust</strong> — your Google rating, a couple of real review quotes, your safety note.</li>
+  <li><strong>A gallery</strong> lower down for the guests who want to see more before committing.</li>
+</ol>
+<p>Write it the way you'd explain the trip to a friend, not in marketing-speak. Specific and warm beats polished and vague every time — "you'll paddle through mangrove tunnels and probably spot eagles and monkeys" sells better than "an unforgettable nature experience."</p>
+
+<h2>Niche notes by activity</h2>
+<p>Different experiences sell themselves differently online. A few honest pointers:</p>
+<ul><li><strong>ATV and off-road operators:</strong> galleries of the trails, the gear and happy riders do the selling; pair them with a booking that sets your capacity per session so you're never oversold.</li><li><strong>White water rafting operators:</strong> an About page that builds trust on safety and experience matters as much as the photos; take deposits and set group sizes at booking.</li><li><strong>Cooking class operators:</strong> galleries of the food and the setting; small-group sizing and capturing dietary notes when guests book.</li><li><strong>Jeep and 4x4 tour operators:</strong> showcase the routes and scenery; set clear departure times for each session.</li><li><strong>Fishing charter operators:</strong> photos of the catches build credibility; deposits protect you against no-shows on a fuelled, crewed trip.</li></ul>
+
+<h2>Don't forget how people actually find you</h2>
+<p>One last thing, because it's the most common mistake: your website is not how most guests will find you — your <strong>Google Business Profile</strong> is. When someone searches "ATV Selangor" or "things to do in Langkawi," it's your Google profile, not your website, that puts you on the map. Set that up alongside your site; we've written a full <a href="google-business-profile-local-seo-tour-operators">Google Business Profile and local SEO guide for tour operators</a> to walk you through it.</p>
+
+<h2>The honest recommendation</h2>
+<p>If you want to be online and taking bookings this week, without spending money or hiring anyone, a booking-native builder like <a href="/">Kong</a> is the fastest path — you get a real site with bookings built in, free, on a Kong web address. If you specifically need your own custom domain and a blog for content marketing, start with (or later add) a generic builder, and you can still use Kong to handle the bookings. Either way, sort your Google Business Profile too — that's how most guests will actually find you.</p>
+
+<h2>Frequently asked questions</h2>
+<dl class="faq">
+  <dt>Do tour operators need a website?</dt>
+  <dd>Not necessarily a full one. What a tour operator actually needs is a way to be found (a Google Business Profile) and a way to take bookings (a booking page). You can have both without building a traditional website — though a simple site with an About page and galleries does help guests trust you.</dd>
+  <dt>Can I build a website that takes bookings without hiring a developer?</dt>
+  <dd>Yes. Booking-native builders like Kong let you build a multi-page site with bookings built in, free, with no developer and no code. Generic builders like Wix and Squarespace can also be used without a developer, but you'd add a separate booking system on top.</dd>
+  <dt>What's the best website builder for a tour operator?</dt>
+  <dd>It depends on what you need. For getting online and taking bookings fast and free, a booking-native builder like Kong fits best. For a fully custom-branded site on your own domain with a blog, a generic builder like Squarespace or Wix (plus a booking add-on) is better. Many operators start with the former and add the latter later.</dd>
+  <dt>Can I build an About page and photo galleries on Kong, or just a booking page?</dt>
+  <dd>You can build a multi-page site — a booking page plus as many additional pages as you need, like a Home page, an About page, and pages for your experiences — using modules including text, image galleries, a hero image, product grids, and individual products guests book from. It's more than a booking page; it's a simple website with bookings built in.</dd>
+  <dt>Do I get my own domain name with Kong?</dt>
+  <dd>You get a Kong web address (yourbusiness.bookwithkong.com), not a custom domain like yourbusiness.com. If having your own custom domain matters to you, a generic website builder is the better fit for that specific need — and you can still use Kong for bookings.</dd>
+  <dt>How much does a website cost for a small tour business?</dt>
+  <dd>It ranges from free to a few thousand ringgit. A booking-native builder like Kong is free. Generic builders like Wix or Squarespace run roughly RM75–160 a month once you include a plan that takes payments plus a booking add-on. A developer-built WordPress site is typically around RM2,000–3,000 to set up in Malaysia, plus ongoing maintenance.</dd>
+  <dt>Do I need a website or a Google Business Profile first?</dt>
+  <dd>A Google Business Profile, in most cases. It's free and it's how most guests will find you on Google and Google Maps. A booking page is the close second so they can actually book. A fuller website is useful but can come after those two.</dd>
+  <dt>What makes a tour operator's website actually get bookings?</dt>
+  <dd>The essentials: a clear "Book now" or "Check availability" button visible the moment the page loads; live availability and real prices shown openly (not "contact us for rates"); photos and video of the actual experience rather than stock images; trust signals like your Google review rating and safety credentials right next to the booking button; answers to the questions travellers ask (duration, what's included, what to bring, meeting point); and a booking flow that works smoothly on a phone. A nervous traveller from another country should be able to see the price, trust you, and book on their phone in under two minutes — that's what converts.</dd>
+  <dt>Why can't I just take bookings over WhatsApp?</dt>
+  <dd>You can, but you'll lose bookings. Many international travellers (from the UK, US, Japan, Australia, Germany) don't use WhatsApp and won't download it to book a tour, and a "message us to book" flow loses the people who wanted to book and pay in the moment — including at 2am while you're asleep. A real booking page captures those bookings automatically; WhatsApp stays useful as one option among several, not your only one.</dd>
+  <dt>What pages does a tour operator website need?</dt>
+  <dd>Most tour operators need just four or five: a Home page (what you do, where, your best photo, a booking button up top), a separate experience page for each tour you run (each with its own photos, details and booking option), an About page (your story, guides and safety record), and a Contact or FAQ page (meeting point, common questions). That's a complete site — you don't need more to start.</dd>
+  <dt>How do I take payments on my tour website?</dt>
+  <dd>You connect a payment processor. On Kong you connect your own Stripe account (available in Malaysia) or Xendit, which adds local methods like FPX, Touch 'n Go, ShopeePay and DuitNow QR — and the money is paid into your own connected account. Guests pay a 1.8% fee at checkout on online bookings and you keep the rest. On generic builders, you'd sign up for a separate booking or payment tool and integrate it yourself.</dd>
+  <dt>How long does it take to build a tour booking website?</dt>
+  <dd>If your content is ready, a booking-native builder like Kong gets you live in a day — most of the time goes into gathering photos and writing your experience details, not the building itself. A generic builder plus a separate booking system takes longer because of the setup and integration. The slowest part for everyone is having your photos, prices and tour details ready, so prepare those first.</dd>
+</dl>
+  </article>
+
+  <section class="post-after">
+
+    <div class="post-author-card">
+      <div class="post-author-avatar">
+        <img src="../images/author-blake.avif" alt="Blake Ng" />
+      </div>
+      <div class="post-author-text">
+        <h4>Written by</h4>
+        <div class="post-author-name">Blake Ng</div>
+        <div class="post-author-bio">Co-founder of Kong. Six years at Rezdy working with hundreds of tour operators across Southeast Asia, now building the tools he wishes they'd had.</div>
+      </div>
+    </div>
+
+    <div class="post-related">
+      <h3>Continue reading</h3>
+      <a class="post-related-card" href="best-website-builders-malaysia">
+        <div class="post-related-thumb"></div>
+        <div class="post-related-body">
+          <div class="post-related-eyebrow">Website builders · Comparison</div>
+          <div class="post-related-title">Best Website Builders in Malaysia (2026): An Honest Comparison</div>
+          <div class="post-related-excerpt">Wix, Squarespace, Shopify, SiteGiant, WordPress and Kong compared — and the one honest carve-out for booking businesses.</div>
+        </div>
+      </a>
+      <a class="post-related-card" href="google-business-profile-local-seo-tour-operators">
+        <div class="post-related-thumb"></div>
+        <div class="post-related-body">
+          <div class="post-related-eyebrow">Local SEO · Guide</div>
+          <div class="post-related-title">Google Business Profile &amp; Local SEO for Tour Operators</div>
+          <div class="post-related-excerpt">Set up your profile and climb the Maps rankings — the playbook that took one operator from position 8 to 1.</div>
+        </div>
+      </a>
+      <a class="post-related-card" href="how-to-get-more-tour-bookings">
+        <div class="post-related-thumb"></div>
+        <div class="post-related-body">
+          <div class="post-related-eyebrow">Marketing · Pillar guide</div>
+          <div class="post-related-title">How to Get More Bookings for Your Tour Business</div>
+          <div class="post-related-excerpt">Every channel that works in 2026 — and how to fit them together without giving away your margin.</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="post-cta">
+      <div class="post-cta-eyebrow">Try Kong</div>
+      <h2>Get your tour site live this week — free.</h2>
+      <p>A real site with bookings built in, no monthly fee, no developer — that's exactly what Kong is built for. Guests pay just 1.8% at checkout on online bookings. Set it up in an afternoon.</p>
+      <div class="post-cta-actions">
+        <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
+          Get started free <i class="ti ti-arrow-right"></i>
+        </a>
+        <a class="post-cta-secondary" href="../contact-us">
+          <i class="ti ti-calendar-event"></i> Book a demo call
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer class="kong-footer">
+  <div class="kong-footer-inner">
+    <div class="kong-footer-brand">
+      <h3>Subscribe for the latest Kong updates</h3>
+      <form class="kong-footer-subscribe" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="name@email.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="kong-footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="../class-booking-system">Class Booking System</a></li>
+        <li><a href="../australia">Kong Australia</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="../blog">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="kong-footer-col">
+      <h4>More Resources</h4>
+      <ul>
+        <li><a href="../research/malaysia-operator-website-study">Research: State of Operators 2026</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="../legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="../legal-terms/privacy-policy">Privacy Policy</a></li>
+        <li><a href="../legal-terms/refund-policy">Refund Policy</a></li>
+        <li><a href="../contact-us">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Industries</h4>
+      <ul>
+        <li><a href="../class-booking-system">Workshops &amp; Classes</a></li>
+        <li><a href="../atv-tours">ATV Tours</a></li>
+        <li><a href="../cooking-classes">Cooking Classes</a></li>
+        <li><a href="../wine-tours">Wine Tours</a></li>
+        <li><a href="../charter-bookings">Charters</a></li>
+        <li><a href="../adventure-tours">Adventure Tours</a></li>
+        <li><a href="../food-tours">Food Tours</a></li>
+        <li><a href="../dive-centres">Dive Centres</a></li>
+        <li><a href="../snorkelling-tours">Snorkelling Tours</a></li>
+      </ul>
+    </div>
+
+      <div class="kong-footer-col">
+      <h4>Compare platforms</h4>
+      <ul>
+        <li><a href="best-booking-software-malaysia">Best Booking Software for Tour Operators in Malaysia</a></li>
+        <li><a href="best-booking-software-australia">Best Tour Booking Systems in Australia</a></li>
+        <li><a href="../compare/kong-vs-bokun">Kong vs Bokun</a></li>
+        <li><a href="../compare/kong-vs-rezdy">Kong vs Rezdy</a></li>
+        <li><a href="../compare/kong-vs-bookeo">Kong vs Bookeo</a></li>
+        <li><a href="../compare/kong-vs-fareharbor">Kong vs FareHarbor</a></li>
+        <li><a href="../compare/kong-vs-amelia">Kong vs Amelia</a></li>
+        <li><a href="../compare/kong-vs-checkfront">Kong vs Checkfront</a></li>
+      </ul>
+    </div>
+</div>
+
+  <div class="kong-footer-bottom">
+    <div class="kong-footer-legal">
+      <span>UEN Company Name: Kong Technologies Pte. Ltd.</span>
+      <span>UEN Company Number: 202608593C</span>
+      <span>SSM Company Name: Superstring Sdn. Bhd.</span>
+      <span>SSM Company Number: 202401016432 (1562282-H)</span>
+    </div>
+    <div class="kong-footer-socials">
+      <a href="https://www.linkedin.com/company/bookwithkong" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#0A66C2;"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile nav burger toggle
+(function() {
+  const burger = document.querySelector('.kong-nav-burger');
+  const menu = document.getElementById('kong-mobile-menu');
+  if (burger && menu) {
+    function close() {
+      burger.setAttribute('aria-expanded', 'false');
+      menu.removeAttribute('data-open');
+      menu.hidden = true;
+    }
+    function open() {
+      burger.setAttribute('aria-expanded', 'true');
+      menu.hidden = false;
+      menu.setAttribute('data-open', 'true');
+    }
+    burger.addEventListener('click', () => {
+      if (burger.getAttribute('aria-expanded') === 'true') close(); else open();
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  }
+})();
+</script>
+
+
+<script>
+/* Mobile Industries accordion */
+(function(){
+  var acc = document.querySelector('.kong-mobile-acc');
+  var panel = document.getElementById('kong-mobile-industries');
+  if(!acc || !panel) return;
+  acc.addEventListener('click', function(){
+    var open = acc.getAttribute('aria-expanded') === 'true';
+    acc.setAttribute('aria-expanded', String(!open));
+    panel.setAttribute('data-open', String(!open));
+  });
+})();
+</script>
+</body>
+</html>
