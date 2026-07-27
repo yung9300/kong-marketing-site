@@ -25,7 +25,9 @@
 <!-- Open Graph -->
 <meta property="og:title" content="Kong — online booking system for tour operators">
 <meta property="og:description" content="Online booking system and website for tour and activity operators. $1 per booking, capped at $139 a month. No monthly fees, no signup fees, no guest fees.">
-<meta property="og:image" content="https://www.bookwithkong.com/images/og-homepage.jpg">
+<meta property="og:image" content="https://www.bookwithkong.com/images/og-homepage-global.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://www.bookwithkong.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kong">
@@ -34,7 +36,33 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kong — online booking system for tour operators">
 <meta name="twitter:description" content="Online booking system and website for tour and activity operators. $1 per booking, capped at $139 a month. No monthly fees, no signup fees, no guest fees.">
-<meta name="twitter:image" content="https://www.bookwithkong.com/images/og-homepage.jpg">
+<meta name="twitter:image" content="https://www.bookwithkong.com/images/og-homepage-global.png">
+<script>
+/* Geo redirect (client-side): Render static sites cannot do country-conditional
+   redirects server-side, so this runs on the generic homepage only.
+   Guards: only on "/", never for crawlers, never if the visitor made a manual
+   region choice, once per session, and it fails silently to the generic page. */
+(function(){
+  try{
+    var p = location.pathname.replace(/index\.html$/,'');
+    if (p !== '/') return;
+    if (/[?&]nogeo/.test(location.search)) return;
+    if (localStorage.getItem('kong_region')) return;
+    if (sessionStorage.getItem('kong_geo_done')) return;
+    if (/bot|crawl|spider|slurp|bingpreview|headless|lighthouse|pingdom|preview/i.test(navigator.userAgent)) return;
+    sessionStorage.setItem('kong_geo_done','1');
+    var map = { MY: '/malaysia', AU: '/australia' };
+    fetch('https://api.country.is/', { cache: 'no-store' })
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        if (!d || !d.country) return;
+        var dest = map[d.country];
+        if (dest) location.replace(dest);
+      })
+      .catch(function(){});
+  } catch(e){}
+})();
+</script>
 <link rel="canonical" href="https://www.bookwithkong.com/">
 <link rel="alternate" hreflang="en" href="https://www.bookwithkong.com/">
 <link rel="alternate" hreflang="x-default" href="https://www.bookwithkong.com/">
@@ -3513,6 +3541,26 @@ body {
   line-height: 1.45;
 }
 
+.pricing-limited {
+  position: relative; z-index: 2;
+  max-width: 540px;
+  margin: 0 auto 22px;
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  padding: 12px 18px;
+  background: rgba(245, 200, 66, 0.14);
+  border: 1px solid rgba(244, 183, 60, 0.45);
+  border-radius: 12px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13.5px; line-height: 1.45;
+  color: rgba(26, 10, 46, 0.82);
+  text-align: center; text-wrap: pretty;
+}
+.pricing-limited i { font-size: 16px; color: #B07A08; flex-shrink: 0; }
+.pricing-limited strong { font-weight: 650; color: #1a0a2e; }
+@media (max-width: 768px) {
+  .pricing-limited { font-size: 12.5px; padding: 11px 14px; margin-bottom: 18px; }
+}
+
 /* Trust strip */
 .pricing-trust {
   display: flex;
@@ -5040,7 +5088,7 @@ body { position: relative; }
       "name": "Are there any other fees?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. There are no guest-facing booking fees, no setup fees, and no cancellation fees. The only other cost is standard payment processing from Stripe or Xendit, which applies with any booking system. Kong is priced this way because it\u2019s built for independent tour and activity operators, who shouldn\u2019t have to carry heavy booking-software subscriptions or OTA commissions of 20-30%."
+        "text": "No. There are no guest-facing booking fees, no setup fees, and no cancellation fees. The only other cost is standard payment processing from Stripe or Xendit, which applies with any booking system. Kong is priced this way because it\u2019s built for tour and activity operators, who shouldn\u2019t have to carry heavy booking-software subscriptions or OTA commissions of 20-30%."
       }
     },
     {
@@ -5378,7 +5426,7 @@ body { position: relative; }
 <section class="kong-hero">
   <div class="kong-hero-text">
     <h1 class="kong-h1">Meet your <span class="accent">new</span> online booking system.</h1>
-    <p class="kong-sub">Built by <strong>industry insiders</strong>, for <strong>independent tour operators</strong>. Take and confirm bookings, process payments and manage availability 24/7. $1 per booking, capped at $139 a month — no monthly or signup fees.</p>
+    <p class="kong-sub">Built by <strong>industry insiders</strong>, for <strong>tour and activity operators</strong>. Take and confirm bookings, process payments and manage availability 24/7. <strong>$1 per booking, capped at $139 a month</strong> — no monthly or signup fees.</p>
     <div class="kong-ctas">
       <a class="kong-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">Get started free<i class="ti ti-arrow-right" aria-hidden="true"></i></a>
       <a class="kong-cta-secondary" href="https://calendly.com/blake-bookwithkong/30min" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><i class="ti ti-calendar-event" aria-hidden="true"></i>Book a demo call</a>
@@ -6612,6 +6660,11 @@ body { position: relative; }
 
   </div>
 
+  <div class="pricing-limited">
+    <i class="ti ti-flame" aria-hidden="true"></i>
+    <span>Launch pricing, <strong>limited to the first 100 operators</strong>. Lock it in now and your rate stays this way.</span>
+  </div>
+
   <div class="pricing-trust">
     <span><i class="ti ti-shield-check" aria-hidden="true"></i>Risk-free</span>
     <span><i class="ti ti-credit-card-off" aria-hidden="true"></i>No card required</span>
@@ -6684,7 +6737,7 @@ body { position: relative; }
       </div>
       <div class="faq-item">
         <button class="faq-q" type="button">Are there any other fees?<span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></button>
-        <div class="faq-a-wrap"><div class="faq-a">No. There are no guest-facing booking fees, no setup fees, and no cancellation fees. The only other cost is standard payment processing from Stripe or Xendit, which applies with any booking system. Kong is priced this way because it&rsquo;s built for independent tour and activity operators, who shouldn&rsquo;t have to carry heavy booking-software subscriptions or OTA commissions of 20-30%.</div></div>
+        <div class="faq-a-wrap"><div class="faq-a">No. There are no guest-facing booking fees, no setup fees, and no cancellation fees. The only other cost is standard payment processing from Stripe or Xendit, which applies with any booking system. Kong is priced this way because it&rsquo;s built for tour and activity operators, who shouldn&rsquo;t have to carry heavy booking-software subscriptions or OTA commissions of 20-30%.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" type="button">Who holds my money &mdash; Kong, or me?<span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></button>
