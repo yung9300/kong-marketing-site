@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Serif+Display:ital@1&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Refund & Cancellation Policy | Kong</title>
+<meta name="description" content="How refunds and cancellations are handled for bookings made through Kong. Operator and guest responsibilities.">
+
+<!-- Open Graph (minimal — legal pages share one OG image) -->
+<meta property="og:image" content="https://www.bookwithkong.com/images/og-default.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kong">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1a0a2e">
+<style>
+:root {
+  --ink: #1a0a2e;
+  --ink-70: rgba(26, 10, 46, 0.7);
+  --ink-60: rgba(26, 10, 46, 0.6);
+  --ink-45: rgba(26, 10, 46, 0.45);
+  --purple: #3B0F5E;
+  --purple-soft: rgba(59, 15, 94, 0.08);
+  --yellow: #F5C842;
+  --gold: #c89414;
+  --cream-1: #faf7f2;
+  --cream-2: #f7f4ee;
+  --line: rgba(26, 10, 46, 0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+}
+body { overflow-x: clip; max-width: 100vw; }
+
+/* Nav (matches homepage) */
+.kong-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1280px; margin: 0 auto;
+  position: relative; z-index: 30;
+  background: transparent;
+}
+.kong-nav-left { display: flex; align-items: center; gap: 28px; }
+.kong-nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; font-size: 17px; color: var(--ink);
+  text-decoration: none;
+}
+.kong-nav-logo img { width: 32px; height: 32px; }
+.kong-nav-right { display: flex; gap: 24px; align-items: center; }
+.kong-nav-items { display: flex; gap: 26px; align-items: center; }
+.kong-nav-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; font-weight: 500; color: rgba(26, 10, 46, 0.65);
+  cursor: pointer; transition: color 0.2s;
+  text-decoration: none;
+}
+.kong-nav-item:hover { color: var(--ink); }
+.kong-nav-cta {
+  background: var(--purple); color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; font-weight: 600;
+  padding: 10px 18px; border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(59, 15, 94, 0.18);
+}
+.kong-nav-cta:hover { transform: translateY(-1px); background: #4d1378; box-shadow: 0 4px 14px rgba(59, 15, 94, 0.28); }
+
+/* Policy page hero */
+.legal-hero {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 40px 32px;
+  position: relative;
+}
+.legal-breadcrumb {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--ink-45);
+  margin-bottom: 18px;
+  display: flex; align-items: center; gap: 8px;
+  flex-wrap: wrap;
+}
+.legal-breadcrumb a { color: var(--ink-60); text-decoration: none; }
+.legal-breadcrumb a:hover { color: var(--purple); }
+.legal-breadcrumb .sep { color: var(--ink-45); }
+.legal-breadcrumb .here { color: var(--ink); font-weight: 600; }
+
+.legal-h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1.6px;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+.legal-meta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 14px 5px 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-70);
+  margin-bottom: 20px;
+}
+.legal-meta-badge {
+  width: 22px; height: 22px;
+  background: var(--purple);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 11px;
+}
+.legal-intro {
+  font-family: 'Inter', sans-serif;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--ink-70);
+  max-width: 720px;
+  text-wrap: pretty;
+}
+.legal-intro strong { color: var(--ink); font-weight: 600; }
+
+/* Mobile dropdown TOC */
+.legal-toc-select {
+  display: none;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px 24px;
+}
+.legal-toc-select select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231a0a2e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+/* Two-column grid */
+.legal-body {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 16px 40px 100px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Sticky TOC */
+.legal-toc {
+  position: sticky;
+  top: 30px;
+  align-self: start;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+.legal-toc-h {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.legal-toc-list { list-style: none; }
+.legal-toc-list li {
+  margin-bottom: 2px;
+}
+.legal-toc-list a {
+  display: block;
+  padding: 8px 12px 8px 14px;
+  border-left: 2px solid transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink-60);
+  text-decoration: none;
+  line-height: 1.4;
+  border-radius: 0 6px 6px 0;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+.legal-toc-list a:hover { color: var(--ink); background: rgba(255,255,255,0.55); }
+.legal-toc-list a.active {
+  color: var(--purple);
+  border-left-color: var(--purple);
+  background: var(--purple-soft);
+  font-weight: 600;
+}
+.legal-toc-num {
+  display: inline-block;
+  width: 22px;
+  color: var(--ink-45);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.legal-toc-list a.active .legal-toc-num { color: var(--purple); }
+
+/* Main content */
+.legal-content {
+  max-width: 760px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 48px 56px 56px;
+  box-shadow: 0 8px 28px rgba(26, 10, 46, 0.04);
+  font-family: 'Inter', sans-serif;
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--ink-70);
+}
+.legal-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: var(--ink);
+  margin: 48px 0 18px;
+  scroll-margin-top: 24px;
+}
+.legal-content h2:first-child { margin-top: 0; }
+.legal-content h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: var(--ink);
+  margin: 28px 0 10px;
+}
+.legal-content p { margin-bottom: 14px; text-wrap: pretty; }
+.legal-content p strong { color: var(--ink); font-weight: 600; }
+.legal-content ul {
+  margin: 0 0 16px 0;
+  padding-left: 22px;
+  list-style: none;
+}
+.legal-content ul li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+.legal-content ul li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 12px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--purple);
+  opacity: 0.55;
+}
+.legal-content ul li strong { color: var(--ink); font-weight: 600; }
+.legal-content blockquote {
+  margin: 18px 0;
+  padding: 14px 18px;
+  background: rgba(245, 200, 66, 0.10);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+}
+.legal-content blockquote p { color: var(--ink); margin-bottom: 6px; font-size: 14.5px; }
+.legal-content blockquote p:last-child { margin-bottom: 0; }
+.legal-content hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 36px 0 28px;
+}
+
+.legal-back-top {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+}
+.legal-back-top a {
+  color: var(--purple);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 5px;
+  font-weight: 600;
+}
+.legal-back-top a:hover { text-decoration: underline; }
+
+.legal-cross {
+  margin-top: 60px;
+  padding: 28px 32px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  box-shadow: 0 4px 14px rgba(26, 10, 46, 0.04);
+}
+.legal-cross h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.legal-cross a {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--cream-1);
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.2s, transform 0.15s;
+}
+.legal-cross a:hover { border-color: rgba(59,15,94,0.25); transform: translateY(-1px); }
+.legal-cross a .ti {
+  flex-shrink: 0;
+  font-size: 18px;
+  color: var(--purple);
+  margin-top: 2px;
+}
+.legal-cross-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  display: block;
+  line-height: 1.3;
+}
+.legal-cross-sub {
+  font-size: 12.5px;
+  color: var(--ink-60);
+  display: block;
+  margin-top: 2px;
+}
+
+@media (max-width: 980px) {
+  .legal-body {
+    grid-template-columns: 1fr;
+    padding: 8px 22px 64px;
+    gap: 0;
+  }
+  .legal-toc { display: none; }
+  .legal-toc-select { display: block; padding: 0 22px 20px; }
+  .legal-content { padding: 32px 24px 36px; }
+  .legal-hero { padding: 24px 22px 24px; }
+  .legal-h1 { font-size: 34px; letter-spacing: -1px; }
+  .legal-cross { grid-template-columns: 1fr; padding: 22px; }
+}
+@media (max-width: 720px) {
+  .kong-nav { padding: 14px 18px; }
+  .kong-nav-items { gap: 14px; }
+}
+
+/* Footer (matches homepage) */
+.kong-footer {
+  background: white;
+  border-top: 1px solid var(--line);
+  padding: 60px 40px 30px;
+}
+.kong-footer-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.3fr;
+  gap: 56px;
+  align-items: start;
+}
+.kong-footer-brand h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.kong-footer-subscribe {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--cream-1);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 4px 4px 16px;
+  max-width: 360px;
+}
+.kong-footer-subscribe input {
+  background: transparent;
+  border: none; outline: none;
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  color: var(--ink);
+  padding: 8px 4px;
+}
+.kong-footer-subscribe input::placeholder { color: var(--ink-45); }
+.kong-footer-subscribe button {
+  background: var(--purple); color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13.5px; font-weight: 600;
+  cursor: pointer;
+}
+.kong-footer-col h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.kong-footer-col ul { list-style: none; }
+.kong-footer-col li { margin-bottom: 10px; }
+.kong-footer-col a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--ink-70);
+  text-decoration: none;
+}
+.kong-footer-col a:hover { color: var(--ink); }
+.kong-footer-bottom {
+  max-width: 1240px;
+  margin: 48px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--ink-45);
+  line-height: 1.7;
+}
+.kong-footer-legal { display: flex; flex-direction: column; gap: 2px; }
+.kong-footer-socials { display: flex; gap: 10px; }
+.kong-footer-socials a {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--ink-60);
+  text-decoration: none;
+}
+.kong-footer-socials a:hover { color: var(--purple); border-color: var(--purple); background: var(--purple-soft); }
+@media (max-width: 720px) {
+  .kong-footer { padding: 50px 20px 24px; }
+  .kong-footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .kong-footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+</style>
+<style>
+/* ── Industries nav dropdown ───────────────── */
+.kong-nav-dd { position: relative; display: inline-flex; align-items: center; }
+.kong-nav-dd-trigger {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: none; border: none; cursor: pointer;
+  font-family: inherit; font-size: 14px; font-weight: 500;
+  color: rgba(26,10,46,0.65); padding: 4px 0; transition: color 0.2s;
+}
+.kong-nav-dd-trigger .ti { font-size: 15px; transition: transform 0.25s; }
+.kong-nav-dd:hover .kong-nav-dd-trigger,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger { color: #1a0a2e; }
+.kong-nav-dd:hover .kong-nav-dd-trigger .ti,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger .ti { transform: rotate(180deg); }
+.kong-nav-dd::after { content:''; position:absolute; left:0; right:0; top:100%; height:18px; }
+.kong-nav-dd-menu {
+  position: absolute; top: calc(100% + 16px); left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: #fff; border: 1px solid var(--line, rgba(26,10,46,0.08)); border-radius: 14px;
+  box-shadow: 0 18px 44px -14px rgba(26,10,46,0.22);
+  padding: 8px; min-width: 234px;
+  display: flex; flex-direction: column; gap: 1px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s; z-index: 200;
+}
+.kong-nav-dd:hover .kong-nav-dd-menu,
+.kong-nav-dd:focus-within .kong-nav-dd-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.kong-nav-dd-menu a {
+  display: flex; align-items: center; gap: 11px;
+  padding: 9px 12px; border-radius: 9px;
+  font-size: 14px; font-weight: 500; color: var(--ink-70, rgba(26,10,46,0.7));
+  text-decoration: none; white-space: nowrap; transition: background 0.15s, color 0.15s;
+}
+.kong-nav-dd-menu a:hover { background: var(--purple-soft, rgba(59,15,94,0.08)); color: var(--purple, #3B0F5E); }
+.kong-nav-dd-menu a .ti { font-size: 16px; color: var(--purple, #3B0F5E); opacity: 0.85; }
+.kong-nav-dd-divider { height: 1px; background: var(--line, rgba(26,10,46,0.08)); margin: 6px 4px; }
+.kong-mobile-dd-label {
+  font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-45, rgba(26,10,46,0.45));
+  padding: 6px 0 2px;
+}
+.kong-mobile-sub { padding-left: 14px !important; }
+</style>
+</head>
+<body>
+
+<nav class="kong-nav">
+  <div class="kong-nav-left">
+    <a class="kong-nav-logo" href="/">
+      <img src="../images/logo.webp" alt="Kong">
+      Kong
+    </a>
+  </div>
+  <div class="kong-nav-right">
+    <div class="kong-nav-items">
+      <div class="kong-nav-dd">
+        <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Industries<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+        <div class="kong-nav-dd-menu" role="menu">
+          <a href="../class-booking-system" role="menuitem"><i class="ti ti-building-store" aria-hidden="true"></i>Workshops &amp; Classes</a>
+          <div class="kong-nav-dd-divider"></div>
+          <a href="../atv-tours" role="menuitem"><i class="ti ti-car-off-road" aria-hidden="true"></i>ATV Tours</a>
+          <a href="../cooking-classes" role="menuitem"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>Cooking Classes</a>
+          <a href="../wine-tours" role="menuitem"><i class="ti ti-glass-full" aria-hidden="true"></i>Wine Tours</a>
+          <a href="../charter-bookings" role="menuitem"><i class="ti ti-anchor" aria-hidden="true"></i>Charters</a>
+          <a href="../adventure-tours" role="menuitem"><i class="ti ti-mountain" aria-hidden="true"></i>Adventure Tours</a>
+          <a href="../food-tours" role="menuitem"><i class="ti ti-soup" aria-hidden="true"></i>Food Tours</a>
+          <a href="../dive-centres" role="menuitem"><i class="ti ti-scuba-mask" aria-hidden="true"></i>Dive Centres</a>
+          <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
+        </div>
+      </div>
+      <a class="kong-nav-item" href="../blog">Blog</a>
+      <a class="kong-nav-item" href="../about">About</a>
+      <a class="kong-nav-item" href="../class-booking-system">Features</a>
+      <a class="kong-nav-item" href="/#pricing">Pricing</a>
+      <a class="kong-nav-item" href="/#faq">FAQ</a>
+    </div>
+    <a href="https://app.bookwithkong.com" target="_blank" rel="noopener" class="kong-nav-cta">Get started free</a>
+  </div>
+</nav>
+
+<section class="legal-hero">
+  <div class="legal-breadcrumb">
+    <a href="/">Home</a>
+    <span class="sep">/</span>
+    <a href="../legal-terms">Legal &amp; Policies</a>
+    <span class="sep">/</span>
+    <span class="here">Refund Policy</span>
+  </div>
+  <h1 class="legal-h1">Refund Policy</h1>
+  <div class="legal-meta"><span class="legal-meta-badge"><i class="ti ti-file-text"></i></span>Version 1.0 | Last Updated: November 25, 2025</div>
+  <div class="legal-intro"><p>This Refund and Cancellation Policy explains how refunds are processed for bookings made through the Kong platform ("Platform"), and outlines your responsibilities as an operator when handling guest cancellations and refunds.</p>
+<p>This policy applies to all operators using SUPERSTRING SDN. BHD. (202401016432 (1562282-H)) ("Kong", "we", "us", or "our") to manage bookings and process payments.</p></div>
+</section>
+
+<div class="legal-toc-select">
+  <select id="legal-toc-jump">
+    <option value="">Jump to section…</option>
+    <option value="section-1">1. Overview of Payment and Refund Structure</option>
+    <option value="section-2">2. Your Cancellation Policy Requirements</option>
+    <option value="section-3">3. Processing Guest-Initiated Cancellations</option>
+    <option value="section-4">4. Processing Operator-Initiated Cancellations</option>
+    <option value="section-5">5. Special Cancellation Scenarios</option>
+    <option value="section-6">6. Refund Processing Timeline</option>
+    <option value="section-7">7. Disputes and Chargebacks</option>
+    <option value="section-8">8. Your Legal Obligations</option>
+    <option value="section-9">9. Best Practices for Refund Management</option>
+    <option value="section-10">10. Exceptions and Special Situations</option>
+    <option value="section-11">11. Kong's Booking Fee Policies</option>
+    <option value="section-12">12. Prohibited Practices</option>
+    <option value="section-13">13. Reporting and Monitoring</option>
+    <option value="section-14">14. Updates and Changes</option>
+  </select>
+</div>
+
+<div class="legal-body">
+  <aside class="legal-toc">
+  <div class="legal-toc-h">On this page</div>
+  <ul class="legal-toc-list">
+      <li><a href="#section-1" data-target="section-1"><span class="legal-toc-num">1.</span>Overview of Payment and Refund Structure</a></li>
+      <li><a href="#section-2" data-target="section-2"><span class="legal-toc-num">2.</span>Your Cancellation Policy Requirements</a></li>
+      <li><a href="#section-3" data-target="section-3"><span class="legal-toc-num">3.</span>Processing Guest-Initiated Cancellations</a></li>
+      <li><a href="#section-4" data-target="section-4"><span class="legal-toc-num">4.</span>Processing Operator-Initiated Cancellations</a></li>
+      <li><a href="#section-5" data-target="section-5"><span class="legal-toc-num">5.</span>Special Cancellation Scenarios</a></li>
+      <li><a href="#section-6" data-target="section-6"><span class="legal-toc-num">6.</span>Refund Processing Timeline</a></li>
+      <li><a href="#section-7" data-target="section-7"><span class="legal-toc-num">7.</span>Disputes and Chargebacks</a></li>
+      <li><a href="#section-8" data-target="section-8"><span class="legal-toc-num">8.</span>Your Legal Obligations</a></li>
+      <li><a href="#section-9" data-target="section-9"><span class="legal-toc-num">9.</span>Best Practices for Refund Management</a></li>
+      <li><a href="#section-10" data-target="section-10"><span class="legal-toc-num">10.</span>Exceptions and Special Situations</a></li>
+      <li><a href="#section-11" data-target="section-11"><span class="legal-toc-num">11.</span>Kong's Booking Fee Policies</a></li>
+      <li><a href="#section-12" data-target="section-12"><span class="legal-toc-num">12.</span>Prohibited Practices</a></li>
+      <li><a href="#section-13" data-target="section-13"><span class="legal-toc-num">13.</span>Reporting and Monitoring</a></li>
+      <li><a href="#section-14" data-target="section-14"><span class="legal-toc-num">14.</span>Updates and Changes</a></li>
+  </ul>
+</aside>
+
+  <main class="legal-content">
+<h2 id="section-1">1. Overview of Payment and Refund Structure</h2>
+<h3>1.1 Payment Flow</h3>
+<p>When a guest books through Kong:</p>
+<p><strong>Guest Payment Breakdown:</strong></p>
+<ul>
+<li>Tour/Activity Price: Paid directly to your connected payment gateway account</li>
+<li>Kong Booking Fee (1.8%): Automatically split to Kong's account</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Tour Price: RM 100.00</li>
+<li>Booking Fee (1.8%): RM 1.80</li>
+<li>Total Charged to Guest: RM 101.80</li>
+</ul>
+<p><strong>Payment Receipt:</strong></p>
+<ul>
+<li>You receive: RM 100.00 (in your payment gateway account)</li>
+<li>Kong receives: RM 1.80 (automatically split)</li>
+</ul>
+<h3>1.2 Refund Responsibilities</h3>
+<p><strong>You are responsible for:</strong></p>
+<ul>
+<li>Refunding the tour/activity price according to your cancellation policy</li>
+<li>Processing refunds through your payment gateway account</li>
+<li>Communicating with guests about refund status</li>
+<li>Maintaining clear, fair cancellation policies</li>
+</ul>
+<p><strong>Kong is responsible for:</strong></p>
+<ul>
+<li>Refunding the 1.8% booking fee only when you initiate a cancellation</li>
+<li>Platform functionality for managing cancellations</li>
+<li>Providing refund reporting and tracking</li>
+</ul>
+<h2 id="section-2">2. Your Cancellation Policy Requirements</h2>
+<h3>2.1 Setting Your Cancellation Policy</h3>
+<p>You must establish a clear, written cancellation policy for your tours and activities that includes:</p>
+<p><strong>Required Elements:</strong></p>
+<ul>
+<li>Cancellation deadlines (e.g., "72 hours before tour start")</li>
+<li>Refund percentages for different time periods</li>
+<li>No-show policy</li>
+<li>Late arrival policy</li>
+<li>Weather cancellation terms</li>
+<li>Force majeure provisions</li>
+</ul>
+<p><strong>Example Policy Structure:</strong></p>
+<ul>
+<li>7+ days before: 100% refund</li>
+<li>3-6 days before: 50% refund</li>
+<li>2 days or less: No refund</li>
+<li>No-shows: No refund</li>
+</ul>
+<h3>2.2 Displaying Your Policy</h3>
+<p>Your cancellation policy must be:</p>
+<ul>
+<li>Clearly displayed on booking pages before payment</li>
+<li>Included in booking confirmation emails</li>
+<li>Accessible to guests throughout the booking process</li>
+<li>Written in clear, understandable language</li>
+</ul>
+<p>Kong's Platform allows you to configure and display your cancellation policy. Guests must acknowledge your policy before completing their booking.</p>
+<h3>2.3 Policy Compliance</h3>
+<p>Your cancellation policy must:</p>
+<ul>
+<li>Comply with Malaysian Consumer Protection Act 1999</li>
+<li>Be fair and reasonable</li>
+<li>Not contain misleading or deceptive terms</li>
+<li>Honor the terms you've published</li>
+</ul>
+<p><strong>Prohibited Practices:</strong></p>
+<ul>
+<li>Refusing legitimate refunds per your stated policy</li>
+<li>Changing policy terms after booking without guest consent</li>
+<li>Imposing hidden cancellation fees</li>
+<li>Making refunds unreasonably difficult to obtain</li>
+</ul>
+<h2 id="section-3">3. Processing Guest-Initiated Cancellations</h2>
+<h3>3.1 When a Guest Cancels</h3>
+<p><strong>Your Process:</strong></p>
+<p><strong>Step 1: Receive Cancellation Request</strong></p>
+<ul>
+<li>Guests may contact you via email, phone, or Platform messaging</li>
+<li>Record the cancellation request with timestamp</li>
+<li>Acknowledge receipt within 24 hours</li>
+</ul>
+<p><strong>Step 2: Apply Your Cancellation Policy</strong></p>
+<ul>
+<li>Determine refund eligibility based on your policy</li>
+<li>Calculate the refund amount</li>
+<li>Communicate the refund amount to the guest</li>
+</ul>
+<p><strong>Step 3: Process Refund Through Your Payment Gateway</strong></p>
+<ul>
+<li>Log into your payment gateway account (Stripe, Xendit, etc.)</li>
+<li>Locate the original transaction</li>
+<li>Process the refund for the eligible tour price amount</li>
+<li>Processing time: 1-3 business days from your gateway to guest's bank</li>
+</ul>
+<p><strong>Step 4: Update Kong Platform</strong></p>
+<ul>
+<li>Mark the booking as cancelled in Kong</li>
+<li>Record the refund amount processed</li>
+<li>Add cancellation notes for your records</li>
+</ul>
+<h3>3.2 Kong Booking Fee on Guest Cancellations</h3>
+<p><strong>Important: Kong's 1.8% booking fee is non-refundable when guests cancel.</strong></p>
+<p><strong>What this means:</strong></p>
+<ul>
+<li>You refund only the tour price (or eligible portion)</li>
+<li>Kong retains the 1.8% booking fee</li>
+<li>Guests are informed that booking fees are non-refundable</li>
+</ul>
+<p><strong>Refund Amount Example:</strong></p>
+<ul>
+<li>Original booking: RM 100 tour + RM 1.80 fee = RM 101.80 total</li>
+<li>Guest cancels with 100% refund eligibility</li>
+<li><strong>You refund: RM 100.00 (tour price only)</strong></li>
+<li>Kong retains: RM 1.80 (booking fee)</li>
+<li>Guest receives: RM 100.00</li>
+</ul>
+<h3>3.3 Partial Refunds</h3>
+<p>If your policy provides partial refunds:</p>
+<p><strong>Calculate based on tour price only:</strong></p>
+<ul>
+<li>Original tour price: RM 100</li>
+<li>50% refund policy applies</li>
+<li>You refund: RM 50.00</li>
+<li>Kong retains: RM 1.80 (booking fee remains non-refundable)</li>
+<li>Guest receives: RM 50.00</li>
+</ul>
+<h3>3.4 Payment Gateway Fees</h3>
+<p><strong>Important Consideration:</strong></p>
+<p>Payment gateway providers (Stripe, Xendit) charge transaction fees that may be non-refundable. When you process a refund:</p>
+<ul>
+<li>You may lose the original transaction fee (typically 2-3%)</li>
+<li>Some gateways charge a fee for processing refunds</li>
+<li>Factor these costs into your cancellation policy</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Guest paid RM 100 tour price</li>
+<li>Your gateway kept RM 2.90 transaction fee (2.9%)</li>
+<li>You received RM 97.10 net</li>
+<li>Guest cancels and you refund RM 100</li>
+<li><strong>Your actual loss: RM 2.90 (gateway fee not recovered)</strong></li>
+</ul>
+<p>Consider structuring your cancellation policy to account for these costs.</p>
+<h2 id="section-4">4. Processing Operator-Initiated Cancellations</h2>
+<h3>4.1 When You Must Cancel</h3>
+<p>If you need to cancel a booking (weather, insufficient bookings, operational issues, etc.):</p>
+<p><strong>You must provide:</strong></p>
+<ul>
+<li>Prompt notification to the guest (as soon as possible)</li>
+<li>Full refund of the tour/activity price</li>
+<li>Professional explanation and apology</li>
+</ul>
+<p><strong>Step-by-Step Process:</strong></p>
+<p><strong>Step 1: Notify the Guest</strong></p>
+<ul>
+<li>Contact guest via email and phone immediately</li>
+<li>Explain reason for cancellation</li>
+<li>Apologize for inconvenience</li>
+<li>Offer alternative dates if possible</li>
+</ul>
+<p><strong>Step 2: Process Full Tour Price Refund</strong></p>
+<ul>
+<li>Refund 100% of the tour price through your payment gateway</li>
+<li>Process within 24 hours of cancellation</li>
+<li>Confirm refund with guest</li>
+</ul>
+<p><strong>Step 3: Notify Kong for Booking Fee Refund</strong></p>
+<ul>
+<li>Mark booking as operator-cancelled in Kong Platform</li>
+<li>Kong will automatically process the 1.8% booking fee refund to the guest</li>
+<li>This happens separately from your refund</li>
+</ul>
+<p><strong>Step 4: Document Everything</strong></p>
+<ul>
+<li>Record cancellation reason</li>
+<li>Keep communication records</li>
+<li>Note alternative arrangements offered</li>
+</ul>
+<h3>4.2 Kong Booking Fee Refunds on Operator Cancellations</h3>
+<p><strong>When you cancel, guests receive:</strong></p>
+<ul>
+<li>100% tour price refund from you</li>
+<li>100% booking fee refund from Kong</li>
+</ul>
+<p><strong>Kong's Refund Process:</strong></p>
+<ul>
+<li>Automatic when you mark booking as operator-cancelled</li>
+<li>Processed within 3-5 business days</li>
+<li>Refunded to guest's original payment method</li>
+<li>No action required from you beyond marking the cancellation</li>
+</ul>
+<p><strong>Total Guest Refund:</strong></p>
+<ul>
+<li>Your refund: RM 100.00 (tour price)</li>
+<li>Kong's refund: RM 1.80 (booking fee)</li>
+<li>Guest receives: RM 101.80 (full amount paid)</li>
+</ul>
+<h3>4.3 Repeated Operator Cancellations</h3>
+<p><strong>Performance Standards:</strong></p>
+<p>Excessive operator-initiated cancellations may result in:</p>
+<ul>
+<li>Platform performance warnings</li>
+<li>Reduced visibility in distribution channels</li>
+<li>Account review</li>
+<li>Potential account suspension</li>
+</ul>
+<p><strong>Acceptable Cancellation Rate:</strong></p>
+<ul>
+<li>Less than 5% of confirmed bookings</li>
+<li>Higher rates require documented, valid reasons (weather, force majeure, etc.)</li>
+</ul>
+<p>Maintain high reliability to build guest trust and maximize bookings.</p>
+<h2 id="section-5">5. Special Cancellation Scenarios</h2>
+<h3>5.1 Weather-Related Cancellations</h3>
+<p><strong>When You Cancel Due to Weather:</strong></p>
+<ul>
+<li>Treat as operator-initiated cancellation</li>
+<li>Provide full refund (tour price + booking fee refunded)</li>
+<li>Document weather conditions</li>
+<li>Offer alternative dates when possible</li>
+</ul>
+<p><strong>When Guest Cancels Due to Weather (but tour is running):</strong></p>
+<ul>
+<li>Apply your standard cancellation policy</li>
+<li>Booking fee remains non-refundable</li>
+<li>Consider offering flexibility as good customer service</li>
+</ul>
+<p><strong>Best Practice:</strong> Include weather cancellation terms in your policy (e.g., "Tours cancelled by operator due to unsafe weather conditions receive full refunds").</p>
+<h3>5.2 No-Shows</h3>
+<p><strong>Guest No-Shows:</strong></p>
+<ul>
+<li>Apply your no-show policy (typically no refund)</li>
+<li>Booking fee is non-refundable</li>
+<li>Document the no-show with timestamp</li>
+<li>Consider communication in case of legitimate emergency</li>
+</ul>
+<p><strong>Operator No-Shows (you don't show up):</strong></p>
+<ul>
+<li>Treat as operator cancellation</li>
+<li>Full refund required (tour price + booking fee)</li>
+<li>May violate Terms and Conditions</li>
+<li>Could result in account penalties</li>
+</ul>
+<h3>5.3 Late Arrivals</h3>
+<p><strong>Handling Late Guests:</strong></p>
+<p>Your policy should address:</p>
+<ul>
+<li>Grace period for late arrival (e.g., 15 minutes)</li>
+<li>Refund policy if guest misses departure</li>
+<li>Communication expectations</li>
+</ul>
+<p><strong>Recommended Approach:</strong></p>
+<ul>
+<li>Allow reasonable grace period</li>
+<li>Attempt to accommodate if possible</li>
+<li>If departure missed, apply your cancellation policy</li>
+<li>Document arrival time and communication</li>
+</ul>
+<h3>5.4 Medical Emergencies and Force Majeure</h3>
+<p><strong>Guest Medical Emergencies:</strong></p>
+<ul>
+<li>Not required to refund beyond your stated policy</li>
+<li>Consider offering flexibility as goodwill</li>
+<li>Suggest guests use travel insurance</li>
+<li>Document the situation</li>
+</ul>
+<p><strong>Force Majeure Events:</strong> (Natural disasters, pandemics, government restrictions)</p>
+<ul>
+<li>Assess situation case-by-case</li>
+<li>Consider offering credits instead of refunds if cash flow is constrained</li>
+<li>Communicate proactively with affected guests</li>
+<li>Kong may waive booking fee refund requirements during declared emergencies</li>
+</ul>
+<p><strong>Best Practice:</strong> Include force majeure provisions in your cancellation policy.</p>
+<h2 id="section-6">6. Refund Processing Timeline</h2>
+<h3>6.1 Standard Timeline</h3>
+<p><strong>Your Processing:</strong></p>
+<ul>
+<li>Decision on refund eligibility: Within 24 hours of request</li>
+<li>Initiate refund through payment gateway: Within 1-3 business days</li>
+<li>Gateway processes refund: 1-3 business days</li>
+<li>Guest's bank credits account: 5-10 business days</li>
+<li><strong>Total: 7-16 business days typically</strong></li>
+</ul>
+<p><strong>Kong Booking Fee Refunds (Operator Cancellations):</strong></p>
+<ul>
+<li>Triggered by your cancellation in Platform</li>
+<li>Kong processes: 3-5 business days</li>
+<li>Guest's bank credits: 5-10 business days</li>
+<li><strong>Total: 8-15 business days typically</strong></li>
+</ul>
+<h3>6.2 Your Service Standards</h3>
+<p><strong>Recommended Response Times:</strong></p>
+<ul>
+<li>Acknowledge cancellation requests: Within 24 hours</li>
+<li>Determine refund eligibility: Within 24-48 hours</li>
+<li>Process approved refunds: Within 3 business days</li>
+<li>Respond to refund inquiries: Within 48 hours</li>
+</ul>
+<p>Quick refund processing improves guest satisfaction and reduces disputes.</p>
+<h2 id="section-7">7. Disputes and Chargebacks</h2>
+<h3>7.1 Handling Refund Disputes</h3>
+<p><strong>When a Guest Disputes Your Refund Decision:</strong></p>
+<p><strong>Step 1: Review Your Policy</strong></p>
+<ul>
+<li>Confirm your policy was applied correctly</li>
+<li>Check booking confirmation showed policy clearly</li>
+<li>Review all communication records</li>
+</ul>
+<p><strong>Step 2: Communicate with Guest</strong></p>
+<ul>
+<li>Explain your policy and its application</li>
+<li>Provide documentation (booking confirmation, policy, etc.)</li>
+<li>Listen to guest's concerns</li>
+<li>Consider reasonable compromises</li>
+</ul>
+<p><strong>Step 3: Escalation</strong></p>
+<ul>
+<li>If unresolved, guest may contact Kong</li>
+<li>Kong may facilitate communication</li>
+<li>Kong cannot override your refund decision</li>
+<li>Final decision rests with you (unless clear policy violation)</li>
+</ul>
+<h3>7.2 Chargeback Management</h3>
+<p><strong>Understanding Chargebacks:</strong></p>
+<p>A chargeback occurs when a guest disputes the charge with their bank/card issuer. This is separate from refund requests.</p>
+<p><strong>Your Responsibilities:</strong></p>
+<p><strong>When a Chargeback Occurs:</strong> 1. Your payment gateway will notify you 2. You have limited time to respond (typically 7-10 days) 3. You must provide evidence to dispute the chargeback</p>
+<p><strong>Evidence to Gather:</strong></p>
+<ul>
+<li>Booking confirmation with cancellation policy</li>
+<li>Communication records with guest</li>
+<li>Proof of service delivery (for completed tours)</li>
+<li>Your cancellation policy as displayed at booking</li>
+<li>Refund correspondence (if applicable)</li>
+</ul>
+<p><strong>Chargeback Outcomes:</strong></p>
+<ul>
+<li><strong>You win:</strong> Funds are returned to your account, guest's card is re-charged</li>
+<li><strong>You lose:</strong> Funds are deducted, plus chargeback fee (RM 60-100 typically)</li>
+</ul>
+<h3>7.3 Preventing Chargebacks</h3>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Display cancellation policy clearly before booking</li>
+<li>Require policy acknowledgment at checkout</li>
+<li>Respond quickly to cancellation requests</li>
+<li>Process legitimate refunds promptly</li>
+<li>Document all guest communications</li>
+<li>Deliver services as described in listings</li>
+<li>Follow your stated policies consistently</li>
+</ul>
+<p><strong>High Chargeback Rates Can Result In:</strong></p>
+<ul>
+<li>Increased payment gateway fees</li>
+<li>Payment gateway account restrictions or termination</li>
+<li>Platform performance warnings</li>
+<li>Account review or suspension</li>
+</ul>
+<h2 id="section-8">8. Your Legal Obligations</h2>
+<h3>8.1 Malaysian Consumer Protection Requirements</h3>
+<p>Under the Consumer Protection Act 1999 and related regulations:</p>
+<p><strong>You must:</strong></p>
+<ul>
+<li>Provide clear, accurate cancellation terms before purchase</li>
+<li>Honor the cancellation policy you've published</li>
+<li>Process legitimate refunds within reasonable timeframes</li>
+<li>Not engage in misleading or deceptive conduct</li>
+<li>Provide receipts and records of transactions</li>
+</ul>
+<p><strong>You cannot:</strong></p>
+<ul>
+<li>Impose unfair contract terms</li>
+<li>Refuse refunds arbitrarily</li>
+<li>Make false or misleading representations</li>
+<li>Engage in unconscionable conduct</li>
+</ul>
+<h3>8.2 Record Keeping</h3>
+<p><strong>Required Records:</strong></p>
+<ul>
+<li>All booking transactions and confirmations</li>
+<li>Cancellation requests and responses</li>
+<li>Refund processing records</li>
+<li>Communication with guests</li>
+<li>Cancellation policy versions</li>
+<li>Payment gateway transaction records</li>
+</ul>
+<p><strong>Retention Period:</strong></p>
+<ul>
+<li>Minimum 7 years for tax purposes</li>
+<li>Longer if required by specific regulations</li>
+<li>Digital records acceptable</li>
+</ul>
+<h3>8.3 Tax Implications</h3>
+<p><strong>Important Tax Considerations:</strong></p>
+<p><strong>Refunded Amounts:</strong></p>
+<ul>
+<li>May affect your taxable revenue calculations</li>
+<li>Consult with your accountant on proper treatment</li>
+<li>Maintain detailed refund records for tax filings</li>
+<li>Report accurately on SST and income tax returns</li>
+</ul>
+<p><strong>Payment Gateway Fees:</strong></p>
+<ul>
+<li>Generally deductible as business expenses</li>
+<li>Including fees lost on refunds</li>
+</ul>
+<p><strong>Booking Fees:</strong></p>
+<ul>
+<li>Paid to Kong, not part of your revenue</li>
+<li>You do not report Kong's booking fees in your taxes</li>
+</ul>
+<h2 id="section-9">9. Best Practices for Refund Management</h2>
+<h3>9.1 Creating Fair Policies</h3>
+<p><strong>Balanced Approach:</strong></p>
+<ul>
+<li>Protect your business from revenue loss</li>
+<li>Provide reasonable flexibility for guests</li>
+<li>Consider industry norms in your market</li>
+<li>Be competitive with similar operators</li>
+</ul>
+<p><strong>Policy Examples by Tour Type:</strong></p>
+<p><strong>Short Tours (2-4 hours):</strong></p>
+<ul>
+<li>48 hours: 100% refund</li>
+<li>24-47 hours: 50% refund</li>
+<li>Less than 24 hours: No refund</li>
+</ul>
+<p><strong>Full-Day Tours:</strong></p>
+<ul>
+<li>7+ days: 100% refund</li>
+<li>3-6 days: 50% refund</li>
+<li>Less than 3 days: No refund</li>
+</ul>
+<p><strong>Multi-Day Packages:</strong></p>
+<ul>
+<li>30+ days: 100% refund</li>
+<li>15-29 days: 75% refund</li>
+<li>8-14 days: 50% refund</li>
+<li>7 days or less: 25% refund</li>
+</ul>
+<p><strong>Adjust based on:</strong></p>
+<ul>
+<li>Your operational costs</li>
+<li>Rebooking likelihood</li>
+<li>Deposit and prepayment amounts</li>
+<li>Industry standards</li>
+</ul>
+<h3>9.2 Communication Excellence</h3>
+<p><strong>Proactive Communication:</strong></p>
+<ul>
+<li>Send booking confirmations immediately</li>
+<li>Include cancellation policy in all communications</li>
+<li>Send reminders 7 days and 24 hours before tour</li>
+<li>Provide easy cancellation contact methods</li>
+</ul>
+<p><strong>Handling Cancellations:</strong></p>
+<ul>
+<li>Respond promptly and professionally</li>
+<li>Show empathy for guest situations</li>
+<li>Explain your policy clearly</li>
+<li>Offer alternatives when possible (reschedule, credits, etc.)</li>
+<li>Process refunds quickly</li>
+</ul>
+<p><strong>Template Responses:</strong></p>
+<p>Consider preparing templates for:</p>
+<ul>
+<li>Cancellation acknowledgment</li>
+<li>Refund approval notifications</li>
+<li>Refund denial explanations</li>
+<li>Operator-initiated cancellation apologies</li>
+<li>Weather cancellation notices</li>
+</ul>
+<h3>9.3 Using Kong Platform Features</h3>
+<p><strong>Cancellation Management Tools:</strong></p>
+<ul>
+<li>Mark bookings as cancelled with reason codes</li>
+<li>Track refund processing status</li>
+<li>Generate cancellation reports</li>
+<li>Monitor cancellation rate metrics</li>
+<li>Set automated cancellation notifications</li>
+</ul>
+<p><strong>Financial Tracking:</strong></p>
+<ul>
+<li>View booking fee calculations</li>
+<li>Track refund transactions</li>
+<li>Generate financial reports</li>
+<li>Export data for accounting</li>
+</ul>
+<h2 id="section-10">10. Exceptions and Special Situations</h2>
+<h3>10.1 Group Bookings</h3>
+<p><strong>Handling Group Cancellations:</strong></p>
+<p><strong>Full Group Cancellation:</strong></p>
+<ul>
+<li>Apply your cancellation policy to total booking amount</li>
+<li>Process single refund for entire group</li>
+<li>One booking fee for entire booking</li>
+</ul>
+<p><strong>Partial Group Cancellation:</strong></p>
+<ul>
+<li>Determine if your policy allows participant reduction</li>
+<li>Calculate refund based on reduced participant number</li>
+<li>Consider operational impact (minimum group size)</li>
+<li>Original booking fee is not refundable (applied to original booking)</li>
+</ul>
+<p><strong>Best Practice:</strong> Specify group cancellation terms in your policy.</p>
+<h3>10.2 Repeat or Serial Cancellations</h3>
+<p><strong>Guest Pattern Behavior:</strong></p>
+<p>If a guest repeatedly books and cancels:</p>
+<ul>
+<li>Document the pattern</li>
+<li>You may decline future bookings</li>
+<li>Consider requiring non-refundable deposits</li>
+<li>Contact Kong if suspicious behavior</li>
+</ul>
+<p><strong>Preventing Abuse:</strong></p>
+<ul>
+<li>Set reasonable cancellation deadlines</li>
+<li>Consider deposit requirements for repeat offenders</li>
+<li>Flag unusual patterns to Kong support</li>
+</ul>
+<h3>10.3 Platform Technical Issues</h3>
+<p><strong>If Kong Platform Causes Booking Errors:</strong></p>
+<ul>
+<li>Kong will work with you to resolve</li>
+<li>Affected guests entitled to full refund (tour price + booking fee)</li>
+<li>Kong may cover costs depending on circumstances</li>
+<li>Document technical issues thoroughly</li>
+</ul>
+<p><strong>Report immediately:</strong></p>
+<ul>
+<li>Booking system failures</li>
+<li>Payment processing errors</li>
+<li>Inventory synchronization issues</li>
+<li>Communication delivery failures</li>
+</ul>
+<h2 id="section-11">11. Kong's Booking Fee Policies</h2>
+<h3>11.1 When Booking Fees Are Non-Refundable</h3>
+<p>Kong retains the 1.8% booking fee for:</p>
+<ul>
+<li>Guest-initiated cancellations (regardless of your refund policy)</li>
+<li>No-shows</li>
+<li>Guest late arrivals resulting in missed tours</li>
+<li>Any cancellation initiated by the guest</li>
+</ul>
+<p><strong>Rationale:</strong> The booking fee covers Platform services rendered:</p>
+<ul>
+<li>Processing the booking transaction</li>
+<li>Payment facilitation</li>
+<li>Communication infrastructure</li>
+<li>System availability</li>
+</ul>
+<p>These services are provided regardless of cancellation.</p>
+<h3>11.2 When Booking Fees Are Refunded</h3>
+<p>Kong refunds the 1.8% booking fee when:</p>
+<ul>
+<li>You (operator) cancel the booking</li>
+<li>Platform technical failure causes booking error</li>
+<li>Extreme circumstances at Kong's discretion</li>
+</ul>
+<p><strong>Refund Process:</strong></p>
+<ul>
+<li>Automatic when marked as operator cancellation</li>
+<li>Processed separately to guest</li>
+<li>No action required from you</li>
+</ul>
+<h3>11.3 Booking Fee Disputes</h3>
+<p>If you believe a booking fee should be refunded due to exceptional circumstances:</p>
+<p><strong>Contact Kong:</strong></p>
+<ul>
+<li>Email: blake@bookwithkong.com</li>
+<li>Subject: "Booking Fee Refund Request - [Booking Reference]"</li>
+<li>Provide: Full explanation and supporting documentation</li>
+</ul>
+<p><strong>Kong will review:</strong></p>
+<ul>
+<li>Circumstances of the cancellation</li>
+<li>Supporting evidence</li>
+<li>Platform records</li>
+<li>Your account history</li>
+</ul>
+<p><strong>Decision is final:</strong> Kong has sole discretion on booking fee refunds outside standard policy.</p>
+<h2 id="section-12">12. Prohibited Practices</h2>
+<p><strong>You may not:</strong></p>
+<p><strong>Related to Refunds:</strong></p>
+<ul>
+<li>Refuse legitimate refunds per your stated policy</li>
+<li>Delay refunds unreasonably to gain interest</li>
+<li>Charge hidden cancellation fees not in your policy</li>
+<li>Process partial refunds without clear policy basis</li>
+<li>Retaliate against guests who request refunds</li>
+</ul>
+<p><strong>Related to Policies:</strong></p>
+<ul>
+<li>Change cancellation terms after booking without consent</li>
+<li>Provide different policies to different guests</li>
+<li>Hide or obscure cancellation terms at booking</li>
+<li>Make refund process intentionally difficult</li>
+<li>Misrepresent your cancellation policy</li>
+</ul>
+<p><strong>Consequences:</strong></p>
+<ul>
+<li>Platform performance warnings</li>
+<li>Mandatory policy corrections</li>
+<li>Account suspension or termination</li>
+<li>Liability for guest damages</li>
+<li>Legal action for consumer law violations</li>
+</ul>
+<h2 id="section-13">13. Reporting and Monitoring</h2>
+<h3>13.1 Your Dashboard Metrics</h3>
+<p>Kong Platform provides:</p>
+<ul>
+<li>Cancellation rate tracking</li>
+<li>Refund amount totals</li>
+<li>Booking fee calculations</li>
+<li>Guest satisfaction related to refunds</li>
+<li>Chargeback rate monitoring</li>
+</ul>
+<p><strong>Review regularly to:</strong></p>
+<ul>
+<li>Identify trends</li>
+<li>Adjust policies if needed</li>
+<li>Improve guest satisfaction</li>
+<li>Reduce cancellations</li>
+</ul>
+<h3>13.2 Performance Standards</h3>
+<p><strong>Healthy Metrics:</strong></p>
+<ul>
+<li>Cancellation rate: &lt; 10% (including guest and operator cancellations)</li>
+<li>Operator cancellation rate: &lt; 5%</li>
+<li>Chargeback rate: &lt; 1%</li>
+<li>Refund dispute resolution: &lt; 5% of cancellations</li>
+</ul>
+<p><strong>Action Items:</strong></p>
+<ul>
+<li>High cancellation rates: Review policies, pricing, product descriptions</li>
+<li>High chargeback rates: Improve communication, policy clarity, service delivery</li>
+<li>High operator cancellations: Address operational reliability</li>
+</ul>
+<h2 id="section-14">14. Updates and Changes</h2>
+<blockquote>
+<p><strong>Note:</strong> Section 14 content beyond this point may be truncated. Please verify from live URL `https://www.bookwithkong.com/legal-terms/refund-policy` and add any missing content.</p>
+</blockquote>
+<h3>14.1 Changes to This Policy</h3>
+<p>Kong may update this Refund and Cancellation Policy with 30 days notice for material changes. [Continues — please verify from live URL]</p>
+<hr>
+<p><strong>By using the Kong Platform, you acknowledge that you have read, understood, and agree to be bound by this Refund and Cancellation Policy.</strong></p>
+
+    <div class="legal-back-top"><a href="#top"><i class="ti ti-arrow-up"></i>Back to top</a></div>
+
+    <div class="legal-cross">
+      <div>
+        <h4>Related policies</h4>
+        <a href="terms-and-conditions"><i class="ti ti-file-text"></i><span><span class="legal-cross-title">Terms and Conditions</span><span class="legal-cross-sub">Your agreement with Kong as an operator</span></span></a>
+        <a href="privacy-policy"><i class="ti ti-file-text"></i><span><span class="legal-cross-title">Privacy Policy</span><span class="legal-cross-sub">How we handle personal data under PDPA</span></span></a>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <a href="mailto:blake@bookwithkong.com"><i class="ti ti-mail"></i><span><span class="legal-cross-title">Email Kong</span><span class="legal-cross-sub">blake@bookwithkong.com · reply within 21 days</span></span></a>
+        <a href="/"><i class="ti ti-home"></i><span><span class="legal-cross-title">Back to Kong</span><span class="legal-cross-sub">Return to the homepage</span></span></a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="kong-footer">
+  <div class="kong-footer-inner">
+    <div class="kong-footer-brand">
+      <h3>Subscribe for the latest Kong updates</h3>
+      <form class="kong-footer-subscribe" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="name@email.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="../class-booking-system">Class Booking System</a></li>
+        <li><a href="../australia">Kong Australia</a></li>
+        <li><a href="/#features">Website Booking Widget</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>More Resources</h4>
+      <ul>
+        <li><a href="../research/malaysia-operator-website-study">Research: State of Operators 2026</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="../legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="../legal-terms/privacy-policy">Privacy Policy</a></li>
+        <li><a href="../legal-terms/refund-policy">Refund Policy</a></li>
+        <li><a href="mailto:blake@bookwithkong.com">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Industries</h4>
+      <ul>
+        <li><a href="../class-booking-system">Workshops &amp; Classes</a></li>
+        <li><a href="../atv-tours">ATV Tours</a></li>
+        <li><a href="../cooking-classes">Cooking Classes</a></li>
+        <li><a href="../wine-tours">Wine Tours</a></li>
+        <li><a href="../charter-bookings">Charters</a></li>
+        <li><a href="../adventure-tours">Adventure Tours</a></li>
+        <li><a href="../food-tours">Food Tours</a></li>
+        <li><a href="../dive-centres">Dive Centres</a></li>
+        <li><a href="../snorkelling-tours">Snorkelling Tours</a></li>
+      </ul>
+    </div>
+
+      <div class="kong-footer-col">
+      <h4>Compare platforms</h4>
+      <ul>
+        <li><a href="../blog/best-booking-software-malaysia">Best Booking Software for Tour Operators in Malaysia</a></li>
+        <li><a href="../blog/best-booking-software-australia">Best Tour Booking Systems in Australia</a></li>
+        <li><a href="../compare/kong-vs-bokun">Kong vs Bokun</a></li>
+        <li><a href="../compare/kong-vs-rezdy">Kong vs Rezdy</a></li>
+        <li><a href="../compare/kong-vs-bookeo">Kong vs Bookeo</a></li>
+        <li><a href="../compare/kong-vs-fareharbor">Kong vs FareHarbor</a></li>
+        <li><a href="../compare/kong-vs-amelia">Kong vs Amelia</a></li>
+        <li><a href="../compare/kong-vs-checkfront">Kong vs Checkfront</a></li>
+      </ul>
+    </div>
+</div>
+  <div class="kong-footer-bottom">
+    <div class="kong-footer-legal">
+      <span>UEN Company Name: Kong Technologies Pte. Ltd.</span>
+      <span>UEN Company Number: 202608593C</span>
+      <span>SSM Company Name: Superstring Sdn. Bhd.</span>
+      <span>SSM Company Number: 202401016432 (1562282-H)</span>
+    </div>
+    <div class="kong-footer-socials">
+      <a href="https://www.linkedin.com/company/bookwithkong" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#0A66C2;"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Active-section highlight + TOC select navigation */
+(function() {
+  const links = document.querySelectorAll('.legal-toc-list a');
+  const linkMap = new Map();
+  links.forEach(a => linkMap.set(a.dataset.target, a));
+  if ('IntersectionObserver' in window) {
+    let lastActive = null;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const a = linkMap.get(e.target.id);
+          if (a) {
+            if (lastActive) lastActive.classList.remove('active');
+            a.classList.add('active');
+            lastActive = a;
+          }
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+    document.querySelectorAll('.legal-content h2[id]').forEach(h => io.observe(h));
+  }
+  const jump = document.getElementById('legal-toc-jump');
+  if (jump) {
+    jump.addEventListener('change', () => {
+      const id = jump.value;
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      jump.value = '';
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

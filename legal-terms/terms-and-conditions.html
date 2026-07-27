@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Serif+Display:ital@1&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Terms and Conditions for Operators Using Kong | Kong</title>
+<meta name="description" content="Kong's terms of service for tour and class operators using the booking platform. Last updated November 2025.">
+
+<!-- Open Graph (minimal — legal pages share one OG image) -->
+<meta property="og:image" content="https://www.bookwithkong.com/images/og-default.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kong">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1a0a2e">
+<style>
+:root {
+  --ink: #1a0a2e;
+  --ink-70: rgba(26, 10, 46, 0.7);
+  --ink-60: rgba(26, 10, 46, 0.6);
+  --ink-45: rgba(26, 10, 46, 0.45);
+  --purple: #3B0F5E;
+  --purple-soft: rgba(59, 15, 94, 0.08);
+  --yellow: #F5C842;
+  --gold: #c89414;
+  --cream-1: #faf7f2;
+  --cream-2: #f7f4ee;
+  --line: rgba(26, 10, 46, 0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+}
+body { overflow-x: clip; max-width: 100vw; }
+
+/* Nav (matches homepage) */
+.kong-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1280px; margin: 0 auto;
+  position: relative; z-index: 30;
+  background: transparent;
+}
+.kong-nav-left { display: flex; align-items: center; gap: 28px; }
+.kong-nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; font-size: 17px; color: var(--ink);
+  text-decoration: none;
+}
+.kong-nav-logo img { width: 32px; height: 32px; }
+.kong-nav-right { display: flex; gap: 24px; align-items: center; }
+.kong-nav-items { display: flex; gap: 26px; align-items: center; }
+.kong-nav-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; font-weight: 500; color: rgba(26, 10, 46, 0.65);
+  cursor: pointer; transition: color 0.2s;
+  text-decoration: none;
+}
+.kong-nav-item:hover { color: var(--ink); }
+.kong-nav-cta {
+  background: var(--purple); color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; font-weight: 600;
+  padding: 10px 18px; border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(59, 15, 94, 0.18);
+}
+.kong-nav-cta:hover { transform: translateY(-1px); background: #4d1378; box-shadow: 0 4px 14px rgba(59, 15, 94, 0.28); }
+
+/* Policy page hero */
+.legal-hero {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 40px 32px;
+  position: relative;
+}
+.legal-breadcrumb {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--ink-45);
+  margin-bottom: 18px;
+  display: flex; align-items: center; gap: 8px;
+  flex-wrap: wrap;
+}
+.legal-breadcrumb a { color: var(--ink-60); text-decoration: none; }
+.legal-breadcrumb a:hover { color: var(--purple); }
+.legal-breadcrumb .sep { color: var(--ink-45); }
+.legal-breadcrumb .here { color: var(--ink); font-weight: 600; }
+
+.legal-h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1.6px;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+.legal-meta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 14px 5px 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-70);
+  margin-bottom: 20px;
+}
+.legal-meta-badge {
+  width: 22px; height: 22px;
+  background: var(--purple);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 11px;
+}
+.legal-intro {
+  font-family: 'Inter', sans-serif;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--ink-70);
+  max-width: 720px;
+  text-wrap: pretty;
+}
+.legal-intro strong { color: var(--ink); font-weight: 600; }
+
+/* Mobile dropdown TOC */
+.legal-toc-select {
+  display: none;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px 24px;
+}
+.legal-toc-select select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231a0a2e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+/* Two-column grid */
+.legal-body {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 16px 40px 100px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Sticky TOC */
+.legal-toc {
+  position: sticky;
+  top: 30px;
+  align-self: start;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+.legal-toc-h {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.legal-toc-list { list-style: none; }
+.legal-toc-list li {
+  margin-bottom: 2px;
+}
+.legal-toc-list a {
+  display: block;
+  padding: 8px 12px 8px 14px;
+  border-left: 2px solid transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink-60);
+  text-decoration: none;
+  line-height: 1.4;
+  border-radius: 0 6px 6px 0;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+.legal-toc-list a:hover { color: var(--ink); background: rgba(255,255,255,0.55); }
+.legal-toc-list a.active {
+  color: var(--purple);
+  border-left-color: var(--purple);
+  background: var(--purple-soft);
+  font-weight: 600;
+}
+.legal-toc-num {
+  display: inline-block;
+  width: 22px;
+  color: var(--ink-45);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.legal-toc-list a.active .legal-toc-num { color: var(--purple); }
+
+/* Main content */
+.legal-content {
+  max-width: 760px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 48px 56px 56px;
+  box-shadow: 0 8px 28px rgba(26, 10, 46, 0.04);
+  font-family: 'Inter', sans-serif;
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--ink-70);
+}
+.legal-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: var(--ink);
+  margin: 48px 0 18px;
+  scroll-margin-top: 24px;
+}
+.legal-content h2:first-child { margin-top: 0; }
+.legal-content h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: var(--ink);
+  margin: 28px 0 10px;
+}
+.legal-content p { margin-bottom: 14px; text-wrap: pretty; }
+.legal-content p strong { color: var(--ink); font-weight: 600; }
+.legal-content ul {
+  margin: 0 0 16px 0;
+  padding-left: 22px;
+  list-style: none;
+}
+.legal-content ul li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+.legal-content ul li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 12px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--purple);
+  opacity: 0.55;
+}
+.legal-content ul li strong { color: var(--ink); font-weight: 600; }
+.legal-content blockquote {
+  margin: 18px 0;
+  padding: 14px 18px;
+  background: rgba(245, 200, 66, 0.10);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+}
+.legal-content blockquote p { color: var(--ink); margin-bottom: 6px; font-size: 14.5px; }
+.legal-content blockquote p:last-child { margin-bottom: 0; }
+.legal-content hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 36px 0 28px;
+}
+
+.legal-back-top {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+}
+.legal-back-top a {
+  color: var(--purple);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 5px;
+  font-weight: 600;
+}
+.legal-back-top a:hover { text-decoration: underline; }
+
+.legal-cross {
+  margin-top: 60px;
+  padding: 28px 32px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  box-shadow: 0 4px 14px rgba(26, 10, 46, 0.04);
+}
+.legal-cross h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.legal-cross a {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--cream-1);
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.2s, transform 0.15s;
+}
+.legal-cross a:hover { border-color: rgba(59,15,94,0.25); transform: translateY(-1px); }
+.legal-cross a .ti {
+  flex-shrink: 0;
+  font-size: 18px;
+  color: var(--purple);
+  margin-top: 2px;
+}
+.legal-cross-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  display: block;
+  line-height: 1.3;
+}
+.legal-cross-sub {
+  font-size: 12.5px;
+  color: var(--ink-60);
+  display: block;
+  margin-top: 2px;
+}
+
+@media (max-width: 980px) {
+  .legal-body {
+    grid-template-columns: 1fr;
+    padding: 8px 22px 64px;
+    gap: 0;
+  }
+  .legal-toc { display: none; }
+  .legal-toc-select { display: block; padding: 0 22px 20px; }
+  .legal-content { padding: 32px 24px 36px; }
+  .legal-hero { padding: 24px 22px 24px; }
+  .legal-h1 { font-size: 34px; letter-spacing: -1px; }
+  .legal-cross { grid-template-columns: 1fr; padding: 22px; }
+}
+@media (max-width: 720px) {
+  .kong-nav { padding: 14px 18px; }
+  .kong-nav-items { gap: 14px; }
+}
+
+/* Footer (matches homepage) */
+.kong-footer {
+  background: white;
+  border-top: 1px solid var(--line);
+  padding: 60px 40px 30px;
+}
+.kong-footer-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.3fr;
+  gap: 56px;
+  align-items: start;
+}
+.kong-footer-brand h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.kong-footer-subscribe {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--cream-1);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 4px 4px 16px;
+  max-width: 360px;
+}
+.kong-footer-subscribe input {
+  background: transparent;
+  border: none; outline: none;
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  color: var(--ink);
+  padding: 8px 4px;
+}
+.kong-footer-subscribe input::placeholder { color: var(--ink-45); }
+.kong-footer-subscribe button {
+  background: var(--purple); color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13.5px; font-weight: 600;
+  cursor: pointer;
+}
+.kong-footer-col h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.kong-footer-col ul { list-style: none; }
+.kong-footer-col li { margin-bottom: 10px; }
+.kong-footer-col a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--ink-70);
+  text-decoration: none;
+}
+.kong-footer-col a:hover { color: var(--ink); }
+.kong-footer-bottom {
+  max-width: 1240px;
+  margin: 48px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--ink-45);
+  line-height: 1.7;
+}
+.kong-footer-legal { display: flex; flex-direction: column; gap: 2px; }
+.kong-footer-socials { display: flex; gap: 10px; }
+.kong-footer-socials a {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--ink-60);
+  text-decoration: none;
+}
+.kong-footer-socials a:hover { color: var(--purple); border-color: var(--purple); background: var(--purple-soft); }
+@media (max-width: 720px) {
+  .kong-footer { padding: 50px 20px 24px; }
+  .kong-footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .kong-footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+</style>
+<style>
+/* ── Industries nav dropdown ───────────────── */
+.kong-nav-dd { position: relative; display: inline-flex; align-items: center; }
+.kong-nav-dd-trigger {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: none; border: none; cursor: pointer;
+  font-family: inherit; font-size: 14px; font-weight: 500;
+  color: rgba(26,10,46,0.65); padding: 4px 0; transition: color 0.2s;
+}
+.kong-nav-dd-trigger .ti { font-size: 15px; transition: transform 0.25s; }
+.kong-nav-dd:hover .kong-nav-dd-trigger,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger { color: #1a0a2e; }
+.kong-nav-dd:hover .kong-nav-dd-trigger .ti,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger .ti { transform: rotate(180deg); }
+.kong-nav-dd::after { content:''; position:absolute; left:0; right:0; top:100%; height:18px; }
+.kong-nav-dd-menu {
+  position: absolute; top: calc(100% + 16px); left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: #fff; border: 1px solid var(--line, rgba(26,10,46,0.08)); border-radius: 14px;
+  box-shadow: 0 18px 44px -14px rgba(26,10,46,0.22);
+  padding: 8px; min-width: 234px;
+  display: flex; flex-direction: column; gap: 1px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s; z-index: 200;
+}
+.kong-nav-dd:hover .kong-nav-dd-menu,
+.kong-nav-dd:focus-within .kong-nav-dd-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.kong-nav-dd-menu a {
+  display: flex; align-items: center; gap: 11px;
+  padding: 9px 12px; border-radius: 9px;
+  font-size: 14px; font-weight: 500; color: var(--ink-70, rgba(26,10,46,0.7));
+  text-decoration: none; white-space: nowrap; transition: background 0.15s, color 0.15s;
+}
+.kong-nav-dd-menu a:hover { background: var(--purple-soft, rgba(59,15,94,0.08)); color: var(--purple, #3B0F5E); }
+.kong-nav-dd-menu a .ti { font-size: 16px; color: var(--purple, #3B0F5E); opacity: 0.85; }
+.kong-nav-dd-divider { height: 1px; background: var(--line, rgba(26,10,46,0.08)); margin: 6px 4px; }
+.kong-mobile-dd-label {
+  font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-45, rgba(26,10,46,0.45));
+  padding: 6px 0 2px;
+}
+.kong-mobile-sub { padding-left: 14px !important; }
+</style>
+</head>
+<body>
+
+<nav class="kong-nav">
+  <div class="kong-nav-left">
+    <a class="kong-nav-logo" href="/">
+      <img src="../images/logo.webp" alt="Kong">
+      Kong
+    </a>
+  </div>
+  <div class="kong-nav-right">
+    <div class="kong-nav-items">
+      <div class="kong-nav-dd">
+        <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Industries<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+        <div class="kong-nav-dd-menu" role="menu">
+          <a href="../class-booking-system" role="menuitem"><i class="ti ti-building-store" aria-hidden="true"></i>Workshops &amp; Classes</a>
+          <div class="kong-nav-dd-divider"></div>
+          <a href="../atv-tours" role="menuitem"><i class="ti ti-car-off-road" aria-hidden="true"></i>ATV Tours</a>
+          <a href="../cooking-classes" role="menuitem"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>Cooking Classes</a>
+          <a href="../wine-tours" role="menuitem"><i class="ti ti-glass-full" aria-hidden="true"></i>Wine Tours</a>
+          <a href="../charter-bookings" role="menuitem"><i class="ti ti-anchor" aria-hidden="true"></i>Charters</a>
+          <a href="../adventure-tours" role="menuitem"><i class="ti ti-mountain" aria-hidden="true"></i>Adventure Tours</a>
+          <a href="../food-tours" role="menuitem"><i class="ti ti-soup" aria-hidden="true"></i>Food Tours</a>
+          <a href="../dive-centres" role="menuitem"><i class="ti ti-scuba-mask" aria-hidden="true"></i>Dive Centres</a>
+          <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
+        </div>
+      </div>
+      <a class="kong-nav-item" href="../blog">Blog</a>
+      <a class="kong-nav-item" href="../about">About</a>
+      <a class="kong-nav-item" href="../class-booking-system">Features</a>
+      <a class="kong-nav-item" href="/#pricing">Pricing</a>
+      <a class="kong-nav-item" href="/#faq">FAQ</a>
+    </div>
+    <a href="https://app.bookwithkong.com" target="_blank" rel="noopener" class="kong-nav-cta">Get started free</a>
+  </div>
+</nav>
+
+<section class="legal-hero">
+  <div class="legal-breadcrumb">
+    <a href="/">Home</a>
+    <span class="sep">/</span>
+    <a href="../legal-terms">Legal &amp; Policies</a>
+    <span class="sep">/</span>
+    <span class="here">Terms and Conditions</span>
+  </div>
+  <h1 class="legal-h1">Terms and Conditions</h1>
+  <div class="legal-meta"><span class="legal-meta-badge"><i class="ti ti-file-text"></i></span>Version 1.0 | Last Updated: November 24, 2025</div>
+  <div class="legal-intro"><p>These Terms and Conditions ("Terms") govern your use of the Kong booking software and channel management platform (the "Platform") provided by SUPERSTRING SDN. BHD. (202401016432 (1562282-H)), a company incorporated in Malaysia ("Kong", "we", "us", or "our").</p>
+<p>By creating an account or using the Platform, you ("Operator", "you", or "your") agree to be bound by these Terms. If you do not agree to these Terms, you may not use the Platform.</p></div>
+</section>
+
+<div class="legal-toc-select">
+  <select id="legal-toc-jump">
+    <option value="">Jump to section…</option>
+    <option value="section-1">1. Definitions</option>
+    <option value="section-2">2. Platform Services</option>
+    <option value="section-3">3. Account Registration and Management</option>
+    <option value="section-4">4. Fees and Payment Terms</option>
+    <option value="section-5">5. Your Responsibilities and Obligations</option>
+    <option value="section-6">6. Channel Management and Distribution</option>
+    <option value="section-7">7. Intellectual Property Rights</option>
+    <option value="section-8">8. Data Protection and Privacy</option>
+    <option value="section-9">9. Limitation of Liability</option>
+    <option value="section-10">10. Term and Termination</option>
+    <option value="section-11">11. Dispute Resolution</option>
+    <option value="section-12">12. General Provisions</option>
+    <option value="section-13">13. Contact Information</option>
+    <option value="section-14">14. Notices</option>
+  </select>
+</div>
+
+<div class="legal-body">
+  <aside class="legal-toc">
+  <div class="legal-toc-h">On this page</div>
+  <ul class="legal-toc-list">
+      <li><a href="#section-1" data-target="section-1"><span class="legal-toc-num">1.</span>Definitions</a></li>
+      <li><a href="#section-2" data-target="section-2"><span class="legal-toc-num">2.</span>Platform Services</a></li>
+      <li><a href="#section-3" data-target="section-3"><span class="legal-toc-num">3.</span>Account Registration and Management</a></li>
+      <li><a href="#section-4" data-target="section-4"><span class="legal-toc-num">4.</span>Fees and Payment Terms</a></li>
+      <li><a href="#section-5" data-target="section-5"><span class="legal-toc-num">5.</span>Your Responsibilities and Obligations</a></li>
+      <li><a href="#section-6" data-target="section-6"><span class="legal-toc-num">6.</span>Channel Management and Distribution</a></li>
+      <li><a href="#section-7" data-target="section-7"><span class="legal-toc-num">7.</span>Intellectual Property Rights</a></li>
+      <li><a href="#section-8" data-target="section-8"><span class="legal-toc-num">8.</span>Data Protection and Privacy</a></li>
+      <li><a href="#section-9" data-target="section-9"><span class="legal-toc-num">9.</span>Limitation of Liability</a></li>
+      <li><a href="#section-10" data-target="section-10"><span class="legal-toc-num">10.</span>Term and Termination</a></li>
+      <li><a href="#section-11" data-target="section-11"><span class="legal-toc-num">11.</span>Dispute Resolution</a></li>
+      <li><a href="#section-12" data-target="section-12"><span class="legal-toc-num">12.</span>General Provisions</a></li>
+      <li><a href="#section-13" data-target="section-13"><span class="legal-toc-num">13.</span>Contact Information</a></li>
+      <li><a href="#section-14" data-target="section-14"><span class="legal-toc-num">14.</span>Notices</a></li>
+  </ul>
+</aside>
+
+  <main class="legal-content">
+<h2 id="section-1">1. Definitions</h2>
+<p><strong>"Account"</strong> means your operator account on the Platform.</p>
+<p><strong>"Booking"</strong> means a reservation made for your tours or activities through the Platform.</p>
+<p><strong>"Booking Fee"</strong> means the fee charged to guests at the time of booking, calculated as a percentage of the booking value.</p>
+<p><strong>"Channel"</strong> means any third-party distribution platform, online travel agency (OTA), or marketplace integrated with the Platform.</p>
+<p><strong>"Guest"</strong> means any end customer who books your tours or activities.</p>
+<p><strong>"Inventory"</strong> means your tours, activities, products, availability, and pricing information.</p>
+<p><strong>"Payment Gateway"</strong> means a third-party payment processing service (such as Stripe, Xendit, or other supported providers) that you connect to the Platform to accept guest payments.</p>
+<p><strong>"Service"</strong> or <strong>"Services"</strong> means the Platform and all features, tools, and functionality we provide.</p>
+<h2 id="section-2">2. Platform Services</h2>
+<h3>2.1 Service Description</h3>
+<p>Kong provides a cloud-based booking software and channel management platform that enables you to:</p>
+<ul>
+<li>Create and manage your tour and activity products</li>
+<li>Accept direct bookings through your own branded booking forms</li>
+<li>Connect your own payment gateway account to process guest payments</li>
+<li>Manage availability and pricing across multiple distribution channels</li>
+<li>Communicate with guests through automated messaging</li>
+<li>Access reporting and analytics</li>
+<li>Distribute inventory to third-party channels and marketplaces</li>
+</ul>
+<p><strong>Payment Gateway Requirement</strong>: To accept bookings, you must connect a supported payment gateway account. Kong does not process payments on your behalf — all guest payments flow directly to your payment gateway account.</p>
+<h3>2.2 Service Availability</h3>
+<p>We strive to maintain high Platform availability but do not guarantee uninterrupted access. We may suspend or modify the Services for maintenance, updates, or other operational reasons. We will provide reasonable notice of planned maintenance where possible.</p>
+<h3>2.3 Service Modifications</h3>
+<p>We reserve the right to modify, enhance, or discontinue any aspect of the Platform at any time. We will provide reasonable notice of material changes that negatively impact your use of the Platform.</p>
+<h2 id="section-3">3. Account Registration and Management</h2>
+<h3>3.1 Eligibility</h3>
+<p>To use the Platform, you must:</p>
+<ul>
+<li>Be at least 18 years old</li>
+<li>Have legal authority to enter into binding contracts</li>
+<li>Operate a legitimate tour or activity business</li>
+<li>Provide accurate and complete registration information</li>
+</ul>
+<h3>3.2 Account Creation</h3>
+<p>When creating an Account, you agree to:</p>
+<ul>
+<li>Provide accurate, current, and complete information</li>
+<li>Maintain and promptly update your Account information</li>
+<li>Maintain the security and confidentiality of your login credentials</li>
+<li>Notify us immediately of any unauthorized access or security breach</li>
+<li>Accept responsibility for all activities occurring under your Account</li>
+</ul>
+<h3>3.3 Account Security</h3>
+<p>You are solely responsible for maintaining the confidentiality of your Account credentials. You agree to:</p>
+<ul>
+<li>Use a strong, unique password</li>
+<li>Not share your login credentials with others</li>
+<li>Implement appropriate security measures within your organization</li>
+<li>Immediately notify us of any suspected security breach</li>
+</ul>
+<p>We are not liable for any loss or damage arising from your failure to maintain Account security.</p>
+<h3>3.4 Account Suspension or Termination</h3>
+<p>We may suspend or terminate your Account if:</p>
+<ul>
+<li>You breach these Terms</li>
+<li>You engage in fraudulent or illegal activities</li>
+<li>You provide false or misleading information</li>
+<li>Your use of the Platform harms or could harm Kong, other operators, or guests</li>
+<li>Required by applicable law or regulation</li>
+</ul>
+<h2 id="section-4">4. Fees and Payment Terms</h2>
+<h3>4.1 Operator Fees</h3>
+<p><strong>No Subscription Fees</strong>: Kong does not charge monthly or annual subscription fees to operators. The Platform is provided free of charge for core functionality.</p>
+<h3>4.2 Booking Fees</h3>
+<p><strong>Guest-Paid Fees</strong>: Kong charges a Booking Fee to guests at the time of booking. This fee is currently set at 1.8% of the booking value but may be adjusted with reasonable notice.</p>
+<p><strong>Fee Structure</strong>: The Booking Fee is:</p>
+<ul>
+<li>Charged to and paid by the guest</li>
+<li>Added to the booking total at checkout</li>
+<li>Clearly disclosed to guests before payment</li>
+<li>Non-refundable on guest-initiated cancellations — booking fees <em>are</em> refunded when the operator cancels, when a Kong platform error caused the booking, or when Kong has declared an emergency (see <a href="refund-policy">Refund Policy</a>)</li>
+<li>Subject to change with at least 30 days' notice to operators</li>
+</ul>
+<h3>4.3 Payment Processing</h3>
+<p><strong>Direct Payment Gateway Integration</strong>: You must connect your own payment gateway account (such as Stripe, Xendit, or other supported providers) to the Platform.</p>
+<p>When a guest makes a booking:</p>
+<ul>
+<li>The booking amount is processed directly through your connected payment gateway account</li>
+<li>Proceeds are deposited directly into your payment gateway account</li>
+<li>The Booking Fee (1.8%) is automatically split and transferred to Kong's account</li>
+<li>You maintain full control and visibility over your payment processing</li>
+</ul>
+<p><strong>Your Responsibilities</strong>: By connecting a payment gateway, you agree to:</p>
+<ul>
+<li>Maintain an active account in good standing with your chosen payment gateway provider</li>
+<li>Comply with your payment gateway provider's terms and conditions</li>
+<li>Accept responsibility for all payment gateway fees charged by your provider</li>
+<li>Ensure your payment gateway account details remain current and accurate</li>
+<li>Handle any payment gateway account issues directly with your provider</li>
+</ul>
+<p><strong>Payment Gateway Requirements</strong>: You must use a payment gateway that:</p>
+<ul>
+<li>Is supported by the Kong Platform</li>
+<li>Supports split payment functionality for Booking Fee collection</li>
+<li>Complies with applicable payment card industry standards (PCI-DSS)</li>
+<li>Operates legally in your jurisdiction</li>
+</ul>
+<h3>4.4 Payment Settlement</h3>
+<p><strong>Direct Settlement</strong>: Booking proceeds are settled directly to your payment gateway account according to your payment gateway provider's settlement schedule. Kong does not hold, process, or transfer booking funds to you.</p>
+<p><strong>Settlement Timing</strong>: Settlement timing is determined by:</p>
+<ul>
+<li>Your payment gateway provider's policies and schedule</li>
+<li>Your payment gateway account status and history</li>
+<li>Payment method used by the guest (credit card, e-wallet, etc.)</li>
+<li>Any holds or reserves imposed by your payment gateway provider</li>
+</ul>
+<p><strong>First Payments</strong>: Initial settlements to new payment gateway accounts may be subject to longer holding periods as determined by your payment gateway provider for fraud prevention and verification purposes.</p>
+<p><strong>Currency</strong>: Settlements are made in the currencies supported by your payment gateway account and configured in your Kong Platform settings.</p>
+<h3>4.5 Refunds and Chargebacks</h3>
+<p><strong>Refund Processing</strong>: You are responsible for processing refunds through your payment gateway account according to your cancellation policy. When you issue a refund:</p>
+<ul>
+<li>You refund the booking amount to the guest through your payment gateway</li>
+<li>The Booking Fee (1.8%) is non-refundable to the guest</li>
+<li>Guests should be informed that booking fees are non-refundable per your cancellation policy</li>
+<li>Payment processing fees charged by your payment gateway provider may also be non-refundable (per your provider's policies)</li>
+</ul>
+<p><strong>Non-Refundable Booking Fees</strong>: Kong's Booking Fee is charged for the service of processing the booking and is non-refundable on guest-initiated cancellations. Booking fees <em>are</em> refunded when the operator cancels, when a Kong platform error caused the booking, or when Kong has declared an emergency — see the <a href="refund-policy">Refund Policy</a> for the full schedule. When a guest-initiated cancellation applies, the Booking Fee compensates Kong for:</p>
+<ul>
+<li>Platform availability and infrastructure</li>
+<li>Payment processing facilitation</li>
+<li>Booking confirmation and communication services</li>
+<li>Administrative overhead</li>
+</ul>
+<p><strong>Chargebacks</strong>: In the event of a chargeback:</p>
+<ul>
+<li>You are responsible for responding to chargeback disputes through your payment gateway</li>
+<li>You may be liable for chargeback fees imposed by your payment gateway provider</li>
+<li>Kong is not responsible for chargeback disputes or associated fees</li>
+<li>If a chargeback includes the Booking Fee amount and is successfully disputed by the guest, Kong reserves the right to recover the Booking Fee amount from future bookings or request direct payment</li>
+</ul>
+<h3>4.6 Taxes</h3>
+<p><strong>Your Tax Obligations</strong>: You are solely responsible for:</p>
+<ul>
+<li>Determining and paying all applicable taxes on your tour revenue</li>
+<li>Collecting and remitting any tourism taxes, service taxes, or VAT as required</li>
+<li>Maintaining compliance with Malaysian tax regulations and regulations in jurisdictions where you operate</li>
+</ul>
+<p><strong>Our Tax Obligations</strong>: Kong is responsible for taxes on Booking Fees we collect.</p>
+<h2 id="section-5">5. Your Responsibilities and Obligations</h2>
+<h3>5.1 Tour Operations</h3>
+<p>You are solely responsible for:</p>
+<ul>
+<li>Operating your tours and activities safely and professionally</li>
+<li>Maintaining all necessary licenses, permits, and insurance</li>
+<li>Complying with all applicable laws and regulations</li>
+<li>Delivering services as described in your product listings</li>
+<li>Ensuring the accuracy of your product information, pricing, and availability</li>
+<li>Maintaining an active payment gateway account in good standing</li>
+<li>Monitoring and managing your payment gateway account, including settlements and disputes</li>
+</ul>
+<h3>5.2 Content and Listings</h3>
+<p><strong>Accuracy</strong>: You warrant that all content you provide (descriptions, photos, pricing, terms) is:</p>
+<ul>
+<li>Accurate, complete, and not misleading</li>
+<li>Owned by you or properly licensed</li>
+<li>Compliant with all applicable laws</li>
+<li>Free from prohibited content (as defined in Section 5.3)</li>
+</ul>
+<p><strong>Cancellation Policies</strong>: Your cancellation policy must clearly disclose that:</p>
+<ul>
+<li>Kong's Booking Fee (1.8%) is non-refundable</li>
+<li>Refund amounts apply only to the booking amount, not the Booking Fee</li>
+<li>Any other non-refundable fees or conditions</li>
+</ul>
+<p><strong>Updates</strong>: You agree to promptly update your listings to reflect any material changes to your tours, pricing, policies, or availability.</p>
+<h3>5.3 Prohibited Content and Activities</h3>
+<p>You may not use the Platform to:</p>
+<ul>
+<li>List illegal, unsafe, or fraudulent tours or activities</li>
+<li>Discriminate against guests based on protected characteristics</li>
+<li>Violate intellectual property rights of others</li>
+<li>Transmit malware, viruses, or harmful code</li>
+<li>Engage in price manipulation or anti-competitive practices</li>
+<li>Circumvent Platform security measures</li>
+<li>Scrape or harvest data from the Platform</li>
+<li>Create false or misleading listings</li>
+<li>Impersonate others or misrepresent your business</li>
+</ul>
+<h3>5.4 Guest Communications</h3>
+<p>You agree to:</p>
+<ul>
+<li>Respond promptly to guest inquiries and booking requests</li>
+<li>Communicate professionally and courteously with guests</li>
+<li>Honor confirmed bookings or provide appropriate remedies</li>
+<li>Handle guest complaints fairly and in good faith</li>
+</ul>
+<h3>5.5 Compliance with Laws</h3>
+<p>You are responsible for compliance with all applicable laws, including but not limited to:</p>
+<ul>
+<li>Consumer protection laws</li>
+<li>Data protection and privacy laws</li>
+<li>Tourism and hospitality regulations</li>
+<li>Health and safety requirements</li>
+<li>Employment laws</li>
+<li>Tax obligations</li>
+</ul>
+<h2 id="section-6">6. Channel Management and Distribution</h2>
+<h3>6.1 Channel Connections</h3>
+<p>The Platform enables you to connect your inventory to third-party channels. By using channel management features, you:</p>
+<ul>
+<li>Authorize Kong to transmit your inventory to connected channels</li>
+<li>Authorize Kong to receive and process bookings from these channels</li>
+<li>Accept that channel-specific terms may apply</li>
+<li>Understand that Kong is not responsible for channel policies or performance</li>
+</ul>
+<h3>6.2 Inventory Synchronization</h3>
+<p>Kong will make reasonable efforts to synchronize your inventory across connected channels. However:</p>
+<ul>
+<li>Real-time synchronization is not guaranteed</li>
+<li>You remain responsible for monitoring availability across all channels</li>
+<li>You are liable for overbooking situations</li>
+<li>We recommend maintaining buffer inventory to prevent overbookings</li>
+</ul>
+<h3>6.3 Channel Commission and Fees</h3>
+<p>Each connected channel may charge its own commission or fees in addition to Kong's Booking Fee. You are responsible for understanding and accepting channel-specific fee structures.</p>
+<h3>6.4 Marketplace Participation</h3>
+<p>Kong may operate a B2B marketplace connecting you with resellers and wholesalers. Marketplace terms, commission structures, and net rate agreements are subject to separate agreements.</p>
+<h2 id="section-7">7. Intellectual Property Rights</h2>
+<h3>7.1 Kong's Intellectual Property</h3>
+<p>The Platform, including all software, designs, text, graphics, logos, and other content, is owned by Kong or its licensors and protected by intellectual property laws. You receive a limited, non-exclusive, non-transferable license to use the Platform solely for your business operations.</p>
+<p>You may not:</p>
+<ul>
+<li>Copy, modify, or create derivative works of the Platform</li>
+<li>Reverse engineer, decompile, or disassemble any Platform components</li>
+<li>Remove or alter any proprietary notices</li>
+<li>Use Kong's trademarks without written permission</li>
+</ul>
+<h3>7.2 Your Content</h3>
+<p>You retain ownership of all content you upload to the Platform (text, images, videos, data). By uploading content, you grant Kong a worldwide, royalty-free license to:</p>
+<ul>
+<li>Store, process, and display your content as necessary to provide the Services</li>
+<li>Distribute your content to connected channels as authorized by you</li>
+<li>Use anonymized, aggregated data for analytics and Platform improvement</li>
+</ul>
+<p>You warrant that you have all necessary rights to grant this license.</p>
+<h3>7.3 Feedback</h3>
+<p>If you provide suggestions, ideas, or feedback about the Platform, you grant Kong an unrestricted, perpetual right to use such feedback without compensation or attribution.</p>
+<h2 id="section-8">8. Data Protection and Privacy</h2>
+<h3>8.1 Data Processing</h3>
+<p>Kong processes personal data in accordance with our Privacy Policy and applicable data protection laws, including the Malaysia Personal Data Protection Act 2010 (PDPA).</p>
+<h3>8.2 Your Data Obligations</h3>
+<p>As a data controller, you are responsible for:</p>
+<ul>
+<li>Obtaining necessary consents from guests for data collection and processing</li>
+<li>Providing guests with appropriate privacy notices</li>
+<li>Ensuring your data practices comply with applicable privacy laws</li>
+<li>Not uploading sensitive personal data unless necessary and properly secured</li>
+</ul>
+<h3>8.3 Data Security</h3>
+<p>Kong implements reasonable technical and organizational measures to protect data. However, no system is completely secure. You agree to implement appropriate security measures on your end and promptly report any suspected data breaches.</p>
+<h3>8.4 Data Retention</h3>
+<p>We retain your data for as long as your Account is active and as required for legitimate business purposes or legal compliance. Upon Account termination, we will delete or anonymize your data according to our data retention policy, except where retention is required by law.</p>
+<h2 id="section-9">9. Limitation of Liability</h2>
+<h3>9.1 Service Provision</h3>
+<p>THE PLATFORM IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
+<p>Kong does not warrant that:</p>
+<ul>
+<li>The Platform will be uninterrupted, secure, or error-free</li>
+<li>Defects will be corrected</li>
+<li>The Platform is free from viruses or harmful components</li>
+<li>Results obtained from the Platform will be accurate or reliable</li>
+</ul>
+<h3>9.2 Liability Limitations</h3>
+<p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, KONG'S TOTAL LIABILITY FOR ANY CLAIMS ARISING FROM OR RELATED TO THE PLATFORM SHALL NOT EXCEED THE AMOUNT OF BOOKING FEES PAID TO KONG IN THE SIX (6) MONTHS PRECEDING THE CLAIM.</p>
+<p>KONG SHALL NOT BE LIABLE FOR:</p>
+<ul>
+<li>Indirect, incidental, special, consequential, or punitive damages</li>
+<li>Loss of profits, revenue, data, or business opportunities</li>
+<li>Service interruptions or data loss</li>
+<li>Acts or omissions of third parties, including payment gateway providers or channels</li>
+<li>Payment gateway failures, delays, or disputes</li>
+<li>Your failure to maintain backups or secure your Account</li>
+<li>Overbooking situations or inventory management errors</li>
+<li>Unauthorized access to your payment gateway account</li>
+</ul>
+<h3>9.3 Indemnification</h3>
+<p>You agree to indemnify, defend, and hold harmless Kong, its affiliates, and their respective officers, directors, employees, and agents from any claims, losses, damages, liabilities, and expenses (including reasonable attorneys' fees) arising from:</p>
+<ul>
+<li>Your use of the Platform</li>
+<li>Your tours and activities</li>
+<li>Your violation of these Terms</li>
+<li>Your violation of any applicable laws or third-party rights</li>
+<li>Content you provide to the Platform</li>
+<li>Guest complaints or injuries</li>
+</ul>
+<h2 id="section-10">10. Term and Termination</h2>
+<h3>10.1 Term</h3>
+<p>These Terms commence when you create an Account and continue until terminated by either party.</p>
+<h3>10.2 Termination by You</h3>
+<p>You may terminate your Account at any time by providing written notice to Kong. Upon termination:</p>
+<ul>
+<li>You remain responsible for all pending bookings</li>
+<li>You must fulfill all guest obligations for confirmed bookings</li>
+<li>You should disconnect your payment gateway integration after all bookings are completed</li>
+<li>Any Booking Fees already collected by Kong are non-refundable</li>
+</ul>
+<h3>10.3 Termination by Kong</h3>
+<p>We may terminate or suspend your Account with or without cause upon reasonable notice. Immediate termination without notice may occur if:</p>
+<ul>
+<li>You materially breach these Terms</li>
+<li>You engage in fraudulent or illegal conduct</li>
+<li>Required by law or regulation</li>
+<li>Your actions harm or threaten to harm Kong, other operators, or guests</li>
+</ul>
+<h3>10.4 Effect of Termination</h3>
+<p>Upon termination:</p>
+<ul>
+<li>Your access to the Platform will be revoked</li>
+<li>Your payment gateway integration will be disconnected</li>
+<li>You remain liable for any outstanding obligations</li>
+<li>Provisions regarding liability, indemnification, and intellectual property survive termination</li>
+</ul>
+<h3>10.5 Data Export</h3>
+<p>Prior to termination, you may request an export of your data. Following termination, Kong will retain your data only as required by law or legitimate business purposes.</p>
+<h2 id="section-11">11. Dispute Resolution</h2>
+<h3>11.1 Governing Law</h3>
+<p>These Terms are governed by the laws of Malaysia, without regard to conflict of law principles.</p>
+<h3>11.2 Negotiation</h3>
+<p>If a dispute arises, the parties agree to first attempt to resolve it through good faith negotiation for a period of 30 days.</p>
+<h3>11.3 Jurisdiction</h3>
+<p>If negotiation fails, any disputes shall be subject to the exclusive jurisdiction of the courts of Malaysia.</p>
+<h3>11.4 No Class Actions</h3>
+<p>You agree that any proceedings will be conducted on an individual basis and not as part of a class, consolidated, or representative action.</p>
+<h2 id="section-12">12. General Provisions</h2>
+<h3>12.1 Entire Agreement</h3>
+<p>These Terms, together with our Privacy Policy and any other referenced policies, constitute the entire agreement between you and Kong regarding the Platform.</p>
+<h3>12.2 Amendments</h3>
+<p>We may modify these Terms at any time by posting updated Terms on the Platform. Material changes will be communicated via email or Platform notification at least 30 days before taking effect. Your continued use of the Platform after changes take effect constitutes acceptance of the modified Terms.</p>
+<h3>12.3 Severability</h3>
+<p>If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full force and effect.</p>
+<h3>12.4 Waiver</h3>
+<p>Our failure to enforce any provision of these Terms does not constitute a waiver of that provision or any other provision.</p>
+<h3>12.5 Assignment</h3>
+<p>You may not assign or transfer these Terms or your Account without our prior written consent. Kong may assign these Terms without restriction.</p>
+<h3>12.6 Force Majeure</h3>
+<p>Neither party shall be liable for failure to perform obligations due to circumstances beyond reasonable control, including natural disasters, war, terrorism, pandemics, government actions, or telecommunications failures.</p>
+<h3>12.7 Relationship</h3>
+<p>These Terms do not create a partnership, joint venture, employment, or agency relationship between you and Kong. You are an independent contractor.</p>
+<h3>12.8 Third-Party Services</h3>
+<p>The Platform integrates with third-party services including payment gateway providers (Stripe, Xendit, etc.), distribution channels, and other tools. Your use of such services is subject to their respective terms and conditions. Kong is not responsible for:</p>
+<ul>
+<li>Third-party service availability, performance, or functionality</li>
+<li>Fees, policies, or changes imposed by third-party providers</li>
+<li>Disputes between you and third-party service providers</li>
+<li>Data security or privacy practices of third-party services</li>
+</ul>
+<p>You are solely responsible for maintaining your relationships and accounts with third-party providers, including payment gateway providers.</p>
+<h3>12.9 Language</h3>
+<p>These Terms are provided in English. If translated, the English version prevails in case of any conflict.</p>
+<h2 id="section-13">13. Contact Information</h2>
+<p>If you have questions about these Terms or need support, please contact us at:</p>
+<p><strong>SUPERSTRING SDN. BHD.</strong> 202401016432 (1562282-H) Waldorf Tower Jalan Sri Hartamas 17, 50480 Sri Hartamas, Kuala Lumpur, Malaysia Email: blake@bookwithkong.com Website: www.bookwithkong.com</p>
+<h2 id="section-14">14. Notices</h2>
+<p>All notices under these Terms must be in writing and delivered via:</p>
+<ul>
+<li>Email to the address associated with your Account (for notices to you)</li>
+<li>Email to blake@bookwithkong.com (for notices to Kong)</li>
+</ul>
+<p>Notices are deemed received when sent to the appropriate email address.</p>
+<hr>
+<p><strong>By using the Kong Platform, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.</strong></p>
+
+    <div class="legal-back-top"><a href="#top"><i class="ti ti-arrow-up"></i>Back to top</a></div>
+
+    <div class="legal-cross">
+      <div>
+        <h4>Related policies</h4>
+        <a href="privacy-policy"><i class="ti ti-file-text"></i><span><span class="legal-cross-title">Privacy Policy</span><span class="legal-cross-sub">How we handle personal data under PDPA</span></span></a>
+        <a href="refund-policy"><i class="ti ti-file-text"></i><span><span class="legal-cross-title">Refund &amp; Cancellation Policy</span><span class="legal-cross-sub">How refunds and cancellations work</span></span></a>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <a href="mailto:blake@bookwithkong.com"><i class="ti ti-mail"></i><span><span class="legal-cross-title">Email Kong</span><span class="legal-cross-sub">blake@bookwithkong.com · reply within 21 days</span></span></a>
+        <a href="/"><i class="ti ti-home"></i><span><span class="legal-cross-title">Back to Kong</span><span class="legal-cross-sub">Return to the homepage</span></span></a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="kong-footer">
+  <div class="kong-footer-inner">
+    <div class="kong-footer-brand">
+      <h3>Subscribe for the latest Kong updates</h3>
+      <form class="kong-footer-subscribe" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="name@email.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="../class-booking-system">Class Booking System</a></li>
+        <li><a href="../australia">Kong Australia</a></li>
+        <li><a href="/#features">Website Booking Widget</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>More Resources</h4>
+      <ul>
+        <li><a href="../research/malaysia-operator-website-study">Research: State of Operators 2026</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="../legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="../legal-terms/privacy-policy">Privacy Policy</a></li>
+        <li><a href="../legal-terms/refund-policy">Refund Policy</a></li>
+        <li><a href="mailto:blake@bookwithkong.com">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Industries</h4>
+      <ul>
+        <li><a href="../class-booking-system">Workshops &amp; Classes</a></li>
+        <li><a href="../atv-tours">ATV Tours</a></li>
+        <li><a href="../cooking-classes">Cooking Classes</a></li>
+        <li><a href="../wine-tours">Wine Tours</a></li>
+        <li><a href="../charter-bookings">Charters</a></li>
+        <li><a href="../adventure-tours">Adventure Tours</a></li>
+        <li><a href="../food-tours">Food Tours</a></li>
+        <li><a href="../dive-centres">Dive Centres</a></li>
+        <li><a href="../snorkelling-tours">Snorkelling Tours</a></li>
+      </ul>
+    </div>
+
+      <div class="kong-footer-col">
+      <h4>Compare platforms</h4>
+      <ul>
+        <li><a href="../blog/best-booking-software-malaysia">Best Booking Software for Tour Operators in Malaysia</a></li>
+        <li><a href="../blog/best-booking-software-australia">Best Tour Booking Systems in Australia</a></li>
+        <li><a href="../compare/kong-vs-bokun">Kong vs Bokun</a></li>
+        <li><a href="../compare/kong-vs-rezdy">Kong vs Rezdy</a></li>
+        <li><a href="../compare/kong-vs-bookeo">Kong vs Bookeo</a></li>
+        <li><a href="../compare/kong-vs-fareharbor">Kong vs FareHarbor</a></li>
+        <li><a href="../compare/kong-vs-amelia">Kong vs Amelia</a></li>
+        <li><a href="../compare/kong-vs-checkfront">Kong vs Checkfront</a></li>
+      </ul>
+    </div>
+</div>
+  <div class="kong-footer-bottom">
+    <div class="kong-footer-legal">
+      <span>UEN Company Name: Kong Technologies Pte. Ltd.</span>
+      <span>UEN Company Number: 202608593C</span>
+      <span>SSM Company Name: Superstring Sdn. Bhd.</span>
+      <span>SSM Company Number: 202401016432 (1562282-H)</span>
+    </div>
+    <div class="kong-footer-socials">
+      <a href="https://www.linkedin.com/company/bookwithkong" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#0A66C2;"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Active-section highlight + TOC select navigation */
+(function() {
+  const links = document.querySelectorAll('.legal-toc-list a');
+  const linkMap = new Map();
+  links.forEach(a => linkMap.set(a.dataset.target, a));
+  if ('IntersectionObserver' in window) {
+    let lastActive = null;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const a = linkMap.get(e.target.id);
+          if (a) {
+            if (lastActive) lastActive.classList.remove('active');
+            a.classList.add('active');
+            lastActive = a;
+          }
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+    document.querySelectorAll('.legal-content h2[id]').forEach(h => io.observe(h));
+  }
+  const jump = document.getElementById('legal-toc-jump');
+  if (jump) {
+    jump.addEventListener('change', () => {
+      const id = jump.value;
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      jump.value = '';
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

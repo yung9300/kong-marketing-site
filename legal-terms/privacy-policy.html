@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Serif+Display:ital@1&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Privacy Policy — How Kong Handles Your Data (PDPA) | Kong</title>
+<meta name="description" content="How Kong collects, uses, and protects personal information under Malaysia PDPA. Updated November 2025.">
+
+<!-- Open Graph (minimal — legal pages share one OG image) -->
+<meta property="og:image" content="https://www.bookwithkong.com/images/og-default.jpg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kong">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1a0a2e">
+<style>
+:root {
+  --ink: #1a0a2e;
+  --ink-70: rgba(26, 10, 46, 0.7);
+  --ink-60: rgba(26, 10, 46, 0.6);
+  --ink-45: rgba(26, 10, 46, 0.45);
+  --purple: #3B0F5E;
+  --purple-soft: rgba(59, 15, 94, 0.08);
+  --yellow: #F5C842;
+  --gold: #c89414;
+  --cream-1: #faf7f2;
+  --cream-2: #f7f4ee;
+  --line: rgba(26, 10, 46, 0.08);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+}
+body { overflow-x: clip; max-width: 100vw; }
+
+/* Nav (matches homepage) */
+.kong-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1280px; margin: 0 auto;
+  position: relative; z-index: 30;
+  background: transparent;
+}
+.kong-nav-left { display: flex; align-items: center; gap: 28px; }
+.kong-nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; font-size: 17px; color: var(--ink);
+  text-decoration: none;
+}
+.kong-nav-logo img { width: 32px; height: 32px; }
+.kong-nav-right { display: flex; gap: 24px; align-items: center; }
+.kong-nav-items { display: flex; gap: 26px; align-items: center; }
+.kong-nav-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; font-weight: 500; color: rgba(26, 10, 46, 0.65);
+  cursor: pointer; transition: color 0.2s;
+  text-decoration: none;
+}
+.kong-nav-item:hover { color: var(--ink); }
+.kong-nav-cta {
+  background: var(--purple); color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; font-weight: 600;
+  padding: 10px 18px; border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(59, 15, 94, 0.18);
+}
+.kong-nav-cta:hover { transform: translateY(-1px); background: #4d1378; box-shadow: 0 4px 14px rgba(59, 15, 94, 0.28); }
+
+/* Policy page hero */
+.legal-hero {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 40px 32px;
+  position: relative;
+}
+.legal-breadcrumb {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--ink-45);
+  margin-bottom: 18px;
+  display: flex; align-items: center; gap: 8px;
+  flex-wrap: wrap;
+}
+.legal-breadcrumb a { color: var(--ink-60); text-decoration: none; }
+.legal-breadcrumb a:hover { color: var(--purple); }
+.legal-breadcrumb .sep { color: var(--ink-45); }
+.legal-breadcrumb .here { color: var(--ink); font-weight: 600; }
+
+.legal-h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1.6px;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+.legal-meta {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 14px 5px 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-70);
+  margin-bottom: 20px;
+}
+.legal-meta-badge {
+  width: 22px; height: 22px;
+  background: var(--purple);
+  color: white;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 11px;
+}
+.legal-intro {
+  font-family: 'Inter', sans-serif;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--ink-70);
+  max-width: 720px;
+  text-wrap: pretty;
+}
+.legal-intro strong { color: var(--ink); font-weight: 600; }
+
+/* Mobile dropdown TOC */
+.legal-toc-select {
+  display: none;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px 24px;
+}
+.legal-toc-select select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231a0a2e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+/* Two-column grid */
+.legal-body {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 16px 40px 100px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* Sticky TOC */
+.legal-toc {
+  position: sticky;
+  top: 30px;
+  align-self: start;
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+.legal-toc-h {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.legal-toc-list { list-style: none; }
+.legal-toc-list li {
+  margin-bottom: 2px;
+}
+.legal-toc-list a {
+  display: block;
+  padding: 8px 12px 8px 14px;
+  border-left: 2px solid transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink-60);
+  text-decoration: none;
+  line-height: 1.4;
+  border-radius: 0 6px 6px 0;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+.legal-toc-list a:hover { color: var(--ink); background: rgba(255,255,255,0.55); }
+.legal-toc-list a.active {
+  color: var(--purple);
+  border-left-color: var(--purple);
+  background: var(--purple-soft);
+  font-weight: 600;
+}
+.legal-toc-num {
+  display: inline-block;
+  width: 22px;
+  color: var(--ink-45);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.legal-toc-list a.active .legal-toc-num { color: var(--purple); }
+
+/* Main content */
+.legal-content {
+  max-width: 760px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 48px 56px 56px;
+  box-shadow: 0 8px 28px rgba(26, 10, 46, 0.04);
+  font-family: 'Inter', sans-serif;
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--ink-70);
+}
+.legal-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: var(--ink);
+  margin: 48px 0 18px;
+  scroll-margin-top: 24px;
+}
+.legal-content h2:first-child { margin-top: 0; }
+.legal-content h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: var(--ink);
+  margin: 28px 0 10px;
+}
+.legal-content p { margin-bottom: 14px; text-wrap: pretty; }
+.legal-content p strong { color: var(--ink); font-weight: 600; }
+.legal-content ul {
+  margin: 0 0 16px 0;
+  padding-left: 22px;
+  list-style: none;
+}
+.legal-content ul li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+.legal-content ul li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 12px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--purple);
+  opacity: 0.55;
+}
+.legal-content ul li strong { color: var(--ink); font-weight: 600; }
+.legal-content blockquote {
+  margin: 18px 0;
+  padding: 14px 18px;
+  background: rgba(245, 200, 66, 0.10);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+}
+.legal-content blockquote p { color: var(--ink); margin-bottom: 6px; font-size: 14.5px; }
+.legal-content blockquote p:last-child { margin-bottom: 0; }
+.legal-content hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 36px 0 28px;
+}
+
+.legal-back-top {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+}
+.legal-back-top a {
+  color: var(--purple);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 5px;
+  font-weight: 600;
+}
+.legal-back-top a:hover { text-decoration: underline; }
+
+.legal-cross {
+  margin-top: 60px;
+  padding: 28px 32px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  box-shadow: 0 4px 14px rgba(26, 10, 46, 0.04);
+}
+.legal-cross h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.legal-cross a {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--cream-1);
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.2s, transform 0.15s;
+}
+.legal-cross a:hover { border-color: rgba(59,15,94,0.25); transform: translateY(-1px); }
+.legal-cross a .ti {
+  flex-shrink: 0;
+  font-size: 18px;
+  color: var(--purple);
+  margin-top: 2px;
+}
+.legal-cross-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  display: block;
+  line-height: 1.3;
+}
+.legal-cross-sub {
+  font-size: 12.5px;
+  color: var(--ink-60);
+  display: block;
+  margin-top: 2px;
+}
+
+@media (max-width: 980px) {
+  .legal-body {
+    grid-template-columns: 1fr;
+    padding: 8px 22px 64px;
+    gap: 0;
+  }
+  .legal-toc { display: none; }
+  .legal-toc-select { display: block; padding: 0 22px 20px; }
+  .legal-content { padding: 32px 24px 36px; }
+  .legal-hero { padding: 24px 22px 24px; }
+  .legal-h1 { font-size: 34px; letter-spacing: -1px; }
+  .legal-cross { grid-template-columns: 1fr; padding: 22px; }
+}
+@media (max-width: 720px) {
+  .kong-nav { padding: 14px 18px; }
+  .kong-nav-items { gap: 14px; }
+}
+
+/* Footer (matches homepage) */
+.kong-footer {
+  background: white;
+  border-top: 1px solid var(--line);
+  padding: 60px 40px 30px;
+}
+.kong-footer-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.3fr;
+  gap: 56px;
+  align-items: start;
+}
+.kong-footer-brand h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.kong-footer-subscribe {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--cream-1);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 4px 4px 16px;
+  max-width: 360px;
+}
+.kong-footer-subscribe input {
+  background: transparent;
+  border: none; outline: none;
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  color: var(--ink);
+  padding: 8px 4px;
+}
+.kong-footer-subscribe input::placeholder { color: var(--ink-45); }
+.kong-footer-subscribe button {
+  background: var(--purple); color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13.5px; font-weight: 600;
+  cursor: pointer;
+}
+.kong-footer-col h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.kong-footer-col ul { list-style: none; }
+.kong-footer-col li { margin-bottom: 10px; }
+.kong-footer-col a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--ink-70);
+  text-decoration: none;
+}
+.kong-footer-col a:hover { color: var(--ink); }
+.kong-footer-bottom {
+  max-width: 1240px;
+  margin: 48px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--ink-45);
+  line-height: 1.7;
+}
+.kong-footer-legal { display: flex; flex-direction: column; gap: 2px; }
+.kong-footer-socials { display: flex; gap: 10px; }
+.kong-footer-socials a {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--ink-60);
+  text-decoration: none;
+}
+.kong-footer-socials a:hover { color: var(--purple); border-color: var(--purple); background: var(--purple-soft); }
+@media (max-width: 720px) {
+  .kong-footer { padding: 50px 20px 24px; }
+  .kong-footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .kong-footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+</style>
+<style>
+/* ── Industries nav dropdown ───────────────── */
+.kong-nav-dd { position: relative; display: inline-flex; align-items: center; }
+.kong-nav-dd-trigger {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: none; border: none; cursor: pointer;
+  font-family: inherit; font-size: 14px; font-weight: 500;
+  color: rgba(26,10,46,0.65); padding: 4px 0; transition: color 0.2s;
+}
+.kong-nav-dd-trigger .ti { font-size: 15px; transition: transform 0.25s; }
+.kong-nav-dd:hover .kong-nav-dd-trigger,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger { color: #1a0a2e; }
+.kong-nav-dd:hover .kong-nav-dd-trigger .ti,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger .ti { transform: rotate(180deg); }
+.kong-nav-dd::after { content:''; position:absolute; left:0; right:0; top:100%; height:18px; }
+.kong-nav-dd-menu {
+  position: absolute; top: calc(100% + 16px); left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: #fff; border: 1px solid var(--line, rgba(26,10,46,0.08)); border-radius: 14px;
+  box-shadow: 0 18px 44px -14px rgba(26,10,46,0.22);
+  padding: 8px; min-width: 234px;
+  display: flex; flex-direction: column; gap: 1px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s; z-index: 200;
+}
+.kong-nav-dd:hover .kong-nav-dd-menu,
+.kong-nav-dd:focus-within .kong-nav-dd-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.kong-nav-dd-menu a {
+  display: flex; align-items: center; gap: 11px;
+  padding: 9px 12px; border-radius: 9px;
+  font-size: 14px; font-weight: 500; color: var(--ink-70, rgba(26,10,46,0.7));
+  text-decoration: none; white-space: nowrap; transition: background 0.15s, color 0.15s;
+}
+.kong-nav-dd-menu a:hover { background: var(--purple-soft, rgba(59,15,94,0.08)); color: var(--purple, #3B0F5E); }
+.kong-nav-dd-menu a .ti { font-size: 16px; color: var(--purple, #3B0F5E); opacity: 0.85; }
+.kong-nav-dd-divider { height: 1px; background: var(--line, rgba(26,10,46,0.08)); margin: 6px 4px; }
+.kong-mobile-dd-label {
+  font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-45, rgba(26,10,46,0.45));
+  padding: 6px 0 2px;
+}
+.kong-mobile-sub { padding-left: 14px !important; }
+</style>
+</head>
+<body>
+
+<nav class="kong-nav">
+  <div class="kong-nav-left">
+    <a class="kong-nav-logo" href="/">
+      <img src="../images/logo.webp" alt="Kong">
+      Kong
+    </a>
+  </div>
+  <div class="kong-nav-right">
+    <div class="kong-nav-items">
+      <div class="kong-nav-dd">
+        <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Industries<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+        <div class="kong-nav-dd-menu" role="menu">
+          <a href="../class-booking-system" role="menuitem"><i class="ti ti-building-store" aria-hidden="true"></i>Workshops &amp; Classes</a>
+          <div class="kong-nav-dd-divider"></div>
+          <a href="../atv-tours" role="menuitem"><i class="ti ti-car-off-road" aria-hidden="true"></i>ATV Tours</a>
+          <a href="../cooking-classes" role="menuitem"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>Cooking Classes</a>
+          <a href="../wine-tours" role="menuitem"><i class="ti ti-glass-full" aria-hidden="true"></i>Wine Tours</a>
+          <a href="../charter-bookings" role="menuitem"><i class="ti ti-anchor" aria-hidden="true"></i>Charters</a>
+          <a href="../adventure-tours" role="menuitem"><i class="ti ti-mountain" aria-hidden="true"></i>Adventure Tours</a>
+          <a href="../food-tours" role="menuitem"><i class="ti ti-soup" aria-hidden="true"></i>Food Tours</a>
+          <a href="../dive-centres" role="menuitem"><i class="ti ti-scuba-mask" aria-hidden="true"></i>Dive Centres</a>
+          <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
+        </div>
+      </div>
+      <a class="kong-nav-item" href="../blog">Blog</a>
+      <a class="kong-nav-item" href="../about">About</a>
+      <a class="kong-nav-item" href="../class-booking-system">Features</a>
+      <a class="kong-nav-item" href="/#pricing">Pricing</a>
+      <a class="kong-nav-item" href="/#faq">FAQ</a>
+    </div>
+    <a href="https://app.bookwithkong.com" target="_blank" rel="noopener" class="kong-nav-cta">Get started free</a>
+  </div>
+</nav>
+
+<section class="legal-hero">
+  <div class="legal-breadcrumb">
+    <a href="/">Home</a>
+    <span class="sep">/</span>
+    <a href="../legal-terms">Legal &amp; Policies</a>
+    <span class="sep">/</span>
+    <span class="here">Privacy Policy</span>
+  </div>
+  <h1 class="legal-h1">Privacy Policy</h1>
+  <div class="legal-meta"><span class="legal-meta-badge"><i class="ti ti-file-text"></i></span>Version 1.0 | Last Updated: November 24, 2025</div>
+  <div class="legal-intro"><p>SUPERSTRING SDN. BHD. (202401016432 (1562282-H)) ("Kong", "we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard personal information when you use the Kong booking software and channel management platform (the "Platform").</p>
+<p>This Privacy Policy applies to:</p>
+<ul>
+<li><strong>Operators</strong>: Tour and activity operators who use the Platform to manage their business</li>
+<li><strong>Guests</strong>: End customers who book tours and activities through the Platform</li>
+</ul>
+<p>By using the Platform, you consent to the practices described in this Privacy Policy. If you do not agree with this Privacy Policy, please do not use the Platform.</p></div>
+</section>
+
+<div class="legal-toc-select">
+  <select id="legal-toc-jump">
+    <option value="">Jump to section…</option>
+    <option value="section-1">1. Information We Collect</option>
+    <option value="section-2">2. How We Use Your Information</option>
+    <option value="section-3">3. How We Share Your Information</option>
+    <option value="section-4">4. Data Retention</option>
+    <option value="section-5">5. Data Security</option>
+    <option value="section-6">6. Your Rights Under Malaysian PDPA</option>
+    <option value="section-7">7. International Data Transfers</option>
+    <option value="section-8">8. Children's Privacy</option>
+    <option value="section-9">9. Data Controller and Processor Relationships</option>
+    <option value="section-10">10. Third-Party Links and Services</option>
+    <option value="section-11">11. Changes to This Privacy Policy</option>
+    <option value="section-12">12. Contact Us</option>
+    <option value="section-13">13. Cookie Policy</option>
+    <option value="section-14">14. Specific Regional Provisions</option>
+  </select>
+</div>
+
+<div class="legal-body">
+  <aside class="legal-toc">
+  <div class="legal-toc-h">On this page</div>
+  <ul class="legal-toc-list">
+      <li><a href="#section-1" data-target="section-1"><span class="legal-toc-num">1.</span>Information We Collect</a></li>
+      <li><a href="#section-2" data-target="section-2"><span class="legal-toc-num">2.</span>How We Use Your Information</a></li>
+      <li><a href="#section-3" data-target="section-3"><span class="legal-toc-num">3.</span>How We Share Your Information</a></li>
+      <li><a href="#section-4" data-target="section-4"><span class="legal-toc-num">4.</span>Data Retention</a></li>
+      <li><a href="#section-5" data-target="section-5"><span class="legal-toc-num">5.</span>Data Security</a></li>
+      <li><a href="#section-6" data-target="section-6"><span class="legal-toc-num">6.</span>Your Rights Under Malaysian PDPA</a></li>
+      <li><a href="#section-7" data-target="section-7"><span class="legal-toc-num">7.</span>International Data Transfers</a></li>
+      <li><a href="#section-8" data-target="section-8"><span class="legal-toc-num">8.</span>Children's Privacy</a></li>
+      <li><a href="#section-9" data-target="section-9"><span class="legal-toc-num">9.</span>Data Controller and Processor Relationships</a></li>
+      <li><a href="#section-10" data-target="section-10"><span class="legal-toc-num">10.</span>Third-Party Links and Services</a></li>
+      <li><a href="#section-11" data-target="section-11"><span class="legal-toc-num">11.</span>Changes to This Privacy Policy</a></li>
+      <li><a href="#section-12" data-target="section-12"><span class="legal-toc-num">12.</span>Contact Us</a></li>
+      <li><a href="#section-13" data-target="section-13"><span class="legal-toc-num">13.</span>Cookie Policy</a></li>
+      <li><a href="#section-14" data-target="section-14"><span class="legal-toc-num">14.</span>Specific Regional Provisions</a></li>
+  </ul>
+</aside>
+
+  <main class="legal-content">
+<h2 id="section-1">1. Information We Collect</h2>
+<h3>1.1 Information from Operators</h3>
+<p>When you register and use the Platform as an operator, we collect:</p>
+<p><strong>Account Information:</strong></p>
+<ul>
+<li>Business name and registration details</li>
+<li>Contact person name and title</li>
+<li>Email address and phone number</li>
+<li>Business address</li>
+<li>Payment gateway account information (for integration purposes)</li>
+<li>Bank account details (if applicable for settlements)</li>
+</ul>
+<p><strong>Business Information:</strong></p>
+<ul>
+<li>Tour and activity descriptions</li>
+<li>Pricing and availability data</li>
+<li>Photos, videos, and marketing content</li>
+<li>Cancellation and refund policies</li>
+<li>Operating licenses and permits (if provided)</li>
+</ul>
+<p><strong>Booking and Transaction Data:</strong></p>
+<ul>
+<li>Booking details and guest information (collected on your behalf)</li>
+<li>Transaction records and payment information</li>
+<li>Refund and cancellation records</li>
+<li>Communication with guests</li>
+</ul>
+<p><strong>Usage Information:</strong></p>
+<ul>
+<li>Platform access logs and activity</li>
+<li>Feature usage and preferences</li>
+<li>IP addresses and device information</li>
+<li>Browser type and operating system</li>
+</ul>
+<h3>1.2 Information from Guests</h3>
+<p>When guests book through the Platform, we collect on behalf of operators:</p>
+<p><strong>Booking Information:</strong></p>
+<ul>
+<li>Full name</li>
+<li>Email address and phone number</li>
+<li>Nationality and country of residence</li>
+<li>Number of participants and participant details</li>
+<li>Special requirements or requests</li>
+</ul>
+<p><strong>Payment Information:</strong></p>
+<ul>
+<li>Payment method details (processed through payment gateways)</li>
+<li>Billing address</li>
+<li>Transaction records</li>
+</ul>
+<p><strong>Communication Data:</strong></p>
+<ul>
+<li>Messages between guests and operators</li>
+<li>Booking confirmations and notifications</li>
+<li>Feedback and reviews (if provided)</li>
+</ul>
+<p><strong>Technical Information:</strong></p>
+<ul>
+<li>IP address and device information</li>
+<li>Browser type and language preferences</li>
+<li>Booking flow interactions</li>
+</ul>
+<h3>1.3 Information from Other Sources</h3>
+<p>We may receive information about you from:</p>
+<ul>
+<li>Third-party channels and OTAs where your tours are distributed</li>
+<li>Payment gateway providers</li>
+<li>Social media platforms (if you connect your accounts)</li>
+<li>Public sources such as business registries</li>
+<li>Identity verification services</li>
+</ul>
+<h3>1.4 Cookies and Tracking Technologies</h3>
+<p>We use cookies and similar technologies to:</p>
+<ul>
+<li>Maintain your login session</li>
+<li>Remember your preferences</li>
+<li>Analyze Platform usage and performance</li>
+<li>Improve user experience</li>
+<li>Provide security features</li>
+</ul>
+<p>You can control cookies through your browser settings, but disabling cookies may affect Platform functionality.</p>
+<h2 id="section-2">2. How We Use Your Information</h2>
+<h3>2.1 To Provide Platform Services</h3>
+<p><strong>For Operators:</strong></p>
+<ul>
+<li>Create and manage your Account</li>
+<li>Process and facilitate bookings</li>
+<li>Enable payment processing through your payment gateway</li>
+<li>Distribute your inventory to connected channels</li>
+<li>Provide reporting and analytics</li>
+<li>Communicate important Platform updates</li>
+</ul>
+<p><strong>For Guests:</strong></p>
+<ul>
+<li>Process booking requests</li>
+<li>Facilitate communication with operators</li>
+<li>Send booking confirmations and reminders</li>
+<li>Process payments through payment gateways</li>
+<li>Provide customer support</li>
+</ul>
+<h3>2.2 To Improve and Develop the Platform</h3>
+<p>We use aggregated and anonymized data to:</p>
+<ul>
+<li>Analyze Platform performance and usage patterns</li>
+<li>Develop new features and services</li>
+<li>Identify and fix technical issues</li>
+<li>Conduct research and analytics</li>
+<li>Improve user experience</li>
+</ul>
+<h3>2.3 For Security and Fraud Prevention</h3>
+<p>We process information to:</p>
+<ul>
+<li>Verify identity and prevent fraud</li>
+<li>Detect and prevent unauthorized access</li>
+<li>Protect against security threats</li>
+<li>Comply with legal obligations</li>
+<li>Enforce our Terms and Conditions</li>
+</ul>
+<h3>2.4 For Marketing and Communication</h3>
+<p><strong>For Operators (with consent):</strong></p>
+<ul>
+<li>Send Platform updates and new feature announcements</li>
+<li>Provide educational content and best practices</li>
+<li>Share industry insights and benchmarks</li>
+<li>Conduct surveys and request feedback</li>
+</ul>
+<p><strong>For Guests (with operator permission):</strong></p>
+<ul>
+<li>Send booking-related communications on behalf of operators</li>
+<li>Deliver post-booking follow-ups as configured by operators</li>
+</ul>
+<p>You can opt out of marketing communications at any time by clicking "unsubscribe" in emails or contacting us directly.</p>
+<h3>2.5 For Legal Compliance</h3>
+<p>We may process information to:</p>
+<ul>
+<li>Comply with applicable laws and regulations</li>
+<li>Respond to legal requests and court orders</li>
+<li>Protect our legal rights and interests</li>
+<li>Resolve disputes and enforce agreements</li>
+</ul>
+<h2 id="section-3">3. How We Share Your Information</h2>
+<h3>3.1 With Operators and Guests</h3>
+<p><strong>Operator Access to Guest Data:</strong></p>
+<ul>
+<li>Operators receive guest booking information necessary to deliver their services</li>
+<li>Operators are responsible for protecting guest data in their possession</li>
+<li>Operators must comply with applicable data protection laws</li>
+</ul>
+<p><strong>Guest Access to Operator Data:</strong></p>
+<ul>
+<li>Guests receive operator contact information and tour details</li>
+<li>Guests can access booking confirmations and receipts</li>
+</ul>
+<h3>3.2 With Third-Party Service Providers</h3>
+<p>We share information with trusted service providers who assist us:</p>
+<p><strong>Payment Gateway Providers</strong> (Stripe, Xendit, etc.):</p>
+<ul>
+<li>Payment processing and transaction facilitation</li>
+<li>Fraud detection and prevention</li>
+<li>Payment gateway integration and split payment functionality</li>
+</ul>
+<p><strong>Channel Partners and OTAs:</strong></p>
+<ul>
+<li>Inventory distribution as authorized by operators</li>
+<li>Booking synchronization across channels</li>
+<li>Availability and pricing updates</li>
+</ul>
+<p><strong>Technology Service Providers:</strong></p>
+<ul>
+<li>Cloud hosting and infrastructure (AWS, Google Cloud, etc.)</li>
+<li>Email delivery services</li>
+<li>Analytics and monitoring tools</li>
+<li>Customer support platforms</li>
+</ul>
+<p><strong>Professional Services:</strong></p>
+<ul>
+<li>Legal and accounting services</li>
+<li>Security and compliance auditing</li>
+<li>Business consulting</li>
+</ul>
+<p>All third-party service providers are contractually obligated to protect your information and use it only for specified purposes.</p>
+<h3>3.3 For Business Transfers</h3>
+<p>If Kong undergoes a merger, acquisition, reorganization, or sale of assets, your information may be transferred as part of that transaction. We will notify you of any such change and any choices you may have.</p>
+<h3>3.4 For Legal Reasons</h3>
+<p>We may disclose information when required by law or when we believe disclosure is necessary to:</p>
+<ul>
+<li>Comply with legal obligations, court orders, or regulatory requirements</li>
+<li>Protect our rights, property, or safety</li>
+<li>Protect the rights, property, or safety of others</li>
+<li>Investigate fraud or security issues</li>
+<li>Enforce our Terms and Conditions</li>
+</ul>
+<h3>3.5 With Your Consent</h3>
+<p>We may share information for other purposes with your explicit consent.</p>
+<h2 id="section-4">4. Data Retention</h2>
+<h3>4.1 Retention Periods</h3>
+<p><strong>Operator Data:</strong></p>
+<ul>
+<li>Account information: Retained while your Account is active and for 7 years after termination for legal and accounting purposes</li>
+<li>Booking and transaction records: Retained for 7 years for tax and legal compliance</li>
+<li>Communication records: Retained for 3 years</li>
+<li>Usage logs: Retained for 12 months</li>
+</ul>
+<p><strong>Guest Data:</strong></p>
+<ul>
+<li>Booking information: Retained for 7 years for legal and accounting purposes</li>
+<li>Communication records: Retained for 3 years</li>
+<li>Payment information: Not stored by Kong (processed and stored by payment gateways)</li>
+</ul>
+<h3>4.2 Deletion Requests</h3>
+<p>You may request deletion of your personal information, subject to:</p>
+<ul>
+<li>Legal obligations to retain certain records</li>
+<li>Legitimate business purposes</li>
+<li>Outstanding financial obligations</li>
+<li>Pending disputes or legal proceedings</li>
+</ul>
+<p>After Account deletion, we will anonymize or delete your information within 30 days, except where retention is required by law.</p>
+<h2 id="section-5">5. Data Security</h2>
+<h3>5.1 Security Measures</h3>
+<p>We implement appropriate technical and organizational measures to protect personal information:</p>
+<p><strong>Technical Safeguards:</strong></p>
+<ul>
+<li>Encryption of data in transit (TLS/SSL)</li>
+<li>Encryption of sensitive data at rest</li>
+<li>Secure authentication and access controls</li>
+<li>Regular security testing and vulnerability assessments</li>
+<li>Firewall and intrusion detection systems</li>
+</ul>
+<p><strong>Organizational Safeguards:</strong></p>
+<ul>
+<li>Limited access to personal information on a need-to-know basis</li>
+<li>Employee training on data protection and security</li>
+<li>Confidentiality agreements with employees and contractors</li>
+<li>Incident response and breach notification procedures</li>
+<li>Regular security audits and compliance reviews</li>
+</ul>
+<h3>5.2 Your Security Responsibilities</h3>
+<p>You are responsible for:</p>
+<ul>
+<li>Maintaining the confidentiality of your login credentials</li>
+<li>Using strong, unique passwords</li>
+<li>Enabling two-factor authentication (if available)</li>
+<li>Securing devices used to access the Platform</li>
+<li>Reporting suspected security breaches immediately</li>
+</ul>
+<h3>5.3 Payment Security</h3>
+<p>Kong does not store payment card information. All payment data is collected and stored by PCI-DSS compliant payment gateway providers. Kong receives only transaction references and confirmation details necessary for booking management.</p>
+<h3>5.4 No Absolute Security</h3>
+<p>While we implement robust security measures, no method of transmission or storage is 100% secure. We cannot guarantee absolute security of your information.</p>
+<h2 id="section-6">6. Your Rights Under Malaysian PDPA</h2>
+<p>Under the Malaysia Personal Data Protection Act 2010 (PDPA), you have the following rights:</p>
+<h3>6.1 Right to Access</h3>
+<p>You have the right to request access to your personal information held by us. We will provide:</p>
+<ul>
+<li>Confirmation of whether we hold your personal information</li>
+<li>A copy of your personal information</li>
+<li>Information about how we use and disclose your data</li>
+</ul>
+<h3>6.2 Right to Correction</h3>
+<p>You have the right to request correction of inaccurate or incomplete personal information. You can update most information directly through your Account settings.</p>
+<h3>6.3 Right to Withdraw Consent</h3>
+<p>Where we process your information based on consent, you have the right to withdraw that consent at any time. This may affect our ability to provide certain services.</p>
+<h3>6.4 Right to Limit Processing</h3>
+<p>You have the right to request that we limit processing of your personal information in certain circumstances, such as:</p>
+<ul>
+<li>When you contest the accuracy of the data</li>
+<li>When processing is unlawful but you prefer limitation over deletion</li>
+<li>When we no longer need the data but you need it for legal claims</li>
+</ul>
+<h3>6.5 Right to Data Portability (where applicable)</h3>
+<p>You may request a copy of your personal information in a structured, commonly used format for transfer to another service provider.</p>
+<h3>6.6 Right to Complain</h3>
+<p>If you believe we have not handled your personal information in accordance with the PDPA, you have the right to lodge a complaint with:</p>
+<p><strong>Personal Data Protection Department</strong> Ministry of Communications and Digital Level 4-7, Menara MCMC, Off Persiaran Multimedia 63000 Cyberjaya, Selangor Darul Ehsan, Malaysia Email: pdp@pmo.gov.my Website: www.pdp.gov.my</p>
+<h3>6.7 Exercising Your Rights</h3>
+<p>To exercise any of these rights, please contact us at:</p>
+<ul>
+<li>Email: blake@bookwithkong.com</li>
+<li>Subject line: "Data Privacy Request"</li>
+</ul>
+<p>We will respond to your request within 21 days as required under the PDPA. We may require proof of identity before processing your request.</p>
+<h2 id="section-7">7. International Data Transfers</h2>
+<p>Kong operates primarily in Malaysia and Southeast Asia. Your information may be transferred to and processed in countries where our service providers operate, including:</p>
+<ul>
+<li>Singapore (AWS, cloud infrastructure)</li>
+<li>United States (certain technology service providers)</li>
+<li>Other countries where our channel partners operate</li>
+</ul>
+<p>When transferring data internationally, we ensure appropriate safeguards are in place through:</p>
+<ul>
+<li>Standard contractual clauses</li>
+<li>Service provider security certifications</li>
+<li>Data processing agreements</li>
+<li>Compliance with applicable data protection laws</li>
+</ul>
+<h2 id="section-8">8. Children's Privacy</h2>
+<p>The Platform is not intended for use by individuals under 18 years of age. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us immediately so we can delete it.</p>
+<p>Booking information may include details about minor participants in tours, but such bookings must be made by adults who have authority to provide that information.</p>
+<h2 id="section-9">9. Data Controller and Processor Relationships</h2>
+<h3>9.1 Kong as Data Controller</h3>
+<p>Kong acts as a data controller for:</p>
+<ul>
+<li>Operator account information and Platform usage data</li>
+<li>Booking fee transaction records</li>
+<li>Aggregated analytics and platform performance data</li>
+<li>Marketing and communication preferences</li>
+</ul>
+<h3>9.2 Kong as Data Processor</h3>
+<p>Kong acts as a data processor on behalf of operators for:</p>
+<ul>
+<li>Guest booking information collected through operator booking forms</li>
+<li>Communication between operators and guests</li>
+<li>Guest personal information required for tour delivery</li>
+</ul>
+<p><strong>Operator Responsibilities:</strong></p>
+<p>When you use Kong to collect guest information, you act as the data controller and are responsible for:</p>
+<ul>
+<li>Obtaining necessary consents from guests</li>
+<li>Providing guests with appropriate privacy notices</li>
+<li>Ensuring your data practices comply with applicable laws</li>
+<li>Determining retention periods for guest data</li>
+<li>Responding to guest data subject requests</li>
+</ul>
+<p>Kong will assist you in meeting your data protection obligations through Platform features and support.</p>
+<h3>9.3 Payment Gateway Providers as Data Controllers</h3>
+<p>Payment gateway providers (Stripe, Xendit, etc.) act as independent data controllers for payment card information and transaction data. Their processing is governed by their own privacy policies and terms of service.</p>
+<h2 id="section-10">10. Third-Party Links and Services</h2>
+<p>The Platform may contain links to third-party websites, channels, and services. This Privacy Policy does not apply to those third parties. We are not responsible for the privacy practices of:</p>
+<ul>
+<li>OTA channels where your inventory is distributed</li>
+<li>Payment gateway providers</li>
+<li>Social media platforms</li>
+<li>Other third-party services</li>
+</ul>
+<p>We encourage you to review the privacy policies of any third-party services you use.</p>
+<h2 id="section-11">11. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time to reflect:</p>
+<ul>
+<li>Changes in our data practices</li>
+<li>New features or services</li>
+<li>Changes in applicable laws</li>
+<li>Feedback from users or regulators</li>
+</ul>
+<p><strong>Notification of Changes:</strong></p>
+<ul>
+<li>Material changes will be communicated via email at least 30 days before taking effect</li>
+<li>The "Last Updated" date at the top will be revised</li>
+<li>Continued use of the Platform after changes take effect constitutes acceptance</li>
+</ul>
+<p>We encourage you to review this Privacy Policy periodically.</p>
+<h2 id="section-12">12. Contact Us</h2>
+<p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+<p><strong>Data Protection Contact:</strong></p>
+<p>SUPERSTRING SDN. BHD. 202401016432 (1562282-H) Waldorf Tower Jalan Sri Hartamas 17, 50480 Sri Hartamas, Kuala Lumpur, Malaysia</p>
+<p>Email: blake@bookwithkong.com Subject: Privacy Policy Inquiry Website: www.bookwithkong.com</p>
+<p><strong>Response Time:</strong> We will respond to privacy inquiries within 21 days as required under Malaysian PDPA.</p>
+<h2 id="section-13">13. Cookie Policy</h2>
+<h3>13.1 What Are Cookies</h3>
+<p>Cookies are small text files stored on your device when you visit the Platform. They help us provide a better user experience and understand how the Platform is used.</p>
+<h3>13.2 Types of Cookies We Use</h3>
+<p><strong>Essential Cookies:</strong></p>
+<ul>
+<li>Authentication and session management</li>
+<li>Security and fraud prevention</li>
+<li>Platform functionality</li>
+</ul>
+<p><strong>Performance Cookies:</strong></p>
+<ul>
+<li>Analytics and usage tracking (Google Analytics, etc.)</li>
+<li>Error monitoring and debugging</li>
+<li>Performance optimization</li>
+</ul>
+<p><strong>Functional Cookies:</strong></p>
+<ul>
+<li>User preferences and settings</li>
+<li>Language and region selection</li>
+<li>Feature personalization</li>
+</ul>
+<p><strong>Marketing Cookies (with consent):</strong></p>
+<ul>
+<li>Advertising and remarketing</li>
+<li>Campaign tracking</li>
+<li>User engagement measurement</li>
+</ul>
+<h3>13.3 Third-Party Cookies</h3>
+<p>Some cookies are set by third-party services we use:</p>
+<ul>
+<li>Google Analytics (analytics)</li>
+<li>Payment gateway providers (fraud prevention)</li>
+<li>Channel integration partners (session management)</li>
+</ul>
+<h3>13.4 Managing Cookies</h3>
+<p><strong>Browser Settings:</strong> You can control cookies through your browser settings:</p>
+<ul>
+<li>Block all cookies</li>
+<li>Block third-party cookies</li>
+<li>Delete existing cookies</li>
+<li>Receive notifications when cookies are set</li>
+</ul>
+<p><strong>Impact of Blocking Cookies:</strong> Disabling certain cookies may affect Platform functionality, including:</p>
+<ul>
+<li>Inability to stay logged in</li>
+<li>Loss of preferences and settings</li>
+<li>Impaired booking functionality</li>
+<li>Reduced analytics capabilities</li>
+</ul>
+<p><strong>Cookie Consent:</strong> When you first visit the Platform, we will ask for your consent to use non-essential cookies. You can change your preferences at any time through your Account settings or browser configuration.</p>
+<h2 id="section-14">14. Specific Regional Provisions</h2>
+<h3>14.1 Malaysia</h3>
+<p>This Privacy Policy complies with the Malaysia Personal Data Protection Act 2010. Malaysian users have specific rights as outlined in Section 6.</p>
+<h3>14.2 Other Southeast Asian Jurisdictions</h3>
+<p>We aim to comply with data protection regulations in all jurisdictions where we operate, including:</p>
+<ul>
+<li>Singapore Personal Data Protection Act (PDPA)</li>
+<li>Thailand Personal Data Protection Act (PDPA)</li>
+<li>Vietnam Law on Cybersecurity</li>
+<li>Philippines Data Privacy Act</li>
+<li>Indonesia Personal Data Protection Law</li>
+</ul>
+<p>If you are located in these jurisdictions, you may have additional rights under local laws.</p>
+<h3>14.3 European Economic Area (EEA) / UK</h3>
+<p>If you are located in the EEA or UK, you have additional rights under GDPR/UK GDPR, including:</p>
+<ul>
+<li>Right to erasure ("right to be forgotten")</li>
+<li>Right to object to processing</li>
+<li>Right to lodge complaints with supervisory authorities</li>
+<li>Enhanced data portability rights</li>
+</ul>
+<hr>
+<p><strong>By using the Kong Platform, you acknowledge that you have read, understood, and agree to the practices described in this Privacy Policy.</strong></p>
+
+    <div class="legal-back-top"><a href="#top"><i class="ti ti-arrow-up"></i>Back to top</a></div>
+
+    <div class="legal-cross">
+      <div>
+        <h4>Related policies</h4>
+        <a href="terms-and-conditions"><i class="ti ti-file-text"></i><span><span class="legal-cross-title">Terms and Conditions</span><span class="legal-cross-sub">Your agreement with Kong as an operator</span></span></a>
+        <a href="refund-policy"><i class="ti ti-file-text"></i><span><span class="legal-cross-title">Refund &amp; Cancellation Policy</span><span class="legal-cross-sub">How refunds and cancellations work</span></span></a>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <a href="mailto:blake@bookwithkong.com"><i class="ti ti-mail"></i><span><span class="legal-cross-title">Email Kong</span><span class="legal-cross-sub">blake@bookwithkong.com · reply within 21 days</span></span></a>
+        <a href="/"><i class="ti ti-home"></i><span><span class="legal-cross-title">Back to Kong</span><span class="legal-cross-sub">Return to the homepage</span></span></a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="kong-footer">
+  <div class="kong-footer-inner">
+    <div class="kong-footer-brand">
+      <h3>Subscribe for the latest Kong updates</h3>
+      <form class="kong-footer-subscribe" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="name@email.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="../class-booking-system">Class Booking System</a></li>
+        <li><a href="../australia">Kong Australia</a></li>
+        <li><a href="/#features">Website Booking Widget</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>More Resources</h4>
+      <ul>
+        <li><a href="../research/malaysia-operator-website-study">Research: State of Operators 2026</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="../legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="../legal-terms/privacy-policy">Privacy Policy</a></li>
+        <li><a href="../legal-terms/refund-policy">Refund Policy</a></li>
+        <li><a href="mailto:blake@bookwithkong.com">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Industries</h4>
+      <ul>
+        <li><a href="../class-booking-system">Workshops &amp; Classes</a></li>
+        <li><a href="../atv-tours">ATV Tours</a></li>
+        <li><a href="../cooking-classes">Cooking Classes</a></li>
+        <li><a href="../wine-tours">Wine Tours</a></li>
+        <li><a href="../charter-bookings">Charters</a></li>
+        <li><a href="../adventure-tours">Adventure Tours</a></li>
+        <li><a href="../food-tours">Food Tours</a></li>
+        <li><a href="../dive-centres">Dive Centres</a></li>
+        <li><a href="../snorkelling-tours">Snorkelling Tours</a></li>
+      </ul>
+    </div>
+
+      <div class="kong-footer-col">
+      <h4>Compare platforms</h4>
+      <ul>
+        <li><a href="../blog/best-booking-software-malaysia">Best Booking Software for Tour Operators in Malaysia</a></li>
+        <li><a href="../blog/best-booking-software-australia">Best Tour Booking Systems in Australia</a></li>
+        <li><a href="../compare/kong-vs-bokun">Kong vs Bokun</a></li>
+        <li><a href="../compare/kong-vs-rezdy">Kong vs Rezdy</a></li>
+        <li><a href="../compare/kong-vs-bookeo">Kong vs Bookeo</a></li>
+        <li><a href="../compare/kong-vs-fareharbor">Kong vs FareHarbor</a></li>
+        <li><a href="../compare/kong-vs-amelia">Kong vs Amelia</a></li>
+        <li><a href="../compare/kong-vs-checkfront">Kong vs Checkfront</a></li>
+      </ul>
+    </div>
+</div>
+  <div class="kong-footer-bottom">
+    <div class="kong-footer-legal">
+      <span>UEN Company Name: Kong Technologies Pte. Ltd.</span>
+      <span>UEN Company Number: 202608593C</span>
+      <span>SSM Company Name: Superstring Sdn. Bhd.</span>
+      <span>SSM Company Number: 202401016432 (1562282-H)</span>
+    </div>
+    <div class="kong-footer-socials">
+      <a href="https://www.linkedin.com/company/bookwithkong" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#0A66C2;"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Active-section highlight + TOC select navigation */
+(function() {
+  const links = document.querySelectorAll('.legal-toc-list a');
+  const linkMap = new Map();
+  links.forEach(a => linkMap.set(a.dataset.target, a));
+  if ('IntersectionObserver' in window) {
+    let lastActive = null;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const a = linkMap.get(e.target.id);
+          if (a) {
+            if (lastActive) lastActive.classList.remove('active');
+            a.classList.add('active');
+            lastActive = a;
+          }
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+    document.querySelectorAll('.legal-content h2[id]').forEach(h => io.observe(h));
+  }
+  const jump = document.getElementById('legal-toc-jump');
+  if (jump) {
+    jump.addEventListener('change', () => {
+      const id = jump.value;
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      jump.value = '';
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
