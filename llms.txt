@@ -1,0 +1,43 @@
+# Kong (bookwithkong.com)
+
+> Kong is a booking platform for tour and activity operators in Asia-Pacific. Operators take direct bookings through their own website, with pricing of $1 per booking capped at $139/month, or a booking fee paid by the guest. Kong's OTA connections are in development.
+
+## Key pages
+
+- [Home](https://www.bookwithkong.com/): Kong booking platform for tour operators
+- [Kong Australia](https://www.bookwithkong.com/australia): Australian pricing and details
+- [Kong Malaysia](https://www.bookwithkong.com/malaysia): Malaysian pricing and details
+- [About](https://www.bookwithkong.com/about): The team behind Kong
+- [Compare](https://www.bookwithkong.com/compare): Kong vs other booking platforms
+- [Blog](https://www.bookwithkong.com/blog): Practical guides for tour operators
+
+## Blog: Australia guides
+
+- [What OTAs and Resellers Charge Tour Operators in Australia (2026)](https://www.bookwithkong.com/blog/ota-commission-rates-australia): Viator, GetYourGuide and Klook commissions, plus Australian marketplaces, trade and concierge rates, every figure sourced and dated.
+- [Rezdy Pricing Explained (2026)](https://www.bookwithkong.com/blog/rezdy-pricing): Rezdy's plans, the 3% online fee and offline booking charges, with worked examples at Australian volumes.
+- [Rezdy Alternatives for Australian Tour Operators (2026)](https://www.bookwithkong.com/blog/rezdy-alternatives-australia): Six alternatives compared on verified pricing: FareHarbor, Bookeo, Checkfront, Bokun, Rezgo and Kong.
+- [Tour Operator Insurance in Australia](https://www.bookwithkong.com/blog/tour-operator-insurance-australia): Public liability, professional indemnity, marine cover and workers comp, with verified premium figures.
+- [SEO for Tour Operators: The Australian Guide](https://www.bookwithkong.com/blog/seo-for-tour-operators): Google Business Profile, Maps rankings, reviews, tour pages and AI assistants.
+- [Australia's Card Surcharge Ban: Operator Guide](https://www.bookwithkong.com/blog/card-surcharge-ban-tour-operators): What tour operators must change before 1 October 2026: fees, pricing and a pre-October checklist.
+- [Best Tour Booking Systems in Australia (2026)](https://www.bookwithkong.com/blog/best-booking-software-australia): Honest comparison of Rezdy, FareHarbor, Bokun, Checkfront and Kong.
+
+## Original research
+
+- [The State of Tour Operator Bookability in Southeast Asia (2026)](https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia): Only 11.8% of 2,334 tour operators across six countries can take a booking online. Original research, 43 destinations, data CC BY 4.0.
+- [Singapore](https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia/singapore): 28.4% of operators bookable online, a census of the city.
+- [Thailand](https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia/thailand): 17.6% bookable; Phuket 29.0%, Koh Samui 9.0%.
+- [Malaysia](https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia/malaysia): 10.2% bookable; 40.1% have no web presence at all.
+- [Vietnam](https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia/vietnam): 9.8% bookable despite 86.6% online presence.
+- [Philippines](https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia/philippines): 8.4% bookable; diving is 37.9% of the sample.
+- [Indonesia](https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia/indonesia): 8.1% bookable; 64.1% of non-bookable websites route bookings through WhatsApp.
+
+## Blog: more guides
+
+- [Best Booking Software for Tour Operators in Malaysia (2026)](https://www.bookwithkong.com/blog/best-booking-software-malaysia)
+- [Restech 2.0: The Co-Operator](https://www.bookwithkong.com/restech-2)
+- [The Best Channel Managers for Tour Operators in 2026](https://www.bookwithkong.com/blog/best-channel-manager-tour-operators)
+- [GetYourGuide vs Viator vs Klook](https://www.bookwithkong.com/blog/getyourguide-vs-viator-vs-klook)
+- [How to Become an OTA Supplier](https://www.bookwithkong.com/blog/how-to-become-an-ota-supplier)
+- [How to Get More Bookings for Your Tour Business](https://www.bookwithkong.com/blog/how-to-get-more-tour-bookings)
+- [Google Business Profile & Local SEO for Tour Operators](https://www.bookwithkong.com/blog/google-business-profile-local-seo-tour-operators)
+- [How to Get More Google Reviews for Your Tour Business](https://www.bookwithkong.com/blog/google-reviews-tour-business)
