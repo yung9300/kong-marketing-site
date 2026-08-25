@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00DRT0TQW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-00DRT0TQW8');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w180kpzck2");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>State of Tour Operator Bookability in SEA (2026) | Kong</title>
+<meta name="description" content="Only 11.8% of 2,334 Southeast Asian tour operators can take a booking online. Original research across 43 destinations, by an industry insider.">
+<link rel="canonical" href="https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia">
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kong">
+<meta property="og:url" content="https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia">
+<meta property="og:title" content="State of Tour Operator Bookability in SEA (2026) | Kong">
+<meta property="og:description" content="Only 11.8% of 2,334 Southeast Asian tour operators can take a booking online. Original research across 43 destinations, by an industry insider.">
+<meta property="og:image" content="https://www.bookwithkong.com/images/og-sea-digitisation.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The State of Tour Operator Bookability in Southeast Asia, 2026, Kong Research">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="State of Tour Operator Bookability in SEA (2026) | Kong">
+<meta name="twitter:description" content="Only 11.8% of 2,334 Southeast Asian tour operators can take a booking online. Original research across 43 destinations, by an industry insider.">
+<meta name="twitter:image" content="https://www.bookwithkong.com/images/og-sea-digitisation.png">
+
+
+<!-- ---------- Dataset: the schema that makes this citable AS A SOURCE ---------- -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "State of Tour Operator Bookability in Southeast Asia 2026",
+  "alternateName": "Southeast Asia Bookability Index 2026",
+  "description": "Classification of the online booking capability of 2,334 tour and activity operators across 43 destinations in Singapore, Thailand, Malaysia, Vietnam, the Philippines and Indonesia. Each operator's own website was crawled to depth 1 and fingerprinted for booking platforms, payment gateways, cart software and date-selection widgets. Includes bookability by country and product category, detected booking systems, local payment acceptance, and OTA reach among operators with no website.",
+  "url": "https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia",
+  "identifier": "https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia",
+  "keywords": ["tour operators","online booking","Southeast Asia","travel technology","tourism digitisation","booking software","digital payments"],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "datePublished": "2026-08-25",
+  "dateModified": "2026-08-25",
+  "temporalCoverage": "2026-08",
+  "creator": {
+    "@type": "Organization",
+    "name": "Kong",
+    "url": "https://www.bookwithkong.com",
+    "logo": "https://www.bookwithkong.com/images/logo.webp"
+  },
+  "author": { "@type": "Person", "name": "Blake Ng", "affiliation": { "@type": "Organization", "name": "Kong" } },
+  "spatialCoverage": [
+    { "@type": "Country", "name": "Singapore" },
+    { "@type": "Country", "name": "Thailand" },
+    { "@type": "Country", "name": "Malaysia" },
+    { "@type": "Country", "name": "Vietnam" },
+    { "@type": "Country", "name": "Philippines" },
+    { "@type": "Country", "name": "Indonesia" }
+  ],
+  "variableMeasured": [
+    { "@type": "PropertyValue", "name": "Operators able to complete a booking on their own website", "value": "11.8", "unitText": "percent" },
+    { "@type": "PropertyValue", "name": "Operators running purpose-built booking software", "value": "3.0", "unitText": "percent" },
+    { "@type": "PropertyValue", "name": "Bookable operators accepting a domestic payment method", "value": "13.8", "unitText": "percent" },
+    { "@type": "PropertyValue", "name": "Operators with no web presence", "value": "23.8", "unitText": "percent" }
+  ],
+    "measurementTechnique": "Depth-1 web crawl of operator-owned domains (31,347 pages) with HTML fingerprinting for booking platforms, payment gateways, cart software and date-selection widgets; browser-rendered control on a 36-operator subsample; per-operator web search for OTA listings among operators with no website."
+}
+</script>
+
+
+<!-- ---------- Article ---------- -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The State of Tour Operator Bookability in Southeast Asia",
+  "description": "Only 11.8% of 2,334 Southeast Asian tour operators can take a booking online. Original research across 43 destinations in six countries.",
+  "image": "https://www.bookwithkong.com/images/og-sea-digitisation.png",
+  "datePublished": "2026-08-25",
+  "dateModified": "2026-08-25",
+  "author": {
+    "@type": "Person",
+    "name": "Blake Ng",
+    "description": "Six years in tour and activity booking technology at Rezdy, Checkfront and Regiondo. Founder of Kong.",
+    "affiliation": { "@type": "Organization", "name": "Kong", "url": "https://www.bookwithkong.com" }
+  },
+  "publisher": { "@type": "Organization", "name": "Kong", "logo": { "@type": "ImageObject", "url": "https://www.bookwithkong.com/images/logo.webp" } },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia" },
+  "isBasedOn": { "@type": "Dataset", "name": "State of Tour Operator Bookability in Southeast Asia 2026", "url": "https://www.bookwithkong.com/state-of-tour-operator-bookability-southeast-asia" }
+}
+</script>
+
+
+<!-- ---------- FAQPage, must match the visible FAQ section word for word ---------- -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What share of Southeast Asian tour operators can be booked online?",
+      "acceptedAnswer": { "@type": "Answer", "text": "11.8%. Of 2,334 tour and activity operators classified across Singapore, Thailand, Malaysia, Vietnam, the Philippines and Indonesia, 275 let customers book directly on their website. The remainder route to a contact form, a messaging app, a phone number, or have no web presence at all." } },
+    { "@type": "Question", "name": "Which Southeast Asian country has the highest online bookability?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Singapore, at 28.4% of classified operators, followed by Thailand at 17.6%. Malaysia is 10.2%, Vietnam 9.8%, the Philippines 8.4% and Indonesia 8.1%. Singapore is measured as a census of its market rather than a sample." } },
+    { "@type": "Question", "name": "How many tour operators in Indonesia accept online bookings?",
+      "acceptedAnswer": { "@type": "Answer", "text": "8.1%: 37 of 456 classified Indonesian operators. A further 274 have a website that cannot complete a booking, and 104 have no web presence at all. Among Indonesian operators with a website but no checkout, 64.1% route bookings through WhatsApp." } },
+    { "@type": "Question", "name": "What booking software do Southeast Asian tour operators use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most bookable operators use a general shopping cart rather than reservation software. WooCommerce appears on 166 of the 275, followed by Bokun on 35, Stripe on 29 and FareHarbor on 24. Purpose-built booking platforms reach only 3.0% of all operators in the region." } },
+    { "@type": "Question", "name": "Do Southeast Asian tour operators accept local payment methods?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Rarely. 38 of 275 bookable operators (13.8%) accept a local payment method such as QRIS, PromptPay, FPX, MoMo or GCash. In Vietnam it is 2 of 41. The rest are card-only, which in practice restricts them to selling to international travellers." } },
+    { "@type": "Question", "name": "How many tour operators have no website at all?",
+      "acceptedAnswer": { "@type": "Answer", "text": "556 of 2,334, or 23.8%. The rate ranges from 7.4% in Singapore to 40.1% in Malaysia. A further 286 operators have only a social media profile." } },
+    { "@type": "Question", "name": "Can tour operators without a website be booked through an OTA?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Usually not. Of 431 website-less operators checked individually in Indonesia, Vietnam and the Philippines, 37 (8.6%) had a bookable listing on an online travel agency. Roughly 9 out of 10 had neither a website nor an OTA listing, meaning they cannot be booked online anywhere." } },
+    { "@type": "Question", "name": "How was the State of Tour Operator Bookability in Southeast Asia measured?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Operators were sampled from Google Business Profiles across 43 destinations, then each operator's own website was crawled one level deep (31,347 pages) and fingerprinted for booking platforms, payment gateways, cart software and date-selection widgets. An operator counts as bookable when a date widget appears alongside a booking platform, gateway or cart. A 36-operator browser-rendered control confirmed the crawler was not missing JavaScript-injected booking widgets." } }
+  ]
+}
+</script>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../blog/au-post.css">
+<style>
+:root{
+  --ground:#faf7f2; --surface:#FFFFFF; --sunken:rgba(59,15,94,0.05);
+  --ink:#1a0a2e; --ink2:rgba(26,10,46,0.72); --muted:rgba(26,10,46,0.52); --rule:rgba(26,10,46,0.10);
+  --s1:#3B0F5E; --s2:#7B4FA6; --s3:#C3A8DA; --s4:#E9DFF2;
+  --purple:#3B0F5E; --gold:#F5C842;
+  --warm:#c89414; --warm-bg:rgba(245,200,66,0.13);
+  --shadow:0 1px 2px rgba(26,10,46,.05), 0 8px 24px -12px rgba(26,10,46,.12);
+}
+*{box-sizing:border-box}
+body{
+  background:radial-gradient(ellipse 1200px 600px at 50% -10%,rgba(245,200,66,0.10) 0%,transparent 60%),linear-gradient(180deg,#faf7f2 0%,#f7f4ee 100%) fixed; color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:17px; line-height:1.65; margin:0;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:940px; margin:0 auto; padding:0 24px}
+.col{max-width:none}
+h1,h2,h3{font-family:'Poppins',system-ui,sans-serif; text-wrap:balance; margin:0}
+h1{font-size:clamp(2.2rem,5vw,3.4rem); font-weight:700; line-height:1.04; letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,2.6vw,2rem); font-weight:700; line-height:1.15; letter-spacing:-.01em}
+h3{font-size:1.13rem; font-weight:600; line-height:1.3}
+p{margin:0}
+a{color:var(--purple); text-underline-offset:3px; text-decoration-thickness:1px}
+a:hover{color:var(--ink)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--s2); outline-offset:3px; border-radius:2px}
+.eyebrow{font-size:.72rem; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--purple)}
+.lede{font-size:1.24rem; line-height:1.5; color:var(--ink2)}
+.small{font-size:.88rem; line-height:1.55; color:var(--ink2)}
+.tiny{font-size:.78rem; line-height:1.5; color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+
+header.masthead{border-bottom:1px solid var(--rule); background:var(--surface)}
+.masthead .wrap{padding-top:56px; padding-bottom:44px; display:flex; flex-direction:column; gap:22px}
+.meta-row{display:flex; flex-wrap:wrap; gap:10px 26px; align-items:baseline; padding-top:6px}
+
+section{padding:56px 0; border-bottom:1px solid var(--rule)}
+.stack{display:flex; flex-direction:column; gap:20px}
+.stack-lg{display:flex; flex-direction:column; gap:34px}
+
+.tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:2px; background:var(--rule);
+  border:1px solid var(--rule); border-radius:16px; overflow:hidden}
+.tile{background:var(--surface); padding:22px 20px; display:flex; flex-direction:column; gap:6px}
+.tile .v{font-family:'Poppins',system-ui,sans-serif; font-size:2.5rem; font-weight:600; line-height:1;
+  letter-spacing:-.02em; font-variant-numeric:tabular-nums}
+.tile .k{font-size:.83rem; color:var(--ink2); line-height:1.4}
+
+/* ladder chart */
+.chart{display:flex; flex-direction:column; gap:3px}
+.crow{display:grid; grid-template-columns:104px 1fr; gap:14px; align-items:center}
+.cname{font-size:.9rem; font-weight:600; text-align:right}
+.cname a{color:inherit; text-decoration-color:var(--muted)}
+.bar{display:flex; gap:2px; height:38px}
+.seg{display:flex; align-items:center; justify-content:center; min-width:2px; position:relative}
+.seg span{font-size:.74rem; font-weight:700; font-variant-numeric:tabular-nums; padding:0 4px}
+.seg.a{background:var(--s1)} .seg.b{background:var(--s2)}
+.seg.c{background:var(--s3)} .seg.d{background:var(--s4)}
+.seg.a span{color:#FFF}
+.seg.b span{color:#FFF}
+.seg.c span,.seg.d span{color:var(--ink)}
+.seg.a{border-radius:3px 0 0 3px} .seg.d{border-radius:0 3px 3px 0}
+.legend{display:flex; flex-wrap:wrap; gap:8px 22px; padding-left:118px}
+.lg{display:flex; align-items:center; gap:7px; font-size:.82rem; color:var(--ink2)}
+.sw{width:11px; height:11px; border-radius:2px; flex:none}
+
+.tablewrap{overflow-x:auto; border:1px solid var(--rule); border-radius:14px; background:var(--surface)}
+table{border-collapse:collapse; width:100%; font-size:.87rem; min-width:520px}
+th,td{padding:10px 14px; text-align:right; border-bottom:1px solid var(--rule); font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+th:first-child,td:first-child{text-align:left; font-weight:600; white-space:normal}
+thead th{font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); font-weight:700;
+  background:var(--sunken); position:sticky; top:0}
+tbody tr:last-child td{border-bottom:none}
+tbody tr.total td{font-weight:700; background:var(--sunken)}
+
+.callout{border-left:5px solid var(--gold); background:var(--warm-bg); padding:20px 26px; border-radius:6px 16px 16px 6px}
+.callout .eyebrow{color:var(--warm)}
+.masthead{background:transparent!important;border-bottom:none!important}
+header.masthead .wrap{border-bottom:1px solid var(--rule)}
+.note{border:1px solid var(--rule); background:var(--surface); border-radius:16px; padding:20px 24px}
+
+details{border-bottom:1px solid var(--rule)}
+details summary{cursor:pointer; padding:15px 0; font-weight:600; font-size:1rem; list-style:none;
+  display:flex; justify-content:space-between; gap:18px; align-items:baseline}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+"; color:var(--muted); font-weight:400; font-size:1.2rem; flex:none}
+details[open] summary::after{content:"–"}
+details .body{padding:0 0 17px; color:var(--ink2); font-size:.95rem}
+
+.grid2{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:26px}
+footer{padding:44px 0 72px; color:var(--muted)}
+code{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:.86em; background:var(--sunken);
+  padding:1px 5px; border-radius:3px}
+@media (max-width:640px){
+  .crow{grid-template-columns:76px 1fr; gap:9px}
+  .cname{font-size:.8rem}
+  .legend{padding-left:0}
+  body{font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+@media (max-width:640px){
+  section{padding:40px 0}
+  .masthead .wrap{padding-top:30px;padding-bottom:32px}
+  .tile{padding:16px 14px}
+  .tile .v{font-size:1.9rem}
+  .lede{font-size:1.1rem}
+  .meta-row{gap:6px 16px}
+  .wrap{padding:0 18px}
+  th,td{padding:8px 10px}
+}
+</style>
+</head>
+<body>
+<nav class="kong-nav">
+  <div class="kong-nav-left">
+    <a class="kong-nav-logo" href="/">
+      <img src="../images/logo.webp" alt="Kong" />
+      Kong
+    </a>
+  </div>
+  <div class="kong-nav-right">
+    <div class="kong-nav-items">
+      <div class="kong-nav-dd">
+        <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Industries<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+        <div class="kong-nav-dd-menu" role="menu">
+          <a href="../class-booking-system" role="menuitem"><i class="ti ti-building-store" aria-hidden="true"></i>Workshops &amp; Classes</a>
+          <div class="kong-nav-dd-divider"></div>
+          <a href="../atv-tours" role="menuitem"><i class="ti ti-car-off-road" aria-hidden="true"></i>ATV Tours</a>
+          <a href="../cooking-classes" role="menuitem"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>Cooking Classes</a>
+          <a href="../wine-tours" role="menuitem"><i class="ti ti-glass-full" aria-hidden="true"></i>Wine Tours</a>
+          <a href="../charter-bookings" role="menuitem"><i class="ti ti-anchor" aria-hidden="true"></i>Charters</a>
+          <a href="../adventure-tours" role="menuitem"><i class="ti ti-mountain" aria-hidden="true"></i>Adventure Tours</a>
+          <a href="../food-tours" role="menuitem"><i class="ti ti-soup" aria-hidden="true"></i>Food Tours</a>
+          <a href="../dive-centres" role="menuitem"><i class="ti ti-scuba-mask" aria-hidden="true"></i>Dive Centres</a>
+          <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
+        </div>
+      </div>
+      <a class="kong-nav-item" href="/#pricing">Pricing</a>
+      <a class="kong-nav-item" href="../blog">Blog</a>
+      <a class="kong-nav-item" href="../about">About</a>
+      <a class="kong-nav-item" href="../contact-us">Contact</a>
+    </div>
+    <a class="kong-nav-cta" href="https://app.bookwithkong.com" target="_blank" rel="noopener">Get started free</a>
+  </div>
+  <button class="kong-nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="kong-mobile-menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="kong-mobile-menu" id="kong-mobile-menu" hidden>
+    <button class="kong-mobile-acc" type="button" aria-expanded="false" aria-controls="kong-mobile-industries"><span>Industries</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+    <div class="kong-mobile-acc-panel" id="kong-mobile-industries">
+    <a class="kong-mobile-item kong-mobile-sub" href="../class-booking-system">Workshops &amp; Classes</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../atv-tours">ATV Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../cooking-classes">Cooking Classes</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../wine-tours">Wine Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../charter-bookings">Charters</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../adventure-tours">Adventure Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../food-tours">Food Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
+    </div>
+    <a class="kong-mobile-item" href="/#pricing">Pricing</a>
+    <a class="kong-mobile-item" href="../blog">Blog</a>
+    <a class="kong-mobile-item" href="../about">About</a>
+    <a class="kong-mobile-item" href="../contact-us">Contact</a>
+    <a class="kong-mobile-cta" href="https://app.bookwithkong.com" target="_blank" rel="noopener">Get started free</a>
+  </div>
+</nav>
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Kong Research · Edition 2026</p>
+    <h1>The State of Tour Operator Bookability in Southeast Asia</h1>
+    <p class="lede col">We checked whether 2,415 tour and activity operators across six countries can actually take a booking online. Most cannot.</p>
+    <p class="small col"><strong>Scope:</strong> this report measures digitisation through a single question: can a traveller complete a booking from a screen? It does not measure back-office systems, channel management, accounting or social media use. Where it says an operator is not bookable, that is a statement about one capability, not about the business.</p>
+    <div class="meta-row small">
+      <span><strong>2,334</strong> operators classified</span>
+      <span><strong>43</strong> destinations</span>
+      <span><strong>31,347</strong> pages crawled</span>
+      <span>Published <time datetime="2026-08-25">25 August 2026</time></span>
+    </div>
+    <p class="tiny">By Blake Ng, Kong · Data released under CC BY 4.0</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Headline</p>
+      <h2>Less than 1 out of 8 operators are bookable online</h2>
+      <p>A customer who finds a Southeast Asian tour operator on Google can book directly on the operator's website only 11.8% of the time. The other 88% end in a contact form, a WhatsApp number, a phone number, or nothing at all.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="v">11.8%</span><span class="k">of operators let customers book directly on their website</span></div>
+      <div class="tile"><span class="v">3.0%</span><span class="k">run purpose-built booking software</span></div>
+      <div class="tile"><span class="v">485</span><span class="k">operators where WhatsApp is the only way to book</span></div>
+      <div class="tile"><span class="v">13.8%</span><span class="k">of bookable operators accept a local payment method</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Finding 01</p>
+      <h2>The four states of online presence, by country</h2>
+      <p>Every operator sits in one of four groups, from a working online checkout down to no web presence at all. The groups are the same in every country; only their sizes change.</p>
+    </div>
+
+    <div class="chart" role="img" aria-label="Stacked bar chart of operator states by country. Singapore 28.4% bookable, Thailand 17.6%, Malaysia 10.2%, Vietnam 9.8%, Philippines 8.4%, Indonesia 8.1%. Full figures in the table below.">
+      <div class="crow"><div class="cname"><a href="/state-of-tour-operator-bookability-southeast-asia/singapore">Singapore</a></div><div class="bar">
+        <div class="seg a" style="flex:28.4"><span>28.4%</span></div>
+        <div class="seg b" style="flex:64.2"><span>64.2%</span></div>
+        <div class="seg c" style="flex:0.001"></div>
+        <div class="seg d" style="flex:7.4"><span>7.4</span></div></div></div>
+      <div class="crow"><div class="cname"><a href="/state-of-tour-operator-bookability-southeast-asia/thailand">Thailand</a></div><div class="bar">
+        <div class="seg a" style="flex:17.6"><span>17.6%</span></div>
+        <div class="seg b" style="flex:56.4"><span>56.4%</span></div>
+        <div class="seg c" style="flex:10.0"><span>10.0</span></div>
+        <div class="seg d" style="flex:16.0"><span>16.0</span></div></div></div>
+      <div class="crow"><div class="cname"><a href="/state-of-tour-operator-bookability-southeast-asia/malaysia">Malaysia</a></div><div class="bar">
+        <div class="seg a" style="flex:10.2"><span>10.2%</span></div>
+        <div class="seg b" style="flex:34.9"><span>34.9%</span></div>
+        <div class="seg c" style="flex:14.8"><span>14.8</span></div>
+        <div class="seg d" style="flex:40.1"><span>40.1</span></div></div></div>
+      <div class="crow"><div class="cname"><a href="/state-of-tour-operator-bookability-southeast-asia/vietnam">Vietnam</a></div><div class="bar">
+        <div class="seg a" style="flex:9.8"><span>9.8%</span></div>
+        <div class="seg b" style="flex:65.7"><span>65.7%</span></div>
+        <div class="seg c" style="flex:11.0"><span>11.0</span></div>
+        <div class="seg d" style="flex:13.4"><span>13.4</span></div></div></div>
+      <div class="crow"><div class="cname"><a href="/state-of-tour-operator-bookability-southeast-asia/philippines">Philippines</a></div><div class="bar">
+        <div class="seg a" style="flex:8.4"><span>8.4%</span></div>
+        <div class="seg b" style="flex:41.4"><span>41.4%</span></div>
+        <div class="seg c" style="flex:20.4"><span>20.4</span></div>
+        <div class="seg d" style="flex:29.7"><span>29.7</span></div></div></div>
+      <div class="crow"><div class="cname"><a href="/state-of-tour-operator-bookability-southeast-asia/indonesia">Indonesia</a></div><div class="bar">
+        <div class="seg a" style="flex:8.1"><span>8.1%</span></div>
+        <div class="seg b" style="flex:60.1"><span>60.1%</span></div>
+        <div class="seg c" style="flex:9.0"><span>9.0</span></div>
+        <div class="seg d" style="flex:22.8"><span>22.8</span></div></div></div>
+      <div class="legend">
+        <span class="lg"><span class="sw" style="background:var(--s1)"></span>Bookable online</span>
+        <span class="lg"><span class="sw" style="background:var(--s2)"></span>Website, not bookable</span>
+        <span class="lg"><span class="sw" style="background:var(--s3)"></span>Social profile only</span>
+        <span class="lg"><span class="sw" style="background:var(--s4)"></span>No web presence</span>
+      </div>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <caption class="tiny" style="text-align:left;padding:12px 14px;color:var(--muted)">Table 1, Operator states by country. Percentages are of classified operators; unresolved rows are excluded from the denominator.</caption>
+        <thead><tr><th>Country</th><th>Classified</th><th>Bookable</th><th>%</th><th>Website,<br>not bookable</th><th>Social<br>only</th><th>No web<br>presence</th><th>Online<br>presence</th></tr></thead>
+        <tbody>
+          <tr><td>Singapore</td><td class="num">95</td><td class="num">27</td><td class="num">28.4%</td><td class="num">61</td><td class="num">0</td><td class="num">7</td><td class="num">92.6%</td></tr>
+          <tr><td>Thailand</td><td class="num">500</td><td class="num">88</td><td class="num">17.6%</td><td class="num">282</td><td class="num">50</td><td class="num">80</td><td class="num">84.0%</td></tr>
+          <tr><td>Malaysia</td><td class="num">499</td><td class="num">51</td><td class="num">10.2%</td><td class="num">174</td><td class="num">74</td><td class="num">200</td><td class="num">59.9%</td></tr>
+          <tr><td>Vietnam</td><td class="num">417</td><td class="num">41</td><td class="num">9.8%</td><td class="num">274</td><td class="num">46</td><td class="num">56</td><td class="num">86.6%</td></tr>
+          <tr><td>Philippines</td><td class="num">367</td><td class="num">31</td><td class="num">8.4%</td><td class="num">152</td><td class="num">75</td><td class="num">109</td><td class="num">70.3%</td></tr>
+          <tr><td>Indonesia</td><td class="num">456</td><td class="num">37</td><td class="num">8.1%</td><td class="num">274</td><td class="num">41</td><td class="num">104</td><td class="num">77.2%</td></tr>
+          <tr class="total"><td>All six</td><td class="num">2,334</td><td class="num">275</td><td class="num">11.8%</td><td class="num">1,217</td><td class="num">286</td><td class="num">556</td><td class="num">76.2%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col note small">
+      <p><strong>Being online is not the same as being bookable.</strong> Vietnam has the second-highest online presence in the region (86.6%) but the third-lowest bookability (9.8%), 2 out of 3 Vietnamese operators built a website that cannot take a booking. Malaysia has the opposite problem: 40.1% have no web presence at all, the highest in the region.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Finding 02</p>
+      <h2>Most bookable operators run shopping carts, not booking software</h2>
+      <p>Of the 275 operators where customers can book directly, only 71 run proper reservation software. The rest sell tours through a general shopping cart (mostly WooCommerce) which can sell a product with a price, but cannot handle availability, capacity or departure times.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption class="tiny" style="text-align:left;padding:12px 14px;color:var(--muted)">Table 2, Booking systems detected on the 275 bookable operators. Operators may run more than one.</caption>
+        <thead><tr><th>System</th><th>Operators</th><th>% of bookable</th><th>Type</th></tr></thead>
+        <tbody>
+          <tr><td>WooCommerce</td><td class="num">166</td><td class="num">60.4%</td><td style="text-align:left">Cart</td></tr>
+          <tr><td>Bokun</td><td class="num">35</td><td class="num">12.7%</td><td style="text-align:left">Booking platform</td></tr>
+          <tr><td>Stripe</td><td class="num">29</td><td class="num">10.5%</td><td style="text-align:left">Payment gateway</td></tr>
+          <tr><td>FareHarbor</td><td class="num">24</td><td class="num">8.7%</td><td style="text-align:left">Booking platform</td></tr>
+          <tr><td>PayPal</td><td class="num">9</td><td class="num">3.3%</td><td style="text-align:left">Payment gateway</td></tr>
+          <tr><td>Shopify</td><td class="num">5</td><td class="num">1.8%</td><td style="text-align:left">Cart</td></tr>
+          <tr><td>Rezdy</td><td class="num">5</td><td class="num">1.8%</td><td style="text-align:left">Booking platform</td></tr>
+          <tr><td>Kong</td><td class="num">5</td><td class="num">1.8%</td><td style="text-align:left">Booking platform</td></tr>
+          <tr><td>Amelia</td><td class="num">4</td><td class="num">1.5%</td><td style="text-align:left">Booking platform</td></tr>
+          <tr><td>Others (HitPay, Bookeo, Checkfront, Omise, GetYourGuide widget)</td><td class="num">8</td><td class="num">2.9%</td><td style="text-align:left">Mixed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col stack">
+      <p>Counted against all operators, not just the bookable ones, dedicated booking software reaches only <strong>3.0% of the region</strong>, 12.6% in Singapore, 7.2% in Thailand, 3.2% in Malaysia, and under 1.5% in Vietnam, Indonesia and the Philippines.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Finding 03</p>
+      <h2>WhatsApp is the region's booking system</h2>
+      <p>485 operators have a working website whose only route to a reservation is a WhatsApp link. For every 1 operator who can take a booking online, there are <strong>1.8 operators who can only be booked over WhatsApp</strong>.</p>
+      <p>It is not evenly spread. Among Indonesian operators who have a website but no checkout, 64.1% route booking through WhatsApp. In Vietnam it is 45.1%, in Malaysia 19.0%.</p>
+    </div>
+    <div class="col callout">
+      <p class="eyebrow">Why it matters</p>
+      <p class="small" style="margin-top:6px">These operators have not failed to adopt technology. They adopted a different one. Any study that only counts checkouts and ignores WhatsApp will make this region look further behind than it really is, and any product that treats WhatsApp as the competition has misread the market.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Finding 04</p>
+      <h2>Operators with no website are rarely on OTAs either</h2>
+      <p>556 operators have no web presence of any kind. For them, a listing on an online travel agency (OTA) such as Viator, GetYourGuide or Klook is the only way to be booked from a screen. We checked all 431 of them in Indonesia, Vietnam and the Philippines, one by one.</p>
+      <p><strong>9 out of 10 have no OTA listing either.</strong> No website, no Viator, no GetYourGuide, no Klook. Businesses with hundreds of Google reviews that cannot be booked online anywhere.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption class="tiny" style="text-align:left;padding:12px 14px;color:var(--muted)">Table 3, OTA reach among operators with no website of their own. Indonesia, Vietnam and the Philippines only; see Scope.</caption>
+        <thead><tr><th>Country</th><th>Website-less<br>operators</th><th>Checked</th><th>Bookable<br>via an OTA</th><th>%</th><th>No website<br>and no OTA</th></tr></thead>
+        <tbody>
+          <tr><td>Vietnam</td><td class="num">102</td><td class="num">102</td><td class="num">16</td><td class="num">15.7%</td><td class="num">85.7%</td></tr>
+          <tr><td>Philippines</td><td class="num">184</td><td class="num">184</td><td class="num">12</td><td class="num">6.5%</td><td class="num">91.7%</td></tr>
+          <tr><td>Indonesia</td><td class="num">145</td><td class="num">145</td><td class="num">9</td><td class="num">6.2%</td><td class="num">93.3%</td></tr>
+          <tr class="total"><td>Three countries</td><td class="num">431</td><td class="num">431</td><td class="num">37</td><td class="num">8.6%</td><td class="num">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col stack">
+      <p>The 37 who are listed share one thing: the operator's own name is the brand: a named cooking class, a named guide, a named canyoneering outfit. In the commodity categories, almost nothing is listed. Cebu canyoneering, El Nido island hopping, Boracay watersports, Bohol island tours, Siargao surf schools and dive centres across Indonesia and the Philippines returned almost nothing, even though OTAs carry deep inventory for all of them. That inventory belongs to middlemen and resellers, not to the operators running the boats.</p>
+      <p class="small" style="color:var(--muted)">Around 40 of the operators recorded as unlisted do have a TripAdvisor review page with no bookable product attached. They have presence without distribution. The same applies to PADI and DiveSSI dive-centre directory profiles.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Finding 05</p>
+      <h2>Only 38 of 275 bookable operators accept local payments</h2>
+      <p>Of the 275 operators where customers can book directly, 38 accept a local payment method, QRIS or GoPay in Indonesia, PromptPay in Thailand, FPX or DuitNow in Malaysia, MoMo or VNPay in Vietnam, GCash in the Philippines. The rest are card-only, which in practice means selling to foreigners.</p>
+      <p>Vietnam is the sharpest case: <strong>2 of 41</strong> bookable operators take a Vietnamese payment method. Thailand, with the second-highest bookability in the region, manages 6 of 88.</p>
+    </div>
+    <div class="col note small">
+      <p>This is where the ranking flips. Malaysia has half Singapore's bookability but more than double its local-payment rate, 11 of 51 against 4 of 27. Being bookable and accepting local payment are two different things, and a single combined score would hide that.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Finding 06</p>
+      <h2>Diving is the least bookable category in the region</h2>
+      <p>Diving is the least bookable category in the region, even though it costs the most to run and is the product travellers most often book in advance.</p>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <caption class="tiny" style="text-align:left;padding:12px 14px;color:var(--muted)">Table 4, Bookability by product category, all six countries.</caption>
+        <thead><tr><th>Category</th><th>Operators</th><th>Bookable</th><th>%</th><th>No web presence</th></tr></thead>
+        <tbody>
+          <tr><td>Outdoor &amp; nature</td><td class="num">379</td><td class="num">57</td><td class="num">15.0%</td><td class="num">17.9%</td></tr>
+          <tr><td>Boat tours &amp; cruises</td><td class="num">583</td><td class="num">77</td><td class="num">13.2%</td><td class="num">30.0%</td></tr>
+          <tr><td>Food, culture &amp; workshops</td><td class="num">499</td><td class="num">62</td><td class="num">12.4%</td><td class="num">21.0%</td></tr>
+          <tr><td>Attractions &amp; sightseeing</td><td class="num">229</td><td class="num">22</td><td class="num">9.6%</td><td class="num">29.7%</td></tr>
+          <tr><td>Watersports &amp; adrenaline</td><td class="num">189</td><td class="num">17</td><td class="num">9.0%</td><td class="num">33.3%</td></tr>
+          <tr><td>Diving &amp; snorkelling</td><td class="num">455</td><td class="num">40</td><td class="num">8.8%</td><td class="num">16.9%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col small">
+      <p>Dive centres are among the <em>most</em> likely to have a website (only 16.9% have none, the lowest of any category) and among the <em>least</em> likely to sell through it. And because each country sells a different mix (the Philippines is 37.3% diving, Thailand 10.6%) some of the gap between countries is about what they sell, not how well they sell it.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Method</p>
+      <h2>How this was measured</h2>
+    </div>
+    <div class="grid2">
+      <div class="stack">
+        <h3>Sourcing</h3>
+        <p class="small">Operators were sampled from Google Business Profiles across 43 destinations in six countries, using English-language category searches, capped at 500 per country. Singapore is a census of 98 rather than a sample. Businesses were included if they sell a tour, activity or experience; accommodation, restaurants, retail and equipment rental were excluded.</p>
+      </div>
+      <div class="stack">
+        <h3>Classification</h3>
+        <p class="small">Each operator's own domain was crawled to a depth of one page from the homepage (31,347 pages in total) and the HTML fingerprinted for booking platforms, payment gateways, cart software and date-selection widgets. An operator counts as <strong>bookable</strong> when a date widget appears alongside a booking platform, a payment gateway or cart software on the same site.</p>
+      </div>
+      <div class="stack">
+        <h3>Why depth matters</h3>
+        <p class="small">Booking widgets usually live on product pages, not homepages. An earlier homepage-only pass understated Singapore's bookability by a factor of 5.7. Every figure here comes from the depth-1 crawl, and all six countries were re-crawled on one identical pipeline so that no country is measured by an older method.</p>
+      </div>
+      <div class="stack">
+        <h3>Verification</h3>
+        <p class="small">The crawler does not execute JavaScript, so 36 operators were re-crawled with a full browser to test whether client-side booking widgets were being missed. None were: zero booking platforms were found that the raw-HTTP crawl had not already detected. Six known-bookable operators were included as controls and reproduced.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Limits</p>
+      <h2>What this does not measure, and where it is soft</h2>
+      <p>Every figure above should be read with these in view. They are stated here rather than in a footnote because several of them materially affect the numbers.</p>
+    </div>
+    <div class="col">
+      <details><summary>55% of the bookable count rests on softer evidence</summary>
+        <div class="body"><p>150 of the 275 bookable operators qualify through cart software plus a date widget rather than a named booking platform or payment gateway. WooCommerce in particular fingerprints on CSS shipped with a theme, so a site can match without a working shop, and the test cannot separate a real checkout from an enquiry form that happens to carry a date field. Every one of these rows is tagged in the dataset, so the stricter definition can be recovered with a filter: it yields 125 bookable operators, or 5.4%.</p></div></details>
+      <details><summary>81 operators could not be classified</summary>
+        <div class="body"><p>Their sites returned HTTP 403, 429, 502, 522 or TLS errors on repeated attempts from both datacentre and residential proxies. Crawler statistics show <em>zero</em> DNS failures across all of them, so these are blocked or misconfigured rather than dead. They are excluded from every denominator rather than counted as absent, which would have flattered the presence figures.</p></div></details>
+      <details><summary>The OTA finding covers three countries, not six</summary>
+        <div class="body"><p>Indonesia, Vietnam and the Philippines were measured completely, all 431 website-less operators, one search each, one documented evidence standard requiring a bookable product page with a price and date selection. Malaysia, Thailand and Singapore were measured earlier under a different and less rigorous process and are excluded. Singapore's rows in particular carry a blanket negative with no per-row evidence, so they are not comparable and are not published.</p></div></details>
+      <details><summary>No independent accuracy audit was run</summary>
+        <div class="body"><p>A hand-verification pass over a random sample was planned and cut. There is therefore no published accuracy or error rate for the classification. The JavaScript verification described above tests one specific failure mode (missed client-side widgets) and does not substitute for a general audit.</p></div></details>
+      <details><summary>Category mix is not standardised across countries</summary>
+        <div class="body"><p>The Philippines sample is 37.3% dive operators against Thailand's 10.6%. Since diving is the least bookable category, part of the difference between national figures reflects what each country sells rather than how well it sells it. The per-category table is provided so this can be adjusted for.</p></div></details>
+      <details><summary>It measures capability, not usage</summary>
+        <div class="body"><p>A working checkout is not evidence that anyone uses it, and its absence is not evidence that an operator is failing. Many of these businesses are fully booked through WhatsApp, walk-ups and hotel desks. This is a measure of what a traveller can do from a screen, nothing more.</p></div></details>
+      <details><summary>Publisher's interest</summary>
+        <div class="body"><p>Kong sells booking software to tour operators, which gives us an interest in the finding that most of them lack it. Kong's own software was detected on 5 of the 275 bookable operators, 1.8%, all in Malaysia. The underlying data is published in full so that anyone can check the numbers against their own reading of them.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Questions</p>
+      <h2>Common questions</h2>
+    </div>
+    <div class="col">
+      <details><summary>What share of Southeast Asian tour operators can be booked online?</summary>
+        <div class="body"><p>11.8%. Of 2,334 tour and activity operators classified across Singapore, Thailand, Malaysia, Vietnam, the Philippines and Indonesia, 275 let customers book directly on their website. The remainder route to a contact form, a messaging app, a phone number, or have no web presence at all.</p></div></details>
+      <details><summary>Which Southeast Asian country has the highest online bookability?</summary>
+        <div class="body"><p>Singapore, at 28.4% of classified operators, followed by Thailand at 17.6%. Malaysia is 10.2%, Vietnam 9.8%, the Philippines 8.4% and Indonesia 8.1%. Singapore is measured as a census of its market rather than a sample.</p></div></details>
+      <details><summary>How many tour operators in Indonesia accept online bookings?</summary>
+        <div class="body"><p>8.1%: 37 of 456 classified Indonesian operators. A further 274 have a website that cannot complete a booking, and 104 have no web presence at all. Among Indonesian operators with a website but no checkout, 64.1% route bookings through WhatsApp.</p></div></details>
+      <details><summary>What booking software do Southeast Asian tour operators use?</summary>
+        <div class="body"><p>Most bookable operators use a general shopping cart rather than reservation software. WooCommerce appears on 166 of the 275, followed by Bokun on 35, Stripe on 29 and FareHarbor on 24. Purpose-built booking platforms reach only 3.0% of all operators in the region.</p></div></details>
+      <details><summary>Do Southeast Asian tour operators accept local payment methods?</summary>
+        <div class="body"><p>Rarely. 38 of 275 bookable operators (13.8%) accept a local payment method such as QRIS, PromptPay, FPX, MoMo or GCash. In Vietnam it is 2 of 41. The rest are card-only, which in practice restricts them to selling to international travellers.</p></div></details>
+      <details><summary>How many tour operators have no website at all?</summary>
+        <div class="body"><p>556 of 2,334, or 23.8%. The rate ranges from 7.4% in Singapore to 40.1% in Malaysia. A further 286 operators have only a social media profile.</p></div></details>
+      <details><summary>Can tour operators without a website be booked through an OTA?</summary>
+        <div class="body"><p>Usually not. Of 431 website-less operators checked individually in Indonesia, Vietnam and the Philippines, 37 (8.6%) had a bookable listing on an online travel agency. Roughly 9 out of 10 had neither a website nor an OTA listing, meaning they cannot be booked online anywhere.</p></div></details>
+      <details><summary>How was the State of Tour Operator Bookability in Southeast Asia measured?</summary>
+        <div class="body"><p>Operators were sampled from Google Business Profiles across 43 destinations, then each operator's own website was crawled one level deep (31,347 pages) and fingerprinted for booking platforms, payment gateways, cart software and date-selection widgets. An operator counts as bookable when a date widget appears alongside a booking platform, gateway or cart. A 36-operator browser-rendered control confirmed the crawler was not missing JavaScript-injected booking widgets.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Data</p>
+      <h2>The data behind this report</h2>
+      <p>The aggregate tables behind every figure on this page are licensed under <strong>CC BY 4.0</strong> and available on request. Use them, chart them, argue with them. Attribution is the only condition.</p>
+      <p class="small">Four CSVs and a JSON summary exist behind this report: operator states by country, bookability by product category, booking systems detected, and OTA reach among website-less operators. Operator-level records are not published, the dataset names individual small businesses and makes a judgement about each one, which we are not willing to put online. Researchers and journalists can <a href="/contact-us">request access</a>.</p>
+    </div>
+    <div class="col note">
+      <p class="eyebrow">Cite as</p>
+      <p class="small" style="margin-top:8px">Ng, B. (2026). <em>The State of Tour Operator Bookability in Southeast Asia, 2026 edition</em>. Kong. bookwithkong.com/state-of-tour-operator-bookability-southeast-asia</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap stack">
+    <p class="eyebrow">Country pages</p>
+    <h2>Explore each country's results</h2>
+    <p class="small">Countries are shaded by bookability, darkest to palest. Tap a country to open its page.</p>
+    <div id="sea-map" style="border:1px solid var(--rule);border-radius:16px;background:var(--surface);overflow:hidden"></div>
+    <nav class="small" style="display:flex;flex-wrap:wrap;gap:8px 22px">
+      <a href="/state-of-tour-operator-bookability-southeast-asia/singapore">Singapore</a>
+      <a href="/state-of-tour-operator-bookability-southeast-asia/thailand">Thailand</a>
+      <a href="/state-of-tour-operator-bookability-southeast-asia/malaysia">Malaysia</a>
+      <a href="/state-of-tour-operator-bookability-southeast-asia/vietnam">Vietnam</a>
+      <a href="/state-of-tour-operator-bookability-southeast-asia/philippines">Philippines</a>
+      <a href="/state-of-tour-operator-bookability-southeast-asia/indonesia">Indonesia</a>
+    </nav>
+  </div>
+</section>
+
+<div class="wrap" style="padding:44px 24px 64px;color:var(--muted)">
+  <p class="tiny">Fieldwork August 2026 · 2,415 operators sourced, 2,334 classified, 43 destinations, six countries · Data CC BY 4.0 · Kong builds booking software for tour operators, an interest disclosed in full under Limits above. · <a href="https://www.bookwithkong.com/">bookwithkong.com</a></p>
+</div>
+<footer class="kong-footer">
+  <div class="kong-footer-inner">
+    <div class="kong-footer-brand">
+      <h3>Subscribe for the latest Kong updates</h3>
+      <form class="kong-footer-subscribe" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="name@email.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="../class-booking-system">Class Booking System</a></li>
+        <li><a href="../australia">Kong Australia</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="../blog">Blog</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>More Resources</h4>
+      <ul>
+        <li><a href="../state-of-tour-operator-bookability-southeast-asia">Research: Tour Operator Bookability in SEA 2026</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="../legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="../legal-terms/privacy-policy">Privacy Policy</a></li>
+        <li><a href="../legal-terms/refund-policy">Refund Policy</a></li>
+        <li><a href="../contact-us">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Industries</h4>
+      <ul>
+        <li><a href="../class-booking-system">Workshops &amp; Classes</a></li>
+        <li><a href="../atv-tours">ATV Tours</a></li>
+        <li><a href="../cooking-classes">Cooking Classes</a></li>
+        <li><a href="../wine-tours">Wine Tours</a></li>
+        <li><a href="../charter-bookings">Charters</a></li>
+        <li><a href="../adventure-tours">Adventure Tours</a></li>
+        <li><a href="../food-tours">Food Tours</a></li>
+        <li><a href="../dive-centres">Dive Centres</a></li>
+        <li><a href="../snorkelling-tours">Snorkelling Tours</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Compare platforms</h4>
+      <ul>
+        <li><a href="../blog/best-booking-software-malaysia">Best Booking Software for Tour Operators in Malaysia</a></li>
+        <li><a href="../blog/best-booking-software-australia">Best Tour Booking Systems in Australia</a></li>
+        <li><a href="../compare/kong-vs-bokun">Kong vs Bokun</a></li>
+        <li><a href="../compare/kong-vs-rezdy">Kong vs Rezdy</a></li>
+        <li><a href="../compare/kong-vs-bookeo">Kong vs Bookeo</a></li>
+        <li><a href="../compare/kong-vs-fareharbor">Kong vs FareHarbor</a></li>
+        <li><a href="../compare/kong-vs-amelia">Kong vs Amelia</a></li>
+        <li><a href="../compare/kong-vs-checkfront">Kong vs Checkfront</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="kong-footer-bottom">
+    <div class="kong-footer-legal">
+      <span>UEN Company Name: Kong Technologies Pte. Ltd.</span>
+      <span>UEN Company Number: 202608593C</span>
+      <span>SSM Company Name: Superstring Sdn. Bhd.</span>
+      <span>SSM Company Number: 202401016432 (1562282-H)</span>
+    </div>
+    <div class="kong-footer-socials">
+      <a href="https://www.linkedin.com/company/bookwithkong" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#0A66C2;"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    </div>
+  </div>
+</footer>
+<script>
+(function() {
+  const burger = document.querySelector('.kong-nav-burger');
+  const menu = document.getElementById('kong-mobile-menu');
+  if (burger && menu) {
+    function close() { burger.setAttribute('aria-expanded', 'false'); menu.removeAttribute('data-open'); menu.hidden = true; }
+    function open() { burger.setAttribute('aria-expanded', 'true'); menu.hidden = false; menu.setAttribute('data-open', 'true'); }
+    burger.addEventListener('click', () => { if (burger.getAttribute('aria-expanded') === 'true') close(); else open(); });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  }
+})();
+(function(){
+  var acc = document.querySelector('.kong-mobile-acc');
+  var panel = document.getElementById('kong-mobile-industries');
+  if(!acc || !panel) return;
+  acc.addEventListener('click', function(){
+    var open = acc.getAttribute('aria-expanded') === 'true';
+    acc.setAttribute('aria-expanded', String(!open));
+    panel.setAttribute('data-open', String(!open));
+  });
+})();
+</script>
+<script>
+(function() {
+  var box = document.getElementById('sea-map');
+  if (!box || typeof d3 === 'undefined' || typeof topojson === 'undefined') return;
+  var STUDY = {
+    'Singapore': {slug:'singapore', pct:28.4},
+    'Thailand': {slug:'thailand', pct:17.6},
+    'Malaysia': {slug:'malaysia', pct:10.2},
+    'Vietnam': {slug:'vietnam', pct:9.8},
+    'Philippines': {slug:'philippines', pct:8.4},
+    'Indonesia': {slug:'indonesia', pct:8.1}
+  };
+  var BASE = '/state-of-tour-operator-bookability-southeast-asia/';
+  var W = 940, H = 560;
+  d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json').then(function(topo) {
+    var countries = topojson.feature(topo, topo.objects.countries).features;
+    var study = countries.filter(function(f){ return STUDY[f.properties.name]; });
+    var proj = d3.geoMercator().fitExtent([[24,24],[W-24,H-24]], {type:'FeatureCollection', features:study});
+    var path = d3.geoPath(proj);
+    var color = d3.scaleLinear().domain([8, 29]).range(['#E9DFF2', '#3B0F5E']);
+    var svg = d3.select(box).append('svg')
+      .attr('viewBox', '0 0 ' + W + ' ' + H)
+      .attr('role', 'img')
+      .attr('aria-label', 'Map of Southeast Asia. Countries shaded by online bookability: Singapore 28.4%, Thailand 17.6%, Malaysia 10.2%, Vietnam 9.8%, Philippines 8.4%, Indonesia 8.1%. Click a country to open its page.')
+      .style('width', '100%').style('height', 'auto').style('display', 'block');
+    // context countries, muted
+    svg.append('g').selectAll('path')
+      .data(countries.filter(function(f){ return !STUDY[f.properties.name]; }))
+      .join('path').attr('d', path)
+      .attr('fill', 'rgba(26,10,46,0.05)').attr('stroke', 'rgba(26,10,46,0.10)').attr('stroke-width', 0.5);
+    // study countries, clickable
+    var g = svg.append('g').selectAll('a')
+      .data(study).join('a')
+      .attr('href', function(d){ return BASE + STUDY[d.properties.name].slug; })
+      .attr('aria-label', function(d){ var s = STUDY[d.properties.name]; return d.properties.name + ': ' + s.pct + '% bookable. Open country page.'; });
+    g.append('path').attr('d', path)
+      .attr('fill', function(d){ return color(STUDY[d.properties.name].pct); })
+      .attr('stroke', '#fff').attr('stroke-width', 1).style('cursor', 'pointer')
+      .style('transition', 'opacity .15s')
+      .on('mouseenter', function(){ d3.select(this).attr('opacity', 0.8).attr('stroke', '#F5C842').attr('stroke-width', 2); })
+      .on('mouseleave', function(){ d3.select(this).attr('opacity', 1).attr('stroke', '#fff').attr('stroke-width', 1); })
+      .append('title').text(function(d){ var s = STUDY[d.properties.name]; return d.properties.name + ' (' + s.pct + '% bookable'; });
+    // labels (Singapore gets a marker + offset label)) labels link like their regions
+    var NUDGE = {Malaysia:[-40,-6], Indonesia:[-30,18], Vietnam:[6,-16], Thailand:[-4,10], Philippines:[16,0], Singapore:[26,16]};
+    study.forEach(function(d) {
+      var name = d.properties.name, s = STUDY[name], c = path.centroid(d), n = NUDGE[name] || [0,0];
+      var x = c[0] + n[0], y = c[1] + n[1];
+      var la = svg.append('a').attr('href', BASE + s.slug)
+        .attr('aria-label', name + ': ' + s.pct + '% bookable. Open country page.');
+      if (name === 'Singapore') {
+        la.append('circle').attr('cx', c[0]).attr('cy', c[1]).attr('r', 5)
+          .attr('fill', color(s.pct)).attr('stroke', '#fff').attr('stroke-width', 1.5);
+      }
+      var t = la.append('text').attr('x', x).attr('y', y)
+        .attr('text-anchor', 'middle').style('cursor', 'pointer')
+        .style('font-family', "'Poppins',system-ui,sans-serif").style('font-weight', '700').style('font-size', '15px')
+        .style('paint-order', 'stroke').style('stroke', 'rgba(255,255,255,0.85)').style('stroke-width', '3px')
+        .style('fill', '#1a0a2e');
+      t.on('mouseenter', function(){ t.style('fill', '#3B0F5E').style('text-decoration', 'underline'); })
+       .on('mouseleave', function(){ t.style('fill', '#1a0a2e').style('text-decoration', 'none'); });
+      t.append('tspan').text(name);
+      t.append('tspan').attr('x', x).attr('dy', '1.15em')
+        .style('font-family', "'Inter',system-ui,sans-serif").style('font-weight', '600').style('font-size', '13px')
+        .style('fill', 'rgba(26,10,46,0.72)').text(s.pct + '% bookable');
+    });
+  }).catch(function(){ box.style.display = 'none'; });
+})();
+</script>
+</body>
+</html>
