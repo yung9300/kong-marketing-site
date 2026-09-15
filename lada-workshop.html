@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00DRT0TQW8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-00DRT0TQW8');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w180kpzck2");
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free booking site workshop, Langkawi | Kong</title>
+<meta name="description" content="A free half-day workshop for Langkawi tour and activity operators. Build your own booking website and leave with it live, taking bookings and payments, the same afternoon.">
+<link rel="canonical" href="https://www.bookwithkong.com/lada-workshop">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Build your own free booking site. Free workshop in Langkawi">
+<meta property="og:description" content="A free half-day workshop for Langkawi tour and activity operators, supported by LADA. Leave with a live booking website. 20 seats.">
+<meta property="og:url" content="https://www.bookwithkong.com/lada-workshop">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kong">
+<meta property="og:image" content="https://www.bookwithkong.com/images/og-homepage-global.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Build your own free booking site. Free workshop in Langkawi">
+<meta name="twitter:description" content="A free half-day workshop for Langkawi tour and activity operators, supported by LADA. Leave with a live booking website. 20 seats.">
+<meta name="twitter:image" content="https://www.bookwithkong.com/images/og-homepage-global.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1a0a2e">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Kong","legalName":"SUPERSTRING SDN. BHD.","url":"https://www.bookwithkong.com","logo":"https://www.bookwithkong.com/images/logo.webp"}
+</script>
+<style>
+:root {
+  --ink: #1a0a2e;
+  --ink-80: rgba(26, 10, 46, 0.82);
+  --ink-70: rgba(26, 10, 46, 0.7);
+  --ink-60: rgba(26, 10, 46, 0.6);
+  --ink-55: rgba(26, 10, 46, 0.55);
+  --ink-45: rgba(26, 10, 46, 0.45);
+  --ink-30: rgba(26, 10, 46, 0.3);
+  --purple: #3B0F5E;
+  --purple-soft: rgba(59, 15, 94, 0.08);
+  --yellow: #F5C842;
+  --gold: #c89414;
+  --green: #16a34a;
+  --blue: #2563eb;
+  --whatsapp: #25D366;
+  --cream-1: #faf7f2;
+  --cream-2: #f7f4ee;
+  --line: rgba(26, 10, 46, 0.08);
+
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-base: 0.4s;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+html, body { font-family: 'Poppins', system-ui, sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+body {
+  background:
+    radial-gradient(ellipse 1200px 700px at 50% -10%, rgba(245, 200, 66, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 1000px 600px at 50% 20%, rgba(123, 63, 176, 0.07) 0%, transparent 60%),
+    linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+p, li { font-family: 'Inter', system-ui, sans-serif; text-wrap: pretty; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 40px; }
+
+.kong-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1280px; margin: 0 auto;
+  position: relative; z-index: 10;
+}
+.kong-nav-left { display: flex; align-items: center; gap: 28px; }
+.kong-nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 700; font-size: 17px; color: var(--ink);
+  text-decoration: none;
+}
+.kong-nav-logo img { width: 32px; height: 32px; }
+.kong-nav-right { display: flex; gap: 24px; align-items: center; }
+.kong-nav-items { display: flex; gap: 26px; align-items: center; }
+.kong-nav-item {
+  font-size: 14px; font-weight: 500; color: rgba(26, 10, 46, 0.65);
+  cursor: pointer; transition: color 0.2s;
+  text-decoration: none;
+}
+.kong-nav-item:hover { color: var(--ink); }
+.kong-nav-item.active { color: var(--ink); font-weight: 600; }
+.kong-nav-cta {
+  background: var(--purple); color: white;
+  font-size: 14px; font-weight: 600;
+  padding: 10px 18px; border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(59, 15, 94, 0.18);
+}
+.kong-nav-cta:hover { transform: translateY(-1px); background: #4d1378; box-shadow: 0 4px 14px rgba(59, 15, 94, 0.28); }
+/* ── Mobile nav burger + dropdown menu ────────────────────────────── */
+.kong-nav-burger {
+  display: none;
+  background: none; border: none; padding: 8px;
+  width: 40px; height: 40px;
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.kong-nav-burger span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.2s;
+}
+.kong-nav-burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.kong-nav-burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.kong-nav-burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.kong-mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%; left: 12px; right: 12px;
+  background: white;
+  border: 1px solid rgba(26, 10, 46, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(26, 10, 46, 0.12);
+  padding: 12px;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 50;
+}
+.kong-mobile-menu[data-open="true"] { display: flex; }
+.kong-mobile-item {
+  display: block;
+  padding: 12px 14px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px; font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-radius: 10px;
+}
+.kong-mobile-item:hover { background: rgba(26, 10, 46, 0.04); }
+.kong-mobile-cta {
+  display: block;
+  margin-top: 6px;
+  padding: 13px 14px;
+  background: var(--purple); color: white;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px; font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 12px;
+}
+@media (max-width: 760px) {
+  .kong-nav { position: relative; }
+  .kong-nav-right { display: none; }
+  .kong-nav-burger { display: flex; }
+}
+/* ── Industries nav dropdown ───────────────── */
+.kong-nav-dd { position: relative; display: inline-flex; align-items: center; }
+.kong-nav-dd-trigger {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: none; border: none; cursor: pointer;
+  font-family: inherit; font-size: 14px; font-weight: 500;
+  color: rgba(26,10,46,0.65); padding: 4px 0; transition: color 0.2s;
+}
+.kong-nav-dd-trigger .ti { font-size: 15px; transition: transform 0.25s; }
+.kong-nav-dd:hover .kong-nav-dd-trigger,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger { color: #1a0a2e; }
+.kong-nav-dd:hover .kong-nav-dd-trigger .ti,
+.kong-nav-dd:focus-within .kong-nav-dd-trigger .ti { transform: rotate(180deg); }
+.kong-nav-dd::after { content:''; position:absolute; left:0; right:0; top:100%; height:18px; }
+.kong-nav-dd-menu {
+  position: absolute; top: calc(100% + 16px); left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  background: #fff; border: 1px solid var(--line, rgba(26,10,46,0.08)); border-radius: 14px;
+  box-shadow: 0 18px 44px -14px rgba(26,10,46,0.22);
+  padding: 8px; min-width: 234px;
+  display: flex; flex-direction: column; gap: 1px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s; z-index: 200;
+}
+.kong-nav-dd:hover .kong-nav-dd-menu,
+.kong-nav-dd:focus-within .kong-nav-dd-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.kong-nav-dd-menu a {
+  display: flex; align-items: center; gap: 11px;
+  padding: 9px 12px; border-radius: 9px;
+  font-size: 14px; font-weight: 500; color: var(--ink-70, rgba(26,10,46,0.7));
+  text-decoration: none; white-space: nowrap; transition: background 0.15s, color 0.15s;
+}
+.kong-nav-dd-menu a:hover { background: var(--purple-soft, rgba(59,15,94,0.08)); color: var(--purple, #3B0F5E); }
+.kong-nav-dd-menu a .ti { font-size: 16px; color: var(--purple, #3B0F5E); opacity: 0.85; }
+.kong-nav-dd-divider { height: 1px; background: var(--line, rgba(26,10,46,0.08)); margin: 6px 4px; }
+.kong-mobile-dd-label {
+  font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-45, rgba(26,10,46,0.45));
+  padding: 6px 0 2px;
+}
+.kong-mobile-sub { padding-left: 14px !important; }
+/* ── Collapsible Industries group in mobile menu ─────────────────── */
+.kong-mobile-acc {
+  display: flex; align-items: center; justify-content: space-between; width: 100%;
+  background: none; border: none; cursor: pointer;
+  padding: 12px 14px; border-radius: 10px;
+  font-family: 'Inter', system-ui, sans-serif; font-size: 15px; font-weight: 500;
+  color: #1a0a2e; text-align: left;
+}
+.kong-mobile-acc:hover { background: rgba(26,10,46,0.04); }
+.kong-mobile-acc-chev { transition: transform 0.2s; font-size: 18px; color: rgba(26,10,46,0.5); }
+.kong-mobile-acc[aria-expanded="true"] .kong-mobile-acc-chev { transform: rotate(180deg); }
+.kong-mobile-acc-panel { display: none; flex-direction: column; gap: 4px; }
+.kong-mobile-acc-panel[data-open="true"] { display: flex; }
+.kong-footer {
+  background: white;
+  border-top: 1px solid var(--line);
+  padding: 60px 40px 30px;
+}
+.kong-footer-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.3fr;
+  gap: 56px;
+  align-items: start;
+}
+.kong-footer-brand h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.kong-footer-subscribe {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--cream-1);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 4px 4px 16px;
+  max-width: 360px;
+}
+.kong-footer-subscribe input {
+  background: transparent;
+  border: none; outline: none;
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 13.5px;
+  color: var(--ink);
+  padding: 8px 4px;
+}
+.kong-footer-subscribe input::placeholder { color: var(--ink-45); }
+.kong-footer-subscribe button {
+  background: var(--purple); color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13.5px; font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.kong-footer-subscribe button:hover { background: #4d1378; }
+.kong-footer-col h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 14px;
+}
+.kong-footer-col ul { list-style: none; }
+.kong-footer-col li { margin-bottom: 10px; }
+.kong-footer-col a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--ink-70);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.kong-footer-col a:hover { color: var(--ink); }
+.kong-footer-bottom {
+  max-width: 1240px;
+  margin: 48px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--ink-45);
+  line-height: 1.7;
+}
+.kong-footer-legal { display: flex; flex-direction: column; gap: 2px; }
+.kong-footer-socials { display: flex; gap: 10px; }
+.kong-footer-socials a {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--ink-60);
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.kong-footer-socials a:hover {
+  color: var(--purple);
+  border-color: var(--purple);
+  background: var(--purple-soft);
+}
+@media (max-width: 820px) {
+  .kong-footer-inner { grid-template-columns: 1fr; gap: 30px; }
+  .kong-footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+
+
+/* ── Hero: pitch left, registration right ─────────────────────────── */
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 64px; align-items: start; padding-block: 36px 0; position: relative; z-index: 4; }
+.kong-lang { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; background: white; padding: 3px; font-size: 12.5px; font-weight: 600; }
+.kong-lang a, .kong-lang span { padding: 5px 10px; border-radius: 6px; color: var(--ink-55); }
+.kong-lang .on { background: var(--ink); color: white; }
+.kong-mobile-lang { display: flex; gap: 6px; padding: 6px 14px 2px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; color: var(--ink-55); }
+.kong-mobile-lang a { color: var(--ink); font-weight: 600; }
+.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', system-ui, sans-serif; font-size: 11.5px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--purple); margin-bottom: 18px; }
+.hero-eyebrow .lada { display: inline-flex; align-items: center; height: 34px; }
+.hero-eyebrow .lada img { height: 34px; width: auto; display: block; }
+.hero h1 { font-size: 52px; font-weight: 700; line-height: 1.05; letter-spacing: -1.8px; text-wrap: balance; }
+.hero h1 .accent { color: var(--purple); }
+.hero h1 small { display: block; font-size: 22px; font-weight: 500; letter-spacing: -0.4px; color: var(--ink-55); margin-top: 12px; line-height: 1.3; }
+.hero-promise { font-size: 18px; line-height: 1.55; color: var(--ink-70); margin: 22px 0 28px; max-width: 540px; }
+.hero-facts { display: grid; grid-template-columns: repeat(3, auto); gap: 14px 36px; justify-content: start; }
+.hero-fact { display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: start; }
+.hero-facts i { font-size: 20px; color: var(--purple); margin-top: 1px; }
+.hero-facts .k { font-family: 'Inter', system-ui, sans-serif; font-size: 11.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-45); }
+.hero-facts .v { font-weight: 600; font-size: 16px; line-height: 1.3; }
+.hero-hosts { display: flex; align-items: center; gap: 14px; margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--line); }
+.hero-hosts .faces { display: flex; }
+.hero-hosts img, .hero-hosts .ph { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid var(--cream-1); margin-left: -10px; box-shadow: 0 4px 12px rgba(26,10,46,0.12); }
+.hero-hosts .faces > :first-child { margin-left: 0; }
+.hero-hosts .ph { display: flex; align-items: center; justify-content: center; background: rgba(59,15,94,0.1); color: var(--purple); font-weight: 700; font-size: 14px; }
+.hero-hosts p { font-size: 14px; color: var(--ink-60); line-height: 1.45; }
+.hero-hosts p b { color: var(--ink); font-weight: 600; }
+.hero-hosts a { color: var(--purple); font-weight: 500; }
+/* registration card */
+.reg { background: white; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 24px 60px rgba(59, 15, 94, 0.12), 0 4px 16px rgba(59, 15, 94, 0.05); overflow: hidden; }
+.reg-head { padding: 22px 24px 18px; border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.reg-head h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.4px; }
+.reg-seats { display: inline-flex; align-items: center; gap: 6px; font-family: 'Inter', system-ui, sans-serif; font-size: 12.5px; font-weight: 600; color: #166534; background: #dcfce7; padding: 5px 10px; border-radius: 999px; white-space: nowrap; }
+.reg-seats i { font-size: 14px; }
+.reg iframe { display: block; width: 100%; height: 345px; border: 0; transition: height 0.25s ease-out; }
+.reg-foot { padding: 14px 24px 18px; border-top: 1px solid var(--line); font-family: 'Inter', system-ui, sans-serif; font-size: 12.5px; line-height: 1.55; color: var(--ink-55); display: flex; gap: 8px; align-items: flex-start; }
+.reg-foot i { color: var(--purple); font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+.reg-foot a { color: var(--ink-70); text-decoration: underline; }
+
+/* ── Product visual band ─────────────────────────────────────────── */
+.proof { padding-block: 72px 0; position: relative; z-index: 4; }
+.proof-head { text-align: center; max-width: 620px; margin: 0 auto 36px; }
+.proof-head h2 { font-size: 30px; font-weight: 700; letter-spacing: -0.8px; line-height: 1.15; }
+.proof-head p { font-size: 16px; color: var(--ink-60); margin-top: 10px; }
+
+/* ── Sections ────────────────────────────────────────────────────── */
+.sec { padding-block: 96px 0; position: relative; z-index: 4; }
+.sec-head { text-align: center; max-width: 680px; margin: 0 auto 44px; }
+.sec-eyebrow { display: inline-block; font-family: 'Inter', system-ui, sans-serif; font-size: 11.5px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--purple); margin-bottom: 12px; }
+.sec-head h2 { font-size: 38px; font-weight: 700; letter-spacing: -1px; line-height: 1.15; text-wrap: balance; }
+.sec-head p { font-size: 16px; line-height: 1.55; color: var(--ink-60); margin-top: 12px; }
+
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.step { background: white; border: 1px solid var(--line); border-radius: 18px; padding: 28px; box-shadow: 0 12px 32px rgba(59, 15, 94, 0.06), 0 2px 8px rgba(59, 15, 94, 0.03); display: flex; flex-direction: column; overflow: hidden; }
+.step-n { width: 30px; height: 30px; border-radius: 50%; background: var(--purple); color: white; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
+.step h3 { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; margin-bottom: 8px; }
+.step p { font-size: 15px; line-height: 1.6; color: var(--ink-70); }
+.step figure { margin-top: 24px; flex: 1; display: flex; align-items: flex-start; justify-content: center; min-width: 0; }
+.cover-foot { max-width: 760px; margin: 32px auto 0; text-align: center; }
+.cover-foot .lead { display: inline-flex; gap: 12px; align-items: flex-start; text-align: left; background: white; border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; font-size: 15.5px; line-height: 1.55; color: rgba(26,10,46,0.85); }
+.cover-foot .lead i { width: 22px; height: 22px; border-radius: 50%; background: rgba(22,163,74,0.12); color: var(--green); display: inline-flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; margin-top: 2px; }
+.cover-foot .fine { font-size: 13.5px; color: var(--ink-45); margin-top: 14px; }
+
+.bring { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.bring li { background: white; border: 1px solid var(--line); border-radius: 18px; padding: 26px 24px; box-shadow: 0 12px 32px rgba(59, 15, 94, 0.06), 0 2px 8px rgba(59, 15, 94, 0.03); font-size: 14.5px; line-height: 1.55; color: var(--ink-70); }
+.bring i { width: 44px; height: 44px; border-radius: 12px; background: rgba(59,15,94,0.08); color: var(--purple); display: inline-flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px; }
+.bring b { display: block; font-family: 'Poppins', system-ui, sans-serif; font-weight: 600; font-size: 16px; color: var(--ink); margin-bottom: 4px; }
+
+.hosts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.host { background: white; border: 1px solid var(--line); border-radius: 18px; padding: 28px; box-shadow: 0 12px 32px rgba(59, 15, 94, 0.06), 0 2px 8px rgba(59, 15, 94, 0.03); }
+.host img, .host .ph { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; box-shadow: 0 10px 24px rgba(26,10,46,0.14); margin-bottom: 18px; }
+.host .ph { display: flex; align-items: center; justify-content: center; background: rgba(59,15,94,0.1); color: var(--purple); font-weight: 700; font-size: 24px; }
+.host h3 { font-size: 18px; font-weight: 700; letter-spacing: -0.3px; }
+.host .role { font-family: 'Inter', system-ui, sans-serif; font-size: 12.5px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(59,15,94,0.6); margin: 4px 0 12px; }
+.host p { font-size: 15px; line-height: 1.6; color: var(--ink-70); }
+.money { margin-top: 24px; display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: center; padding: 28px 36px; background: linear-gradient(180deg, #ffffff 0%, #fefcf7 100%); border: 1px solid rgba(245, 200, 66, 0.4); border-radius: 18px; box-shadow: 0 16px 40px rgba(245, 200, 66, 0.16), 0 4px 14px rgba(59, 15, 94, 0.05); }
+.money .big { font-weight: 700; font-size: 30px; letter-spacing: -1px; line-height: 1.1; }
+.money .big small { display: block; font-family: 'Inter', system-ui, sans-serif; font-size: 11.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(59,15,94,0.55); margin-bottom: 8px; }
+.money p { font-size: 16px; line-height: 1.55; color: var(--ink-70); }
+.money p b { color: var(--ink); font-weight: 600; }
+.money .fine { font-size: 13.5px; color: var(--ink-55); margin-top: 6px; }
+
+/* ── Closing CTA ─────────────────────────────────────────────────── */
+.close { margin-top: 96px; }
+.close-inner { background: #0c1226; color: white; border-radius: 22px; padding: 56px 48px; display: grid; grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 32px; align-items: center; position: relative; overflow: hidden; }
+.close-inner::before { content: ''; position: absolute; width: 420px; height: 420px; right: -140px; top: -200px; border-radius: 50%; background: radial-gradient(circle, rgba(245,200,66,0.28), transparent 70%); pointer-events: none; }
+.close-inner h2 { font-size: 34px; font-weight: 700; letter-spacing: -1px; line-height: 1.1; color: white; text-wrap: balance; }
+.close-inner p { font-size: 16px; color: rgba(255,255,255,0.72); margin-top: 12px; }
+.close-actions { display: grid; gap: 12px; justify-items: center; position: relative; }
+.btn-gold { background: var(--yellow); color: var(--ink); font-weight: 700; font-size: 15px; padding: 16px 28px; border-radius: 11px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 16px rgba(245, 200, 66, 0.45), inset 0 1px 0 rgba(255,255,255,0.55); transition: transform 0.15s, box-shadow 0.2s; white-space: nowrap; }
+.btn-gold:hover { transform: translateY(-1px); box-shadow: 0 6px 22px rgba(245, 200, 66, 0.6), inset 0 1px 0 rgba(255,255,255,0.55); }
+.btn-gold i { font-size: 17px; }
+.close-wa { display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; color: rgba(255,255,255,0.75); }
+.close-wa i { color: #25D366; font-size: 18px; }
+.close-wa:hover { color: white; }
+.page-end { height: 96px; }
+
+/* ── Product visuals (scaled to container) ───────────────────────── */
+.viz-outer { container-type: inline-size; position: relative; width: 100%; max-width: calc(var(--w) * 1px); margin: 0 auto; aspect-ratio: var(--w) / var(--h); }
+.viz { position: absolute; left: 0; top: 0; width: calc(var(--w) * 1px); height: calc(var(--h) * 1px); transform: scale(calc(100cqw / (var(--w) * 1px))); transform-origin: top left; color: #0a0a0a; font-family: 'Inter', system-ui, sans-serif; }
+.hero-viz { --w: 1000; --h: 700; }
+.hero-viz .cust { right: 0; top: 190px; width: 250px; z-index: 3; }
+.web { position: absolute; left: 0; top: 0; width: 760px; height: 700px; background: white; border-radius: 12px; border: 1px solid rgba(26,10,46,0.06); box-shadow: 0 24px 60px rgba(59, 15, 94, 0.14), 0 4px 16px rgba(59, 15, 94, 0.05); overflow: hidden; display: flex; flex-direction: column; }
+.web-bar { display: flex; align-items: center; gap: 12px; padding: 9px 12px; background: #f3f4f6; border-bottom: 1px solid #e5e7eb; }
+.web-dots { display: flex; gap: 5px; } .web-dots i { width: 9px; height: 9px; border-radius: 50%; background: #d4d4d8; display: block; }
+.web-url { flex: 1; max-width: 360px; margin: 0 auto; background: white; border-radius: 6px; padding: 4px 10px; font-size: 10.5px; color: #333; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+.web-url i { color: #16a34a; font-size: 11px; }
+.web-page { padding: 0 28px 28px; flex: 1; }
+.web-nav { display: flex; align-items: center; gap: 22px; padding: 14px 0; font-size: 11px; color: #555; }
+.web-nav b { font-family: 'Poppins', system-ui, sans-serif; font-size: 14px; color: #0a0a0a; margin-right: auto; }
+.web-nav b i { display: inline-block; width: 18px; height: 18px; border-radius: 50%; background: linear-gradient(135deg,#3B0F5E,#7b3fb0); margin-right: 8px; vertical-align: -4px; }
+.web-hero { height: 170px; margin: 0 -28px; background-size: cover; background-position: 50% 50%; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 60px; color: white; }
+.web-hero::before { content: ''; position: absolute; inset: 0; background: rgba(10,10,20,0.45); }
+.web-hero > div { position: relative; max-width: 520px; }
+.web-hero h4 { font-family: 'Poppins', system-ui, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -0.5px; line-height: 1.15; color: white; margin-bottom: 8px; }
+.web-hero small { font-size: 11px; opacity: 0.9; display: block; }
+.web-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px 16px; margin-top: 24px; padding-bottom: 8px; }
+.web-card.big { grid-column: span 2; }
+.web-card-img { height: 110px; border-radius: 8px; background-size: cover; background-position: 50% 50%; margin-bottom: 8px; }
+.web-card.big .web-card-img { height: 140px; }
+.web-card b { display: block; font-family: 'Poppins', system-ui, sans-serif; font-size: 12px; font-weight: 600; line-height: 1.3; }
+.web-card span { font-size: 9.5px; color: #555; font-weight: 500; }
+.dash { position: absolute; background: white; border-radius: 12px; box-shadow: 0 18px 44px rgba(59, 15, 94, 0.12), 0 3px 10px rgba(59, 15, 94, 0.05); display: grid; grid-template-columns: 118px 1fr; overflow: hidden; border: 1px solid rgba(26, 10, 46, 0.06); }
+.dash.nosb { grid-template-columns: 1fr; }
+.dash-side { background: #fafafa; border-right: 1px solid #f0f0f0; padding: 11px 9px; }
+.dash-logo { display: flex; align-items: center; gap: 6px; margin-bottom: 14px; padding: 2px 4px; }
+.dash-logo img { width: 18px; height: 18px; border-radius: 50%; }
+.dash-logo-name { font-weight: 700; color: #111; font-size: 12px; }
+.dash-nav-item { display: flex; align-items: center; gap: 6px; padding: 4px 7px; border-radius: 5px; color: #555; font-size: 10px; font-weight: 500; margin-bottom: 1px; }
+.dash-nav-item i { font-size: 11px; color: #777; }
+.dash-nav-item.active { background: #eff6ff; color: #2563eb; font-weight: 600; }
+.dash-nav-item.active i { color: #2563eb; }
+.dash-nav-section { font-size: 7.5px; color: #999; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; padding: 8px 7px 3px; }
+.dash-main { padding: 13px 14px; overflow: hidden; }
+.dash-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 11px; }
+.dash-title { font-size: 15px; font-weight: 700; }
+.dash-title .count { color: #888; font-weight: 500; font-size: 12px; margin-left: 4px; }
+.dash-btn-new { background: #2563eb; color: white; font-size: 9.5px; font-weight: 600; padding: 4px 9px; border-radius: 5px; display: flex; align-items: center; gap: 3px; }
+.dash-bk-list { display: flex; flex-direction: column; gap: 5px; }
+.dash-bk { display: flex; align-items: center; gap: 9px; padding: 7px 9px; border: 1px solid #eee; border-radius: 6px; background: white; }
+.dash-bk.new { border-color: #2563eb; background: #eff6ff; }
+.dash-bk-img { width: 32px; height: 32px; border-radius: 5px; flex-shrink: 0; background-size: cover; background-position: center; }
+.dash-bk-info { flex: 1; min-width: 0; }
+.dash-bk-name-row { display: flex; align-items: center; gap: 6px; }
+.dash-bk-name { font-size: 11.5px; font-weight: 600; }
+.dash-bk-tour { font-size: 9px; color: #999; margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dash-bk-status { font-size: 8px; padding: 1px 5px; background: #f3f4f6; color: #555; border-radius: 9px; font-weight: 500; }
+.dash-bk.new .dash-bk-status { background: #dbeafe; color: #1d4ed8; }
+.dash-bk-meta { font-size: 9px; color: #777; margin-top: 2px; display: flex; gap: 9px; }
+.dash-bk-meta i { font-size: 9.5px; color: #2563eb; vertical-align: -1px; margin-right: 2px; }
+.dash-bk-amt { text-align: right; flex-shrink: 0; }
+.dash-bk-amt-v { font-size: 11.5px; font-weight: 700; }
+.dash-bk-amt-s { font-size: 8px; color: #16a34a; font-weight: 500; margin-top: 1px; }
+.cust { position: absolute; width: 240px; background: white; border-radius: 12px; box-shadow: 0 22px 50px rgba(59, 15, 94, 0.22), 0 6px 18px rgba(59, 15, 94, 0.10); overflow: hidden; display: flex; flex-direction: column; border: 1px solid rgba(26, 10, 46, 0.06); }
+.cust-url { background: #f3f4f6; color: #555; font-size: 9px; font-weight: 500; padding: 6px 10px; display: flex; align-items: center; gap: 5px; border-bottom: 1px solid #eee; }
+.cust-url i { font-size: 10px; color: #16a34a; }
+.cust-url b { color: #0a0a0a; font-weight: 600; }
+.cust-hero { height: 84px; background-size: cover; background-position: center; position: relative; }
+.cust-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.45)); }
+.cust-hero span { position: absolute; left: 11px; bottom: 8px; color: white; font-weight: 700; font-size: 12px; z-index: 1; text-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+.cust-body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 9px; }
+.cust-tm { font-size: 9px; color: #888; display: flex; gap: 8px; }
+.cust-tm i { color: #2563eb; margin-right: 2px; }
+.cust-sh { font-size: 9px; font-weight: 700; margin-bottom: 5px; display: flex; justify-content: space-between; text-transform: uppercase; letter-spacing: 0.4px; }
+.cust-sh .month { color: #999; font-weight: 500; text-transform: none; letter-spacing: 0; }
+.parts-row { display: flex; justify-content: space-between; align-items: center; padding: 2px 0; }
+.parts-name { font-weight: 600; font-size: 10.5px; }
+.parts-price { color: #2563eb; font-size: 9px; font-weight: 600; margin-top: 1px; }
+.parts-ctl { display: flex; align-items: center; gap: 7px; }
+.parts-btn { width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 600; }
+.parts-btn.minus { border: 1px solid #d4d4d8; color: #71717a; }
+.parts-btn.plus { background: #2563eb; color: white; }
+.parts-num { font-weight: 700; font-size: 11px; min-width: 12px; text-align: center; }
+.cal { background: #f9fafb; border-radius: 6px; padding: 6px; }
+.cal-dow, .cal-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 2px; }
+.cal-dow span { text-align: center; font-size: 7.5px; color: #999; font-weight: 600; }
+.cal-d { height: 20px; display: flex; align-items: center; justify-content: center; font-size: 8.5px; border-radius: 3px; font-weight: 500; background: white; }
+.cal-d.past { color: #d4d4d8; background: transparent; }
+.cal-d.sel { background: #2563eb; color: white; font-weight: 700; }
+.times { display: flex; flex-direction: column; gap: 4px; }
+.time-slot { border: 1px solid #e5e7eb; border-radius: 6px; padding: 5px 9px; display: flex; justify-content: space-between; align-items: center; font-size: 9.5px; font-weight: 600; }
+.time-slot.sel { border: 1.5px solid #2563eb; background: #eff6ff; color: #2563eb; }
+.time-slot span { font-size: 8px; color: #16a34a; font-weight: 500; }
+.cust-cta { background: #2563eb; color: white; font-weight: 600; font-size: 11.5px; padding: 9px; border-radius: 7px; text-align: center; }
+.cust-cta.success { background: #16a34a; }
+.tst { position: absolute; background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 9px 14px 9px 10px; display: flex; align-items: center; gap: 9px; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10), 0 2px 6px rgba(0, 0, 0, 0.05); z-index: 5; }
+.tst-icon { width: 28px; height: 28px; border-radius: 50%; background: #dcfce7; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.tst-icon i { color: #16a34a; font-size: 15px; }
+.tst-title { font-size: 11.5px; font-weight: 600; }
+.tst-meta { font-size: 9.5px; color: #666; margin-top: 1px; }
+/* step visuals: cropped at card bottom */
+.viz-site { --w: 240; --h: 336; }
+.viz-site .cust { left: 0; top: 0; }
+.viz-bookings { --w: 300; --h: 240; }
+.viz-bookings .dash { left: 0; top: 56px; width: 300px; height: 184px; }
+.viz-bookings .lock { position: absolute; left: 10px; right: 10px; top: 0; }
+.lock { background: rgba(255,255,255,0.96); border-radius: 14px; padding: 10px 12px; box-shadow: 0 16px 36px rgba(26,10,46,0.18); border: 1px solid rgba(26,10,46,0.06); display: flex; gap: 9px; align-items: flex-start; z-index: 5; }
+.lock img { width: 22px; height: 22px; border-radius: 6px; }
+.lock .lk-h { display: flex; justify-content: space-between; font-size: 8.5px; color: #888; margin-bottom: 2px; }
+.lock .lk-t { font-size: 10.5px; font-weight: 600; }
+.lock .lk-b { font-size: 9.5px; color: #444; }
+.viz-google { --w: 300; --h: 318; }
+.gbp { position: absolute; left: 0; top: 0; width: 300px; background: white; border-radius: 12px; box-shadow: 0 18px 44px rgba(59, 15, 94, 0.12), 0 3px 10px rgba(59, 15, 94, 0.05); border: 1px solid rgba(26,10,46,0.06); overflow: hidden; }
+.gbp-photos { display: grid; grid-template-columns: 2fr 1fr; gap: 2px; height: 78px; }
+.gbp-photos div { background-size: cover; background-position: center; }
+.gbp-body { padding: 12px 14px 14px; }
+.gbp-name { font-family: 'Poppins', system-ui, sans-serif; font-weight: 600; font-size: 15px; letter-spacing: -0.2px; }
+.gbp-meta { font-size: 10px; color: #555; margin: 3px 0 10px; display: flex; gap: 6px; align-items: center; }
+.gbp-meta .stars { color: #f5a623; letter-spacing: 0.5px; }
+.gbp-actions { display: flex; gap: 5px; }
+.gbp-actions span { display: inline-flex; align-items: center; gap: 4px; border: 1px solid #dadce0; border-radius: 999px; padding: 5px 9px; font-size: 9.5px; font-weight: 500; color: #1a73e8; }
+.gbp-actions .lit { background: #1a73e8; color: white; border-color: #1a73e8; box-shadow: 0 6px 16px rgba(26,115,232,0.35); }
+.gbp-acts { margin-top: 12px; border-top: 1px solid #eee; padding-top: 10px; }
+.gbp-acts-h { display: flex; justify-content: space-between; font-size: 11px; font-weight: 600; margin-bottom: 8px; }
+.gbp-acts-h span { color: #1a73e8; font-weight: 500; font-size: 10px; }
+.gbp-act { display: flex; align-items: center; gap: 9px; padding: 6px 0; border-top: 1px solid #f1f1f1; }
+.gbp-act-img { width: 34px; height: 34px; border-radius: 6px; background-size: cover; background-position: 50% 50%; flex-shrink: 0; }
+.gbp-act-t { flex: 1; min-width: 0; }
+.gbp-act-t b { display: block; font-size: 10.5px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gbp-act-t span { font-size: 9px; color: #666; }
+.gbp-book { background: #1a73e8; color: white; font-size: 9px; font-weight: 600; padding: 5px 9px; border-radius: 999px; flex-shrink: 0; }
+
+/* mobile bar */
+.mobile-cta { display: none; }
+
+@media (max-width: 1100px) { .hero { grid-template-columns: minmax(0, 1fr) 380px; gap: 40px; } .hero h1 { font-size: 44px; } }
+@media (max-width: 960px) {
+  .hero { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .hero-promise { margin-left: auto; margin-right: auto; }
+  .hero-facts { justify-content: center; }
+  .hero-fact { text-align: left; }
+  .hero-hosts { justify-content: center; }
+  .reg { max-width: 520px; width: 100%; justify-self: center; text-align: left; }
+  .steps, .hosts { grid-template-columns: 1fr; }
+  .step, .host { text-align: center; }
+  .step-n { margin-left: auto; margin-right: auto; }
+  .host img, .host .ph { margin-left: auto; margin-right: auto; }
+  .bring { grid-template-columns: 1fr 1fr; }
+  .close-inner { grid-template-columns: 1fr; padding: 44px 32px; text-align: center; }
+  .close-actions { justify-items: center; }
+  .money { grid-template-columns: 1fr; gap: 12px; text-align: center; padding: 28px; }
+  .money .big { justify-self: center; }
+}
+@media (max-width: 768px) {
+  .wrap { padding: 0 20px; }
+  .hero { padding-block: 20px 0; }
+  .hero h1 { font-size: 36px; letter-spacing: -1px; }
+  .hero h1 small { font-size: 17px; }
+  .hero-promise { font-size: 16.5px; }
+  .hero-facts { grid-template-columns: auto; gap: 14px; }
+  .sec { padding-block: 64px 0; }
+  .sec-head h2 { font-size: 28px; letter-spacing: -0.5px; }
+  .proof { padding-block: 56px 0; }
+  .proof-head h2 { font-size: 24px; }
+  .bring { grid-template-columns: 1fr; }
+  .bring li { text-align: center; }
+  .money { grid-template-columns: 1fr; gap: 14px; padding: 24px; text-align: center; }
+  .close { margin-top: 64px; }
+  .close-inner h2 { font-size: 28px; }
+  .page-end { height: 64px; }
+  .mobile-cta { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding: 12px 20px calc(12px + env(safe-area-inset-bottom)); background: rgba(250,247,242,0.94); backdrop-filter: blur(10px); border-top: 1px solid var(--line); align-items: center; justify-content: space-between; gap: 12px; }
+  .mobile-cta span { font-family: 'Inter', system-ui, sans-serif; font-size: 13.5px; font-weight: 500; color: var(--ink-60); }
+  .mobile-cta .btn-gold { padding: 12px 18px; font-size: 14px; }
+  body { padding-bottom: 72px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<nav class="kong-nav">
+  <div class="kong-nav-left">
+    <a class="kong-nav-logo" href="/">
+      <img src="images/logo.webp" alt="Kong" />
+      Kong
+    </a>
+  </div>
+  <div class="kong-nav-right">
+    <div class="kong-nav-items">
+      <div class="kong-nav-dd">
+        <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Industries<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+        <div class="kong-nav-dd-menu" role="menu">
+          <a href="class-booking-system" role="menuitem"><i class="ti ti-building-store" aria-hidden="true"></i>Workshops &amp; Classes</a>
+          <div class="kong-nav-dd-divider"></div>
+          <a href="atv-tours" role="menuitem"><i class="ti ti-car-off-road" aria-hidden="true"></i>ATV Tours</a>
+          <a href="cooking-classes" role="menuitem"><i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>Cooking Classes</a>
+          <a href="wine-tours" role="menuitem"><i class="ti ti-glass-full" aria-hidden="true"></i>Wine Tours</a>
+          <a href="charter-bookings" role="menuitem"><i class="ti ti-anchor" aria-hidden="true"></i>Charters</a>
+          <a href="adventure-tours" role="menuitem"><i class="ti ti-mountain" aria-hidden="true"></i>Adventure Tours</a>
+          <a href="food-tours" role="menuitem"><i class="ti ti-soup" aria-hidden="true"></i>Food Tours</a>
+          <a href="dive-centres" role="menuitem"><i class="ti ti-scuba-mask" aria-hidden="true"></i>Dive Centres</a>
+          <a href="snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
+        </div>
+      </div>
+      <a class="kong-nav-item" href="/#pricing">Pricing</a>
+      <a class="kong-nav-item" href="blog">Blog</a>
+      <a class="kong-nav-item" href="about">About</a>
+      <a class="kong-nav-item" href="contact-us">Contact</a>
+    </div>
+    <a class="kong-nav-cta" href="https://app.bookwithkong.com" target="_blank" rel="noopener">Get started free</a>
+    <nav class="kong-lang" aria-label="Language"><span title="Bahasa Malaysia coming soon">BM</span><a class="on" href="/langkawi" aria-current="page">EN</a></nav>
+  </div>
+  <button class="kong-nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="kong-mobile-menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="kong-mobile-menu" id="kong-mobile-menu" hidden>
+    <button class="kong-mobile-acc" type="button" aria-expanded="false" aria-controls="kong-mobile-industries"><span>Industries</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+    <div class="kong-mobile-acc-panel" id="kong-mobile-industries">
+    <a class="kong-mobile-item kong-mobile-sub" href="class-booking-system">Workshops &amp; Classes</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="atv-tours">ATV Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="cooking-classes">Cooking Classes</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="wine-tours">Wine Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="charter-bookings">Charters</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="adventure-tours">Adventure Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="food-tours">Food Tours</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="dive-centres">Dive Centres</a>
+    <a class="kong-mobile-item kong-mobile-sub" href="snorkelling-tours">Snorkelling Tours</a>
+    </div>
+    <a class="kong-mobile-item" href="/#pricing">Pricing</a>
+    <a class="kong-mobile-item" href="blog">Blog</a>
+    <a class="kong-mobile-item" href="about">About</a>
+    <a class="kong-mobile-item" href="contact-us">Contact</a>
+    <a class="kong-mobile-cta" href="https://app.bookwithkong.com" target="_blank" rel="noopener">Get started free</a>
+    <div class="kong-mobile-lang"><span>Language:</span><span>BM</span><span>·</span><a href="/langkawi" aria-current="page">EN</a></div>
+  </div>
+</nav>
+
+<main>
+<section class="wrap hero" id="top">
+  <div>
+    <div class="hero-eyebrow"><span class="lada"><img src="images/lada-logo.png" alt="LADA, Langkawi Development Authority"></span>Free workshop for Langkawi tour and activity operators</div>
+    <h1>Build your own <span class="accent">free</span> booking site<small>(no sign up fee, no monthly fee)</small></h1>
+    <p class="hero-promise">Leave with a live website where guests from anywhere in the world can book and pay. Built in one afternoon.</p>
+    <div class="hero-facts">
+      <div class="hero-fact"><i class="ti ti-calendar-event" aria-hidden="true"></i><div><div class="k">Date</div><div class="v">Wednesday, 28 October</div></div></div>
+      <div class="hero-fact"><i class="ti ti-clock" aria-hidden="true"></i><div><div class="k">Time</div><div class="v">1:30 to 5:30 pm</div></div></div>
+      <div class="hero-fact"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="k">Venue</div><div class="v">Kompleks LADA, Langkawi</div></div></div>
+    </div>
+    <div class="hero-hosts">
+      <div class="faces"><img src="images/op-blake.avif" alt="Blake Ng" width="40" height="40"><img src="images/op-euan.png" alt="Euan Ashraf Lam" width="40" height="40"><img src="images/op-zack.webp" alt="Zack Ng" width="40" height="40"></div>
+      <p><a href="#who">Who's running it</a></p>
+    </div>
+  </div>
+  <aside class="reg" id="reserve">
+    <div class="reg-head"><h2>Reserve your seat</h2><span class="reg-seats"><i class="ti ti-ticket" aria-hidden="true"></i>Free. 20 seats.</span></div>
+    <iframe id="reg-frame" scrolling="no" src="https://kong.bookwithkong.com/embed/booking/lada-x-kong-workshop-build-your-own-booking-site" title="Reserve your seat: Kong booking page for the LADA x Kong workshop"></iframe>
+    <p class="reg-foot"><i class="ti ti-info-circle" aria-hidden="true"></i><span>This is a Kong booking page. Your guests will use one just like it.<noscript> If the form does not load, <a href="https://kong.bookwithkong.com/embed/booking/lada-x-kong-workshop-build-your-own-booking-site">open the booking page directly</a>.</noscript></span></p>
+  </aside>
+  <script>window.addEventListener('message',function(e){if(e.origin!=='https://kong.bookwithkong.com')return;var d=e.data;if(typeof d==='string'){try{d=JSON.parse(d)}catch(_){return}}var h=d&&(d.height||d.frameHeight||(d.payload&&d.payload.height));if(h>0){document.getElementById('reg-frame').style.height=Math.ceil(h)+'px'}});</script>
+</section>
+
+<section class="wrap proof">
+  <div class="proof-head">
+    <h2>The booking site you'll leave with</h2>
+  </div>
+  <figure class="viz-outer hero-viz" role="img" aria-label="A Langkawi operator booking site on a laptop, mangrovelangkawi.bookwithkong.com, listing five tours with prices from RM 80 to RM 250. On a phone beside it, a guest is booking the Kilim mangrove kayak tour: two adults, a date and time picked, Book now RM 180.">
+    <div class="viz">
+      <div class="web">
+        <div class="web-bar"><span class="web-dots"><i></i><i></i><i></i></span><span class="web-url"><i class="ti ti-lock" aria-hidden="true"></i>mangrovelangkawi.bookwithkong.com</span></div>
+        <div class="web-page">
+          <div class="web-nav"><b><i></i>Mangrove Langkawi Tours</b><span>Manage bookings</span></div>
+          <div class="web-hero" style="background-image:url(images/week-kayak.jpg);background-position:50% 72%"><div><h4>Paddle, cruise and climb Langkawi with local guides</h4><small>Small groups from Kilim jetty. Book online, pay online, turn up.</small></div></div>
+          <div class="web-cards">
+            <div class="web-card big"><div class="web-card-img" style="background-image:url(images/col-kayak.jpg)"></div><b>Kilim mangrove kayak tour</b><span>From RM 90</span></div>
+            <div class="web-card"><div class="web-card-img" style="background-image:url(images/col-jetski.png)"></div><b>Jet ski island tour</b><span>From RM 250</span></div>
+            <div class="web-card"><div class="web-card-img" style="background-image:url(images/col-firefly.jpg)"></div><b>Mangrove cruise</b><span>From RM 80</span></div>
+            <div class="web-card"><div class="web-card-img" style="background-image:url(images/col-atv.jpg)"></div><b>ATV jungle tour</b><span>From RM 120</span></div>
+            <div class="web-card"><div class="web-card-img" style="background-image:url(images/act-jeep.jpg)"></div><b>Island 4x4 day trip</b><span>From RM 150</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="cust">
+        <div class="cust-url"><i class="ti ti-lock" aria-hidden="true"></i><b>mangrovelangkawi.bookwithkong.com</b></div>
+        <div class="cust-hero" style="background-image:url(images/col-dive.jpg)"><span>Kilim mangrove kayak tour</span></div>
+        <div class="cust-body">
+          <div class="cust-tm"><span><i class="ti ti-clock" aria-hidden="true"></i>3 hours</span><span><i class="ti ti-map-pin" aria-hidden="true"></i>Kilim jetty</span></div>
+          <div><div class="cust-sh">Participants</div><div class="parts-row"><div><div class="parts-name">Adult</div><div class="parts-price">RM 90 / adult</div></div><div class="parts-ctl"><div class="parts-btn minus">&minus;</div><div class="parts-num">2</div><div class="parts-btn plus">+</div></div></div><div class="parts-row"><div><div class="parts-name">Child</div><div class="parts-price">RM 60 / child</div></div><div class="parts-ctl"><div class="parts-btn minus">&minus;</div><div class="parts-num">0</div><div class="parts-btn plus">+</div></div></div></div>
+          <div><div class="cust-sh">Choose a date<span class="month">Nov 2026</span></div><div class="cal"><div class="cal-dow"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div><div class="cal-grid"><div class="cal-d past">9</div><div class="cal-d past">10</div><div class="cal-d">11</div><div class="cal-d">12</div><div class="cal-d">13</div><div class="cal-d sel">14</div><div class="cal-d">15</div></div></div></div>
+          <div><div class="cust-sh">Choose a time</div><div class="times"><div class="time-slot sel">9:00 AM<span>Instant book</span></div><div class="time-slot">2:00 PM<span>Instant book</span></div></div></div>
+          <div class="cust-cta">Book now &middot; RM 180</div>
+        </div>
+      </div>
+    </div>
+  </figure>
+</section>
+
+<section class="wrap sec" id="cover">
+  <div class="sec-head">
+    <div class="sec-eyebrow">The afternoon</div>
+    <h2>What the workshop will cover</h2>
+  </div>
+  <div class="steps">
+    <article class="step">
+      <div class="step-n">1</div>
+      <h3>Build your website</h3>
+      <p>Add your first activity, set your price and dates, and go live. Your link works before the break.</p>
+      <figure class="viz-outer viz-site" role="img" aria-label="A phone showing mangrovelangkawi.bookwithkong.com: the Kilim mangrove kayak tour with adult and child prices, a date picker, and a Book now button.">
+        <div class="viz">
+          <div class="cust">
+            <div class="cust-url"><i class="ti ti-lock" aria-hidden="true"></i><b>mangrovelangkawi.bookwithkong.com</b></div>
+            <div class="cust-hero" style="background-image:url(images/col-kayak.jpg)"><span>Kilim mangrove kayak tour</span></div>
+            <div class="cust-body">
+              <div class="cust-tm"><span><i class="ti ti-clock" aria-hidden="true"></i>3 hours</span><span><i class="ti ti-map-pin" aria-hidden="true"></i>Kilim jetty</span></div>
+              <div><div class="cust-sh">Participants</div><div class="parts-row"><div><div class="parts-name">Adult</div><div class="parts-price">RM 90 / adult</div></div><div class="parts-ctl"><div class="parts-btn minus">&minus;</div><div class="parts-num">1</div><div class="parts-btn plus">+</div></div></div><div class="parts-row"><div><div class="parts-name">Child</div><div class="parts-price">RM 60 / child</div></div><div class="parts-ctl"><div class="parts-btn minus">&minus;</div><div class="parts-num">0</div><div class="parts-btn plus">+</div></div></div></div>
+              <div><div class="cust-sh">Choose a date<span class="month">Nov 2026</span></div><div class="cal"><div class="cal-dow"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div><div class="cal-grid"><div class="cal-d past">9</div><div class="cal-d past">10</div><div class="cal-d">11</div><div class="cal-d">12</div><div class="cal-d">13</div><div class="cal-d sel">14</div><div class="cal-d">15</div></div></div></div>
+              <div class="cust-cta">Book now &middot; RM 90</div>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </article>
+    <article class="step">
+      <div class="step-n">2</div>
+      <h3>Your first booking</h3>
+      <p>Book each other's activities from your phone, watch it arrive, we'll show you how to cancel, modify or reschedule bookings.</p>
+      <figure class="viz-outer viz-bookings" role="img" aria-label="A phone notification reading New booking, RM 180, paid, over the operator bookings list showing the guest name, date and number of guests.">
+        <div class="viz">
+          <div class="dash nosb">
+            <div class="dash-main">
+              <div class="dash-head"><div class="dash-title">Bookings<span class="count">(2)</span></div></div>
+              <div class="dash-bk-list">
+                <div class="dash-bk new"><div class="dash-bk-img" style="background-image:url(images/col-kayak.jpg)"></div><div class="dash-bk-info"><div class="dash-bk-name-row"><span class="dash-bk-name">Farid Zulkifli</span><span class="dash-bk-status">New</span></div><div class="dash-bk-tour">Kilim mangrove kayak tour</div><div class="dash-bk-meta"><span><i class="ti ti-calendar" aria-hidden="true"></i>Sat, 14 Nov</span><span><i class="ti ti-users" aria-hidden="true"></i>2</span></div></div><div class="dash-bk-amt"><div class="dash-bk-amt-v">RM 180</div><div class="dash-bk-amt-s">Fully paid</div></div></div>
+                <div class="dash-bk"><div class="dash-bk-img" style="background-image:url(images/col-kayak.jpg)"></div><div class="dash-bk-info"><div class="dash-bk-name-row"><span class="dash-bk-name">Aisyah Rahman</span><span class="dash-bk-status">Confirmed</span></div><div class="dash-bk-tour">Kilim mangrove kayak tour</div><div class="dash-bk-meta"><span><i class="ti ti-calendar" aria-hidden="true"></i>Sat, 14 Nov</span><span><i class="ti ti-users" aria-hidden="true"></i>2</span></div></div><div class="dash-bk-amt"><div class="dash-bk-amt-v">RM 180</div><div class="dash-bk-amt-s">Fully paid</div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="lock"><img src="images/logo.webp" alt=""><div style="flex:1"><div class="lk-h"><span>Kong</span><span>now</span></div><div class="lk-t">New booking, RM 180, paid</div><div class="lk-b">Farid Zulkifli, Sat 14 Nov, 9:00 AM, 2 adults</div></div></div>
+        </div>
+      </figure>
+    </article>
+    <article class="step">
+      <div class="step-n">3</div>
+      <h3>Get found on Google</h3>
+      <p>Link your new website to your Google Business Profile and fix the first things holding your listing back.</p>
+      <figure class="viz-outer viz-google" role="img" aria-label="A Google Business Profile for Mangrove Langkawi Tours with the Website button switched on and an Activities module listing the kayak tour and mangrove cruise, each with a Book now button.">
+        <div class="viz">
+          <div class="gbp">
+            <div class="gbp-photos"><div style="background-image:url(images/col-dive.jpg)"></div><div style="background-image:url(images/week-kayak.jpg);background-position:50% 70%"></div></div>
+            <div class="gbp-body">
+              <div class="gbp-name">Mangrove Langkawi Tours</div>
+              <div class="gbp-meta"><span class="stars">★★★★★</span><span>4.9 (212)</span><span>·</span><span>Tour operator</span></div>
+              <div class="gbp-actions"><span class="lit"><i class="ti ti-world" aria-hidden="true"></i>Website</span><span><i class="ti ti-directions" aria-hidden="true"></i>Directions</span><span><i class="ti ti-phone" aria-hidden="true"></i>Call</span></div>
+              <div class="gbp-acts"><div class="gbp-acts-h">Activities<span>Book online</span></div><div class="gbp-act"><div class="gbp-act-img" style="background-image:url(images/col-dive.jpg)"></div><div class="gbp-act-t"><b>Kilim mangrove kayak tour</b><span>From RM 90 · 3 hours</span></div><div class="gbp-book">Book now</div></div><div class="gbp-act"><div class="gbp-act-img" style="background-image:url(images/col-firefly.jpg)"></div><div class="gbp-act-t"><b>Mangrove cruise</b><span>From RM 80 · 2 hours</span></div><div class="gbp-book">Book now</div></div></div>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </article>
+  </div>
+  <div class="cover-foot">
+    <p class="lead"><i class="ti ti-check" aria-hidden="true"></i><span>Every operator leaves with a live website, and a free one-to-one Google profile review with Blake in the weeks after.</span></p>
+    <p class="fine">Stay after 5:30 if you want help submitting your payment account application. Optional.</p>
+  </div>
+</section>
+
+<section class="wrap sec" id="bring">
+  <div class="sec-head">
+    <div class="sec-eyebrow">Before the day</div>
+    <h2>Bring these four things</h2>
+  </div>
+  <ol class="bring">
+    <li><i class="ti ti-device-laptop" aria-hidden="true"></i><b>A laptop</b>Charged, with a Google login you've tested this week</li>
+    <li><i class="ti ti-file-text" aria-hidden="true"></i><b>One activity written down</b>Name, adult price, duration, start times, group size, meeting point</li>
+    <li><i class="ti ti-photo" aria-hidden="true"></i><b>Five to ten photos</b>Of that activity, on the device you bring</li>
+    <li><i class="ti ti-id" aria-hidden="true"></i><b>If you want help setting up payments</b>A copy of your SSM certificate, your IC, and your business bank account details</li>
+  </ol>
+</section>
+
+<section class="wrap sec" id="who">
+  <div class="sec-head">
+    <div class="sec-eyebrow">Who we are</div>
+    <h2>Who's running it</h2>
+  </div>
+  <div class="hosts">
+    <div class="host"><img src="images/op-blake.avif" alt="Blake Ng" width="72" height="72" loading="lazy"><h3>Blake Ng</h3><div class="role">Kong co-founder</div><p>Six years at booking software companies working with operators in Australia, Canada and Europe. Malaysian, came home to build the same thing for Malaysian operators.</p></div>
+    <div class="host"><img src="images/op-euan.png" alt="Euan Ashraf Lam" width="72" height="72" loading="lazy"><h3>Euan Ashraf Lam</h3><div class="role">Tixcarte</div><p>Four years at Tixcarte empowering the largest Malaysian attractions to distribute their tickets online.</p></div>
+    <div class="host"><img src="images/op-zack.webp" alt="Zack Ng" width="72" height="72" loading="lazy"><h3>Zack Ng</h3><div class="role">Kong co-founder</div><p>Five years at Atlassian as product leader and senior engineer on Jira &amp; Confluence. Architecture shaped at 10,000-engineer scale.</p></div>
+  </div>
+  <div class="money">
+    <div class="big"><small>What Kong costs</small>Free for operators.</div>
+    <div><p>Guests pay <b>1.8%</b> at checkout. You keep <b>100%</b>.</p><p class="fine">No setup fee, no monthly fee, no contract. Nothing to pay Kong or LADA for the workshop.</p></div>
+  </div>
+</section>
+
+<section class="wrap close">
+  <div class="close-inner">
+    <div>
+      <h2>Reserve your seat</h2>
+      <p>Free. 20 seats. Something unclear? WhatsApp Blake on +60 12-429 8159.</p>
+    </div>
+    <div class="close-actions">
+      <a class="btn-gold" href="#reserve">Reserve your seat<i class="ti ti-arrow-up" aria-hidden="true"></i></a>
+      <a class="close-wa" href="https://wa.me/60124298159" target="_blank" rel="noopener"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i>WhatsApp Blake</a>
+    </div>
+  </div>
+</section>
+<div class="page-end"></div>
+</main>
+
+<!-- Footer -->
+<footer class="kong-footer">
+  <div class="kong-footer-inner">
+    <div class="kong-footer-brand">
+      <h3>Subscribe for the latest Kong updates</h3>
+      <form class="kong-footer-subscribe" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
+        <input type="email" placeholder="name@email.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="kong-footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="class-booking-system">Class Booking System</a></li>
+        <li><a href="/#features">Website Booking Widget</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="australia">Kong Australia</a></li>
+      </ul>
+    </div>
+
+    <div class="kong-footer-col">
+      <h4>More Resources</h4>
+      <ul>
+        <li><a href="state-of-tour-operator-bookability-southeast-asia">Research: Tour Operator Bookability in SEA 2026</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="legal-terms">Terms &amp; Conditions</a></li>
+        <li><a href="legal-terms/privacy-policy">Privacy Policy</a></li>
+        <li><a href="legal-terms/refund-policy">Refund Policy</a></li>
+        <li><a href="contact-us">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="kong-footer-col">
+      <h4>Industries</h4>
+      <ul>
+        <li><a href="class-booking-system">Workshops &amp; Classes</a></li>
+        <li><a href="atv-tours">ATV Tours</a></li>
+        <li><a href="cooking-classes">Cooking Classes</a></li>
+        <li><a href="wine-tours">Wine Tours</a></li>
+        <li><a href="charter-bookings">Charters</a></li>
+        <li><a href="adventure-tours">Adventure Tours</a></li>
+        <li><a href="food-tours">Food Tours</a></li>
+        <li><a href="dive-centres">Dive Centres</a></li>
+        <li><a href="snorkelling-tours">Snorkelling Tours</a></li>
+      </ul>
+    </div>
+
+      <div class="kong-footer-col">
+      <h4>Compare platforms</h4>
+      <ul>
+        <li><a href="blog/best-booking-software-malaysia">Best Booking Software for Tour Operators in Malaysia</a></li>
+        <li><a href="blog/best-booking-software-australia">Best Tour Booking Systems in Australia</a></li>
+        <li><a href="compare/kong-vs-bokun">Kong vs Bokun</a></li>
+        <li><a href="compare/kong-vs-rezdy">Kong vs Rezdy</a></li>
+        <li><a href="compare/kong-vs-bookeo">Kong vs Bookeo</a></li>
+        <li><a href="compare/kong-vs-fareharbor">Kong vs FareHarbor</a></li>
+        <li><a href="compare/kong-vs-amelia">Kong vs Amelia</a></li>
+        <li><a href="compare/kong-vs-checkfront">Kong vs Checkfront</a></li>
+      </ul>
+    </div>
+</div>
+
+  <div class="kong-footer-bottom">
+    <div class="kong-footer-legal">
+      <span>Delivered with the support of the Langkawi Development Authority.</span>
+      <span>UEN Company Name: Kong Technologies Pte. Ltd.</span>
+      <span>UEN Company Number: 202608593C</span>
+      <span>SSM Company Name: Superstring Sdn. Bhd.</span>
+      <span>SSM Company Number: 202401016432 (1562282-H)</span>
+    </div>
+    <div class="kong-footer-socials">
+      <a href="https://www.linkedin.com/company/bookwithkong" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:#0A66C2;"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Mobile nav burger toggle */
+(function() {
+  const burger = document.querySelector('.kong-nav-burger');
+  const menu = document.getElementById('kong-mobile-menu');
+  if (!burger || !menu) return;
+  function close() {
+    burger.setAttribute('aria-expanded', 'false');
+    menu.removeAttribute('data-open');
+    menu.hidden = true;
+  }
+  function open() {
+    burger.setAttribute('aria-expanded', 'true');
+    menu.hidden = false;
+    menu.setAttribute('data-open', 'true');
+  }
+  burger.addEventListener('click', () => {
+    if (burger.getAttribute('aria-expanded') === 'true') close(); else open();
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+})();
+/* Mobile Industries accordion */
+(function(){
+  var acc = document.querySelector('.kong-mobile-acc');
+  var panel = document.getElementById('kong-mobile-industries');
+  if(!acc || !panel) return;
+  acc.addEventListener('click', function(){
+    var open = acc.getAttribute('aria-expanded') === 'true';
+    acc.setAttribute('aria-expanded', String(!open));
+    panel.setAttribute('data-open', String(!open));
+  });
+})();
+</script>
+<div class="mobile-cta"><span>Free. 20 seats.</span><a class="btn-gold" href="#reserve">Reserve your seat</a></div>
+</body>
+</html>
