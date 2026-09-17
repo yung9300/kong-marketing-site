@@ -346,8 +346,11 @@ p, li { font-family: 'Inter', system-ui, sans-serif; text-wrap: pretty; }
 .kong-mobile-lang { display: flex; gap: 6px; padding: 6px 14px 2px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; color: var(--ink-55); }
 .kong-mobile-lang a { color: var(--ink); font-weight: 600; }
 .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-family: 'Inter', system-ui, sans-serif; font-size: 11.5px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; color: var(--purple); margin-bottom: 18px; }
-.hero-eyebrow .lada { display: inline-flex; align-items: center; height: 34px; }
-.hero-eyebrow .lada img { height: 34px; width: auto; display: block; }
+.hero-eyebrow { flex-wrap: wrap; justify-content: flex-start; row-gap: 12px; }
+.hero-eyebrow .lada { display: inline-flex; align-items: center; gap: 14px; height: 40px; margin-right: 8px; }
+.hero-eyebrow .lada img { height: 40px; width: auto; display: block; }
+.hero-eyebrow .lada .nl { height: 52px; }
+@media (max-width: 760px) { .hero-eyebrow { justify-content: center; } .hero-eyebrow .lada { height: 32px; gap: 10px; margin-right: 0; } .hero-eyebrow .lada img { height: 32px; } .hero-eyebrow .lada .nl { height: 42px; } }
 .hero h1 { font-size: 52px; font-weight: 700; line-height: 1.05; letter-spacing: -1.8px; text-wrap: balance; }
 .hero h1 .accent { color: var(--purple); }
 .hero h1 small { display: block; font-size: 22px; font-weight: 500; letter-spacing: -0.4px; color: var(--ink-55); margin-top: 12px; line-height: 1.3; }
@@ -667,11 +670,11 @@ p, li { font-family: 'Inter', system-ui, sans-serif; text-wrap: pretty; }
 <main>
 <section class="wrap hero" id="top">
   <div>
-    <div class="hero-eyebrow"><span class="lada"><img src="images/lada-logo.png" alt="LADA, Langkawi Development Authority"></span>Free workshop for Langkawi tour and activity operators</div>
+    <div class="hero-eyebrow"><span class="lada"><img src="images/lada-logo-en.png" alt="LADA, Langkawi Development Authority"><img class="nl" src="images/naturally-langkawi.png" alt="Naturally Langkawi"></span>Free workshop for Langkawi tour and activity operators</div>
     <h1>Build your own <span class="accent">free</span> booking site<small>(no sign up fee, no monthly fee)</small></h1>
     <p class="hero-promise">Leave with a live website where guests from anywhere in the world can book and pay. Built in one afternoon.</p>
     <div class="hero-facts">
-      <div class="hero-fact"><i class="ti ti-calendar-event" aria-hidden="true"></i><div><div class="k">Date</div><div class="v">Wednesday, 28 October</div></div></div>
+      <div class="hero-fact"><i class="ti ti-calendar-event" aria-hidden="true"></i><div><div class="k">Date</div><div class="v">Tuesday, 27 October</div></div></div>
       <div class="hero-fact"><i class="ti ti-clock" aria-hidden="true"></i><div><div class="k">Time</div><div class="v">1:30 to 5:30 pm</div></div></div>
       <div class="hero-fact"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="k">Venue</div><div class="v">Kompleks LADA, Langkawi</div></div></div>
     </div>
