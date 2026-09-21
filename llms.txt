@@ -1,6 +1,6 @@
 # Kong (bookwithkong.com)
 
-> Kong is a booking platform for tour and activity operators in Asia-Pacific. Operators take direct bookings through their own website, with pricing of $1 per booking capped at $139/month, or a booking fee paid by the guest. Kong's OTA connections are in development.
+> Kong is a booking platform for tour and activity operators in Asia-Pacific. Operators take direct bookings through their own website, free for operators, with a 1.8% booking fee paid by the guest at checkout. Kong's OTA connections are in development.
 
 ## Key pages
 
