@@ -33,6 +33,7 @@ export interface DailyRollup {
   byPath: Record<string, number>;
   byStatus: Record<string, number>;
   byBotPath: Record<string, Record<string, number>>; // bot -> path -> count
+  byPathFamily: Record<string, Record<string, number>>; // path -> family -> count
   botFamily: Record<string, string>; // bot -> family, kept so summaries can group by it
   generatedAt: string;
   /** true when the day had fully ended (Malaysia time) at generation. */
@@ -50,8 +51,22 @@ export interface Summary {
   byStatus: Record<string, number>;
   byDay: Array<{ day: string; visits: number; aiVisits: number }>;
   topPathsByBot: Record<string, Array<{ path: string; visits: number }>>;
+  /** Every page that had at least one bot visit, sorted by AI agent visits. */
+  pages: PageTally[];
+  /** AI agent visits only: path -> agent name -> visits. */
+  agentsByPage: Record<string, Record<string, number>>;
   zeroDays: string[];
   generatedAt: string;
+}
+
+export interface PageTally {
+  path: string;
+  ai: number; // agents + crawlers
+  agents: number; // ai-agent family
+  crawlers: number; // ai-crawler family
+  search: number;
+  other: number; // seo, social, other
+  total: number;
 }
 
 export function openStore(): Store {
@@ -93,6 +108,7 @@ export async function buildDailyRollup(store: Store, day: string, todayDay: stri
     byPath: {},
     byStatus: {},
     byBotPath: {},
+    byPathFamily: {},
     botFamily: {},
     generatedAt: new Date().toISOString(),
     complete: day < todayDay,
@@ -105,6 +121,8 @@ export async function buildDailyRollup(store: Store, day: string, todayDay: stri
     bump(rollup.byStatus, String(v.status));
     rollup.byBotPath[v.bot] ??= {};
     bump(rollup.byBotPath[v.bot], v.path);
+    rollup.byPathFamily[v.path] ??= {};
+    bump(rollup.byPathFamily[v.path], v.family);
     rollup.botFamily[v.bot] = v.family;
   }
   // Only persist complete days. A partial "today" rollup would be stale
@@ -139,6 +157,7 @@ export async function buildSummary(store: Store, endDay: string, days: number, t
   const byPath: Record<string, number> = {};
   const byStatus: Record<string, number> = {};
   const byBotPath: Record<string, Record<string, number>> = {};
+  const byPathFamily: Record<string, Record<string, number>> = {};
   const botFamily: Record<string, string> = {};
   const byDay: Summary["byDay"] = [];
   const zeroDays: string[] = [];
@@ -158,7 +177,32 @@ export async function buildSummary(store: Store, endDay: string, days: number, t
       byBotPath[bot] ??= {};
       for (const [p, n] of Object.entries(paths)) bump(byBotPath[bot], p, n);
     }
+    for (const [path, fams] of Object.entries(r.byPathFamily ?? {})) {
+      byPathFamily[path] ??= {};
+      for (const [f, n] of Object.entries(fams)) bump(byPathFamily[path], f, n);
+    }
     Object.assign(botFamily, r.botFamily ?? {});
+  }
+
+  // Per-page tally with AI visits separated from everything else.
+  const pages: PageTally[] = Object.entries(byPathFamily)
+    .map(([path, f]) => {
+      const agents = f["ai-agent"] ?? 0;
+      const crawlers = f["ai-crawler"] ?? 0;
+      const search = f["search"] ?? 0;
+      const total = Object.values(f).reduce((a, n) => a + n, 0);
+      return { path, ai: agents + crawlers, agents, crawlers, search, other: total - agents - crawlers - search, total };
+    })
+    .sort((a, b) => b.agents - a.agents || b.ai - a.ai || a.path.localeCompare(b.path));
+
+  // Agent-only view: which agent read which page.
+  const agentsByPage: Summary["agentsByPage"] = {};
+  for (const [bot, paths] of Object.entries(byBotPath)) {
+    if (botFamily[bot] !== "ai-agent") continue;
+    for (const [path, n] of Object.entries(paths)) {
+      agentsByPage[path] ??= {};
+      bump(agentsByPage[path], bot, n);
+    }
   }
 
   // Top 5 pages for each of the 10 busiest bots.
@@ -178,26 +222,61 @@ export async function buildSummary(store: Store, endDay: string, days: number, t
     byStatus,
     byDay,
     topPathsByBot,
+    pages,
+    agentsByPage,
     zeroDays,
     generatedAt: new Date().toISOString(),
   };
+}
+
+/**
+ * AI agent visits per page as CSV, ready to paste into a chat or a
+ * spreadsheet. One row per page, one column per agent, sorted by total
+ * agent visits. Crawlers, search engines and SEO bots are left out.
+ */
+export function pagesToCsv(s: Summary): string {
+  const esc = (v: string | number) => {
+    const str = String(v);
+    return /[",\n]/.test(str) ? `"${str.replace(/"/g, '""')}"` : str;
+  };
+  // Agent columns in order of overall volume.
+  const agentTotals: Record<string, number> = {};
+  for (const perAgent of Object.values(s.agentsByPage)) {
+    for (const [agent, n] of Object.entries(perAgent)) bump(agentTotals, agent, n);
+  }
+  const agents = Object.entries(agentTotals)
+    .sort((a, b) => b[1] - a[1])
+    .map(([agent]) => agent);
+  const rows = Object.entries(s.agentsByPage)
+    .map(([path, perAgent]) => ({ path, total: Object.values(perAgent).reduce((a, n) => a + n, 0), perAgent }))
+    .sort((a, b) => b.total - a.total || a.path.localeCompare(b.path));
+  const lines = [
+    `# bookwithkong.com, AI agent visits by page, ${s.period.start} to ${s.period.end} (${s.period.days} days, ${s.period.tz}). Agents only; crawlers and search bots excluded.`,
+    ["path", "ai_agent_visits", ...agents].map(esc).join(","),
+    ...rows.map((r) => [r.path, r.total, ...agents.map((a) => r.perAgent[a] ?? 0)].map(esc).join(",")),
+  ];
+  return lines.join("\n") + "\n";
 }
 
 /** A short plain-English line for messages and logs. */
 export function describeSummary(s: Summary): string {
   const agents = s.byFamily["ai-agent"] ?? 0;
   const crawlers = s.byFamily["ai-crawler"] ?? 0;
-  const top = s.byBot
-    .filter((b) => b.family === "ai-agent" || b.family === "ai-crawler")
+  const topAgents = s.byBot
+    .filter((b) => b.family === "ai-agent")
     .slice(0, 5)
     .map((b) => `${b.bot} ${b.visits}`)
     .join(", ");
-  const pages = s.byPath.slice(0, 3).map((p) => p.path).join(", ");
+  const agentPages = s.pages
+    .filter((p) => p.agents > 0)
+    .slice(0, 3)
+    .map((p) => `${p.path} (${p.agents})`)
+    .join(", ");
   return (
-    `${s.aiVisits} AI visits to bookwithkong.com from ${s.period.start} to ${s.period.end}. ` +
-    `${agents} from AI agents and ${crawlers} from AI crawlers` +
-    (top ? ` (${top}).` : ".") +
-    (pages ? ` Most fetched pages: ${pages}.` : "") +
-    (s.visits > s.aiVisits ? ` Plus ${s.visits - s.aiVisits} visits from search, SEO and other bots.` : "")
+    `${agents} AI agent visits to bookwithkong.com from ${s.period.start} to ${s.period.end}` +
+    (topAgents ? ` (${topAgents}).` : ".") +
+    (agentPages ? ` Pages agents read most: ${agentPages}.` : "") +
+    ` Separately, ${crawlers} visits from AI crawlers` +
+    (s.visits > s.aiVisits ? ` and ${s.visits - s.aiVisits} from search, SEO and other bots.` : ".")
   );
 }
