@@ -8,11 +8,23 @@
 //   GET /api/ai-visits?today=1            today so far (Malaysia time), straight from raw records
 //   GET /api/ai-visits?recent=20          the last N raw records, for checking it is recording
 //
+// Add &format=csv to the default view or to ?days=N to get the per-page
+// AI visit tally as CSV instead of JSON (one row per page, AI visits split
+// into agents and crawlers, search and other bots in separate columns).
+//
 // Every call needs the secret from the AI_VISITS_TOKEN environment variable,
 // either as  Authorization: Bearer <token>  or  ?token=<token>.
 
 import type { Config } from "@netlify/functions";
-import { buildSummary, describeSummary, getDailyRollup, loadVisits, openStore, type Summary } from "../shared/tally.ts";
+import {
+  buildSummary,
+  describeSummary,
+  getDailyRollup,
+  loadVisits,
+  openStore,
+  pagesToCsv,
+  type Summary,
+} from "../shared/tally.ts";
 import { isValidDay, myDay, shiftDay } from "../shared/time.ts";
 
 function json(body: unknown, status = 200): Response {
@@ -23,6 +35,22 @@ function json(body: unknown, status = 200): Response {
       "cache-control": "no-store",
     },
   });
+}
+
+function csv(body: string, filename: string): Response {
+  return new Response(body, {
+    status: 200,
+    headers: {
+      "content-type": "text/csv; charset=utf-8",
+      "content-disposition": `inline; filename="${filename}"`,
+      "cache-control": "no-store",
+    },
+  });
+}
+
+function respondSummary(summary: Summary, wantCsv: boolean): Response {
+  if (wantCsv) return csv(pagesToCsv(summary), `kong-ai-visits-${summary.period.start}-to-${summary.period.end}.csv`);
+  return json({ ...summary, text: describeSummary(summary) });
 }
 
 function authorised(request: Request, url: URL): boolean {
@@ -46,6 +74,7 @@ export default async (request: Request) => {
   const store = openStore();
   const today = myDay();
   const q = url.searchParams;
+  const wantCsv = q.get("format") === "csv";
 
   try {
     // Recent raw records, newest first. Useful right after deploying.
@@ -77,7 +106,7 @@ export default async (request: Request) => {
       if (!Number.isFinite(days) || days < 1 || days > 90) return json({ error: "days must be between 1 and 90" }, 400);
       const end = shiftDay(today, -1);
       const summary = await buildSummary(store, end, days, today);
-      return json({ ...summary, text: describeSummary(summary) });
+      return respondSummary(summary, wantCsv);
     }
 
     // Default: the latest weekly summary written by ai-visits-weekly.
@@ -92,7 +121,7 @@ export default async (request: Request) => {
         404,
       );
     }
-    return json({ ...latest, text: describeSummary(latest) });
+    return respondSummary(latest, wantCsv);
   } catch (error) {
     console.error("ai-visits: request failed", error);
     return json({ error: "something went wrong reading the visit store", detail: String(error) }, 500);
