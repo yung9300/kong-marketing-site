@@ -1,0 +1,13 @@
+{
+  "name": "bookwithkong-site",
+  "private": true,
+  "type": "module",
+  "description": "bookwithkong.com static site plus the AI visit counter (Netlify edge function, Blobs, scheduled functions).",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.0",
+    "@netlify/functions": "^6.0.0"
+  },
+  "devDependencies": {
+    "@netlify/edge-functions": "^4.0.0"
+  }
+}

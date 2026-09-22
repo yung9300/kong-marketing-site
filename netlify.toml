@@ -37,3 +37,30 @@
   status = 302
   force = true
   conditions = { Country = ["AU"] }
+
+# ---------------------------------------------------------------------------
+# AI visit counter
+#
+# Netlify labels every request with a Netlify-Agent-Category header
+# (browser, ai-agent, crawler, ...). The edge function in
+# netlify/edge-functions/ai-visit-log.ts only runs for ai-agent and
+# crawler requests (see the `header` matcher in that file), writes one
+# JSON record per visit to the "ai-visits" Blobs store, and passes the
+# request through untouched. Human visitors never trigger it.
+#
+# Scheduled functions (netlify/functions):
+#   ai-visits-daily.mts   00:20 Malaysia time, rolls up yesterday's visits
+#   ai-visits-weekly.mts  Monday 09:00 Malaysia time, 7-day summary
+# Endpoint:
+#   ai-visits.mts         GET /api/ai-visits  (needs AI_VISITS_TOKEN env var)
+#
+# Schedules are declared inside each function file. Nothing else here
+# needs to change when the cron times move.
+# ---------------------------------------------------------------------------
+
+[build]
+  functions = "netlify/functions"
+  edge_functions = "netlify/edge-functions"
+
+[functions]
+  node_bundler = "esbuild"
