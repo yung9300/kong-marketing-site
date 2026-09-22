@@ -49,7 +49,16 @@ The second call should list a record with `"bot": "GPTBot"` and the path.
 /api/ai-visits?day=2026-09-22  one day
 ```
 
-Every response includes a `text` field with a one-line plain-English summary.
+Add `&format=csv` to the first two to get AI agent visits per page as CSV:
+one row per page, one column per agent (ChatGPT, Claude, Perplexity and so
+on), sorted by visits. Crawlers, search engines and SEO bots are excluded.
+This is the view to paste into a Claude chat for analysis.
+
+```
+/api/ai-visits?days=7&format=csv&token=...
+```
+
+Every JSON response includes a `text` field with a one-line plain-English summary.
 
 ## Notes
 
