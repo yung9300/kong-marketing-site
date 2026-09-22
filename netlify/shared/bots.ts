@@ -59,6 +59,7 @@ const KNOWN: Array<[RegExp, string, BotFamily]> = [
   [/PetalBot/i, "PetalBot", "search"],
   [/Yandex/i, "Yandex", "search"],
   [/Baiduspider/i, "Baidu", "search"],
+  [/HubSpot/i, "HubSpot", "seo"],
   [/AhrefsBot/i, "Ahrefs", "seo"],
   [/SemrushBot/i, "Semrush", "seo"],
   [/MJ12bot/i, "Majestic", "seo"],
@@ -71,6 +72,25 @@ const KNOWN: Array<[RegExp, string, BotFamily]> = [
   [/Discordbot/i, "Discord", "social"],
 ];
 
+const GENERIC_TOKENS =
+  /^(Mozilla|AppleWebKit|KHTML|like|Gecko|Chrome|Safari|Mobile|Linux|Android|Windows|NT|Win64|WOW64|x64|x86_64|Macintosh|Intel|Mac|OS|X|X11|iPhone|iPad|CPU|Version|compatible|U|en|en-US|rv)$/i;
+
+/** Best-effort readable name for a bot that is not in the list above. */
+function guessName(ua: string): string {
+  // 1. "(compatible; SomeBot/1.0; +https://...)" is the most common shape.
+  const compatible = ua.match(/compatible;\s*([^;)/]+)/i);
+  if (compatible) return compatible[1].trim().slice(0, 40);
+
+  // 2. Any token that sounds like a bot.
+  const tokens = ua.split(/[\s/;()]+/).filter(Boolean);
+  const botty = tokens.find((t) => /bot|crawl|spider|fetch|agent|scan|preview/i.test(t) && !GENERIC_TOKENS.test(t));
+  if (botty) return botty.slice(0, 40);
+
+  // 3. Last token that is not browser boilerplate (custom names usually trail).
+  const meaningful = tokens.filter((t) => !GENERIC_TOKENS.test(t) && !/^\d/.test(t));
+  return (meaningful[meaningful.length - 1] ?? tokens[0] ?? "unknown").slice(0, 40);
+}
+
 /**
  * Work out which bot sent a request from its User-Agent string and the
  * Netlify-Agent-Category header (for example "ai-agent" or "crawler").
@@ -81,11 +101,10 @@ export function identifyBot(userAgent: string, category: string): BotMatch {
     if (pattern.test(ua)) return { bot, family };
   }
 
-  // Unknown bot. Fall back to the first product token of the UA string
-  // so new agents still show up under a readable name.
-  const token = ua.split(/[\s/;(]+/).filter(Boolean)[0] ?? "unknown";
-  const name = token.slice(0, 40);
-  const base = category.split(";")[0];
+  // Unknown bot. Try to pull a readable name out of the UA string so new
+  // agents still show up sensibly instead of all being called "Mozilla".
+  const name = guessName(ua);
+  const base = category.split(";")[0].trim();
   if (base === "ai-agent") return { bot: `${name} (unlisted AI agent)`, family: "ai-agent" };
   return { bot: `${name} (unlisted crawler)`, family: "other" };
 }
