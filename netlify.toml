@@ -38,6 +38,12 @@
   force = true
   conditions = { Country = ["AU"] }
 
+  [[redirects]]
+  from = "/scan"
+  to = "https://kongatv.bookwithkong.com/?utm_source=rollup&utm_medium=print"
+  status = 302
+  force = true
+
 # ---------------------------------------------------------------------------
 # AI visit counter
 #
