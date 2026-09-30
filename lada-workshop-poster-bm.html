@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poster bengkel LADA x Kong (BM)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<style>
+:root{--ink:#1a0a2e;--ink-70:rgba(26,10,46,0.7);--ink-55:rgba(26,10,46,0.55);--ink-45:rgba(26,10,46,0.45);--purple:#3B0F5E;--accent:#7b3fb0;--yellow:#F5C842;--cream-1:#faf7f2;--cream-2:#f7f4ee;--line:rgba(26,10,46,0.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{font-family:'Poppins',system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+body{background:#e8e4dc;display:flex;justify-content:center;padding:24px}
+a{color:inherit;text-decoration:none}
+p{font-family:'Inter',system-ui,sans-serif}
+.poster{position:relative;width:1080px;min-width:1080px;flex-shrink:0;height:1500px;overflow:hidden;display:flex;flex-direction:column;padding:56px 72px 64px;background:radial-gradient(ellipse 1100px 650px at 50% -8%,rgba(245,200,66,0.22) 0%,transparent 60%),radial-gradient(ellipse 900px 700px at 50% 70%,rgba(123,63,176,0.10) 0%,transparent 60%),linear-gradient(180deg,var(--cream-1) 0%,var(--cream-2) 100%)}
+.logos{display:flex;align-items:center;gap:28px;flex-shrink:0}
+.kong{display:flex;align-items:center;gap:12px;font-weight:700;font-size:30px;letter-spacing:-0.5px}
+.kong img{width:44px;height:44px}
+.lada{display:flex;align-items:center;gap:24px;padding-left:28px;border-left:1px solid var(--line)}
+.lada img{height:48px;width:auto;display:block}
+.lada .nl{height:66px;margin-left:4px;padding-left:28px;border-left:1px solid var(--line);box-sizing:content-box}
+.col{margin-top:48px;display:flex;flex-direction:column;flex-shrink:0}
+.eyebrow{font-family:'Inter',system-ui,sans-serif;font-size:15px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+h1{font-size:56px;line-height:1.06;letter-spacing:-2px;font-weight:700;max-width:900px}
+h1 .accent{color:var(--accent)}
+h1 small{display:block;font-size:22px;font-weight:500;letter-spacing:-0.3px;color:var(--ink-55);margin-top:10px}
+.promise{font-size:20px;line-height:1.5;color:var(--ink-70);margin-top:16px;max-width:720px}
+.facts{margin-top:26px;display:flex;align-items:center;gap:44px}
+.fact{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+.fact i{font-size:26px;color:var(--purple);margin-top:2px}
+.fact .k{font-family:'Inter',system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-45)}
+.fact .v{font-weight:600;font-size:19px;line-height:1.3;white-space:nowrap}
+.seats{display:inline-flex;align-items:center;gap:8px;margin-left:auto;background:var(--yellow);color:var(--ink);font-weight:700;font-size:16px;padding:12px 16px;border-radius:12px;box-shadow:0 8px 24px rgba(245,200,66,0.45),inset 0 1px 0 rgba(255,255,255,0.55);white-space:nowrap}
+.seats i{font-size:20px}
+.shot{position:relative;margin-top:auto;flex:0 0 490px;height:490px;overflow:hidden}
+.shot::after{content:'';position:absolute;left:0;right:240px;bottom:0;height:70px;background:linear-gradient(180deg,rgba(247,244,238,0) 0%,var(--cream-2) 100%);z-index:5}
+.viz-outer{--w:1000;--h:700;position:relative;width:936px;aspect-ratio:var(--w)/var(--h)}
+.viz{position:absolute;left:0;top:0;width:calc(var(--w)*1px);height:calc(var(--h)*1px);transform:scale(0.936);transform-origin:top left;color:#0a0a0a;font-family:'Inter',system-ui,sans-serif}
+.web{position:absolute;left:0;top:0;width:760px;height:700px;background:white;border-radius:12px;border:1px solid rgba(26,10,46,0.06);box-shadow:0 24px 60px rgba(59,15,94,0.14),0 4px 16px rgba(59,15,94,0.05);overflow:hidden;display:flex;flex-direction:column}
+.web-bar{display:flex;align-items:center;gap:12px;padding:9px 12px;background:#f3f4f6;border-bottom:1px solid #e5e7eb}
+.web-dots{display:flex;gap:5px}.web-dots i{width:9px;height:9px;border-radius:50%;background:#d4d4d8;display:block}
+.web-url{flex:1;max-width:360px;margin:0 auto;background:white;border-radius:6px;padding:4px 10px;font-size:10.5px;color:#333;font-weight:500;display:flex;align-items:center;gap:6px}
+.web-url i{color:#16a34a;font-size:11px}
+.web-page{padding:0 28px 28px;flex:1}
+.web-nav{display:flex;align-items:center;gap:22px;padding:14px 0;font-size:11px;color:#555}
+.web-nav b{font-family:'Poppins',system-ui,sans-serif;font-size:14px;color:#0a0a0a;margin-right:auto}
+.web-nav b i{display:inline-block;width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#3B0F5E,#7b3fb0);margin-right:8px;vertical-align:-4px}
+.web-hero{height:170px;margin:0 -28px;background-size:cover;background-position:50% 50%;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 60px;color:white}
+.web-hero::before{content:'';position:absolute;inset:0;background:rgba(10,10,20,0.45)}
+.web-hero>div{position:relative;max-width:520px}
+.web-hero h4{font-family:'Poppins',system-ui,sans-serif;font-size:24px;font-weight:700;letter-spacing:-0.5px;line-height:1.15;color:white;margin-bottom:8px}
+.web-hero small{font-size:11px;opacity:0.9;display:block}
+.web-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px 16px;margin-top:24px;padding-bottom:8px}
+.web-card.big{grid-column:span 2}
+.web-card-img{height:110px;border-radius:8px;background-size:cover;background-position:50% 50%;margin-bottom:8px}
+.web-card.big .web-card-img{height:140px}
+.web-card b{display:block;font-family:'Poppins',system-ui,sans-serif;font-size:12px;font-weight:600;line-height:1.3}
+.web-card span{font-size:9.5px;color:#555;font-weight:500}
+.cust{position:absolute;right:0;top:58px;width:250px;z-index:3;background:white;border-radius:12px;box-shadow:0 22px 50px rgba(59,15,94,0.22),0 6px 18px rgba(59,15,94,0.10);overflow:hidden;display:flex;flex-direction:column;border:1px solid rgba(26,10,46,0.06)}
+.cust-url{background:#f3f4f6;color:#555;font-size:9px;font-weight:500;padding:6px 10px;display:flex;align-items:center;gap:5px;border-bottom:1px solid #eee}
+.cust-url i{font-size:10px;color:#16a34a}
+.cust-url b{color:#0a0a0a;font-weight:600}
+.cust-hero{height:84px;background-size:cover;background-position:center;position:relative}
+.cust-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,0.45))}
+.cust-hero span{position:absolute;left:11px;bottom:8px;color:white;font-weight:700;font-size:12px;z-index:1;text-shadow:0 1px 3px rgba(0,0,0,0.4)}
+.cust-body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:9px}
+.cust-tm{font-size:9px;color:#888;display:flex;gap:8px}
+.cust-tm i{color:#2563eb;margin-right:2px}
+.cust-sh{font-size:9px;font-weight:700;margin-bottom:5px;display:flex;justify-content:space-between;text-transform:uppercase;letter-spacing:0.4px}
+.cust-sh .month{color:#999;font-weight:500;text-transform:none;letter-spacing:0}
+.parts-row{display:flex;justify-content:space-between;align-items:center;padding:2px 0}
+.parts-name{font-weight:600;font-size:10.5px}
+.parts-price{color:#2563eb;font-size:9px;font-weight:600;margin-top:1px}
+.parts-ctl{display:flex;align-items:center;gap:7px}
+.parts-btn{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600}
+.parts-btn.minus{border:1px solid #d4d4d8;color:#71717a}
+.parts-btn.plus{background:#2563eb;color:white}
+.parts-num{font-weight:700;font-size:11px;min-width:12px;text-align:center}
+.cal{background:#f9fafb;border-radius:6px;padding:6px}
+.cal-dow,.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.cal-dow span{text-align:center;font-size:7.5px;color:#999;font-weight:600}
+.cal-d{height:20px;display:flex;align-items:center;justify-content:center;font-size:8.5px;border-radius:3px;font-weight:500;background:white}
+.cal-d.past{color:#d4d4d8;background:transparent}
+.cal-d.sel{background:#2563eb;color:white;font-weight:700}
+.times{display:flex;flex-direction:column;gap:4px}
+.time-slot{border:1px solid #e5e7eb;border-radius:6px;padding:5px 9px;display:flex;justify-content:space-between;align-items:center;font-size:9.5px;font-weight:600}
+.time-slot.sel{border:1.5px solid #2563eb;background:#eff6ff;color:#2563eb}
+.time-slot span{font-size:8px;color:#16a34a;font-weight:500}
+.cust-cta{background:#2563eb;color:white;font-weight:600;font-size:11.5px;padding:9px;border-radius:7px;text-align:center}
+.who{margin-top:36px;display:flex;align-items:center;justify-content:space-between;gap:40px;padding-top:36px;border-top:1px solid var(--line);flex-shrink:0}
+.who p{font-size:16px;line-height:1.5;color:var(--ink-70);max-width:330px}
+.who p b{color:var(--ink);font-weight:600;display:block;font-family:'Poppins',system-ui,sans-serif;font-size:20px;margin-bottom:4px}
+.steps{margin-top:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;flex-shrink:0}
+.step{display:flex;align-items:center;gap:14px;font-family:'Inter',system-ui,sans-serif;font-size:17px;font-weight:500;color:var(--ink);line-height:1.35}
+.step i{width:48px;height:48px;border-radius:12px;background:rgba(59,15,94,0.08);color:var(--purple);display:inline-flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.reg{display:flex;align-items:center;gap:24px;flex-shrink:0}
+.reg .qr{width:176px;height:176px;background:white;border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:0 12px 32px rgba(59,15,94,0.10)}
+.reg .qr svg{display:block;width:100%;height:100%}
+.reg .lk .k{font-family:'Inter',system-ui,sans-serif;font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-45);margin-bottom:6px}
+.reg .cta{display:inline-flex;align-items:center;gap:10px;background:var(--yellow);color:var(--ink);font-weight:700;font-size:20px;padding:14px 22px;border-radius:12px;box-shadow:0 10px 28px rgba(245,200,66,0.55),inset 0 1px 0 rgba(255,255,255,0.55);margin-bottom:12px;white-space:nowrap}
+.reg .cta i{font-size:24px}
+.reg .or{font-family:'Inter',system-ui,sans-serif;font-size:17px;color:var(--ink-70);white-space:nowrap}
+.reg .or b{font-family:'Poppins',system-ui,sans-serif;font-weight:700;color:var(--purple)}
+.reg .lk .v span{color:var(--ink)}
+.reg .lk .lim{font-family:'Inter',system-ui,sans-serif;font-size:14px;font-weight:500;color:var(--ink-55);margin-top:4px}
+</style>
+</head>
+<body>
+<div class="poster" id="poster">
+  <div class="logos">
+    <div class="kong"><img src="images/logo.webp" alt="Kong">Kong</div>
+    <div class="lada"><img src="images/lada-logo-bm.png" alt="LADA, Langkawi Development Authority"><img class="nl" src="images/naturally-langkawi.png" alt="Naturally Langkawi"></div>
+  </div>
+  <div class="col">
+    <div class="eyebrow">Bengkel percuma untuk pengusaha pelancongan dan aktiviti Langkawi</div>
+    <h1>Dapatkan <span class="accent">30% lebih tempahan</span> dengan laman tempahan <span class="accent">percuma</span> anda sendiri <small>(tiada yuran pendaftaran, tiada yuran bulanan)</small></h1>
+    <p class="promise">Pulang dengan laman web yang sudah aktif, di mana tetamu dari seluruh dunia boleh menempah dan membayar. Siap dalam satu petang.</p>
+    <div class="facts">
+      <div class="fact"><i class="ti ti-calendar-event" aria-hidden="true"></i><div><div class="k">Tarikh</div><div class="v">Selasa, 27 Oktober</div></div></div>
+      <div class="fact"><i class="ti ti-clock" aria-hidden="true"></i><div><div class="k">Masa</div><div class="v">1:30 hingga 5:30 petang</div></div></div>
+      <div class="fact"><i class="ti ti-map-pin" aria-hidden="true"></i><div><div class="k">Tempat</div><div class="v">Kompleks LADA, Langkawi</div></div></div>
+    </div>
+  </div>
+  <div class="shot">
+    <div class="viz-outer">
+      <div class="viz">
+        <div class="web">
+          <div class="web-bar"><span class="web-dots"><i></i><i></i><i></i></span><span class="web-url"><i class="ti ti-lock" aria-hidden="true"></i>mangrovelangkawi.bookwithkong.com</span></div>
+          <div class="web-page">
+            <div class="web-nav"><b><i></i>Mangrove Langkawi Tours</b><span>Manage bookings</span></div>
+            <div class="web-hero" style="background-image:url(images/week-kayak.jpg);background-position:50% 72%"><div><h4>Paddle, cruise and climb Langkawi with local guides</h4><small>Small groups from Kilim jetty. Book online, pay online, turn up.</small></div></div>
+            <div class="web-cards">
+              <div class="web-card big"><div class="web-card-img" style="background-image:url(images/col-kayak.jpg)"></div><b>Kilim mangrove kayak tour</b><span>From RM 90</span></div>
+              <div class="web-card"><div class="web-card-img" style="background-image:url(images/col-jetski.png)"></div><b>Jet ski island tour</b><span>From RM 250</span></div>
+              <div class="web-card"><div class="web-card-img" style="background-image:url(images/col-firefly.jpg)"></div><b>Mangrove cruise</b><span>From RM 80</span></div>
+              <div class="web-card"><div class="web-card-img" style="background-image:url(images/col-atv.jpg)"></div><b>ATV jungle tour</b><span>From RM 120</span></div>
+              <div class="web-card"><div class="web-card-img" style="background-image:url(images/act-jeep.jpg)"></div><b>Island 4x4 day trip</b><span>From RM 150</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="cust">
+          <div class="cust-url"><i class="ti ti-lock" aria-hidden="true"></i><b>mangrovelangkawi.bookwithkong.com</b></div>
+          <div class="cust-hero" style="background-image:url(images/col-dive.jpg)"><span>Kilim mangrove kayak tour</span></div>
+          <div class="cust-body">
+            <div class="cust-tm"><span><i class="ti ti-clock" aria-hidden="true"></i>3 hours</span><span><i class="ti ti-map-pin" aria-hidden="true"></i>Kilim jetty</span></div>
+            <div><div class="cust-sh">Participants</div><div class="parts-row"><div><div class="parts-name">Adult</div><div class="parts-price">RM 90 / adult</div></div><div class="parts-ctl"><div class="parts-btn minus">&minus;</div><div class="parts-num">2</div><div class="parts-btn plus">+</div></div></div><div class="parts-row"><div><div class="parts-name">Child</div><div class="parts-price">RM 60 / child</div></div><div class="parts-ctl"><div class="parts-btn minus">&minus;</div><div class="parts-num">0</div><div class="parts-btn plus">+</div></div></div></div>
+            <div><div class="cust-sh">Choose a date<span class="month">Nov 2026</span></div><div class="cal"><div class="cal-dow"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div><div class="cal-grid"><div class="cal-d past">9</div><div class="cal-d past">10</div><div class="cal-d">11</div><div class="cal-d">12</div><div class="cal-d">13</div><div class="cal-d sel">14</div><div class="cal-d">15</div></div></div></div>
+            <div><div class="cust-sh">Choose a time</div><div class="times"><div class="time-slot sel">9:00 AM<span>Instant book</span></div><div class="time-slot">2:00 PM<span>Instant book</span></div></div></div>
+            <div class="cust-cta">Book now &middot; RM 180</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="steps">
+    <div class="step"><i class="ti ti-world" aria-hidden="true"></i>Bina laman tempahan anda</div>
+    <div class="step"><i class="ti ti-calendar-check" aria-hidden="true"></i>Dapatkan tempahan pertama anda</div>
+    <div class="step"><i class="ti ti-brand-google" aria-hidden="true"></i>Pautkan dan tingkatkan Google Business Profile anda</div>
+  </div>
+  <div class="who">
+    <p><b>Untuk siapa</b>Pengusaha pelancongan dan aktiviti Langkawi yang mahukan laman tempahan sendiri, sama ada anda menerima tempahan melalui WhatsApp hari ini atau sudah menggunakan sistem.</p>
+    <div class="reg">
+      <div class="lk"><div class="cta"><i class="ti ti-qrcode" aria-hidden="true"></i>Imbas untuk tempah tempat anda</div><div class="or">atau buka <b>bookwithkong.com/lada-workshop</b></div><div class="lim">Percuma. Terhad kepada 20 pendaftaran pertama.</div></div>
+      <div class="qr" id="qr"></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){var q=qrcode(0,'M');q.addData('https://www.bookwithkong.com/lada-workshop');q.make();document.getElementById('qr').innerHTML=q.createSvgTag({cellSize:4,margin:0,scalable:true});})();
+</script>
+</body>
+</html>

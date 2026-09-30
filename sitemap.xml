@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.bookwithkong.com/</loc>
     <changefreq>weekly</changefreq>
@@ -74,6 +74,12 @@
     <loc>https://www.bookwithkong.com/contact-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bookwithkong.com/ai</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.bookwithkong.com/restech-2</loc>
@@ -316,5 +322,23 @@
     <loc>https://www.bookwithkong.com/legal-terms/terms-and-conditions</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.bookwithkong.com/glossary</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bookwithkong.com/glossary"/>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://www.bookwithkong.com/ms/glosari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bookwithkong.com/glossary"/>
+  </url>
+  <url>
+    <loc>https://www.bookwithkong.com/ms/glosari</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bookwithkong.com/glossary"/>
+    <xhtml:link rel="alternate" hreflang="ms-MY" href="https://www.bookwithkong.com/ms/glosari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bookwithkong.com/glossary"/>
   </url>
 </urlset>

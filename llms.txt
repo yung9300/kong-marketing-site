@@ -5,11 +5,17 @@
 ## Key pages
 
 - [Home](https://www.bookwithkong.com/): Kong booking platform for tour operators
+- [Tour Booking Software for ChatGPT & Claude](https://www.bookwithkong.com/ai): Kong's connector for ChatGPT and Claude: what it can do, how to connect, and which other tour booking software connects
 - [Kong Australia](https://www.bookwithkong.com/australia): Australian pricing and details
 - [Kong Malaysia](https://www.bookwithkong.com/malaysia): Malaysian pricing and details
 - [About](https://www.bookwithkong.com/about): The team behind Kong
 - [Compare](https://www.bookwithkong.com/compare): Kong vs other booking platforms
 - [Blog](https://www.bookwithkong.com/blog): Practical guides for tour operators
+
+## Glossary
+
+- [Tour and activity glossary](https://www.bookwithkong.com/glossary): 137 tour and activity terms defined in plain English, with Malaysian and Australian rules, payment methods and licences.
+- [Glosari pelancongan dan aktiviti](https://www.bookwithkong.com/ms/glosari): The same 137 terms in Bahasa Malaysia.
 
 ## Blog: Australia guides
 
