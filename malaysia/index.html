@@ -5309,6 +5309,117 @@ body { position: relative; }
 .kong-mobile-acc[aria-expanded="true"] .kong-mobile-acc-chev { transform: rotate(180deg); }
 .kong-mobile-acc-panel { display: none; flex-direction: column; gap: 4px; }
 .kong-mobile-acc-panel[data-open="true"] { display: flex; }
+
+/* === Co-Operator (links to /ai) === */
+.coop-section{--ink:#1a0a2e;--ink-85:rgba(26,10,46,0.88);--gold:#F5C842;--purple:#7b3fb0;--purple-soft:rgba(123,63,176,0.10);position:relative;padding:60px 40px 80px;max-width:1280px;margin:0 auto}
+.coop-section .section-layout.reverse{grid-template-columns:minmax(0,1fr) 380px;gap:56px}
+.coop-stack{display:flex;flex-direction:column;align-items:center;gap:40px}
+.coop-center{text-align:center;max-width:640px}
+.coop-center .section-head{align-items:center}
+.coop-center .section-eyebrow{margin-left:auto;margin-right:auto}
+.coop-center .section-sub{margin-left:auto;margin-right:auto}
+.coop-demo{width:100%;max-width:720px;position:relative}
+@property --coop-a{syntax:'<angle>';inherits:false;initial-value:0deg}
+.coop-ring{position:absolute;pointer-events:none;z-index:2;opacity:0;transition:opacity .6s}
+.coop-ring::before,.coop-ring::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:3px;--coop-a:0deg;background:conic-gradient(from var(--coop-a),#a855f7,#facc15,#22d3a0,#38bdf8,#a855f7);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;animation:coop-spin 2.2s linear infinite}
+.coop-ring::after{padding:3px;filter:blur(8px);opacity:.85}
+.coop-ring.show{opacity:1}
+@keyframes coop-spin{to{--coop-a:360deg}}
+@media (max-width:980px){.coop-ring{display:none}}
+.coop-section .section-h1 .accent{color:#3B0F5E}
+.coop-logos{display:inline-flex;align-items:center;margin-right:2px}
+.coop-logos img{width:18px;height:18px;border-radius:50%;background:#fff;border:1.5px solid #fff;box-shadow:0 1px 3px rgba(26,10,46,.18);object-fit:contain;padding:1px}
+.coop-logos img+img{margin-left:-6px}
+.coop-beta{display:inline-flex;align-items:center;margin-left:8px;padding:2px 8px;border-radius:999px;background:#F5C842;color:#1a0a2e;font-size:10.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase}
+.coop-link{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:15px;color:#7b3fb0;text-decoration:none;transition:color 0.2s}
+.coop-link i{transition:transform 0.25s cubic-bezier(0.34,1.56,0.64,1)}
+.coop-link:hover{color:#3B0F5E}.coop-link:hover i{transform:translateX(3px)}
+.chat{--c-bg:#f4f3ee;--c-ink:#2b2a25;--c-mute:#7d7a70;--c-line:rgba(43,42,37,0.10);--c-user:#e6e3d8;--c-accent:#c96442;background:var(--c-bg);border:1px solid rgba(26,10,46,0.10);border-radius:18px;box-shadow:0 30px 60px -30px rgba(59,15,94,0.35),var(--shadow-card);display:flex;flex-direction:column;overflow:hidden;font-family:'Inter',system-ui,sans-serif;color:var(--c-ink)}
+.coop-section .anim-frame .chat{height:480px}
+.coop-section .ai-muted{font-family:'Inter',system-ui,sans-serif;color:rgba(26,10,46,0.55)}
+.ai-h3{font-family:'Poppins',system-ui,sans-serif;font-size:20px;font-weight:600;line-height:1.35;color:var(--ink);margin:0 0 10px;letter-spacing:-0.2px}
+.chat-head{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 16px;border-bottom:1px solid var(--c-line);font-size:13.5px;color:var(--c-ink)}
+.chat-head .brand{display:flex;align-items:center;gap:8px;font-weight:600}
+.chat-head .brand i{width:22px;height:22px;border-radius:6px;background:var(--c-accent);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px}
+.chat-head .model{display:inline-flex;align-items:center;gap:4px;color:var(--c-mute);font-size:12.5px;font-weight:500}
+.chat-head .model i{font-size:13px}
+.chat-pill{font-size:11.5px;font-weight:600;color:#1f7a45;background:rgba(31,122,69,0.08);border:1px solid rgba(31,122,69,0.22);border-radius:999px;padding:4px 10px;display:inline-flex;align-items:center;gap:6px}
+.chat-pill::before{content:'';width:6px;height:6px;border-radius:50%;background:#1f7a45}
+.chat-body{padding:20px 18px 8px;display:flex;flex-direction:column;gap:14px;flex:1;min-height:0}
+.bub{font-size:14px;line-height:1.6}
+.bub.op{align-self:flex-end;max-width:82%;background:var(--c-user);color:var(--c-ink);border-radius:16px;padding:10px 14px}
+.bub.ai{align-self:stretch;color:var(--c-ink);padding:0 2px}
+.bub.ai p{margin:0 0 10px}
+.bub.ai p:last-child{margin:0}
+.bub.ai strong{font-weight:600}
+.chip{align-self:flex-start;font-size:12px;font-weight:500;color:var(--c-mute);background:#fff;border:1px solid var(--c-line);border-radius:10px;padding:5px 10px;display:inline-flex;align-items:center;gap:7px}
+.chip i{font-size:13px;color:var(--c-accent)}
+.chip::after{content:'\2713';font-size:11px;color:#1f7a45;font-weight:700}
+.chat-input{margin:8px 14px 14px;border:1px solid var(--c-line);border-radius:14px;padding:12px 12px 10px 14px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,0.04);display:flex;flex-direction:column;gap:10px}
+.chat-input .ph{font-size:14px;color:#9a978c}
+.chat-input .row{display:flex;align-items:center;justify-content:space-between}
+.chat-input .row span{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--c-mute)}
+.chat-input .row i{font-size:15px}
+.chat-input .send{width:28px;height:28px;border-radius:8px;background:var(--c-accent);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:15px}
+.opt{border:1px solid var(--c-line);border-radius:12px;padding:10px 12px;background:#fff;margin:8px 0;font-size:13.5px;line-height:1.55}
+.opt.pick{border:1.5px solid var(--gold);background:rgba(245,200,66,0.12)}
+.opt strong{display:block;font-weight:600;margin-bottom:3px}
+.opt .tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#7a4a00;background:var(--gold);border-radius:999px;padding:2px 8px;margin-bottom:6px}
+.ride{display:grid;grid-template-columns:auto 1fr auto;gap:2px 10px;padding:8px 10px;border-radius:10px;background:#fff;border:1px solid var(--c-line);font-size:13px;margin-top:6px;align-items:center}
+.ride .t{font-weight:600;white-space:nowrap}
+.ride .m{color:var(--c-mute);white-space:nowrap}
+.ride .who{color:var(--c-mute)}
+.ride .tick{grid-column:1/-1;font-size:12px;color:#1f7a45;font-weight:600;display:none}
+.ride.euan .tick{display:block}
+.ride.clash{border-color:rgba(200,148,20,0.7);background:rgba(245,200,66,0.12)}
+.gcard{border:1px solid var(--c-line);border-radius:12px;background:#fff;padding:10px 12px;margin-top:8px;font-size:13px;line-height:1.5}
+.gcard .lab{font-size:10.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--c-mute);display:flex;justify-content:space-between;margin-bottom:4px}
+.gcard .lab span:last-child{color:var(--c-accent)}
+.gcard .to{color:var(--c-mute)}
+.gcard .flip s{color:#9a978c}
+.gcard .flip b{color:#1f7a45}
+.chat-cap{font-size:12px;color:var(--c-mute);text-align:center;padding:8px 16px;border-top:1px solid var(--c-line)}
+.anim-frame{position:relative}
+.anim-frame .chat{height:480px}
+.anim-frame .chat-body{overflow-y:auto;scroll-behavior:smooth}
+.anim-end{position:absolute;inset:0;background:rgba(26,10,46,0.92);color:#fff;border-radius:18px;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;gap:18px}
+.anim-end p{font-family:'Poppins',system-ui,sans-serif;font-size:20px;font-weight:600;line-height:1.4;max-width:420px;margin:0}
+.anim-end button{font-family:'Inter',system-ui,sans-serif;font-size:14px;font-weight:600;color:var(--ink);background:var(--gold);border:none;border-radius:10px;padding:10px 18px;cursor:pointer}
+.anim-frame.playing .step{display:none;opacity:0;transform:translateY(6px);transition:opacity 0.35s ease,transform 0.35s ease}
+.anim-frame.playing .step.on{opacity:1;transform:none}
+.anim-frame.playing .bub.step.on,.anim-frame.playing .opt.step.on,.anim-frame.playing .gcard.step.on,.anim-frame.playing p.step.on{display:block}
+.anim-frame.playing .ride.step.on{display:grid}
+.anim-frame.playing .chip.step.on{display:inline-flex}
+@starting-style{.anim-frame.playing .step.on{opacity:0;transform:translateY(6px)}
+.anim-frame.ended .anim-end{display:flex}
+.anim-frame [hidden]{display:none !important}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:32px 1fr;gap:12px;font-family:'Inter',system-ui,sans-serif;font-size:15px;line-height:1.6;color:var(--ink-85)}
+.steps li::before{content:counter(s);width:32px;height:32px;border-radius:50%;background:var(--purple-soft);color:var(--purple);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;font-family:'Poppins',system-ui,sans-serif}
+.chat.gpt{--c-bg:#ffffff;--c-ink:#0d0d0d;--c-mute:#6f6f6f;--c-line:rgba(13,13,13,0.10);--c-user:#f1f1f1;--c-accent:#0d0d0d;min-height:400px}
+.chat.gpt .chat-head .brand i{background:transparent;color:var(--c-ink);width:auto;height:auto;font-size:18px}
+.chat.gpt .chat-head .brand i.small{font-size:13px;color:var(--c-mute)}
+.chat.gpt .chat-head .brand{font-size:15px;font-weight:600}
+.chat.gpt .chat-body{padding:24px 22px 12px;flex:1}
+.chat.gpt .bub.op{border-radius:18px;padding:10px 16px}
+.chat.gpt .bub.ai p{margin:0 0 10px}
+.chat.gpt .bub.ai p:last-child{margin:0}
+.chat.gpt .bub.ai .lab{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--c-mute);margin:0 0 4px}
+.chat.gpt .bub.ai p+.lab{margin-top:14px}
+.chat.gpt .chip i{color:var(--c-ink)}
+.chat.gpt .chat-input{border-radius:999px;padding:8px 8px 8px 12px;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
+.chat.gpt .chat-input .row{width:100%}
+.chat.gpt .chat-input .ph{font-size:14px;color:#8e8e8e;margin-left:6px}
+.chat.gpt .chat-input .row i{font-size:17px;color:var(--c-ink)}
+.chat.gpt .send{border-radius:50%;width:32px;height:32px;background:var(--c-ink)}
+.chat.gpt .bub.op{max-width:88%}
+.chat.gpt .attach{margin-top:8px;background:#fff;border:1px solid var(--c-line);border-radius:12px;padding:8px 10px;font-size:12.5px;line-height:1.5;color:var(--c-ink)}
+.chat.gpt .attach span{display:block;font-size:10.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--c-mute);margin-bottom:3px}
+.anim-frame .chat{height:auto;min-height:300px}
+.anim-frame .chat-body{max-height:360px}
+.steps{gap:12px}
+@media (max-width:980px){.coop-section .section-layout.reverse{grid-template-columns:1fr}.coop-section .anim-frame .chat{height:auto;min-height:300px}.coop-section .anim-frame .chat-body{max-height:380px}}
+@media (max-width:768px){.coop-section{padding:56px 20px 72px}}
 </style>
 </head>
 <body>
@@ -5344,6 +5455,7 @@ body { position: relative; }
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+      <a class="kong-nav-item" href="../ai">AI</a>
       <a class="kong-nav-item" href="#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -5368,6 +5480,7 @@ body { position: relative; }
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+    <a class="kong-mobile-item" href="../ai">AI</a>
     <a class="kong-mobile-item" href="#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -6402,6 +6515,54 @@ body { position: relative; }
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="coop-section" id="co-operator" data-screen-label="Co-Operator">
+  <div class="coop-stack">
+    <div class="section-text coop-center">
+      <div class="section-head">
+        <div class="section-eyebrow is-pill purple coop-eyebrow"><span class="coop-logos"><img src="../images/logo.webp" alt="Kong" width="18" height="18"><img src="../images/logos/claude-dark.svg" alt="Claude" width="18" height="18"><img src="../images/logos/openai-dark.svg" alt="ChatGPT" width="18" height="18"></span>Works with Claude and ChatGPT<span class="coop-beta">Beta</span></div>
+        <h2 class="section-h1">Supercharged by <span class="accent">AI</span></h2>
+        <p class="section-sub">Connect Kong to Claude or ChatGPT and get your very own Co-Operator. It spots problems and works out what to do. A guide calls in sick: it finds the rides at risk, recommends a move and waits for your yes.</p>
+        <a class="coop-link" href="../ai">See how it works<i class="ti ti-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="section-demo coop-demo">
+      <div class="anim-frame" id="anim">
+      <div class="chat">
+        <div class="chat-head"><span class="brand"><i class="ti ti-asterisk" aria-hidden="true"></i>Claude</span><span class="chat-pill">Kong connected</span></div>
+        <div class="chat-body" id="anim-body">
+          <div class="bub op step" data-t="0">Zack called in sick. He's out Friday.</div>
+          <span class="chip step" data-t="3000"><i class="ti ti-plug-connected" aria-hidden="true"></i>Used Kong</span>
+          <div class="bub ai step" data-t="6000">
+            <p>Four rides are running Friday, and with Zack out, Euan is the only marshal.</p>
+            <div class="ride step" data-t="7500" data-cls="euan" data-ct="14000"><span class="t">9am Rainforest</span><span class="who">Rebecca Foo, corporate team building group · 8 people on 5 ATVs</span><span class="m">already paid</span><span class="tick">Euan can cover this</span></div>
+            <div class="ride step" data-t="9000" data-cls="clash" data-ct="14000"><span class="t">11am Xtreme</span><span class="who">Jonas Weber · 2 riders on 2 ATVs</span><span class="m">RM700 to collect</span></div>
+            <div class="ride step" data-t="10500" data-cls="clash" data-ct="14000"><span class="t">2pm Rainforest</span><span class="who">Priya Nair · 4 people on 3 ATVs</span><span class="m">RM590 to collect</span></div>
+            <div class="ride step" data-t="12000" data-cls="euan" data-ct="14000"><span class="t">4pm Rainforest</span><span class="who">Mei Ling Tan · 2 riders on 2 ATVs</span><span class="m">RM360 to collect</span><span class="tick">Euan can cover this</span></div>
+            <p class="step" data-t="15000" style="margin-top:10px">He can cover the 9am and the 4pm. He can't cover both the 11am Xtreme and the 2pm Rainforest, because they overlap. One of those two has to move.</p>
+            <div class="opt pick step" data-t="20000"><span class="tag">My pick</span><strong>Option A (my pick): move Priya Nair's 2pm ride to 4pm the same day</strong>5 ATVs, 6 people: it fits, and one marshal can take it. The guests keep their day. Trade-off: Euan works a 9-hour day.</div>
+            <div class="opt step" data-t="23500"><strong>Option B: move Jonas Weber's Xtreme ride to another day</strong>Sunday 11am is free, and one marshal could run the day.</div>
+          </div>
+          <div class="bub ai step" data-t="26500"><p>A or B? Once you say yes, I'll draft the guest email in Gmail for you to check, then move the booking when the guest picks.</p></div>
+          <div class="bub op step late" data-t="30000" hidden>A.</div>
+          <div class="bub ai step late" data-t="32000" hidden>
+            <p>Done. I've drafted an email to Priya in Gmail for you to check. It offers a free move to the 4pm ride or a free cancellation, her choice. When she picks, I'll move her booking.</p>
+            <div class="gcard step" data-t="34000"><div class="lab"><span>Gmail</span><span>Draft</span></div><div class="to">To: Priya Nair · Your 2pm ATV ride on Friday 25 September</div>Hi Priya, I'm sorry to say we need to move your 2pm Rainforest ride on Friday 25 September. We're short of a marshal that afternoon, and we never run a ride without one.</div>
+            <p class="ai-muted step" data-t="34000" style="font-size:12px;margin-top:6px">Drafted in Gmail for you to check</p>
+          </div>
+          <div class="bub op step late" data-t="38000" hidden>Priya replied, 4pm works.</div>
+          <div class="bub ai step late" data-t="40000" hidden>
+            <div class="gcard" style="margin:0 0 10px"><div class="lab"><span>Kong booking</span><span>Moved in Kong</span></div><div class="flip">Priya Nair · Friday 25 Sep · Rainforest · <s>2pm</s> <b>4pm</b> · 4 people on 3 ATVs</div></div>
+            <p class="step" data-t="42000">Moved. Priya's group is now on the 4pm Rainforest ride on Friday: 5 ATVs, 6 people. That leaves Euan on the 9am, the 11am Xtreme and the 4pm. Want me to assign him to those three rides?</p>
+          </div>
+        </div>
+        <div class="chat-input" aria-hidden="true"><div class="ph">Reply to Claude</div><div class="row"><span><i class="ti ti-plus"></i><i class="ti ti-adjustments-horizontal"></i></span><span>Sonnet 4.5 <i class="ti ti-chevron-down"></i><span class="send"><i class="ti ti-arrow-up"></i></span></span></div></div>
+      </div>
+      <div class="anim-end" aria-live="polite"><p>It found the problem, weighed the options, recommended one, and waited for your yes.</p><button type="button" id="anim-replay">Play again</button></div>
+    </div>
     </div>
   </div>
 </section>
@@ -9288,6 +9449,8 @@ body { position: relative; }
     <div class="kong-footer-col">
       <h4>More Resources</h4>
       <ul>
+        <li><a href="../glossary">Glossary</a></li>
+        <li><a href="../ms/glosari" lang="ms">Glosari (Bahasa Malaysia)</a></li>
         <li><a href="../state-of-tour-operator-bookability-southeast-asia">Research: Tour Operator Bookability in SEA 2026</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="../legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
@@ -10390,6 +10553,9 @@ body { position: relative; }
     let flowPts = [];
     let flowTop = 0;
     let flowSegs = [];   // { path, length, startLen, isHalo }
+    let coopFeats = [];  // feature pills on the AI loop
+    let coopLoopSegs = [];
+    let coopRing = null, coopRingY = Infinity;
     let stairTotalLen = 0;
     let haloTotalLen = 0;
     let flowTotalLen = 0; // back-compat: stair + halo
@@ -10443,8 +10609,17 @@ body { position: relative; }
         };
       }
 
+      // AI (Co-Operator) chat frame — the line continues past the phone
+      // halo and wraps this too, so the AI section reads as the closer.
+      const aiFrame = document.querySelector('.coop-section .anim-frame .chat');
+      let aiRect = null;
+      if (aiFrame && phoneRect) {
+        const p = docPos(aiFrame);
+        aiRect = { left: p.x, right: p.x + p.w, top: p.y, bottom: p.y + p.h };
+      }
+
       flowTop = flowPts[0].yBottom - 20;
-      const flowBottom = (phoneRect ? phoneRect.bottom : flowPts[lastIdx].yTop) + HALO_PAD + 40;
+      const flowBottom = (aiRect ? aiRect.bottom : (phoneRect ? phoneRect.bottom : flowPts[lastIdx].yTop)) + HALO_PAD + 40;
       overlay.style.top = flowTop + 'px';
       overlay.style.height = (flowBottom - flowTop) + 'px';
 
@@ -10456,6 +10631,9 @@ body { position: relative; }
       // Rebuild segment paths from scratch on every layout pass.
       while (flowSvg.firstChild) flowSvg.removeChild(flowSvg.firstChild);
       flowSegs = [];
+      coopFeats = [];
+      coopLoopSegs = [];
+      coopRing = null; coopRingY = Infinity;
       stairTotalLen = 0;
       haloTotalLen = 0;
       flowTotalLen = 0;
@@ -10613,6 +10791,134 @@ body { position: relative; }
         // Track halo range for the armed-classname window below.
         haloStartY = haloRangeStart;
         haloEndY   = haloRangeEnd;
+
+        // ── Tail + loop around the AI chat frame ──────────────────────
+        if (aiRect) {
+          const AI_C = { stroke: '#7b3fb0', glow: 'rgba(123, 63, 176, 0.45)' };
+          const aL = aiRect.left  - HALO_PAD;
+          const aR = aiRect.right + HALO_PAD;
+          const aT = aiRect.top    - HALO_PAD - flowTop;
+          const aB = aiRect.bottom + HALO_PAD - flowTop;
+          const acx = (aL + aR) / 2;
+          const acy = (aT + aB) / 2;
+          const ar = Math.min(HALO_RADIUS, (aR - aL) / 2 - 1, (aB - aT) / 2 - 1);
+
+          // Tail: phone halo bottom-centre → straight down to the top-centre
+          // of the "Works with Claude and ChatGPT" eyebrow pill.
+          const eyebrow = document.querySelector('.coop-section .coop-center .section-eyebrow');
+          const ep = eyebrow ? docPos(eyebrow) : null;
+          const tx0 = cx, ty0 = padB;
+          const tx1 = ep ? ep.x + ep.w / 2 : acx;
+          const ty1 = ep ? ep.y - flowTop : aT;
+          const tmid = (ty0 + ty1) / 2;
+          const tdx = tx1 - tx0;
+          const tsgn = tdx >= 0 ? 1 : -1;
+          const tr = Math.max(0, Math.min(R, Math.abs(tdx) / 2, Math.abs(tmid - ty0) - 1, Math.abs(ty1 - tmid) - 1));
+          let td = 'M ' + tx0 + ' ' + ty0 + ' L ' + tx0 + ' ' + (tmid - tr);
+          if (tr > 0.5) {
+            td += ' Q ' + tx0 + ' ' + tmid + ' ' + (tx0 + tsgn * tr) + ' ' + tmid;
+            td += ' L ' + (tx1 - tsgn * tr) + ' ' + tmid;
+            td += ' Q ' + tx1 + ' ' + tmid + ' ' + tx1 + ' ' + (tmid + tr);
+          } else {
+            td += ' L ' + tx1 + ' ' + tmid;
+          }
+          td += ' L ' + tx1 + ' ' + ty1;
+          const tailSeg = addSegment(td, AI_C, true);
+          tailSeg.startY = haloRangeEnd;
+          tailSeg.endY   = (ep ? ep.y : aiRect.top) - 40;
+          // Neon gradient stroke flowing down the tail, matching the ring.
+          let defs = flowSvg.querySelector('defs');
+          if (!defs) { defs = document.createElementNS(SVG_NS, 'defs'); flowSvg.insertBefore(defs, flowSvg.firstChild); }
+          const grad = document.createElementNS(SVG_NS, 'linearGradient');
+          grad.setAttribute('id', 'coop-tail-grad');
+          grad.setAttribute('gradientUnits', 'userSpaceOnUse');
+          grad.setAttribute('spreadMethod', 'repeat');
+          const period = Math.max(120, (ty1 - ty0) / 2);
+          grad.setAttribute('x1', 0); grad.setAttribute('x2', 0);
+          grad.setAttribute('y1', ty0); grad.setAttribute('y2', ty0 + period);
+          const stops = ['#a855f7', '#facc15', '#22d3a0', '#38bdf8', '#a855f7'];
+          stops.forEach((c, i) => {
+            const s = document.createElementNS(SVG_NS, 'stop');
+            s.setAttribute('offset', (i / (stops.length - 1)));
+            s.setAttribute('stop-color', c);
+            grad.appendChild(s);
+          });
+          const at = document.createElementNS(SVG_NS, 'animateTransform');
+          at.setAttribute('attributeName', 'gradientTransform');
+          at.setAttribute('type', 'translate');
+          at.setAttribute('from', '0 0');
+          at.setAttribute('to', '0 ' + period);
+          at.setAttribute('dur', '2.2s');
+          at.setAttribute('repeatCount', 'indefinite');
+          grad.appendChild(at);
+          defs.appendChild(grad);
+          tailSeg.path.style.stroke = 'url(#coop-tail-grad)';
+          tailSeg.path.style.strokeWidth = '3px';
+          tailSeg.path.style.filter = 'drop-shadow(0 0 8px rgba(168,85,247,.85)) drop-shadow(0 0 3px rgba(56,189,248,.9))';
+
+          // Separate loop around the chat mockup: two strands from top-centre
+          // meeting at bottom-centre, same as the phone halo.
+          const aiQuarters = [
+            'M ' + acx + ' ' + aT + ' L ' + (aR - ar) + ' ' + aT + ' A ' + ar + ' ' + ar + ' 0 0 1 ' + aR + ' ' + (aT + ar) + ' L ' + aR + ' ' + acy,
+            'M ' + aR + ' ' + acy + ' L ' + aR + ' ' + (aB - ar) + ' A ' + ar + ' ' + ar + ' 0 0 1 ' + (aR - ar) + ' ' + aB + ' L ' + acx + ' ' + aB,
+            'M ' + aL + ' ' + acy + ' L ' + aL + ' ' + (aB - ar) + ' A ' + ar + ' ' + ar + ' 0 0 0 ' + (aL + ar) + ' ' + aB + ' L ' + acx + ' ' + aB,
+            'M ' + acx + ' ' + aT + ' L ' + (aL + ar) + ' ' + aT + ' A ' + ar + ' ' + ar + ' 0 0 0 ' + aL + ' ' + (aT + ar) + ' L ' + aL + ' ' + acy,
+          ];
+          const aiH = aiRect.bottom - aiRect.top;
+          const aiStart = aiRect.top - HALO_PAD - vh * 0.45;
+          const aiEnd   = aiRect.top + aiH * 0.12;
+          const aiSpan  = Math.max(40, aiEnd - aiStart);
+          const aiHalf  = aiSpan / 2;
+          // Feature pills sit OUTSIDE the loop rails so they never cover the
+          // mockup text. Two per quarter, in that quarter's section colour.
+          const AI_FEATS = [
+            [{ icon: 'ti-binoculars', label: 'Understands your operations', y: aT + (acy - aT) * 0.5 }],
+            [{ icon: 'ti-check', label: 'Waits for your approval', y: acy + (aB - acy) * 0.5 }],
+            [{ icon: 'ti-bulb', label: 'Identifies the solution, not just the problem', y: acy + (aB - acy) * 0.5 }],
+            [{ icon: 'ti-plug-connected', label: 'Works with your existing tools', y: aT + (acy - aT) * 0.5 }],
+          ];
+          const aiOffset = 14;
+          aiQuarters.forEach((d, i) => {
+            const seg = addSegment(d, SECTION_COLOURS[i], true);
+            const h = halfSlot[i];
+            seg.startY = aiStart + aiHalf * h       - aiHalf * overlap * 0.5;
+            seg.endY   = aiStart + aiHalf * (h + 1) + aiHalf * overlap * 0.5;
+            const right = i < 2;
+            AI_FEATS[i].forEach(f => {
+              const pill = document.createElement('div');
+              pill.className = 'kong-flow-feature-pill';
+              pill.innerHTML = '<i class="ti ' + f.icon + '" aria-hidden="true"></i>' + f.label;
+              pill.style.setProperty('--pill-c', SECTION_COLOURS[i].stroke);
+              pill.style.setProperty('--pill-glow', SECTION_COLOURS[i].glow);
+              pill.style.left = (right ? aR + aiOffset : aL - aiOffset) + 'px';
+              pill.style.transform = right ? 'translate(0, -50%)' : 'translate(-100%, -50%)';
+              pill.style.top = f.y + 'px';
+              pill.dataset.revealY = String(seg.startY + (seg.endY - seg.startY) * 0.55);
+              overlay.appendChild(pill);
+              coopFeats.push(pill);
+            });
+            coopLoopSegs.push(seg);
+          });
+          haloEndY = aiEnd;
+
+          // Once the loop is fully drawn, cross-fade to a rotating
+          // conic-gradient ring (plum → gold → green → blue) that flows
+          // clockwise around the mockup.
+          const ringHost = document.querySelector('.coop-section .coop-demo');
+          if (ringHost) {
+            let ring = ringHost.querySelector('.coop-ring');
+            if (!ring) { ring = document.createElement('div'); ring.className = 'coop-ring'; ringHost.appendChild(ring); }
+            const hp = docPos(ringHost);
+            ring.style.left = (aL - hp.x) + 'px';
+            ring.style.top  = (aT + flowTop - hp.y) + 'px';
+            ring.style.width  = (aR - aL) + 'px';
+            ring.style.height = (aB - aT) + 'px';
+            ring.style.borderRadius = ar + 'px';
+            coopRing = ring;
+            coopRingY = aiEnd;
+            coopLoopSegs.forEach(s => { s.path.style.transition = 'opacity .6s'; });
+          }
+        }
       } else {
         haloStartY = flowPts[lastIdx].yTop;
         haloEndY = haloStartY + 1;
@@ -10644,6 +10950,14 @@ body { position: relative; }
           seg.pill.classList.toggle('show', p >= 0.55);
         }
       });
+      coopFeats.forEach(el => {
+        el.classList.toggle('show', focusY >= parseFloat(el.dataset.revealY));
+      });
+      if (coopRing) {
+        const on = focusY >= coopRingY;
+        coopRing.classList.toggle('show', on);
+        coopLoopSegs.forEach(s => { s.path.style.opacity = on ? '0' : '1'; });
+      }
     }
     function flowOnScroll() {
       if (flowTicking) return;
@@ -10709,6 +11023,33 @@ body { position: relative; }
     acc.setAttribute('aria-expanded', String(!open));
     panel.setAttribute('data-open', String(!open));
   });
+})();
+</script>
+<script>
+(function(){
+/* Section 2 animation: reveals text already in the DOM; reduced motion keeps the static end state */
+  var frame=document.getElementById('anim'),body=document.getElementById('anim-body');
+  if(frame&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  var steps=Array.prototype.slice.call(frame.querySelectorAll('.step')),timers=[],cap=document.getElementById('anim-cap');
+  function clear(){timers.forEach(clearTimeout);timers=[];}
+  function play(){
+    clear();frame.classList.remove('ended');frame.classList.add('playing');if(cap)cap.style.display='none';
+    steps.forEach(function(s){s.classList.remove('on');if(s.dataset.cls)s.classList.remove(s.dataset.cls);});
+    frame.querySelectorAll('.late').forEach(function(l){l.hidden=false;});
+    body.scrollTop=0;
+    steps.forEach(function(s){
+      timers.push(setTimeout(function(){s.classList.add('on');body.scrollTop=body.scrollHeight;},+s.dataset.t+400));
+      if(s.dataset.cls)timers.push(setTimeout(function(){s.classList.add(s.dataset.cls);},+s.dataset.ct));
+    });
+    timers.push(setTimeout(function(){frame.classList.add('ended');},45500));
+    timers.push(setTimeout(play,54000));
+  }
+  document.getElementById('anim-replay').addEventListener('click',play);
+  var started=false;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(en,obs){en.forEach(function(e){if(e.isIntersecting&&!started){started=true;play();obs.disconnect();}});},{threshold:0.35}).observe(frame);
+  }else{play();}
+}
 })();
 </script>
 </body>
