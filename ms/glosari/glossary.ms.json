@@ -1,0 +1,3279 @@
+{
+ "page": {
+  "language": "ms-MY",
+  "url": "https://bookwithkong.com/ms/glosari",
+  "alternate_url": "https://bookwithkong.com/glossary",
+  "title": "Glosari Pelancongan: {n} Istilah Diterangkan (2026) | Kong",
+  "meta_description": "Maksud {n} istilah yang digunakan pengendali lawatan dan aktiviti, daripada pax dan FOC hingga TOBTAB, e-invois dan SST, diterangkan dengan mudah.",
+  "h1": "Glosari pelancongan dan aktiviti",
+  "answer_paragraph": "Maksud {n} istilah yang ditemui pengendali lawatan dan aktiviti setiap hari, daripada pax, FOC dan net rate hingga lesen TOBTAB, e-invois dan SST. Setiap entri memberi definisi satu ayat dan contoh lawatan sebenar, dengan butiran tambahan untuk pengendali di Malaysia dan Australia.",
+  "byline": "Ditulis oleh Blake Ng. Enam tahun dalam perisian tempahan pelancongan di Rezdy. [DRAF: Blake sahkan kata-kata]",
+  "date_published": "2026-09-30",
+  "date_modified": "2026-09-30",
+  "cta_band_heading": "Sedia menerima tempahan dalam talian?",
+  "cta_band_text": "Kong ialah perisian tempahan yang dibina untuk pengendali lawatan dan aktiviti.",
+  "note": "{n} is filled in by the page from the number of entries with include: true. Every Bahasa string needs native Malaysian review before publishing."
+ },
+ "entries": [
+  {
+   "id": "3d-secure",
+   "include": true,
+   "letter": "0-9",
+   "term": "3D Secure",
+   "category": "Pembayaran",
+   "also_called": [
+    "3DS"
+   ],
+   "other_language_term": null,
+   "definition": "3D Secure ialah semakan tambahan semasa bayaran kad dalam talian, seperti kod yang dihantar ke telefon tetamu atau notifikasi dalam aplikasi bank mereka.",
+   "explanation": "Ia mengurangkan penipuan kad dan, dalam banyak kes, mengalihkan kos chargeback akibat penipuan daripada perniagaan.",
+   "in_kong": null,
+   "see_also": [
+    "chargeback",
+    "pci-dss"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "abandoned-cart",
+   "include": true,
+   "letter": "A",
+   "term": "Abandoned cart",
+   "category": "Pembayaran",
+   "also_called": [
+    "tempahan tergendala"
+   ],
+   "other_language_term": null,
+   "definition": "Abandoned cart ialah tempahan yang dimulakan tetamu dalam talian tetapi tidak diselesaikan.",
+   "explanation": "Punca biasa ialah caj yang mengejutkan, kaedah bayaran yang tiada, atau halaman tempahan yang perlahan di telefon. Sesetengah sistem tempahan menghantar e-mel peringatan.",
+   "in_kong": null,
+   "see_also": [
+    "booking-form",
+    "booking-fee",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "add-ons",
+   "include": true,
+   "letter": "A",
+   "term": "Add-on (tambahan)",
+   "category": "Harga",
+   "also_called": [
+    "tambahan"
+   ],
+   "other_language_term": "Add-ons",
+   "definition": "Add-on ialah tambahan pilihan yang boleh dibeli tetamu bersama tempahan, seperti pengambilan dari hotel, sewa peralatan, makanan atau gambar.",
+   "explanation": "Ia ditawarkan semasa pembayaran atau selepas menempah, dan setiap satu diberi harga berasingan daripada lawatan.",
+   "in_kong": null,
+   "see_also": [
+    "upselling",
+    "transfer"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "travel-agency",
+   "include": true,
+   "letter": "A",
+   "term": "Agensi pelancongan",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "ejen pelancongan",
+    "travel agent"
+   ],
+   "other_language_term": "Travel agency",
+   "definition": "Agensi pelancongan ialah perniagaan yang menjual produk pelancongan pihak lain, seperti lawatan, tiket penerbangan dan hotel, biasanya untuk komisen atau markup.",
+   "explanation": "Ejen tidak menjalankan lawatan sendiri. Mereka menempah untuk pelanggan dan mendapat bahagian, sama ada komisen daripada pengendali atau markup yang ditambah pada net rate. Di Malaysia, agensi pelancongan dilesenkan oleh MOTAC di bawah sistem TOBTAB yang sama dengan pengendali pelancongan, dengan kategori berasingan untuk inbound, outbound dan tiket.",
+   "in_kong": null,
+   "see_also": [
+    "commission",
+    "net-rate",
+    "tobtab"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "tourism-accreditation",
+   "include": true,
+   "letter": "A",
+   "term": "Akreditasi pelancongan",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "akreditasi",
+    "Quality Tourism Framework"
+   ],
+   "other_language_term": "Tourism accreditation",
+   "definition": "Akreditasi pelancongan ialah pensijilan bahawa perniagaan pelancongan memenuhi standard tertentu, seperti keselamatan, perkhidmatan pelanggan dan amalan perniagaan.",
+   "explanation": "Di Australia, Quality Tourism Framework kebangsaan merangkumi program akreditasi, dan sesetengah taman, badan pelancongan dan skim geran memintanya. Ia juga boleh membantu dengan syarikat insurans dan rakan perdagangan. Di Malaysia, pelesenan MOTAC dan pensijilan industri memainkan peranan yang serupa.",
+   "in_kong": null,
+   "see_also": [
+    "public-liability-insurance",
+    "atdw"
+   ],
+   "source": {
+    "name": "Australian Tourism Export Council (ATEC)",
+    "url": "https://www.atec.net.au",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "atdw",
+   "include": true,
+   "letter": "A",
+   "term": "ATDW",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "ATDW listing",
+    "Australian Tourism Data Warehouse"
+   ],
+   "other_language_term": null,
+   "definition": "ATDW (Australian Tourism Data Warehouse) ialah pangkalan data kebangsaan Australia bagi senarai produk pelancongan, yang berkongsi butiran pengendali dengan laman web pelancongan negeri, Tourism Australia dan rakan lain.",
+   "explanation": "Pengendali mencipta satu senarai, dengan penerangan, gambar, harga dan pautan tempahan, dan ATDW menyebarkannya ke banyak laman web, termasuk laman pelancongan rasmi setiap negeri dan Australia.com. Bagi pengendali kecil, ia antara cara paling mudah untuk muncul di laman yang benar-benar digunakan pelawat dan pembeli dagangan semasa merancang. Senarai diurus melalui portal dalam talian ATDW, dan badan pelancongan negeri menyemak senarai baharu. Mengemas kini senarai amat penting: harga lama atau pautan tempahan yang rosak kelihatan buruk di laman rasmi. Sesetengah badan pelancongan negeri juga menjalankan kempen hanya untuk pengendali yang ada senarai ATDW. Pengendali di luar Australia tidak boleh menyenaraikan, tetapi rakan Australia kepada pengendali Malaysia, seperti ejen inbound, mungkin bertanya sama ada sesuatu produk ada di ATDW.",
+   "in_kong": null,
+   "see_also": [
+    "tourism-australia",
+    "qtic"
+   ],
+   "source": {
+    "name": "ATDW",
+    "url": "https://www.atdw.com.au",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "atec",
+   "include": false,
+   "letter": "A",
+   "term": "ATEC",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "Australian Tourism Export Council"
+   ],
+   "other_language_term": null,
+   "definition": "ATEC (Australian Tourism Export Council) ialah badan utama bagi perniagaan pelancongan Australia yang menjual kepada pelawat antarabangsa dan industri dagangan pelancongan.",
+   "explanation": "Ia juga mengendalikan Quality Tourism Framework yang digunakan untuk akreditasi pelancongan.",
+   "in_kong": null,
+   "see_also": [
+    "tourism-accreditation",
+    "tourism-australia"
+   ],
+   "source": {
+    "name": "ATEC",
+    "url": "https://www.atec.net.au",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "atome",
+   "include": true,
+   "letter": "A",
+   "term": "Atome",
+   "category": "Pembayaran",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Atome ialah penyedia beli sekarang bayar kemudian di Asia Tenggara yang membolehkan pembeli membahagikan bayaran kepada beberapa ansuran.",
+   "explanation": "Perniagaan dibayar penuh terlebih dahulu, dan Atome mengutip ansuran daripada pembeli.",
+   "in_kong": null,
+   "see_also": [
+    "buy-now-pay-later"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "balance-payment",
+   "include": true,
+   "letter": "B",
+   "term": "Baki bayaran",
+   "category": "Pembayaran",
+   "also_called": [
+    "bayaran akhir"
+   ],
+   "other_language_term": "Balance payment",
+   "definition": "Baki bayaran ialah selebihnya harga, dibayar selepas deposit, biasanya sebelum tarikh tertentu sebelum lawatan.",
+   "explanation": "Pengendali menghantar peringatan atau pautan pembayaran sebelum tarikh akhir, dan menyatakan dalam syarat apa yang berlaku jika ia tidak dibayar.",
+   "in_kong": {
+    "text": "Dalam Kong, anda merekodkan baki apabila ia dibayar dan menandakan tempahan sebagai dibayar penuh.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "deposit",
+    "payment-link"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "gift-voucher",
+   "include": true,
+   "letter": "B",
+   "term": "Baucar hadiah",
+   "category": "Harga",
+   "also_called": [
+    "kad hadiah"
+   ],
+   "other_language_term": "Gift voucher",
+   "definition": "Baucar hadiah ialah kredit prabayar atau pengalaman tertentu yang dibeli seseorang untuk digunakan oleh orang lain kemudian.",
+   "explanation": "Baucar membawa masuk wang sebelum lawatan dijalankan dan menarik tetamu baharu, terutamanya pada musim perayaan dan hari jadi. Pengendali menetapkan tarikh luput dan sebarang tarikh blackout dari awal, supaya tiada kejutan semasa baucar digunakan.",
+   "in_kong": {
+    "text": "Kong boleh mencipta baucar dengan nilai tersimpan yang ditebus tetamu semasa menempah.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "promo-code",
+    "blackout-dates"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "travel-voucher",
+   "include": true,
+   "letter": "B",
+   "term": "Baucar pelancongan",
+   "category": "Harga",
+   "also_called": [
+    "baucar"
+   ],
+   "other_language_term": "Travel voucher",
+   "definition": "Baucar pelancongan ialah dokumen atau kod yang ditunjukkan tetamu untuk membuktikan mereka sudah membayar sesuatu perkhidmatan.",
+   "explanation": "Ejen dan DMC sering mengeluarkannya kepada tetamu mereka untuk lawatan yang ditempah bagi pihak mereka, dan pengendali menyemaknya semasa daftar masuk.",
+   "in_kong": null,
+   "see_also": [
+    "check-in",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "infant",
+   "include": true,
+   "letter": "B",
+   "term": "Bayi",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Infant",
+   "definition": "Bayi ialah kanak-kanak yang sangat kecil, biasanya bawah dua tahun, yang selalunya percuma atau pada harga yang dikurangkan.",
+   "explanation": "Pengendali menetapkan had umur sendiri dan tetap mengira bayi dalam headcount untuk keselamatan.",
+   "in_kong": null,
+   "see_also": [
+    "child-policy",
+    "headcount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "buy-now-pay-later",
+   "include": true,
+   "letter": "B",
+   "term": "Beli sekarang bayar kemudian",
+   "category": "Pembayaran",
+   "also_called": [
+    "BNPL",
+    "bayaran ansuran"
+   ],
+   "other_language_term": "Buy now pay later",
+   "definition": "Beli sekarang bayar kemudian (BNPL) membolehkan tetamu membahagikan bayaran kepada beberapa ansuran, manakala perniagaan dibayar penuh terlebih dahulu oleh penyedia BNPL.",
+   "explanation": "Ia boleh membantu tetamu mampu membeli perjalanan yang lebih mahal dan tempahan kumpulan. Penyedia menanggung risiko tetamu tidak membayar dan mengenakan caj kepada perniagaan. Di Malaysia, penyedia seperti Atome ditawarkan melalui sesetengah gerbang pembayaran.",
+   "in_kong": {
+    "text": "Di Malaysia, pilihan Xendit dalam Kong menyokong beli sekarang bayar kemudian.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "atome",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "headcount",
+   "include": true,
+   "letter": "B",
+   "term": "Bilangan peserta (headcount)",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "bilangan peserta"
+   ],
+   "other_language_term": "Headcount",
+   "definition": "Headcount ialah bilangan orang yang benar-benar hadir, dikira pada hari lawatan.",
+   "explanation": "Ia disemak dengan manifest sebelum bertolak dan sekali lagi di akhir, terutamanya di atas bot dan semasa trekking.",
+   "in_kong": null,
+   "see_also": [
+    "manifest",
+    "check-in",
+    "pax"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "indemnity-form",
+   "include": true,
+   "letter": "B",
+   "term": "Borang indemniti",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "surat indemniti",
+    "indemniti"
+   ],
+   "other_language_term": "Indemnity form",
+   "definition": "Borang indemniti ialah dokumen di mana penandatangan bersetuju menanggung kos pengendali jika tindakan mereka, atau orang di bawah tanggungjawab mereka, membawa kepada tuntutan.",
+   "explanation": "Di Malaysia, borang indemniti ialah perkataan harian untuk apa yang digunakan ramai pengendali sebagai penepian, dan sekolah sering meminta ibu bapa menandatanganinya untuk rombongan. Sebenarnya, indemniti dan penepian mempunyai fungsi berbeza, dan banyak borang mengandungi kedua-duanya.",
+   "in_kong": {
+    "text": "Penepian digital Kong boleh digunakan untuk borang indemniti juga.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "liability-waiver",
+    "release-of-liability"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "booking-form",
+   "include": true,
+   "letter": "B",
+   "term": "Borang tempahan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "soalan tempahan"
+   ],
+   "other_language_term": "Booking form",
+   "definition": "Borang tempahan ialah soalan yang dijawab tetamu semasa menempah, daripada nama dan butiran hubungan hingga apa sahaja yang perlu diketahui pengendali.",
+   "explanation": "Borang yang baik hanya bertanya apa yang perlu: keperluan pemakanan, hotel untuk pengambilan, berat atau tinggi untuk had keselamatan, atau kebolehan berenang. Borang yang panjang menyebabkan tempahan hilang, terutamanya di telefon. Soalan yang hanya diperlukan kemudian, seperti saiz baju untuk acara syarikat, boleh ditanya melalui e-mel selepas menempah. Maklumat peribadi seperti butiran kesihatan atau nombor kad pengenalan hanya perlu diminta jika benar-benar diperlukan.",
+   "in_kong": {
+    "text": "Dalam Kong, anda boleh menambah soalan sendiri pada borang tempahan bagi setiap produk.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "abandoned-cart",
+    "child-policy",
+    "pdpa"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "merchant-fee",
+   "include": true,
+   "letter": "C",
+   "term": "Caj peniaga",
+   "category": "Pembayaran",
+   "also_called": [
+    "MDR"
+   ],
+   "other_language_term": "Merchant fee",
+   "definition": "Caj peniaga ialah caj yang dikenakan penyedia pembayaran kepada perniagaan bagi setiap bayaran kad atau digital.",
+   "explanation": "Ia biasanya peratusan daripada bayaran, kadang-kadang ditambah jumlah tetap, dan berbeza mengikut kaedah bayaran.",
+   "in_kong": null,
+   "see_also": [
+    "surcharge",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "service-charge",
+   "include": true,
+   "letter": "C",
+   "term": "Caj perkhidmatan",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": "Service charge",
+   "definition": "Caj perkhidmatan ialah jumlah tambahan pada bil yang pergi kepada perniagaan, tidak seperti tip yang diberi atas pilihan tetamu.",
+   "explanation": "Ia biasa di restoran dan hotel di Malaysia. Pengendali yang mengenakannya perlu menyatakannya dengan jelas sebelum tetamu membayar. Ia tidak sama dengan cukai perkhidmatan (SST).",
+   "in_kong": null,
+   "see_also": [
+    "gratuity",
+    "surcharge",
+    "sst"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "channel-manager",
+   "include": false,
+   "letter": "C",
+   "term": "Channel manager",
+   "category": "Jualan dan pengedaran",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Channel manager ialah perisian yang menyambungkan sistem tempahan pengendali kepada OTA, supaya ketersediaan dan tempahan sentiasa selari di setiap saluran.",
+   "explanation": "Apabila tetamu menempah satu tempat melalui satu OTA, channel manager membuang tempat itu di semua saluran lain. Tanpanya, pengendali perlu mengemas kini setiap OTA secara manual dan berisiko tempahan bertindih, terutamanya pada musim puncak.",
+   "in_kong": null,
+   "see_also": [
+    "ota",
+    "availability",
+    "overbooking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "chargeback",
+   "include": true,
+   "letter": "C",
+   "term": "Chargeback (caj balik)",
+   "category": "Pembayaran",
+   "also_called": [
+    "pertikaian bayaran"
+   ],
+   "other_language_term": "Chargeback",
+   "definition": "Chargeback (caj balik) berlaku apabila tetamu meminta bank mereka membatalkan bayaran kad, dan bank menarik semula wang itu daripada perniagaan.",
+   "explanation": "Tetamu biasanya berbuat demikian apabila mereka mendakwa lawatan tidak berlangsung, dibatalkan tanpa bayaran balik, atau tidak seperti yang dijanjikan. Pengendali boleh mempertikaikannya dengan bukti: rekod tempahan, syarat yang dipersetujui tetamu, rekod daftar masuk dan mesej. Chargeback biasanya dikenakan caj, walaupun pengendali menang.",
+   "in_kong": null,
+   "see_also": [
+    "refund-policy",
+    "3d-secure",
+    "terms-and-conditions"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "charter",
+   "include": true,
+   "letter": "C",
+   "term": "Charter (sewa khas)",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "private charter",
+    "sewa persendirian"
+   ],
+   "other_language_term": "Charter",
+   "definition": "Charter (sewa khas) ialah penyewaan persendirian bot, kenderaan, pemandu atau keseluruhan lawatan oleh satu kumpulan.",
+   "explanation": "Kumpulan membayar untuk keseluruhannya, bukan mengikut tempat duduk, dan biasanya memilih masa dan kadang-kadang laluan. Sewa khas biasa untuk bot, trip memancing dan island hopping. Pengendali biasanya mengambil deposit dan menetapkan syarat yang jelas untuk pembatalan akibat cuaca.",
+   "in_kong": null,
+   "see_also": [
+    "deposit",
+    "force-majeure",
+    "rain-check"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "tourism-tax",
+   "include": true,
+   "letter": "C",
+   "term": "Cukai pelancongan",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "TTx"
+   ],
+   "other_language_term": "Tourism tax",
+   "definition": "Cukai pelancongan ialah caj tetap bagi setiap bilik setiap malam yang dibayar tetamu asing apabila menginap di penginapan berdaftar di Malaysia.",
+   "explanation": "Ia dikutip oleh penginapan, bukan pengendali lawatan, dan dibayar kepada Jabatan Kastam Diraja Malaysia. Jika anda hanya menjalankan lawatan dan aktiviti tanpa menyediakan bilik, anda biasanya tidak mengutipnya. Pengendali yang menjual pakej termasuk penginapan perlu menyemak siapa yang mengutipnya.",
+   "in_kong": null,
+   "see_also": [
+    "sst",
+    "tour-package",
+    "homestay"
+   ],
+   "source": {
+    "name": "Royal Malaysian Customs Department (MyTTx)",
+    "url": "https://www.myttx.customs.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": {
+    "text": "Cukai pelancongan di Malaysia: apa yang perlu diketahui pengendali (dalam Bahasa Inggeris)",
+    "url": "https://bookwithkong.com/blog/tourism-tax-malaysia"
+   },
+   "tier": "S"
+  },
+  {
+   "id": "check-in",
+   "include": true,
+   "letter": "D",
+   "term": "Daftar masuk",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Check-in",
+   "definition": "Daftar masuk ialah saat tetamu tiba dan ditandakan hadir sebelum lawatan bermula.",
+   "explanation": "Ia juga masa pengendali menyemak nama, penepian yang telah ditandatangani dan bayaran.",
+   "in_kong": {
+    "text": "Kong membolehkan anda mendaftar masuk tetamu semasa mereka tiba.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "manifest",
+    "headcount",
+    "liability-waiver"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "deposit",
+   "include": true,
+   "letter": "D",
+   "term": "Deposit (bayaran pendahuluan)",
+   "category": "Pembayaran",
+   "also_called": [
+    "bayaran pendahuluan",
+    "down payment",
+    "wang pendahuluan"
+   ],
+   "other_language_term": "Deposit",
+   "definition": "Deposit (bayaran pendahuluan) ialah sebahagian harga yang dibayar semasa menempah untuk menjamin tempat, dengan baki dibayar kemudian.",
+   "explanation": "Deposit melindungi pengendali daripada tetamu yang tidak hadir dan pembatalan lewat, terutamanya untuk sewa khas, kumpulan dan perjalanan beberapa hari di mana kos dibayar lebih awal. Syaratnya perlu jelas sebelum bayaran: berapa deposit, bila baki perlu dibayar, dan sama ada deposit dipulangkan jika tetamu membatalkan. Bagi kumpulan syarikat dan MICE, deposit selalunya diminta bersama invois proforma, dan tempahan disahkan setelah ia dibayar. Untuk lawatan sehari yang singkat, kebanyakan pengendali mengambil bayaran penuh semasa menempah, yang lebih mudah dan lebih mengurangkan ketidakhadiran. Apa pun susunannya, rekod tempahan perlu menunjukkan dengan jelas apa yang sudah dibayar dan apa yang masih tertunggak, supaya kakitangan tidak perlu mengejar bayaran semasa daftar masuk.",
+   "in_kong": {
+    "text": "Kong boleh mengambil deposit atau jumlah penuh semasa tetamu menempah.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "balance-payment",
+    "cancellation-policy",
+    "no-show"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "early-bird-discount",
+   "include": true,
+   "letter": "D",
+   "term": "Diskaun early bird",
+   "category": "Harga",
+   "also_called": [
+    "diskaun tempahan awal"
+   ],
+   "other_language_term": "Early bird discount",
+   "definition": "Diskaun early bird ialah harga lebih rendah untuk tetamu yang menempah jauh lebih awal.",
+   "explanation": "Ia membawa masuk wang lebih awal dan membantu pengendali merancang kakitangan, bot dan bekalan untuk musim tersebut.",
+   "in_kong": null,
+   "see_also": [
+    "dynamic-pricing",
+    "booking-window"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "dmc",
+   "include": true,
+   "letter": "D",
+   "term": "DMC (syarikat pengurusan destinasi)",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "destination management company",
+    "ground handler"
+   ],
+   "other_language_term": "DMC (destination management company)",
+   "definition": "DMC (syarikat pengurusan destinasi) ialah perniagaan tempatan yang merancang dan menjalankan perjalanan, acara dan urusan darat di destinasinya untuk ejen dan kumpulan dari luar negara.",
+   "explanation": "Ejen pelancongan di Eropah yang menjual pakej ke Borneo biasanya tidak berurusan dengan setiap hotel, pemandu dan jurupandu. Mereka bekerjasama dengan DMC di Malaysia, yang menyusun program, menempah pembekal tempatan dan mengurus segala-galanya di lapangan. DMC ialah pembeli besar lawatan dan aktiviti: mereka menempah lawatan sehari, pengangkutan dan pengalaman untuk kumpulan mereka, selalunya pada net rate dan beberapa bulan lebih awal. Bagi pengendali aktiviti, satu hubungan DMC yang baik boleh bermakna tempahan kumpulan yang berterusan. DMC mengharapkan net rate yang jelas, pengesahan dan invois yang boleh dipercayai, serta seorang PIC untuk setiap kumpulan. Banyak DMC juga mengurus kumpulan MICE untuk syarikat.",
+   "in_kong": null,
+   "see_also": [
+    "net-rate",
+    "mice",
+    "pic"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "duitnow",
+   "include": true,
+   "letter": "D",
+   "term": "DuitNow",
+   "category": "Pembayaran",
+   "also_called": [
+    "DuitNow QR"
+   ],
+   "other_language_term": null,
+   "definition": "DuitNow ialah perkhidmatan pembayaran segera kebangsaan Malaysia, dikendalikan oleh PayNet, yang membolehkan bayaran menggunakan nombor telefon, nombor kad pengenalan atau kod DuitNow QR.",
+   "explanation": "Hampir semua aplikasi bank dan e-dompet di Malaysia boleh mengimbas kod DuitNow QR.",
+   "in_kong": {
+    "text": "Pilihan Xendit dalam Kong menerima DuitNow QR.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "fpx",
+    "ewallet"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "ewallet",
+   "include": true,
+   "letter": "E",
+   "term": "E-dompet",
+   "category": "Pembayaran",
+   "also_called": [
+    "e-wallet",
+    "dompet digital"
+   ],
+   "other_language_term": "eWallet",
+   "definition": "E-dompet ialah aplikasi telefon yang menyimpan wang atau butiran kad, supaya orang boleh membayar dengan sentuhan atau imbasan QR.",
+   "explanation": "Di Malaysia, Touch 'n Go eWallet, GrabPay, ShopeePay dan Boost digunakan secara meluas, dan ramai tetamu tempatan lebih suka menggunakannya berbanding kad.",
+   "in_kong": {
+    "text": "Di Malaysia, Kong menerima GrabPay, dan pilihan Xendit menambah Touch 'n Go, ShopeePay dan Boost.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "touch-n-go-ewallet",
+    "grabpay",
+    "shopeepay"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "e-invoice",
+   "include": true,
+   "letter": "E",
+   "term": "E-invois (LHDN)",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "e-invoice",
+    "MyInvois",
+    "e invois LHDN"
+   ],
+   "other_language_term": "E-invoice (LHDN)",
+   "definition": "E-invois ialah invois yang dikeluarkan dalam format digital tertentu dan disahkan oleh LHDN, Lembaga Hasil Dalam Negeri Malaysia, melalui sistem MyInvois.",
+   "explanation": "Malaysia telah melaksanakan e-invois secara berperingkat mengikut saiz perniagaan sejak Ogos 2024, bermula dengan syarikat terbesar dan beralih kepada yang lebih kecil, dengan perniagaan paling kecil dikecualikan di bawah peraturan semasa. Pengendali pelancongan, agensi pelancongan dan hotel terlibat seperti perniagaan lain, dan LHDN telah menerbitkan panduan untuk kes pelancongan. Secara praktikal, perniagaan yang terlibat mengeluarkan e-invois bagi setiap jualan, atau e-invois disatukan yang merangkumi banyak jualan kecil kepada tetamu yang tidak meminta e-invois sendiri. Pembeli seperti syarikat dan badan kerajaan mungkin meminta e-invois dengan nombor cukai mereka. Oleh kerana tarikh dan had pusing ganti telah berubah lebih daripada sekali, pengendali perlu menyemak jadual terkini LHDN bagi perniagaan sesaiz mereka.",
+   "in_kong": null,
+   "see_also": [
+    "invoice-vs-receipt",
+    "credit-note",
+    "proforma-invoice"
+   ],
+   "source": {
+    "name": "Inland Revenue Board of Malaysia (LHDN)",
+    "url": "https://www.hasil.gov.my/en/e-invoice/",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "eftpos",
+   "include": true,
+   "letter": "E",
+   "term": "EFTPOS",
+   "category": "Pembayaran",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "EFTPOS ialah rangkaian pembayaran kad debit Australia, dan juga perkataan harian untuk mesin kad di kaunter.",
+   "explanation": "Tetamu Australia mungkin berkata mereka akan \"bayar dengan EFTPOS\" apabila maksudnya menyentuh kad pada hari lawatan.",
+   "in_kong": null,
+   "see_also": [
+    "surcharge",
+    "merchant-fee"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "ecotourism",
+   "include": false,
+   "letter": "E",
+   "term": "Ekopelancongan",
+   "category": "Jenis pelancongan",
+   "also_called": [
+    "pelancongan eko"
+   ],
+   "other_language_term": "Ecotourism",
+   "definition": "Ekopelancongan ialah pelancongan ke kawasan semula jadi yang melindungi alam sekitar, menyokong penduduk tempatan dan mendidik pelawat tentang tempat itu.",
+   "explanation": "Di Malaysia, ia meliputi trip hutan hujan, paya bakau, taman laut dan hidupan liar, selalunya bersama pemandu tempatan. Ekopelancongan sebenar mengehadkan saiz kumpulan dan kesan. Perkataan ini juga digunakan secara longgar dalam pemasaran, dan inilah yang cuba ditangani oleh skim pensijilan.",
+   "in_kong": null,
+   "see_also": [
+    "adventure-tourism",
+    "tourism-accreditation"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "booking-engine",
+   "include": true,
+   "letter": "E",
+   "term": "Enjin tempahan",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "sistem tempahan",
+    "sistem booking"
+   ],
+   "other_language_term": "Booking engine",
+   "definition": "Enjin tempahan ialah perisian yang membolehkan tetamu memilih tarikh, melihat tempat yang masih ada, dan menempah serta membayar dalam talian.",
+   "explanation": "Ia bahagian sistem tempahan yang dilihat tetamu. Di belakangnya, bahagian pengendali mengurus kalendar, bayaran dan butiran tetamu. Enjin tempahan yang baik mudah digunakan di telefon, menunjukkan ketersediaan secara langsung dan menerima kaedah bayaran pilihan tetamu.",
+   "in_kong": {
+    "text": "Enjin tempahan Kong berjalan di halaman tempahan Kong anda dan di dalam laman web anda sendiri melalui widget.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "booking-widget",
+    "availability",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "load-factor",
+   "include": true,
+   "letter": "F",
+   "term": "Faktor muatan",
+   "category": "Harga",
+   "also_called": [
+    "kadar penghunian"
+   ],
+   "other_language_term": "Load factor",
+   "definition": "Faktor muatan ialah bahagian tempat yang benar-benar dijual berbanding jumlah tempat, ditunjukkan dalam peratus.",
+   "explanation": "Trip 20 tempat duduk dengan 15 tetamu mempunyai faktor muatan 75 peratus. Ia cara cepat untuk melihat sesi mana yang berbaloi dijalankan dan mana yang perlu dipromosikan.",
+   "in_kong": null,
+   "see_also": [
+    "capacity",
+    "revenue-management"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "fam-trip",
+   "include": true,
+   "letter": "F",
+   "term": "Fam trip (lawatan pengenalan)",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "familiarisation trip",
+    "lawatan familiarisasi"
+   ],
+   "other_language_term": "Fam trip",
+   "definition": "Fam trip (lawatan pengenalan) ialah perjalanan percuma atau berdiskaun yang membolehkan ejen pelancongan, kakitangan hotel atau media mencuba lawatan supaya mereka boleh menjual atau menulis tentangnya.",
+   "explanation": "Orang menjual apa yang mereka pernah cuba. Ejen yang pernah menyertai lawatan kayak paya bakau anda boleh menerangkannya dengan lebih baik dan mengesyorkannya dengan lebih yakin. Fam trip selalunya dianjurkan oleh badan pelancongan, DMC dan persatuan, dan pengendali mengambil bahagian dengan menerima kumpulan secara percuma atau pada harga kos. Ia juga berkesan secara kecil-kecilan: menjemput pasukan concierge hotel berdekatan untuk satu sesi percuma ialah antara cara paling mudah untuk mendapat rujukan hotel. Supaya fam trip berbaloi, beri pengalaman yang sama seperti tetamu yang membayar, susuli dengan butiran tempahan dan net rate, dan jejak rakan mana yang menempah selepas itu.",
+   "in_kong": null,
+   "see_also": [
+    "concierge-booking",
+    "dmc",
+    "net-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "fit",
+   "include": true,
+   "letter": "F",
+   "term": "FIT (pelancong bebas)",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "free independent traveller",
+    "pelancong persendirian"
+   ],
+   "other_language_term": "FIT (free independent traveller)",
+   "definition": "FIT (pelancong bebas) merujuk kepada tetamu yang melancong mengikut rancangan sendiri, bukan dalam lawatan berkumpulan.",
+   "explanation": "Tetamu FIT menempah lawatan satu demi satu, selalunya pada saat akhir dan menggunakan telefon. Lawannya ialah kumpulan yang ditempah melalui ejen.",
+   "in_kong": null,
+   "see_also": [
+    "last-minute-booking",
+    "group-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "foc",
+   "include": true,
+   "letter": "F",
+   "term": "FOC (percuma)",
+   "category": "Harga",
+   "also_called": [
+    "FOC",
+    "free of charge"
+   ],
+   "other_language_term": "FOC (free of charge)",
+   "definition": "FOC (percuma) bermaksud tempat yang diberi tanpa bayaran, selalunya tempat percuma untuk ketua kumpulan, pemandu pelancong atau pemandu kenderaan dalam tempahan kumpulan.",
+   "explanation": "Di Malaysia, FOC ialah bahasa tempahan harian. DMC mungkin meminta \"1 FOC untuk setiap 15 pax\", iaitu setiap 15 tetamu yang membayar mendapat satu tempat percuma, biasanya untuk ketua rombongan. Pengendali juga memberi tempat FOC kepada kanak-kanak kecil, semasa fam trip, atau sebagai tanda muhibah selepas berlaku masalah. Tempat FOC masih menggunakan satu tempat duduk, satu jaket keselamatan dan sebahagian masa pemandu, jadi peraturannya perlu dipersetujui sebelum sebut harga diterima: berapa tetamu yang membayar untuk satu tempat FOC, dan sama ada ia merangkumi makanan, pengangkutan dan tiket masuk. Ramai pengendali mengehadkan tempat FOC bagi setiap tempahan dan tidak mengira komisen untuknya.",
+   "in_kong": null,
+   "see_also": [
+    "pax",
+    "group-booking",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "force-majeure",
+   "include": true,
+   "letter": "F",
+   "term": "Force majeure",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "keadaan luar kawalan"
+   ],
+   "other_language_term": null,
+   "definition": "Force majeure bermaksud kejadian di luar kawalan sesiapa, seperti ribut, banjir, pandemik atau arahan kerajaan, yang menghalang perkhidmatan daripada berjalan.",
+   "explanation": "Klausa force majeure menyatakan apa yang berlaku ketika itu, biasanya tiada pihak yang dipersalahkan dan tetamu mendapat bayaran balik, kredit atau tarikh baharu. Bagi pengendali aktiviti luar di Malaysia, cuaca monsun ialah kes yang paling biasa.",
+   "in_kong": null,
+   "see_also": [
+    "cancellation-policy",
+    "rain-check",
+    "terms-and-conditions"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "fpx",
+   "include": true,
+   "letter": "F",
+   "term": "FPX",
+   "category": "Pembayaran",
+   "also_called": [
+    "perbankan dalam talian",
+    "online banking"
+   ],
+   "other_language_term": null,
+   "definition": "FPX ialah kaedah bayaran perbankan dalam talian Malaysia: tetamu memilih bank mereka semasa pembayaran dan meluluskan bayaran dalam aplikasi bank.",
+   "explanation": "Ia dikendalikan oleh PayNet dan antara cara bayaran dalam talian yang paling banyak digunakan di Malaysia. Wang dipindahkan terus dari akaun bank tetamu tanpa perlu kad, sesuai untuk tetamu yang tiada atau tidak mahu menggunakan kad kredit.",
+   "in_kong": {
+    "text": "Kong menerima FPX di Malaysia melalui Stripe dan Xendit.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "duitnow",
+    "payment-gateway",
+    "ewallet"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "free-and-easy",
+   "include": true,
+   "letter": "F",
+   "term": "Free and easy",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Free and easy ialah pakej dengan pengangkutan dan hotel tetapi tanpa program lawatan tetap, jadi tetamu merancang hari mereka sendiri.",
+   "explanation": "Istilah ini biasa di Malaysia dan Singapura. Tetamu free and easy ialah pelanggan utama untuk lawatan sehari yang ditempah selepas mereka tiba.",
+   "in_kong": null,
+   "see_also": [
+    "tour-package",
+    "fit"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "payment-gateway",
+   "include": true,
+   "letter": "G",
+   "term": "Gerbang pembayaran",
+   "category": "Pembayaran",
+   "also_called": [
+    "pemproses pembayaran"
+   ],
+   "other_language_term": "Payment gateway",
+   "definition": "Gerbang pembayaran ialah perkhidmatan yang menerima bayaran kad, e-dompet atau perbankan dalam talian daripada tetamu dan menyalurkannya dengan selamat ke akaun bank pengendali.",
+   "explanation": "Ia berada di antara halaman tempahan dan bank. Gerbang menyemak bayaran, melindungi butiran kad, dan menyerahkan wang, selepas ditolak cajnya, mengikut jadual. Pilihan gerbang menentukan kaedah bayaran yang boleh digunakan tetamu. Di Malaysia, ini penting: ramai tetamu lebih suka FPX atau e-dompet seperti Touch 'n Go berbanding kad, dan bukan semua gerbang menyokongnya. Pengendali membandingkan gerbang dari segi kaedah bayaran yang disokong, caj bagi setiap kaedah, berapa cepat wang diserahkan, dan cara mereka mengendalikan chargeback. Semak juga mata wang yang diterima, kerana tetamu luar negara mungkin dikenakan caj pertukaran oleh bank mereka. Menukar gerbang kemudian boleh dilakukan tetapi mengganggu operasi, jadi pilihlah dengan musim akan datang dalam fikiran.",
+   "in_kong": {
+    "text": "Kong berfungsi dengan Stripe atau Xendit. Di Malaysia, Xendit menambah Touch 'n Go, ShopeePay, Boost, DuitNow QR dan beli sekarang bayar kemudian. Di Australia, bayaran melalui Stripe.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "fpx",
+    "payout",
+    "merchant-of-record"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "google-things-to-do",
+   "include": true,
+   "letter": "G",
+   "term": "Google Things to Do",
+   "category": "Jualan dan pengedaran",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Google Things to Do ialah bahagian Google Search dan Maps yang menyenaraikan lawatan, aktiviti dan tarikan, bersama harga dan pautan untuk menempah.",
+   "explanation": "Apabila seseorang mencari aktiviti di sesuatu tempat, Google boleh menunjukkan pilihan tempahan dari laman web pengendali sendiri dan dari OTA secara bersebelahan. Pengendali muncul melalui sistem tempahan yang disambungkan. Senarai terus memberi tetamu cara untuk menempah dengan pengendali, bukan melalui OTA.",
+   "in_kong": null,
+   "see_also": [
+    "reserve-with-google",
+    "direct-booking",
+    "ota"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "grabpay",
+   "include": true,
+   "letter": "G",
+   "term": "GrabPay",
+   "category": "Pembayaran",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "GrabPay ialah e-dompet dalam aplikasi Grab, digunakan di seluruh Malaysia dan Asia Tenggara.",
+   "explanation": "Pelawat dari negara jiran selalunya sudah memilikinya dalam telefon.",
+   "in_kong": {
+    "text": "Kong menerima GrabPay di Malaysia.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "ewallet",
+    "touch-n-go-ewallet"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "commissionable-rate",
+   "include": true,
+   "letter": "H",
+   "term": "Harga berkomisen",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": "Commissionable rate",
+   "definition": "Harga berkomisen ialah harga awam yang sudah termasuk komisen penjual, yang dibayar daripadanya selepas jualan.",
+   "explanation": "Tetamu membayar harga yang sama seperti di laman web pengendali. Ejen atau OTA menyimpan komisennya, dan pengendali menerima bakinya. Inilah model biasa untuk OTA dan ramai ejen pelancongan, dan ia mengekalkan harga yang sama di semua tempat. Bezanya dengan net rate ialah dari mana pendapatan penjual datang. Dengan harga berkomisen, ia di dalam harga awam. Dengan net rate, penjual semula menambah markup di atas harga pengendali. Sebelum bersetuju dengan sesuatu komisen, pengendali memastikan bakinya masih menampung kos menjalankan lawatan, termasuk pemandu, minyak dan caj bayaran. Hotel menggunakan istilah yang sama untuk bilik.",
+   "in_kong": null,
+   "see_also": [
+    "commission",
+    "net-rate",
+    "rack-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "dynamic-pricing",
+   "include": true,
+   "letter": "H",
+   "term": "Harga dinamik",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": "Dynamic pricing",
+   "definition": "Harga dinamik bermaksud menukar harga lawatan mengikut permintaan, seperti mengenakan harga lebih tinggi pada hujung minggu yang sibuk dan lebih rendah pada hari biasa yang lengang.",
+   "explanation": "Syarikat penerbangan dan hotel sudah lama melakukannya. Untuk lawatan, ia biasanya bermaksud beberapa peraturan mudah: harga lebih tinggi pada musim puncak atau untuk beberapa tempat terakhir, harga lebih rendah untuk tempahan awal atau hari yang perlahan. Ia membantu memenuhkan sesi yang lengang dan memperoleh lebih banyak daripada sesi yang sibuk.",
+   "in_kong": null,
+   "see_also": [
+    "revenue-management",
+    "peak-season",
+    "early-bird-discount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "concession",
+   "include": true,
+   "letter": "H",
+   "term": "Harga konsesi",
+   "category": "Harga",
+   "also_called": [
+    "diskaun pelajar",
+    "diskaun warga emas"
+   ],
+   "other_language_term": "Concession",
+   "definition": "Harga konsesi ialah harga yang dikurangkan untuk tetamu tertentu, seperti kanak-kanak, pelajar, warga emas atau pesara.",
+   "explanation": "Istilah ini biasa di Australia. Di Malaysia, pengendali lebih kerap menyenaraikan harga kanak-kanak, warga emas atau pelajar. Pengendali biasanya meminta bukti, seperti kad pelajar, semasa daftar masuk. Apa pun namanya, setiap harga yang dikurangkan memerlukan peraturan jelas tentang siapa yang layak dan cara umur dikira, yang ditunjukkan sebelum tetamu membayar.",
+   "in_kong": {
+    "text": "Dalam Kong, anda menetapkan harga untuk setiap jenis tetamu, seperti dewasa, kanak-kanak atau konsesi.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "child-policy",
+    "pax"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "contracted-rate",
+   "include": true,
+   "letter": "H",
+   "term": "Harga kontrak",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": "Contracted rate",
+   "definition": "Harga kontrak ialah harga yang dipersetujui secara bertulis dengan rakan tertentu, biasanya untuk tempoh tertentu.",
+   "explanation": "DMC dan ejen pelancongan sering menetapkan harga kontrak setahun lebih awal, supaya mereka boleh menetapkan harga pakej dan brosur dengan yakin.",
+   "in_kong": null,
+   "see_also": [
+    "net-rate",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "group-rate",
+   "include": true,
+   "letter": "H",
+   "term": "Harga kumpulan",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": "Group rate",
+   "definition": "Harga kumpulan ialah harga seorang yang lebih rendah untuk kumpulan melebihi saiz tertentu.",
+   "explanation": "Pengendali sering menggabungkannya dengan saiz kumpulan minimum, deposit dan tarikh akhir untuk mengesahkan jumlah peserta.",
+   "in_kong": null,
+   "see_also": [
+    "group-booking",
+    "foc",
+    "deposit"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "homestay",
+   "include": true,
+   "letter": "H",
+   "term": "Homestay",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "program homestay"
+   ],
+   "other_language_term": null,
+   "definition": "Di Malaysia, homestay biasanya bermaksud menginap bersama keluarga tempatan di kampung, di bawah program homestay berdaftar MOTAC.",
+   "explanation": "Tetamu tinggal bersama keluarga angkat, makan bersama dan menyertai aktiviti kampung, selalunya secara berkumpulan. Banyak rumah sewa persendirian juga menggelar diri mereka homestay tetapi bukan sebahagian daripada program itu. Kampung homestay sering bekerjasama dengan pengendali pelancongan untuk pakej sekolah, syarikat dan kumpulan luar negara.",
+   "in_kong": null,
+   "see_also": [
+    "tour-package",
+    "tourism-tax"
+   ],
+   "source": {
+    "name": "Ministry of Tourism, Arts and Culture (MOTAC)",
+    "url": "https://www.motac.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "ical",
+   "include": true,
+   "letter": "I",
+   "term": "iCal",
+   "category": "Teknologi dan AI",
+   "also_called": [
+    "iCalendar",
+    ".ics",
+    "penyelarasan kalendar"
+   ],
+   "other_language_term": null,
+   "definition": "iCal ialah format fail standard untuk acara kalendar, digunakan untuk berkongsi atau menyelaraskan tempahan antara kalendar dan sistem.",
+   "explanation": "Pengendali menggunakan pautan iCal untuk memaparkan tempahan dalam Google Calendar, Apple Calendar atau Outlook, atau untuk menyekat tarikh daripada sistem lain. Penyelarasan iCal biasanya sehala dan boleh lambat, jadi ia lebih sesuai untuk melihat tempahan berbanding mengekalkan ketersediaan langsung.",
+   "in_kong": {
+    "text": "Kong menyelaraskan tempahan ke dalam Google Calendar, supaya pasukan anda melihat setiap tempahan dalam kalendar yang sudah digunakan.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "availability",
+    "double-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "public-liability-insurance",
+   "include": true,
+   "letter": "I",
+   "term": "Insurans liabiliti awam",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "insurans pengendali pelancongan"
+   ],
+   "other_language_term": "Public liability insurance",
+   "definition": "Insurans liabiliti awam melindungi perniagaan jika tetamu atau orang awam cedera, atau harta mereka rosak, akibat aktiviti perniagaan itu.",
+   "explanation": "Bagi pengendali lawatan dan aktiviti, ia antara polisi paling penting untuk dimiliki. Di Australia, banyak majlis tempatan, taman negara dan pemilik tanah meminta bukti insurans ini sebelum memberi permit atau akses, dan OTA serta penjual semula sering meminta sijil insurans sebelum menyenaraikan pengendali. Di Malaysia, rakan, tempat acara dan pelanggan korporat juga semakin memintanya. Jumlah perlindungan, aktiviti yang dilindungi, dan sebarang pengecualian, seperti aktiviti air atau bermotor, sama penting dengan premium. Ia berfungsi bersama penepian dan prosedur keselamatan, bukan sebagai gantinya. Indemniti profesional dan perlindungan untuk peralatan dan kakitangan ialah polisi berasingan.",
+   "in_kong": null,
+   "see_also": [
+    "liability-waiver",
+    "tourism-accreditation"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "inventory",
+   "include": true,
+   "letter": "I",
+   "term": "Inventori",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Inventory",
+   "definition": "Inventori ialah semua yang ada untuk dijual oleh pengendali: setiap tempat dalam setiap sesi sepanjang musim.",
+   "explanation": "Istilah ini berasal daripada hotel dan syarikat penerbangan. Untuk lawatan, inventori dikongsi antara saluran: tempat yang dijual di OTA bermakna kurang satu di laman web pengendali. Menyimpan satu inventori untuk semua saluran, dan bukan membahagikannya, mengelakkan tempahan berlebihan dan tempat kosong.",
+   "in_kong": null,
+   "see_also": [
+    "allocation",
+    "availability",
+    "capacity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "invoice-vs-receipt",
+   "include": true,
+   "letter": "I",
+   "term": "Invois dan resit",
+   "category": "Pembayaran",
+   "also_called": [
+    "beza invois dan resit"
+   ],
+   "other_language_term": "Invoice vs receipt",
+   "definition": "Invois meminta bayaran; resit mengesahkan bayaran sudah dibuat.",
+   "explanation": "Pengendali menghantar invois apabila bayaran perlu dibuat kemudian, seperti untuk kumpulan syarikat, dan resit setelah tetamu membayar, seperti kebanyakan tempahan dalam talian. Syarikat sering memerlukan kedua-duanya untuk rekod mereka. Di Malaysia, peraturan e-invois mungkin menentukan bentuk dokumen ini.",
+   "in_kong": null,
+   "see_also": [
+    "proforma-invoice",
+    "e-invoice",
+    "credit-note"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "proforma-invoice",
+   "include": true,
+   "letter": "I",
+   "term": "Invois proforma",
+   "category": "Pembayaran",
+   "also_called": [],
+   "other_language_term": "Proforma invoice",
+   "definition": "Invois proforma ialah bil awal yang dihantar sebelum jualan dimuktamadkan, supaya pembeli boleh menguruskan bayaran.",
+   "explanation": "Syarikat dan badan kerajaan sering memerlukannya untuk mengeluarkan pesanan belian atau melepaskan deposit. Ia bukan invois cukai: setelah tempahan dibayar dan disahkan, pengendali mengeluarkan invois sebenar, yang di Malaysia mungkin perlu dalam bentuk e-invois.",
+   "in_kong": null,
+   "see_also": [
+    "quotation",
+    "invoice-vs-receipt",
+    "e-invoice"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "itinerary",
+   "include": true,
+   "letter": "I",
+   "term": "Itinerari",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "jadual perjalanan"
+   ],
+   "other_language_term": "Itinerary",
+   "definition": "Itinerari ialah rancangan perjalanan: ke mana tetamu pergi, mengikut susunan apa, dan pada masa bila.",
+   "explanation": "Untuk lawatan sehari, ia mungkin garis masa ringkas. Untuk perjalanan beberapa hari, ia rancangan harian dengan makanan dan penginapan. Itinerari yang jelas membantu tetamu membuat keputusan, mengurangkan soalan, dan menetapkan jangkaan tentang apa yang termasuk. Masa perlu realistik, dengan ruang untuk kesesakan lalu lintas, cuaca dan hentian tandas, dan itinerari perlu menyatakan apa yang mungkin berubah pada hari itu dan sebabnya.",
+   "in_kong": null,
+   "see_also": [
+    "inclusions-and-exclusions",
+    "tour-package",
+    "day-trip"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "capacity",
+   "include": true,
+   "letter": "K",
+   "term": "Kapasiti",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Capacity",
+   "definition": "Kapasiti ialah jumlah maksimum tetamu yang boleh diterima sesuatu lawatan atau sesi.",
+   "explanation": "Ia biasanya ditentukan oleh had yang paling ketat: tempat duduk dalam kenderaan, tempat di atas bot, jaket keselamatan, atau bilangan tetamu bagi setiap pemandu. Sesetengah lawatan ada lebih daripada satu had serentak, dan sistem tempahan perlu menghentikan jualan sebaik sahaja mana-mana had dicapai.",
+   "in_kong": {
+    "text": "Dalam Kong, setiap produk ada kapasiti, dan tempahan berhenti apabila sesi penuh.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "availability",
+    "resources",
+    "overbooking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "availability",
+   "include": true,
+   "letter": "K",
+   "term": "Ketersediaan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "kekosongan"
+   ],
+   "other_language_term": "Availability",
+   "definition": "Ketersediaan ialah bilangan tempat yang masih terbuka untuk ditempah bagi tarikh dan masa tertentu.",
+   "explanation": "Ia berubah setiap kali seseorang menempah atau membatalkan, di mana-mana saluran. Menunjukkan ketersediaan secara langsung di semua tempat, di laman web pengendali dan di setiap OTA, ialah cara mengelakkan tempahan berlebihan. Tetamu juga membacanya sebagai isyarat: sesi yang tinggal dua tempat lebih cepat ditempah.",
+   "in_kong": {
+    "text": "Kong menunjukkan ketersediaan secara langsung untuk setiap sesi di halaman tempahan dan widget anda.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "capacity",
+    "inventory",
+    "overbooking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "promo-code",
+   "include": true,
+   "letter": "K",
+   "term": "Kod promosi",
+   "category": "Harga",
+   "also_called": [
+    "kod diskaun"
+   ],
+   "other_language_term": "Promo code",
+   "definition": "Kod promosi ialah perkataan atau kod yang memberi diskaun semasa pembayaran.",
+   "explanation": "Pengendali menggunakannya untuk kempen, rakan dan tetamu berulang, dan menjejak kod mana yang membawa tempahan.",
+   "in_kong": {
+    "text": "Kong membolehkan anda mencipta kod diskaun untuk produk anda.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "gift-voucher",
+    "early-bird-discount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "commission",
+   "include": true,
+   "letter": "K",
+   "term": "Komisen",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "komisen ejen"
+   ],
+   "other_language_term": "Commission",
+   "definition": "Komisen ialah bahagian harga yang disimpan oleh OTA, ejen atau rakan kerana menjual sesuatu tempahan, biasanya peratusan daripada harga awam.",
+   "explanation": "OTA dan penjual semula bekerja atas dasar komisen, begitu juga concierge hotel, affiliate dan ramai ejen pelancongan. Ada dua cara biasa. Pertama, rakan mengutip harga penuh daripada tetamu dan menyerahkan baki kepada pengendali selepas mengambil komisen. Kedua, pengendali mengutip harga penuh dan membayar komisen rakan kemudian, selalunya setiap bulan. Komisen ialah sebab utama tempahan terus lebih menguntungkan. Semasa menetapkan harga, pengendali memastikan tempahan masih meninggalkan margin yang cukup selepas komisen untuk menampung pemandu, minyak, insurans dan caj bayaran, dan di sinilah net rate dan harga berkomisen memainkan peranan. Ramai pengendali di Malaysia masih menyelesaikan komisen dengan rakan kecil secara manual, jadi merekodkan siapa yang membawa setiap tempahan amat penting.",
+   "in_kong": null,
+   "see_also": [
+    "commissionable-rate",
+    "net-rate",
+    "ota"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "day-trip",
+   "include": true,
+   "letter": "L",
+   "term": "Lawatan sehari, separuh hari dan sehari penuh",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "day trip",
+    "half-day tour",
+    "full-day tour"
+   ],
+   "other_language_term": "Day trip, half-day and full-day",
+   "definition": "Lawatan sehari bermula dan berakhir pada hari yang sama; lawatan separuh hari biasanya beberapa jam, dan lawatan sehari penuh mengambil sebahagian besar hari.",
+   "explanation": "Istilah ini digunakan secara longgar, jadi senarai lawatan perlu menyatakan tempoh sebenar serta masa mula dan tamat.",
+   "in_kong": null,
+   "see_also": [
+    "itinerary",
+    "transfer"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "motac-licence",
+   "include": true,
+   "letter": "L",
+   "term": "Lesen MOTAC",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "lesen pelancongan"
+   ],
+   "other_language_term": "MOTAC licence",
+   "definition": "Lesen MOTAC ialah nama harian bagi lesen yang diperlukan perniagaan pelancongan di Malaysia daripada MOTAC, Kementerian Pelancongan, Seni dan Budaya.",
+   "explanation": "Secara rasmi, ia lesen TOBTAB yang dikeluarkan di bawah Akta Industri Pelancongan 1992, meliputi lawatan inbound, perjalanan outbound, tiket, atau gabungannya. MOTAC juga melesenkan pemandu pelancong dan kenderaan pelancongan, serta mengendalikan program homestay, jadi \"lesen MOTAC\" boleh membawa maksud berbeza bergantung pada siapa yang bertanya. Bagi perniagaan pelancongan, mendapatkan lesen biasanya memerlukan syarikat Sdn Bhd yang berdaftar, premis komersial yang diperiksa MOTAC, kursus wajib, keahlian persatuan pelancongan yang diiktiraf, dan permohonan melalui portal pelesenan dalam talian MOTAC. Pemilikan tunggal dan perkongsian tidak layak untuk lesen pengendalian pelancongan. Pengendali yang hanya menjual satu aktiviti sendiri kadang-kadang bertanya sama ada mereka memerlukannya. Jawapannya bergantung pada apa yang dijual dan bagaimana, jadi semaklah terus dengan MOTAC.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "tourist-guide-licence",
+    "ssm-registration"
+   ],
+   "source": {
+    "name": "Ministry of Tourism, Arts and Culture (MOTAC)",
+    "url": "https://www.motac.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": {
+    "text": "Lesen MOTAC: panduan lengkap (dalam Bahasa Inggeris)",
+    "url": "https://bookwithkong.com/blog/motac-license-guide"
+   },
+   "tier": "L"
+  },
+  {
+   "id": "tourist-guide-licence",
+   "include": true,
+   "letter": "L",
+   "term": "Lesen pemandu pelancong",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "pemandu pelancong",
+    "kursus pemandu pelancong"
+   ],
+   "other_language_term": "Tourist guide licence",
+   "definition": "Lesen pemandu pelancong ialah lesen yang dikeluarkan MOTAC kepada individu yang memandu pelancong di Malaysia.",
+   "explanation": "Pemandu biasanya perlu menamatkan kursus yang diluluskan MOTAC terlebih dahulu, dan ada beberapa jenis lesen, seperti pemandu bandar dan pemandu alam semula jadi, sesetengahnya terhad kepada satu kawasan. Pengendali yang menggaji pemandu menyemak setiap lesen masih sah, dan ramai OTA serta DMC bertanya mengenainya.",
+   "in_kong": null,
+   "see_also": [
+    "motac-licence",
+    "tobtab"
+   ],
+   "source": {
+    "name": "Ministry of Tourism, Arts and Culture (MOTAC)",
+    "url": "https://www.motac.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "manifest",
+   "include": true,
+   "letter": "M",
+   "term": "Manifest (senarai peserta)",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "senarai penumpang"
+   ],
+   "other_language_term": "Manifest",
+   "definition": "Manifest (senarai peserta) ialah senarai semua orang yang ditempah untuk sesuatu sesi: nama, bilangan, butiran hubungan dan apa sahaja yang perlu diketahui pemandu.",
+   "explanation": "Pemandu menggunakannya untuk daftar masuk dan kiraan keselamatan, dan pengendali bot mungkin perlu menyerahkannya kepada pihak berkuasa marin atau taman. Ia sepatutnya datang terus dari sistem tempahan, supaya tempahan lewat dan perubahan turut dimasukkan.",
+   "in_kong": null,
+   "see_also": [
+    "check-in",
+    "headcount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "markup-vs-margin",
+   "include": true,
+   "letter": "M",
+   "term": "Markup dan margin keuntungan",
+   "category": "Harga",
+   "also_called": [
+    "margin keuntungan"
+   ],
+   "other_language_term": "Markup vs margin",
+   "definition": "Markup ialah jumlah yang ditambah pada kos untuk menetapkan harga; margin ialah bahagian harga akhir yang menjadi keuntungan.",
+   "explanation": "Bunyinya serupa tetapi angkanya berbeza. Jika kos menjalankan lawatan ialah 60 dan harga jualannya 100, markupnya 67 peratus (40 ditambah di atas 60), tetapi marginnya 40 peratus (40 daripada 100 ialah untung). Kekeliruan ini merugikan: pengendali yang mahukan margin 40 peratus tetapi menambah markup 40 peratus akan mendapat margin kira-kira 29 peratus sahaja. Ia paling penting apabila berurusan dengan penjual semula dan OTA, kerana komisen mereka diambil daripada harga, jadi pengendali perlu margin yang cukup untuk dikongsi dan masih menampung pemandu, minyak, insurans dan caj bayaran. Mengetahui kos bagi setiap pax dan margin pada setiap harga memudahkan keputusan tentang rakan dan diskaun yang berbaloi.",
+   "in_kong": null,
+   "see_also": [
+    "net-rate",
+    "commission",
+    "pax"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "cut-off-time",
+   "include": true,
+   "letter": "M",
+   "term": "Masa tutup tempahan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Cut-off time",
+   "definition": "Masa tutup tempahan ialah saat terakhir sebelum lawatan apabila tempahan ditutup.",
+   "explanation": "Pengendali menetapkannya supaya ada masa untuk bersedia, seperti memesan makanan, mengatur pengambilan atau mengesahkan bot.",
+   "in_kong": null,
+   "see_also": [
+    "booking-window",
+    "last-minute-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "matta",
+   "include": true,
+   "letter": "M",
+   "term": "MATTA",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "MATTA Fair",
+    "Malaysian Association of Tour and Travel Agents"
+   ],
+   "other_language_term": null,
+   "definition": "MATTA (Persatuan Ejen Pelancongan dan Pengembaraan Malaysia) ialah persatuan perdagangan utama bagi agensi pelancongan dan pengendali pelancongan di Malaysia.",
+   "explanation": "Ahlinya ialah agensi berlesen di seluruh negara, dan keahlian persatuan yang diiktiraf seperti MATTA ialah salah satu syarat lesen TOBTAB. MATTA juga menganjurkan MATTA Fair, pameran pelancongan besar di Kuala Lumpur di mana agensi menjual pakej percutian terus kepada orang ramai.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "travel-agency"
+   ],
+   "source": {
+    "name": "MATTA",
+    "url": "https://www.matta.org.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "mcp",
+   "include": true,
+   "letter": "M",
+   "term": "MCP",
+   "category": "Teknologi dan AI",
+   "also_called": [
+    "Model Context Protocol",
+    "penyambung MCP",
+    "penyambung AI"
+   ],
+   "other_language_term": null,
+   "definition": "MCP (Model Context Protocol) ialah standard terbuka yang membolehkan pembantu AI seperti ChatGPT dan Claude bersambung dengan perisian lain, membaca datanya dan mengambil tindakan di dalamnya.",
+   "explanation": "Tanpa MCP, pembantu AI hanya tahu apa yang anda tampal ke dalam chat. Dengan penyambung MCP, ia boleh mencari maklumat dan bertindak dalam aplikasi yang disambungkan, mengikut kebenaran yang anda beri. Bagi pengendali pelancongan, ini bermakna bertanya kepada pembantu AI siapa yang menyertai trip 9 pagi esok dan sama ada semua sudah menandatangani penepian, dan mendapat jawapan terus dari sistem tempahan, atau memintanya memindahkan tempahan dan mendraf e-mel kepada tetamu. Anthropic memperkenalkan MCP pada akhir 2024, dan kini banyak aplikasi AI dan syarikat perisian menyokongnya. Penyambung menentukan apa yang boleh dilihat dan dilakukan pembantu AI, jadi penting untuk tahu tindakan mana yang dibenarkan dan mana yang masih memerlukan pengesahan manusia.",
+   "in_kong": {
+    "text": "Kong ada penyambung MCP, jadi anda boleh mengurus tempahan dari ChatGPT atau Claude.",
+    "url": "https://bookwithkong.com/ai"
+   },
+   "see_also": [
+    "restech"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "merchant-of-record",
+   "include": true,
+   "letter": "M",
+   "term": "Merchant of record",
+   "category": "Pembayaran",
+   "also_called": [
+    "MoR"
+   ],
+   "other_language_term": null,
+   "definition": "Merchant of record ialah perniagaan yang bertanggungjawab secara undang-undang ke atas sesuatu jualan: namanya muncul pada penyata tetamu, dan ia mengurus bayaran balik, chargeback dan cukai.",
+   "explanation": "Apabila tetamu menempah terus, pengendali biasanya ialah merchant of record. Apabila mereka menempah melalui OTA, selalunya OTA itu: tetamu membayar OTA, nama OTA muncul pada penyata kad mereka, dan pengendali dibayar kemudian. Ini menentukan siapa yang mengurus pertikaian, siapa yang mengeluarkan resit atau e-invois, dan nama siapa yang diingati tetamu. Sesetengah platform tempahan bertindak sebagai merchant of record bagi pengendali mereka, yang boleh memudahkan bayaran tetapi bermakna wang pengendali melalui akaun pihak lain dahulu. Semak susunan yang digunakan sesuatu sistem tempahan sebelum mendaftar, terutamanya untuk cukai dan e-invois.",
+   "in_kong": null,
+   "see_also": [
+    "chargeback",
+    "payout",
+    "e-invoice"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "mice",
+   "include": true,
+   "letter": "M",
+   "term": "MICE",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "meetings, incentives, conferences and exhibitions"
+   ],
+   "other_language_term": null,
+   "definition": "MICE ialah singkatan untuk mesyuarat, insentif, persidangan dan pameran: perjalanan perniagaan berkumpulan yang diuruskan oleh syarikat dan perancang acara.",
+   "explanation": "Syarikat yang membawa pasukan jualannya ke Langkawi sebagai ganjaran, atau persidangan di Kuala Lumpur dengan petang bebas untuk peserta, kedua-duanya dikira MICE. Huruf E kadang-kadang dibaca sebagai acara (events). Bagi pengendali lawatan dan aktiviti, MICE bermakna tempahan kumpulan besar yang dibayar awal, biasanya melalui DMC atau agensi acara. Kumpulan ini mahukan sesi persendirian, masa yang tetap, sebut harga dan invois proforma sebelum membayar, serta seorang PIC yang mengurus perubahan. Mereka sering menempah berbulan-bulan lebih awal dan menukar jumlah peserta hampir dengan tarikh, jadi syarat yang jelas tentang jumlah minimum, deposit dan pembatalan amat penting. Kumpulan MICE juga menghargai sentuhan khas: barangan berjenama, pemandu persendirian atau slot masa eksklusif.",
+   "in_kong": null,
+   "see_also": [
+    "dmc",
+    "quotation",
+    "group-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "minimum-pax",
+   "include": true,
+   "letter": "M",
+   "term": "Minimum pax",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "saiz kumpulan minimum",
+    "guaranteed departure"
+   ],
+   "other_language_term": null,
+   "definition": "Minimum pax ialah bilangan tetamu paling sedikit yang diperlukan untuk sesuatu lawatan berjalan.",
+   "explanation": "Jika kurang yang menempah, pengendali mungkin membatalkan, memindahkan tetamu ke sesi lain, atau menawarkan harga lawatan persendirian. Jumlah minimum, dan apa yang berlaku jika ia tidak dicapai, perlu dinyatakan dalam syarat supaya tetamu tidak terkejut sehari sebelumnya. Pengendali biasanya memutuskan 24 hingga 48 jam lebih awal sama ada sesi berjalan, supaya tetamu sempat menukar rancangan. Guaranteed departure pula janji sebaliknya: lawatan tetap berjalan walau berapa pun bilangan peserta.",
+   "in_kong": null,
+   "see_also": [
+    "pax",
+    "cancellation-policy",
+    "group-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "shoulder-season",
+   "include": true,
+   "letter": "M",
+   "term": "Musim pertengahan",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": "Shoulder season",
+   "definition": "Musim pertengahan ialah tempoh antara musim puncak dan musim rendah, apabila permintaan sederhana dan cuaca selalunya masih baik.",
+   "explanation": "Ia selalunya masa terbaik untuk menarik tempahan dengan sedikit perubahan harga, tawaran early bird atau pakej, kerana tetamu lebih fleksibel dan kurang persaingan untuk perhatian mereka. Ramai pengendali merancang cuti kakitangan dan penyelenggaraan bot pada masa ini.",
+   "in_kong": null,
+   "see_also": [
+    "peak-season",
+    "low-season",
+    "dynamic-pricing"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "peak-season",
+   "include": true,
+   "letter": "M",
+   "term": "Musim puncak",
+   "category": "Harga",
+   "also_called": [
+    "high season"
+   ],
+   "other_language_term": "Peak season",
+   "definition": "Musim puncak ialah masa dalam setahun apabila permintaan dan harga paling tinggi.",
+   "explanation": "Di Malaysia, ia biasanya cuti sekolah dan musim perayaan. Bagi pulau di pantai timur, ia bulan-bulan di luar monsun timur laut.",
+   "in_kong": null,
+   "see_also": [
+    "shoulder-season",
+    "low-season",
+    "blackout-dates"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "low-season",
+   "include": true,
+   "letter": "M",
+   "term": "Musim rendah",
+   "category": "Harga",
+   "also_called": [
+    "off-season",
+    "musim tengkujuh"
+   ],
+   "other_language_term": "Low season",
+   "definition": "Musim rendah ialah masa dalam setahun dengan tetamu paling sedikit dan biasanya harga paling rendah.",
+   "explanation": "Sesetengah pengendali tutup. Yang lain beralih kepada tetamu tempatan, sekolah dan kumpulan syarikat. Di pantai timur Malaysia, banyak pengendali pulau berhenti operasi semasa monsun timur laut.",
+   "in_kong": null,
+   "see_also": [
+    "peak-season",
+    "shoulder-season"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "net-rate",
+   "include": true,
+   "letter": "N",
+   "term": "Net rate (harga bersih)",
+   "category": "Harga",
+   "also_called": [
+    "harga borong",
+    "wholesale rate"
+   ],
+   "other_language_term": "Net rate",
+   "definition": "Net rate (harga bersih) ialah harga yang dikenakan pengendali kepada penjual semula, yang kemudian menambah markup sendiri untuk mendapatkan harga yang dibayar tetamu.",
+   "explanation": "Jika rack rate ialah harga awam, net rate berada di bawahnya, dan bezanya ialah pendapatan penjual semula. Net rate biasa digunakan dengan DMC, ejen pelancongan dan pemborong, terutamanya untuk kumpulan dan pakej, kerana penjual semula mahu bebas menetapkan harga jualan sendiri atau memasukkan lawatan ke dalam pakej. Bagi pengendali, ia mudah: mereka menerima net rate, walau berapa pun harga jualan penjual semula. Risikonya ialah penjual semula menjual terlalu murah dan mengatasi harga di laman web pengendali, jadi kebanyakan perjanjian net rate mewajibkan penjual semula menjual pada atau melebihi rack rate. Pengendali biasanya menawarkan net rate hanya kepada rakan yang sudah terbukti, dan tidak mendedahkannya kepada umum.",
+   "in_kong": null,
+   "see_also": [
+    "rack-rate",
+    "commissionable-rate",
+    "markup-vs-margin"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "no-show",
+   "include": true,
+   "letter": "N",
+   "term": "No-show (tidak hadir)",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "tidak hadir"
+   ],
+   "other_language_term": "No-show",
+   "definition": "No-show (tidak hadir) ialah tetamu yang sudah menempah tetapi tidak datang dan tidak membatalkan.",
+   "explanation": "Tetamu yang tidak hadir menyebabkan pengendali kehilangan tempat yang boleh dijual. Peringatan sehari sebelumnya, dan mengambil bayaran penuh atau deposit semasa menempah, sangat mengurangkannya. Polisi pembatalan perlu menyatakan apa yang berlaku kepada bayaran tetamu yang tidak hadir. Kebanyakan pengendali menunggu beberapa minit selepas masa mula sebelum mengira tetamu sebagai tidak hadir, dan ramai menyimpan senarai menunggu atau menerima walk-in untuk mengisi tempat itu.",
+   "in_kong": null,
+   "see_also": [
+    "cancellation-policy",
+    "deposit",
+    "waitlist"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "booking-reference",
+   "include": true,
+   "letter": "N",
+   "term": "Nombor rujukan tempahan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "nombor tempahan"
+   ],
+   "other_language_term": "Booking reference",
+   "definition": "Nombor rujukan tempahan ialah kod unik bagi setiap tempahan, digunakan untuk mencarinya dengan cepat.",
+   "explanation": "Tetamu menyebutnya apabila menukar tempahan, dan pengendali menggunakannya semasa daftar masuk dan dalam pertikaian.",
+   "in_kong": null,
+   "see_also": [
+    "check-in",
+    "manifest"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "credit-note",
+   "include": true,
+   "letter": "N",
+   "term": "Nota kredit",
+   "category": "Pembayaran",
+   "also_called": [],
+   "other_language_term": "Credit note",
+   "definition": "Nota kredit ialah dokumen yang mengurangkan atau membatalkan jumlah yang sudah diinvoiskan, contohnya selepas pembatalan atau perubahan harga.",
+   "explanation": "Daripada meminda invois asal, pengendali mengeluarkan nota kredit terhadapnya. Bergantung pada syarat, ia merekodkan bayaran balik atau memberi tetamu kredit untuk tempahan akan datang. Akauntan dan sistem cukai mengharapkannya, termasuk sistem e-invois Malaysia.",
+   "in_kong": null,
+   "see_also": [
+    "refund-policy",
+    "invoice-vs-receipt",
+    "e-invoice"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "ota",
+   "include": true,
+   "letter": "O",
+   "term": "OTA (agensi pelancongan dalam talian)",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "online travel agent",
+    "online travel agency"
+   ],
+   "other_language_term": "OTA (online travel agent)",
+   "definition": "OTA (agensi pelancongan dalam talian) ialah laman web atau aplikasi yang menjual lawatan, aktiviti, hotel atau penerbangan daripada banyak pembekal dan mengambil komisen bagi setiap tempahan.",
+   "explanation": "Viator, GetYourGuide, Klook, Expedia dan Tripadvisor semuanya OTA. Mereka membawa tetamu yang sukar dicapai sendiri oleh pengendali, terutamanya pelawat luar negara yang merancang perjalanan beberapa minggu lebih awal. Kosnya ialah komisen yang diambil daripada setiap tempahan, serta kurang kawalan terhadap hubungan dengan tetamu: OTA biasanya memegang alamat e-mel tetamu dan ulasan mereka. Kebanyakan pengendali menggunakan OTA untuk capaian, kemudian berusaha menarik tetamu tempatan dan tetamu berulang melalui tempahan terus, tanpa komisen. OTA mengharapkan ketersediaan secara langsung, jadi sistem tempahan pengendali perlu menyimpan jualan OTA dan jualan terus dalam satu kalendar supaya tiada tempahan bertindih. Sesetengah OTA juga meminta pariti harga, iaitu pengendali tidak boleh menjual lebih murah di laman web sendiri.",
+   "in_kong": null,
+   "see_also": [
+    "commission",
+    "direct-booking",
+    "rate-parity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "tour-package",
+   "include": true,
+   "letter": "P",
+   "term": "Pakej pelancongan",
+   "category": "Harga",
+   "also_called": [
+    "package tour"
+   ],
+   "other_language_term": "Tour package",
+   "definition": "Pakej pelancongan ialah beberapa perkhidmatan pelancongan yang dijual bersama pada satu harga, seperti pengangkutan, penginapan dan aktiviti.",
+   "explanation": "Pakej biasa untuk perjalanan beberapa hari dan untuk kumpulan yang ditempah melalui ejen. Di Malaysia, menganjurkan pakej untuk dijual biasanya memerlukan lesen TOBTAB, jadi pengendali aktiviti sering menjual bahagian mereka kepada ejen berlesen yang menyusun pakej tersebut.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "itinerary",
+    "free-and-easy"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "rate-parity",
+   "include": true,
+   "letter": "P",
+   "term": "Pariti harga",
+   "category": "Jualan dan pengedaran",
+   "also_called": [],
+   "other_language_term": "Rate parity",
+   "definition": "Pariti harga bermaksud menjual lawatan pada harga yang sama di setiap saluran, termasuk laman web pengendali sendiri dan setiap OTA.",
+   "explanation": "Sesetengah OTA meminta pengendali tidak menjual lebih murah di laman web sendiri. Pengendali masih boleh memberi ganjaran kepada tetamu terus dengan cara lain, seperti add-on percuma atau perubahan tarikh yang lebih fleksibel, jika perjanjian membenarkan.",
+   "in_kong": null,
+   "see_also": [
+    "ota",
+    "direct-booking",
+    "rack-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "payment-link",
+   "include": true,
+   "letter": "P",
+   "term": "Pautan pembayaran",
+   "category": "Pembayaran",
+   "also_called": [],
+   "other_language_term": "Payment link",
+   "definition": "Pautan pembayaran ialah alamat web yang dibuka tetamu untuk membayar tempahan, dihantar melalui e-mel, SMS atau WhatsApp.",
+   "explanation": "Ia berguna untuk tempahan melalui telefon dan WhatsApp, serta untuk mengutip deposit dan baki tanpa mengambil butiran kad melalui telefon.",
+   "in_kong": null,
+   "see_also": [
+    "deposit",
+    "balance-payment",
+    "off-platform-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "booking-link",
+   "include": true,
+   "letter": "P",
+   "term": "Pautan tempahan",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "tempahan QR"
+   ],
+   "other_language_term": "Booking link",
+   "definition": "Pautan tempahan ialah alamat web yang membawa tetamu terus ke halaman tempahan sesuatu lawatan atau aktiviti.",
+   "explanation": "Pengendali berkongsinya di Instagram, WhatsApp dan Google Business Profile, atau mencetaknya sebagai kod QR di kaunter atau risalah.",
+   "in_kong": {
+    "text": "Setiap produk Kong ada halaman tempahan sendiri yang boleh dikongsi sebagai pautan.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "direct-booking",
+    "booking-engine"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "pax",
+   "include": true,
+   "letter": "P",
+   "term": "Pax",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "per pax",
+    "seorang"
+   ],
+   "other_language_term": null,
+   "definition": "Pax bermaksud bilangan orang dalam satu tempahan, tanpa mengira umur.",
+   "explanation": "Tempahan \"4 pax\" ialah empat tetamu. Perkataan ini berasal daripada singkatan industri pelancongan dan penerbangan untuk penumpang, dan di Malaysia ia digunakan di mana-mana, daripada sebut harga lawatan hingga menu set restoran. Pengendali menetapkan pax minimum untuk sesuatu lawatan berjalan, pax maksimum bagi setiap sesi berdasarkan bot, kenderaan atau pemandu, dan selalunya harga berbeza bagi setiap jenis tetamu, seperti dewasa, kanak-kanak atau warga emas. Sebut harga kepada ejen dan kumpulan hampir selalu ditulis mengikut pax, dan tempat FOC juga dikira dalam pax. Apabila mengira pax untuk keselamatan, pengendali memasukkan bayi dan kanak-kanak walaupun mereka percuma, kerana mereka tetap memerlukan tempat duduk dan jaket keselamatan.",
+   "in_kong": {
+    "text": "Setiap produk Kong ada kapasiti, dan anda menetapkan harga untuk setiap jenis tetamu.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "minimum-pax",
+    "headcount",
+    "foc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "payout",
+   "include": true,
+   "letter": "P",
+   "term": "Payout (bayaran kepada pengendali)",
+   "category": "Pembayaran",
+   "also_called": [
+    "bayaran kepada pengendali"
+   ],
+   "other_language_term": "Payout",
+   "definition": "Payout ialah pemindahan wang daripada gerbang pembayaran atau OTA ke akaun bank pengendali.",
+   "explanation": "Gerbang membuat payout mengikut jadual, seperti setiap hari atau setiap minggu, selepas menolak caj mereka. OTA sering membayar setiap bulan, kadang-kadang hanya selepas lawatan berlangsung. Mengetahui bila setiap payout masuk membantu aliran tunai pada musim puncak, apabila kos seperti minyak dan gaji naik dahulu.",
+   "in_kong": null,
+   "see_also": [
+    "settlement-period",
+    "merchant-fee",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "pci-dss",
+   "include": true,
+   "letter": "P",
+   "term": "PCI DSS",
+   "category": "Pembayaran",
+   "also_called": [
+    "PCI compliance"
+   ],
+   "other_language_term": null,
+   "definition": "PCI DSS ialah standard keselamatan yang wajib dipatuhi setiap perniagaan yang menerima bayaran kad, untuk melindungi butiran kad.",
+   "explanation": "Pengendali yang menerima kad melalui halaman bayaran gerbang menyerahkan sebahagian besar tugas itu kepada gerbang pembayaran mereka.",
+   "in_kong": null,
+   "see_also": [
+    "payment-gateway",
+    "3d-secure"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "pdpa",
+   "include": true,
+   "letter": "P",
+   "term": "PDPA (Akta Perlindungan Data Peribadi)",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "pdpa maksud",
+    "Personal Data Protection Act"
+   ],
+   "other_language_term": "PDPA",
+   "definition": "PDPA (Akta Perlindungan Data Peribadi 2010) ialah undang-undang Malaysia tentang pengumpulan, penggunaan dan penyimpanan data peribadi dalam urusan komersial.",
+   "explanation": "Ia meliputi butiran tetamu yang dikumpul pengendali: nama, nombor telefon, nombor kad pengenalan pada borang penepian, dan nota kesihatan. Akta ini dipinda pada 2024, menambah kewajipan seperti melaporkan pelanggaran data. Pengendali perlu mengumpul hanya apa yang diperlukan, memberitahu tetamu sebabnya, menyimpannya dengan selamat, dan mendapatkan persetujuan sebelum menghantar mesej pemasaran.",
+   "in_kong": null,
+   "see_also": [
+    "booking-form",
+    "liability-waiver"
+   ],
+   "source": {
+    "name": "Personal Data Protection Department (JPDP)",
+    "url": "https://www.pdp.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "experiential-travel",
+   "include": false,
+   "letter": "P",
+   "term": "Pelancongan berasaskan pengalaman",
+   "category": "Jenis pelancongan",
+   "also_called": [],
+   "other_language_term": "Experiential travel",
+   "definition": "Pelancongan berasaskan pengalaman ialah pelancongan yang tertumpu pada melakukan dan menyertai, bukan sekadar bersiar-siar, seperti memasak bersama keluarga atau belajar kraf tangan.",
+   "explanation": "Aktiviti kecil yang praktikal sangat sesuai dengannya.",
+   "in_kong": null,
+   "see_also": [
+    "ecotourism",
+    "adventure-tourism"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "domestic-tourism",
+   "include": false,
+   "letter": "P",
+   "term": "Pelancongan domestik",
+   "category": "Jenis pelancongan",
+   "also_called": [],
+   "other_language_term": "Domestic tourism",
+   "definition": "Pelancongan domestik ialah penduduk yang melancong di dalam negara sendiri.",
+   "explanation": "Bagi ramai pengendali di Malaysia, tetamu tempatan pada hujung minggu dan cuti sekolah ialah teras perniagaan.",
+   "in_kong": null,
+   "see_also": [
+    "inbound-tourism",
+    "outbound-tourism"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "outbound-tourism",
+   "include": false,
+   "letter": "P",
+   "term": "Pelancongan keluar",
+   "category": "Jenis pelancongan",
+   "also_called": [],
+   "other_language_term": "Outbound tourism",
+   "definition": "Pelancongan keluar ialah penduduk sesebuah negara yang melancong ke luar negara.",
+   "explanation": "Di Malaysia, menjual perjalanan ke luar negara memerlukan kategori outbound dalam lesen TOBTAB.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "inbound-tourism"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "inbound-tourism",
+   "include": false,
+   "letter": "P",
+   "term": "Pelancongan masuk",
+   "category": "Jenis pelancongan",
+   "also_called": [],
+   "other_language_term": "Inbound tourism",
+   "definition": "Pelancongan masuk ialah pelawat dari negara lain yang melancong ke sesebuah negara.",
+   "explanation": "Bagi Malaysia, ini termasuk pelawat dari Singapura, Indonesia, China dan negara yang lebih jauh.",
+   "in_kong": null,
+   "see_also": [
+    "inbound-tour-operator",
+    "domestic-tourism"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "adventure-tourism",
+   "include": false,
+   "letter": "P",
+   "term": "Pelancongan pengembaraan",
+   "category": "Jenis pelancongan",
+   "also_called": [
+    "pelancongan lasak"
+   ],
+   "other_language_term": "Adventure tourism",
+   "definition": "Pelancongan pengembaraan ialah pelancongan berasaskan aktiviti fizikal dan sedikit risiko, seperti trekking, menyelam, arung jeram atau menunggang ATV.",
+   "explanation": "Ia datang dengan keperluan tambahan: pemandu terlatih, taklimat keselamatan, penepian dan insurans.",
+   "in_kong": null,
+   "see_also": [
+    "liability-waiver",
+    "safety-briefing",
+    "public-liability-insurance"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "release-of-liability",
+   "include": true,
+   "letter": "P",
+   "term": "Pelepasan liabiliti",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Release of liability",
+   "definition": "Pelepasan liabiliti ialah kenyataan di mana tetamu melepaskan hak untuk menuntut pengendali bagi risiko tertentu.",
+   "explanation": "Ia selalunya sebahagian daripada penepian liabiliti, dan kedua-dua istilah digunakan hampir sama. Tahap perlindungannya bergantung pada undang-undang tempatan dan kata-katanya, jadi pengendali mendapatkan nasihat undang-undang. Ia biasanya disertakan dengan penerangan risiko dan pengesahan tetamu bahawa mereka cukup sihat untuk menyertai.",
+   "in_kong": {
+    "text": "Penepian digital Kong boleh memuatkan kata-kata pelepasan anda, ditandatangani oleh setiap tetamu.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "liability-waiver",
+    "indemnity-form"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "ssm-registration",
+   "include": true,
+   "letter": "P",
+   "term": "Pendaftaran SSM",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "daftar SSM"
+   ],
+   "other_language_term": "SSM registration",
+   "definition": "Pendaftaran SSM ialah mendaftarkan perniagaan atau syarikat dengan Suruhanjaya Syarikat Malaysia.",
+   "explanation": "Ia langkah undang-undang pertama bagi kebanyakan perniagaan di Malaysia, sama ada sebagai pemilikan tunggal, perkongsian atau syarikat Sdn Bhd, walaupun pemilikan tunggal di Sabah dan Sarawak mengikut peraturan tempatan. Bagi pengendali pelancongan, jenisnya penting: lesen TOBTAB memerlukan syarikat Sdn Bhd berdaftar, jadi pemilikan tunggal tidak mencukupi.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "motac-licence"
+   ],
+   "source": {
+    "name": "Companies Commission of Malaysia (SSM)",
+    "url": "https://www.ssm.com.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "liability-waiver",
+   "include": true,
+   "letter": "P",
+   "term": "Penepian liabiliti",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "waiver",
+    "borang penepian"
+   ],
+   "other_language_term": "Liability waiver",
+   "definition": "Penepian liabiliti ialah dokumen yang ditandatangani tetamu sebelum aktiviti, menerima risikonya dan bersetuju tidak menyalahkan pengendali bagi kecederaan atau kerugian tertentu.",
+   "explanation": "Penepian adalah standard untuk aktiviti lasak seperti ATV, menyelam, arung jeram dan mendaki. Ia biasanya menerangkan risiko, mengesahkan tetamu cukup sihat untuk menyertai, dan merekodkan persetujuan bagi kanak-kanak yang ditandatangani ibu bapa atau penjaga. Penepian tidak melindungi segala-galanya: tahap perlindungannya bergantung pada undang-undang tempatan dan cara ia ditulis, jadi pengendali mendapatkan nasihat undang-undang untuk penepian mereka. Ia berfungsi bersama amalan keselamatan yang baik dan insurans liabiliti awam, bukan sebagai gantinya. Penepian digital, yang ditandatangani di telefon sebelum tiba, menjimatkan masa semasa daftar masuk dan menyimpan rekod dengan selamat serta mudah dicari jika ada tuntutan bertahun-tahun kemudian.",
+   "in_kong": {
+    "text": "Kong menyediakan penepian digital tanpa kos tambahan, dan tetamu boleh menandatanganinya sebelum tiba.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "release-of-liability",
+    "indemnity-form",
+    "public-liability-insurance"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "tour-operator",
+   "include": true,
+   "letter": "P",
+   "term": "Pengendali pelancongan",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "pengendali aktiviti"
+   ],
+   "other_language_term": "Tour operator",
+   "definition": "Pengendali pelancongan ialah perniagaan yang menjalankan lawatan atau aktiviti dan menjual tempat kepada tetamu.",
+   "explanation": "Pengendali memiliki pengalaman itu sendiri: laluan, pemandu, bot atau kenderaan. Ejen pelancongan dan OTA mungkin menjual lawatan tersebut, tetapi pengendali yang menjalankannya. Di Malaysia, perniagaan yang menganjurkan lawatan untuk dijual memerlukan lesen TOBTAB daripada MOTAC.",
+   "in_kong": null,
+   "see_also": [
+    "travel-agency",
+    "tobtab",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "inbound-tour-operator",
+   "include": true,
+   "letter": "P",
+   "term": "Pengendali pelancongan masuk",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "pengendali inbound"
+   ],
+   "other_language_term": "Inbound tour operator",
+   "definition": "Pengendali pelancongan masuk menjual lawatan di negaranya sendiri kepada pelawat dari luar negara, selalunya melalui ejen di luar negara.",
+   "explanation": "Pengendali outbound melakukan sebaliknya, menghantar pelancong tempatan ke luar negara. Di Malaysia, inbound juga salah satu kategori lesen TOBTAB.",
+   "in_kong": null,
+   "see_also": [
+    "dmc",
+    "tobtab",
+    "fit"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "instant-confirmation",
+   "include": true,
+   "letter": "P",
+   "term": "Pengesahan segera",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Instant confirmation",
+   "definition": "Pengesahan segera bermaksud tempahan disahkan sebaik sahaja tetamu membayar, tanpa menunggu kelulusan pengendali.",
+   "explanation": "Tetamu dan OTA semakin menjangkakannya. Ia hanya berfungsi jika ketersediaan dikemas kini secara langsung di setiap saluran.",
+   "in_kong": null,
+   "see_also": [
+    "availability",
+    "last-minute-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "revenue-management",
+   "include": true,
+   "letter": "P",
+   "term": "Pengurusan hasil",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": "Revenue management",
+   "definition": "Pengurusan hasil ialah menetapkan harga dan ketersediaan untuk memperoleh hasil paling banyak daripada bilangan tempat yang terhad.",
+   "explanation": "Bot dengan 12 tempat duduk tidak boleh menjual 13, dan tempat kosong hari ini tidak boleh dijual esok. Pengurusan hasil melihat corak tempahan, musim dan berapa awal tetamu menempah, untuk menentukan bila memberi diskaun, bila mengekalkan harga, dan saluran mana mendapat tempat yang mana.",
+   "in_kong": null,
+   "see_also": [
+    "yield-management",
+    "dynamic-pricing",
+    "load-factor"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "reseller",
+   "include": true,
+   "letter": "P",
+   "term": "Penjual semula",
+   "category": "Jualan dan pengedaran",
+   "also_called": [],
+   "other_language_term": "Reseller",
+   "definition": "Penjual semula ialah perniagaan yang menjual lawatan atau aktiviti pengendali lain kepada pelanggannya sendiri, seperti hotel, ejen pelancongan atau pengendali lain.",
+   "explanation": "Penjual semula biasanya membeli pada net rate dan menjual pada harga awam, atau mendapat komisen daripada harga awam. Rakan penjual semula yang baik membawa tempahan tetap tanpa kos OTA, terutamanya untuk lawatan sehari berhampiran hotel dan hab pengangkutan.",
+   "in_kong": {
+    "text": "Kong ada pasaran penjual semula di mana perniagaan lain boleh mencari dan menjual produk anda.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "net-rate",
+    "commission",
+    "affiliate-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "allocation",
+   "include": true,
+   "letter": "P",
+   "term": "Peruntukan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "allotment"
+   ],
+   "other_language_term": "Allocation",
+   "definition": "Peruntukan ialah bilangan tempat tertentu yang diasingkan untuk rakan atau saluran tertentu, seperti ejen atau OTA.",
+   "explanation": "Ia memberi keyakinan kepada rakan bahawa mereka sentiasa boleh menjual, tetapi tempat yang tidak terjual mungkin kosong melainkan ada tarikh pelepasan untuk ia kembali ke jualan umum. Ramai pengendali kini lebih suka ketersediaan langsung yang dikongsi berbanding peruntukan tetap.",
+   "in_kong": null,
+   "see_also": [
+    "inventory",
+    "availability",
+    "reseller"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "pic",
+   "include": true,
+   "letter": "P",
+   "term": "PIC (orang yang bertanggungjawab)",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "PIC",
+    "person in charge",
+    "ketua rombongan"
+   ],
+   "other_language_term": "PIC (person in charge)",
+   "definition": "PIC (orang yang bertanggungjawab) ialah individu yang bertanggungjawab ke atas tempahan kumpulan atau sesuatu tugasan.",
+   "explanation": "Istilah ini sangat biasa di Malaysia. Rombongan sekolah, lawatan syarikat atau kumpulan DMC akan menamakan seorang PIC yang mengesahkan jumlah peserta, menerima invois dan menjadi orang yang dihubungi pada hari lawatan. Pengendali selalunya menamakan PIC sendiri untuk kumpulan itu juga.",
+   "in_kong": null,
+   "see_also": [
+    "group-booking",
+    "mice",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "refund-policy",
+   "include": true,
+   "letter": "P",
+   "term": "Polisi bayaran balik",
+   "category": "Pembayaran",
+   "also_called": [
+    "polisi pemulangan wang"
+   ],
+   "other_language_term": "Refund policy",
+   "definition": "Polisi bayaran balik menetapkan bila tetamu mendapat semula wang mereka, berapa banyak, dan bagaimana.",
+   "explanation": "Ia biasanya sebahagian daripada polisi pembatalan: contohnya, bayaran balik penuh sehingga beberapa hari sebelum lawatan, bayaran balik separa selepas itu, dan tiada bayaran balik untuk yang tidak hadir. Syarat yang jelas, ditunjukkan sebelum bayaran, mengurangkan pertikaian dan chargeback. Ramai pengendali menawarkan kredit atau tukar tarikh percuma sebagai ganti wang tunai jika syarat membenarkan.",
+   "in_kong": null,
+   "see_also": [
+    "cancellation-policy",
+    "credit-note",
+    "chargeback"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "child-policy",
+   "include": true,
+   "letter": "P",
+   "term": "Polisi kanak-kanak",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Child policy",
+   "definition": "Polisi kanak-kanak menetapkan peraturan dan harga untuk kanak-kanak dalam sesuatu lawatan: umur minimum, kumpulan umur, harga, dan sama ada orang dewasa mesti mengiringi.",
+   "explanation": "Pengendali sering menetapkan harga kanak-kanak, tempat percuma untuk bayi, dan had keselamatan seperti ketinggian minimum atau kebolehan berenang. Menyatakan cara umur dikira, seperti umur pada hari lawatan, mengelakkan pertikaian semasa daftar masuk.",
+   "in_kong": {
+    "text": "Dalam Kong, anda menetapkan harga untuk setiap jenis tetamu, seperti kanak-kanak atau bayi, dan boleh bertanya umur dalam borang tempahan.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "infant",
+    "concession",
+    "pax"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "cancellation-policy",
+   "include": true,
+   "letter": "P",
+   "term": "Polisi pembatalan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "syarat pembatalan"
+   ],
+   "other_language_term": "Cancellation policy",
+   "definition": "Polisi pembatalan menetapkan apa yang berlaku jika tetamu membatalkan atau tidak hadir, dan apa yang berlaku jika pengendali membatalkan.",
+   "explanation": "Polisi biasa ada beberapa peringkat: bayaran balik penuh jika tetamu membatalkan jauh lebih awal, bayaran balik separa apabila hampir dengan tarikh, dan tiada bayaran balik untuk pembatalan lewat atau yang tidak hadir. Tempahan kumpulan dan sewa khas selalunya ada syarat lebih ketat, kerana pengendali menolak tetamu lain untuknya. Polisi juga perlu menyatakan apa yang berlaku apabila pengendali membatalkan, kerana cuaca atau tetamu tidak cukup, yang biasanya bermakna bayaran balik penuh atau tukar tarikh percuma. OTA sering menggunakan peraturan mereka sendiri untuk tempahan melalui mereka, jadi pengendali menyelaraskan polisi untuk mengelakkan kekeliruan. Polisi perlu ringkas, jelas dan ditunjukkan sebelum bayaran, bukan disorok dalam syarat. Polisi yang jelas mengurangkan pertikaian dan chargeback, kerana tetamu sudah bersetuju semasa menempah.",
+   "in_kong": null,
+   "see_also": [
+    "refund-policy",
+    "force-majeure",
+    "no-show"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "qtic",
+   "include": true,
+   "letter": "Q",
+   "term": "QTIC",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "Queensland Tourism Industry Council"
+   ],
+   "other_language_term": null,
+   "definition": "QTIC (Queensland Tourism Industry Council) ialah badan industri utama bagi perniagaan pelancongan di Queensland.",
+   "explanation": "Ia mewakili pengendali di hadapan kerajaan dan menjalankan latihan, anugerah dan program sokongan.",
+   "in_kong": null,
+   "see_also": [
+    "atdw",
+    "tourism-accreditation"
+   ],
+   "source": {
+    "name": "QTIC",
+    "url": "https://www.qtic.com.au",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "rack-rate",
+   "include": true,
+   "letter": "R",
+   "term": "Rack rate (harga penuh)",
+   "category": "Harga",
+   "also_called": [
+    "harga awam",
+    "retail rate"
+   ],
+   "other_language_term": "Rack rate",
+   "definition": "Rack rate (harga penuh) ialah harga awam penuh sesuatu lawatan, sebelum sebarang diskaun atau komisen.",
+   "explanation": "Ia harga di laman web pengendali sendiri dan biasanya harga yang tetamu lihat di OTA. Namanya berasal daripada hotel, di mana harga bilik standard dahulu dipamerkan pada rak di belakang kaunter hadapan. Semua harga lain dibina daripada rack rate. Harga berkomisen biasanya ialah rack rate, dengan komisen penjual dibayar daripadanya. Net rate pula ialah harga lebih rendah untuk penjual semula, yang menjual pada rack rate dan menyimpan bezanya. Menjaga satu rack rate yang jelas amat penting: jika tetamu mendapati lawatan anda lebih murah melalui penjual semula berbanding laman web anda sendiri, mereka akan menempah melalui penjual semula, dan anda membayar komisen untuk tetamu yang sepatutnya boleh menempah terus.",
+   "in_kong": null,
+   "see_also": [
+    "net-rate",
+    "commissionable-rate",
+    "rate-parity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "rain-check",
+   "include": true,
+   "letter": "R",
+   "term": "Rain check",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Rain check ialah janji bahawa tetamu boleh datang semula pada masa lain apabila lawatan dibatalkan, biasanya kerana cuaca.",
+   "explanation": "Ia sering ditawarkan sebagai ganti, atau sebagai tambahan kepada, bayaran balik.",
+   "in_kong": null,
+   "see_also": [
+    "force-majeure",
+    "reschedule",
+    "cancellation-policy"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "reserve-with-google",
+   "include": true,
+   "letter": "R",
+   "term": "Reserve with Google",
+   "category": "Jualan dan pengedaran",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Reserve with Google ialah ciri Google yang membolehkan orang menempah terus dari Google Search atau Maps, melalui rakan sistem tempahan yang disambungkan.",
+   "explanation": "Butang tempahan muncul pada senarai Google perniagaan itu. Ia hanya berfungsi jika sistem tempahan perniagaan tersebut ialah rakan Google bagi jenis perniagaan itu. Untuk lawatan dan aktiviti, produk utama Google ialah Google Things to Do.",
+   "in_kong": null,
+   "see_also": [
+    "google-things-to-do",
+    "direct-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "restech",
+   "include": true,
+   "letter": "R",
+   "term": "Restech",
+   "category": "Teknologi dan AI",
+   "also_called": [
+    "reservation technology",
+    "teknologi tempahan"
+   ],
+   "other_language_term": null,
+   "definition": "Restech, singkatan untuk teknologi tempahan (reservation technology), ialah perisian yang digunakan perniagaan untuk menerima, mengurus dan dibayar bagi tempahan.",
+   "explanation": "Dalam lawatan dan aktiviti, ia sistem di sebalik butang \"Tempah sekarang\": ketersediaan, bayaran, butiran tetamu, penepian dan sambungan ke OTA. Perkataan ini digunakan untuk kategori secara keseluruhan, seperti apabila pengendali membandingkan harga restech. Dalam industri restoran, perkataan yang sama juga digunakan untuk maksud teknologi restoran. Pengendali biasanya memilih restech berdasarkan empat perkara: kos bagi setiap tempahan, kaedah bayaran dan OTA yang disambungkan, betapa mudahnya kakitangan menggunakannya di telefon, dan sokongan yang diterima apabila berlaku masalah pada pagi yang sibuk. Menukar restech ialah kerja besar, kerana tempahan, sambungan OTA, akaun bayaran dan kebiasaan kakitangan semuanya berpindah serentak, jadi kebanyakan pengendali hanya menukar apabila sistem semasa mula merugikan tempahan atau masa.",
+   "in_kong": null,
+   "see_also": [
+    "booking-engine",
+    "mcp"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "restech-2-0",
+   "include": false,
+   "letter": "R",
+   "term": "Restech 2.0",
+   "category": "Teknologi dan AI",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "[REPLACE: ayat definisi daripada artikel Restech 2.0 Kong, selepas versi Inggeris dimuktamadkan]",
+   "explanation": "[REPLACE: penerangan daripada artikel Restech 2.0 Kong, selepas versi Inggeris dimuktamadkan]",
+   "in_kong": null,
+   "see_also": [
+    "restech",
+    "mcp"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "quotation",
+   "include": true,
+   "letter": "S",
+   "term": "Sebut harga",
+   "category": "Pembayaran",
+   "also_called": [
+    "quote"
+   ],
+   "other_language_term": "Quotation",
+   "definition": "Sebut harga ialah tawaran harga bertulis untuk tempahan tertentu, dihantar sebelum tetamu atau syarikat bersetuju membeli.",
+   "explanation": "Kumpulan syarikat, sekolah dan MICE biasanya memintanya sebelum apa-apa. Sebut harga yang baik menyenaraikan tarikh, pax, apa yang termasuk, harga seorang atau jumlah keseluruhan, syarat bayaran, dan berapa lama tawaran itu sah. Setelah diterima, ia biasanya menjadi invois proforma atau permintaan deposit.",
+   "in_kong": null,
+   "see_also": [
+    "proforma-invoice",
+    "mice",
+    "group-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "rooming-list",
+   "include": true,
+   "letter": "S",
+   "term": "Senarai bilik",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Rooming list",
+   "definition": "Senarai bilik menunjukkan tetamu mana berkongsi bilik hotel mana dalam perjalanan beberapa hari.",
+   "explanation": "Penganjur kumpulan menghantarnya kepada hotel sebelum ketibaan.",
+   "in_kong": null,
+   "see_also": [
+    "twin-sharing",
+    "group-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "waitlist",
+   "include": true,
+   "letter": "S",
+   "term": "Senarai menunggu",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Waitlist",
+   "definition": "Senarai menunggu ialah senarai tetamu yang mahukan lawatan yang sudah penuh, sekiranya ada tempat kosong.",
+   "explanation": "Apabila seseorang membatalkan, tetamu pertama dalam senarai ditawarkan tempat itu.",
+   "in_kong": null,
+   "see_also": [
+    "availability",
+    "capacity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "shopeepay",
+   "include": true,
+   "letter": "S",
+   "term": "ShopeePay",
+   "category": "Pembayaran",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "ShopeePay ialah e-dompet yang dipautkan kepada aplikasi beli-belah Shopee.",
+   "explanation": "Ia popular dalam kalangan tetamu muda di Malaysia yang sudah menggunakan Shopee.",
+   "in_kong": {
+    "text": "Pilihan Xendit dalam Kong menerima ShopeePay.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "ewallet",
+    "touch-n-go-ewallet"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "time-slot",
+   "include": true,
+   "letter": "S",
+   "term": "Slot masa",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "sesi"
+   ],
+   "other_language_term": "Time slot",
+   "definition": "Slot masa ialah masa mula tetap yang boleh ditempah tetamu, seperti 9 pagi atau 2 petang.",
+   "explanation": "Setiap slot masa biasanya ada kapasiti dan senarai tetamunya sendiri.",
+   "in_kong": {
+    "text": "Dalam Kong, setiap slot masa ialah sesi dengan kapasiti dan tempahannya sendiri.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "capacity",
+    "availability"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "sst",
+   "include": true,
+   "letter": "S",
+   "term": "SST (cukai jualan dan perkhidmatan)",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "cukai SST",
+    "cukai perkhidmatan"
+   ],
+   "other_language_term": "SST",
+   "definition": "SST (cukai jualan dan perkhidmatan) ialah cukai jualan ke atas barangan tertentu dan cukai perkhidmatan ke atas perkhidmatan tertentu di Malaysia, dikutip oleh Jabatan Kastam Diraja Malaysia.",
+   "explanation": "Sama ada perniagaan pelancongan perlu mengenakan cukai perkhidmatan bergantung pada apa yang disediakan dan jumlah pusing gantinya, dan senarai perkhidmatan bercukai telah diluaskan sejak beberapa tahun kebelakangan ini. Pengendali yang menggabungkan penginapan, makanan atau pengangkutan perlu menyemak bahagian mana yang bercukai. Perniagaan berdaftar menunjukkan SST secara berasingan pada invois. Ia tidak sama dengan caj perkhidmatan.",
+   "in_kong": null,
+   "see_also": [
+    "tourism-tax",
+    "e-invoice",
+    "service-charge"
+   ],
+   "source": {
+    "name": "Royal Malaysian Customs Department (MySST)",
+    "url": "https://mysst.customs.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "resources",
+   "include": true,
+   "letter": "S",
+   "term": "Sumber",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Resources",
+   "definition": "Sumber ialah perkara yang diperlukan sesuatu lawatan dan hanya boleh berada di satu tempat pada satu masa, seperti pemandu, bot, kenderaan dan peralatan.",
+   "explanation": "Dua lawatan berbeza mungkin berkongsi satu bot atau satu pemandu. Menjejak sumber, bukan hanya tempat duduk, menghalang dua sesi ditempah menggunakan bot yang sama, dan menunjukkan sesi mana yang masih belum ada pemandu.",
+   "in_kong": {
+    "text": "Kong menjejak sumber seperti bot, pemandu dan kenderaan, dan menandakan sesi yang kekurangan sumber.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "capacity",
+    "double-booking",
+    "time-slot"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "surcharge",
+   "include": true,
+   "letter": "S",
+   "term": "Surcaj",
+   "category": "Pembayaran",
+   "also_called": [
+    "surcaj kad kredit"
+   ],
+   "other_language_term": "Surcharge",
+   "definition": "Surcaj ialah caj tambahan pada harga, selalunya untuk menampung caj kad atau kos seperti minyak.",
+   "explanation": "Surcaj kad dikawal di Malaysia dan Australia, dan peraturannya berbeza mengikut negara dan jenis kad serta pernah berubah, jadi pengendali menyemak kedudukan terkini dengan penyedia pembayaran sebelum mengenakannya. Sebarang surcaj perlu ditunjukkan dengan jelas sebelum tetamu membayar.",
+   "in_kong": null,
+   "see_also": [
+    "merchant-fee",
+    "booking-fee",
+    "service-charge"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "safety-briefing",
+   "include": true,
+   "letter": "T",
+   "term": "Taklimat keselamatan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Safety briefing",
+   "definition": "Taklimat keselamatan ialah penerangan pemandu sebelum aktiviti: risiko, peraturan, peralatan dan apa yang perlu dilakukan semasa kecemasan.",
+   "explanation": "Ramai pengendali merekodkan bahawa taklimat telah diberi, bersama penepian yang ditandatangani.",
+   "in_kong": null,
+   "see_also": [
+    "liability-waiver",
+    "check-in"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "blackout-dates",
+   "include": true,
+   "letter": "T",
+   "term": "Tarikh blackout",
+   "category": "Harga",
+   "also_called": [
+    "tarikh sekatan"
+   ],
+   "other_language_term": "Blackout dates",
+   "definition": "Tarikh blackout ialah hari apabila diskaun, baucar atau tawaran tidak boleh digunakan, atau apabila lawatan tidak ditawarkan langsung.",
+   "explanation": "Pengendali biasanya menyekat cuti umum dan tarikh puncak daripada promosi, dan menutup tarikh untuk penyelenggaraan, cuaca atau sewa khas. Tarikh ini perlu jelas sebelum tetamu membayar, supaya mereka tidak terkejut semasa pembayaran.",
+   "in_kong": {
+    "text": "Dalam Kong, anda menutup tarikh dengan time block, dan tiada siapa boleh menempahnya.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "peak-season",
+    "gift-voucher",
+    "promo-code"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "affiliate-booking",
+   "include": true,
+   "letter": "T",
+   "term": "Tempahan affiliate",
+   "category": "Jualan dan pengedaran",
+   "also_called": [
+    "affiliate"
+   ],
+   "other_language_term": "Affiliate booking",
+   "definition": "Tempahan affiliate ialah tempahan yang dihantar kepada pengendali oleh rakan, seperti blogger, hotel atau laman web, yang mendapat komisen untuknya.",
+   "explanation": "Rakan tersebut berkongsi pautan yang dijejak atau menempah bagi pihak tetamu. Pengendali perlu tahu affiliate mana yang membawa setiap tempahan, supaya komisen yang betul dibayar pada hujung bulan.",
+   "in_kong": {
+    "text": "Kong merekodkan affiliate di sebalik setiap tempahan, jadi pengiraan komisen menjadi mudah.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "commission",
+    "reseller",
+    "concierge-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "overbooking",
+   "include": true,
+   "letter": "T",
+   "term": "Tempahan berlebihan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Overbooking",
+   "definition": "Tempahan berlebihan berlaku apabila lebih ramai tetamu ditempah untuk sesuatu sesi daripada yang boleh diterima.",
+   "explanation": "Syarikat penerbangan dan hotel kadang-kadang sengaja berbuat demikian. Untuk lawatan, ia biasanya tidak disengajakan: OTA dan laman web pengendali menjual tempat terakhir serentak, atau tempahan WhatsApp tidak dimasukkan tepat pada masanya. Ketersediaan langsung di setiap saluran ialah penyelesaiannya.",
+   "in_kong": null,
+   "see_also": [
+    "double-booking",
+    "availability",
+    "off-platform-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "double-booking",
+   "include": true,
+   "letter": "T",
+   "term": "Tempahan bertindih",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Double booking",
+   "definition": "Tempahan bertindih berlaku apabila tempat, bot, pemandu atau masa yang sama dijual dua kali.",
+   "explanation": "Ia biasanya berlaku apabila tempahan disimpan di lebih daripada satu tempat, seperti buku nota, chat WhatsApp dan laman web.",
+   "in_kong": null,
+   "see_also": [
+    "overbooking",
+    "resources"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "concierge-booking",
+   "include": true,
+   "letter": "T",
+   "term": "Tempahan concierge",
+   "category": "Jualan dan pengedaran",
+   "also_called": [],
+   "other_language_term": "Concierge booking",
+   "definition": "Tempahan concierge ialah tempahan yang dibuat oleh concierge atau kaunter hadapan hotel bagi pihak tetamu hotel.",
+   "explanation": "Hotel ialah sumber tempahan yang tetap untuk lawatan sehari dan aktiviti, terutamanya daripada tetamu yang membuat keputusan saat itu juga. Hotel biasanya mendapat komisen, dan tempahan memerlukan nama tetamu, hotel dan butiran pengambilan.",
+   "in_kong": {
+    "text": "Kong membolehkan rakan perniagaan menempah produk anda untuk tetamu mereka di bawah perjanjian concierge.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "affiliate-booking",
+    "commission",
+    "fam-trip"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "booking-vs-reservation",
+   "include": true,
+   "letter": "T",
+   "term": "Tempahan dan reservasi",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Booking vs reservation",
+   "definition": "Tempahan dan reservasi membawa maksud yang sama untuk kebanyakan lawatan: tempat tetamu yang disimpan untuk tarikh dan masa tertentu.",
+   "explanation": "Sesetengah perniagaan menggunakan reservasi untuk tempahan yang belum dibayar dan tempahan setelah dibayar, jadi nyatakan maksud anda.",
+   "in_kong": null,
+   "see_also": [
+    "deposit",
+    "instant-confirmation"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "group-booking",
+   "include": true,
+   "letter": "T",
+   "term": "Tempahan kumpulan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "tempahan rombongan"
+   ],
+   "other_language_term": "Group booking",
+   "definition": "Tempahan kumpulan ialah satu tempahan untuk beberapa tetamu yang melancong bersama, selalunya diatur oleh seorang individu, syarikat atau ejen.",
+   "explanation": "Kumpulan sering mahukan sebut harga, harga kumpulan, sesi persendirian atau masa tetap, dan membayar deposit diikuti baki. Seorang PIC mengurus perubahan, dan jumlah akhir biasanya disahkan beberapa hari sebelum lawatan.",
+   "in_kong": null,
+   "see_also": [
+    "pic",
+    "quotation",
+    "group-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "off-platform-booking",
+   "include": true,
+   "letter": "T",
+   "term": "Tempahan luar platform",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "tempahan manual"
+   ],
+   "other_language_term": "Off-platform booking",
+   "definition": "Tempahan luar platform ialah tempahan yang diambil di luar sistem tempahan dalam talian, seperti melalui telefon, WhatsApp, walk-in atau rakan, dan dimasukkan secara manual.",
+   "explanation": "Ramai pengendali di Malaysia menerima kebanyakan tempahan melalui WhatsApp. Memasukkan setiap tempahan ke dalam satu sistem, walau dari mana pun ia datang, memastikan ketersediaan tepat dan menghalang dua orang menjual tempat yang sama.",
+   "in_kong": {
+    "text": "Kong membolehkan anda menambah tempahan telefon, WhatsApp dan walk-in ke dalam kalendar yang sama dengan tempahan dalam talian.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "walk-in",
+    "double-booking",
+    "payment-link"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "last-minute-booking",
+   "include": true,
+   "letter": "T",
+   "term": "Tempahan saat akhir",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": "Last-minute booking",
+   "definition": "Tempahan saat akhir ialah tempahan yang dibuat sejurus sebelum lawatan bermula, selalunya pada hari yang sama atau sehari sebelumnya.",
+   "explanation": "Pelancong yang sedang bercuti kerap menempah begini, biasanya melalui telefon. Masa tutup tempahan menghalang tempahan yang terlalu lewat untuk disediakan.",
+   "in_kong": null,
+   "see_also": [
+    "cut-off-time",
+    "instant-confirmation",
+    "fit"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "direct-booking",
+   "include": true,
+   "letter": "T",
+   "term": "Tempahan terus",
+   "category": "Jualan dan pengedaran",
+   "also_called": [],
+   "other_language_term": "Direct booking",
+   "definition": "Tempahan terus ialah tempahan yang dibuat tetamu dengan pengendali sendiri, melalui laman web, telefon, WhatsApp atau kaunter, tanpa OTA atau ejen di tengah.",
+   "explanation": "Tiada komisen dibayar, pengendali menyimpan butiran hubungan tetamu dan boleh menjemput mereka kembali. Tempahan terus biasanya paling menguntungkan bagi setiap tetamu, sebab itu pengendali berusaha menambahnya melalui laman web yang baik, Google Business Profile yang dikemas kini dan tetamu berulang.",
+   "in_kong": {
+    "text": "Kong menyediakan halaman tempahan dan widget untuk laman web anda sendiri, supaya tetamu boleh menempah dan membayar terus kepada anda.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "ota",
+    "booking-engine",
+    "commission"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "meeting-point",
+   "include": true,
+   "letter": "T",
+   "term": "Tempat berkumpul",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Meeting point",
+   "definition": "Tempat berkumpul ialah lokasi tepat di mana tetamu berkumpul sebelum lawatan bermula.",
+   "explanation": "Pin Google Maps, gambar dan mercu tanda berdekatan membantu tetamu tiba tepat pada masanya.",
+   "in_kong": null,
+   "see_also": [
+    "transfer",
+    "check-in"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "settlement-period",
+   "include": true,
+   "letter": "T",
+   "term": "Tempoh penyelesaian",
+   "category": "Pembayaran",
+   "also_called": [],
+   "other_language_term": "Settlement period",
+   "definition": "Tempoh penyelesaian ialah masa antara tetamu membayar dan wang sampai ke akaun bank pengendali.",
+   "explanation": "Ia berbeza mengikut gerbang dan kaedah bayaran, dan boleh lebih lama untuk akaun baharu.",
+   "in_kong": null,
+   "see_also": [
+    "payout"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "booking-window",
+   "include": true,
+   "letter": "T",
+   "term": "Tempoh tempahan",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "lead time"
+   ],
+   "other_language_term": "Booking window",
+   "definition": "Tempoh tempahan ialah berapa jauh lebih awal tetamu boleh menempah sesuatu lawatan, dari tarikh paling jauh yang dibuka hingga masa tutup tempahan.",
+   "explanation": "Ia juga digunakan untuk maksud berapa awal tetamu biasanya menempah, yang membantu penetapan harga dan perancangan kakitangan.",
+   "in_kong": null,
+   "see_also": [
+    "cut-off-time",
+    "early-bird-discount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "terms-and-conditions",
+   "include": true,
+   "letter": "T",
+   "term": "Terma dan syarat",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "T&C",
+    "syarat tempahan"
+   ],
+   "other_language_term": "Terms and conditions",
+   "definition": "Terma dan syarat ialah peraturan yang dipersetujui tetamu semasa menempah: bayaran, pembatalan, keselamatan, tingkah laku dan liabiliti.",
+   "explanation": "Tetamu perlu melihat dan menerimanya sebelum membayar. Inilah yang menjadi sandaran pengendali dalam pertikaian atau chargeback, jadi ia perlu sepadan dengan amalan sebenar dan mudah dibaca. Kebanyakan pengendali menyimpan satu halaman terma di laman web mereka dan memautkannya dalam setiap e-mel pengesahan, serta meletakkan tarikh pada setiap versi supaya tahu terma mana yang dipersetujui tetamu.",
+   "in_kong": null,
+   "see_also": [
+    "cancellation-policy",
+    "liability-waiver",
+    "chargeback"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "inclusions-and-exclusions",
+   "include": true,
+   "letter": "T",
+   "term": "Termasuk dan tidak termasuk",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": "Inclusions and exclusions",
+   "definition": "Termasuk dan tidak termasuk menyenaraikan apa yang dilindungi harga dan apa yang tidak, seperti pengangkutan, makanan, tiket masuk dan peralatan.",
+   "explanation": "Senarai yang jelas mengurangkan soalan sebelum menempah dan aduan selepasnya.",
+   "in_kong": null,
+   "see_also": [
+    "itinerary",
+    "add-ons"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "gratuity",
+   "include": true,
+   "letter": "T",
+   "term": "Tip",
+   "category": "Pembayaran",
+   "also_called": [
+    "tipping"
+   ],
+   "other_language_term": "Gratuity",
+   "definition": "Tip ialah wang yang dipilih tetamu untuk diberi kepada pemandu pelancong atau kru di atas harga lawatan.",
+   "explanation": "Kebiasaan memberi tip berbeza mengikut negara. Tetamu Malaysia tidak selalu memberi tip, manakala ramai pelawat dari Amerika Utara memang menjangkakannya. Jika tip sudah termasuk dalam harga, nyatakannya supaya tetamu tidak memberi dua kali. Pengendali yang mengumpul tip perlu menerangkan kepada kakitangan cara ia dibahagikan, dan sesetengah sistem tempahan membenarkan tetamu menambah tip semasa atau selepas lawatan.",
+   "in_kong": null,
+   "see_also": [
+    "service-charge"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "tobtab",
+   "include": true,
+   "letter": "T",
+   "term": "TOBTAB",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "lesen TOBTAB",
+    "lesen agensi pelancongan"
+   ],
+   "other_language_term": null,
+   "definition": "TOBTAB (Perniagaan Pengendalian Pelancongan dan Agensi Pelancongan) ialah lesen yang diperlukan pengendali pelancongan dan agensi pelancongan di Malaysia daripada MOTAC di bawah Akta Industri Pelancongan 1992.",
+   "explanation": "Ia ada tiga kategori utama: inbound (lawatan dalam Malaysia, termasuk untuk pelawat luar negara), outbound (membawa rakyat Malaysia ke luar negara) dan tiket (menjual tiket penerbangan). Sesebuah perniagaan boleh memegang satu kategori atau gabungan, dan ada juga yang memegang kategori Umrah. Setiap lesen ada nombor dan tempoh sah, dan sesiapa sahaja boleh menyemak syarikat dalam senarai TOBTAB awam MOTAC. Ini berguna dari kedua-dua pihak: tetamu, DMC dan OTA mungkin meminta nombor lesen anda, dan anda boleh menyemak sama ada agensi rakan berlesen sebelum bekerjasama. Mendapatkan lesen TOBTAB biasanya memerlukan syarikat Sdn Bhd, premis komersial, kursus TTMC, dan keahlian persatuan pelancongan yang diiktiraf.",
+   "in_kong": null,
+   "see_also": [
+    "motac-licence",
+    "inbound-tour-operator",
+    "ssm-registration"
+   ],
+   "source": {
+    "name": "MOTAC TOBTAB licence list",
+    "url": "https://www.motac.gov.my/en/check/tobtab",
+    "checked": "September 2026"
+   },
+   "read_more": {
+    "text": "Lesen TOBTAB diterangkan (dalam Bahasa Inggeris)",
+    "url": "https://bookwithkong.com/blog/tobtab-licence-explained"
+   },
+   "tier": "L"
+  },
+  {
+   "id": "touch-n-go-ewallet",
+   "include": true,
+   "letter": "T",
+   "term": "Touch 'n Go eWallet",
+   "category": "Pembayaran",
+   "also_called": [
+    "TNG",
+    "TnG eWallet",
+    "Touch n Go"
+   ],
+   "other_language_term": null,
+   "definition": "Touch 'n Go eWallet ialah antara aplikasi e-dompet yang paling banyak digunakan di Malaysia.",
+   "explanation": "Ramai tetamu tempatan lebih suka menggunakannya berbanding kad, terutamanya untuk jumlah kecil dan tempahan saat akhir.",
+   "in_kong": {
+    "text": "Pilihan Xendit dalam Kong menerima Touch 'n Go.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "ewallet",
+    "grabpay",
+    "shopeepay"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "tourism-australia",
+   "include": true,
+   "letter": "T",
+   "term": "Tourism Australia",
+   "category": "Peraturan dan lesen",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Tourism Australia ialah agensi Kerajaan Australia yang mempromosikan Australia kepada pelawat antarabangsa.",
+   "explanation": "Ia mengendalikan Australia.com dan acara dagangan yang menghubungkan pengendali dengan pembeli dari luar negara.",
+   "in_kong": null,
+   "see_also": [
+    "atdw",
+    "qtic"
+   ],
+   "source": {
+    "name": "Tourism Australia",
+    "url": "https://www.tourism.australia.com",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "tourism-malaysia",
+   "include": true,
+   "letter": "T",
+   "term": "Tourism Malaysia",
+   "category": "Peraturan dan lesen",
+   "also_called": [
+    "Lembaga Penggalakan Pelancongan Malaysia"
+   ],
+   "other_language_term": null,
+   "definition": "Tourism Malaysia (Lembaga Penggalakan Pelancongan Malaysia) ialah agensi kerajaan yang mempromosikan Malaysia sebagai destinasi, di dalam dan luar negara.",
+   "explanation": "Ia di bawah MOTAC dan menjalankan kempen kebangsaan seperti Tahun Melawat Malaysia.",
+   "in_kong": null,
+   "see_also": [
+    "motac-licence"
+   ],
+   "source": {
+    "name": "Tourism Malaysia",
+    "url": "https://www.tourism.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "transfer",
+   "include": true,
+   "letter": "T",
+   "term": "Transfer (pengangkutan)",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "pengangkutan",
+    "pengambilan dari hotel",
+    "airport transfer"
+   ],
+   "other_language_term": "Transfer",
+   "definition": "Transfer ialah pengangkutan antara dua tempat dalam perjalanan, seperti dari hotel atau lapangan terbang ke tempat mula lawatan.",
+   "explanation": "Pengendali menyatakan sama ada transfer termasuk, dan dari kawasan mana.",
+   "in_kong": null,
+   "see_also": [
+    "add-ons",
+    "meeting-point"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "reschedule",
+   "include": true,
+   "letter": "T",
+   "term": "Tukar tarikh",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [
+    "pinda tempahan"
+   ],
+   "other_language_term": "Reschedule",
+   "definition": "Tukar tarikh bermaksud memindahkan tempahan ke tarikh atau masa lain.",
+   "explanation": "Kebanyakan pengendali membenarkannya secara percuma sehingga tempoh tertentu sebelum lawatan, dan menyatakannya dalam syarat.",
+   "in_kong": {
+    "text": "Dalam Kong, anda boleh memindahkan tempahan ke sesi lain.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "cancellation-policy",
+    "rain-check"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "twin-sharing",
+   "include": true,
+   "letter": "T",
+   "term": "Twin sharing (bilik berkongsi)",
+   "category": "Harga",
+   "also_called": [
+    "bilik berkongsi",
+    "single supplement"
+   ],
+   "other_language_term": "Twin sharing",
+   "definition": "Twin sharing bermaksud harga pakej seorang berdasarkan dua orang berkongsi satu bilik.",
+   "explanation": "Tetamu yang melancong seorang diri biasanya membayar single supplement untuk menggunakan bilik itu sendirian.",
+   "in_kong": null,
+   "see_also": [
+    "tour-package",
+    "rooming-list"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "upselling",
+   "include": true,
+   "letter": "U",
+   "term": "Upsell",
+   "category": "Harga",
+   "also_called": [
+    "jualan tambahan"
+   ],
+   "other_language_term": "Upselling",
+   "definition": "Upsell bermaksud menawarkan sesuatu tambahan kepada tetamu, atau versi yang lebih baik daripada apa yang ditempah, seperti bot persendirian atau pakej gambar.",
+   "explanation": "Jika ditawarkan semasa pembayaran, dalam e-mel pengesahan atau pada hari lawatan, ia menambah pendapatan setiap tetamu tanpa perlu mencari tetamu baharu. Ia paling berkesan apabila tambahan itu benar-benar berguna, seperti pengangkutan, sewa peralatan atau sesi yang lebih panjang.",
+   "in_kong": null,
+   "see_also": [
+    "add-ons"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "walk-in",
+   "include": true,
+   "letter": "W",
+   "term": "Walk-in",
+   "category": "Tempahan dan operasi harian",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Walk-in ialah tetamu yang datang dan menempah di tempat, tanpa menempah lebih awal.",
+   "explanation": "Merekodkan walk-in dalam sistem yang sama dengan tempahan dalam talian memastikan headcount dan baki kapasiti tepat.",
+   "in_kong": null,
+   "see_also": [
+    "off-platform-booking",
+    "capacity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "booking-widget",
+   "include": true,
+   "letter": "W",
+   "term": "Widget tempahan",
+   "category": "Jualan dan pengedaran",
+   "also_called": [],
+   "other_language_term": "Booking widget",
+   "definition": "Widget tempahan ialah kod kecil yang memasukkan enjin tempahan ke dalam laman web pengendali sendiri.",
+   "explanation": "Tetamu memilih tarikh dan membayar tanpa meninggalkan laman pengendali, jadi jenama kekal di depan mata dan biasanya lebih ramai yang menyelesaikan tempahan.",
+   "in_kong": {
+    "text": "Kong menyediakan widget tempahan yang boleh dipasang di laman web anda.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "booking-engine",
+    "direct-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "yield-management",
+   "include": true,
+   "letter": "Y",
+   "term": "Yield management",
+   "category": "Harga",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Yield management ialah nama lama untuk pengurusan hasil, mula digunakan oleh syarikat penerbangan untuk memperoleh hasil paling banyak daripada setiap penerbangan.",
+   "explanation": "Bagi pengendali pelancongan, kedua-dua istilah membawa maksud yang sama.",
+   "in_kong": null,
+   "see_also": [
+    "revenue-management",
+    "dynamic-pricing"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "booking-fee",
+   "include": true,
+   "letter": "Y",
+   "term": "Yuran tempahan",
+   "category": "Harga",
+   "also_called": [
+    "caj pemprosesan",
+    "processing fee"
+   ],
+   "other_language_term": "Booking fee",
+   "definition": "Yuran tempahan ialah caj yang ditambah apabila tetamu menempah dalam talian, dibayar di atas harga lawatan.",
+   "explanation": "Sesetengah sistem tempahan mengenakannya kepada tetamu, bukan pengendali. Ia mesti ditunjukkan sebelum bayaran.",
+   "in_kong": null,
+   "see_also": [
+    "surcharge",
+    "merchant-fee"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  }
+ ]
+}
