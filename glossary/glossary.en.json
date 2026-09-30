@@ -1,0 +1,3271 @@
+{
+ "page": {
+  "language": "en",
+  "url": "https://bookwithkong.com/glossary",
+  "alternate_url": "https://bookwithkong.com/ms/glosari",
+  "title": "Tour Operator Glossary: {n} Terms Explained (2026) | Kong",
+  "meta_description": "Plain definitions of {n} terms tour and activity operators use, from pax and FOC to TOBTAB, e-invoicing and ATDW, for Malaysia and Australia.",
+  "h1": "Tour and activity glossary",
+  "answer_paragraph": "Plain definitions of {n} words tour and activity operators run into every day, from pax, FOC and net rates to TOBTAB licences, e-invoicing and ATDW listings. Each entry gives a one-line definition and a real tour example, with extra detail for operators in Malaysia and Australia.",
+  "byline": "Written by Blake Ng. Six years in tour booking software at Rezdy. [DRAFT: Blake to confirm wording]",
+  "date_published": "2026-09-30",
+  "date_modified": "2026-09-30",
+  "cta_band_heading": "Ready to take bookings online?",
+  "cta_band_text": "Kong is booking software built for tour and activity operators.",
+  "note": "{n} is filled in by the page from the number of entries with include: true."
+ },
+ "entries": [
+  {
+   "id": "3d-secure",
+   "include": true,
+   "letter": "0-9",
+   "term": "3D Secure",
+   "category": "Payments",
+   "also_called": [
+    "3DS"
+   ],
+   "other_language_term": null,
+   "definition": "3D Secure is an extra check during an online card payment, such as a code sent to the guest's phone or a prompt in their banking app.",
+   "explanation": "It cuts card fraud and, in many cases, moves the cost of fraud chargebacks away from the business.",
+   "in_kong": null,
+   "see_also": [
+    "chargeback",
+    "pci-dss"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "abandoned-cart",
+   "include": true,
+   "letter": "A",
+   "term": "Abandoned cart",
+   "category": "Payments",
+   "also_called": [
+    "abandoned booking"
+   ],
+   "other_language_term": null,
+   "definition": "An abandoned cart is a booking a guest starts online but doesn't finish.",
+   "explanation": "Common causes are a surprise fee, a missing payment method, or a slow booking page on a phone. Some booking systems send a reminder email.",
+   "in_kong": null,
+   "see_also": [
+    "booking-form",
+    "booking-fee",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "add-ons",
+   "include": true,
+   "letter": "A",
+   "term": "Add-ons",
+   "category": "Pricing",
+   "also_called": [
+    "extras"
+   ],
+   "other_language_term": "tambahan",
+   "definition": "Add-ons are optional extras a guest can buy with a booking, such as hotel pickup, equipment hire, meals or photos.",
+   "explanation": "They're offered during checkout or after booking, and each one is priced separately from the tour.",
+   "in_kong": null,
+   "see_also": [
+    "upselling",
+    "transfer"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "adventure-tourism",
+   "include": false,
+   "letter": "A",
+   "term": "Adventure tourism",
+   "category": "Types of tourism",
+   "also_called": [],
+   "other_language_term": "pelancongan pengembaraan",
+   "definition": "Adventure tourism is travel built around physical activity and some risk, such as trekking, diving, rafting or ATV riding.",
+   "explanation": "It comes with extra needs: trained guides, safety briefings, waivers and insurance.",
+   "in_kong": null,
+   "see_also": [
+    "liability-waiver",
+    "safety-briefing",
+    "public-liability-insurance"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "affiliate-booking",
+   "include": true,
+   "letter": "A",
+   "term": "Affiliate booking",
+   "category": "Selling and distribution",
+   "also_called": [
+    "affiliate"
+   ],
+   "other_language_term": "tempahan affiliate",
+   "definition": "An affiliate booking is a booking sent to an operator by a partner, such as a blogger, hotel or website, who earns a commission for it.",
+   "explanation": "The partner shares a tracked link or books on the guest's behalf. The operator needs to know which affiliate each booking came from, so the right commission gets paid at the end of the month.",
+   "in_kong": {
+    "text": "Kong records the affiliate behind each booking, so working out commission is simple.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "commission",
+    "reseller",
+    "concierge-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "allocation",
+   "include": true,
+   "letter": "A",
+   "term": "Allocation",
+   "category": "Bookings and the day",
+   "also_called": [
+    "allotment",
+    "block"
+   ],
+   "other_language_term": "peruntukan",
+   "definition": "An allocation is a set number of places kept aside for a particular partner or channel, such as an agent or OTA.",
+   "explanation": "It gives the partner confidence it can always sell, but places it doesn't sell can go empty unless there's a release date when they return to general sale. Many operators now prefer shared live availability to fixed allocations.",
+   "in_kong": null,
+   "see_also": [
+    "inventory",
+    "availability",
+    "reseller"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "atdw",
+   "include": true,
+   "letter": "A",
+   "term": "ATDW",
+   "category": "Rules and licences",
+   "also_called": [
+    "Australian Tourism Data Warehouse",
+    "ATDW listing"
+   ],
+   "other_language_term": null,
+   "definition": "ATDW (the Australian Tourism Data Warehouse) is Australia's national database of tourism listings, which shares operators' details with state tourism websites, Tourism Australia and other partners.",
+   "explanation": "An operator creates one listing, with descriptions, photos, prices and booking links, and ATDW sends it out to many websites, including each state's official tourism site and Australia.com. For a small operator, it's one of the simplest ways to appear on the sites visitors and trade buyers actually use when planning. Listings are managed through ATDW's online portal, and state tourism bodies check new listings. Keeping the listing current matters: an old price or a dead booking link looks bad on an official site. Some state tourism bodies also run campaigns open only to operators with an ATDW listing. Operators outside Australia can't list, but Australian partners of Malaysian operators, such as inbound agents, may ask whether a product is on ATDW before including it in their programmes.",
+   "in_kong": null,
+   "see_also": [
+    "tourism-australia",
+    "qtic"
+   ],
+   "source": {
+    "name": "ATDW",
+    "url": "https://www.atdw.com.au",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "atec",
+   "include": false,
+   "letter": "A",
+   "term": "ATEC",
+   "category": "Rules and licences",
+   "also_called": [
+    "Australian Tourism Export Council"
+   ],
+   "other_language_term": null,
+   "definition": "ATEC (the Australian Tourism Export Council) is the peak body for Australian tourism businesses that sell to international visitors and the travel trade.",
+   "explanation": "It also runs the Quality Tourism Framework used for tourism accreditation.",
+   "in_kong": null,
+   "see_also": [
+    "tourism-accreditation",
+    "tourism-australia"
+   ],
+   "source": {
+    "name": "ATEC",
+    "url": "https://www.atec.net.au",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "atome",
+   "include": true,
+   "letter": "A",
+   "term": "Atome",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Atome is a buy now pay later provider in Southeast Asia that lets shoppers split a payment into instalments.",
+   "explanation": "The business is paid upfront, and Atome collects the instalments from the shopper.",
+   "in_kong": null,
+   "see_also": [
+    "buy-now-pay-later"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "availability",
+   "include": true,
+   "letter": "A",
+   "term": "Availability",
+   "category": "Bookings and the day",
+   "also_called": [
+    "live availability",
+    "real-time availability"
+   ],
+   "other_language_term": "ketersediaan",
+   "definition": "Availability is the number of places still open to book for a particular date and time.",
+   "explanation": "It changes every time someone books or cancels, on any channel. Showing live availability everywhere, on the operator's own website and on each OTA, is what prevents overbooking. Guests read it as a signal too: a session with two places left gets booked faster.",
+   "in_kong": {
+    "text": "Kong shows live availability for every session on your booking page and widget.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "capacity",
+    "inventory",
+    "overbooking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "balance-payment",
+   "include": true,
+   "letter": "B",
+   "term": "Balance payment",
+   "category": "Payments",
+   "also_called": [
+    "balance",
+    "final payment"
+   ],
+   "other_language_term": "baki bayaran",
+   "definition": "The balance payment is the rest of the price, paid after the deposit, usually by a set date before the tour.",
+   "explanation": "Operators send a reminder or a payment link before it's due, and state in the terms what happens if it isn't paid.",
+   "in_kong": {
+    "text": "In Kong, you record the balance when it's paid and mark the booking fully paid.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "deposit",
+    "payment-link"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "blackout-dates",
+   "include": true,
+   "letter": "B",
+   "term": "Blackout dates",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "tarikh blackout",
+   "definition": "Blackout dates are days when a discount, voucher or deal can't be used, or when a tour isn't available at all.",
+   "explanation": "Operators usually black out public holidays and peak dates from promotions, and close dates for maintenance, weather or private charters. The dates should be clear before the guest pays, so they don't find out at checkout.",
+   "in_kong": {
+    "text": "In Kong, you close dates with a time block, and no one can book them.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "peak-season",
+    "gift-voucher",
+    "promo-code"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "booking-engine",
+   "include": true,
+   "letter": "B",
+   "term": "Booking engine",
+   "category": "Selling and distribution",
+   "also_called": [
+    "online booking system",
+    "booking system"
+   ],
+   "other_language_term": "enjin tempahan",
+   "definition": "A booking engine is the software that lets guests pick a date, see what's available, and book and pay online.",
+   "explanation": "It's the part of a booking system guests see. Behind it, the operator's side handles the calendar, payments and guest details. A good booking engine works well on phones, shows live availability and takes payment in the method the guest prefers.",
+   "in_kong": {
+    "text": "Kong's booking engine runs on your Kong booking page and inside your own website through the widget.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "booking-widget",
+    "availability",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "booking-fee",
+   "include": true,
+   "letter": "B",
+   "term": "Booking fee",
+   "category": "Pricing",
+   "also_called": [
+    "processing fee",
+    "convenience fee"
+   ],
+   "other_language_term": "yuran tempahan",
+   "definition": "A booking fee is a charge added when a guest books online, paid on top of the tour price.",
+   "explanation": "Some booking systems charge it to the guest instead of the operator. It must be shown before payment.",
+   "in_kong": null,
+   "see_also": [
+    "surcharge",
+    "merchant-fee"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "booking-form",
+   "include": true,
+   "letter": "B",
+   "term": "Booking form",
+   "category": "Bookings and the day",
+   "also_called": [
+    "custom fields",
+    "booking questions"
+   ],
+   "other_language_term": "borang tempahan",
+   "definition": "A booking form is the set of questions a guest answers when booking, from names and contact details to anything the operator needs to know.",
+   "explanation": "Good forms ask only what's needed: dietary needs, the hotel for pickup, weight or height for safety limits, or swimming ability. Long forms lose bookings, especially on phones. Questions the operator only needs later, like T-shirt sizes for a team event, can be collected after booking by email instead. Anything personal, such as health details or ID numbers, should be asked for only when it's genuinely needed.",
+   "in_kong": {
+    "text": "In Kong, you can add your own questions to the booking form for each product.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "abandoned-cart",
+    "child-policy",
+    "pdpa"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "booking-link",
+   "include": true,
+   "letter": "B",
+   "term": "Booking link",
+   "category": "Selling and distribution",
+   "also_called": [
+    "QR booking"
+   ],
+   "other_language_term": "pautan tempahan",
+   "definition": "A booking link is a web address that takes a guest straight to the booking page for a tour or activity.",
+   "explanation": "Operators share it on Instagram, WhatsApp and their Google Business Profile, or print it as a QR code at the counter or on flyers.",
+   "in_kong": {
+    "text": "Each Kong product has its own booking page you can share as a link.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "direct-booking",
+    "booking-engine"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "booking-reference",
+   "include": true,
+   "letter": "B",
+   "term": "Booking reference",
+   "category": "Bookings and the day",
+   "also_called": [
+    "booking number",
+    "confirmation number"
+   ],
+   "other_language_term": "nombor rujukan tempahan",
+   "definition": "A booking reference is the unique code given to each booking, used to find it quickly.",
+   "explanation": "Guests quote it when changing a booking, and operators use it at check-in and in any dispute.",
+   "in_kong": null,
+   "see_also": [
+    "check-in",
+    "manifest"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "booking-vs-reservation",
+   "include": true,
+   "letter": "B",
+   "term": "Booking vs reservation",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "tempahan dan reservasi",
+   "definition": "A booking and a reservation mean the same thing for most tours: a guest's place held for a date and time.",
+   "explanation": "Some businesses use reservation for an unpaid hold and booking once it's paid, so it's worth saying which you mean.",
+   "in_kong": null,
+   "see_also": [
+    "deposit",
+    "instant-confirmation"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "booking-widget",
+   "include": true,
+   "letter": "B",
+   "term": "Booking widget",
+   "category": "Selling and distribution",
+   "also_called": [],
+   "other_language_term": "widget tempahan",
+   "definition": "A booking widget is a small piece of code that puts a booking engine inside an operator's own website.",
+   "explanation": "Guests choose a date and pay without leaving the operator's site, which keeps the brand in front of them and usually converts better than sending them elsewhere.",
+   "in_kong": {
+    "text": "Kong includes an embeddable booking widget for your website.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "booking-engine",
+    "direct-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "booking-window",
+   "include": true,
+   "letter": "B",
+   "term": "Booking window",
+   "category": "Bookings and the day",
+   "also_called": [
+    "lead time"
+   ],
+   "other_language_term": "tempoh tempahan",
+   "definition": "The booking window is how far ahead guests can book a tour, from the furthest date open for sale to the cut-off time.",
+   "explanation": "It's also used to mean how far ahead guests typically book, which helps with pricing and staffing.",
+   "in_kong": null,
+   "see_also": [
+    "cut-off-time",
+    "early-bird-discount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "buy-now-pay-later",
+   "include": true,
+   "letter": "B",
+   "term": "Buy now pay later",
+   "category": "Payments",
+   "also_called": [
+    "BNPL",
+    "instalment payment"
+   ],
+   "other_language_term": "beli sekarang bayar kemudian",
+   "definition": "Buy now pay later (BNPL) lets a guest split a payment into instalments, while the business is paid upfront by the BNPL provider.",
+   "explanation": "It can help guests afford higher-priced trips and group bookings. The provider takes on the risk of the guest not paying and charges the business a fee. In Malaysia, providers such as Atome are offered through some payment gateways.",
+   "in_kong": {
+    "text": "In Malaysia, Kong's Xendit option supports buy now pay later.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "atome",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "cancellation-policy",
+   "include": true,
+   "letter": "C",
+   "term": "Cancellation policy",
+   "category": "Bookings and the day",
+   "also_called": [
+    "cancellation terms"
+   ],
+   "other_language_term": "polisi pembatalan",
+   "definition": "A cancellation policy sets out what happens if a guest cancels or doesn't show up, and what happens if the operator cancels.",
+   "explanation": "A typical policy has steps: a full refund if the guest cancels well ahead, a partial refund closer to the date, and nothing for late cancellations or no-shows. Group and charter bookings often have stricter terms, because the operator turns other guests away for them. The policy should also cover what happens when the operator cancels, for weather or too few guests, which usually means a full refund or a free change of date. OTAs often apply their own rules to bookings made through them, so operators line their policies up to avoid confusion. The policy needs to be short, plain and shown before payment, not buried in the terms. Clear policies cut arguments and chargebacks, because the guest agreed to them when booking.",
+   "in_kong": null,
+   "see_also": [
+    "refund-policy",
+    "force-majeure",
+    "no-show"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "capacity",
+   "include": true,
+   "letter": "C",
+   "term": "Capacity",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "kapasiti",
+   "definition": "Capacity is the most guests a tour or session can take.",
+   "explanation": "It's usually set by the tightest limit: seats in the vehicle, places on the boat, life jackets, or guests per guide. Some tours have more than one limit at once, and the booking system should stop sales as soon as any of them is reached.",
+   "in_kong": {
+    "text": "In Kong, each product has a capacity, and bookings stop when a session is full.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "availability",
+    "resources",
+    "overbooking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "channel-manager",
+   "include": false,
+   "letter": "C",
+   "term": "Channel manager",
+   "category": "Selling and distribution",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "A channel manager is software that connects an operator's booking system to OTAs, so availability and bookings stay in step across every channel.",
+   "explanation": "When a guest books a place through one OTA, the channel manager removes that place everywhere else. Without one, operators update each OTA by hand and risk double bookings, especially in peak season.",
+   "in_kong": null,
+   "see_also": [
+    "ota",
+    "availability",
+    "overbooking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "chargeback",
+   "include": true,
+   "letter": "C",
+   "term": "Chargeback",
+   "category": "Payments",
+   "also_called": [
+    "payment dispute"
+   ],
+   "other_language_term": "caj balik",
+   "definition": "A chargeback is when a guest asks their bank to reverse a card payment, and the bank takes the money back from the business.",
+   "explanation": "Guests usually do it when they say a tour didn't happen, was cancelled without a refund, or wasn't what was promised. The operator can dispute it with evidence: the booking record, the terms the guest accepted, check-in records and messages. Chargebacks usually carry a fee, even when the operator wins.",
+   "in_kong": null,
+   "see_also": [
+    "refund-policy",
+    "3d-secure",
+    "terms-and-conditions"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "charter",
+   "include": true,
+   "letter": "C",
+   "term": "Charter",
+   "category": "Bookings and the day",
+   "also_called": [
+    "private charter",
+    "private hire"
+   ],
+   "other_language_term": "sewa khas",
+   "definition": "A charter is the private hire of a boat, vehicle, guide or whole tour by one group.",
+   "explanation": "The group pays for the whole thing rather than per seat, and usually chooses the time and sometimes the route. Charters are common for boats, fishing trips and island hopping. Operators usually take a deposit and set clear terms for weather cancellations.",
+   "in_kong": null,
+   "see_also": [
+    "deposit",
+    "force-majeure",
+    "rain-check"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "check-in",
+   "include": true,
+   "letter": "C",
+   "term": "Check-in",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "daftar masuk",
+   "definition": "Check-in is when guests arrive and are marked as present before a tour starts.",
+   "explanation": "It's also when operators confirm names, signed waivers and payment.",
+   "in_kong": {
+    "text": "Kong lets you check guests in as they arrive.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "manifest",
+    "headcount",
+    "liability-waiver"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "child-policy",
+   "include": true,
+   "letter": "C",
+   "term": "Child policy",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "polisi kanak-kanak",
+   "definition": "A child policy sets the rules and prices for children on a tour: minimum age, age bands, prices, and whether an adult must come along.",
+   "explanation": "Operators often set a child price, free places for infants, and safety limits like minimum height or swimming ability. Stating how age is counted, such as age on the day of the tour, avoids arguments at check-in.",
+   "in_kong": {
+    "text": "In Kong, you set a price for each guest type, such as child or infant, and can ask for ages on the booking form.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "infant",
+    "concession",
+    "pax"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "commission",
+   "include": true,
+   "letter": "C",
+   "term": "Commission",
+   "category": "Selling and distribution",
+   "also_called": [
+    "travel agent commission"
+   ],
+   "other_language_term": "komisen",
+   "definition": "Commission is the share of the price an OTA, agent or partner keeps for selling a booking, usually a percentage of the public price.",
+   "explanation": "OTAs and resellers work on commission, and so do hotel concierges, affiliates and many travel agents. There are two common set-ups. In the first, the partner collects the full price from the guest and passes the operator the rest after taking its commission. In the second, the operator collects the full price and pays the partner's commission later, often monthly. Commission is the main reason direct bookings earn operators more. When setting prices, operators check that a booking still leaves enough margin after commission to cover guides, fuel, insurance and payment fees, which is where net rates and commissionable rates come in. Many Malaysian operators still settle commission with small partners by hand, so recording who sent each booking matters.",
+   "in_kong": null,
+   "see_also": [
+    "commissionable-rate",
+    "net-rate",
+    "ota"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "commissionable-rate",
+   "include": true,
+   "letter": "C",
+   "term": "Commissionable rate",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "harga berkomisen",
+   "definition": "A commissionable rate is a public price that includes the seller's commission, which is paid out of it after the sale.",
+   "explanation": "The guest pays the same price they'd see on the operator's website. The agent or OTA keeps its commission, and the operator receives the rest. This is the usual model for OTAs and many travel agents, and it keeps prices the same everywhere. The difference from a net rate is where the seller's income comes from. With a commissionable rate, it's inside the public price. With a net rate, the reseller adds its markup on top of the operator's price. Before agreeing to a commission, operators check that what's left still covers the cost of running the tour, including guides, fuel and payment fees. Hotels use the same term for rooms.",
+   "in_kong": null,
+   "see_also": [
+    "commission",
+    "net-rate",
+    "rack-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "concession",
+   "include": true,
+   "letter": "C",
+   "term": "Concession",
+   "category": "Pricing",
+   "also_called": [
+    "student discount",
+    "senior discount",
+    "concession price"
+   ],
+   "other_language_term": "harga konsesi",
+   "definition": "A concession is a reduced price for certain guests, such as children, students, seniors or pensioners.",
+   "explanation": "The word is common in Australia. In Malaysia, operators more often list child, senior or student prices. Operators usually ask for proof, like a student card, at check-in. Whatever the name, each reduced price needs clear rules on who qualifies and how age is counted, shown before the guest pays.",
+   "in_kong": {
+    "text": "In Kong, you set a price for each guest type, such as adult, child or concession.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "child-policy",
+    "pax"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "concierge-booking",
+   "include": true,
+   "letter": "C",
+   "term": "Concierge booking",
+   "category": "Selling and distribution",
+   "also_called": [],
+   "other_language_term": "tempahan concierge",
+   "definition": "A concierge booking is one made by a hotel concierge or front desk on behalf of a hotel guest.",
+   "explanation": "Hotels are a steady source of bookings for day tours and activities, especially from guests who decide on the spot. The hotel usually earns a commission, and the booking needs the guest's name, hotel and pickup details.",
+   "in_kong": {
+    "text": "Kong lets partner businesses book your products for their guests under a concierge agreement.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "affiliate-booking",
+    "commission",
+    "fam-trip"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "contracted-rate",
+   "include": true,
+   "letter": "C",
+   "term": "Contracted rate",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "harga kontrak",
+   "definition": "A contracted rate is a price agreed in writing with a specific partner, usually for a set period.",
+   "explanation": "DMCs and travel agents often fix contracted rates a year ahead, so they can price their packages and brochures with confidence.",
+   "in_kong": null,
+   "see_also": [
+    "net-rate",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "credit-note",
+   "include": true,
+   "letter": "C",
+   "term": "Credit note",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": "nota kredit",
+   "definition": "A credit note is a document that reduces or cancels an amount already invoiced, for example after a cancellation or a price change.",
+   "explanation": "Instead of editing the original invoice, the operator issues a credit note against it. Depending on the terms, it records a refund or gives the guest credit for a future booking. Accountants and tax systems expect it, including Malaysia's e-invoice system.",
+   "in_kong": null,
+   "see_also": [
+    "refund-policy",
+    "invoice-vs-receipt",
+    "e-invoice"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "cut-off-time",
+   "include": true,
+   "letter": "C",
+   "term": "Cut-off time",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "masa tutup tempahan",
+   "definition": "The cut-off time is the latest point before a tour when bookings close.",
+   "explanation": "Operators set it so they have time to prepare, such as ordering food, arranging pickups or confirming a boat.",
+   "in_kong": null,
+   "see_also": [
+    "booking-window",
+    "last-minute-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "day-trip",
+   "include": true,
+   "letter": "D",
+   "term": "Day trip, half-day and full-day",
+   "category": "Bookings and the day",
+   "also_called": [
+    "day tour",
+    "half-day tour",
+    "full-day tour"
+   ],
+   "other_language_term": "lawatan sehari",
+   "definition": "A day trip starts and ends on the same day; half-day tours usually take a few hours, and full-day tours most of the day.",
+   "explanation": "The terms are used loosely, so listings should state the actual duration and start and finish times.",
+   "in_kong": null,
+   "see_also": [
+    "itinerary",
+    "transfer"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "deposit",
+   "include": true,
+   "letter": "D",
+   "term": "Deposit",
+   "category": "Payments",
+   "also_called": [
+    "down payment"
+   ],
+   "other_language_term": "bayaran pendahuluan",
+   "definition": "A deposit is part of the price paid when booking, to secure the place, with the balance paid later.",
+   "explanation": "Deposits protect operators from no-shows and late cancellations, especially for private charters, groups and multi-day trips where costs are paid in advance. The terms need to be clear before payment: how much the deposit is, when the balance is due, and whether the deposit is refunded if the guest cancels. For corporate and MICE groups, the deposit is often requested with a proforma invoice, and the booking is confirmed once it's paid. For short day tours, most operators take full payment at booking instead, which is simpler and cuts no-shows further. Whatever the set-up, the booking record should show clearly what has been paid and what is still owed, so staff on the day don't have to chase guests for money at check-in or rely on memory and WhatsApp threads.",
+   "in_kong": {
+    "text": "Kong can take a deposit or the full amount when the guest books.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "balance-payment",
+    "cancellation-policy",
+    "no-show"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "direct-booking",
+   "include": true,
+   "letter": "D",
+   "term": "Direct booking",
+   "category": "Selling and distribution",
+   "also_called": [],
+   "other_language_term": "tempahan terus",
+   "definition": "A direct booking is one a guest makes with the operator itself, through its website, phone, WhatsApp or counter, with no OTA or agent in between.",
+   "explanation": "No commission is paid, the operator keeps the guest's contact details, and it can invite them back. Direct bookings usually earn the most per guest, which is why operators work to grow them with a good website, an up-to-date Google Business Profile and repeat guests.",
+   "in_kong": {
+    "text": "Kong gives you a booking page and a widget for your own website, so guests can book and pay you directly.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "ota",
+    "booking-engine",
+    "commission"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "dmc",
+   "include": true,
+   "letter": "D",
+   "term": "DMC (destination management company)",
+   "category": "Selling and distribution",
+   "also_called": [
+    "destination management company",
+    "ground handler",
+    "inbound agent"
+   ],
+   "other_language_term": "syarikat pengurusan destinasi",
+   "definition": "A DMC (destination management company) is a local business that plans and runs trips, events and ground arrangements in its own destination for overseas agents and groups.",
+   "explanation": "A travel agent in Europe selling a Borneo trip usually doesn't deal with every hotel, driver and guide. It works with a DMC in Malaysia, which puts the programme together, books the local suppliers and handles everything on the ground. DMCs are big buyers of tours and activities: they book day trips, transfers and experiences for their groups, often at net rates and often months ahead. For an activity operator, one good DMC relationship can mean regular group bookings. DMCs expect clear net rates, reliable confirmations and invoices, and a named contact for each group. Many DMCs also handle MICE groups for companies.",
+   "in_kong": null,
+   "see_also": [
+    "net-rate",
+    "mice",
+    "pic"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "domestic-tourism",
+   "include": false,
+   "letter": "D",
+   "term": "Domestic tourism",
+   "category": "Types of tourism",
+   "also_called": [],
+   "other_language_term": "pelancongan domestik",
+   "definition": "Domestic tourism is residents travelling within their own country.",
+   "explanation": "For many Malaysian operators, local guests on weekends and school holidays are the core of the business.",
+   "in_kong": null,
+   "see_also": [
+    "inbound-tourism",
+    "outbound-tourism"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "double-booking",
+   "include": true,
+   "letter": "D",
+   "term": "Double booking",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "tempahan bertindih",
+   "definition": "A double booking is when the same place, boat, guide or time is sold twice.",
+   "explanation": "It usually happens when bookings live in more than one place, like a notebook, a WhatsApp chat and a website.",
+   "in_kong": null,
+   "see_also": [
+    "overbooking",
+    "resources"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "duitnow",
+   "include": true,
+   "letter": "D",
+   "term": "DuitNow",
+   "category": "Payments",
+   "also_called": [
+    "DuitNow QR"
+   ],
+   "other_language_term": null,
+   "definition": "DuitNow is Malaysia's national instant payment service, run by PayNet, that lets people pay using a phone number, ID number or DuitNow QR code.",
+   "explanation": "Almost any Malaysian banking or eWallet app can scan a DuitNow QR code.",
+   "in_kong": {
+    "text": "Kong's Xendit option accepts DuitNow QR.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "fpx",
+    "ewallet"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "dynamic-pricing",
+   "include": true,
+   "letter": "D",
+   "term": "Dynamic pricing",
+   "category": "Pricing",
+   "also_called": [
+    "demand-based pricing"
+   ],
+   "other_language_term": "harga dinamik",
+   "definition": "Dynamic pricing means changing a tour's price based on demand, such as charging more on busy weekends and less on quiet weekdays.",
+   "explanation": "Airlines and hotels have done it for years. For tours, it usually means a few simple rules: a higher price in peak season or for the last few places, a lower one for early bookings or slow days. It helps fill quiet sessions and earn more from busy ones.",
+   "in_kong": null,
+   "see_also": [
+    "revenue-management",
+    "peak-season",
+    "early-bird-discount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "e-invoice",
+   "include": true,
+   "letter": "E",
+   "term": "E-invoice (LHDN)",
+   "category": "Rules and licences",
+   "also_called": [
+    "e-invoicing",
+    "MyInvois",
+    "e invoice"
+   ],
+   "other_language_term": "e-invois",
+   "definition": "An e-invoice is an invoice issued in a set digital format and validated by LHDN, Malaysia's Inland Revenue Board, through its MyInvois system.",
+   "explanation": "Malaysia has been phasing in e-invoicing by business size since August 2024, starting with the largest companies and moving down to smaller ones, with the smallest businesses exempt under the current rules. Tour operators, travel agencies and hotels are covered like any other business, and LHDN has published guidance for tourism cases. In practice, a business in scope issues an e-invoice for each sale, or a consolidated e-invoice covering many small sales to guests who don't ask for their own. Buyers such as companies and government bodies may ask for an e-invoice with their tax number on it. Because the dates and turnover thresholds have changed more than once, operators check LHDN's current timeline for a business of their size.",
+   "in_kong": null,
+   "see_also": [
+    "invoice-vs-receipt",
+    "credit-note",
+    "proforma-invoice"
+   ],
+   "source": {
+    "name": "Inland Revenue Board of Malaysia (LHDN)",
+    "url": "https://www.hasil.gov.my/en/e-invoice/",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "early-bird-discount",
+   "include": true,
+   "letter": "E",
+   "term": "Early bird discount",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "diskaun early bird",
+   "definition": "An early bird discount is a lower price for guests who book well ahead.",
+   "explanation": "It brings in cash early and helps operators plan staff, boats and supplies for the season.",
+   "in_kong": null,
+   "see_also": [
+    "dynamic-pricing",
+    "booking-window"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "ecotourism",
+   "include": false,
+   "letter": "E",
+   "term": "Ecotourism",
+   "category": "Types of tourism",
+   "also_called": [
+    "eco-tourism"
+   ],
+   "other_language_term": "ekopelancongan",
+   "definition": "Ecotourism is travel to natural areas that protects the environment, supports local people and teaches visitors about the place.",
+   "explanation": "In Malaysia, it covers rainforest, mangrove, marine park and wildlife trips, often with local guides. Genuine ecotourism limits group sizes and impact. The word is also used loosely in marketing, which is what certification schemes try to address.",
+   "in_kong": null,
+   "see_also": [
+    "adventure-tourism",
+    "tourism-accreditation"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "eftpos",
+   "include": true,
+   "letter": "E",
+   "term": "EFTPOS",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "EFTPOS is Australia's debit card payment network, and also the everyday word for a card machine at a counter.",
+   "explanation": "Australian guests may say they'll \"pay by EFTPOS\" when they mean tapping a card on the day.",
+   "in_kong": null,
+   "see_also": [
+    "surcharge",
+    "merchant-fee"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "ewallet",
+   "include": true,
+   "letter": "E",
+   "term": "eWallet",
+   "category": "Payments",
+   "also_called": [
+    "e-wallet",
+    "digital wallet"
+   ],
+   "other_language_term": "e-dompet",
+   "definition": "An eWallet is a phone app that stores money or card details, so people can pay with a tap or a QR scan.",
+   "explanation": "In Malaysia, Touch 'n Go eWallet, GrabPay, ShopeePay and Boost are widely used, and many local guests prefer them to cards.",
+   "in_kong": {
+    "text": "In Malaysia, Kong accepts GrabPay, and its Xendit option adds Touch 'n Go, ShopeePay and Boost.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "touch-n-go-ewallet",
+    "grabpay",
+    "shopeepay"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "experiential-travel",
+   "include": false,
+   "letter": "E",
+   "term": "Experiential travel",
+   "category": "Types of tourism",
+   "also_called": [],
+   "other_language_term": "pelancongan berasaskan pengalaman",
+   "definition": "Experiential travel is travel focused on doing and taking part rather than sightseeing, such as cooking with a family or learning a craft.",
+   "explanation": "Small, hands-on activities fit it well.",
+   "in_kong": null,
+   "see_also": [
+    "ecotourism",
+    "adventure-tourism"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "fam-trip",
+   "include": true,
+   "letter": "F",
+   "term": "Fam trip",
+   "category": "Selling and distribution",
+   "also_called": [
+    "familiarisation trip",
+    "familiarization trip",
+    "famil"
+   ],
+   "other_language_term": "lawatan pengenalan",
+   "definition": "A fam trip (familiarisation trip) is a free or discounted trip that lets travel agents, hotel staff or media experience a tour so they can sell or write about it.",
+   "explanation": "People sell what they've tried. An agent who has done your mangrove kayak tour describes it better and recommends it with more confidence. Fam trips are often organised by tourism boards, DMCs and associations, and operators take part by hosting a group for free or at cost. They work at a smaller scale too: inviting the concierge teams of nearby hotels for a free session is one of the simplest ways to win hotel referrals. To make a fam trip pay off, give guests the same experience paying guests get, follow up with booking details and net rates, and track which partners book afterwards.",
+   "in_kong": null,
+   "see_also": [
+    "concierge-booking",
+    "dmc",
+    "net-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "fit",
+   "include": true,
+   "letter": "F",
+   "term": "FIT (free independent traveller)",
+   "category": "Selling and distribution",
+   "also_called": [
+    "independent traveller",
+    "FIT traveller"
+   ],
+   "other_language_term": "pelancong bebas",
+   "definition": "FIT (free independent traveller) means a guest travelling on their own plan rather than with a group tour.",
+   "explanation": "FIT guests book tours one at a time, often at short notice and often on their phone. The opposite is a group booked through an agent.",
+   "in_kong": null,
+   "see_also": [
+    "last-minute-booking",
+    "group-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "foc",
+   "include": true,
+   "letter": "F",
+   "term": "FOC (free of charge)",
+   "category": "Pricing",
+   "also_called": [
+    "free of charge"
+   ],
+   "other_language_term": "percuma",
+   "definition": "FOC (free of charge) means a place given without payment, most often the free place a group leader, guide or driver gets on a group booking.",
+   "explanation": "In Malaysia, FOC is everyday booking language. A DMC might ask for \"1 FOC per 15 pax\", meaning every 15 paying guests earn one free place, usually for the tour leader. Operators also give FOC places to young children, on fam trips, or as a goodwill gesture after a problem. An FOC place still costs the operator a seat, a life jacket and a share of the guide's time, so the rule should be agreed before a quote is accepted: how many paying guests earn an FOC place, and whether it covers meals, transport and entrance fees. Many operators cap FOC places per booking and exclude them from any commission.",
+   "in_kong": null,
+   "see_also": [
+    "pax",
+    "group-booking",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "force-majeure",
+   "include": true,
+   "letter": "F",
+   "term": "Force majeure",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Force majeure means events outside anyone's control, such as storms, floods, pandemics or government orders, that stop a service going ahead.",
+   "explanation": "A force majeure clause says what happens then, usually that neither side is at fault and the guest gets a refund, credit or new date. For outdoor operators in Malaysia, monsoon weather is the most common case.",
+   "in_kong": null,
+   "see_also": [
+    "cancellation-policy",
+    "rain-check",
+    "terms-and-conditions"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "fpx",
+   "include": true,
+   "letter": "F",
+   "term": "FPX",
+   "category": "Payments",
+   "also_called": [
+    "Financial Process Exchange",
+    "online banking"
+   ],
+   "other_language_term": null,
+   "definition": "FPX is Malaysia's online banking payment method: the guest picks their bank at checkout and approves the payment in their banking app.",
+   "explanation": "It's run by PayNet and is one of the most used ways to pay online in Malaysia. The money comes straight from the guest's bank account with no card needed, which suits guests who don't have or don't want to use a credit card.",
+   "in_kong": {
+    "text": "Kong accepts FPX in Malaysia through both Stripe and Xendit.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "duitnow",
+    "payment-gateway",
+    "ewallet"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "free-and-easy",
+   "include": true,
+   "letter": "F",
+   "term": "Free and easy",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Free and easy is a package with transport and a hotel but no set tour programme, so guests plan their own days.",
+   "explanation": "The term is common in Malaysia and Singapore. Free and easy guests are prime customers for day tours booked after they arrive.",
+   "in_kong": null,
+   "see_also": [
+    "tour-package",
+    "fit"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "gift-voucher",
+   "include": true,
+   "letter": "G",
+   "term": "Gift voucher",
+   "category": "Pricing",
+   "also_called": [
+    "gift card",
+    "gift certificate"
+   ],
+   "other_language_term": "baucar hadiah",
+   "definition": "A gift voucher is a prepaid credit or a specific experience that someone buys for another person to use later.",
+   "explanation": "Vouchers bring in money before the tour runs and bring in new guests, especially around festive seasons and birthdays. Operators set an expiry date and any blackout dates up front, so there are no surprises when the voucher is used.",
+   "in_kong": {
+    "text": "Kong can create vouchers with a stored value that guests redeem when they book.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "promo-code",
+    "blackout-dates"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "google-things-to-do",
+   "include": true,
+   "letter": "G",
+   "term": "Google Things to Do",
+   "category": "Selling and distribution",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Google Things to Do is the part of Google Search and Maps that lists tours, activities and attractions, with prices and links to book.",
+   "explanation": "When someone searches for an activity in a place, Google can show booking options from the operator's own website and from OTAs side by side. Operators appear through a connected booking system. A direct listing gives guests a way to book with the operator rather than through an OTA.",
+   "in_kong": null,
+   "see_also": [
+    "reserve-with-google",
+    "direct-booking",
+    "ota"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "grabpay",
+   "include": true,
+   "letter": "G",
+   "term": "GrabPay",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "GrabPay is the eWallet inside the Grab app, used across Malaysia and Southeast Asia.",
+   "explanation": "Visitors from nearby countries often already have it on their phones.",
+   "in_kong": {
+    "text": "Kong accepts GrabPay in Malaysia.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "ewallet",
+    "touch-n-go-ewallet"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "gratuity",
+   "include": true,
+   "letter": "G",
+   "term": "Gratuity",
+   "category": "Payments",
+   "also_called": [
+    "tipping"
+   ],
+   "other_language_term": "tip",
+   "definition": "A gratuity is a tip: money a guest chooses to give guides or crew on top of the price.",
+   "explanation": "Tipping habits differ by country. Malaysian guests don't always tip, while many visitors from North America expect to. If a gratuity is already included in the price, say so, so guests don't tip twice. Operators who pool tips should explain to staff how they're shared, and some booking systems let guests add a tip at checkout or after the tour.",
+   "in_kong": null,
+   "see_also": [
+    "service-charge"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "group-booking",
+   "include": true,
+   "letter": "G",
+   "term": "Group booking",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "tempahan kumpulan",
+   "definition": "A group booking is one booking for several guests travelling together, often arranged by one person, a company or an agent.",
+   "explanation": "Groups often want a quote, a group rate, a private session or a set time, and pay a deposit and then the balance. One contact handles changes, and final numbers are usually confirmed a few days before the tour.",
+   "in_kong": null,
+   "see_also": [
+    "pic",
+    "quotation",
+    "group-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "group-rate",
+   "include": true,
+   "letter": "G",
+   "term": "Group rate",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "harga kumpulan",
+   "definition": "A group rate is a lower price per person for groups above a set size.",
+   "explanation": "Operators often pair it with a minimum group size, a deposit and a date by which final numbers must be confirmed.",
+   "in_kong": null,
+   "see_also": [
+    "group-booking",
+    "foc",
+    "deposit"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "headcount",
+   "include": true,
+   "letter": "H",
+   "term": "Headcount",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "bilangan peserta",
+   "definition": "Headcount is the number of people actually present, counted on the day.",
+   "explanation": "It's checked against the manifest before departure and again at the end, especially on boats and treks.",
+   "in_kong": null,
+   "see_also": [
+    "manifest",
+    "check-in",
+    "pax"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "homestay",
+   "include": true,
+   "letter": "H",
+   "term": "Homestay",
+   "category": "Rules and licences",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "In Malaysia, a homestay usually means a stay with a local family in a village, under MOTAC's registered homestay programme.",
+   "explanation": "Guests live with the host family, share meals and join village activities, often as a group. Many private rentals also call themselves homestays but aren't part of the programme. Homestay villages often work with tour operators on packages for schools, companies and overseas groups.",
+   "in_kong": null,
+   "see_also": [
+    "tour-package",
+    "tourism-tax"
+   ],
+   "source": {
+    "name": "Ministry of Tourism, Arts and Culture (MOTAC)",
+    "url": "https://www.motac.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "ical",
+   "include": true,
+   "letter": "I",
+   "term": "iCal",
+   "category": "Tech and AI",
+   "also_called": [
+    "iCalendar",
+    ".ics",
+    "calendar sync"
+   ],
+   "other_language_term": null,
+   "definition": "iCal is a standard file format for calendar events, used to share or sync bookings between calendars and systems.",
+   "explanation": "Operators use iCal links to show bookings in Google Calendar, Apple Calendar or Outlook, or to block dates from another system. iCal syncs are usually one-way and can lag behind, so they suit viewing bookings more than keeping live availability.",
+   "in_kong": {
+    "text": "Kong syncs bookings into Google Calendar, so your team sees every booking in the calendar it already uses.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "availability",
+    "double-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "inbound-tour-operator",
+   "include": true,
+   "letter": "I",
+   "term": "Inbound tour operator",
+   "category": "Selling and distribution",
+   "also_called": [
+    "receptive operator"
+   ],
+   "other_language_term": "pengendali pelancongan masuk",
+   "definition": "An inbound tour operator sells tours in its own country to visitors arriving from abroad, often through overseas agents.",
+   "explanation": "Outbound operators do the reverse, sending local travellers overseas. In Malaysia, inbound is also one of the TOBTAB licence categories.",
+   "in_kong": null,
+   "see_also": [
+    "dmc",
+    "tobtab",
+    "fit"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "inbound-tourism",
+   "include": false,
+   "letter": "I",
+   "term": "Inbound tourism",
+   "category": "Types of tourism",
+   "also_called": [],
+   "other_language_term": "pelancongan masuk",
+   "definition": "Inbound tourism is visitors from other countries travelling into a country.",
+   "explanation": "For Malaysia, that includes visitors from Singapore, Indonesia, China and further afield.",
+   "in_kong": null,
+   "see_also": [
+    "inbound-tour-operator",
+    "domestic-tourism"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "inclusions-and-exclusions",
+   "include": true,
+   "letter": "I",
+   "term": "Inclusions and exclusions",
+   "category": "Bookings and the day",
+   "also_called": [
+    "what's included"
+   ],
+   "other_language_term": "termasuk dan tidak termasuk",
+   "definition": "Inclusions and exclusions list what the price covers and what it doesn't, such as transport, meals, entrance fees and gear.",
+   "explanation": "Clear lists cut questions before booking and complaints after it.",
+   "in_kong": null,
+   "see_also": [
+    "itinerary",
+    "add-ons"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "indemnity-form",
+   "include": true,
+   "letter": "I",
+   "term": "Indemnity form",
+   "category": "Bookings and the day",
+   "also_called": [
+    "indemnity letter"
+   ],
+   "other_language_term": "borang indemniti",
+   "definition": "An indemnity form is a document in which the signer agrees to cover the operator's costs if their actions, or those of someone they're responsible for, lead to a claim.",
+   "explanation": "In Malaysia, borang indemniti is the everyday word for what many operators use as a waiver, and schools often ask parents to sign one for trips. Strictly, an indemnity and a waiver do different jobs, and many forms include both.",
+   "in_kong": {
+    "text": "Kong's digital waivers can be used for indemnity forms too.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "liability-waiver",
+    "release-of-liability"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "infant",
+   "include": true,
+   "letter": "I",
+   "term": "Infant",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "bayi",
+   "definition": "An infant is a very young child, usually under two, who often travels free or at a reduced price.",
+   "explanation": "Operators set their own age limit and still count infants in the headcount for safety.",
+   "in_kong": null,
+   "see_also": [
+    "child-policy",
+    "headcount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "instant-confirmation",
+   "include": true,
+   "letter": "I",
+   "term": "Instant confirmation",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "pengesahan segera",
+   "definition": "Instant confirmation means a booking is confirmed the moment the guest pays, with no wait for the operator to approve it.",
+   "explanation": "Guests and OTAs increasingly expect it. It only works when availability is live on every channel.",
+   "in_kong": null,
+   "see_also": [
+    "availability",
+    "last-minute-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "inventory",
+   "include": true,
+   "letter": "I",
+   "term": "Inventory",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "inventori",
+   "definition": "Inventory is everything an operator has to sell: every place on every session across the season.",
+   "explanation": "The word comes from hotels and airlines. For tours, inventory is shared between channels: a place sold on an OTA is one less on the operator's website. Keeping one pool of inventory for every channel, rather than splitting it up, avoids both overbooking and empty seats.",
+   "in_kong": null,
+   "see_also": [
+    "allocation",
+    "availability",
+    "capacity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "invoice-vs-receipt",
+   "include": true,
+   "letter": "I",
+   "term": "Invoice vs receipt",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": "invois dan resit",
+   "definition": "An invoice asks for payment; a receipt confirms payment has been made.",
+   "explanation": "Operators send an invoice when payment is due later, as with company groups, and a receipt once the guest has paid, as with most online bookings. Companies often need both for their records. In Malaysia, e-invoicing rules may decide what form these documents take.",
+   "in_kong": null,
+   "see_also": [
+    "proforma-invoice",
+    "e-invoice",
+    "credit-note"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "itinerary",
+   "include": true,
+   "letter": "I",
+   "term": "Itinerary",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "itinerari",
+   "definition": "An itinerary is the plan of a trip: where guests go, in what order, and at what times.",
+   "explanation": "For a day tour, it might be a short timeline. For a multi-day trip, it's a day-by-day plan with meals and accommodation. A clear itinerary helps guests decide, cuts down questions, and sets expectations about what's included. Timings should be realistic, with buffers for traffic, weather and toilet stops, and the itinerary should say what may change on the day and why.",
+   "in_kong": null,
+   "see_also": [
+    "inclusions-and-exclusions",
+    "tour-package",
+    "day-trip"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "last-minute-booking",
+   "include": true,
+   "letter": "L",
+   "term": "Last-minute booking",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "tempahan saat akhir",
+   "definition": "A last-minute booking is one made shortly before a tour starts, often the same day or the day before.",
+   "explanation": "Holidaymakers book this way a lot, usually on their phones. A cut-off time stops bookings that come in too late to prepare for.",
+   "in_kong": null,
+   "see_also": [
+    "cut-off-time",
+    "instant-confirmation",
+    "fit"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "liability-waiver",
+   "include": true,
+   "letter": "L",
+   "term": "Liability waiver",
+   "category": "Bookings and the day",
+   "also_called": [
+    "waiver",
+    "release form"
+   ],
+   "other_language_term": "penepian liabiliti",
+   "definition": "A liability waiver is a document a guest signs before an activity, accepting its risks and agreeing not to hold the operator responsible for certain injuries or losses.",
+   "explanation": "Waivers are standard for adventure activities such as ATV rides, diving, rafting and climbing. They usually describe the risks, confirm the guest is fit to take part, and record consent for minors, signed by a parent or guardian. A waiver doesn't cover everything: how much protection it gives depends on local law and how it's worded, so operators get legal advice on theirs. It works alongside good safety practice and public liability insurance, not instead of them. Digital waivers, signed on a phone before arrival, save time at check-in and keep records safe and easy to find if a claim comes up years later.",
+   "in_kong": {
+    "text": "Kong includes digital waivers at no extra cost, and guests can sign before they arrive.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "release-of-liability",
+    "indemnity-form",
+    "public-liability-insurance"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "load-factor",
+   "include": true,
+   "letter": "L",
+   "term": "Load factor",
+   "category": "Pricing",
+   "also_called": [
+    "occupancy rate"
+   ],
+   "other_language_term": "faktor muatan",
+   "definition": "Load factor is the share of available places that were actually sold, shown as a percentage.",
+   "explanation": "A 20-seat trip with 15 guests has a load factor of 75 percent. It's a quick way to see which sessions are worth running and which need a push.",
+   "in_kong": null,
+   "see_also": [
+    "capacity",
+    "revenue-management"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "low-season",
+   "include": true,
+   "letter": "L",
+   "term": "Low season",
+   "category": "Pricing",
+   "also_called": [
+    "off-season",
+    "off-peak"
+   ],
+   "other_language_term": "musim rendah",
+   "definition": "Low season is the time of year with the fewest guests and usually the lowest prices.",
+   "explanation": "Some operators close. Others switch to local guests, schools and company groups. On Malaysia's east coast, many island operators pause during the northeast monsoon.",
+   "in_kong": null,
+   "see_also": [
+    "peak-season",
+    "shoulder-season"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "manifest",
+   "include": true,
+   "letter": "M",
+   "term": "Manifest",
+   "category": "Bookings and the day",
+   "also_called": [
+    "passenger manifest",
+    "guest list"
+   ],
+   "other_language_term": "senarai peserta",
+   "definition": "A manifest is the list of everyone booked on a session: names, numbers, contact details and anything the guide needs to know.",
+   "explanation": "Guides use it for check-in and safety counts, and boat operators may need to give it to marine or park authorities. It should come straight from the booking system, so late bookings and changes are included.",
+   "in_kong": null,
+   "see_also": [
+    "check-in",
+    "headcount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "markup-vs-margin",
+   "include": true,
+   "letter": "M",
+   "term": "Markup vs margin",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "markup dan margin keuntungan",
+   "definition": "Markup is how much you add to your cost to set a price; margin is how much of the final price is profit.",
+   "explanation": "They sound alike but give different numbers. If a tour costs 60 to run and sells for 100, the markup is 67 percent (40 added on top of 60), but the margin is 40 percent (40 of the 100 is profit). Mixing them up costs money: an operator aiming for a 40 percent margin who adds a 40 percent markup ends up with a margin of about 29 percent. It matters most with resellers and OTAs, because their commission comes out of the price, so the operator needs enough margin to give some away and still cover guides, fuel, insurance and payment fees. Knowing the cost per pax and the margin at each price makes it easy to decide which partners and discounts are worth it.",
+   "in_kong": null,
+   "see_also": [
+    "net-rate",
+    "commission",
+    "pax"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "matta",
+   "include": true,
+   "letter": "M",
+   "term": "MATTA",
+   "category": "Rules and licences",
+   "also_called": [
+    "MATTA Fair"
+   ],
+   "other_language_term": null,
+   "definition": "MATTA (the Malaysian Association of Tour and Travel Agents) is Malaysia's main trade association for travel agencies and tour operators.",
+   "explanation": "Its members are licensed agencies across the country, and membership of a recognised association like MATTA is one of the requirements for a TOBTAB licence. MATTA also runs the MATTA Fair, a large consumer travel fair in Kuala Lumpur where agencies sell holiday packages directly to the public.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "travel-agency"
+   ],
+   "source": {
+    "name": "MATTA",
+    "url": "https://www.matta.org.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "mcp",
+   "include": true,
+   "letter": "M",
+   "term": "MCP",
+   "category": "Tech and AI",
+   "also_called": [
+    "Model Context Protocol",
+    "MCP connector",
+    "AI connector"
+   ],
+   "other_language_term": null,
+   "definition": "MCP (Model Context Protocol) is an open standard that lets AI assistants like ChatGPT and Claude connect to other software, read its data and take actions in it.",
+   "explanation": "Without MCP, an AI assistant only knows what you paste into the chat. With an MCP connector, it can look things up and act in the connected app, within the permissions you give it. For a tour operator, that means asking an assistant who is on tomorrow's 9am trip and whether everyone has signed their waiver, and getting the answer from the booking system, or asking it to move a booking and draft an email to the guest. Anthropic introduced MCP in late 2024, and many AI apps and software companies now support it. The connector decides what the assistant can see and do, so it matters which actions it allows and which still need a person to confirm.",
+   "in_kong": {
+    "text": "Kong has an MCP connector, so you can run your bookings from ChatGPT or Claude.",
+    "url": "https://bookwithkong.com/ai"
+   },
+   "see_also": [
+    "restech"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "meeting-point",
+   "include": true,
+   "letter": "M",
+   "term": "Meeting point",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "tempat berkumpul",
+   "definition": "The meeting point is the exact place guests gather before a tour starts.",
+   "explanation": "A Google Maps pin, a photo and a nearby landmark help guests find it on time.",
+   "in_kong": null,
+   "see_also": [
+    "transfer",
+    "check-in"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "merchant-fee",
+   "include": true,
+   "letter": "M",
+   "term": "Merchant fee",
+   "category": "Payments",
+   "also_called": [
+    "merchant discount rate",
+    "MDR",
+    "processing fee"
+   ],
+   "other_language_term": "caj peniaga",
+   "definition": "A merchant fee is what a payment provider charges the business for each card or digital payment.",
+   "explanation": "It's usually a percentage of the payment, sometimes plus a fixed amount, and it differs by payment method.",
+   "in_kong": null,
+   "see_also": [
+    "surcharge",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "merchant-of-record",
+   "include": true,
+   "letter": "M",
+   "term": "Merchant of record",
+   "category": "Payments",
+   "also_called": [
+    "MoR"
+   ],
+   "other_language_term": null,
+   "definition": "The merchant of record is the business legally responsible for a sale: its name appears on the guest's statement, and it handles refunds, chargebacks and tax.",
+   "explanation": "When a guest books directly, the operator is usually the merchant of record. When they book through an OTA, it's often the OTA: the guest pays the OTA, the OTA's name shows on their card statement, and the operator is paid later. This decides who deals with disputes, who issues receipts or e-invoices, and whose name the guest remembers. Some booking platforms act as merchant of record for their operators, which can simplify payments but means the operator's money passes through someone else's account first. It's worth checking which set-up a booking system uses before signing up, especially for tax and e-invoicing.",
+   "in_kong": null,
+   "see_also": [
+    "chargeback",
+    "payout",
+    "e-invoice"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "mice",
+   "include": true,
+   "letter": "M",
+   "term": "MICE",
+   "category": "Selling and distribution",
+   "also_called": [
+    "meetings, incentives, conferences and events"
+   ],
+   "other_language_term": null,
+   "definition": "MICE stands for meetings, incentives, conferences and exhibitions: business travel for groups, arranged by companies and event planners.",
+   "explanation": "A company flying its sales team to Langkawi as a reward, or a conference in Kuala Lumpur with a free afternoon for delegates, both count as MICE. The E is sometimes read as events. For tour and activity operators, MICE means large, prepaid group bookings, usually arranged through a DMC or event agency. These groups want private sessions, fixed times, a quotation and a proforma invoice before paying, and one contact who handles changes. They often book months ahead and change numbers close to the date, so clear terms on minimum numbers, deposits and cancellations matter. MICE groups also value custom touches: branded items, a private guide or an exclusive time slot.",
+   "in_kong": null,
+   "see_also": [
+    "dmc",
+    "quotation",
+    "group-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "minimum-pax",
+   "include": true,
+   "letter": "M",
+   "term": "Minimum pax",
+   "category": "Bookings and the day",
+   "also_called": [
+    "minimum group size",
+    "guaranteed departure",
+    "minimum numbers"
+   ],
+   "other_language_term": null,
+   "definition": "Minimum pax is the smallest number of guests needed for a tour to run.",
+   "explanation": "If fewer book, the operator may cancel, move guests to another session, or offer a private-tour price instead. The minimum, and what happens if it isn't reached, should be in the terms, so guests aren't surprised the day before. Operators usually decide 24 to 48 hours ahead whether a session runs, which gives guests time to change plans. A guaranteed departure is the opposite promise: the tour runs whatever the numbers.",
+   "in_kong": null,
+   "see_also": [
+    "pax",
+    "cancellation-policy",
+    "group-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "motac-licence",
+   "include": true,
+   "letter": "M",
+   "term": "MOTAC licence",
+   "category": "Rules and licences",
+   "also_called": [
+    "MOTAC license"
+   ],
+   "other_language_term": "lesen MOTAC",
+   "definition": "A MOTAC licence is the everyday name for the licence Malaysian tour and travel businesses need from MOTAC, the Ministry of Tourism, Arts and Culture.",
+   "explanation": "Officially, it's the TOBTAB licence, issued under the Tourism Industry Act 1992, and it covers inbound tours, outbound travel, ticketing, or a mix. MOTAC also licenses tourist guides and tourism vehicles, and runs the homestay programme, so \"MOTAC licence\" can mean different things depending on who's asking. For a tour business, getting licensed usually takes a registered Sdn Bhd company, commercial premises that MOTAC inspects, a required course, membership of a recognised tourism association, and an application through MOTAC's online licensing portal. Sole proprietorships and partnerships don't qualify for a tour operating licence. Operators who sell only their own single activity sometimes ask whether they need one. The answer depends on exactly what they sell and how, so it's worth checking with MOTAC directly.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "tourist-guide-licence",
+    "ssm-registration"
+   ],
+   "source": {
+    "name": "Ministry of Tourism, Arts and Culture (MOTAC)",
+    "url": "https://www.motac.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": {
+    "text": "MOTAC licence: the complete guide",
+    "url": "https://bookwithkong.com/blog/motac-license-guide"
+   },
+   "tier": "L"
+  },
+  {
+   "id": "net-rate",
+   "include": true,
+   "letter": "N",
+   "term": "Net rate",
+   "category": "Pricing",
+   "also_called": [
+    "net price",
+    "wholesale rate"
+   ],
+   "other_language_term": "harga bersih",
+   "definition": "A net rate is the price an operator charges a reseller, who then adds their own markup to reach the price the guest pays.",
+   "explanation": "If the rack rate is the public price, the net rate sits below it, and the gap is the reseller's income. Net rates are common with DMCs, travel agents and wholesalers, especially for groups and packages, because the reseller wants freedom to set its own selling price or build the tour into a package. For the operator, it's simple: it receives the net rate, whatever the reseller charges. The risk is a reseller selling too cheaply and undercutting the operator's own website, so most net rate agreements require resellers to sell at or above the rack rate. Operators usually offer net rates only to partners with a track record, and keep them out of public view.",
+   "in_kong": null,
+   "see_also": [
+    "rack-rate",
+    "commissionable-rate",
+    "markup-vs-margin"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "no-show",
+   "include": true,
+   "letter": "N",
+   "term": "No-show",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "tidak hadir",
+   "definition": "A no-show is a guest who has booked but doesn't turn up and doesn't cancel.",
+   "explanation": "No-shows cost the operator a place it could have sold. Reminders the day before, and taking full payment or a deposit at booking, cut them down a lot. The cancellation policy should say what happens to a no-show's payment. Most operators wait a set time past the start before counting a guest as a no-show, and many keep a waitlist or take walk-ins to fill the gap.",
+   "in_kong": null,
+   "see_also": [
+    "cancellation-policy",
+    "deposit",
+    "waitlist"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "off-platform-booking",
+   "include": true,
+   "letter": "O",
+   "term": "Off-platform booking",
+   "category": "Bookings and the day",
+   "also_called": [
+    "manual booking",
+    "offline booking"
+   ],
+   "other_language_term": "tempahan luar platform",
+   "definition": "An off-platform booking is one taken outside the online booking system, such as by phone, WhatsApp, walk-in or through a partner, and added to it by hand.",
+   "explanation": "Many Malaysian operators take most of their bookings on WhatsApp. Adding every booking to one system, however it came in, keeps availability right and stops two people selling the same place.",
+   "in_kong": {
+    "text": "Kong lets you add phone, WhatsApp and walk-in bookings to the same calendar as online ones.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "walk-in",
+    "double-booking",
+    "payment-link"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "ota",
+   "include": true,
+   "letter": "O",
+   "term": "OTA (online travel agent)",
+   "category": "Selling and distribution",
+   "also_called": [
+    "online travel agency"
+   ],
+   "other_language_term": "agensi pelancongan dalam talian",
+   "definition": "An OTA (online travel agent) is a website or app that sells tours, activities, hotels or flights from many suppliers and takes a commission on each booking.",
+   "explanation": "Viator, GetYourGuide, Klook, Expedia and Tripadvisor are all OTAs. They bring operators guests they could never reach alone, especially overseas visitors planning a trip weeks ahead. The cost is the commission taken from every booking they send, plus less control over the guest relationship: the OTA usually holds the guest's email address and the reviews. Most operators use OTAs for reach, then work to win repeat and local guests through direct booking, where no commission is paid. OTAs expect live availability, so the operator's booking system has to keep OTA sales and direct sales in one calendar to avoid double bookings. Some OTAs also ask for rate parity, meaning the operator shouldn't sell cheaper on its own website.",
+   "in_kong": null,
+   "see_also": [
+    "commission",
+    "direct-booking",
+    "rate-parity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "outbound-tourism",
+   "include": false,
+   "letter": "O",
+   "term": "Outbound tourism",
+   "category": "Types of tourism",
+   "also_called": [],
+   "other_language_term": "pelancongan keluar",
+   "definition": "Outbound tourism is residents of a country travelling abroad.",
+   "explanation": "In Malaysia, selling outbound travel needs the outbound category of a TOBTAB licence.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "inbound-tourism"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "overbooking",
+   "include": true,
+   "letter": "O",
+   "term": "Overbooking",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "tempahan berlebihan",
+   "definition": "Overbooking is when more guests are booked on a session than it can take.",
+   "explanation": "Airlines and hotels sometimes do it on purpose. For tours, it's usually an accident: an OTA and the operator's website both selling the last places at once, or a WhatsApp booking not entered in time. Live availability across every channel is the fix.",
+   "in_kong": null,
+   "see_also": [
+    "double-booking",
+    "availability",
+    "off-platform-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "pax",
+   "include": true,
+   "letter": "P",
+   "term": "Pax",
+   "category": "Bookings and the day",
+   "also_called": [
+    "per pax",
+    "per person"
+   ],
+   "other_language_term": null,
+   "definition": "Pax means the number of people on a booking, whatever their age.",
+   "explanation": "A booking for \"4 pax\" is four guests. The word comes from travel and airline shorthand for passengers, and in Malaysia it's used everywhere, from tour quotes to restaurant set menus. Operators set a minimum pax for a tour to run, a maximum pax for each session based on boats, vehicles or guides, and often a different price per pax for each guest type, such as adult, child or senior. Quotes to agents and groups are almost always written per pax, and FOC places are counted in pax too. When counting pax for safety, operators include infants and children even if they travel free, because they still need a seat and a life jacket.",
+   "in_kong": {
+    "text": "Each Kong product has a capacity, and you set a price for each guest type.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "minimum-pax",
+    "headcount",
+    "foc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "payment-gateway",
+   "include": true,
+   "letter": "P",
+   "term": "Payment gateway",
+   "category": "Payments",
+   "also_called": [
+    "payment processor",
+    "payment service provider",
+    "PSP"
+   ],
+   "other_language_term": "gerbang pembayaran",
+   "definition": "A payment gateway is the service that takes a guest's card, eWallet or online banking payment and passes it safely to the operator's bank account.",
+   "explanation": "It sits between the booking page and the banks. The gateway checks the payment, protects card details, and pays the money out, minus its fees, on a schedule. The choice of gateway decides which payment methods guests can use. In Malaysia, that matters: many guests prefer FPX online banking or eWallets like Touch 'n Go to cards, and not every gateway supports them. Operators compare gateways on the payment methods they support, the fee for each method, how quickly they pay out, and how they handle chargebacks. It's also worth checking which currencies a gateway accepts, since overseas guests may be charged a conversion fee by their bank, and whether it supports the payment methods visitors from key markets expect. Switching gateways later is possible but disruptive, so it pays to choose with next season in mind.",
+   "in_kong": {
+    "text": "Kong works with Stripe or Xendit. In Malaysia, Xendit adds Touch 'n Go, ShopeePay, Boost, DuitNow QR and buy now pay later. In Australia, payments run through Stripe.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "fpx",
+    "payout",
+    "merchant-of-record"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "payment-link",
+   "include": true,
+   "letter": "P",
+   "term": "Payment link",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": "pautan pembayaran",
+   "definition": "A payment link is a web address a guest opens to pay for a booking, sent by email, SMS or WhatsApp.",
+   "explanation": "It's handy for phone and WhatsApp bookings, and for collecting deposits and balances without taking card details over the phone.",
+   "in_kong": null,
+   "see_also": [
+    "deposit",
+    "balance-payment",
+    "off-platform-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "payout",
+   "include": true,
+   "letter": "P",
+   "term": "Payout",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": "bayaran kepada pengendali",
+   "definition": "A payout is the transfer of money from a payment gateway or OTA into the operator's bank account.",
+   "explanation": "Gateways pay out on a schedule, such as daily or weekly, after taking their fees. OTAs often pay monthly, sometimes only after the tour has run. Knowing when each payout lands helps with cash flow in peak season, when costs like fuel and staff go up first.",
+   "in_kong": null,
+   "see_also": [
+    "settlement-period",
+    "merchant-fee",
+    "payment-gateway"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "pci-dss",
+   "include": true,
+   "letter": "P",
+   "term": "PCI DSS",
+   "category": "Payments",
+   "also_called": [
+    "PCI compliance"
+   ],
+   "other_language_term": null,
+   "definition": "PCI DSS is the security standard every business that accepts card payments must follow to protect card details.",
+   "explanation": "Operators who take cards through a hosted payment page leave most of the work to their payment gateway.",
+   "in_kong": null,
+   "see_also": [
+    "payment-gateway",
+    "3d-secure"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "pdpa",
+   "include": true,
+   "letter": "P",
+   "term": "PDPA",
+   "category": "Rules and licences",
+   "also_called": [
+    "Personal Data Protection Act"
+   ],
+   "other_language_term": "Akta Perlindungan Data Peribadi",
+   "definition": "The PDPA (Personal Data Protection Act 2010) is Malaysia's law on collecting, using and storing personal data in commercial dealings.",
+   "explanation": "It covers the guest details operators collect: names, phone numbers, ID numbers on waivers, health notes. The law was amended in 2024, adding duties such as reporting data breaches. Operators should collect only what they need, tell guests why, keep it secure, and get consent before sending marketing messages.",
+   "in_kong": null,
+   "see_also": [
+    "booking-form",
+    "liability-waiver"
+   ],
+   "source": {
+    "name": "Personal Data Protection Department (JPDP)",
+    "url": "https://www.pdp.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "peak-season",
+   "include": true,
+   "letter": "P",
+   "term": "Peak season",
+   "category": "Pricing",
+   "also_called": [
+    "high season"
+   ],
+   "other_language_term": "musim puncak",
+   "definition": "Peak season is the time of year when demand and prices are highest.",
+   "explanation": "In Malaysia, this usually means school holidays and festive periods. For east coast islands, it's the months outside the northeast monsoon.",
+   "in_kong": null,
+   "see_also": [
+    "shoulder-season",
+    "low-season",
+    "blackout-dates"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "pic",
+   "include": true,
+   "letter": "P",
+   "term": "PIC (person in charge)",
+   "category": "Bookings and the day",
+   "also_called": [
+    "person in charge",
+    "group leader"
+   ],
+   "other_language_term": "orang yang bertanggungjawab",
+   "definition": "PIC (person in charge) is the contact responsible for a group booking or a piece of work.",
+   "explanation": "The term is very common in Malaysia. A school trip, company outing or DMC group will name a PIC who confirms numbers, receives the invoice and is the person to call on the day. Operators often name their own PIC for the group too.",
+   "in_kong": null,
+   "see_also": [
+    "group-booking",
+    "mice",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "proforma-invoice",
+   "include": true,
+   "letter": "P",
+   "term": "Proforma invoice",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": "invois proforma",
+   "definition": "A proforma invoice is a preliminary bill sent before a sale is final, so the buyer can arrange payment.",
+   "explanation": "Companies and government bodies often need one to raise a purchase order or release a deposit. It isn't a tax invoice: once the booking is paid and confirmed, the operator issues the real invoice, which in Malaysia may need to be an e-invoice.",
+   "in_kong": null,
+   "see_also": [
+    "quotation",
+    "invoice-vs-receipt",
+    "e-invoice"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "promo-code",
+   "include": true,
+   "letter": "P",
+   "term": "Promo code",
+   "category": "Pricing",
+   "also_called": [
+    "discount code",
+    "coupon code"
+   ],
+   "other_language_term": "kod promosi",
+   "definition": "A promo code is a word or code that gives a discount at checkout.",
+   "explanation": "Operators use them for campaigns, partners and returning guests, and track which codes bring in bookings.",
+   "in_kong": {
+    "text": "Kong lets you create discount codes for your products.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "gift-voucher",
+    "early-bird-discount"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "public-liability-insurance",
+   "include": true,
+   "letter": "P",
+   "term": "Public liability insurance",
+   "category": "Rules and licences",
+   "also_called": [
+    "tour operator insurance",
+    "liability insurance"
+   ],
+   "other_language_term": "insurans liabiliti awam",
+   "definition": "Public liability insurance covers a business if a guest or member of the public is injured, or their property is damaged, because of the business's activities.",
+   "explanation": "For tour and activity operators, it's one of the most important policies to hold. In Australia, many councils, national parks and landholders ask for proof of it before granting permits or access, and OTAs and resellers often ask for a certificate of currency before listing an operator. In Malaysia, partners, venues and corporate clients increasingly ask for it too. The amount of cover, which activities are included, and any exclusions, such as water or motorised activities, matter as much as the premium. It works alongside waivers and safety procedures, not instead of them. Professional indemnity and cover for equipment and staff are separate policies.",
+   "in_kong": null,
+   "see_also": [
+    "liability-waiver",
+    "tourism-accreditation"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "qtic",
+   "include": true,
+   "letter": "Q",
+   "term": "QTIC",
+   "category": "Rules and licences",
+   "also_called": [
+    "Queensland Tourism Industry Council"
+   ],
+   "other_language_term": null,
+   "definition": "QTIC (the Queensland Tourism Industry Council) is the peak industry body for tourism businesses in Queensland.",
+   "explanation": "It represents operators to government and runs training, awards and support programmes.",
+   "in_kong": null,
+   "see_also": [
+    "atdw",
+    "tourism-accreditation"
+   ],
+   "source": {
+    "name": "QTIC",
+    "url": "https://www.qtic.com.au",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "quotation",
+   "include": true,
+   "letter": "Q",
+   "term": "Quotation",
+   "category": "Payments",
+   "also_called": [
+    "quote"
+   ],
+   "other_language_term": "sebut harga",
+   "definition": "A quotation is a written price offer for a specific booking, sent before the guest or company agrees to buy.",
+   "explanation": "Company, school and MICE groups usually ask for one before anything else. A good quote lists the date, pax, what's included, the price per person or in total, payment terms, and how long the offer stands. Once accepted, it usually becomes a proforma invoice or a deposit request.",
+   "in_kong": null,
+   "see_also": [
+    "proforma-invoice",
+    "mice",
+    "group-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "rack-rate",
+   "include": true,
+   "letter": "R",
+   "term": "Rack rate",
+   "category": "Pricing",
+   "also_called": [
+    "retail rate",
+    "public rate",
+    "published rate"
+   ],
+   "other_language_term": "harga penuh",
+   "definition": "The rack rate is the full public price of a tour, before any discount or commission.",
+   "explanation": "It's the price on the operator's own website and usually the one guests see on OTAs. The name comes from hotels, where standard room prices were once displayed on a rack behind the front desk. Operators build every other price from the rack rate. A commissionable rate is usually the rack rate, with the seller's commission paid out of it. A net rate is a lower price offered to resellers, who sell at the rack rate and keep the difference. Keeping one clear rack rate, and protecting it, matters: if guests find your tour cheaper through a reseller than on your own website, they'll book through the reseller, and you'll pay commission on guests you could have had directly.",
+   "in_kong": null,
+   "see_also": [
+    "net-rate",
+    "commissionable-rate",
+    "rate-parity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "rain-check",
+   "include": true,
+   "letter": "R",
+   "term": "Rain check",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "A rain check is a promise that a guest can come back another time when a tour is called off, usually because of weather.",
+   "explanation": "It's often offered instead of, or as well as, a refund.",
+   "in_kong": null,
+   "see_also": [
+    "force-majeure",
+    "reschedule",
+    "cancellation-policy"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "rate-parity",
+   "include": true,
+   "letter": "R",
+   "term": "Rate parity",
+   "category": "Selling and distribution",
+   "also_called": [],
+   "other_language_term": "pariti harga",
+   "definition": "Rate parity means selling a tour at the same price on every channel, including the operator's own website and each OTA.",
+   "explanation": "Some OTAs ask operators not to undercut them on their own website. Operators can still reward direct guests in other ways, such as a free add-on or more flexible changes, where their agreements allow it.",
+   "in_kong": null,
+   "see_also": [
+    "ota",
+    "direct-booking",
+    "rack-rate"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "refund-policy",
+   "include": true,
+   "letter": "R",
+   "term": "Refund policy",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": "polisi bayaran balik",
+   "definition": "A refund policy sets out when a guest gets their money back, how much, and how.",
+   "explanation": "It's usually part of the cancellation policy: for example, a full refund up to a set number of days before the tour, a partial refund after that, and nothing for no-shows. Clear terms, shown before payment, cut disputes and chargebacks. Many operators offer credit or a free date change instead of cash where their terms allow.",
+   "in_kong": null,
+   "see_also": [
+    "cancellation-policy",
+    "credit-note",
+    "chargeback"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "release-of-liability",
+   "include": true,
+   "letter": "R",
+   "term": "Release of liability",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "pelepasan liabiliti",
+   "definition": "A release of liability is a statement in which a guest gives up the right to claim against an operator for certain risks.",
+   "explanation": "It's often part of a liability waiver, and the two terms are used almost interchangeably. How much protection it gives depends on local law and its wording, so operators get legal advice on theirs. It usually sits alongside a description of the risks and a guest's confirmation that they're fit to take part.",
+   "in_kong": {
+    "text": "Kong's digital waivers can hold your release wording, signed by each guest.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "liability-waiver",
+    "indemnity-form"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "reschedule",
+   "include": true,
+   "letter": "R",
+   "term": "Reschedule",
+   "category": "Bookings and the day",
+   "also_called": [
+    "date change",
+    "amendment"
+   ],
+   "other_language_term": "tukar tarikh",
+   "definition": "To reschedule is to move a booking to a different date or time.",
+   "explanation": "Most operators allow it free of charge up to a set point before the tour, and say so in their terms.",
+   "in_kong": {
+    "text": "In Kong, you can move a booking to another session.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "cancellation-policy",
+    "rain-check"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "reseller",
+   "include": true,
+   "letter": "R",
+   "term": "Reseller",
+   "category": "Selling and distribution",
+   "also_called": [],
+   "other_language_term": "penjual semula",
+   "definition": "A reseller is a business that sells another operator's tours or activities to its own customers, such as a hotel, travel agent or another operator.",
+   "explanation": "Resellers usually buy at a net rate and sell at the public price, or earn a commission on the public price. Good reseller partners bring steady bookings without the cost of an OTA, especially for day tours near hotels and transport hubs.",
+   "in_kong": {
+    "text": "Kong has a reseller marketplace where other businesses can find and sell your products.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "net-rate",
+    "commission",
+    "affiliate-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "reserve-with-google",
+   "include": true,
+   "letter": "R",
+   "term": "Reserve with Google",
+   "category": "Selling and distribution",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Reserve with Google is a Google feature that lets people book a business straight from Google Search or Maps, through a connected booking partner.",
+   "explanation": "The booking button appears on the business's Google listing. It only works if the business's booking system is a Google partner for that type of business. For tours and activities, Google's main product is Google Things to Do.",
+   "in_kong": null,
+   "see_also": [
+    "google-things-to-do",
+    "direct-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "resources",
+   "include": true,
+   "letter": "R",
+   "term": "Resources",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "sumber",
+   "definition": "Resources are the things a tour needs that can only be in one place at a time, such as guides, boats, vehicles and equipment.",
+   "explanation": "Two different tours might share one boat or one guide. Tracking resources, not just seats, stops two sessions being booked against the same boat, and shows which sessions still need a guide assigned.",
+   "in_kong": {
+    "text": "Kong tracks resources like boats, guides and vehicles, and flags sessions that are missing one.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "capacity",
+    "double-booking",
+    "time-slot"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "restech",
+   "include": true,
+   "letter": "R",
+   "term": "Restech",
+   "category": "Tech and AI",
+   "also_called": [
+    "reservation technology"
+   ],
+   "other_language_term": null,
+   "definition": "Restech, short for reservation technology, is the software a business uses to take, manage and get paid for bookings.",
+   "explanation": "In tours and activities, it's the system behind the \"Book now\" button: availability, payments, guest details, waivers and connections to OTAs. The word is used for the category as a whole, the way operators might compare restech pricing. In restaurants, the same word is also used to mean restaurant technology. Operators usually choose their restech on four things: what it costs per booking, which payment methods and OTAs it connects to, how easy it is for staff to use on a phone, and the support they get when something goes wrong on a busy morning. Switching restech is a big job, because bookings, OTA connections, payment accounts and staff habits all move at once, so most operators change only when their current system starts costing them bookings or time.",
+   "in_kong": null,
+   "see_also": [
+    "booking-engine",
+    "mcp"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "restech-2-0",
+   "include": false,
+   "letter": "R",
+   "term": "Restech 2.0",
+   "category": "Tech and AI",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "[REPLACE: definition sentence from Kong's Restech 2.0 piece]",
+   "explanation": "[REPLACE: explanation from Kong's Restech 2.0 piece]",
+   "in_kong": null,
+   "see_also": [
+    "restech",
+    "mcp"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "L"
+  },
+  {
+   "id": "revenue-management",
+   "include": true,
+   "letter": "R",
+   "term": "Revenue management",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "pengurusan hasil",
+   "definition": "Revenue management is setting prices and availability to earn the most from a fixed number of places.",
+   "explanation": "A boat with 12 seats can't sell 13, and an empty seat today can't be sold tomorrow. Revenue management looks at booking patterns, seasons and how far ahead guests book, to decide when to discount, when to hold the price, and which channels get which places.",
+   "in_kong": null,
+   "see_also": [
+    "yield-management",
+    "dynamic-pricing",
+    "load-factor"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "rooming-list",
+   "include": true,
+   "letter": "R",
+   "term": "Rooming list",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "senarai bilik",
+   "definition": "A rooming list shows which guests share which hotel rooms on a multi-day trip.",
+   "explanation": "Group organisers send it to the hotel before arrival.",
+   "in_kong": null,
+   "see_also": [
+    "twin-sharing",
+    "group-booking"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "safety-briefing",
+   "include": true,
+   "letter": "S",
+   "term": "Safety briefing",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "taklimat keselamatan",
+   "definition": "A safety briefing is the talk guides give before an activity: the risks, the rules, the equipment and what to do in an emergency.",
+   "explanation": "Many operators record that the briefing was given, alongside signed waivers.",
+   "in_kong": null,
+   "see_also": [
+    "liability-waiver",
+    "check-in"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "service-charge",
+   "include": true,
+   "letter": "S",
+   "term": "Service charge",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "caj perkhidmatan",
+   "definition": "A service charge is an extra amount added to a bill that goes to the business, unlike a tip, which the guest chooses to give.",
+   "explanation": "It's common in Malaysian restaurants and hotels. Operators who add one say so clearly before the guest pays. It's not the same as service tax (SST).",
+   "in_kong": null,
+   "see_also": [
+    "gratuity",
+    "surcharge",
+    "sst"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "settlement-period",
+   "include": true,
+   "letter": "S",
+   "term": "Settlement period",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": "tempoh penyelesaian",
+   "definition": "The settlement period is the time between a guest paying and the money reaching the operator's bank account.",
+   "explanation": "It varies by payment gateway and payment method, and it can be longer for new accounts.",
+   "in_kong": null,
+   "see_also": [
+    "payout"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "shopeepay",
+   "include": true,
+   "letter": "S",
+   "term": "ShopeePay",
+   "category": "Payments",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "ShopeePay is the eWallet linked to the Shopee shopping app.",
+   "explanation": "It's popular with younger Malaysian guests who already use Shopee.",
+   "in_kong": {
+    "text": "Kong's Xendit option accepts ShopeePay.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "ewallet",
+    "touch-n-go-ewallet"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "shoulder-season",
+   "include": true,
+   "letter": "S",
+   "term": "Shoulder season",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "musim pertengahan",
+   "definition": "Shoulder season is the period between peak and low season, when demand is moderate and the weather is often still good.",
+   "explanation": "It's often the best time to win bookings with small price changes, early bird offers or packages, because guests are flexible and there's less competition for their attention. Many operators plan staff leave and boat maintenance around it.",
+   "in_kong": null,
+   "see_also": [
+    "peak-season",
+    "low-season",
+    "dynamic-pricing"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "ssm-registration",
+   "include": true,
+   "letter": "S",
+   "term": "SSM registration",
+   "category": "Rules and licences",
+   "also_called": [
+    "SSM",
+    "business registration"
+   ],
+   "other_language_term": "pendaftaran SSM",
+   "definition": "SSM registration is registering a business or company with the Companies Commission of Malaysia (Suruhanjaya Syarikat Malaysia).",
+   "explanation": "It's the first legal step for most Malaysian businesses, as a sole proprietorship, partnership or Sdn Bhd company, though sole proprietors in Sabah and Sarawak follow local rules. For tour operators, the type matters: a TOBTAB licence needs a registered Sdn Bhd company, so a sole proprietorship won't do.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "motac-licence"
+   ],
+   "source": {
+    "name": "Companies Commission of Malaysia (SSM)",
+    "url": "https://www.ssm.com.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "sst",
+   "include": true,
+   "letter": "S",
+   "term": "SST",
+   "category": "Rules and licences",
+   "also_called": [
+    "sales and service tax",
+    "service tax"
+   ],
+   "other_language_term": "cukai jualan dan perkhidmatan",
+   "definition": "SST is Malaysia's sales and service tax: a sales tax on certain goods and a service tax on certain services, collected by the Royal Malaysian Customs Department.",
+   "explanation": "Whether a tour business must charge service tax depends on what it provides and its turnover, and the list of taxable services has been widened in recent years. Operators who bundle accommodation, food or transport should check which parts are taxable. Registered businesses show SST separately on their invoices. It's not the same as a service charge.",
+   "in_kong": null,
+   "see_also": [
+    "tourism-tax",
+    "e-invoice",
+    "service-charge"
+   ],
+   "source": {
+    "name": "Royal Malaysian Customs Department (MySST)",
+    "url": "https://mysst.customs.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "surcharge",
+   "include": true,
+   "letter": "S",
+   "term": "Surcharge",
+   "category": "Payments",
+   "also_called": [
+    "credit card surcharge",
+    "card surcharge"
+   ],
+   "other_language_term": "surcaj",
+   "definition": "A surcharge is an extra charge added to a price, most often to cover card fees or a cost like fuel.",
+   "explanation": "Card surcharges are regulated in both Australia and Malaysia, and the rules differ by country and card type and have changed over time, so operators check the current position with their payment provider before adding one. Any surcharge should be shown clearly before the guest pays.",
+   "in_kong": null,
+   "see_also": [
+    "merchant-fee",
+    "booking-fee",
+    "service-charge"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "terms-and-conditions",
+   "include": true,
+   "letter": "T",
+   "term": "Terms and conditions",
+   "category": "Bookings and the day",
+   "also_called": [
+    "T&Cs",
+    "booking terms"
+   ],
+   "other_language_term": "terma dan syarat",
+   "definition": "Terms and conditions are the rules a guest agrees to when booking: payment, cancellations, safety, behaviour and liability.",
+   "explanation": "Guests should see and accept them before paying. They're what the operator relies on in a dispute or chargeback, so they need to match what actually happens and stay readable. Most operators keep one page of terms on their website and link to it from every booking confirmation, and date each version so they know which terms a guest agreed to.",
+   "in_kong": null,
+   "see_also": [
+    "cancellation-policy",
+    "liability-waiver",
+    "chargeback"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "time-slot",
+   "include": true,
+   "letter": "T",
+   "term": "Time slot",
+   "category": "Bookings and the day",
+   "also_called": [
+    "session",
+    "departure"
+   ],
+   "other_language_term": "slot masa",
+   "definition": "A time slot is a set start time guests can book, such as 9am or 2pm.",
+   "explanation": "Each time slot usually has its own capacity and its own list of guests.",
+   "in_kong": {
+    "text": "In Kong, each time slot is a session with its own capacity and bookings.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "capacity",
+    "availability"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "tobtab",
+   "include": true,
+   "letter": "T",
+   "term": "TOBTAB",
+   "category": "Rules and licences",
+   "also_called": [
+    "tour operating licence",
+    "travel agency licence",
+    "MOTAC licence"
+   ],
+   "other_language_term": null,
+   "definition": "TOBTAB (Tour Operating Business and Travel Agency Business) is the licence Malaysian tour operators and travel agencies need from MOTAC under the Tourism Industry Act 1992.",
+   "explanation": "It comes in three main categories: inbound (tours within Malaysia, including for overseas visitors), outbound (taking Malaysians abroad) and ticketing (selling air tickets). A business can hold one category or a combination, and some also hold an Umrah category. Each licence has a number and a validity period, and anyone can look a company up on MOTAC's public TOBTAB list. That's useful from both sides: guests, DMCs and OTAs may ask for your licence number, and you can check that a partner agency is licensed before working with it. Getting a TOBTAB licence usually takes a Sdn Bhd company, commercial premises, the TTMC course, and membership of a recognised tourism association.",
+   "in_kong": null,
+   "see_also": [
+    "motac-licence",
+    "inbound-tour-operator",
+    "ssm-registration"
+   ],
+   "source": {
+    "name": "MOTAC TOBTAB licence list",
+    "url": "https://www.motac.gov.my/en/check/tobtab",
+    "checked": "September 2026"
+   },
+   "read_more": {
+    "text": "TOBTAB licence explained",
+    "url": "https://bookwithkong.com/blog/tobtab-licence-explained"
+   },
+   "tier": "L"
+  },
+  {
+   "id": "touch-n-go-ewallet",
+   "include": true,
+   "letter": "T",
+   "term": "Touch 'n Go eWallet",
+   "category": "Payments",
+   "also_called": [
+    "TNG",
+    "TnG eWallet",
+    "Touch n Go"
+   ],
+   "other_language_term": null,
+   "definition": "Touch 'n Go eWallet is one of Malaysia's most used eWallet apps.",
+   "explanation": "Many local guests prefer it to cards, especially for smaller amounts and last-minute bookings.",
+   "in_kong": {
+    "text": "Kong's Xendit option accepts Touch 'n Go.",
+    "url": "[REPLACE: feature URL]"
+   },
+   "see_also": [
+    "ewallet",
+    "grabpay",
+    "shopeepay"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "tour-operator",
+   "include": true,
+   "letter": "T",
+   "term": "Tour operator",
+   "category": "Selling and distribution",
+   "also_called": [
+    "activity operator",
+    "activity provider",
+    "experience provider"
+   ],
+   "other_language_term": "pengendali pelancongan",
+   "definition": "A tour operator is a business that runs tours or activities and sells places on them to guests.",
+   "explanation": "The operator owns the experience: the route, the guides, the boat or the vehicles. Travel agents and OTAs may sell the operator's tours, but the operator delivers them. In Malaysia, a business that organises tours for sale needs a TOBTAB licence from MOTAC.",
+   "in_kong": null,
+   "see_also": [
+    "travel-agency",
+    "tobtab",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "tour-package",
+   "include": true,
+   "letter": "T",
+   "term": "Tour package",
+   "category": "Pricing",
+   "also_called": [
+    "package tour"
+   ],
+   "other_language_term": "pakej pelancongan",
+   "definition": "A tour package is a set of travel services sold together for one price, such as transport, a hotel stay and activities.",
+   "explanation": "Packages are common for multi-day trips and for groups booked through agents. In Malaysia, organising packages for sale usually needs a TOBTAB licence, so activity operators often sell their part to a licensed agent, who builds the package.",
+   "in_kong": null,
+   "see_also": [
+    "tobtab",
+    "itinerary",
+    "free-and-easy"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "tourism-accreditation",
+   "include": true,
+   "letter": "T",
+   "term": "Tourism accreditation",
+   "category": "Rules and licences",
+   "also_called": [
+    "accreditation",
+    "Quality Tourism Framework"
+   ],
+   "other_language_term": "akreditasi pelancongan",
+   "definition": "Tourism accreditation is certification that a tourism business meets set standards for things like safety, customer service and business practice.",
+   "explanation": "In Australia, the national Quality Tourism Framework includes accreditation programmes, and some parks, tourism bodies and grant schemes ask for it. It can also help with insurers and trade partners. In Malaysia, MOTAC licensing and industry certifications play a similar role.",
+   "in_kong": null,
+   "see_also": [
+    "public-liability-insurance",
+    "atdw"
+   ],
+   "source": {
+    "name": "Australian Tourism Export Council (ATEC)",
+    "url": "https://www.atec.net.au",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "tourism-australia",
+   "include": true,
+   "letter": "T",
+   "term": "Tourism Australia",
+   "category": "Rules and licences",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Tourism Australia is the Australian Government agency that promotes Australia to international visitors.",
+   "explanation": "It runs Australia.com and trade events that connect operators with overseas buyers.",
+   "in_kong": null,
+   "see_also": [
+    "atdw",
+    "qtic"
+   ],
+   "source": {
+    "name": "Tourism Australia",
+    "url": "https://www.tourism.australia.com",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "tourism-malaysia",
+   "include": true,
+   "letter": "T",
+   "term": "Tourism Malaysia",
+   "category": "Rules and licences",
+   "also_called": [
+    "Malaysia Tourism Promotion Board"
+   ],
+   "other_language_term": null,
+   "definition": "Tourism Malaysia (the Malaysia Tourism Promotion Board) is the government agency that promotes Malaysia as a destination, at home and abroad.",
+   "explanation": "It sits under MOTAC and runs national campaigns such as Visit Malaysia Year.",
+   "in_kong": null,
+   "see_also": [
+    "motac-licence"
+   ],
+   "source": {
+    "name": "Tourism Malaysia",
+    "url": "https://www.tourism.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "tourism-tax",
+   "include": true,
+   "letter": "T",
+   "term": "Tourism tax",
+   "category": "Rules and licences",
+   "also_called": [
+    "TTx",
+    "tourist tax"
+   ],
+   "other_language_term": "cukai pelancongan",
+   "definition": "Tourism tax is a flat charge per room per night that foreign guests pay when staying at registered accommodation in Malaysia.",
+   "explanation": "It's collected by the accommodation, not the tour operator, and paid to the Royal Malaysian Customs Department. If you only run tours and activities and don't provide rooms, you generally don't collect it. Operators selling packages that include accommodation should check who collects it.",
+   "in_kong": null,
+   "see_also": [
+    "sst",
+    "tour-package",
+    "homestay"
+   ],
+   "source": {
+    "name": "Royal Malaysian Customs Department (MyTTx)",
+    "url": "https://www.myttx.customs.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": {
+    "text": "Tourism tax in Malaysia: what tour operators need to know",
+    "url": "https://bookwithkong.com/blog/tourism-tax-malaysia"
+   },
+   "tier": "S"
+  },
+  {
+   "id": "tourist-guide-licence",
+   "include": true,
+   "letter": "T",
+   "term": "Tourist guide licence",
+   "category": "Rules and licences",
+   "also_called": [
+    "tour guide licence",
+    "tourist guide license"
+   ],
+   "other_language_term": "lesen pemandu pelancong",
+   "definition": "A tourist guide licence is the licence MOTAC issues to individuals who guide tourists in Malaysia.",
+   "explanation": "Guides usually complete a MOTAC-approved course first, and there are different types, such as city guides and nature guides, some limited to one area. Operators who employ guides check that each licence is valid, and many OTAs and DMCs ask about it.",
+   "in_kong": null,
+   "see_also": [
+    "motac-licence",
+    "tobtab"
+   ],
+   "source": {
+    "name": "Ministry of Tourism, Arts and Culture (MOTAC)",
+    "url": "https://www.motac.gov.my",
+    "checked": "September 2026"
+   },
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "transfer",
+   "include": true,
+   "letter": "T",
+   "term": "Transfer",
+   "category": "Bookings and the day",
+   "also_called": [
+    "hotel pickup",
+    "pickup and drop-off",
+    "airport transfer"
+   ],
+   "other_language_term": "pengangkutan",
+   "definition": "A transfer is transport between two points on a trip, such as from a hotel or airport to the start of a tour.",
+   "explanation": "Operators state whether transfers are included, and from which areas.",
+   "in_kong": null,
+   "see_also": [
+    "add-ons",
+    "meeting-point"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "travel-agency",
+   "include": true,
+   "letter": "T",
+   "term": "Travel agency",
+   "category": "Selling and distribution",
+   "also_called": [
+    "travel agent"
+   ],
+   "other_language_term": "agensi pelancongan",
+   "definition": "A travel agency is a business that sells travel made by others, such as tours, flights and hotels, usually for a commission or markup.",
+   "explanation": "Agents don't run the tour themselves. They book it for their customer and earn a cut, either as commission from the operator or by adding their own markup to a net rate. In Malaysia, travel agencies are licensed by MOTAC under the same TOBTAB system as tour operators, with separate categories for inbound, outbound and ticketing.",
+   "in_kong": null,
+   "see_also": [
+    "commission",
+    "net-rate",
+    "tobtab"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "travel-voucher",
+   "include": true,
+   "letter": "T",
+   "term": "Travel voucher",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": "baucar pelancongan",
+   "definition": "A travel voucher is a document or code a guest shows to prove they have paid for a service.",
+   "explanation": "Agents and DMCs often issue them to their guests for tours booked on their behalf, and the operator checks them at check-in.",
+   "in_kong": null,
+   "see_also": [
+    "check-in",
+    "dmc"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "twin-sharing",
+   "include": true,
+   "letter": "T",
+   "term": "Twin sharing",
+   "category": "Pricing",
+   "also_called": [
+    "single supplement"
+   ],
+   "other_language_term": "bilik berkongsi",
+   "definition": "Twin sharing means a package price per person, based on two people sharing one room.",
+   "explanation": "A guest travelling alone usually pays a single supplement to have the room to themselves.",
+   "in_kong": null,
+   "see_also": [
+    "tour-package",
+    "rooming-list"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "upselling",
+   "include": true,
+   "letter": "U",
+   "term": "Upselling",
+   "category": "Pricing",
+   "also_called": [
+    "cross-selling"
+   ],
+   "other_language_term": "upsell",
+   "definition": "Upselling is offering a guest something extra, or a better version of what they're booking, such as a private boat or a photo package.",
+   "explanation": "Offered at checkout, in the confirmation email or on the day, it lifts earnings per guest without finding new guests. It works best when the extra is genuinely useful, like transport, gear hire or a longer session.",
+   "in_kong": null,
+   "see_also": [
+    "add-ons"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "S"
+  },
+  {
+   "id": "waitlist",
+   "include": true,
+   "letter": "W",
+   "term": "Waitlist",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": "senarai menunggu",
+   "definition": "A waitlist is a list of guests who want a tour that's full, in case places open up.",
+   "explanation": "When someone cancels, the first guest on the list is offered the place.",
+   "in_kong": null,
+   "see_also": [
+    "availability",
+    "capacity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "walk-in",
+   "include": true,
+   "letter": "W",
+   "term": "Walk-in",
+   "category": "Bookings and the day",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "A walk-in is a guest who turns up and books on the spot, without booking ahead.",
+   "explanation": "Recording walk-ins in the same system as online bookings keeps the headcount and remaining capacity right.",
+   "in_kong": null,
+   "see_also": [
+    "off-platform-booking",
+    "capacity"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  },
+  {
+   "id": "yield-management",
+   "include": true,
+   "letter": "Y",
+   "term": "Yield management",
+   "category": "Pricing",
+   "also_called": [],
+   "other_language_term": null,
+   "definition": "Yield management is an older name for revenue management, first used by airlines to earn the most from each flight.",
+   "explanation": "For tour operators, the two terms mean the same thing in practice.",
+   "in_kong": null,
+   "see_also": [
+    "revenue-management",
+    "dynamic-pricing"
+   ],
+   "source": null,
+   "read_more": null,
+   "tier": "XS"
+  }
+ ]
+}
