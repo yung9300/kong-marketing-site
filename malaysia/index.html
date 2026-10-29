@@ -3098,6 +3098,38 @@ body {
   .testimonials-section-sub { font-size: 15px; }
 }
 
+.testimonial-card.is-wide{grid-column:1/-1;flex-direction:row}
+.testimonial-card.is-wide .testimonial-photo{width:44%;height:auto;min-height:280px;flex-shrink:0}
+.testimonial-card[data-op="borneoist"] .testimonial-photo img{object-position:42% 60%}
+.testimonial-card.in-view:nth-child(5){transition-delay:0.7s}
+.testimonial-op-biz a{color:inherit;text-decoration:underline;text-decoration-color:rgba(26,10,46,0.25);text-underline-offset:2px;transition:color 0.25s,text-decoration-color 0.25s}
+.testimonial-op-biz a:hover{color:#7b3fb0;text-decoration-color:currentColor}
+@media (max-width:980px){.testimonial-card.is-wide{flex-direction:column}.testimonial-card.is-wide .testimonial-photo{width:100%;height:220px;min-height:0}}
+
+/* === Recent industry work === */
+.work-section{position:relative;padding:40px 40px 100px}
+.work-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,360px));justify-content:center;gap:24px}
+.work-card{display:flex;flex-direction:column;background:#fff;border:1px solid rgba(26,10,46,0.08);border-radius:18px;overflow:hidden;text-decoration:none;color:#1a0a2e;box-shadow:0 10px 30px rgba(59,15,94,0.06);transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,border-color .25s}
+.work-card:hover{transform:translateY(-2px);box-shadow:0 18px 44px rgba(59,15,94,0.12);border-color:rgba(123,63,176,0.22)}
+.work-card-img{aspect-ratio:16/10;overflow:hidden;background:#efe9f5}
+.work-card-img img{width:100%;height:100%;object-fit:cover;object-position:50% 62%;display:block}
+.work-card-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.work-card-title{font-family:'Poppins',system-ui,sans-serif;font-weight:700;font-size:19px;line-height:1.3;letter-spacing:-0.3px;margin:0;text-wrap:balance}
+.work-card-sum{font-family:'Inter',system-ui,sans-serif;font-size:14.5px;line-height:1.6;color:rgba(26,10,46,0.7);margin:0;text-wrap:pretty}
+.work-card-link{margin-top:auto;padding-top:4px;font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:14.5px;color:#7b3fb0;display:inline-flex;align-items:center;gap:6px;transition:color .25s}
+.work-card:hover .work-card-link{color:#3B0F5E}
+.work-card.is-feature{grid-column:1/-1;max-width:1000px;width:100%;justify-self:center;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+.work-card.is-feature .work-card-img{aspect-ratio:auto;min-height:340px}
+.work-card.is-feature .work-card-body{padding:30px 34px 32px;gap:12px;justify-content:center}
+.work-card.is-feature .work-card-title{font-size:24px;letter-spacing:-0.6px}
+.work-card-partners{display:flex;align-items:center;flex-wrap:wrap;gap:14px;padding-bottom:16px;border-bottom:1px solid rgba(26,10,46,0.08)}
+.work-card-partners img{height:26px;width:auto;max-width:100%;display:block}
+.work-card-partners img+img{height:30px}
+.work-card-x{width:1px;height:28px;background:rgba(26,10,46,0.14)}
+.work-card-host{font-family:'Inter',system-ui,sans-serif;font-size:12.5px;line-height:1.5;color:rgba(26,10,46,0.6);margin:0}
+@media (max-width:860px){.work-card.is-feature{grid-template-columns:1fr;max-width:520px}.work-card.is-feature .work-card-img{aspect-ratio:16/10;min-height:0}.work-card.is-feature .work-card-body{padding:22px 22px 24px}.work-card.is-feature .work-card-title{font-size:20px}.work-card-partners img{height:24px}.work-card-partners img+img{height:28px}}
+@media (max-width:768px){.work-section{padding:30px 20px 70px}}
+
 /* === Who we are (founders) Section === */
 .founders-section {
   position: relative;
@@ -4986,8 +5018,8 @@ body { position: relative; }
     "ratingValue": "5",
     "bestRating": "5",
     "worstRating": "1",
-    "ratingCount": "4",
-    "reviewCount": "4"
+    "ratingCount": "5",
+    "reviewCount": "5"
   },
   "review": [
     {
@@ -5017,6 +5049,13 @@ body { position: relative; }
       "publisher": { "@type": "Organization", "name": "Let's Go Discovery Jeep Tours" },
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "reviewBody": "Kong has been very convenient and reliable for our daily operations. The system is user-friendly, well-organized, and makes managing bookings much more efficient."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Wayne" },
+      "publisher": { "@type": "Organization", "name": "Borneoist", "url": "https://borneoist.com/" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "We have been using Kong for a few months now and are very happy with the system. Set-up was straightforward and adding tours is quick. The integration with Stripe is seamless so payments are taken care of. The booking calendar is clean, modern and is easy to embed in our website. But best of all is the support from Blake and Zach. They have been outstanding. They are always available to help and answer any questions promptly."
     }
   ]
 }
@@ -5421,6 +5460,44 @@ body { position: relative; }
 @media (max-width:980px){.coop-section .section-layout.reverse{grid-template-columns:1fr}.coop-section .anim-frame .chat{height:auto;min-height:300px}.coop-section .anim-frame .chat-body{max-height:380px}}
 @media (max-width:768px){.coop-section{padding:56px 20px 72px}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Recent industry work",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop",
+      "item": {
+        "@type": "BlogPosting",
+        "headline": "Kong x Langkawi Development Authority Workshop: 16 operators built their own booking sites in half a day",
+        "url": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop",
+        "datePublished": "2026-10-29",
+        "author": {
+          "@type": "Person",
+          "name": "Blake Ng"
+        },
+        "mentions": {
+          "@type": "GovernmentOrganization",
+          "name": "Langkawi Development Authority",
+          "alternateName": [
+            "LADA",
+            "Lembaga Pembangunan Langkawi"
+          ],
+          "url": "https://www.lada.gov.my/en/",
+          "sameAs": [
+            "https://www.lada.gov.my/",
+            "https://www.instagram.com/langkawi_lada",
+            "https://www.facebook.com/ukkLADA"
+          ]
+        }
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -6600,7 +6677,7 @@ body { position: relative; }
         <div class="testimonial-operator">
           <div class="testimonial-op-text">
             <div class="testimonial-op-name">Nabil</div>
-            <div class="testimonial-op-biz">Ceruk Rimba &middot; ATV Adventures</div>
+            <div class="testimonial-op-biz"><a href="https://cerukrimba.com/" target="_blank">Ceruk Rimba</a> &middot; ATV Adventures</div>
             <div class="testimonial-op-loc">Selangor</div>
           </div>
         </div>
@@ -6634,6 +6711,22 @@ body { position: relative; }
             <div class="testimonial-op-name">Mr Satu</div>
             <div class="testimonial-op-biz">Let&rsquo;s Go Discovery &middot; Jeep Tours</div>
             <div class="testimonial-op-loc">Cameron Highlands</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card is-wide" data-op="borneoist">
+      <div class="testimonial-photo"><img src="../images/op-borneoist.jpg" alt="Borneoist guests on a longboat in Mulu National Park" loading="lazy" width="1200" height="800"/></div>
+      <div class="testimonial-body">
+        <div class="testimonial-quote">
+          <div class="testimonial-quote-body">We have been using Kong for a few months now and are very happy with the system. Set-up was straightforward and adding tours is quick. The integration with Stripe is seamless so payments are taken care of. The booking calendar is clean, modern and is easy to embed in our website. But best of all is the support from Blake and Zach. They have been outstanding. They are always available to help and answer any questions promptly.</div>
+        </div>
+        <div class="testimonial-operator">
+          <div class="testimonial-op-text">
+            <div class="testimonial-op-name">Wayne</div>
+            <div class="testimonial-op-biz"><a href="https://borneoist.com/" target="_blank">Borneoist</a> &middot; Borneo Tours</div>
+            <div class="testimonial-op-loc">Sarawak</div>
           </div>
         </div>
       </div>
@@ -6740,6 +6833,28 @@ body { position: relative; }
         <p class="founder-bio-body">Five years at <strong>Atlassian</strong> as a product leader and senior engineer, building products like Jira and Confluence &mdash; now bringing that expertise to the travel world.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="work-section" id="industry-work" data-screen-label="Recent industry work">
+  <div class="testimonials-section-head">
+    <h2 class="testimonials-section-h1">Recent industry work</h2>
+  </div>
+  <div class="work-grid">
+    <a class="work-card is-feature" href="../blog/lada-langkawi-operator-workshop">
+      <div class="work-card-img"><img src="../images/blog-lada-group.jpg" alt="The 16 Langkawi operators with the Kong and LADA teams at Kompleks LADA" width="1600" height="1200" loading="lazy" decoding="async"></div>
+      <div class="work-card-body">
+        <div class="work-card-partners">
+          <img src="../images/logos/lada.png" alt="Langkawi Development Authority (LADA)" width="695" height="120" loading="lazy">
+          <span class="work-card-x" aria-hidden="true"></span>
+          <img src="../images/logos/naturally-langkawi.png" alt="Naturally Langkawi" width="373" height="120" loading="lazy">
+        </div>
+        <p class="work-card-host">Workshop hosted by the Langkawi Development Authority's Tourism Division</p>
+        <h3 class="work-card-title">16 Langkawi operators built their own booking sites in half a day</h3>
+        <p class="work-card-sum">A hands-on workshop with LADA's Tourism Division at Kompleks LADA, 27 October 2026. Every operator left with a live booking link they built themselves.</p>
+        <span class="work-card-link">Read the write-up<i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+      </div>
+    </a>
   </div>
 </section>
 
