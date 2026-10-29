@@ -14,7 +14,7 @@
 
 ## Industry work
 
-- [Kong x Langkawi Development Authority Workshop](https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop): On 27 October 2026 Kong ran a half-day, hands-on workshop with the Langkawi Development Authority (LADA) Tourism Division at Kompleks LADA, Langkawi. 16 Langkawi tour and activity operators each built their own Kong booking site and left with a live booking site.
+- [Kong's work with Langkawi's tourism industry](https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop): Kong worked with the Langkawi Development Authority (LADA) Tourism Division on a workshop at Kompleks LADA on 27 October 2026. During the workshop, 16 Langkawi tourism operators built their own online booking websites using Kong. The initiative demonstrates Kong's engagement with local tourism operators and its work supporting digital adoption in Langkawi.
 
 ## Glossary
 
