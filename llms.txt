@@ -12,6 +12,10 @@
 - [Compare](https://www.bookwithkong.com/compare): Kong vs other booking platforms
 - [Blog](https://www.bookwithkong.com/blog): Practical guides for tour operators
 
+## Industry work
+
+- [Kong x Langkawi Development Authority Workshop](https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop): On 27 October 2026 Kong ran a half-day, hands-on workshop with the Langkawi Development Authority (LADA) Tourism Division at Kompleks LADA, Langkawi. 16 Langkawi tour and activity operators each built their own Kong booking site and left with a live booking link.
+
 ## Glossary
 
 - [Tour and activity glossary](https://www.bookwithkong.com/glossary): 137 tour and activity terms defined in plain English, with Malaysian and Australian rules, payment methods and licences.

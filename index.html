@@ -3126,6 +3126,14 @@ body {
   .testimonials-section-sub { font-size: 15px; }
 }
 
+.testimonial-card.is-wide{grid-column:1/-1;flex-direction:row}
+.testimonial-card.is-wide .testimonial-photo{width:44%;height:auto;min-height:280px;flex-shrink:0}
+.testimonial-card[data-op="borneoist"] .testimonial-photo img{object-position:42% 60%}
+.testimonial-card.in-view:nth-child(5){transition-delay:0.7s}
+.testimonial-op-biz a{color:inherit;text-decoration:underline;text-decoration-color:rgba(26,10,46,0.25);text-underline-offset:2px;transition:color 0.25s,text-decoration-color 0.25s}
+.testimonial-op-biz a:hover{color:#7b3fb0;text-decoration-color:currentColor}
+@media (max-width:980px){.testimonial-card.is-wide{flex-direction:column}.testimonial-card.is-wide .testimonial-photo{width:100%;height:220px;min-height:0}}
+
 /* === Who we are (founders) Section === */
 .founders-section {
   position: relative;
@@ -5145,8 +5153,8 @@ body { position: relative; }
     "ratingValue": "5",
     "bestRating": "5",
     "worstRating": "1",
-    "ratingCount": "4",
-    "reviewCount": "4"
+    "ratingCount": "5",
+    "reviewCount": "5"
   },
   "review": [
     {
@@ -5176,6 +5184,13 @@ body { position: relative; }
       "publisher": { "@type": "Organization", "name": "Let's Go Discovery Jeep Tours" },
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "reviewBody": "Kong has been very convenient and reliable for our daily operations. The system is user-friendly, well-organized, and makes managing bookings much more efficient."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Wayne" },
+      "publisher": { "@type": "Organization", "name": "Borneoist", "url": "https://borneoist.com/" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "We have been using Kong for a few months now and are very happy with the system. Set-up was straightforward and adding tours is quick. The integration with Stripe is seamless so payments are taken care of. The booking calendar is clean, modern and is easy to embed in our website. But best of all is the support from Blake and Zach. They have been outstanding. They are always available to help and answer any questions promptly."
     }
   ]
 }
@@ -6646,7 +6661,7 @@ body { position: relative; }
         <div class="testimonial-operator">
           <div class="testimonial-op-text">
             <div class="testimonial-op-name">Nabil</div>
-            <div class="testimonial-op-biz">Ceruk Rimba &middot; ATV Adventures</div>
+            <div class="testimonial-op-biz"><a href="https://cerukrimba.com/" target="_blank">Ceruk Rimba</a> &middot; ATV Adventures</div>
             <div class="testimonial-op-loc">Selangor</div>
           </div>
         </div>
@@ -6680,6 +6695,22 @@ body { position: relative; }
             <div class="testimonial-op-name">Mr Satu</div>
             <div class="testimonial-op-biz">Let&rsquo;s Go Discovery &middot; Jeep Tours</div>
             <div class="testimonial-op-loc">Cameron Highlands</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card is-wide" data-op="borneoist">
+      <div class="testimonial-photo"><img src="images/op-borneoist.jpg" alt="Borneoist guests on a longboat in Mulu National Park" loading="lazy" width="1200" height="800"/></div>
+      <div class="testimonial-body">
+        <div class="testimonial-quote">
+          <div class="testimonial-quote-body">We have been using Kong for a few months now and are very happy with the system. Set-up was straightforward and adding tours is quick. The integration with Stripe is seamless so payments are taken care of. The booking calendar is clean, modern and is easy to embed in our website. But best of all is the support from Blake and Zach. They have been outstanding. They are always available to help and answer any questions promptly.</div>
+        </div>
+        <div class="testimonial-operator">
+          <div class="testimonial-op-text">
+            <div class="testimonial-op-name">Wayne</div>
+            <div class="testimonial-op-biz"><a href="https://borneoist.com/" target="_blank">Borneoist</a> &middot; Borneo Tours</div>
+            <div class="testimonial-op-loc">Sarawak</div>
           </div>
         </div>
       </div>
