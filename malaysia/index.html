@@ -4923,11 +4923,20 @@ body { position: relative; }
   "legalName": "SUPERSTRING SDN. BHD.",
   "url": "https://www.bookwithkong.com",
   "logo": "https://www.bookwithkong.com/images/logo.webp",
-  "description": "Kong is a direct booking platform for tour and activity operators in Malaysia and Southeast Asia. Free for operators \u2014 guests pay a 1.8% booking fee at checkout.",
+  "description": "Kong is a direct booking platform for tour and activity operators in Malaysia and Southeast Asia. Free for operators — guests pay a 1.8% booking fee at checkout.",
   "foundingDate": "2024",
   "founders": [
-    { "@type": "Person", "name": "Blake Ng", "jobTitle": "Co-founder", "alternateName": "Yuan Yao Ng" },
-    { "@type": "Person", "name": "Zachary Ng", "jobTitle": "Co-founder, CTO" }
+    {
+      "@type": "Person",
+      "name": "Blake Ng",
+      "jobTitle": "Co-founder",
+      "alternateName": "Yuan Yao Ng"
+    },
+    {
+      "@type": "Person",
+      "name": "Zachary Ng",
+      "jobTitle": "Co-founder, CTO"
+    }
   ],
   "address": {
     "@type": "PostalAddress",
@@ -4943,16 +4952,44 @@ body { position: relative; }
     "telephone": "+60-12-429-8159",
     "email": "blake@bookwithkong.com",
     "contactType": "Customer service",
-    "areaServed": ["MY", "SG", "ID", "TH", "VN", "PH"],
-    "availableLanguage": ["English", "Malay"]
+    "areaServed": [
+      "MY",
+      "SG",
+      "ID",
+      "TH",
+      "VN",
+      "PH"
+    ],
+    "availableLanguage": [
+      "English",
+      "Malay"
+    ]
   },
   "areaServed": [
-    { "@type": "Country", "name": "Malaysia" },
-    { "@type": "Country", "name": "Singapore" },
-    { "@type": "Country", "name": "Indonesia" },
-    { "@type": "Country", "name": "Thailand" },
-    { "@type": "Country", "name": "Vietnam" },
-    { "@type": "Country", "name": "Philippines" }
+    {
+      "@type": "Country",
+      "name": "Malaysia"
+    },
+    {
+      "@type": "Country",
+      "name": "Singapore"
+    },
+    {
+      "@type": "Country",
+      "name": "Indonesia"
+    },
+    {
+      "@type": "Country",
+      "name": "Thailand"
+    },
+    {
+      "@type": "Country",
+      "name": "Vietnam"
+    },
+    {
+      "@type": "Country",
+      "name": "Philippines"
+    }
   ],
   "knowsAbout": [
     "Online booking software",
@@ -4971,6 +5008,78 @@ body { position: relative; }
   "sameAs": [
     "https://www.facebook.com/profile.php?id=61579545995334",
     "https://www.linkedin.com/company/bookwithkong"
+  ],
+  "@id": "https://www.bookwithkong.com/#organization",
+  "subjectOf": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop#article",
+      "headline": "Kong x Langkawi Development Authority Workshop: 16 operators built their own booking sites in half a day",
+      "url": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop",
+      "datePublished": "2026-10-29",
+      "author": {
+        "@type": "Person",
+        "name": "Blake Ng"
+      },
+      "about": {
+        "@id": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop#event"
+      },
+      "mentions": {
+        "@id": "https://www.lada.gov.my/#organization"
+      }
+    }
+  ],
+  "event": [
+    {
+      "@type": "Event",
+      "@id": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop#event",
+      "name": "Kong x LADA workshop: build your own booking site",
+      "description": "Kong worked with the Langkawi Development Authority (LADA) Tourism Division on a workshop at Kompleks LADA on 27 October 2026. During the workshop, 16 Langkawi tourism operators built their own online booking websites using Kong.",
+      "startDate": "2026-10-27T13:30:00+08:00",
+      "endDate": "2026-10-27T17:30:00+08:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Kompleks LADA",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Langkawi",
+          "addressRegion": "Kedah",
+          "addressCountry": "MY"
+        }
+      },
+      "organizer": [
+        {
+          "@type": "GovernmentOrganization",
+          "@id": "https://www.lada.gov.my/#organization",
+          "name": "Langkawi Development Authority",
+          "alternateName": [
+            "LADA",
+            "Lembaga Pembangunan Langkawi"
+          ],
+          "url": "https://www.lada.gov.my/en/",
+          "sameAs": [
+            "https://www.lada.gov.my/",
+            "https://www.instagram.com/langkawi_lada",
+            "https://www.facebook.com/ukkLADA"
+          ],
+          "department": {
+            "@type": "Organization",
+            "name": "LADA Tourism Division"
+          }
+        },
+        {
+          "@id": "https://www.bookwithkong.com/#organization"
+        }
+      ],
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Langkawi tour and activity operators"
+      },
+      "isAccessibleForFree": true,
+      "url": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop"
+    }
   ]
 }
 </script>
@@ -5460,18 +5569,19 @@ body { position: relative; }
 @media (max-width:980px){.coop-section .section-layout.reverse{grid-template-columns:1fr}.coop-section .anim-frame .chat{height:auto;min-height:300px}.coop-section .anim-frame .chat-body{max-height:380px}}
 @media (max-width:768px){.coop-section{padding:56px 20px 72px}}
 </style>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Recent industry work",
+  "name": "Kong's work with Langkawi's tourism industry",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "url": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop",
       "item": {
         "@type": "BlogPosting",
+        "@id": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop#article",
         "headline": "Kong x Langkawi Development Authority Workshop: 16 operators built their own booking sites in half a day",
         "url": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop",
         "datePublished": "2026-10-29",
@@ -5479,19 +5589,11 @@ body { position: relative; }
           "@type": "Person",
           "name": "Blake Ng"
         },
+        "about": {
+          "@id": "https://www.bookwithkong.com/blog/lada-langkawi-operator-workshop#event"
+        },
         "mentions": {
-          "@type": "GovernmentOrganization",
-          "name": "Langkawi Development Authority",
-          "alternateName": [
-            "LADA",
-            "Lembaga Pembangunan Langkawi"
-          ],
-          "url": "https://www.lada.gov.my/en/",
-          "sameAs": [
-            "https://www.lada.gov.my/",
-            "https://www.instagram.com/langkawi_lada",
-            "https://www.facebook.com/ukkLADA"
-          ]
+          "@id": "https://www.lada.gov.my/#organization"
         }
       }
     }
@@ -6849,9 +6951,9 @@ body { position: relative; }
           <span class="work-card-x" aria-hidden="true"></span>
           <img src="../images/logos/naturally-langkawi.png" alt="Naturally Langkawi" width="373" height="120" loading="lazy">
         </div>
-        <p class="work-card-host">Workshop hosted by the Langkawi Development Authority's Tourism Division</p>
-        <h3 class="work-card-title">16 Langkawi operators built their own booking sites in half a day</h3>
-        <p class="work-card-sum">A hands-on workshop with LADA's Tourism Division at Kompleks LADA, 27 October 2026. Every operator left with a live booking site they built themselves.</p>
+        <h3 class="work-card-title">Kong's work with Langkawi's tourism industry</h3>
+        <p class="work-card-sum">Kong worked with the Langkawi Development Authority (LADA) Tourism Division on a workshop at Kompleks LADA on 27 October 2026. During the workshop, 16 Langkawi tourism operators built their own online booking websites using Kong.</p>
+        <p class="work-card-sum">The initiative demonstrates Kong's engagement with local tourism operators and its work supporting digital adoption in Langkawi.</p>
         <span class="work-card-link">Read the write-up<i class="ti ti-arrow-right" aria-hidden="true"></i></span>
       </div>
     </a>
