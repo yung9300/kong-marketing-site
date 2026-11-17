@@ -146,7 +146,7 @@
             "price": "0.00",
             "priceCurrency": "USD",
             "billingDuration": "P1M",
-            "description": "Free for operators. 1.8% guest booking fee at checkout on online direct bookings only. Currently no fee on OTA bookings. No booking caps. Digital waivers included free."
+            "description": "No monthly fee. 1.8% booking fee on online direct bookings only, paid by your guest or absorbed by you. Currently no fee on OTA bookings. No booking caps. Digital waivers included."
           }
         }
       }
@@ -182,7 +182,7 @@
       "name": "Is Kong cheaper than Bookeo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For most Malaysian operators, yes — meaningfully so. Kong has no subscription fee while Bookeo charges RM 162–812/month; Kong's Xendit option saves materially on Malaysian payment processing versus Bookeo's Stripe at 3% + RM 1; Kong includes digital waivers free while Bookeo charges as an add-on. Across the operator profiles we've modeled, Kong is cheaper at every scale. The exception: operators who specifically value Bookeo's flat monthly bill above all else and have no seasonality, no growth, and no need for waivers."
+        "text": "For most Malaysian operators, yes — meaningfully so. Kong has no subscription fee while Bookeo charges RM 162–812/month; Kong's Xendit option saves materially on Malaysian payment processing versus Bookeo's Stripe at 3% + RM 1; Kong includes digital waivers while Bookeo charges as an add-on. Across the operator profiles we've modeled, Kong is cheaper at every scale. The exception: operators who specifically value Bookeo's flat monthly bill above all else and have no seasonality, no growth, and no need for waivers."
       }
     },
     {
@@ -206,7 +206,7 @@
       "name": "Does Kong charge for digital waivers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Digital waivers are included as a free, built-in feature for all Kong operators. Bookeo offers digital waivers as a paid add-on subscription on top of the base plan."
+        "text": "No. Digital waivers are included as a built-in feature for all Kong operators. Bookeo offers digital waivers as a paid add-on subscription on top of the base plan."
       }
     },
     {
@@ -222,7 +222,7 @@
       "name": "Can I use Kong if I'm not based in Malaysia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The free operator pricing, included digital waivers, no booking caps, and OTA integrations all apply regardless of where you're based. This comparison leans Malaysian because Kong's Xendit option unlocks materially cheaper local payment processing that operators outside Malaysia won't capture as directly — Kong on Stripe processes international card payments at roughly the same rates Bookeo on Stripe does. Outside Malaysia, the cost comparison still favors Kong on subscription and waivers, just not as decisively on payment processing."
+        "text": "Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The no-monthly-fee pricing, included digital waivers, no booking caps, and OTA integrations all apply regardless of where you're based. This comparison leans Malaysian because Kong's Xendit option unlocks materially cheaper local payment processing that operators outside Malaysia won't capture as directly — Kong on Stripe processes international card payments at roughly the same rates Bookeo on Stripe does. Outside Malaysia, the cost comparison still favors Kong on subscription and waivers, just not as decisively on payment processing."
       }
     },
     {
@@ -334,6 +334,13 @@
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -357,6 +364,11 @@
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -396,14 +408,14 @@
 
   <article class="post-body">
 
-    <p class="lead">Here's the honest answer up front: <strong>Bookeo is the better choice if you run a single-product operation at extremely consistent year-round volume, never plan to scale past a few hundred bookings a month, and specifically value a flat monthly bill regardless of whether bookings happen.</strong> <strong>Kong is the better choice for almost every other Malaysian tour operator</strong> — particularly those with seasonal demand, those processing meaningful volume through local Malaysian payment methods, and those who need digital waivers (Kong includes them free; Bookeo charges as an add-on).</p>
+    <p class="lead">Here's the honest answer up front: <strong>Bookeo is the better choice if you run a single-product operation at extremely consistent year-round volume, never plan to scale past a few hundred bookings a month, and specifically value a flat monthly bill regardless of whether bookings happen.</strong> <strong>Kong is the better choice for almost every other Malaysian tour operator</strong> — particularly those with seasonal demand, those processing meaningful volume through local Malaysian payment methods, and those who need digital waivers (Kong includes them; Bookeo charges as an add-on).</p>
 
-    <p>The interesting tension in this comparison: Bookeo's pitch is "no commissions, no consumer fees" — which on the surface sounds cheaper than Kong's 1.8% guest fee. But the real cost picture is more complicated. Bookeo charges a flat monthly subscription, charges separately for digital waivers, caps your monthly bookings (forcing tier upgrades), and routes your payment processing through Stripe at 3% + RM 1 per transaction. Kong is free for operators, includes waivers built-in, has no booking caps, and lets you pick Xendit at materially lower processing rates.</p>
+    <p>The interesting tension in this comparison: Bookeo's pitch is "no commissions, no consumer fees" — which on the surface sounds cheaper than Kong's 1.8% fee. But the real cost picture is more complicated. Bookeo charges a flat monthly subscription, charges separately for digital waivers, caps your monthly bookings (forcing tier upgrades), and routes your payment processing through Stripe at 3% + RM 1 per transaction. Kong has no monthly fee, includes waivers built-in, has no booking caps, and lets you pick Xendit at materially lower processing rates.</p>
 
     <p>I spent six years at Rezdy, Checkfront, and Regiondo before co-founding Kong. I'm not neutral about this comparison, but I'll be honest about where Bookeo wins — anything less would be useless to you as a buyer.</p>
 
     <div class="intl-callout">
-      <p><strong>For operators outside Malaysia:</strong> Kong serves operators globally. This comparison leans Malaysian where Kong's Xendit option and local payment methods matter most — that's where the Bookeo-vs-Kong math is sharpest. Outside Malaysia, Kong still works (the free operator pricing, included waivers, no booking caps, and OTA connections all apply), but the payment-processing cost advantage shrinks since Kong on Stripe processes international cards at similar rates to Bookeo on Stripe.</p>
+      <p><strong>For operators outside Malaysia:</strong> Kong serves operators globally. This comparison leans Malaysian where Kong's Xendit option and local payment methods matter most — that's where the Bookeo-vs-Kong math is sharpest. Outside Malaysia, Kong still works (the no-monthly-fee pricing, included waivers, no booking caps, and OTA connections all apply), but the payment-processing cost advantage shrinks since Kong on Stripe processes international cards at similar rates to Bookeo on Stripe.</p>
     </div>
 
     <h2 id="tldr">TL;DR by operator type</h2>
@@ -423,7 +435,7 @@
         <ul>
           <li>You want pricing that scales with revenue — zero cost when bookings are slow, small guest fee only when bookings happen</li>
           <li>You take meaningful Malaysian local payment volume (FPX, Touch 'n Go, GrabPay, ShopeePay, Boost, or DuitNow QR)</li>
-          <li>You need digital waivers (Kong includes them free; Bookeo charges as an add-on)</li>
+          <li>You need digital waivers (Kong includes them; Bookeo charges as an add-on)</li>
           <li>Your business is growing and you don't want booking caps in your future</li>
           <li>You want founder-led support in Southeast Asian business hours</li>
         </ul>
@@ -437,13 +449,13 @@
           <tr><th scope="col">Feature</th><th scope="col">Bookeo</th><th scope="col" class="col-kong">Kong</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Subscription</th><td data-label="Bookeo">RM 162–812/month across Tours &amp; Activities tiers</td><td class="col-kong win" data-label="Kong">Free for operators</td></tr>
-          <tr><th scope="row">Booking fee model</th><td data-label="Bookeo">None — "no commissions, no consumer fees"</td><td class="col-kong" data-label="Kong">1.8% paid by guest on online direct bookings only</td></tr>
+          <tr><th scope="row">Subscription</th><td data-label="Bookeo">RM 162–812/month across Tours &amp; Activities tiers</td><td class="col-kong win" data-label="Kong">No monthly fee</td></tr>
+          <tr><th scope="row">Booking fee model</th><td data-label="Bookeo">None — "no commissions, no consumer fees"</td><td class="col-kong" data-label="Kong">1.8% on online direct bookings only, paid by guest or absorbed by you</td></tr>
           <tr><th scope="row">Booking caps</th><td data-label="Bookeo">Standard 1,000/mo, Large 2,000/mo, X-Large 3,000/mo</td><td class="col-kong win" data-label="Kong">None</td></tr>
           <tr><th scope="row">Payment gateway choice</th><td data-label="Bookeo">Stripe, Square, PayPal, and others — all at the gateway's own rates</td><td class="col-kong win" data-label="Kong">Stripe <strong>or</strong> Xendit (operator picks)</td></tr>
           <tr><th scope="row">Touch 'n Go / ShopeePay / Boost / DuitNow QR</th><td data-label="Bookeo">Not supported via Stripe Malaysia</td><td class="col-kong win" data-label="Kong">Supported via Xendit</td></tr>
           <tr><th scope="row">FPX support</th><td data-label="Bookeo">Via Stripe at 3% + RM 1 per transaction</td><td class="col-kong win" data-label="Kong">Via Xendit at <strong>RM 1.20 flat per transaction</strong></td></tr>
-          <tr><th scope="row">Digital waivers</th><td data-label="Bookeo">Paid add-on (separate subscription)</td><td class="col-kong win" data-label="Kong">Included free</td></tr>
+          <tr><th scope="row">Digital waivers</th><td data-label="Bookeo">Paid add-on (separate subscription)</td><td class="col-kong win" data-label="Kong">Included</td></tr>
           <tr><th scope="row">OTA distribution</th><td data-label="Bookeo">Viator, TripAdvisor, Expedia, GetYourGuide and others</td><td class="col-kong" data-label="Kong">GetYourGuide (recently shipped); Viator and additional OTAs in development</td></tr>
           <tr><th scope="row">Reseller marketplace</th><td data-label="Bookeo">No marketplace; lacks reseller network and partner tools</td><td class="col-kong" data-label="Kong">Small, growing</td></tr>
           <tr><th scope="row">Mobile app</th><td data-label="Bookeo">Yes</td><td class="col-kong" data-label="Kong">Yes</td></tr>
@@ -459,7 +471,7 @@
     <h2 id="flat-vs-variable">The flat-fee versus variable-fee question</h2>
     <p>This is the philosophical decision that drives the rest of the comparison.</p>
     <p>Bookeo's pitch is straightforward: pay one predictable monthly fee, and Bookeo takes nothing per booking. The appeal is real — operators value predictability, and "I know exactly what my software costs every month" is a legitimate preference.</p>
-    <p>Kong's model is the opposite: pay nothing as the operator, and the guest pays a small 1.8% fee at checkout on online direct bookings. The appeal is also real — software cost scales with revenue, so a slow month costs nothing and a strong month makes the fee proportionally small relative to revenue.</p>
+    <p>Kong's model is the opposite: no monthly fee, and a 1.8% fee on online direct bookings that you can charge to the guest at checkout or absorb. The Kong figures on this page assume your guest pays the 1.8%. If you choose to absorb it, that amount is your cost instead. The appeal is also real — software cost scales with revenue, so a slow month costs nothing and a strong month makes the fee proportionally small relative to revenue.</p>
     <p><strong>Both pricing models are defensible philosophies.</strong> The question is which one structurally fits a tour operator's actual business reality:</p>
     <ul>
       <li><strong>If your business is seasonal</strong> (most Malaysian tour operators) — your bookings move dramatically between high and low season. A flat fee that doesn't move with bookings means your software cost is highest as a percentage of revenue exactly when you can least afford it. Variable pricing flexes with you.</li>
@@ -501,16 +513,16 @@
           <tr><th scope="col">Channel</th><th scope="col">Operator fee</th><th scope="col">Booking fee</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Online direct (Kong-hosted website, embedded widget)</th><td>Free</td><td>1.8% paid by guest at checkout</td></tr>
+          <tr><th scope="row">Online direct (Kong-hosted website, embedded widget)</th><td>No monthly fee</td><td>1.8%, paid by guest at checkout or absorbed by you</td></tr>
           <tr><th scope="row">OTA bookings (GetYourGuide today, more in development)</th><td>Free</td><td>Currently no Kong fee — see note below</td></tr>
           <tr><th scope="row">Walk-ins, phone bookings, WhatsApp bookings</th><td>Free</td><td>Free — no fee to operator or guest</td></tr>
-          <tr><th scope="row">Digital waivers</th><td>Free</td><td>Included as built-in feature</td></tr>
+          <tr><th scope="row">Digital waivers</th><td>No extra cost</td><td>Included as built-in feature</td></tr>
         </tbody>
       </table>
     </div>
     <p>No tiers, no monthly subscription, no setup fee, no contract, no booking caps.</p>
     <p><strong>On OTA bookings:</strong> Kong currently doesn't charge an additional booking fee on bookings that come through OTA integrations. Kong's leadership hasn't finalized a long-term OTA fee structure and may introduce one in future. For now, operators using Kong's OTA integrations pay the OTA's commission and nothing additional to Kong.</p>
-    <p>The 1.8% guest fee applies only to bookings that flow through Kong's online checkout. It does not apply to walk-ins, phone bookings, or anything handled outside Kong's online flow.</p>
+    <p>The 1.8% fee applies only to bookings that flow through Kong's online checkout. It does not apply to walk-ins, phone bookings, or anything handled outside Kong's online flow. The Kong figures on this page assume your guest pays the 1.8%. If you choose to absorb it, that amount is your cost instead.</p>
 
     <h3>Worked scenarios at real operator volumes</h3>
     <p>These scenarios model Bookeo's Standard plan (RM 162/month, 1,000 bookings cap) as the closest tier to most Malaysian tour operators. Where operators would exceed the cap, we flag the tier upgrade explicitly.</p>
@@ -527,14 +539,14 @@
           <tr><th scope="row">Per-booking fee (37 bookings)</th><td>RM 0 (no commissions)</td><td class="col-kong">RM 0</td></tr>
           <tr><th scope="row">Fee on online direct (RM 2,000)</th><td>RM 0 (no commissions)</td><td class="col-kong">1.8% × RM 2,000 = RM 36 (paid by guests)</td></tr>
           <tr><th scope="row">Payment processing on online bookings (~12 transactions, mix of FPX and cards)</th><td>Stripe: ~3% × RM 2,000 + (12 × RM 1) = ~RM 72</td><td class="col-kong">Xendit: blended ~RM 25 across FPX (RM 1.20 flat) and cards (1.2–2%)</td></tr>
-          <tr><th scope="row">Digital waivers (if needed)</th><td>Paid add-on, ~RM 80+ extra/month</td><td class="col-kong">Free</td></tr>
+          <tr><th scope="row">Digital waivers (if needed)</th><td>Paid add-on, ~RM 80+ extra/month</td><td class="col-kong">Included</td></tr>
           <tr><th scope="row">Total monthly cost to operator</th><td><strong>~RM 234 (or ~RM 314 with waivers)</strong></td><td class="col-kong"><strong>~RM 25</strong> (in payment processing)</td></tr>
           <tr><th scope="row">Who pays the 1.8%</th><td>N/A</td><td class="col-kong">Guests (~RM 36/month spread across online direct bookings)</td></tr>
         </tbody>
       </table>
     </div>
     <div class="swipe-hint"><i class="ti ti-arrows-horizontal"></i> Swipe the table sideways to see every column</div>
-    <p>Kong is decisively cheaper for the operator at this volume — even before accounting for the digital waivers add-on. The interesting line in this table is the payment processing comparison: <strong>Bookeo on Stripe costs ~RM 72/month in payment processing fees; Kong on Xendit costs ~RM 25 for the same booking volume.</strong> The RM 47/month payment processing savings on Kong roughly cover Kong's 1.8% guest fee on the online direct portion — and the operator still pays nothing themselves.</p>
+    <p>Kong is decisively cheaper for the operator at this volume — even before accounting for the digital waivers add-on. The interesting line in this table is the payment processing comparison: <strong>Bookeo on Stripe costs ~RM 72/month in payment processing fees; Kong on Xendit costs ~RM 25 for the same booking volume.</strong> The RM 47/month payment processing savings on Kong roughly cover Kong's 1.8% fee on the online direct portion — and the operator still pays nothing themselves.</p>
 
     <h4>Scenario B: Mid-size operator, diversified channels</h4>
     <p>An established operator running multiple tour products, RM 50,000/month in total revenue. Channel mix: 30% walk-in (RM 15,000, ~75 bookings at avg RM 200), 45% online direct (RM 22,500, ~75 bookings at avg RM 300), 25% OTA (RM 12,500, ~50 bookings split between GetYourGuide and Viator). Booking count: ~200/month — still under Bookeo's Standard cap.</p>
@@ -549,14 +561,14 @@
           <tr><th scope="row">Fee on online direct (RM 22,500)</th><td>RM 0 (no commissions)</td><td class="col-kong">1.8% × RM 22,500 = RM 405 (paid by guests)</td></tr>
           <tr><th scope="row">Fee on OTA bookings</th><td>RM 0 (OTA takes its own commission)</td><td class="col-kong">RM 0 on GetYourGuide. Viator: not applicable, Kong doesn't yet have Viator</td></tr>
           <tr><th scope="row">Payment processing on online bookings (~125 transactions)</th><td>Stripe: ~3% × RM 22,500 + (125 × RM 1) = ~RM 800</td><td class="col-kong">Xendit: blended ~RM 250–300 across payment methods</td></tr>
-          <tr><th scope="row">Digital waivers (if needed)</th><td>Paid add-on, ~RM 80+ extra/month</td><td class="col-kong">Free</td></tr>
+          <tr><th scope="row">Digital waivers (if needed)</th><td>Paid add-on, ~RM 80+ extra/month</td><td class="col-kong">Included</td></tr>
           <tr><th scope="row">Total monthly cost to operator</th><td><strong>~RM 962 (or ~RM 1,042 with waivers)</strong></td><td class="col-kong"><strong>~RM 275</strong> in payment processing</td></tr>
           <tr><th scope="row">Who pays the 1.8%</th><td>N/A</td><td class="col-kong">Guests (~RM 405 spread across online direct bookings)</td></tr>
         </tbody>
       </table>
     </div>
     <div class="swipe-hint"><i class="ti ti-arrows-horizontal"></i> Swipe the table sideways to see every column</div>
-    <p>At this volume the payment processing savings become the dominant story. Bookeo's flat fee is "only" RM 162/month — but the operator is paying close to RM 800/month in Stripe fees on top of that, while a Kong operator on Xendit would pay ~RM 250–300 for the same payment volume. The <strong>~RM 500/month payment processing gap</strong> is more than Kong's 1.8% guest fee on the entire online direct revenue.</p>
+    <p>At this volume the payment processing savings become the dominant story. Bookeo's flat fee is "only" RM 162/month — but the operator is paying close to RM 800/month in Stripe fees on top of that, while a Kong operator on Xendit would pay ~RM 250–300 for the same payment volume. The <strong>~RM 500/month payment processing gap</strong> is more than Kong's 1.8% fee on the entire online direct revenue.</p>
     <p>The Viator caveat: 6% of revenue (RM 3,000/month) currently can't flow through Kong because Kong's Viator integration isn't shipped. That operator would either route Viator through a separate Bokun or other account, or accept losing that channel until Kong's Viator integration ships.</p>
 
     <h4>Scenario C: Operator approaching Bookeo's booking cap</h4>
@@ -571,7 +583,7 @@
           <tr><th scope="row">Per-booking fee (1,200 bookings)</th><td>RM 0 (no commissions)</td><td class="col-kong">RM 0</td></tr>
           <tr><th scope="row">Fee on online direct (RM 36,000)</th><td>RM 0 (no commissions)</td><td class="col-kong">1.8% × RM 36,000 = RM 648 (paid by guests)</td></tr>
           <tr><th scope="row">Payment processing (~600 online transactions)</th><td>Stripe: ~3% × RM 36,000 + (600 × RM 1) = ~RM 1,680</td><td class="col-kong">Xendit: blended ~RM 500–600 across payment methods</td></tr>
-          <tr><th scope="row">Digital waivers</th><td>Paid add-on, ~RM 80+ extra/month</td><td class="col-kong">Free</td></tr>
+          <tr><th scope="row">Digital waivers</th><td>Paid add-on, ~RM 80+ extra/month</td><td class="col-kong">Included</td></tr>
           <tr><th scope="row">Total monthly cost to operator</th><td><strong>~RM 2,085 (or ~RM 2,165 with waivers)</strong></td><td class="col-kong"><strong>~RM 550</strong> in payment processing</td></tr>
           <tr><th scope="row">Who pays the 1.8%</th><td>N/A</td><td class="col-kong">Guests (~RM 648 spread across online direct bookings)</td></tr>
         </tbody>
@@ -601,9 +613,9 @@
     <p>Bookeo's marketing pitch is consistent and clear: "no commissions, no consumer fees." It's not deceptive — Bookeo's pricing structure is publicly documented and they don't hide that waivers are an add-on or that booking caps exist. But the pitch tends to obscure the actual cost picture for operators evaluating the platform.</p>
     <p>Three places where operators pay more on Bookeo than the headline suggests:</p>
     <h4>1. Payment processing through Stripe is materially more expensive than Kong's Xendit option.</h4>
-    <p>Every Bookeo operator in Malaysia processing payments through their booking flow is paying the gateway's rates. For Stripe Malaysia, that's 3% + RM 1 per transaction across all methods. Kong's Xendit option charges RM 1.20 flat per FPX transaction (vs RM 16 on a RM 500 FPX booking via Stripe). On a typical Malaysian operator's payment mix, <strong>the payment processing savings on Kong roughly cover Kong's entire 1.8% guest fee</strong> — meaning Kong effectively costs the same per transaction as Bookeo on payment methods, except the operator pays nothing on Kong while paying both the Stripe rate AND the Bookeo subscription on Bookeo. More detail in the payment processing section below.</p>
+    <p>Every Bookeo operator in Malaysia processing payments through their booking flow is paying the gateway's rates. For Stripe Malaysia, that's 3% + RM 1 per transaction across all methods. Kong's Xendit option charges RM 1.20 flat per FPX transaction (vs RM 16 on a RM 500 FPX booking via Stripe). On a typical Malaysian operator's payment mix, <strong>the payment processing savings on Kong roughly cover Kong's entire 1.8% fee</strong> — meaning Kong effectively costs the same per transaction as Bookeo on payment methods, except the operator pays nothing on Kong while paying both the Stripe rate AND the Bookeo subscription on Bookeo. More detail in the payment processing section below.</p>
     <h4>2. Digital waivers are a paid add-on on Bookeo, not included.</h4>
-    <p>For tour operators where waivers are essential (most adventure operations, water activities, anything with safety considerations), this is a recurring monthly cost on top of the platform subscription. Bookeo's waiver add-on is a good product — but the cost isn't included in Bookeo's headline price. Kong includes waivers as a built-in free feature.</p>
+    <p>For tour operators where waivers are essential (most adventure operations, water activities, anything with safety considerations), this is a recurring monthly cost on top of the platform subscription. Bookeo's waiver add-on is a good product — but the cost isn't included in Bookeo's headline price. Kong includes waivers as a built-in feature.</p>
     <h4>3. Booking caps force tier upgrades as you grow.</h4>
     <p>Bookeo's Standard plan caps at 1,000 bookings/month. An operator running consistently busy months may hit the cap and be forced to upgrade to Large (RM 325) or X-Large (RM 487–812). The cost roughly doubles or triples as you cross thresholds. Kong has no caps — pricing doesn't change as you grow.</p>
     <p>None of this is Bookeo doing anything wrong. The pricing is transparent and publicly documented. But operators evaluating "Bookeo's flat RM 162/month vs Kong's 1.8% per booking" headline-to-headline are comparing the wrong numbers. The actual comparison includes payment processing, waivers, add-ons, and potential tier upgrades on the Bookeo side — none of which appear in the sticker price.</p>
@@ -639,9 +651,9 @@
           <tr><th scope="col">Kong's advantage</th><th scope="col">Why it matters</th><th scope="col">The honest detail</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Free pricing that scales with revenue</th><td data-label="Why it matters">Zero operator cost when bookings are slow, small guest fee only when bookings happen</td><td data-label="The honest detail">Bookeo's RM 162–RM 812/month subscription doesn't move with bookings. In low season or shock-prone periods, Kong's variable model is structurally aligned with cash flow.</td></tr>
-          <tr><th scope="row">Choice of payment gateway with Xendit option</th><td data-label="Why it matters">Operators pick Stripe OR Xendit at setup; Xendit unlocks materially cheaper Malaysian payment processing</td><td data-label="The honest detail">Bookeo supports Stripe (and Square, PayPal) but not Xendit. The Xendit savings on FPX alone (RM 1.20 flat vs Stripe's RM 16 on a RM 500 booking) roughly cover Kong's 1.8% guest fee on most Malaysian booking volume.</td></tr>
-          <tr><th scope="row">Digital waivers included free</th><td data-label="Why it matters">Operators get waivers as a built-in feature, no add-on subscription required</td><td data-label="The honest detail">Bookeo's waivers are a paid add-on. For operators where waivers are essential (most adventure/water/safety-relevant operations), this is recurring monthly cost on Bookeo that doesn't exist on Kong.</td></tr>
+          <tr><th scope="row">No monthly fee, pricing that scales with revenue</th><td data-label="Why it matters">Zero operator cost when bookings are slow, small guest fee only when bookings happen</td><td data-label="The honest detail">Bookeo's RM 162–RM 812/month subscription doesn't move with bookings. In low season or shock-prone periods, Kong's variable model is structurally aligned with cash flow.</td></tr>
+          <tr><th scope="row">Choice of payment gateway with Xendit option</th><td data-label="Why it matters">Operators pick Stripe OR Xendit at setup; Xendit unlocks materially cheaper Malaysian payment processing</td><td data-label="The honest detail">Bookeo supports Stripe (and Square, PayPal) but not Xendit. The Xendit savings on FPX alone (RM 1.20 flat vs Stripe's RM 16 on a RM 500 booking) roughly cover Kong's 1.8% fee on most Malaysian booking volume.</td></tr>
+          <tr><th scope="row">Digital waivers included</th><td data-label="Why it matters">Operators get waivers as a built-in feature, no add-on subscription required</td><td data-label="The honest detail">Bookeo's waivers are a paid add-on. For operators where waivers are essential (most adventure/water/safety-relevant operations), this is recurring monthly cost on Bookeo that doesn't exist on Kong.</td></tr>
           <tr><th scope="row">No booking caps</th><td data-label="Why it matters">Pricing doesn't change as you grow; no forced tier upgrades</td><td data-label="The honest detail">Bookeo's Standard plan caps at 1,000 bookings/month; Large at 2,000; X-Large at 3,000. Operators growing past these thresholds face roughly doubling subscription costs. Kong scales smoothly.</td></tr>
           <tr><th scope="row">Walk-ins and WhatsApp bookings are free and uncapped</th><td data-label="Why it matters">No fee on bookings generated through your own customer relationships, and they don't count against any cap</td><td data-label="The honest detail">Bookeo doesn't charge per-booking fees on walk-ins either, but walk-ins <em>do</em> count against your monthly booking cap. Kong has no cap consideration at all.</td></tr>
           <tr><th scope="row">Built for Southeast Asian operators</th><td data-label="Why it matters">Founder team based in Malaysia, product designed for local market dynamics</td><td data-label="The honest detail">Bookeo is built for small operators globally. Different ICP, different design assumptions.</td></tr>
@@ -656,7 +668,7 @@
         </thead>
         <tbody>
           <tr><th scope="row">Founder-led support in SEA timezone</th><td data-label="Why it matters">WhatsApp access to founders, response times in minutes during Malaysian business hours</td><td data-label="The honest detail">Bookeo is Italian/global with distributed support. Kong's founder-led WhatsApp model is faster for SEA operators in practice.</td></tr>
-          <tr><th scope="row">Website builder included free</th><td data-label="Why it matters">Operators without a website get one in the same setup</td><td data-label="The honest detail">Bookeo provides booking page templates and widgets but operators typically need their own website or embed Bookeo into one. Kong includes a hosted booking page operators can stand up in an afternoon.</td></tr>
+          <tr><th scope="row">Website builder included</th><td data-label="Why it matters">Operators without a website get one in the same setup</td><td data-label="The honest detail">Bookeo provides booking page templates and widgets but operators typically need their own website or embed Bookeo into one. Kong includes a hosted booking page operators can stand up in an afternoon.</td></tr>
           <tr><th scope="row">Active OTA integration roadmap</th><td data-label="Why it matters">GetYourGuide live; Viator and additional OTAs in development</td><td data-label="The honest detail">Bookeo connects to Viator, TripAdvisor, Expedia, GetYourGuide and others — its OTA portfolio is broader today. But Bookeo lacks a reseller marketplace and B2B partner network. For operators whose growth strategy is OTA-centric, both platforms work; for B2B distribution at scale, neither is the strongest fit.</td></tr>
         </tbody>
       </table>
@@ -707,9 +719,9 @@
     </div>
     <div class="swipe-hint"><i class="ti ti-arrows-horizontal"></i> Swipe the table sideways to see every column</div>
 
-    <h3>The Xendit savings versus Kong's 1.8% guest fee</h3>
-    <p>Here's the calibration that matters for the philosophical comparison: <strong>Kong's 1.8% guest fee on a RM 500 booking is RM 9.</strong> The Xendit savings on the same RM 500 FPX booking versus Stripe is <strong>RM 14.80</strong>.</p>
-    <p>That means: on local Malaysian payment volume, Kong with Xendit <em>saves the operator more on payment processing than Kong's entire 1.8% guest fee costs.</em> The guest fee Kong charges at checkout is more than offset by the payment processing savings the operator captures by being on Xendit rather than Stripe.</p>
+    <h3>The Xendit savings versus Kong's 1.8% fee</h3>
+    <p>Here's the calibration that matters for the philosophical comparison: <strong>Kong's 1.8% fee on a RM 500 booking is RM 9.</strong> The Xendit savings on the same RM 500 FPX booking versus Stripe is <strong>RM 14.80</strong>.</p>
+    <p>That means: on local Malaysian payment volume, Kong with Xendit <em>saves the operator more on payment processing than Kong's entire 1.8% fee costs.</em> The guest fee Kong charges at checkout is more than offset by the payment processing savings the operator captures by being on Xendit rather than Stripe.</p>
     <p>This is the specific structural reason Kong is materially cheaper than Bookeo for Malaysian operators with meaningful local payment volume — even though Kong has a visible 1.8% fee and Bookeo claims "no commissions."</p>
     <p><strong>The honest counter:</strong> if your guests are mostly Western tourists paying with international Visa or Mastercard from abroad, the Xendit cost advantage shrinks meaningfully. Kong with Stripe processes those bookings at the same rate Bookeo does — so Kong still works fine for international-tourist operators, you just don't get the extra payment-processing savings that Malaysian guest payments unlock. The Xendit option is a bonus for operators with local booking volume; it's not a requirement for choosing Kong.</p>
 
@@ -721,8 +733,8 @@
         </thead>
         <tbody>
           <tr class="kong-row"><th scope="row">Small or growing Malaysian operator with meaningful seasonality</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Variable pricing flexes with revenue; Bookeo's flat fee hurts most in low season</td></tr>
-          <tr class="kong-row"><th scope="row">Operator with significant local payment volume (FPX, e-wallets)</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Xendit savings on Malaysian payment methods are larger than Kong's 1.8% guest fee. Net result: cheaper than Bookeo even before the subscription</td></tr>
-          <tr class="kong-row"><th scope="row">Operator who needs digital waivers</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Built-in free vs Bookeo's paid add-on</td></tr>
+          <tr class="kong-row"><th scope="row">Operator with significant local payment volume (FPX, e-wallets)</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Xendit savings on Malaysian payment methods are larger than Kong's 1.8% fee. Net result: cheaper than Bookeo even before the subscription</td></tr>
+          <tr class="kong-row"><th scope="row">Operator who needs digital waivers</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Built in vs Bookeo's paid add-on</td></tr>
           <tr class="kong-row"><th scope="row">Operator approaching or past 1,000 bookings/month</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Bookeo forces tier upgrades at 1,000 / 2,000 / 3,000 booking thresholds; Kong has no caps</td></tr>
           <tr><th scope="row">Operator with consistent year-round volume who values flat monthly bill above all else</th><td class="choose" data-label="Choose"><span class="pick">Bookeo</span></td><td data-label="Why">This is a genuine Bookeo strength — if predictability is your top criterion and you have no growth or seasonality concerns, Bookeo delivers it</td></tr>
           <tr><th scope="row">Multi-vertical business (tours + classes + appointments)</th><td class="choose" data-label="Choose"><span class="pick">Bookeo</span></td><td data-label="Why">Bookeo's product family covers multiple business types from one platform; Kong is tours-and-activities focused</td></tr>
@@ -744,7 +756,7 @@
       </details>
       <details>
         <summary>Is Kong cheaper than Bookeo? <span class="faq-icon"></span></summary>
-        <div class="faq-answer"><p>For most Malaysian operators, yes — meaningfully so. The math has three components: Kong has no subscription fee while Bookeo charges RM 162–812/month; Kong's Xendit option saves materially on Malaysian payment processing versus Bookeo's Stripe at 3% + RM 1; Kong includes digital waivers free while Bookeo charges as an add-on. Across the three operator profiles we've modeled, Kong is cheaper at every scale. The exception: operators who specifically value Bookeo's flat monthly bill above all else and have no seasonality, no growth, and no need for waivers.</p></div>
+        <div class="faq-answer"><p>For most Malaysian operators, yes — meaningfully so. The math has three components: Kong has no subscription fee while Bookeo charges RM 162–812/month; Kong's Xendit option saves materially on Malaysian payment processing versus Bookeo's Stripe at 3% + RM 1; Kong includes digital waivers while Bookeo charges as an add-on. Across the three operator profiles we've modeled, Kong is cheaper at every scale. The exception: operators who specifically value Bookeo's flat monthly bill above all else and have no seasonality, no growth, and no need for waivers.</p></div>
       </details>
       <details>
         <summary>Does Bookeo support Touch 'n Go, ShopeePay, or Boost? <span class="faq-icon"></span></summary>
@@ -756,7 +768,7 @@
       </details>
       <details>
         <summary>Does Kong charge for digital waivers? <span class="faq-icon"></span></summary>
-        <div class="faq-answer"><p>No. Digital waivers are included as a free, built-in feature for all Kong operators. Bookeo offers digital waivers as a paid add-on subscription on top of the base plan.</p></div>
+        <div class="faq-answer"><p>No. Digital waivers are included as a built-in feature for all Kong operators. Bookeo offers digital waivers as a paid add-on subscription on top of the base plan.</p></div>
       </details>
       <details>
         <summary>What kind of operator is Bookeo actually built for? <span class="faq-icon"></span></summary>
@@ -764,7 +776,7 @@
       </details>
       <details>
         <summary>Can I use Kong if I'm not based in Malaysia? <span class="faq-icon"></span></summary>
-        <div class="faq-answer"><p>Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The free operator pricing, included digital waivers, no booking caps, and OTA integrations all apply regardless of where you're based. This comparison leans Malaysian because Kong's Xendit option unlocks materially cheaper local payment processing (FPX, Touch 'n Go, ShopeePay, etc.) that operators outside Malaysia won't capture as directly — Kong on Stripe processes international card payments at roughly the same rates Bookeo on Stripe does. Outside Malaysia, the cost comparison still favors Kong on subscription and waivers, just not as decisively on payment processing.</p></div>
+        <div class="faq-answer"><p>Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The no-monthly-fee pricing, included digital waivers, no booking caps, and OTA integrations all apply regardless of where you're based. This comparison leans Malaysian because Kong's Xendit option unlocks materially cheaper local payment processing (FPX, Touch 'n Go, ShopeePay, etc.) that operators outside Malaysia won't capture as directly — Kong on Stripe processes international card payments at roughly the same rates Bookeo on Stripe does. Outside Malaysia, the cost comparison still favors Kong on subscription and waivers, just not as decisively on payment processing.</p></div>
       </details>
       <details>
         <summary>Can I switch from Bookeo to Kong? <span class="faq-icon"></span></summary>
@@ -780,8 +792,8 @@
 
     <div class="post-cta">
       <div class="post-cta-eyebrow">Get started</div>
-      <h2>Kong is free for operators. Get started in an afternoon.</h2>
-      <p>No subscription, no setup fee, no contract, no booking caps, waivers included — just a 1.8% guest booking fee when an online booking actually happens. Not sure it's the right fit? Book a call and I'll tell you honestly — even if the answer is Bookeo.</p>
+      <h2>Kong has no monthly fee. Get started in an afternoon.</h2>
+      <p>No subscription, no setup fee, no contract, no booking caps, waivers included — just a 1.8% booking fee when an online booking actually happens. Not sure it's the right fit? Book a call and I'll tell you honestly — even if the answer is Bookeo.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -800,7 +812,7 @@
       <div class="post-author-text">
         <h4>About the author</h4>
         <div class="post-author-name">Blake Ng</div>
-        <div class="post-author-bio">Blake Ng is the co-founder of Kong, a free booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing. He's based in Kuala Lumpur and personally responds to operator questions on WhatsApp: <a href="https://wa.me/60124298159" target="_blank" rel="noopener noreferrer">+60 12-429 8159</a>.</div>
+        <div class="post-author-bio">Blake Ng is the co-founder of Kong, a booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing. He's based in Kuala Lumpur and personally responds to operator questions on WhatsApp: <a href="https://wa.me/60124298159" target="_blank" rel="noopener noreferrer">+60 12-429 8159</a>.</div>
       </div>
     </div>
 
@@ -939,6 +951,10 @@
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

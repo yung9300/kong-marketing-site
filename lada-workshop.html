@@ -19,11 +19,11 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free booking site workshop, Langkawi | Kong</title>
+<title>Free workshop: build your booking site, Langkawi | Kong</title>
 <meta name="description" content="A free half-day workshop for Langkawi tour and activity operators. Build your own booking website and leave with it live, taking bookings and payments, the same afternoon.">
 <link rel="canonical" href="https://www.bookwithkong.com/lada-workshop">
 <meta name="robots" content="noindex, nofollow">
-<meta property="og:title" content="Build your own free booking site. Free workshop in Langkawi">
+<meta property="og:title" content="Build your own booking site. Free workshop in Langkawi">
 <meta property="og:description" content="A free half-day workshop for Langkawi tour and activity operators, supported by LADA. Leave with a live booking website. 20 seats.">
 <meta property="og:url" content="https://www.bookwithkong.com/lada-workshop">
 <meta property="og:type" content="website">
@@ -32,7 +32,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Build your own free booking site. Free workshop in Langkawi">
+<meta name="twitter:title" content="Build your own booking site. Free workshop in Langkawi">
 <meta name="twitter:description" content="A free half-day workshop for Langkawi tour and activity operators, supported by LADA. Leave with a live booking website. 20 seats.">
 <meta name="twitter:image" content="https://www.bookwithkong.com/images/og-homepage-global.png">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -634,6 +634,13 @@ p, li { font-family: 'Inter', system-ui, sans-serif; text-wrap: pretty; }
           <a href="snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="blog">Blog</a>
       <a class="kong-nav-item" href="about">About</a>
@@ -658,6 +665,11 @@ p, li { font-family: 'Inter', system-ui, sans-serif; text-wrap: pretty; }
     <a class="kong-mobile-item kong-mobile-sub" href="dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="blog">Blog</a>
     <a class="kong-mobile-item" href="about">About</a>
@@ -671,7 +683,7 @@ p, li { font-family: 'Inter', system-ui, sans-serif; text-wrap: pretty; }
 <section class="wrap hero" id="top">
   <div>
     <div class="hero-eyebrow"><span class="lada"><img src="images/lada-logo-en.png" alt="LADA, Langkawi Development Authority"><img class="nl" src="images/naturally-langkawi.png" alt="Naturally Langkawi"></span>Free workshop for Langkawi tour and activity operators</div>
-    <h1>Build your own <span class="accent">free</span> booking site<small>(no sign up fee, no monthly fee)</small></h1>
+    <h1>Build your own <span class="accent">booking site</span><small>(no sign up fee, no monthly fee)</small></h1>
     <p class="hero-promise">Leave with a live website where guests from anywhere in the world can book and pay. Built in one afternoon.</p>
     <div class="hero-facts">
       <div class="hero-fact"><i class="ti ti-calendar-event" aria-hidden="true"></i><div><div class="k">Date</div><div class="v">Tuesday, 27 October</div></div></div>
@@ -819,8 +831,8 @@ p, li { font-family: 'Inter', system-ui, sans-serif; text-wrap: pretty; }
     <div class="host"><img src="images/op-zack.webp" alt="Zack Ng" width="72" height="72" loading="lazy"><h3>Zack Ng</h3><div class="role">Kong co-founder</div><p>Five years at Atlassian as product leader and senior engineer on Jira &amp; Confluence. Architecture shaped at 10,000-engineer scale.</p></div>
   </div>
   <div class="money">
-    <div class="big"><small>What Kong costs</small>Free for operators.</div>
-    <div><p>Guests pay <b>1.8%</b> at checkout. You keep <b>100%</b>.</p><p class="fine">No setup fee, no monthly fee, no contract. Nothing to pay Kong or LADA for the workshop.</p></div>
+    <div class="big"><small>What Kong costs</small>No monthly fee.</div>
+    <div><p>1.8% per online booking. You choose who pays it.</p><p class="fine">No setup fee, no monthly fee, no contract. Nothing to pay Kong or LADA for the workshop.</p></div>
   </div>
 </section>
 
@@ -953,5 +965,9 @@ p, li { font-family: 'Inter', system-ui, sans-serif; text-wrap: pretty; }
 })();
 </script>
 <div class="mobile-cta"><span>Free. 20 seats.</span><a class="btn-gold" href="#reserve">Reserve your seat</a></div>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
+</script>
 </body>
 </html>

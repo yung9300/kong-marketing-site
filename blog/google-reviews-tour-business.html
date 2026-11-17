@@ -1154,6 +1154,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1177,6 +1184,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1249,7 +1261,7 @@ body {
 <ul><li><strong>Feature your best ones right next to the "Book now" button</strong> on your booking page and website — social proof at the moment of decision lifts conversion.</li><li><strong>Screenshot and share them</strong> on Instagram and TikTok; a glowing review over a photo of the experience is some of the most trust-building content you can post.</li><li><strong>Photograph handwritten thank-you cards or notes</strong> and upload them to your Google profile's photo gallery — it doubles as a genuine activity signal and authentic social proof.</li></ul>
 <h2>Getting set up to take the bookings your reviews drive</h2>
 <p>Reviews bring you traffic and trust — but you only capture the value if guests can actually book you the moment they're convinced. If your only booking method is "WhatsApp us," you'll lose the international guests who don't use WhatsApp.</p>
-<p><a href="/" target="_blank" rel="noopener">Kong</a> is free booking software for tour and activity operators — no monthly fee, no setup fee, and no per-booking fee for you. Guests pay just 1.8% at checkout on online bookings; walk-in, phone and WhatsApp bookings are free. You get a real booking page where a guest who just read your reviews can book and pay on the spot, with automatic confirmations so the experience feels professional from the first click.</p>
+<p><a href="/" target="_blank" rel="noopener">Kong</a> is booking software for tour and activity operators with no monthly fee and no setup fee. It costs 1.8% per online booking, and you choose whether your guest pays it or you absorb it. Walk-in, phone and WhatsApp bookings are free. You get a real booking page where a guest who just read your reviews can book and pay on the spot, with automatic confirmations so the experience feels professional from the first click.</p>
 <p>For the other half of getting found on Google — setting up and optimising your profile and ranking on Maps — see our companion guide, <a href="google-business-profile-local-seo-tour-operators">Google Business Profile and local SEO for tour operators</a>.</p>
 
     <h2>Frequently asked questions</h2>
@@ -1316,8 +1328,8 @@ body {
 
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
-      <h2>Kong is free booking software for tour operators.</h2>
-      <p>No monthly fees, no setup fees, no per-booking fee for you — guests pay just 1.8% at checkout on online bookings. Get a booking page live in minutes.</p>
+      <h2>Kong is booking software for tour operators.</h2>
+      <p>No monthly fees and no setup fees. Just 1.8% per online booking, paid by your guest or absorbed by you. Get a booking page live in minutes.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -1447,6 +1459,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

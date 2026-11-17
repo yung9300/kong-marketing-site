@@ -134,6 +134,13 @@
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -157,6 +164,11 @@
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -277,7 +289,7 @@
       <li><strong>Diarise two dates.</strong> Your renewal a month early, and 1 October 2026, when the <a href="card-surcharge-ban-tour-operators">card surcharge ban</a> changes what your checkout can charge; the same admin session can cover both.</li>
     </ol>
 
-    <p>For operators sorting their booking setup at the same time, Kong, a young platform (founded 2025) still building its Australian track record, is free for operators with a 1.8% booking fee paid by the guest (<a href="../australia">Australia</a>), and that is all this article will say about it.</p>
+    <p>For operators sorting their booking setup at the same time, Kong, a young platform (founded 2025) still building its Australian track record, has no monthly fee, with a 1.8% booking fee that your guest pays or you absorb (<a href="../australia">Australia</a>), and that is all this article will say about it.</p>
 
     <h2 id="faq">FAQ</h2>
     <div class="faq-block">
@@ -328,7 +340,7 @@
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
       <h2>Sorting out the business side of your tours?</h2>
-      <p>Kong handles your direct bookings: free for operators, with a 1.8% booking fee paid by the guest at checkout.</p>
+      <p>Kong handles your direct bookings: no monthly fee, with a 1.8% booking fee that your guest pays or you absorb.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -437,6 +449,10 @@
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

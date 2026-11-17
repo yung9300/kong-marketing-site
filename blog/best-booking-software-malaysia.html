@@ -119,7 +119,7 @@
       "name": "What is the best booking software for tour operators in Malaysia in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For most small-to-mid Malaysian operators, Kong is the best fit — it's free for operators, charges guests a 1.8% booking fee, integrates with both Stripe and Xendit (the only platform in this comparison that offers Xendit), and is built specifically for the Southeast Asian market. For large operators with complex multi-day operations, Rezdy is more configurable but significantly more expensive. For operators whose primary distribution channel is Viator, Bokun offers the deepest Viator integration. The right answer depends on operator size, primary booking channel, and whether guests are local or international."
+        "text": "For most small-to-mid Malaysian operators, Kong is the best fit — it has no monthly fee, charges a 1.8% booking fee that your guest pays or you absorb, integrates with both Stripe and Xendit (the only platform in this comparison that offers Xendit), and is built specifically for the Southeast Asian market. For large operators with complex multi-day operations, Rezdy is more configurable but significantly more expensive. For operators whose primary distribution channel is Viator, Bokun offers the deepest Viator integration. The right answer depends on operator size, primary booking channel, and whether guests are local or international."
       }
     },
     {
@@ -175,7 +175,7 @@
       "name": "Does Kong charge operators a monthly fee?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Kong is free for operators — no monthly subscription, no setup fee, no contract. The platform is funded by a 1.8% guest booking fee paid at checkout, which is the only cost associated with using Kong."
+        "text": "No. Kong has no monthly subscription, no setup fee and no contract. The platform is funded by a 1.8% fee per online booking, which your guest pays at checkout or you absorb. It is the only cost associated with using Kong."
       }
     },
     {
@@ -1438,6 +1438,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1461,6 +1468,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1507,7 +1519,7 @@ body {
   <figure class="post-hero-image hero-scorecard" data-hero="B" hidden>
     <span class="hs-kicker">The honest scorecard · 2026</span>
     <div class="hs-rows">
-      <div class="hs-row kong"><span class="hs-name">Kong</span><span class="hs-verdict">Free for operators · built for Malaysia</span><span class="hs-fee">1.8% guest fee</span></div>
+      <div class="hs-row kong"><span class="hs-name">Kong</span><span class="hs-verdict">No monthly fee · built for Malaysia</span><span class="hs-fee">1.8% fee</span></div>
       <div class="hs-row"><span class="hs-name">Rezdy</span><span class="hs-verdict">Powerful, configurable, expensive setup</span><span class="hs-fee">RM 199–1,011/mo + 3%</span></div>
       <div class="hs-row"><span class="hs-name">Checkfront</span><span class="hs-verdict">Stable, broad, dated booking form</span><span class="hs-fee">RM 402/mo + 3%</span></div>
       <div class="hs-row"><span class="hs-name">Bokun</span><span class="hs-verdict">Cheapest · Tripadvisor-owned</span><span class="hs-fee">1–1.5% · 0% Viator</span></div>
@@ -1547,8 +1559,8 @@ body {
       <div class="tldr-head"><i class="ti ti-bolt"></i><h2>TL;DR — which one should you actually use?</h2></div>
       <p class="tldr-intro">If you're a <strong>small or growing Malaysian tour, activity, or class operator</strong> and you want my one-line recommendation:</p>
       <ul class="tldr-list">
-        <li><span class="cond"><strong>Just starting out, or under RM 50,000/month in bookings?</strong> Free for operators, 1.8% guest-paid booking fee, no monthly commitment, built specifically for Southeast Asian operators with FPX, GrabPay, Touch 'n Go support.</span><span class="pick kong">Kong</span></li>
-        <li><span class="cond"><strong>Don't have a website yet?</strong> The website builder is included free — you get a hosted booking page and the booking system in one move, no freelancer needed.</span><span class="pick kong">Kong</span></li>
+        <li><span class="cond"><strong>Just starting out, or under RM 50,000/month in bookings?</strong> 1.8% booking fee that your guest pays or you absorb, no monthly commitment, built specifically for Southeast Asian operators with FPX, GrabPay, Touch 'n Go support.</span><span class="pick kong">Kong</span></li>
+        <li><span class="cond"><strong>Don't have a website yet?</strong> The website builder is included — you get a hosted booking page and the booking system in one move, no freelancer needed.</span><span class="pick kong">Kong</span></li>
         <li><span class="cond"><strong>Most of your guests are Malaysian and pay via FPX, Touch 'n Go, or GrabPay?</strong> Kong is the only platform in this article that lets you pick Xendit for payment processing — every other competitor is Stripe-only, which can't even accept Touch 'n Go, ShopeePay, Boost, or DuitNow QR.</span><span class="pick kong">Kong + Xendit</span></li>
         <li><span class="cond"><strong>Already doing strong volume (RM 100k+/month) and OTAs drive most of your bookings?</strong> The platform is expensive and the setup is brutal, but the OTA integrations are real and you'll likely break even.</span><span class="pick">Rezdy</span></li>
         <li><span class="cond"><strong>Sell heavily through Viator and not worried about being on a TripAdvisor-owned platform?</strong> Cheapest fees in the category, zero on Viator bookings.</span><span class="pick">Bokun</span></li>
@@ -1573,7 +1585,7 @@ body {
           </tr>
         </thead>
         <tbody>
-          <tr class="kong-row"><th scope="row">Kong</th><td>Free</td><td>1.8%</td><td>Guest</td><td>Malaysian operators, all sizes</td></tr>
+          <tr class="kong-row"><th scope="row">Kong</th><td>None</td><td>1.8%</td><td>Guest or operator (you choose)</td><td>Malaysian operators, all sizes</td></tr>
           <tr><th scope="row">Rezdy</th><td>RM 199–1,011/mo (USD $49–249)</td><td>3% per online booking</td><td>Operator (or pass to guest)</td><td>Mid-large AU/NZ operators with complex operations</td></tr>
           <tr><th scope="row">Checkfront</th><td>RM 402/mo (USD $99; legacy plans still active)</td><td>3% online bookings</td><td>Operator (or pass to guest)</td><td>North American operators with rentals + tours</td></tr>
           <tr><th scope="row">Bokun</th><td>RM 199–2,026/mo (USD $49–499)</td><td>1.0%–1.5%, 0% on Viator</td><td>Operator (or pass to guest)</td><td>Operators with Viator as primary channel</td></tr>
@@ -1757,9 +1769,9 @@ body {
       <p>Easy to set up. Most operators report being live within a day.</p>
       <p>Supports 32 languages — better international coverage than most competitors.</p>
       <h3 class="struggles"><i class="ti ti-alert-triangle"></i>Where Bookeo genuinely struggles</h3>
-      <p><em>The flat fee is the trap, not the feature.</em> The RM 162/month Tours &amp; Activities Standard plan works out to roughly RM 175/month at current exchange rates. To break even versus Kong's 1.8% guest fee, you'd need to be generating around RM 9,700/month in bookings — at which point you're not really a small operator anymore, and you're probably wanting features Bookeo doesn't have.</p>
-      <p>For operators below that volume — which is most small operators — Bookeo is actively <em>more expensive</em> than Kong, not cheaper. An operator doing RM 3,000/month in bookings pays Bookeo RM 175 from their own pocket every month. The equivalent guest fees on Kong come to RM 54, and the operator pays nothing.</p>
-      <p>The flat fee also doesn't care whether you got any bookings at all. Zero bookings in low season? Still RM 175. Cancelled trips during a travel disruption? Still RM 175. School holidays and a packed calendar? Still RM 175. Kong scales with you: you pay nothing when bookings are slow, and the guest pays a small fee only when bookings happen.</p>
+      <p><em>The flat fee is the trap, not the feature.</em> The RM 162/month Tours &amp; Activities Standard plan works out to roughly RM 175/month at current exchange rates. To break even versus Kong's 1.8% fee, you'd need to be generating around RM 9,700/month in bookings — at which point you're not really a small operator anymore, and you're probably wanting features Bookeo doesn't have.</p>
+      <p>For operators below that volume — which is most small operators — Bookeo is actively <em>more expensive</em> than Kong, not cheaper. An operator doing RM 3,000/month in bookings pays Bookeo RM 175 from their own pocket every month. The equivalent 1.8% fees on Kong come to RM 54, which your guest pays unless you choose to absorb them.</p>
+      <p>The flat fee also doesn't care whether you got any bookings at all. Zero bookings in low season? Still RM 175. Cancelled trips during a travel disruption? Still RM 175. School holidays and a packed calendar? Still RM 175. Kong scales with you: you pay nothing when bookings are slow, and the 1.8% fee only applies when bookings happen.</p>
       <p>This is the counterintuitive part of variable pricing that most operators don't realize until they've lived through a bad season — <em>variable booking fees give you more certainty than flat subscriptions do</em>, because your software cost moves with your revenue. In a year where bookings are halved, Bookeo's bill stays the same and the pain is concentrated. Kong's effective cost halves with revenue.</p>
       <p>There's also a transparency point worth being honest about. Bookeo's pitch is "no consumer fees" — meaning guests don't see a fee at checkout. But the operator still pays. The money still comes out of the business. The only real difference is whether the cost is on the receipt or hidden in your monthly software bill. Some operators genuinely prefer the latter; others find Kong's transparent 1.8% on the booking receipt more honest.</p>
       <p>Beyond pricing: no OTA distribution (no GetYourGuide, Klook, or Viator integration). No partner or reseller network. Monthly booking caps that can shut your booking flow off mid-month. Customer service hours that don't cover weekends — which is exactly when tour operators most need support.</p>
@@ -1773,22 +1785,22 @@ body {
     <section class="platform" id="kong">
       <h2>Where does Kong fit?</h2>
       <p>I've held this section to the end because I want to be honest about it.</p>
-      <p>Kong is a free booking platform for tour and activity operators in Malaysia and Southeast Asia. Operators pay nothing; guests pay a 1.8% booking fee at checkout. There are no tiers, no monthly subscriptions, no commission on direct bookings.</p>
+      <p>Kong is a booking platform for tour and activity operators in Malaysia and Southeast Asia. There is no monthly fee. Kong costs 1.8% per online booking, and you choose whether your guest pays it or you absorb it. There are no tiers, no monthly subscriptions, no commission on direct bookings.</p>
 
       <div class="sc-card wins">
         <h3><i class="ti ti-trophy"></i> Where Kong genuinely wins (vs. each competitor)</h3>
         <ul>
           <li><span class="vs">Against Rezdy:</span> Kong is cheaper for most SEA operators, simpler to set up (under a day vs. 60+ days), and gets you <a href="../contact-us">direct founder access for support</a>. Rezdy beats Kong on configurability depth, OTA integration maturity, and reseller marketplace size.</li>
           <li><span class="vs">Against Checkfront:</span> Kong has a modern guest-facing booking flow, founder-led support, and no three-version fragmentation. Checkfront beats Kong on rentals/accommodation support, North American time-zone coverage, and platform stability (Kong is newer and hasn't built that track record yet).</li>
-          <li><span class="vs">Against Bokun:</span> Kong is independent — we're not owned by an OTA. Our 1.8% guest fee is slightly higher than Bokun's 1–1.5%, but Kong's fee structure doesn't change with which OTA delivers the booking. Bokun beats Kong on direct Viator integration depth and absolute fee pricing if Viator is your dominant channel.</li>
-          <li><span class="vs">Against FareHarbor:</span> Kong's 1.8% guest fee converts dramatically better in SEA than FareHarbor's 6%. Kong has no minimum operator size restriction. FareHarbor beats Kong on feature completeness, support depth, and Booking Holdings distribution network access.</li>
+          <li><span class="vs">Against Bokun:</span> Kong is independent — we're not owned by an OTA. Our 1.8% fee is slightly higher than Bokun's 1–1.5%, but Kong's fee structure doesn't change with which OTA delivers the booking. Bokun beats Kong on direct Viator integration depth and absolute fee pricing if Viator is your dominant channel.</li>
+          <li><span class="vs">Against FareHarbor:</span> Kong's 1.8% fee converts dramatically better in SEA than FareHarbor's 6%. Kong has no minimum operator size restriction. FareHarbor beats Kong on feature completeness, support depth, and Booking Holdings distribution network access.</li>
           <li><span class="vs">Against Amelia:</span> Kong is built specifically for tour and activity operators, with OTA integration, channel management, and a mobile app you can actually run your business from — Amelia makes you live inside the WordPress admin to manage bookings, which most operators don't actually want once they've tried it. Amelia beats Kong on lifetime-license pricing if you genuinely never want to switch platforms, and on deep WordPress-native integration for businesses already living inside WordPress.</li>
-          <li><span class="vs">Against Bookeo:</span> Kong is free for operators, has no booking caps, supports OTA distribution, and scales with your revenue instead of against it — for most small operators, Kong is actually cheaper than Bookeo's flat fee, not the other way around. Bookeo beats Kong if you genuinely want a fixed monthly bill regardless of volume, run extremely consistent year-round bookings, and have explicitly decided your business won't grow.</li>
+          <li><span class="vs">Against Bookeo:</span> Kong has no monthly fee, no booking caps, supports OTA distribution, and scales with your revenue instead of against it — for most small operators, Kong is actually cheaper than Bookeo's flat fee, not the other way around. Bookeo beats Kong if you genuinely want a fixed monthly bill regardless of volume, run extremely consistent year-round bookings, and have explicitly decided your business won't grow.</li>
         </ul>
       </div>
 
       <p><strong>One more thing worth saying honestly:</strong> Kong also gives operators a simple website builder — a hosted booking page operators can stand up in an afternoon. That sounds like a small feature, but in the Malaysian context it's a real structural advantage. Most small Malaysian operators don't have a website at all — they take bookings via WhatsApp, Instagram DMs, and walk-ins. For those operators, the choice isn't "Kong vs. competitor on my existing website." It's "Kong (which includes a website) vs. paying a freelancer RM 2,000–5,000 to build a WordPress site and <em>then</em> paying for booking software on top."</p>
-      <p>The website builder is simple. It's not going to win a design award. But operators using it are getting real bookings — which is the only metric that matters for a booking-system website. FareHarbor and Bokun both have website-builder features too, but each comes with strings attached (FareHarbor owns and locks you into the site they build; Bokun's hosted page lives on TripAdvisor's infrastructure). Kong's is free, included, and operators retain control of their own URL.</p>
+      <p>The website builder is simple. It's not going to win a design award. But operators using it are getting real bookings — which is the only metric that matters for a booking-system website. FareHarbor and Bokun both have website-builder features too, but each comes with strings attached (FareHarbor owns and locks you into the site they build; Bokun's hosted page lives on TripAdvisor's infrastructure). Kong's is included, and operators retain control of their own URL.</p>
 
       <h3>The payment gateway story — where Kong gives operators a real choice</h3>
       <p>Most booking platforms in this article use Stripe as their payment processor, often white-labeled. That's a defensible choice — Stripe is genuinely one of the most reliable payment infrastructure companies in the world, and the Stripe logo at checkout carries real trust signal with international tourists who recognize it. For operators whose guests are mostly international card-paying tourists, Stripe is a sensible default.</p>
@@ -1840,8 +1852,8 @@ body {
     <h2>The honest decision tree</h2>
     <p>Use this if you skipped the rest:</p>
     <div class="decision-tree">
-      <div class="dt-item"><div class="dt-cond"><strong>You're a Malaysian operator under RM 50k/month in bookings.</strong> Free, fast to set up, built for your market.</div><span class="dt-pick kong">Kong</span></div>
-      <div class="dt-item"><div class="dt-cond"><strong>You don't have a website yet and take bookings via WhatsApp or Instagram DMs.</strong> The website builder is included free — you get a booking page and a booking system in one move, with no freelancer invoice attached.</div><span class="dt-pick kong">Kong</span></div>
+      <div class="dt-item"><div class="dt-cond"><strong>You're a Malaysian operator under RM 50k/month in bookings.</strong> No monthly fee, fast to set up, built for your market.</div><span class="dt-pick kong">Kong</span></div>
+      <div class="dt-item"><div class="dt-cond"><strong>You don't have a website yet and take bookings via WhatsApp or Instagram DMs.</strong> The website builder is included — you get a booking page and a booking system in one move, with no freelancer invoice attached.</div><span class="dt-pick kong">Kong</span></div>
       <div class="dt-item"><div class="dt-cond"><strong>Most of your guests pay through FPX, Touch 'n Go, GrabPay, or other local Malaysian payment methods.</strong> The only platform in this article that gives operators the option to pick Xendit — every other platform is Stripe-only, which can't even accept Touch 'n Go, ShopeePay, Boost, or DuitNow QR.</div><span class="dt-pick kong">Kong + Xendit</span></div>
       <div class="dt-item"><div class="dt-cond"><strong>You're a Malaysian operator over RM 50k/month and OTAs drive most of your bookings.</strong> Kong if you want independence and you're trying to diversify away from OTAs; Bokun if Viator is your dominant channel and you can live with the Tripadvisor ownership.</div><span class="dt-pick">Kong / Bokun</span></div>
       <div class="dt-item"><div class="dt-cond"><strong>You run a complex multi-day operation with intricate pricing and you're in AU/NZ.</strong> The configurability is worth the setup pain.</div><span class="dt-pick">Rezdy</span></div>
@@ -1856,7 +1868,7 @@ body {
     <div class="faq-accordion">
       <details>
         <summary><span>What is the best booking software for tour operators in Malaysia in 2026?</span><span class="faq-icon"><i class="ti ti-plus"></i></span></summary>
-        <div class="faq-answer"><p>For most small-to-mid Malaysian operators, Kong is the best fit — it's free for operators, charges guests a 1.8% booking fee, integrates with both Stripe and Xendit (the only platform in this comparison that offers Xendit), and is built specifically for the Southeast Asian market. For large operators with complex multi-day operations, Rezdy is more configurable but significantly more expensive. For operators whose primary distribution channel is Viator, Bokun offers the deepest Viator integration. The right answer depends on operator size, primary booking channel, and whether guests are local or international.</p></div>
+        <div class="faq-answer"><p>For most small-to-mid Malaysian operators, Kong is the best fit — it has no monthly fee, charges a 1.8% booking fee that your guest pays or you absorb, integrates with both Stripe and Xendit (the only platform in this comparison that offers Xendit), and is built specifically for the Southeast Asian market. For large operators with complex multi-day operations, Rezdy is more configurable but significantly more expensive. For operators whose primary distribution channel is Viator, Bokun offers the deepest Viator integration. The right answer depends on operator size, primary booking channel, and whether guests are local or international.</p></div>
       </details>
       <details>
         <summary><span>How much does Rezdy cost in 2026?</span><span class="faq-icon"><i class="ti ti-plus"></i></span></summary>
@@ -1884,7 +1896,7 @@ body {
       </details>
       <details>
         <summary><span>Does Kong charge operators a monthly fee?</span><span class="faq-icon"><i class="ti ti-plus"></i></span></summary>
-        <div class="faq-answer"><p>No. Kong is free for operators — no monthly subscription, no setup fee, no contract. The platform is funded by a 1.8% guest booking fee paid at checkout, which is the only cost associated with using Kong.</p></div>
+        <div class="faq-answer"><p>No. Kong has no monthly subscription, no setup fee and no contract. The platform is funded by a 1.8% fee per online booking, which your guest pays at checkout or you absorb. It is the only cost associated with using Kong.</p></div>
       </details>
       <details>
         <summary><span>How long does it take to set up a tour booking platform?</span><span class="faq-icon"><i class="ti ti-plus"></i></span></summary>
@@ -1909,7 +1921,7 @@ body {
       <div class="post-author-text">
         <h4>About the author</h4>
         <div class="post-author-name">Blake Ng</div>
-        <div class="post-author-bio">Co-founder of Kong, a free booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing. He's based in Kuala Lumpur and personally responds to most operator questions on WhatsApp: <a href="https://wa.me/60124298159" target="_blank" rel="noopener noreferrer">+60 12-429 8159</a>.</div>
+        <div class="post-author-bio">Co-founder of Kong, a booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing. He's based in Kuala Lumpur and personally responds to most operator questions on WhatsApp: <a href="https://wa.me/60124298159" target="_blank" rel="noopener noreferrer">+60 12-429 8159</a>.</div>
       </div>
     </div>
 
@@ -1937,8 +1949,8 @@ body {
 
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
-      <h2>Kong is free for operators. Get started in an afternoon.</h2>
-      <p>No subscription, no setup fee, no contract — just a 1.8% guest booking fee when a booking actually happens. Not sure it's the right fit? Book a call and I'll tell you honestly — even if the answer is a competitor.</p>
+      <h2>Kong has no monthly fee. Get started in an afternoon.</h2>
+      <p>No subscription, no setup fee, no contract — just a 1.8% booking fee when a booking actually happens. Not sure it's the right fit? Book a call and I'll tell you honestly — even if the answer is a competitor.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -2068,6 +2080,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

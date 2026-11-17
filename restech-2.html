@@ -567,7 +567,13 @@ html{scroll-behavior:smooth}
         <a href="snorkelling-tours" role="menuitem">Snorkelling Tours</a>
       </div>
     </div>
-    <a class="kong-nav-item" href="/ai">AI</a>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products <svg class="kong-nav-dd-chev" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="website-builder" role="menuitem">Website Builder</a>
+            <a href="/ai" role="menuitem">AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
     <a class="kong-nav-item" href="blog">Blog</a>
     <a class="kong-nav-item" href="about">About</a>
@@ -589,7 +595,11 @@ html{scroll-behavior:smooth}
       <a class="kong-mobile-item kong-mobile-sub" href="dive-centres">Dive Centres</a>
       <a class="kong-mobile-item kong-mobile-sub" href="snorkelling-tours">Snorkelling Tours</a>
     </div>
-    <a class="kong-mobile-item" href="/ai">AI</a>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><svg class="kong-mobile-acc-chev" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="blog">Blog</a>
     <a class="kong-mobile-item" href="about">About</a>
@@ -1331,5 +1341,9 @@ html{scroll-behavior:smooth}
 })();
 </script>
 
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
+</script>
 </body>
 </html>

@@ -147,7 +147,7 @@
             "price": "0.00",
             "priceCurrency": "USD",
             "billingDuration": "P1M",
-            "description": "Free for operators. 1.8% guest booking fee at checkout on online direct bookings only. Currently no fee on OTA bookings. No fee on walk-ins or WhatsApp bookings. Hosting, security, updates, digital waivers, and website builder all included free. No booking caps."
+            "description": "No monthly fee. 1.8% booking fee on online direct bookings only, paid by your guest or absorbed by you. Currently no fee on OTA bookings. No fee on walk-ins or WhatsApp bookings. Hosting, security, updates, digital waivers, and website builder all included. No booking caps."
           }
         }
       }
@@ -215,7 +215,7 @@
       "name": "Can I use Kong if I'm not based in Malaysia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The free operator pricing, hosted setup (no WordPress to maintain), digital waivers, website builder, no booking caps, and OTA connections all apply regardless of where you're based. This comparison leans Malaysian in some places (the payment methods, the Xendit math), but the bigger argument — Amelia is built for appointment businesses, Kong is built for tours — applies everywhere."
+        "text": "Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The no-monthly-fee pricing, hosted setup (no WordPress to maintain), digital waivers, website builder, no booking caps, and OTA connections all apply regardless of where you're based. This comparison leans Malaysian in some places (the payment methods, the Xendit math), but the bigger argument — Amelia is built for appointment businesses, Kong is built for tours — applies everywhere."
       }
     },
     {
@@ -327,6 +327,13 @@
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -350,6 +357,11 @@
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -418,7 +430,7 @@
           <li>Your tours are group-based — multiple guests sharing seats on the same departure</li>
           <li>You want to start taking bookings within a day, not in a few weeks</li>
           <li>You take Malaysian payment methods (Touch 'n Go, FPX, ShopeePay, GrabPay, Boost, DuitNow QR)</li>
-          <li>You'd rather pay nothing as an operator than buy a license plus pay for hosting and maintenance</li>
+          <li>You'd rather pay no monthly fee than buy a license plus pay for hosting and maintenance</li>
           <li>You want to list your tours on OTAs like GetYourGuide later</li>
         </ul>
       </div>
@@ -433,17 +445,17 @@
         <tbody>
           <tr><th scope="row">What it is</th><td data-label="Amelia">A plugin you install inside a WordPress website</td><td class="col-kong" data-label="Kong">A booking platform you sign up for and start using</td></tr>
           <tr><th scope="row">Where it lives</th><td data-label="Amelia">Inside your WordPress site (you maintain the site)</td><td class="col-kong" data-label="Kong">On Kong's servers (we maintain everything)</td></tr>
-          <tr><th scope="row">What you pay</th><td data-label="Amelia">Once for the license, then ongoing for hosting &amp; maintenance</td><td class="col-kong win" data-label="Kong">Nothing — free for operators</td></tr>
+          <tr><th scope="row">What you pay</th><td data-label="Amelia">Once for the license, then ongoing for hosting &amp; maintenance</td><td class="col-kong win" data-label="Kong">No monthly fee</td></tr>
           <tr><th scope="row">Lifetime license</th><td data-label="Amelia">Standard RM 1,214 Pro tier, Elite RM 3,244–5,408</td><td class="col-kong" data-label="Kong">Not applicable — no purchase</td></tr>
           <tr><th scope="row">Annual subscription</th><td data-label="Amelia">Starter RM 199 Standard RM 361–402 Elite RM 1,052–1,754</td><td class="col-kong" data-label="Kong">Not applicable — no subscription</td></tr>
-          <tr><th scope="row">Per-booking fee</th><td data-label="Amelia">None</td><td class="col-kong" data-label="Kong">1.8% paid by guest on online direct bookings only</td></tr>
+          <tr><th scope="row">Per-booking fee</th><td data-label="Amelia">None</td><td class="col-kong" data-label="Kong">1.8% on online direct bookings only, paid by guest or absorbed by you</td></tr>
           <tr><th scope="row">Walk-in / WhatsApp bookings</th><td data-label="Amelia">Manually entered, no fee</td><td class="col-kong" data-label="Kong">Free — no fee to operator or guest</td></tr>
-          <tr><th scope="row">Hosting &amp; maintenance</th><td data-label="Amelia">You handle it (or pay someone)</td><td class="col-kong win" data-label="Kong">We handle it (free, included)</td></tr>
+          <tr><th scope="row">Hosting &amp; maintenance</th><td data-label="Amelia">You handle it (or pay someone)</td><td class="col-kong win" data-label="Kong">We handle it (included)</td></tr>
           <tr><th scope="row">Built for</th><td data-label="Amelia">Appointment businesses — salons, clinics, gyms, coaches</td><td class="col-kong" data-label="Kong">Tour and activity operators</td></tr>
           <tr><th scope="row">Group bookings (multiple seats per tour)</th><td data-label="Amelia">Possible but requires setup work; not the default</td><td class="col-kong win" data-label="Kong">Built in from the start — it's how tours work on Kong</td></tr>
           <tr><th scope="row">Payment gateways</th><td data-label="Amelia">Stripe, PayPal, Mollie, Razorpay, WooCommerce, Square</td><td class="col-kong" data-label="Kong">Stripe OR Xendit (operator picks)</td></tr>
           <tr><th scope="row">Touch 'n Go / ShopeePay / Boost / DuitNow QR</th><td data-label="Amelia">Not supported</td><td class="col-kong win" data-label="Kong">Supported via Xendit</td></tr>
-          <tr><th scope="row">Digital waivers</th><td data-label="Amelia">Need to install separately and configure</td><td class="col-kong win" data-label="Kong">Included free, ready to use</td></tr>
+          <tr><th scope="row">Digital waivers</th><td data-label="Amelia">Need to install separately and configure</td><td class="col-kong win" data-label="Kong">Included, ready to use</td></tr>
           <tr><th scope="row">OTA connections (GetYourGuide, Klook, Viator)</th><td data-label="Amelia">Manual or developer-built</td><td class="col-kong" data-label="Kong">GetYourGuide live; more in development</td></tr>
           <tr><th scope="row">Mobile app</th><td data-label="Amelia">None</td><td class="col-kong win" data-label="Kong">Yes</td></tr>
           <tr><th scope="row">Support</th><td data-label="Amelia">Email tickets and community forums</td><td class="col-kong" data-label="Kong">Founder-led WhatsApp in Malaysian business hours</td></tr>
@@ -533,18 +545,18 @@
           <tr><th scope="col">Channel</th><th scope="col">Operator fee</th><th scope="col">Booking fee</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Online direct (Kong-hosted website, embedded widget)</th><td>Free</td><td>1.8% paid by guest at checkout</td></tr>
+          <tr><th scope="row">Online direct (Kong-hosted website, embedded widget)</th><td>No monthly fee</td><td>1.8%, paid by guest at checkout or absorbed by you</td></tr>
           <tr><th scope="row">OTA bookings (GetYourGuide today, more in development)</th><td>Free</td><td>Currently no Kong fee — see note below</td></tr>
           <tr><th scope="row">Walk-ins, phone bookings, WhatsApp bookings</th><td>Free</td><td>Free — no fee to operator or guest</td></tr>
-          <tr><th scope="row">Digital waivers</th><td>Free</td><td>Included as built-in feature</td></tr>
-          <tr><th scope="row">Website builder</th><td>Free</td><td>Included as built-in feature</td></tr>
-          <tr><th scope="row">Hosting, security, updates</th><td>Free</td><td>Included as part of Kong</td></tr>
+          <tr><th scope="row">Digital waivers</th><td>No extra cost</td><td>Included as built-in feature</td></tr>
+          <tr><th scope="row">Website builder</th><td>No extra cost</td><td>Included as built-in feature</td></tr>
+          <tr><th scope="row">Hosting, security, updates</th><td>No extra cost</td><td>Included as part of Kong</td></tr>
         </tbody>
       </table>
     </div>
     <p>No tiers, no monthly subscription, no setup fee, no contract, no booking caps.</p>
     <p><strong>On OTA bookings:</strong> Kong currently doesn't charge an additional booking fee on bookings that come through OTA integrations. Kong's leadership hasn't finalized a long-term OTA fee structure and may introduce one in future. For now, operators using Kong's OTA integrations pay the OTA's commission and nothing additional to Kong.</p>
-    <p>The 1.8% guest fee applies only to bookings that flow through Kong's online checkout. It does not apply to walk-ins, phone bookings, or anything handled outside Kong's online flow.</p>
+    <p>The 1.8% fee applies only to bookings that flow through Kong's online checkout. It does not apply to walk-ins, phone bookings, or anything handled outside Kong's online flow. The Kong figures on this page assume your guest pays the 1.8%. If you choose to absorb it, that amount is your cost instead.</p>
 
     <h3>Worked scenarios at real operator volumes</h3>
     <p>What does Amelia actually cost an operator? More than the license fee suggests — there's the hosting, the setup work, and ongoing maintenance to factor in. These scenarios compare what an operator actually pays over two years across both options.</p>
@@ -563,7 +575,7 @@
           <tr><th scope="row">WordPress theme</th><td>~RM 325 once</td><td class="col-kong">RM 0 (included)</td></tr>
           <tr><th scope="row">Setting up the site (web developer)</th><td>~RM 6,090 once</td><td class="col-kong">RM 0 (we help via WhatsApp)</td></tr>
           <tr><th scope="row">Payment processing (Stripe vs Xendit) on ~888 bookings over 24 months</th><td>Stripe: ~RM 4,300</td><td class="col-kong">Xendit blended: ~RM 1,200</td></tr>
-          <tr><th scope="row">Kong's 1.8% guest fee (paid by your guests) over 24 months</th><td>N/A</td><td class="col-kong">~RM 864 paid by guests</td></tr>
+          <tr><th scope="row">Kong's 1.8% fee (paid by your guests) over 24 months</th><td>N/A</td><td class="col-kong">~RM 864 paid by guests</td></tr>
           <tr><th scope="row">Your total cost over 24 months</th><td><strong>~RM 13,494</strong></td><td class="col-kong"><strong>~RM 1,200</strong> (in payment processing)</td></tr>
         </tbody>
       </table>
@@ -584,7 +596,7 @@
           <tr><th scope="row">Setting up Amelia (web developer)</th><td>~RM 6,090 once</td><td class="col-kong">RM 0</td></tr>
           <tr><th scope="row">Ongoing developer help when things break (over 24 months)</th><td>~RM 812/mo × 24 ≈ RM 19,488</td><td class="col-kong">RM 0</td></tr>
           <tr><th scope="row">Payment processing on ~4,800 transactions over 24 months</th><td>Stripe: ~RM 19,200</td><td class="col-kong">Xendit blended: ~RM 6,600</td></tr>
-          <tr><th scope="row">Kong's 1.8% guest fee over 24 months</th><td>N/A</td><td class="col-kong">~RM 9,720 paid by guests</td></tr>
+          <tr><th scope="row">Kong's 1.8% fee over 24 months</th><td>N/A</td><td class="col-kong">~RM 9,720 paid by guests</td></tr>
           <tr><th scope="row">Your total cost over 24 months</th><td><strong>~RM 46,804</strong></td><td class="col-kong"><strong>~RM 6,600</strong> (in payment processing)</td></tr>
         </tbody>
       </table>
@@ -604,7 +616,7 @@
           <tr><th scope="row">Managed WordPress hosting (higher tier needed)</th><td>~RM 325/mo × 24 ≈ RM 7,802</td><td class="col-kong">RM 0</td></tr>
           <tr><th scope="row">Developer maintenance (more critical at this scale)</th><td>~RM 2,030/mo × 24 ≈ RM 48,720</td><td class="col-kong">RM 0</td></tr>
           <tr><th scope="row">Payment processing on ~14,400 transactions over 24 months</th><td>Stripe: ~RM 57,600</td><td class="col-kong">Xendit blended: ~RM 19,800</td></tr>
-          <tr><th scope="row">Kong's 1.8% guest fee over 24 months</th><td>N/A</td><td class="col-kong">~RM 25,920 paid by guests</td></tr>
+          <tr><th scope="row">Kong's 1.8% fee over 24 months</th><td>N/A</td><td class="col-kong">~RM 25,920 paid by guests</td></tr>
           <tr><th scope="row">Your total cost over 24 months</th><td><strong>~RM 119,531</strong></td><td class="col-kong"><strong>~RM 19,800</strong> (in payment processing)</td></tr>
         </tbody>
       </table>
@@ -777,7 +789,7 @@
       </details>
       <details>
         <summary>Can I use Kong if I'm not based in Malaysia? <span class="faq-icon"></span></summary>
-        <div class="faq-answer"><p>Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The free operator pricing, hosted setup (no WordPress to maintain), digital waivers, website builder, no booking caps, and OTA connections all apply regardless of where you're based. This comparison leans Malaysian in some places (the payment methods, the Xendit math), but the bigger argument — Amelia is built for appointment businesses, Kong is built for tours — applies everywhere. Outside Malaysia, the payment processing savings shrink, but the "I don't have to maintain a WordPress site" advantage still holds.</p></div>
+        <div class="faq-answer"><p>Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The no-monthly-fee pricing, hosted setup (no WordPress to maintain), digital waivers, website builder, no booking caps, and OTA connections all apply regardless of where you're based. This comparison leans Malaysian in some places (the payment methods, the Xendit math), but the bigger argument — Amelia is built for appointment businesses, Kong is built for tours — applies everywhere. Outside Malaysia, the payment processing savings shrink, but the "I don't have to maintain a WordPress site" advantage still holds.</p></div>
       </details>
       <details>
         <summary>Can I switch from Amelia to Kong? <span class="faq-icon"></span></summary>
@@ -793,8 +805,8 @@
 
     <div class="post-cta">
       <div class="post-cta-eyebrow">Get started</div>
-      <h2>Kong is free for operators. Get started in an afternoon.</h2>
-      <p>No license to buy, no WordPress site to build or maintain, no setup fee — hosting, waivers, and your booking page are all included, with a 1.8% guest fee only when an online booking happens. Not sure it's the right fit? Book a call and I'll tell you honestly — even if the answer is Amelia.</p>
+      <h2>Kong has no monthly fee. Get started in an afternoon.</h2>
+      <p>No license to buy, no WordPress site to build or maintain, no setup fee — hosting, waivers, and your booking page are all included, with a 1.8% fee only when an online booking happens. Not sure it's the right fit? Book a call and I'll tell you honestly — even if the answer is Amelia.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -813,7 +825,7 @@
       <div class="post-author-text">
         <h4>About the author</h4>
         <div class="post-author-name">Blake Ng</div>
-        <div class="post-author-bio">Blake Ng is the co-founder of Kong, a free booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing. He's based in Kuala Lumpur and personally responds to operator questions on WhatsApp: <a href="https://wa.me/60124298159" target="_blank" rel="noopener noreferrer">+60 12-429 8159</a>.</div>
+        <div class="post-author-bio">Blake Ng is the co-founder of Kong, a booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing. He's based in Kuala Lumpur and personally responds to operator questions on WhatsApp: <a href="https://wa.me/60124298159" target="_blank" rel="noopener noreferrer">+60 12-429 8159</a>.</div>
       </div>
     </div>
 
@@ -952,6 +964,10 @@
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

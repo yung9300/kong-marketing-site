@@ -158,7 +158,7 @@
             "price": "0.00",
             "priceCurrency": "USD",
             "billingDuration": "P1M",
-            "description": "Free for operators. 1.8% guest booking fee at checkout."
+            "description": "No monthly fee. 1.8% booking fee on online bookings, paid by your guest or absorbed by you."
           }
         }
       }
@@ -186,7 +186,7 @@
       "name": "Is Kong cheaper than Bokun?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For most Malaysian operators, yes — meaningfully so. Kong is free for operators with no monthly subscription, no setup fees, and currently no fees on OTA bookings. Bokun charges RM 199–2,026/month plus 1–1.5% on non-Viator bookings. On platform fees alone, Kong is cheaper than Bokun for every operator profile we've modeled. The single exception: operators heavily dependent on Viator for distribution. Bokun's 0% Viator fee plus Viator workflow on a single platform is a real Viator-specific advantage, and Kong doesn't yet have Viator integration. For those operators, Bokun is the right choice — not because Bokun is cheaper overall, but because Kong can't yet handle the Viator workflow."
+        "text": "For most Malaysian operators, yes — meaningfully so. Kong has no monthly subscription, no setup fees, and currently no fees on OTA bookings. Bokun charges RM 199–2,026/month plus 1–1.5% on non-Viator bookings. On platform fees alone, Kong is cheaper than Bokun for every operator profile we've modeled. The single exception: operators heavily dependent on Viator for distribution. Bokun's 0% Viator fee plus Viator workflow on a single platform is a real Viator-specific advantage, and Kong doesn't yet have Viator integration. For those operators, Bokun is the right choice — not because Bokun is cheaper overall, but because Kong can't yet handle the Viator workflow."
       }
     },
     {
@@ -218,7 +218,7 @@
       "name": "Can I use Kong if I'm not based in Malaysia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The free operator pricing, no booking caps, founder-led support, structural independence from Tripadvisor, included digital waivers, and OTA integrations all apply regardless of where you're based. This comparison leans Malaysian in some places (the local payment method support, the Xendit-on-Stripe processing math), but Bokun's core structural concern — being owned by Tripadvisor, who also owns Viator — affects Bokun operators globally. Outside Malaysia, the Xendit-specific cost advantage shrinks (since Kong on Stripe processes international cards at similar rates to Bokun), but the strategic concerns about Tripadvisor ownership and Kong's free pricing model still apply."
+        "text": "Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The no-monthly-fee pricing, no booking caps, founder-led support, structural independence from Tripadvisor, included digital waivers, and OTA integrations all apply regardless of where you're based. This comparison leans Malaysian in some places (the local payment method support, the Xendit-on-Stripe processing math), but Bokun's core structural concern — being owned by Tripadvisor, who also owns Viator — affects Bokun operators globally. Outside Malaysia, the Xendit-specific cost advantage shrinks (since Kong on Stripe processes international cards at similar rates to Bokun), but the strategic concerns about Tripadvisor ownership and Kong's no-monthly-fee pricing model still apply."
       }
     },
     {
@@ -346,6 +346,13 @@
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -369,6 +376,11 @@
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -410,7 +422,7 @@
   <article class="post-body">
 
     <!-- Opening verdict -->
-    <p class="lead">Here's the honest answer up front: <strong>Bokun is the better choice if Viator drives most of your bookings.</strong> <strong>Kong is the better choice for almost everyone else</strong> — particularly Malaysian operators, operators trying to reduce OTA dependency, and operators who'd benefit from the free pricing model. Kong handles international guests just as well as Bokun does; Malaysian operators get an additional advantage through Kong's Xendit option.</p>
+    <p class="lead">Here's the honest answer up front: <strong>Bokun is the better choice if Viator drives most of your bookings.</strong> <strong>Kong is the better choice for almost everyone else</strong> — particularly Malaysian operators, operators trying to reduce OTA dependency, and operators who'd benefit from the no-monthly-fee pricing model. Kong handles international guests just as well as Bokun does; Malaysian operators get an additional advantage through Kong's Xendit option.</p>
 
     <p>I spent six years at Rezdy, Checkfront, and Regiondo before co-founding Kong. I'm not neutral about this comparison, but I'll be honest about where Bokun wins — anything less would be useless to you as a buyer.</p>
 
@@ -434,12 +446,12 @@
       <div class="choose-card kong">
         <h3><i class="ti ti-circle-check"></i> Choose Kong if</h3>
         <ul>
-          <li>You want a free-for-operators pricing model that scales with revenue rather than a fixed monthly bill</li>
+          <li>You want a no-monthly-fee pricing model that scales with revenue rather than a fixed monthly bill</li>
           <li>You're trying to reduce dependency on OTA-owned platforms</li>
-          <li>You don't yet have a website (Kong's website builder is included free)</li>
+          <li>You don't yet have a website (Kong's website builder is included)</li>
           <li>You want founder-led support in Southeast Asian business hours</li>
           <li>You take Malaysian payments — FPX, Touch 'n Go, GrabPay, ShopeePay, Boost, DuitNow QR (Bokun on Stripe can't accept several of these)</li>
-          <li>Your booking volume is under RM 100,000/month and you'd benefit from Kong's free pricing model</li>
+          <li>Your booking volume is under RM 100,000/month and you'd benefit from Kong's no-monthly-fee pricing model</li>
         </ul>
       </div>
     </div>
@@ -456,13 +468,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Subscription</th><td data-label="Bokun">RM 199–2,026/month across three tiers</td><td class="col-kong win" data-label="Kong">Free for operators</td></tr>
-          <tr><th scope="row">Booking fee model</th><td data-label="Bokun">1.0%–1.5% (0% on Viator)</td><td class="col-kong" data-label="Kong">1.8% paid by guest at checkout</td></tr>
+          <tr><th scope="row">Subscription</th><td data-label="Bokun">RM 199–2,026/month across three tiers</td><td class="col-kong win" data-label="Kong">No monthly fee</td></tr>
+          <tr><th scope="row">Booking fee model</th><td data-label="Bokun">1.0%–1.5% (0% on Viator)</td><td class="col-kong" data-label="Kong">1.8%, paid by guest at checkout or absorbed by you</td></tr>
           <tr><th scope="row">Payment gateway choice</th><td data-label="Bokun">Stripe (default)</td><td class="col-kong win" data-label="Kong">Stripe <strong>or</strong> Xendit (operator picks)</td></tr>
           <tr><th scope="row">Touch 'n Go / ShopeePay / Boost / DuitNow QR</th><td data-label="Bokun">Not supported</td><td class="col-kong win" data-label="Kong">Supported via Xendit</td></tr>
           <tr><th scope="row">OTA distribution</th><td data-label="Bokun">Viator (deepest), GetYourGuide, Klook, and others</td><td class="col-kong" data-label="Kong">GetYourGuide (recently shipped); Viator and additional OTAs in development</td></tr>
           <tr><th scope="row">Reseller marketplace</th><td data-label="Bokun">27,000+ partners</td><td class="col-kong" data-label="Kong">Small, growing</td></tr>
-          <tr><th scope="row">Website builder</th><td data-label="Bokun">Included on TripAdvisor-owned infrastructure</td><td class="col-kong win" data-label="Kong">Included free, operator retains URL control</td></tr>
+          <tr><th scope="row">Website builder</th><td data-label="Bokun">Included on TripAdvisor-owned infrastructure</td><td class="col-kong win" data-label="Kong">Included, operator retains URL control</td></tr>
           <tr><th scope="row">Mobile app</th><td data-label="Bokun">Limited (check-in features lacking per reviews)</td><td class="col-kong win" data-label="Kong">Yes</td></tr>
           <tr><th scope="row">Support location / hours</th><td data-label="Bokun">Iceland (UTC+0) — 8-hour gap from Malaysia</td><td class="col-kong win" data-label="Kong">Malaysia (UTC+8) — founder-led on WhatsApp</td></tr>
           <tr><th scope="row">Ownership</th><td data-label="Bokun">Tripadvisor (also owns Viator)</td><td class="col-kong win" data-label="Kong">Independent</td></tr>
@@ -476,7 +488,7 @@
 
     <!-- Pricing comparison -->
     <h2 id="pricing">Pricing comparison</h2>
-    <p>Bokun's pricing model is a monthly subscription plus a booking fee. Kong's pricing model is free for operators with a 1.8% guest-paid booking fee at checkout. The right framing isn't "which sticker price is lower" — it's "what does each platform actually cost you at your specific booking volume and mix."</p>
+    <p>Bokun's pricing model is a monthly subscription plus a booking fee. Kong's pricing model is no monthly fee and a 1.8% booking fee that your guest pays or you absorb. The right framing isn't "which sticker price is lower" — it's "what does each platform actually cost you at your specific booking volume and mix."</p>
 
     <h3>Bokun's pricing (current as of June 2026)</h3>
     <div class="table-wrap">
@@ -512,7 +524,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Online direct (Kong-hosted website, embedded widget)</th><td>Free</td><td>1.8% paid by guest at checkout</td></tr>
+          <tr><th scope="row">Online direct (Kong-hosted website, embedded widget)</th><td>No monthly fee</td><td>1.8%, paid by guest at checkout or absorbed by you</td></tr>
           <tr><th scope="row">OTA bookings (GetYourGuide today, more in development)</th><td>Free</td><td>Currently no Kong fee — see note below</td></tr>
           <tr><th scope="row">Walk-ins, phone bookings, off-platform sales</th><td>Free</td><td>Not applicable — handled outside Kong</td></tr>
         </tbody>
@@ -521,7 +533,7 @@
     <p>No tiers, no monthly subscription, no setup fee, no contract, no booking caps.</p>
     <p><strong>One honest note on OTA bookings:</strong> Kong currently doesn't charge an additional booking fee on bookings that come through OTA integrations (the OTA takes its own commission, and Kong doesn't add to it). This is genuinely the current state of the product — Kong's leadership hasn't finalized a long-term OTA fee structure and may introduce one in future. For now, operators who use Kong's OTA integrations pay the OTA's commission and nothing additional to Kong.</p>
     <p>For comparison, Bokun charges 1–1.5% on most OTA bookings (0% specifically on Viator). So for operators whose primary OTAs are GetYourGuide, Klook, or others outside Viator, Kong's current no-OTA-fee position is a real cost advantage — though one worth noting may change.</p>
-    <p>The 1.8% guest fee applies only to bookings that flow through Kong's online checkout. It does not apply to walk-ins, phone bookings, or any sales handled outside Kong's platform.</p>
+    <p>The 1.8% fee applies only to bookings that flow through Kong's online checkout. It does not apply to walk-ins, phone bookings, or any sales handled outside Kong's platform. The Kong figures on this page assume your guest pays the 1.8%. If you choose to absorb it, that amount is your cost instead.</p>
 
     <h3>Worked scenarios at real operator volumes</h3>
     <p>These scenarios show the <em>actual</em> fee bases on each platform, not headline revenue. Walk-ins and phone bookings sit outside both platforms' fee scope. Online direct bookings flow through whichever platform the operator uses. OTA bookings have different treatments on each platform.</p>
@@ -566,7 +578,7 @@
       </table>
     </div>
     <div class="swipe-hint"><i class="ti ti-arrows-horizontal"></i> Swipe the table sideways to see every column</div>
-    <p>At this volume, the operator pays Bokun RM 634/month from their own cash flow; on Kong the operator pays nothing and guests pay RM 405 across the online direct bookings. Kong's no-OTA-fee position on GetYourGuide saves the operator another RM 97.50/month vs Bokun.</p>
+    <p>At this volume, the operator pays Bokun RM 634/month from their own cash flow; on Kong, with the fee passed to guests, the operator pays nothing and guests pay RM 405 across the online direct bookings. Kong's no-OTA-fee position on GetYourGuide saves the operator another RM 97.50/month vs Bokun.</p>
     <p>The Viator caveat is the real consideration for this operator: 12% of their revenue (RM 6,000/month) currently can't flow through Kong because Kong's Viator integration isn't shipped yet. That operator would either route Viator bookings through a separate Bokun account, or accept losing that distribution channel for now, or wait for Kong's Viator integration to ship.</p>
     <p>The payment gateway difference also matters: this operator's local FPX and e-wallet bookings flow through Stripe on Bokun at 3% + RM 1 per transaction, vs. RM 1.20 flat per FPX transaction on Kong-with-Xendit. On hundreds of transactions per month, that's a meaningful additional cost gap on top of the platform fee comparison.</p>
 
@@ -662,7 +674,7 @@
         </thead>
         <tbody>
           <tr><th scope="row">Independent from OTAs</th><td data-label="Why it matters">No parent company that owns Viator, Booking.com, or any other OTA</td><td data-label="The honest detail">Kong's incentives are aligned with operator success on direct bookings, not OTA flow. Bokun is owned by Tripadvisor (which owns Viator).</td></tr>
-          <tr><th scope="row">Free pricing that scales with revenue</th><td data-label="Why it matters">Zero operator cost when bookings are slow, small fee only when bookings happen</td><td data-label="The honest detail">Bokun's RM 199–RM 2,026/month subscription doesn't move with bookings. In low season or shock-prone periods (which are most tour operators' reality), Kong's variable model is structurally aligned with cash flow.</td></tr>
+          <tr><th scope="row">No monthly fee, pricing that scales with revenue</th><td data-label="Why it matters">Zero operator cost when bookings are slow, small fee only when bookings happen</td><td data-label="The honest detail">Bokun's RM 199–RM 2,026/month subscription doesn't move with bookings. In low season or shock-prone periods (which are most tour operators' reality), Kong's variable model is structurally aligned with cash flow.</td></tr>
           <tr><th scope="row">Currently no fee on OTA bookings</th><td data-label="Why it matters">Bookings through Kong's GetYourGuide integration (and future OTAs) currently carry no additional Kong fee — only the OTA's own commission</td><td data-label="The honest detail">Kong's leadership hasn't finalized a long-term OTA fee structure and may introduce one in future. For now, this is a real cost advantage over Bokun's 1.5% on non-Viator OTA bookings.</td></tr>
           <tr><th scope="row">Choice of payment gateway</th><td data-label="Why it matters">Operators pick Stripe OR Xendit at setup based on their booking mix</td><td data-label="The honest detail">Bokun is Stripe-only. Kong's Xendit option unlocks FPX at RM 1.20 flat (vs Stripe's 3% + RM 1) and accepts Touch 'n Go, ShopeePay, Boost, and DuitNow QR — payment methods Stripe Malaysia doesn't support at all.</td></tr>
           <tr><th scope="row">Built for Southeast Asian operators</th><td data-label="Why it matters">Founder team based in Malaysia, product designed for local market dynamics</td><td data-label="The honest detail">Bokun is built for global tour operators with Viator-distributed inventory. Different ICP, different design assumptions.</td></tr>
@@ -678,7 +690,7 @@
         <tbody>
           <tr><th scope="row">Founder-led support in SEA timezone</th><td data-label="Why it matters">WhatsApp access to founders, response times in minutes during Malaysian business hours</td><td data-label="The honest detail">Bokun is headquartered in Iceland (UTC+0). For Malaysian operators (UTC+8), that's an 8-hour gap — real-time support during operating hours is structurally difficult.</td></tr>
           <tr><th scope="row">Mobile app for daily operations</th><td data-label="Why it matters">Today's bookings, capacity management, guest messaging, check-in</td><td data-label="The honest detail">Bokun's operator-side mobile experience has been a recurring complaint in reviews — multiple reviewers describe the app as basic, with check-in features lacking.</td></tr>
-          <tr><th scope="row">Website builder included free</th><td data-label="Why it matters">Operators without a website get one in the same setup</td><td data-label="The honest detail">Most small Malaysian operators don't have a website at all. Bokun's "one-click website" lives on TripAdvisor-owned infrastructure; Kong's includes URL control for operators.</td></tr>
+          <tr><th scope="row">Website builder included</th><td data-label="Why it matters">Operators without a website get one in the same setup</td><td data-label="The honest detail">Most small Malaysian operators don't have a website at all. Bokun's "one-click website" lives on TripAdvisor-owned infrastructure; Kong's includes URL control for operators.</td></tr>
           <tr><th scope="row">Setup measured in hours, not days</th><td data-label="Why it matters">Most operators live and taking bookings within a day</td><td data-label="The honest detail">Bokun's setup is described in multiple reviews as "difficult." Both platforms include setup support; Kong's is just faster because the product surface is smaller and the configuration choices fewer.</td></tr>
         </tbody>
       </table>
@@ -747,14 +759,14 @@
           <tr><th scope="col">Your situation</th><th scope="col">Choose</th><th scope="col">Why</th></tr>
         </thead>
         <tbody>
-          <tr class="kong-row"><th scope="row">New or growing Malaysian operator under RM 50,000/month</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Free model saves real money at this scale, Xendit unlocks payment methods Bokun can't accept, website builder included</td></tr>
+          <tr class="kong-row"><th scope="row">New or growing Malaysian operator under RM 50,000/month</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">No monthly fee saves real money at this scale, Xendit unlocks payment methods Bokun can't accept, website builder included</td></tr>
           <tr class="kong-row"><th scope="row">Mid-to-large Malaysian operator with mostly local guests</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Payment processing advantage compounds at higher volumes; structural FPX and e-wallet cost gap pays for itself</td></tr>
           <tr><th scope="row">Operator dependent on Viator for most bookings</th><td class="choose" data-label="Choose"><span class="pick">Bokun</span></td><td data-label="Why">Kong doesn't yet have Viator integration. Bokun has deep Viator integration plus 0% Viator fees. For Viator-driven operators, Bokun is the right choice today</td></tr>
           <tr class="kong-row"><th scope="row">Need GetYourGuide distribution working today</th><td class="choose" data-label="Choose"><span class="pick kong">Kong edge on cost</span></td><td data-label="Why">Both platforms connect to GetYourGuide. Bokun charges 1.5% on GetYourGuide bookings; Kong currently doesn't charge any OTA fee. Bokun has more years of refinement on the integration. For most operators starting with GetYourGuide, the cost difference favors Kong</td></tr>
           <tr><th scope="row">Need Viator working today</th><td class="choose" data-label="Choose"><span class="pick">Bokun</span></td><td data-label="Why">Kong's Viator integration is in development but not yet shipped. If Viator is essential immediately, Bokun is the honest answer</td></tr>
           <tr><th scope="row">Need multiple OTAs (3+) working today</th><td class="choose" data-label="Choose"><span class="pick">Bokun</span></td><td data-label="Why">Bokun has a broader OTA portfolio refined over years. Kong currently connects to GetYourGuide with additional OTAs in development</td></tr>
           <tr><th scope="row">Primarily international tourists paying with foreign cards</th><td class="choose" data-label="Choose"><span class="pick">Either</span></td><td data-label="Why">Both platforms run on Stripe for international cards at similar rates. The payment processing comparison is roughly even for this booking mix. Decide based on OTA needs, ownership comfort, support hours, or pricing model preference</td></tr>
-          <tr class="kong-row"><th scope="row">No website yet</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Website builder included free, URL control retained, booking page and system in one move</td></tr>
+          <tr class="kong-row"><th scope="row">No website yet</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Website builder included, URL control retained, booking page and system in one move</td></tr>
           <tr><th scope="row">Small operator who specifically wants Stripe brand at checkout</th><td class="choose" data-label="Choose"><span class="pick">Either</span></td><td data-label="Why">Both can run Stripe. Decision comes down to other factors</td></tr>
           <tr class="kong-row"><th scope="row">Trying to reduce OTA dependency over time</th><td class="choose" data-label="Choose"><span class="pick kong">Kong</span></td><td data-label="Why">Independence from OTA ownership affects platform behavior structurally — Bokun being Tripadvisor-owned is the conflict you're trying to escape</td></tr>
         </tbody>
@@ -771,7 +783,7 @@
       <details>
         <summary>Is Kong cheaper than Bokun? <span class="faq-icon"></span></summary>
         <div class="faq-answer">
-          <p>For most Malaysian operators, yes — meaningfully so. Kong is free for operators with no monthly subscription, no setup fees, and currently no fees on OTA bookings. Bokun charges RM 199–2,026/month plus 1–1.5% on non-Viator bookings. On platform fees alone, Kong is cheaper than Bokun for every operator profile we've modeled — small (Bokun RM 236 vs Kong RM 0), mid (Bokun RM 634 vs Kong RM 0), or large (Bokun RM 799 vs Kong RM 0 on platform fees).</p>
+          <p>For most Malaysian operators, yes — meaningfully so. Kong has no monthly subscription, no setup fees, and currently no fees on OTA bookings. Bokun charges RM 199–2,026/month plus 1–1.5% on non-Viator bookings. On platform fees alone, Kong is cheaper than Bokun for every operator profile we've modeled — small (Bokun RM 236 vs Kong RM 0), mid (Bokun RM 634 vs Kong RM 0), or large (Bokun RM 799 vs Kong RM 0 on platform fees).</p>
           <p>The single exception: operators heavily dependent on Viator for distribution. Bokun's 0% Viator fee plus the Viator workflow being on a single platform is a real Viator-specific advantage, and Kong doesn't yet have Viator integration. For those operators, Bokun is the right choice — not because Bokun is cheaper overall, but because Kong can't yet handle the Viator workflow.</p>
           <p>The Xendit option also gives Malaysian operators meaningfully cheaper payment processing on FPX, Touch 'n Go, GrabPay, ShopeePay, Boost, and DuitNow QR transactions than Bokun's Stripe-only setup can provide.</p>
         </div>
@@ -790,7 +802,7 @@
       </details>
       <details>
         <summary>Can I use Kong if I'm not based in Malaysia? <span class="faq-icon"></span></summary>
-        <div class="faq-answer"><p>Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The free operator pricing, no booking caps, founder-led support, structural independence from Tripadvisor, included digital waivers, and OTA integrations all apply regardless of where you're based. This comparison leans Malaysian in some places (the local payment method support, the Xendit-on-Stripe processing math), but Bokun's core structural concern — being owned by Tripadvisor, who also owns Viator — affects Bokun operators globally. Outside Malaysia, the Xendit-specific cost advantage shrinks (since Kong on Stripe processes international cards at similar rates to Bokun), but the strategic concerns about Tripadvisor ownership and Kong's free pricing model still apply.</p></div>
+        <div class="faq-answer"><p>Yes. Kong serves tour and activity operators globally — our current focus is Malaysia, but operators across Southeast Asia and beyond are on the platform. The no-monthly-fee pricing, no booking caps, founder-led support, structural independence from Tripadvisor, included digital waivers, and OTA integrations all apply regardless of where you're based. This comparison leans Malaysian in some places (the local payment method support, the Xendit-on-Stripe processing math), but Bokun's core structural concern — being owned by Tripadvisor, who also owns Viator — affects Bokun operators globally. Outside Malaysia, the Xendit-specific cost advantage shrinks (since Kong on Stripe processes international cards at similar rates to Bokun), but the strategic concerns about Tripadvisor ownership and Kong's no-monthly-fee pricing model still apply.</p></div>
       </details>
       <details>
         <summary>Can I switch from Bokun to Kong? <span class="faq-icon"></span></summary>
@@ -815,8 +827,8 @@
 
     <div class="post-cta">
       <div class="post-cta-eyebrow">Get started</div>
-      <h2>Kong is free for operators. Get started in an afternoon.</h2>
-      <p>No subscription, no setup fee, no contract — just a 1.8% guest booking fee when a booking actually happens. Not sure it's the right fit? Book a call and I'll tell you honestly — even if the answer is Bokun.</p>
+      <h2>Kong has no monthly fee. Get started in an afternoon.</h2>
+      <p>No subscription, no setup fee, no contract — just a 1.8% booking fee when a booking actually happens. Not sure it's the right fit? Book a call and I'll tell you honestly — even if the answer is Bokun.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -835,7 +847,7 @@
       <div class="post-author-text">
         <h4>About the author</h4>
         <div class="post-author-name">Blake Ng</div>
-        <div class="post-author-bio">Blake Ng is the co-founder of Kong, a free booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing — selling against and alongside Bokun in dozens of deals across the region. He's based in Kuala Lumpur and personally responds to operator questions on WhatsApp: <a href="https://wa.me/60124298159" target="_blank" rel="noopener noreferrer">+60 12-429 8159</a>.</div>
+        <div class="post-author-bio">Blake Ng is the co-founder of Kong, a booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing — selling against and alongside Bokun in dozens of deals across the region. He's based in Kuala Lumpur and personally responds to operator questions on WhatsApp: <a href="https://wa.me/60124298159" target="_blank" rel="noopener noreferrer">+60 12-429 8159</a>.</div>
       </div>
     </div>
 
@@ -985,6 +997,10 @@
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

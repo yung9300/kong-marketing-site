@@ -1067,6 +1067,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1090,6 +1097,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1224,7 +1236,7 @@ body {
 <h2>The thread through all of it: own your direct booking channel</h2>
 <p>Almost every channel above works better when you have a strong <strong>direct booking channel</strong> — your own website where travellers can see live availability, real prices, and book and pay instantly. SEO sends people to it. Google Ads sends people to it. The Billboard Effect only works if you <em>have</em> it. Without it, all that effort leaks back to the OTAs and their 20–30% cut.</p>
 <p>A direct booking on your own site costs you only payment processing — roughly <strong>2–3%</strong> — versus 20–30% to an OTA. That gap is the entire reason to build direct demand.</p>
-<p>That's what Kong is for: it's the direct-booking layer, <strong>free for the operator</strong>, with guests paying a 1.8% fee only on online direct bookings. You connect your own Stripe or Xendit account so payment goes straight to you. It won't run your ads or write your SEO content. What it does is make sure that when all those channels send a traveller your way, they can actually book. (If you don't have a site yet, here's <a href="website-for-tour-operators">how to build one for your tour business</a>.)</p>
+<p>That's what Kong is for: it's the direct-booking layer, with <strong>no monthly fee and a 1.8% fee only on online direct bookings</strong> that you can charge to your guest or absorb. You connect your own Stripe or Xendit account so payment goes straight to you. It won't run your ads or write your SEO content. What it does is make sure that when all those channels send a traveller your way, they can actually book. (If you don't have a site yet, here's <a href="website-for-tour-operators">how to build one for your tour business</a>.)</p>
 
 <h2>Start here: the lowest-hanging fruit first</h2>
 <p>If this all feels like a lot, the most common mistake is trying to do everything at once. You don't need every channel. You need the <em>next</em> one.</p>
@@ -1270,7 +1282,7 @@ body {
 
 <div class="about-kong">
   <h4>About Kong</h4>
-  <p>Kong is the direct-booking layer that ties the portfolio together — free for operators, with guests paying a 1.8% fee only on online direct bookings, paid into your own Stripe or Xendit account. It makes sure that when every other channel sends a traveller your way, they can actually book.</p>
+  <p>Kong is the direct-booking layer that ties the portfolio together — no monthly fee, with a 1.8% fee only on online direct bookings that you can charge to your guest or absorb, paid into your own Stripe or Xendit account. It makes sure that when every other channel sends a traveller your way, they can actually book.</p>
 </div>
   </article>
 
@@ -1310,7 +1322,7 @@ body {
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
       <h2>Make sure every channel has somewhere to convert.</h2>
-      <p>Kong is the direct-booking layer that ties your whole portfolio together — free for operators, guests pay just 1.8% at checkout on online bookings, paid into your own Stripe or Xendit account.</p>
+      <p>Kong is the direct-booking layer that ties your whole portfolio together — no monthly fee, just 1.8% on online bookings that you can charge to your guest or absorb, paid into your own Stripe or Xendit account.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -1440,6 +1452,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

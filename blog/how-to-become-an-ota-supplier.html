@@ -1118,6 +1118,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1141,6 +1148,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1286,7 +1298,7 @@ body {
 <tr><td><strong>OTA-owned</strong></td><td>Bokun (Tripadvisor), FareHarbor (Booking.com)</td><td>Often cheaper on their parent's OTA (Bokun charges 0% booking fee on Viator bookings) — but ties you closer to that platform</td></tr>
 <tr><td><strong>Independent</strong></td><td>Rezdy, Checkfront, Regiondo</td><td>No platform lock-in, broad OTA connections — but you may pay a monthly fee or per-booking cost</td></tr>
 </tbody></table></div>
-<p><strong>Where direct booking fits — and where Kong comes in.</strong> A channel manager handles your <em>OTA</em> side. The other half of a healthy distribution mix is your <em>direct</em> channel — bookings on your own website, where you pay only payment processing (roughly 2–3%) instead of 20–30% commission, and where you keep the customer relationship. That's the gap <a href="/">Kong</a> fills: a booking platform that lets operators take direct bookings on their own site, with the guest paying a 1.8% fee at checkout on online direct bookings only and operators keeping 100% — you connect your own Stripe or Xendit account and the money lands in your account. To be clear, Kong is <em>not</em> a channel manager and <em>not</em> an OTA; it's the direct-booking layer that should sit alongside your OTA listings, so the reach you build on Viator, GetYourGuide and Klook has somewhere commission-free to convert.</p>
+<p><strong>Where direct booking fits — and where Kong comes in.</strong> A channel manager handles your <em>OTA</em> side. The other half of a healthy distribution mix is your <em>direct</em> channel — bookings on your own website, where you pay only payment processing (roughly 2–3%) instead of 20–30% commission, and where you keep the customer relationship. That's the gap <a href="/">Kong</a> fills: a booking platform that lets operators take direct bookings on their own site, with a 1.8% fee on online direct bookings only, which you can charge to the guest or absorb — you connect your own Stripe or Xendit account and the money lands in your account. To be clear, Kong is <em>not</em> a channel manager and <em>not</em> an OTA; it's the direct-booking layer that should sit alongside your OTA listings, so the reach you build on Viator, GetYourGuide and Klook has somewhere commission-free to convert.</p>
 
 <h2>After you're listed: how to actually get bookings</h2>
 <p>Getting onto an OTA is the easy part. Ranking on it is the real game, and the levers are the same across all three:</p>
@@ -1330,7 +1342,7 @@ body {
 
 <div class="about-kong">
   <h4>Ready to build the direct side?</h4>
-  <p>Kong is free for operators — guests pay a 1.8% fee at checkout on online direct bookings, and you keep 100% of everything else, paid into your own Stripe or Xendit account. Use it alongside your OTA listings so the reach you build has somewhere commission-free to convert.</p>
+  <p>Kong has no monthly fee. It costs 1.8% on online direct bookings, you choose whether your guest pays it or you absorb it, and everything else is paid into your own Stripe or Xendit account. Use it alongside your OTA listings so the reach you build has somewhere commission-free to convert.</p>
 </div>
   </article>
 
@@ -1370,7 +1382,7 @@ body {
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
       <h2>List on OTAs for reach — convert on your own site, commission-free.</h2>
-      <p>Kong is the direct-booking layer that sits alongside your OTA listings. Free for operators; guests pay just 1.8% at checkout on online bookings, paid into your own Stripe or Xendit account.</p>
+      <p>Kong is the direct-booking layer that sits alongside your OTA listings. No monthly fee, just 1.8% on online bookings that you can charge to your guest or absorb, paid into your own Stripe or Xendit account.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -1500,6 +1512,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>
