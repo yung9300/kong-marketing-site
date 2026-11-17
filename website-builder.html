@@ -1636,7 +1636,8 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
 .pv-m{position:absolute;will-change:transform}
 .pv-m canvas{display:block;width:100%;height:100%;object-fit:contain;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 72%,transparent 100%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 72%,transparent 100%)}
 .pv-screen{border-radius:1px}
-.st #pricing.is-pin{height:calc(100vh + 270vh)}
+.st #pricing.is-pin{height:calc(100vh + 220vh);overflow-anchor:none}
+.cta-wrap.is-pin{overflow-anchor:none}
 /* curtains: the operators section closes over Moko from both sides */
 .op-sec.is-pin{height:calc(100vh + var(--n,8) * 42vh + var(--lead,0px))}
 .st #operators{position:relative;z-index:7}
@@ -1661,6 +1662,17 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
 /* the logo link carries an inline colour, so the white state has to override it */
 .st-cover-on .kong-nav .kong-nav-logo{color:#fff!important}
 .st .st-head .section-sub strong{color:#1a0a2e;font-weight:600}
+
+/* testimonials held in a short window: tighter heading so it clears the nav */
+.tst-wrap.tst-tight .testimonials-section-sub{display:none}
+.tst-wrap.tst-tight .testimonials-section-head{margin-bottom:14px}
+.tst-wrap.tst-tight .testimonials-section-h1{font-size:26px;letter-spacing:-.6px;margin:0}
+
+/* closing band inside the laptop: a slightly tighter text box so the hint fits */
+.cta-wrap.is-pin .st-ask{padding-left:16px;gap:6px}
+.cta-wrap.is-pin .st-ask input{font-size:16px}
+.cta-wrap.is-pin .st-ask button{padding:0 15px;font-size:14.5px}
+.cta-wrap.is-pin .cta-layout{grid-template-columns:.8fr 1fr;gap:40px}
 
 </style>
 
@@ -5690,7 +5702,14 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
       if (z < 0.995) block.style.zoom = z.toFixed(3);
     });
   }
-  fit(); window.addEventListener('resize', fit); window.addEventListener('load', fit);
+  /* the hero animation too: when the window is too short to show all of it under the nav, it is scaled to fit */
+  function fitHero() {
+    var w = document.getElementById('wbs'); if (!w) return;
+    w.style.zoom = ''; if (!wide.matches) return;
+    var z = Math.max(0.6, Math.min(1, (window.innerHeight - 64 - 12) / w.offsetHeight));
+    if (z < 0.995) w.style.zoom = z.toFixed(3);
+  }
+  fit(); fitHero(); window.addEventListener('resize', function () { fit(); fitHero(); }); window.addEventListener('load', function () { fit(); fitHero(); });
 })();
 
 /* Story layout: one screen travels down the page. Each section's screen starts where the previous section's
@@ -5789,7 +5808,7 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
   var sec = document.getElementById('ops'), tsec = document.getElementById('testimonials');
   if (!sec || !tsec || !window.matchMedia) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var wide = window.matchMedia('(min-width: 1000px) and (min-height: 700px)');
+  var wide = window.matchMedia('(min-width: 1000px) and (min-height: 620px)');
   var wrap = tsec.parentElement, stick = sec.querySelector('.op-stick'), fly = document.querySelector('.st-fly');
   var items = sec.querySelectorAll('.wb-acc-item'), vis = sec.querySelectorAll('.wb-vis'), N = items.length;
   var head = sec.querySelector('.st-h'), side = sec.querySelector('.st-side'), list = sec.querySelector('.wb-acc-list'), cap = sec.querySelector('.hz-cap'), photo = sec.querySelector('.hz-hero');
@@ -5814,7 +5833,7 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
     built.concat(later).forEach(function (b) { if (b[0]) { b[0].style.transform = ''; b[0].style.opacity = ''; b[0].style.transition = ''; } });
     if (cap) cap.style.opacity = ''; photo.style.opacity = ''; slotImg.style.opacity = '';
     tsec.style.opacity = ''; tsec.style.visibility = ''; if (fly) fly.style.display = 'none';
-    wrap.style.height = ''; wrap.style.marginTop = ''; tsec.style.top = '';
+    wrap.style.height = ''; wrap.style.marginTop = ''; tsec.style.top = ''; wrap.classList.remove('tst-tight');
     lead = 0; window.__opsLead = 0; opWrap.style.marginTop = ''; sec.style.removeProperty('--lead'); visCol.style.transform = ''; visCol.style.opacity = ''; curL.style.display = curR.style.display = 'none';
   }
   function size() {
@@ -5835,7 +5854,13 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
     cur = -1; show(N - 1);                              /* Boat tours is the one shown when the section arrives */
     /* where its slot sits inside the testimonials section */
     built.forEach(function (b) { if (b[0]) b[0].style.transform = ''; });
+    wrap.classList.remove('tst-tight');
     var s = slot.getBoundingClientRect(), t = tsec.getBoundingClientRect();
+    /* in a short window the heading would sit under the nav while the section is held: use the tighter heading
+       (one line, no sub-line) so it stays clear */
+    if ((A.y + A.h / 2) - (s.top - t.top + s.height / 2) + (th2.getBoundingClientRect().top - t.top) < 74) {
+      wrap.classList.add('tst-tight'); s = slot.getBoundingClientRect(); t = tsec.getBoundingClientRect();
+    }
     S = { x: s.left, y: s.top - t.top, w: s.width, h: s.height };
     var vh = window.innerHeight, L = sec.offsetHeight - vh - lead, buildPx = L * BUILD / (NS + OUT + BUILD);
     var T = (A.y + A.h / 2) - (S.y + S.h / 2);              /* hold the section so the slot's centre meets the photo's centre */
@@ -5902,20 +5927,29 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
   var body = document.body, scrim = cover.querySelector('i'), done = false, ticking = false, G = null;
   body.classList.add('st-cover-on', 'st-cover-live', 'st-hold');   /* st-hold stays: the hero keeps its held position after the photo lands */
   function chain(el, stop) { var x = 0, y = 0; while (el && el !== stop) { x += el.offsetLeft; y += el.offsetTop; el = el.offsetParent; } return { x: x, y: y }; }
+  var cards = [[document.querySelector('#wbs .wbs-proof'), -1], [document.querySelector('#wbs .wbp'), 1]];
   function size() {
     if (done) return;
     var vh = window.innerHeight;
     wrap.style.height = ''; stick.style.top = '';
-    var wt = chain(wrap, null), s = chain(slot, stick), st0 = chain(stick, null);
-    var T = Math.min(wt.y, vh - 150 - s.y);                           /* hold the hero where it is, unless the target image would be off screen */
+    /* measured from where things are drawn (the hero animation may be scaled to fit a short window) */
+    var sy0 = window.pageYOffset, kr = stick.getBoundingClientRect(), wr = wrap.getBoundingClientRect(), lr = slot.getBoundingClientRect();
+    var wt = { y: wr.top + sy0 }, s = { x: lr.left - kr.left, y: lr.top - kr.top }, st0 = { x: kr.left };
+    /* hold the hero where it is if the whole animation (the screen and its two side cards) is already in the window.
+       If part of it is below the fold, the page scrolls first until it sits just under the nav, all in frame, and
+       only then holds: so the cards that slide in next are always on screen. */
+    var top = Infinity, bot = -Infinity;
+    [document.getElementById('wbs')].concat(cards.map(function (c) { return c[0]; })).forEach(function (e) {
+      if (!e) return; var c = e.getBoundingClientRect(); top = Math.min(top, c.top - kr.top); bot = Math.max(bot, c.bottom - kr.top);
+    });
+    var T = (wt.y + bot <= vh - 10) ? wt.y : Math.min(wt.y, 70 - top);   /* when it has to scroll, it stops with the animation just under the nav, the hero text fully out of the way */
     var D = vh * 0.95;
     stick.style.top = T.toFixed(1) + 'px';
     wrap.style.height = (stick.offsetHeight + D).toFixed(1) + 'px';
-    G = { T: T, wy: wt.y, sx: st0.x + s.x, sy: s.y, w: slot.offsetWidth, h: slot.offsetHeight, Z: (wt.y - T) + D * 0.58, C: D * 0.3 };
+    G = { T: T, wy: wt.y, sx: st0.x + s.x, sy: s.y, w: lr.width, h: lr.height, Z: (wt.y - T) + D * 0.58, C: D * 0.3 };
   }
   /* after the photo lands, the PageSpeed card comes in from the left and the Add component panel from the right;
      only then does the hero animation start */
-  var cards = [[document.querySelector('#wbs .wbs-proof'), -1], [document.querySelector('#wbs .wbp'), 1]];
   function place(q) {
     cards.forEach(function (c) {
       if (!c[0]) return;
@@ -5988,6 +6022,8 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
   var grid = sec.querySelector('.pricing-grid'), cardL = sec.querySelector('.pricing-card-you'), cardR = sec.querySelector('.pricing-card-guest');
   var rest = [sec.querySelector('.pricing-head'), sec.querySelector('.pricing-trust'), sec.querySelector('.pricing-footnote')];
   var cta = wrap.querySelector('.cta-section'), N = 39, frames = [], asked = false, shown = -1, want = 0, pinned = false, ticking = false;
+  var L0 = 0, t0 = null, tIdle = null, base = 0, fin = false, collapsed = false, wantLoop = false, running = false;
+  var FPS = 11, IDLE = 8, HOLD = 450, ZOOM = 1300, T_OPEN = 900, T_TYPE = 700, T_SHUT = 450; var oFrom = 0, tShut = null, sFrom = 0, based = false, F = null;   /* frames a second; typing frames looped while he waits; pause on the screen; zoom time (ms) */
   var SCR = { x: 448, y: 650, w: 576, h: 342 };           /* the laptop screen in the last frame, in 1440x1440 clip pixels */
   function sm(x) { x = Math.max(0, Math.min(1, x)); return x * x * (3 - 2 * x); }
   function load() {
@@ -5999,54 +6035,120 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
     pinned = wide.matches; sec.classList.toggle('is-pin', pinned); wrap.classList.toggle('is-pin', pinned);
     [rest[0], grid, rest[1], rest[2]].forEach(function (e) { if (e) e.style.zoom = ''; });
     if (!pinned) {
-      [cardL, cardR].concat(rest).forEach(function (e) { if (e) { e.style.transform = ''; e.style.opacity = ''; } });
-      wrap.style.height = ''; wrap.style.marginTop = ''; cta.style.opacity = ''; cta.style.visibility = ''; cta.style.pointerEvents = ''; cta.style.transform = ''; return;
+      [cardL, cardR].concat(rest).forEach(function (e) { if (e) { e.style.transform = ''; e.style.opacity = ''; e.style.visibility = ''; } });
+      wrap.style.height = ''; wrap.style.marginTop = ''; wrap.style.paddingBottom = ''; cta.style.opacity = ''; cta.style.visibility = ''; cta.style.pointerEvents = ''; cta.style.transform = '';
+      ['width', 'height', 'minHeight', 'top', 'marginLeft', 'marginRight', 'borderRadius', 'padding'].forEach(function (p) { cta.style[p] = ''; }); F = null;
+      var i0 = cta.querySelector('.st-ask input'); if (i0) i0.style.fontSize = ''; return;
     }
     var vh = window.innerHeight, need = 0;
     [rest[0], grid, rest[1], rest[2]].forEach(function (e) { if (e) { var cs = getComputedStyle(e); need += e.offsetHeight + parseFloat(cs.marginTop) + parseFloat(cs.marginBottom); } });
     var z = Math.max(0.6, Math.min(1, (vh - 64 - 28) / need));
     if (z < 0.995) [rest[0], grid, rest[1], rest[2]].forEach(function (e) { if (e) e.style.zoom = z.toFixed(3); });
-    var L = sec.offsetHeight - vh, buildPx = L * 0.5;
-    wrap.style.height = (cta.offsetHeight + buildPx).toFixed(1) + 'px';
-    wrap.style.marginTop = (-buildPx - vh).toFixed(1) + 'px';
+    /* Where the zoom ends: the laptop screen fills most of the window, with the laptop's edge and a little of
+       Moko's hands still showing round it. The closing band is laid out at exactly that size (same shape as the
+       screen), so it is never stretched. */
+    var vw = document.documentElement.clientWidth, s0 = Math.min(vh * 0.56, 520), k0 = s0 / 1440, sw = SCR.w * k0, sh = SCR.h * k0;
+    var aT = 64 + 26, aB = vh - 54, M = Math.min(vw * 0.82 / sw, (aB - aT) / sh);
+    F = { M: M, w: sw * M, h: sh * M, cx: vw / 2, cy: (aT + aB) / 2 };
+    F.y = F.cy - F.h / 2;
+    cta.style.width = F.w.toFixed(1) + 'px'; cta.style.height = F.h.toFixed(1) + 'px'; cta.style.minHeight = '0'; cta.style.top = F.y.toFixed(1) + 'px';
+    cta.style.marginLeft = cta.style.marginRight = 'auto'; cta.style.borderRadius = '6px'; cta.style.padding = '0 40px';
+    /* the text box is narrower inside the laptop: shrink its text just enough that the hint is never cut off */
+    var inp = cta.querySelector('.st-ask input');
+    if (inp) {
+      inp.style.fontSize = '';
+      var cs = getComputedStyle(inp), fs = parseFloat(cs.fontSize), mc = document.createElement('canvas').getContext('2d');
+      mc.font = cs.fontWeight + ' ' + fs + 'px ' + cs.fontFamily;
+      var need = mc.measureText(inp.getAttribute('placeholder') || '').width + 6, have = inp.clientWidth;
+      if (need > have && have > 0) inp.style.fontSize = Math.max(11, Math.floor(fs * have / need * 10) / 10) + 'px';
+    }
+    sec.style.height = ''; collapsed = false; L0 = sec.offsetHeight - vh; layout(L0);
+  }
+  /* the closing band is held over the window from 5% of the way through the section; Lc is how long the section holds */
+  function layout(Lc) {
+    var vh = window.innerHeight, b = Lc - L0 * 0.05;
+    sec.style.height = Lc === L0 ? '' : (vh + Lc).toFixed(1) + 'px';
+    /* the band lets go of the window at the same moment the section does, and the space under it (the bottom of
+       the laptop) stays clear of the FAQs */
+    wrap.style.boxSizing = 'border-box';
+    wrap.style.paddingBottom = Math.max(0, vh - F.y - F.h).toFixed(1) + 'px';
+    wrap.style.height = (b + vh).toFixed(1) + 'px';
+    wrap.style.marginTop = (-b - vh).toFixed(1) + 'px';
+  }
+  function kick() {
+    if (running) return; running = true;
+    requestAnimationFrame(function f() { update(); if (wantLoop) requestAnimationFrame(f); else running = false; });
   }
   function update() {
-    ticking = false; if (!pinned) return;
+    ticking = false; if (!pinned || !F) return;
     var vw = document.documentElement.clientWidth, vh = window.innerHeight, r = sec.getBoundingClientRect();
     if (r.top < vh * 2.5) load();
-    var p = Math.max(0, Math.min(1, -r.top / (r.height - vh)));
-    /* he starts typing the moment the cards begin to part; the heading and footer notes stay until the zoom */
-    var open = sm((p - 0.04) / 0.2), play = Math.max(0, Math.min(1, (p - 0.06) / 0.5)), swap = sm((p - 0.57) / 0.04), zoom = sm((p - 0.63) / 0.33);
-    cardL.style.transform = open ? 'translateX(' + (-open * 75).toFixed(2) + 'vw)' : '';
-    cardR.style.transform = open ? 'translateX(' + (open * 75).toFixed(2) + 'vw)' : '';
-    rest.forEach(function (e) { if (e) e.style.opacity = String(1 - sm((p - 0.63) / 0.07)); });
+    var scrolled = -r.top, p = Math.max(0, Math.min(1, scrolled / L0)), past = r.bottom <= vh + 1, now = performance.now();
+    /* The cards stay put while you read them. One small scroll further starts the rest, and from there nothing
+       depends on scrolling: the cards part, he types for a moment, stands and turns the laptop round, a short pause,
+       then the zoom. Scrolling back up above the start closes the cards again and resets it. */
+    var sOpen = sm((p - 0.04) / 0.26);
+    if (t0 !== null && p < 0.04) {
+      tShut = now; sFrom = 1; t0 = null; fin = false; based = false;
+      if (collapsed) { layout(L0); collapsed = false; r = sec.getBoundingClientRect(); }
+    }
+    if (t0 === null && !fin && p >= 0.08 && !past) { t0 = now; oFrom = sOpen; based = false; tShut = null; }
+    var el = t0 === null ? -1 : now - t0;
+    var shut = tShut === null ? 0 : sFrom * (1 - sm((now - tShut) / T_SHUT));
+    if (tShut !== null && now - tShut >= T_SHUT) tShut = null;
+    var open = el < 0 ? Math.max(sOpen, shut) : Math.max(sOpen, oFrom + (1 - oFrom) * sm(el / T_OPEN));
+    if (open > 0 && tIdle === null) tIdle = now;
+    if (open <= 0) tIdle = null;
+    var idle = 0;
+    if (tIdle !== null) { var c = Math.floor((now - tIdle) * FPS / 1000) % (IDLE * 2); idle = c <= IDLE ? c : IDLE * 2 - c; }
+    var pe = el - T_OPEN - T_TYPE;                       /* time since he stopped typing and started to stand */
+    if (pe >= 0 && !based) { base = idle; based = true; }
+    var PLAY = (N - 1 - base) / FPS * 1000;
+    var frame = pe < 0 ? idle : Math.min(N - 1, base + Math.floor(pe * FPS / 1000));
+    var swap = sm((pe - PLAY) / 250), zoom = sm((pe - PLAY - HOLD) / ZOOM);
+    if (past && !fin) fin = true;                        /* arrived from further down the page: show the finished picture */
+    if (fin) { frame = N - 1; swap = 1; zoom = 1; open = 1; }
+    wantLoop = r.top <= 1 && !past && !fin && open > 0;   /* keep the clock running while he is on screen */
+    /* the cards travel far enough to leave the window even when the section is scaled down for a short window,
+       and are hidden once they are out, so nothing of them shows beside the laptop */
+    var gz = parseFloat(grid.style.zoom) || 1, far = 75 / gz;
+    cardL.style.transform = open ? 'translateX(' + (-open * far).toFixed(2) + 'vw)' : '';
+    cardR.style.transform = open ? 'translateX(' + (open * far).toFixed(2) + 'vw)' : '';
+    cardL.style.visibility = cardR.style.visibility = open >= 0.999 ? 'hidden' : '';
+    rest.forEach(function (e) { if (e) e.style.opacity = String(1 - (fin ? 1 : sm((pe - PLAY - HOLD) / 300))); });
     /* Moko sits behind the cards, the same size as in the Run it section. The clip area covers the window so
        the zoom can grow past the edges without adding a scrollbar. */
-    var st = stick.getBoundingClientRect(), g = grid.getBoundingClientRect(), past = r.bottom <= vh + 1;
-    pv.style.left = (-st.left).toFixed(1) + 'px'; pv.style.top = (-st.top).toFixed(1) + 'px'; pv.style.width = vw + 'px'; pv.style.height = vh + 'px';
-    pv.style.opacity = (past || r.top > 1) ? '0' : String(Math.min(1, open * 12));
+    var st = stick.getBoundingClientRect(), g = grid.getBoundingClientRect();
+    pv.style.left = (-st.left).toFixed(1) + 'px'; pv.style.top = (past ? 0 : -st.top).toFixed(1) + 'px';   /* once the section lets go, the picture scrolls away with it */ pv.style.width = vw + 'px'; pv.style.height = vh + 'px';
+    pv.style.opacity = r.top > 1 ? '0' : past ? '1' : String(Math.min(1, open * 12));
     var s = Math.min(vh * 0.56, 520), bx = g.left + g.width / 2 - s / 2, by = Math.max(72, Math.min(vh - s - 8, g.top + g.height / 2 - s / 2));
     box.style.left = bx.toFixed(1) + 'px'; box.style.top = by.toFixed(1) + 'px'; box.style.width = box.style.height = s.toFixed(1) + 'px';
-    draw(Math.round(play * (N - 1)));
+    draw(frame);
     /* Zoom into the laptop screen. The live closing band is laid over the screen, shrunk to fit it, as soon as he
        is standing, so what grows to fill the window is the real section (sharp at every size). */
     var k = s / 1440, lx = (SCR.x + SCR.w / 2) * k, ly = (SCR.y + SCR.h / 2) * k;
-    /* the screen grows to exactly the window (width and height separately), and the live section is laid on it
-       at exactly the screen's size the whole way, so there is no edge or strip between the two */
-    var Sx = vw / (SCR.w * k), Sy = vh / (SCR.h * k), mx = 1 + (Sx - 1) * zoom, my = 1 + (Sy - 1) * zoom;
-    var tx = (vw / 2 - (bx + lx)) * zoom, ty = (vh / 2 - (by + ly)) * zoom;
+    /* the picture grows evenly (never stretched) until the screen reaches its final place, F; the live section
+       sits on the screen at the screen's size the whole way */
+    var m = 1 + (F.M - 1) * zoom, tx = (F.cx - (bx + lx)) * zoom, ty = (F.cy - (by + ly)) * zoom;
     box.style.transformOrigin = lx.toFixed(1) + 'px ' + ly.toFixed(1) + 'px';
-    box.style.transform = zoom ? 'translate(' + tx.toFixed(1) + 'px,' + ty.toFixed(1) + 'px) scale(' + mx.toFixed(4) + ',' + my.toFixed(4) + ')' : '';
+    box.style.transform = zoom ? 'translate(' + tx.toFixed(1) + 'px,' + ty.toFixed(1) + 'px) scale(' + m.toFixed(4) + ')' : '';
     back.style.opacity = '0';
     var done = zoom >= 1 || past;
     cta.style.visibility = (swap > 0 || past) ? '' : 'hidden';
     cta.style.opacity = past ? '' : String(swap);
-    cta.style.transform = done ? '' : 'translate(' + (bx + lx + tx - vw / 2).toFixed(1) + 'px,' + (by + ly + ty - vh / 2).toFixed(1) + 'px) scale(' + (mx / Sx).toFixed(5) + ',' + (my / Sy).toFixed(5) + ')';
+    cta.style.transform = done ? '' : 'translate(' + (bx + lx + tx - F.cx).toFixed(1) + 'px,' + (by + ly + ty - F.cy).toFixed(1) + 'px) scale(' + (m / F.M).toFixed(5) + ')';
     cta.style.pointerEvents = done ? '' : 'none';
+    /* when the zoom has finished there is nothing left to wait for, so the section stops holding the page right here */
+    if (t0 !== null && !fin && done) {
+      fin = true; wantLoop = false;
+      if (!past) { var Lc = Math.max(scrolled + 2, L0 * 0.1); if (Lc < L0) { layout(Lc); collapsed = true; } }
+    }
   }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(function () { update(); if (wantLoop) kick(); }); } }
   size(); update();
-  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', function () { size(); update(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { size(); update(); });   /* measure the text box again once the real fonts are in */
   window.addEventListener('load', function () { size(); update(); });
 })();
 
