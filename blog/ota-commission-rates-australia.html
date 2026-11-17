@@ -134,6 +134,13 @@
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -157,6 +164,11 @@
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -305,7 +317,7 @@
         <tbody>
           <tr><td>OTA at a typical 25%</td><td>$3,750</td><td>$37.50</td></tr>
           <tr><td>ITO at 30%</td><td>$4,500</td><td>$45.00</td></tr>
-          <tr><td>Direct, all-in: payment processing ($285 at Stripe's 1.7% + $0.30 per domestic card, stripe.com/au/pricing, verified 7 Aug 2026) plus booking software ($0 at Kong; guests pay a 1.8% booking fee at checkout)</td><td>$285</td><td>$2.85</td></tr>
+          <tr><td>Direct, all-in: payment processing ($285 at Stripe's 1.7% + $0.30 per domestic card, stripe.com/au/pricing, verified 7 Aug 2026) plus booking software (no monthly fee at Kong; 1.8% per online booking, paid by your guest or absorbed by you)</td><td>$285</td><td>$2.85</td></tr>
         </tbody>
       </table>
     </div>
@@ -314,7 +326,7 @@
 
     <p>One honest caveat before you build a spreadsheet around that number. Direct bookings are not free demand. They arrive because of your Google profile, your reviews and your website, which cost time and sometimes marketing money, and OTAs do reach travellers you cannot. The realistic goal is not zero OTA bookings; it is stopping the 25% clip on guests who would have found you anyway. How you actually get found directly is its own craft; our guide to <a href="seo-for-tour-operators">SEO for tour operators</a> covers it, and if you pass fees to guests, make sure you are ready for the <a href="card-surcharge-ban-tour-operators">card surcharge ban arriving 1 October 2026</a>.</p>
 
-    <p>Kong's role in this, stated plainly: Kong is booking software for your direct channel, priced in <a href="../australia">Australia</a> as a 1.8% booking fee paid by the guest at checkout, with the operator paying nothing and no subscription, setup fee or contract; the fee is structured as a booking fee on the booking rather than a card surcharge, the distinction the October ban turns on, and our surcharge guide linked above explains how to judge any platform's fee against that test. Kong's OTA connections to Viator, GetYourGuide and others are in development, not live, so today Kong is for your direct bookings while your OTA listings run separately.</p>
+    <p>Kong's role in this, stated plainly: Kong is booking software for your direct channel, priced in <a href="../australia">Australia</a> at 1.8% per online booking, which you can charge to the guest at checkout or absorb, with no subscription, setup fee or contract; the fee is structured as a booking fee on the booking rather than a card surcharge, the distinction the October ban turns on, and our surcharge guide linked above explains how to judge any platform's fee against that test. Kong's OTA connections to Viator, GetYourGuide and others are in development, not live, so today Kong is for your direct bookings while your OTA listings run separately.</p>
 
     <h2 id="faq">FAQ</h2>
     <div class="faq-block">
@@ -372,7 +384,7 @@
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
       <h2>Ready to grow your direct bookings?</h2>
-      <p>Kong runs your direct channel: free for operators, with a 1.8% booking fee paid by the guest at checkout.</p>
+      <p>Kong runs your direct channel: no monthly fee, with a 1.8% booking fee that your guest pays or you absorb.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -481,6 +493,10 @@
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

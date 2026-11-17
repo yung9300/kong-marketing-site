@@ -1787,6 +1787,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1810,6 +1817,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -2425,7 +2437,7 @@ body {
 
     <div class="about-kong">
       <h4>Disclosure</h4>
-      <p>Kong is a free direct booking platform for Southeast Asian tour operators. We are building a channel manager of our own, but it is not yet publicly available and it is not part of this comparison. No product on this page pays us. Guests who book through Kong pay a small booking fee at checkout, and operators keep 100% of the fare. If this guide helped you, that is the business model working as intended.</p>
+      <p>Kong is a direct booking platform for Southeast Asian tour operators. We are building a channel manager of our own, but it is not yet publicly available and it is not part of this comparison. No product on this page pays us. Kong charges a 1.8% fee per online booking, which operators can pass to the guest or absorb. If this guide helped you, that is the business model working as intended.</p>
     </div>
 
   </article>
@@ -2440,7 +2452,7 @@ body {
       <div class="post-author-text">
         <h4>About the author</h4>
         <div class="post-author-name">Blake Ng</div>
-        <div class="post-author-bio">Blake Ng spent six years at tour booking platforms Rezdy, Checkfront and Regiondo before co-founding <a href="../about" style="color: var(--purple);">Kong</a>, a free direct booking platform for Southeast Asian operators.</div>
+        <div class="post-author-bio">Blake Ng spent six years at tour booking platforms Rezdy, Checkfront and Regiondo before co-founding <a href="../about" style="color: var(--purple);">Kong</a>, a direct booking platform for Southeast Asian operators.</div>
       </div>
     </div>
 
@@ -2459,7 +2471,7 @@ body {
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
       <h2>Fix the direct channel first.</h2>
-      <p>Kong gives Southeast Asian operators a free direct booking channel. No subscription fees, no upfront costs, and operators keep 100% of the fare.</p>
+      <p>Kong gives Southeast Asian operators a direct booking channel. No subscription fees and no upfront costs.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -2623,6 +2635,10 @@ body {
   }
   maybeStart();
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

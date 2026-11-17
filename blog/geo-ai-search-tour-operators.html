@@ -880,6 +880,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -903,6 +910,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1033,7 +1045,7 @@ body {
 
 <div class="about-kong">
   <h4>About Kong</h4>
-  <p>Kong is the direct-booking platform for tour and activity operators — free for operators, with guests paying a 1.8% fee only on online direct bookings, paid into your own Stripe or Xendit account. It's the storefront your SEO and AI visibility send travellers to, so they can actually book.</p>
+  <p>Kong is the direct-booking platform for tour and activity operators — no monthly fee, with a 1.8% fee only on online direct bookings that you can charge to your guest or absorb, paid into your own Stripe or Xendit account. It's the storefront your SEO and AI visibility send travellers to, so they can actually book.</p>
 </div>
   </article>
 
@@ -1077,7 +1089,7 @@ body {
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
       <h2>Give your SEO and AI visibility somewhere to convert.</h2>
-      <p>Kong is the direct-booking layer that turns a found traveller into a paying one — free for operators, guests pay just 1.8% at checkout on online bookings, paid into your own Stripe or Xendit account.</p>
+      <p>Kong is the direct-booking layer that turns a found traveller into a paying one — no monthly fee, just 1.8% on online bookings that you can charge to your guest or absorb, paid into your own Stripe or Xendit account.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -1207,6 +1219,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

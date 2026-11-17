@@ -1162,6 +1162,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1185,6 +1192,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1298,7 +1310,7 @@ body {
 
     <p>The 16 operators now have a booking link they can put on their Google profile, their Instagram bio, and the bottom of every WhatsApp reply. We're checking in with each of them over the next few weeks as the first bookings come through.</p>
 
-    <p>If you run a tourism board, a state agency, or an operator association anywhere in Malaysia and want the same thing for your operators, the format is simple and we're happy to run it. Half a day, a room with wifi, and operators who bring their own phone. <a href="../pricing">Kong is free for operators</a>, and so is the workshop.</p>
+    <p>If you run a tourism board, a state agency, or an operator association anywhere in Malaysia and want the same thing for your operators, the format is simple and we're happy to run it. Half a day, a room with wifi, and operators who bring their own phone. <a href="../pricing">Kong has no monthly fee</a>, and the workshop is free.</p>
 
   </article>
 
@@ -1327,7 +1339,7 @@ body {
       <div class="post-author-text">
         <h4>Written by</h4>
         <div class="post-author-name">Blake Ng</div>
-        <div class="post-author-bio"><em>Blake Ng is the co-founder of Kong, a free booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing. He's based in Kuala Lumpur and personally responds to operator questions on WhatsApp: +60 12-429 8159.</em></div>
+        <div class="post-author-bio"><em>Blake Ng is the co-founder of Kong, a booking platform for tour and activity operators in Southeast Asia. Before Kong, Blake spent six years at Rezdy, Checkfront, and Regiondo in product marketing. He's based in Kuala Lumpur and personally responds to operator questions on WhatsApp: +60 12-429 8159.</em></div>
       </div>
     </div>
 
@@ -1474,6 +1486,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

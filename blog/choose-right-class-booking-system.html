@@ -1050,6 +1050,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1073,6 +1080,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1195,7 +1207,7 @@ body {
 
     <p>When evaluating different options, consider these factors:</p>
 
-    <p><strong>Pricing structure</strong><br/>Some platforms charge monthly fees, others take a percentage per booking. Calculate costs based on your expected booking volume. Kong charges 1.8% to the end guests, meaning it would be free for you. We chose 1.8% as this is a number that is unlikely to affect conversion rate, so it is fair to both you and the guest.</p>
+    <p><strong>Pricing structure</strong><br/>Some platforms charge monthly fees, others take a percentage per booking. Calculate costs based on your expected booking volume. Kong charges 1.8% per online booking with no monthly fee, and you choose whether your guest pays it or you absorb it. We chose 1.8% as this is a number that is unlikely to affect conversion rate, so it is fair to both you and the guest.</p>
 
     <p><strong>Integration capabilities</strong><br/>Look for systems that connect with your website, social media profiles, and distribution channels like TripAdvisor.</p>
 
@@ -1265,7 +1277,7 @@ body {
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
       <h2>Kong runs your classes, so you can teach them.</h2>
-      <p>A booking system built for cooking classes, workshops, yoga, and creative sessions — with a fair 1.8% guest fee and zero subscription cost to you.</p>
+      <p>A booking system built for cooking classes, workshops, yoga, and creative sessions — with a fair 1.8% booking fee and no subscription.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -1395,6 +1407,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

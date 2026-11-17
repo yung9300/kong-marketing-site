@@ -122,7 +122,7 @@
     {
       "@type": "HowToStep",
       "name": "Connect payments",
-      "text": "Connect a payment processor. On Kong you connect your own Stripe or Xendit account (Xendit adds FPX, Touch 'n Go, ShopeePay and DuitNow QR) and money is paid into your own account. Guests pay a 1.8% fee on online bookings."
+      "text": "Connect a payment processor. On Kong you connect your own Stripe or Xendit account (Xendit adds FPX, Touch 'n Go, ShopeePay and DuitNow QR) and money is paid into your own account. Kong costs 1.8% per online booking, paid by your guest or absorbed by you."
     },
     {
       "@type": "HowToStep",
@@ -151,7 +151,7 @@
       "name": "Can I build a website that takes bookings without hiring a developer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Booking-native builders like Kong let you build a multi-page site with bookings built in, free, with no developer and no code. Generic builders like Wix and Squarespace can also be used without a developer, but you'd add a separate booking system on top."
+        "text": "Yes. Booking-native builders like Kong let you build a multi-page site with bookings built in, with no monthly fee, no developer and no code. Generic builders like Wix and Squarespace can also be used without a developer, but you'd add a separate booking system on top."
       }
     },
     {
@@ -159,7 +159,7 @@
       "name": "What's the best website builder for a tour operator?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on what you need. For getting online and taking bookings fast and free, a booking-native builder like Kong fits best. For a fully custom-branded site on your own domain with a blog, a generic builder like Squarespace or Wix (plus a booking add-on) is better. Many operators start with the former and add the latter later."
+        "text": "It depends on what you need. For getting online and taking bookings fast with no monthly fee, a booking-native builder like Kong fits best. For a fully custom-designed brand site with a blog, a generic builder like Squarespace or Wix (plus a booking add-on) is better. Many operators start with the former and add the latter later."
       }
     },
     {
@@ -175,7 +175,7 @@
       "name": "Do I get my own domain name with Kong?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You get a Kong web address (yourbusiness.bookwithkong.com), not a custom domain like yourbusiness.com. If having your own custom domain matters to you, a generic website builder is the better fit for that specific need — and you can still use Kong for bookings."
+        "text": "Yes. You can connect your own domain (like yourbusiness.com) to your Kong website. Connecting it costs nothing extra, you just buy the domain itself. If you don't have a domain yet, you can start on a Kong web address (yourbusiness.bookwithkong.com) and connect your own later."
       }
     },
     {
@@ -183,7 +183,7 @@
       "name": "How much does a website cost for a small tour business?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It ranges from free to a few thousand ringgit. A booking-native builder like Kong is free. Generic builders like Wix or Squarespace run roughly RM75–160 a month once you include a plan that takes payments plus a booking add-on. A developer-built WordPress site is typically around RM2,000–3,000 to set up in Malaysia, plus ongoing maintenance."
+        "text": "It ranges from no fixed cost to a few thousand ringgit. A booking-native builder like Kong has no monthly fee, just 1.8% per online booking. Generic builders like Wix or Squarespace run roughly RM75–160 a month once you include a plan that takes payments plus a booking add-on. A developer-built WordPress site is typically around RM2,000–3,000 to set up in Malaysia, plus ongoing maintenance."
       }
     },
     {
@@ -223,7 +223,7 @@
       "name": "How do I take payments on my tour website?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You connect a payment processor. On Kong you connect your own Stripe account (available in Malaysia) or Xendit, which adds local methods like FPX, Touch 'n Go, ShopeePay and DuitNow QR — and the money is paid into your own connected account. Guests pay a 1.8% fee at checkout on online bookings and you keep the rest. On generic builders, you'd sign up for a separate booking or payment tool and integrate it yourself."
+        "text": "You connect a payment processor. On Kong you connect your own Stripe account (available in Malaysia) or Xendit, which adds local methods like FPX, Touch 'n Go, ShopeePay and DuitNow QR — and the money is paid into your own connected account. Kong costs 1.8% per online booking, and you choose whether your guest pays it or you absorb it. On generic builders, you'd sign up for a separate booking or payment tool and integrate it yourself."
       }
     },
     {
@@ -1239,6 +1239,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1262,6 +1269,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1308,8 +1320,8 @@ body {
 <div class="post-tldr">
   <h4>Pick by what you need</h4>
   <ul>
-    <li><strong>Just want to take bookings, fast and free, no tech skills?</strong> → A booking-native builder like <strong>Kong</strong>: a real site <em>and</em> bookings in one, free, live in an afternoon. The trade-off is a Kong web address rather than your own domain.</li>
-    <li><strong>Want a fully branded site on your own .com with a blog?</strong> → A generic builder (<strong>Wix</strong> or <strong>Squarespace</strong>) — but you'll add a separate booking system, pay a monthly fee in US dollars, and put in real setup time.</li>
+    <li><strong>Just want to take bookings, fast, with no monthly fee and no tech skills?</strong> → A <a href="../website-builder">booking-native builder</a> like <strong>Kong</strong>: a real site <em>and</em> bookings in one, no monthly fee, live in an afternoon. You can connect your own domain too.</li>
+    <li><strong>Want a fully custom-designed brand site with a blog?</strong> → A generic builder (<strong>Wix</strong> or <strong>Squarespace</strong>) — but you'll add a separate booking system, pay a monthly fee in US dollars, and put in real setup time.</li>
     <li><strong>Want the most polished, fully custom result and have the budget?</strong> → <strong>Hire a developer</strong> — usually overkill when you're starting out.</li>
     <li><strong>Whatever you choose:</strong> sort your <strong>Google Business Profile</strong> too. For most operators it drives more discovery than the website itself.</li>
   </ul>
@@ -1322,8 +1334,8 @@ body {
 
 <h2>Your options, honestly</h2>
 <p>There are three realistic ways for a tour operator to get a website, and the right one depends on what you actually need.</p>
-<p><strong>Option 1: A generic website builder (Wix, Squarespace, WordPress).</strong> These are great for a fully branded site on your own domain, with a blog and full design control. The catch for tour operators: they don't take bookings on their own — you have to bolt on a separate booking system — and they take time, some tech skill, and a monthly subscription. If you want a polished brand site and you're willing to manage the booking side separately, these are solid. Many operators do want one eventually. (If you want to compare all the main builders available in Malaysia, including local options, see our <a href="best-website-builders-malaysia">honest comparison of the best website builders in Malaysia</a>.)</p>
-<p><strong>Option 2: A booking-native website builder (this is Kong).</strong> Build a real multi-page site — a Home page, an About page, pages for your experiences — with <strong>bookings built in natively</strong> rather than bolted on. It's free and you can be live fast. The honest trade-offs: you get a Kong web address (yourbusiness.bookwithkong.com), not your own custom .com, and it's built for your site and bookings, not blogging or SEO content. For a non-tech-savvy operator who wants to be online and taking bookings quickly, this is usually the fastest path.</p>
+<p><strong>Option 1: A generic website builder (Wix, Squarespace, WordPress).</strong> These are great for a fully custom-designed brand site, with a blog and full design control. The catch for tour operators: they don't take bookings on their own — you have to bolt on a separate booking system — and they take time, some tech skill, and a monthly subscription. If you want a polished brand site and you're willing to manage the booking side separately, these are solid. Many operators do want one eventually. (If you want to compare all the main builders available in Malaysia, including local options, see our <a href="best-website-builders-malaysia">honest comparison of the best website builders in Malaysia</a>.)</p>
+<p><strong>Option 2: A booking-native website builder (this is <a href="../website-builder">Kong</a>).</strong> Build a real multi-page site — a Home page, an About page, pages for your experiences — with <strong>bookings built in natively</strong> rather than bolted on. There's no monthly fee and you can be live fast. You can connect your own domain at no extra cost (you buy the domain), or start on a Kong web address (yourbusiness.bookwithkong.com). The honest trade-off: it's built for your site and bookings, not blogging or SEO content. For a non-tech-savvy operator who wants to be online and taking bookings quickly, this is usually the fastest path.</p>
 <p><strong>Option 3: Hire someone to build it.</strong> A developer or agency gives you the most polished, fully custom result — and it's the most expensive, usually overkill when you're starting out.</p>
 
 <h2>Why "bookings built in" matters more than design</h2>
@@ -1345,13 +1357,13 @@ body {
 
 <h2>What it costs: the honest comparison</h2>
 <p>Here's what each option actually costs in 2026. Generic builders aren't expensive per month, but remember they need a booking system added on top, and they're priced in US dollars.</p>
-<div class="table-wrap"><table><thead><tr><th>Option</th><th>Setup cost</th><th>Ongoing cost</th><th>Takes bookings?</th><th>Your own domain?</th></tr></thead><tbody><tr><td><strong>Wix</strong></td><td>Free to start</td><td>Free tier (with ads + Wix subdomain); paid plans from ~USD 17/month, and you need around the ~USD 29/month tier to take payments. Plus ~USD 15–20/year for a domain after year one.</td><td>Not on its own — needs a booking add-on</td><td>Yes (on paid plans)</td></tr><tr><td><strong>Squarespace</strong></td><td>Free 14-day trial</td><td>From ~USD 16–19/month (basic), ~USD 23–35/month to avoid transaction fees, plus a booking add-on (Acuity) from ~USD 16/month, plus ~USD 15–20/year domain after year one.</td><td>Not natively — booking is a paid add-on</td><td>Yes</td></tr><tr><td><strong>WordPress (built by a developer)</strong></td><td>~RM 2,000–3,000 typical setup in Malaysia</td><td>Ongoing hosting, plugins, updates and maintenance (varies), plus a booking plugin</td><td>Only with a booking plugin added</td><td>Yes</td></tr><tr><td><strong>Kong</strong></td><td>Free</td><td>Free — no monthly fee, no setup fee</td><td><strong>Yes, built in</strong></td><td>No — Kong web address (yourbusiness.bookwithkong.com)</td></tr></tbody></table></div>
-<p>A few honest notes on the table. The Wix and Squarespace prices are in US dollars because they're global platforms — at current exchange rates that's roughly RM75–160 a month once you're on a plan that takes payments, but it moves with the exchange rate. The WordPress figure is a typical Malaysian setup cost for a developer-built site, plus ongoing maintenance that varies. And to be fair to the generic builders: they're not expensive month to month, and they win on custom domains, blogs and design control. The real difference for a tour operator is that every other option either needs a booking system added on, or real upfront money — while Kong is free with bookings built in. The trade-off you make for that is the subdomain.</p>
+<div class="table-wrap"><table><thead><tr><th>Option</th><th>Setup cost</th><th>Ongoing cost</th><th>Takes bookings?</th><th>Your own domain?</th></tr></thead><tbody><tr><td><strong>Wix</strong></td><td>Free to start</td><td>Free tier (with ads + Wix subdomain); paid plans from ~USD 17/month, and you need around the ~USD 29/month tier to take payments. Plus ~USD 15–20/year for a domain after year one.</td><td>Not on its own — needs a booking add-on</td><td>Yes (on paid plans)</td></tr><tr><td><strong>Squarespace</strong></td><td>Free 14-day trial</td><td>From ~USD 16–19/month (basic), ~USD 23–35/month to avoid transaction fees, plus a booking add-on (Acuity) from ~USD 16/month, plus ~USD 15–20/year domain after year one.</td><td>Not natively — booking is a paid add-on</td><td>Yes</td></tr><tr><td><strong>WordPress (built by a developer)</strong></td><td>~RM 2,000–3,000 typical setup in Malaysia</td><td>Ongoing hosting, plugins, updates and maintenance (varies), plus a booking plugin</td><td>Only with a booking plugin added</td><td>Yes</td></tr><tr><td><strong>Kong</strong></td><td>None</td><td>No monthly fee. 1.8% per online booking</td><td><strong>Yes, built in</strong></td><td>Yes, no extra cost to connect (you buy the domain)</td></tr></tbody></table></div>
+<p>A few honest notes on the table. The Wix and Squarespace prices are in US dollars because they're global platforms — at current exchange rates that's roughly RM75–160 a month once you're on a plan that takes payments, but it moves with the exchange rate. The WordPress figure is a typical Malaysian setup cost for a developer-built site, plus ongoing maintenance that varies. And to be fair to the generic builders: they're not expensive month to month, and they win on blogs and design control. The real difference for a tour operator is that every other option either needs a booking system added on, or real upfront money — while Kong has no monthly fee and bookings built in. The trade-off you make for that is no blog and less design control.</p>
 <p><em>(Prices verified mid-2026; check each platform's current pricing before deciding.)</em> For the full picture of website pricing in Malaysia — freelancers, agencies and the hidden ongoing costs — see our guide to <a href="website-cost-malaysia">how much a website costs in Malaysia</a>.</p>
 
 <h2>What you can build on Kong</h2>
-<p>On Kong you can build a real, simple website for your tour business: a booking page plus as many additional pages as you need — a Home page, an About page that tells your story, pages for your experiences. You build them from a set of modules: text, image galleries, a hero image, product grids, and individual product modules that guests book straight from. It's free, live fast, and the bookings are built in — no separate booking system to wire up.</p>
-<p>What it isn't: it's not a custom-domain brand site (you get a Kong web address), and it's not a blog or SEO-content platform. If those specific things matter to you, a generic builder is the better fit — and you can still use Kong for the bookings.</p>
+<p>On Kong you can build a real, simple website for your tour business: a booking page plus as many additional pages as you need — a Home page, an About page that tells your story, pages for your experiences. You build them from a set of modules: text, image galleries, a hero image, product grids, and individual product modules that guests book straight from. There's no monthly fee, it's live fast, and the bookings are built in — no separate booking system to wire up.</p>
+<p>What it isn't: it's not a blog or SEO-content platform. If that matters to you, a generic builder is the better fit — and you can still use Kong for the bookings.</p>
 
 <h2>How to actually build it: a step-by-step</h2>
 <p>Enough theory — here's the actual process of getting from nothing to a live site taking bookings. This works whichever route you choose; we'll note where Kong makes a step disappear.</p>
@@ -1367,7 +1379,7 @@ body {
   <li><span class="step-title">Get your assets together first</span>The thing that actually slows operators down isn't the building — it's not having the content ready. Before you start, gather: 10–20 strong photos of your real experiences (not stock), a short paragraph of your story, the details for each tour (duration, price, what's included, what to bring, meeting point), and your logo if you have one. An afternoon collecting these makes the build itself quick.</li>
   <li><span class="step-title">Build the pages</span>On a generic builder, you'd pick a template, then customise it. On Kong, you assemble each page from modules — a hero image at the top, text blocks for your story and details, image galleries for your photos, and product/product-grid modules that are the actual bookable experiences. Lead each page with a strong image and put a booking option high up.</li>
   <li><span class="step-title">Set up your bookable experiences</span>This is the step that's either the hardest or the easiest, depending on your route. On a generic builder, this is where you stop, choose a separate booking system, sign up for it, and wire it in — the part that defeats most operators. On Kong, your experiences <em>are</em> the booking system: you add each tour as a product with its price, your capacity per session, available dates and times, and any deposit, and it's bookable the moment it's on the page. No integration, no second tool.</li>
-  <li><span class="step-title">Connect payments</span>To take money you need a payment processor. On Kong you connect your own Stripe account (available in Malaysia) or Xendit (which adds local methods like FPX, Touch 'n Go, ShopeePay and DuitNow QR), and the money is paid into your own connected account. Guests pay a small 1.8% fee at checkout on online bookings; you keep the rest, and walk-in, phone and WhatsApp bookings are free.</li>
+  <li><span class="step-title">Connect payments</span>To take money you need a payment processor. On Kong you connect your own Stripe account (available in Malaysia) or Xendit (which adds local methods like FPX, Touch 'n Go, ShopeePay and DuitNow QR), and the money is paid into your own connected account. Kong costs 1.8% per online booking, and you choose whether your guest pays it or you absorb it. Walk-in, phone and WhatsApp bookings are free.</li>
   <li><span class="step-title">Test a booking yourself, then go live</span>Before you share it, run a test booking end-to-end — book one of your own experiences, check the confirmation email arrives, make sure the price and details are right. Then publish, and put the link everywhere: your Google Business Profile, your Instagram and TikTok bios, your WhatsApp status.</li>
 </ol>
 <p>The honest difference: on a generic builder, Steps 4 and 5 are where most operators stall for weeks (or give up and go back to WhatsApp). On a booking-native builder they're part of building the page. That's the whole reason this category exists.</p>
@@ -1393,22 +1405,22 @@ body {
 <p>One last thing, because it's the most common mistake: your website is not how most guests will find you — your <strong>Google Business Profile</strong> is. When someone searches "ATV Selangor" or "things to do in Langkawi," it's your Google profile, not your website, that puts you on the map. Set that up alongside your site; we've written a full <a href="google-business-profile-local-seo-tour-operators">Google Business Profile and local SEO guide for tour operators</a> to walk you through it.</p>
 
 <h2>The honest recommendation</h2>
-<p>If you want to be online and taking bookings this week, without spending money or hiring anyone, a booking-native builder like <a href="/">Kong</a> is the fastest path — you get a real site with bookings built in, free, on a Kong web address. If you specifically need your own custom domain and a blog for content marketing, start with (or later add) a generic builder, and you can still use Kong to handle the bookings. Either way, sort your Google Business Profile too — that's how most guests will actually find you.</p>
+<p>If you want to be online and taking bookings this week, without spending money or hiring anyone, a booking-native builder like <a href="/">Kong</a> is the fastest path — you get a real site with bookings built in, with no monthly fee, on your own domain or a Kong web address. If you specifically need a blog for content marketing, start with (or later add) a generic builder, and you can still use Kong to handle the bookings. Either way, sort your Google Business Profile too — that's how most guests will actually find you.</p>
 
 <h2>Frequently asked questions</h2>
 <dl class="faq">
   <dt>Do tour operators need a website?</dt>
   <dd>Not necessarily a full one. What a tour operator actually needs is a way to be found (a Google Business Profile) and a way to take bookings (a booking page). You can have both without building a traditional website — though a simple site with an About page and galleries does help guests trust you.</dd>
   <dt>Can I build a website that takes bookings without hiring a developer?</dt>
-  <dd>Yes. Booking-native builders like Kong let you build a multi-page site with bookings built in, free, with no developer and no code. Generic builders like Wix and Squarespace can also be used without a developer, but you'd add a separate booking system on top.</dd>
+  <dd>Yes. Booking-native builders like Kong let you build a multi-page site with bookings built in, with no monthly fee, no developer and no code. Generic builders like Wix and Squarespace can also be used without a developer, but you'd add a separate booking system on top.</dd>
   <dt>What's the best website builder for a tour operator?</dt>
-  <dd>It depends on what you need. For getting online and taking bookings fast and free, a booking-native builder like Kong fits best. For a fully custom-branded site on your own domain with a blog, a generic builder like Squarespace or Wix (plus a booking add-on) is better. Many operators start with the former and add the latter later.</dd>
+  <dd>It depends on what you need. For getting online and taking bookings fast with no monthly fee, a booking-native builder like Kong fits best. For a fully custom-designed brand site with a blog, a generic builder like Squarespace or Wix (plus a booking add-on) is better. Many operators start with the former and add the latter later.</dd>
   <dt>Can I build an About page and photo galleries on Kong, or just a booking page?</dt>
   <dd>You can build a multi-page site — a booking page plus as many additional pages as you need, like a Home page, an About page, and pages for your experiences — using modules including text, image galleries, a hero image, product grids, and individual products guests book from. It's more than a booking page; it's a simple website with bookings built in.</dd>
   <dt>Do I get my own domain name with Kong?</dt>
-  <dd>You get a Kong web address (yourbusiness.bookwithkong.com), not a custom domain like yourbusiness.com. If having your own custom domain matters to you, a generic website builder is the better fit for that specific need — and you can still use Kong for bookings.</dd>
+  <dd>Yes. You can connect your own domain (like yourbusiness.com) to your Kong website. Connecting it costs nothing extra, you just buy the domain itself. If you don't have a domain yet, you can start on a Kong web address (yourbusiness.bookwithkong.com) and connect your own later.</dd>
   <dt>How much does a website cost for a small tour business?</dt>
-  <dd>It ranges from free to a few thousand ringgit. A booking-native builder like Kong is free. Generic builders like Wix or Squarespace run roughly RM75–160 a month once you include a plan that takes payments plus a booking add-on. A developer-built WordPress site is typically around RM2,000–3,000 to set up in Malaysia, plus ongoing maintenance.</dd>
+  <dd>It ranges from no fixed cost to a few thousand ringgit. A booking-native builder like Kong has no monthly fee, just 1.8% per online booking. Generic builders like Wix or Squarespace run roughly RM75–160 a month once you include a plan that takes payments plus a booking add-on. A developer-built WordPress site is typically around RM2,000–3,000 to set up in Malaysia, plus ongoing maintenance.</dd>
   <dt>Do I need a website or a Google Business Profile first?</dt>
   <dd>A Google Business Profile, in most cases. It's free and it's how most guests will find you on Google and Google Maps. A booking page is the close second so they can actually book. A fuller website is useful but can come after those two.</dd>
   <dt>What makes a tour operator's website actually get bookings?</dt>
@@ -1418,7 +1430,7 @@ body {
   <dt>What pages does a tour operator website need?</dt>
   <dd>Most tour operators need just four or five: a Home page (what you do, where, your best photo, a booking button up top), a separate experience page for each tour you run (each with its own photos, details and booking option), an About page (your story, guides and safety record), and a Contact or FAQ page (meeting point, common questions). That's a complete site — you don't need more to start.</dd>
   <dt>How do I take payments on my tour website?</dt>
-  <dd>You connect a payment processor. On Kong you connect your own Stripe account (available in Malaysia) or Xendit, which adds local methods like FPX, Touch 'n Go, ShopeePay and DuitNow QR — and the money is paid into your own connected account. Guests pay a 1.8% fee at checkout on online bookings and you keep the rest. On generic builders, you'd sign up for a separate booking or payment tool and integrate it yourself.</dd>
+  <dd>You connect a payment processor. On Kong you connect your own Stripe account (available in Malaysia) or Xendit, which adds local methods like FPX, Touch 'n Go, ShopeePay and DuitNow QR — and the money is paid into your own connected account. Kong costs 1.8% per online booking, and you choose whether your guest pays it or you absorb it. On generic builders, you'd sign up for a separate booking or payment tool and integrate it yourself.</dd>
   <dt>How long does it take to build a tour booking website?</dt>
   <dd>If your content is ready, a booking-native builder like Kong gets you live in a day — most of the time goes into gathering photos and writing your experience details, not the building itself. A generic builder plus a separate booking system takes longer because of the setup and integration. The slowest part for everyone is having your photos, prices and tour details ready, so prepare those first.</dd>
 </dl>
@@ -1467,8 +1479,8 @@ body {
 
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
-      <h2>Get your tour site live this week — free.</h2>
-      <p>A real site with bookings built in, no monthly fee, no developer — that's exactly what Kong is built for. Guests pay just 1.8% at checkout on online bookings. Set it up in an afternoon.</p>
+      <h2>Get your tour site live this week.</h2>
+      <p>A real site with bookings built in, no monthly fee, no developer — that's exactly what Kong is built for. Just 1.8% per online booking, paid by your guest or absorbed by you. Set it up in an afternoon.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -1598,6 +1610,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

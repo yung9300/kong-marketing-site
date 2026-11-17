@@ -1138,6 +1138,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1161,6 +1168,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1220,7 +1232,7 @@ body {
 <p>The federal tourism tax isn't the only charge your guests may see. Several states and localities add their own accommodation fees — for example heritage fees in Melaka and Penang, a Langkawi tourism promotion fee, and newer sustainability fees such as the Selangor Sustainability Fee introduced from January 2026. These are separate from the federal RM10 TTx and are set locally. If you provide accommodation, check what applies in your state; if you only run tours, these generally don't fall on you either.</p>
 <h2>What this means for taking bookings</h2>
 <p>For most tour and activity operators, the tourism tax simply isn't something you collect — your job is to run great experiences and make them easy to book. When you do take bookings, the fees that matter are your own booking costs, and that's where keeping things lean helps.</p>
-<p><a href="/" target="_blank" rel="noopener">Kong</a> is free booking software for tour and activity operators — no monthly fee, no setup fee, and no per-booking fee for you. Guests pay just 1.8% at checkout on online bookings, and walk-in, phone and WhatsApp bookings are free. You get a real booking page, capacity limits per session, deposits, and automatic confirmations, so you can focus on the experience rather than the admin.</p>
+<p><a href="/" target="_blank" rel="noopener">Kong</a> is booking software for tour and activity operators with no monthly fee and no setup fee. It costs 1.8% per online booking, and you choose whether your guest pays it or you absorb it. Walk-in, phone and WhatsApp bookings are free. You get a real booking page, capacity limits per session, deposits, and automatic confirmations, so you can focus on the experience rather than the admin.</p>
 
     <h2>Frequently asked questions</h2>
     <dl class="faq">
@@ -1274,8 +1286,8 @@ body {
 
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
-      <h2>Kong is free booking software for tour operators.</h2>
-      <p>No monthly fees, no setup fees, no per-booking fee for you — guests pay just 1.8% at checkout on online bookings. Get a booking page live in minutes.</p>
+      <h2>Kong is booking software for tour operators.</h2>
+      <p>No monthly fees and no setup fees. Just 1.8% per online booking, paid by your guest or absorbed by you. Get a booking page live in minutes.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -1405,6 +1417,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

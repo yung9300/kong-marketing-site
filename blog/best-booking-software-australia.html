@@ -1448,6 +1448,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1471,6 +1478,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1521,7 +1533,7 @@ body {
       <div class="hs-row"><span class="hs-name">FareHarbor</span><span class="hs-verdict">Best support · 6% guest checkout fee</span><span class="hs-fee">$0 + 6%</span></div>
       <div class="hs-row"><span class="hs-name">Bokun</span><span class="hs-verdict">Viator-aligned · Tripadvisor-owned</span><span class="hs-fee">Free*/$49/mo</span></div>
       <div class="hs-row"><span class="hs-name">Checkfront</span><span class="hs-verdict">Cleanest pricing · same entity as Rezdy</span><span class="hs-fee">$99/mo + 3%</span></div>
-      <div class="hs-row kong"><span class="hs-name">Kong</span><span class="hs-verdict">Cheapest operator-cost · narrow AU fit today</span><span class="hs-fee">1.8% guest fee</span></div>
+      <div class="hs-row kong"><span class="hs-name">Kong</span><span class="hs-verdict">Cheapest operator-cost · narrow AU fit today</span><span class="hs-fee">1.8% fee</span></div>
     </div>
   </figure>
 
@@ -1596,7 +1608,7 @@ body {
           <tr><th scope="row">FareHarbor</th><td>$0 subscription</td><td>Up to 6%</td><td>Customer (mandatory)</td><td>US-built; AU office reduced</td><td>No — Booking Holdings</td></tr>
           <tr><th scope="row">Bokun</th><td>Free*; Start $49/mo</td><td>1–1.5%; 0% on Viator</td><td>Operator (or pass)</td><td>Global, EU-focused</td><td>No — Tripadvisor</td></tr>
           <tr><th scope="row">Checkfront</th><td>$99 USD/mo (~$155 AUD) + 3% online</td><td>0% offline / agent / OTA</td><td>Operator (or pass)</td><td>International, AU presence</td><td>No — same entity as Rezdy</td></tr>
-          <tr class="kong-row"><th scope="row">Kong</th><td>Free for operators</td><td>1.8% online direct only</td><td>Guest</td><td>APAC; base in Malaysia</td><td>Yes — self-funded</td></tr>
+          <tr class="kong-row"><th scope="row">Kong</th><td>No subscription</td><td>1.8% online direct only</td><td>Guest or operator (you choose)</td><td>APAC; base in Malaysia</td><td>Yes — self-funded</td></tr>
         </tbody>
       </table>
     </div>
@@ -1700,17 +1712,17 @@ body {
       <p><strong>Kong's engineering is led by my brother Zack, who spent 5+ years as a software engineer at Atlassian</strong> before we co-founded the company. The infrastructure, deployment practices, monitoring, and reliability standards come directly from how Atlassian runs production systems. Since launch, we've had no significant downtime affecting bookings or payments.</p>
       <div class="pricing-box">
         <h4><i class="ti ti-tag"></i> Pricing model</h4>
-        <p>Free for operators. 1.8% paid by the guest at checkout on online direct bookings only. 0% on walk-ins, phone bookings, agent bookings, and OTA bookings. Hosting, website builder, digital waivers, and mobile app included free. (AU operators run on Stripe.)</p>
+        <p>No monthly fee. 1.8% on online direct bookings only, paid by the guest at checkout or absorbed by you. 0% on walk-ins, phone bookings, agent bookings, and OTA bookings. Hosting, website builder, digital waivers, and mobile app included. (AU operators run on Stripe.)</p>
         <span class="src">See <a href="../australia">Kong's pricing and AU landing page</a>.</span>
       </div>
       <h3 class="wins"><i class="ti ti-circle-check"></i>Where Kong honestly fits Australian operators</h3>
       <p>There are a few specific situations where Kong is genuinely the right answer:</p>
       <ol>
-        <li><strong>You want the cheapest operator-cost on the list.</strong> No subscription, no walk-in fees, no agent or OTA fees — guests pay 1.8% at checkout on online direct bookings. For 100 bookings a month at $150 average, that's roughly $270/month in guest-paid fees, vs $349 on Rezdy Foundation, $549 on Checkfront, or ~$900 on FareHarbor at 6%.</li>
+        <li><strong>You want the cheapest operator-cost on the list.</strong> No subscription, no walk-in fees, no agent or OTA fees. The only fee is 1.8% on online direct bookings, which your guest pays at checkout or you absorb. For 100 bookings a month at $150 average, that's roughly $270/month in fees, vs $349 on Rezdy Foundation, $549 on Checkfront, or ~$900 on FareHarbor at 6%.</li>
         <li><strong>You run direct bookings and OTAs aren't critical.</strong> This is the biggest filter. Kong has GetYourGuide live, but Viator and additional OTAs are still in development. If most of your bookings come from your own website, walk-ins, and direct channels, Kong's narrower OTA story isn't a barrier. If OTAs are central, Rezdy or Bokun is the right answer.</li>
         <li><strong>You value a modern system that's fast to set up.</strong> Most operators are live within hours, not weeks. New staff learn it without dedicated training — which matters more for smaller operators and teams that turn over seasonal staff.</li>
         <li><strong>You want direct access to the founders.</strong> You message me or Zack on WhatsApp; we respond whenever we're awake (KL is 2–3 hours behind Sydney, so most of your business day). Operator feature requests genuinely shape the roadmap.</li>
-        <li><strong>You looked at Bokun's free tier and realised it doesn't include direct booking widgets.</strong> Kong is genuinely free for operators — you can take online direct bookings without paying a subscription.</li>
+        <li><strong>You looked at Bokun's free tier and realised it doesn't include direct booking widgets.</strong> Kong has no subscription, so you can take online direct bookings without a monthly fee.</li>
       </ol>
       <div class="kong-scorecard">
         <div class="sc-card wins">
@@ -1749,7 +1761,7 @@ body {
       <table>
         <thead><tr><th>Platform</th><th>What you pay</th><th>Monthly cost</th></tr></thead>
         <tbody>
-          <tr><td>Kong</td><td>1.8% guest fee, no subscription</td><td>~$270 (guest-paid)</td></tr>
+          <tr><td>Kong</td><td>1.8% fee, no subscription</td><td>~$270 (guest-paid)</td></tr>
           <tr><td>Rezdy Foundation</td><td>$49 + 2% online + offline flat fees</td><td>~$349</td></tr>
           <tr><td>Checkfront</td><td>$155 AUD + 3% online</td><td>~$549</td></tr>
           <tr><td>FareHarbor</td><td>6% on every booking (guest-paid)</td><td>~$900</td></tr>
@@ -1861,8 +1873,8 @@ body {
 
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
-      <h2>Kong is free for operators. Get started in an afternoon.</h2>
-      <p>No subscription, no setup fee, no contract — just a 1.8% guest booking fee when a booking actually happens. Not sure it's the right fit for your Australian operation? Book a call and I'll tell you honestly — even if the answer is a competitor.</p>
+      <h2>Kong has no monthly fee. Get started in an afternoon.</h2>
+      <p>No subscription, no setup fee, no contract — just a 1.8% booking fee when a booking actually happens. Not sure it's the right fit for your Australian operation? Book a call and I'll tell you honestly — even if the answer is a competitor.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="../australia">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -1991,6 +2003,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

@@ -110,7 +110,7 @@
       "name": "What is the best free website builder in Malaysia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most \"free\" builder tiers (like Wix's) add ads, give you a branded subdomain, and don't let you take payments — so for a real business they usually become paid plans. The genuinely free options run on a transaction-fee model instead of a subscription: Kong is free for booking businesses (guests pay 1.8% only on online bookings), and HitPay's store works similarly for product sellers. You pay only when you earn rather than a monthly fee."
+        "text": "Most \"free\" builder tiers (like Wix's) add ads, give you a branded subdomain, and don't let you take payments — so for a real business they usually become paid plans. The options with no monthly fee run on a transaction-fee model instead of a subscription: Kong has no monthly fee for booking businesses (1.8% per online booking, paid by your guest or absorbed by you), and HitPay's store works similarly for product sellers. You pay only when you earn rather than a monthly fee."
       }
     },
     {
@@ -134,7 +134,7 @@
       "name": "What website builder should a tour or activity operator use?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not a product-ecommerce platform. Tours, activities, classes and rentals are sold by the session, so they need capacity limits, dates and time-slots, and deposits — not a shopping cart and shipping. A booking-native builder like Kong is purpose-built for this, with bookings and local payments included, free for the operator. See our full guide to building a website for your tour business for the detail."
+        "text": "Not a product-ecommerce platform. Tours, activities, classes and rentals are sold by the session, so they need capacity limits, dates and time-slots, and deposits — not a shopping cart and shipping. A booking-native builder like Kong is purpose-built for this, with bookings and local payments included, with no monthly fee. See our full guide to building a website for your tour business for the detail."
       }
     },
     {
@@ -142,7 +142,7 @@
       "name": "How much does a website builder cost in Malaysia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It ranges widely. Global builders (Wix, Squarespace, Shopify) run roughly RM 75–175+ a month once you're on a plan that takes payments, priced in USD so it moves with the exchange rate. AI builders like Hostinger start from ~RM 10/month. A developer-built WordPress site is typically RM 2,000–3,000 to set up plus ongoing maintenance. Local SiteGiant is sold on yearly plans. Booking-native Kong is free for the operator, with guests paying 1.8% on online bookings only. For the full picture including agencies and freelancers, see our guide to how much a website costs in Malaysia."
+        "text": "It ranges widely. Global builders (Wix, Squarespace, Shopify) run roughly RM 75–175+ a month once you're on a plan that takes payments, priced in USD so it moves with the exchange rate. AI builders like Hostinger start from ~RM 10/month. A developer-built WordPress site is typically RM 2,000–3,000 to set up plus ongoing maintenance. Local SiteGiant is sold on yearly plans. Booking-native Kong has no monthly fee and costs 1.8% on online bookings only, paid by your guest or absorbed by you. For the full picture including agencies and freelancers, see our guide to how much a website costs in Malaysia."
       }
     },
     {
@@ -158,7 +158,7 @@
       "name": "What's the cheapest website builder in Malaysia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AI builders are the cheapest credible option — Hostinger's builder starts around RM 10–13/month with a free domain and AI site generation. Wix and Squarespace start higher (~RM 70–130/month on a plan that takes payments). The genuinely free route is a transaction-fee model: Kong is free for booking businesses (guests pay 1.8% on online bookings only), and Wix's free tier exists but carries ads and a subdomain."
+        "text": "AI builders are the cheapest credible option — Hostinger's builder starts around RM 10–13/month with a free domain and AI site generation. Wix and Squarespace start higher (~RM 70–130/month on a plan that takes payments). The route with no monthly fee is a transaction-fee model: Kong has no monthly fee for booking businesses (1.8% on online bookings only, paid by your guest or absorbed by you), and Wix's free tier exists but carries ads and a subdomain."
       }
     },
     {
@@ -1179,6 +1179,13 @@ body {
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -1202,6 +1209,11 @@ body {
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -1250,7 +1262,7 @@ body {
     <li><strong>Want a beautiful general business or brand site?</strong> → <strong>Wix</strong> (easiest and most flexible) or <strong>Squarespace</strong> (most polished design).</li>
     <li><strong>On the tightest budget, or want AI to build it for you?</strong> → An <strong>AI builder like Hostinger</strong>, from around RM 10/month.</li>
     <li><strong>Need full control, a real blog, and no vendor lock-in?</strong> → <strong>WordPress</strong>, if you're willing to maintain it (or pay someone to).</li>
-    <li><strong>Running a booking business — tours, activities, classes, rentals?</strong> → A booking-native builder like <strong>Kong</strong>. Free for the business, with FPX/e-wallet support via Xendit and bookings built in. This is the one case where I'll tell you Kong is the clear right answer — because none of the others are built for selling by the session.</li>
+    <li><strong>Running a booking business — tours, activities, classes, rentals?</strong> → A <a href="../website-builder">booking-native builder</a> like <strong>Kong</strong>. No monthly fee, with FPX/e-wallet support via Xendit and bookings built in. This is the one case where I'll tell you Kong is the clear right answer — because none of the others are built for selling by the session.</li>
   </ul>
 </div>
 <p>The honest, detailed version is below. Pick what fits <em>your</em> business — there's no universal winner.</p>
@@ -1274,7 +1286,7 @@ body {
 <tr><td><strong>SiteGiant</strong></td><td>Malaysian multichannel ecommerce</td><td>Yearly plans (no flat monthly price)</td><td>Included</td><td><strong>Yes — built in</strong></td><td>No</td></tr>
 <tr><td><strong>Hostinger (AI)</strong></td><td>Cheapest simple/AI-built sites</td><td>~USD 2–3/mo (~RM 10–13)</td><td>Higher tier</td><td>Via gateway</td><td>No (cheap enough)</td></tr>
 <tr><td><strong>WordPress</strong></td><td>Full control + content/blog</td><td>~RM 2,000–3,000 dev + hosting</td><td>Plugin (WooCommerce)</td><td>Via plugin</td><td>n/a (self-hosted)</td></tr>
-<tr><td><strong>Kong</strong></td><td><strong>Booking businesses</strong> (tours, activities, classes, rentals)</td><td><strong>Free</strong></td><td><strong>Free</strong> (guests pay 1.8% online)</td><td><strong>Yes — via Xendit</strong></td><td><strong>Yes (genuinely)</strong></td></tr>
+<tr><td><strong>Kong</strong></td><td><strong>Booking businesses</strong> (tours, activities, classes, rentals)</td><td><strong>No monthly fee</strong></td><td><strong>No monthly fee</strong> (1.8% per online booking)</td><td><strong>Yes — via Xendit</strong></td><td><strong>Yes (genuinely)</strong></td></tr>
 </tbody></table></div>
 <p><em>Pricing verified mid-2026 at ~RM 4.5/USD; USD figures move with the exchange rate, so treat ringgit conversions as approximate. SiteGiant prices on yearly plans rather than a flat monthly fee. "Price to actually sell/book" matters because the headline entry price often isn't the tier that lets you take money.</em></p>
 
@@ -1332,11 +1344,11 @@ body {
 <p><strong>Best for:</strong> a business that wants control and serious content, and has technical comfort or a developer on call. <strong>Worst for:</strong> a non-technical owner who just wants to be online this week without managing anything.</p>
 
 <h3>Kong — best for booking businesses (tours, activities, classes, rentals)</h3>
-<p class="pull-quote">The one builder here made for businesses sold by the session rather than the product — free for the business, with native Malaysian payments and bookings built in. The honest flip side: it's a booking site, not a custom-branded brand site or a blog.</p>
-<div class="pricing-note"><strong>Pricing:</strong> Free for the business — no setup fee, no monthly fee. Guests pay a 1.8% fee at checkout on online bookings only (walk-in, phone and WhatsApp bookings are free). You connect your own Stripe or Xendit account.<span class="src">Kong pricing per bookwithkong.com.</span></div>
-<p><strong>Where Kong genuinely wins:</strong> it's built for the thing the other six can't do — selling by the session: capacity per session, dates and time-slots, deposits, and no-oversell logic, with automatic confirmations. Via Xendit it brings the local payment methods Malaysian guests actually use — FPX, Touch 'n Go, ShopeePay and DuitNow QR — and it's genuinely free for the operator. You get a booking page plus unlimited additional pages built from modules (text, image galleries, hero image, product grids, bookable products).</p>
-<p><strong>Where Kong genuinely struggles — and I'll be straight about this:</strong> you get a Kong web address (yourbusiness.bookwithkong.com), not your own custom domain. It's not a blog or content-SEO platform, and it's not a physical-product store — no cart, inventory or shipping. If you need a bespoke-designed brand site, a content/blog engine, or to sell physical products, one of the other builders above is the better choice, and I'd genuinely point you there.</p>
-<p><strong>Best for:</strong> any business that sells experiences or time-slots — tour operators, dive centres, cooking schools, ATV and kayak rentals, escape rooms, workshop and class hosts. <strong>Worst for:</strong> physical-product stores, content-heavy brand sites, or anyone who needs a custom domain as a non-negotiable.</p>
+<p class="pull-quote">The one builder here made for businesses sold by the session rather than the product — no monthly fee, with native Malaysian payments and bookings built in. The honest flip side: it's a booking site, not a custom-branded brand site or a blog.</p>
+<div class="pricing-note"><strong>Pricing:</strong> No setup fee, no monthly fee. Kong costs 1.8% per online booking, and you choose whether your guest pays it or you absorb it. (walk-in, phone and WhatsApp bookings are free). You connect your own Stripe or Xendit account.<span class="src">Kong pricing per bookwithkong.com.</span></div>
+<p><strong>Where Kong genuinely wins:</strong> it's built for the thing the other six can't do — selling by the session: capacity per session, dates and time-slots, deposits, and no-oversell logic, with automatic confirmations. Via Xendit it brings the local payment methods Malaysian guests actually use — FPX, Touch 'n Go, ShopeePay and DuitNow QR — and there's no monthly fee. You get a booking page plus unlimited additional pages built from modules (text, image galleries, hero image, product grids, bookable products).</p>
+<p><strong>Where Kong genuinely struggles — and I'll be straight about this:</strong> it's not a blog or content-SEO platform, and it's not a physical-product store — no cart, inventory or shipping. If you need a bespoke-designed brand site, a content/blog engine, or to sell physical products, one of the other builders above is the better choice, and I'd genuinely point you there.</p>
+<p><strong>Best for:</strong> any business that sells experiences or time-slots — tour operators, dive centres, cooking schools, ATV and kayak rentals, escape rooms, workshop and class hosts. <strong>Worst for:</strong> physical-product stores or content-heavy brand sites.</p>
 
 <h2>Why a booking business needs its own kind of builder</h2>
 <p>I want to expand on the booking-business case, because it's the one every other guide gets wrong. A huge share of Malaysian businesses don't sell products at all: tour operators, dive centres, cooking schools, ATV and kayak rentals, escape rooms, workshop hosts, fitness studios. These are <strong>booking businesses</strong>, and they have genuinely different needs from a product store:</p>
@@ -1350,7 +1362,7 @@ body {
 
 <h2>What about free website builders?</h2>
 <p>"Free website builder Malaysia" is a common search, and the honest answer is: free options exist, but read the limits before you commit. Most free tiers (like Wix's) put ads on your site, give you a builder-branded subdomain rather than your own domain, and don't let you take payments — so for a real business, "free" usually becomes a paid plan the moment you want to actually sell.</p>
-<p>The exception worth knowing: a couple of platforms are genuinely free for the business and make their money on transaction fees instead of a subscription. Kong is one — free for the operator, with guests paying 1.8% only on online bookings — which works out free to set up and use for a booking business. For a product store, payment-platform builders like HitPay's store work on a similar transaction-fee model. The rule of thumb: "free" with a monthly-fee builder means limited; "free" on a transaction-fee model means you pay only when you earn.</p>
+<p>The exception worth knowing: a couple of platforms have no subscription at all and make their money on transaction fees instead. Kong is one: no monthly fee, just 1.8% per online booking, which you can charge to your guest or absorb. For a product store, payment-platform builders like HitPay's store work on a similar transaction-fee model. The rule of thumb: "free" with a monthly-fee builder means limited; "free" on a transaction-fee model means you pay only when you earn.</p>
 
 <h2>The honest recommendation</h2>
 <p>Match the tool to the business:</p>
@@ -1359,7 +1371,7 @@ body {
   <li><strong>Want a beautiful general business or brand site?</strong> Wix (easiest, most flexible) or Squarespace (most design-led).</li>
   <li><strong>On the tightest budget, or want AI to build it?</strong> An AI builder like Hostinger, from ~RM 10/month.</li>
   <li><strong>Want full control and serious content/blogging?</strong> WordPress, if you'll maintain it.</li>
-  <li><strong>Running a booking business — tours, activities, classes, rentals?</strong> A booking-native builder like <a href="/">Kong</a>: free, with local payments via Xendit and bookings built in.</li>
+  <li><strong>Running a booking business — tours, activities, classes, rentals?</strong> A booking-native builder like <a href="/">Kong</a>: no monthly fee, with local payments via Xendit and bookings built in.</li>
 </ul>
 <p>There's no universally "best" builder — only the best one for your kind of business. Figure out whether you're selling products or bookings first, check it supports the payment methods your customers use, and the shortlist gets short fast.</p>
 
@@ -1368,19 +1380,19 @@ body {
   <dt>What is the best website builder in Malaysia?</dt>
   <dd>There's no single best — it depends on your business. For physical-product ecommerce, SiteGiant (local, with FPX and marketplace sync) or Shopify lead. For a general business or brand site, Wix or Squarespace. For full control and content, WordPress. For a booking business like tours, activities or classes, a booking-native builder like Kong fits best because it handles sessions, dates and deposits rather than product carts.</dd>
   <dt>What is the best free website builder in Malaysia?</dt>
-  <dd>Most "free" builder tiers (like Wix's) add ads, give you a branded subdomain, and don't let you take payments — so for a real business they usually become paid plans. The genuinely free options run on a transaction-fee model instead of a subscription: Kong is free for booking businesses (guests pay 1.8% only on online bookings), and HitPay's store works similarly for product sellers. You pay only when you earn rather than a monthly fee.</dd>
+  <dd>Most "free" builder tiers (like Wix's) add ads, give you a branded subdomain, and don't let you take payments — so for a real business they usually become paid plans. The options with no monthly fee run on a transaction-fee model instead of a subscription: Kong has no monthly fee for booking businesses (1.8% per online booking, paid by your guest or absorbed by you), and HitPay's store works similarly for product sellers. You pay only when you earn rather than a monthly fee.</dd>
   <dt>Which website builders support FPX and e-wallets in Malaysia?</dt>
   <dd>Local platforms support them natively: SiteGiant for product ecommerce, and Kong for booking businesses (via Xendit — FPX, Touch 'n Go, ShopeePay, DuitNow QR). Global builders like Wix, Squarespace and Shopify don't support Malaysian payment methods on their own — you add a local payment gateway such as HitPay on top.</dd>
   <dt>Is Shopify or SiteGiant better for a Malaysian online store?</dt>
   <dd>Both are strong for physical-product ecommerce. SiteGiant is built for the Malaysian market with native FPX/e-wallet support and built-in Shopee, Lazada and TikTok syncing, which suits sellers working across marketplaces. Shopify offers larger global scale and a bigger app ecosystem but needs a local gateway added for Malaysian payment methods and is priced in USD. Neither is built for booking-based businesses.</dd>
   <dt>What website builder should a tour or activity operator use?</dt>
-  <dd>Not a product-ecommerce platform. Tours, activities, classes and rentals are sold by the session, so they need capacity limits, dates and time-slots, and deposits — not a shopping cart and shipping. A booking-native builder like Kong is purpose-built for this, with bookings and local payments included, free for the operator. See our full guide to building a website for your tour business for the detail.</dd>
+  <dd>Not a product-ecommerce platform. Tours, activities, classes and rentals are sold by the session, so they need capacity limits, dates and time-slots, and deposits — not a shopping cart and shipping. A booking-native builder like Kong is purpose-built for this, with bookings and local payments included, with no monthly fee. See our full guide to building a website for your tour business for the detail.</dd>
   <dt>How much does a website builder cost in Malaysia?</dt>
-  <dd>It ranges widely. Global builders (Wix, Squarespace, Shopify) run roughly RM 75–175+ a month once you're on a plan that takes payments, priced in USD so it moves with the exchange rate. AI builders like Hostinger start from ~RM 10/month. A developer-built WordPress site is typically RM 2,000–3,000 to set up plus ongoing maintenance. Local SiteGiant is sold on yearly plans. Booking-native Kong is free for the operator, with guests paying 1.8% on online bookings only. For the full picture including agencies and freelancers, see our guide to how much a website costs in Malaysia.</dd>
+  <dd>It ranges widely. Global builders (Wix, Squarespace, Shopify) run roughly RM 75–175+ a month once you're on a plan that takes payments, priced in USD so it moves with the exchange rate. AI builders like Hostinger start from ~RM 10/month. A developer-built WordPress site is typically RM 2,000–3,000 to set up plus ongoing maintenance. Local SiteGiant is sold on yearly plans. Booking-native Kong has no monthly fee and costs 1.8% on online bookings only, paid by your guest or absorbed by you. For the full picture including agencies and freelancers, see our guide to how much a website costs in Malaysia.</dd>
   <dt>Wix or Squarespace — which is better?</dt>
   <dd>Both are excellent general builders. Wix is more flexible (free-form drag-and-drop, 900+ templates, a free plan, and AI site generation) and is cheaper the moment you start selling. Squarespace makes more polished-looking sites with less effort and is design-first, but has no free plan and takes a commission on its cheapest selling tier. Choose Wix for flexibility and value when selling; choose Squarespace when premium design is your top priority. Neither supports Malaysian payment methods natively, and neither is built for bookings.</dd>
   <dt>What's the cheapest website builder in Malaysia?</dt>
-  <dd>AI builders are the cheapest credible option — Hostinger's builder starts around RM 10–13/month with a free domain and AI site generation. Wix and Squarespace start higher (~RM 70–130/month on a plan that takes payments). The genuinely free route is a transaction-fee model: Kong is free for booking businesses (guests pay 1.8% on online bookings only), and Wix's free tier exists but carries ads and a subdomain.</dd>
+  <dd>AI builders are the cheapest credible option — Hostinger's builder starts around RM 10–13/month with a free domain and AI site generation. Wix and Squarespace start higher (~RM 70–130/month on a plan that takes payments). The route with no monthly fee is a transaction-fee model: Kong has no monthly fee for booking businesses (1.8% on online bookings only, paid by your guest or absorbed by you), and Wix's free tier exists but carries ads and a subdomain.</dd>
   <dt>Can I move my website to another builder later?</dt>
   <dd>Often not easily. Wix, Squarespace and Shopify are "closed" platforms — you can't export your site, so switching means rebuilding from scratch. This vendor lock-in is a real long-term consideration. WordPress is the most portable (you own and can move everything). If you think you'll switch or scale significantly, factor lock-in into your choice now.</dd>
   <dt>What's the difference between a website builder and web hosting?</dt>
@@ -1397,7 +1409,7 @@ body {
       <div class="post-author-text">
         <h4>Written by</h4>
         <div class="post-author-name">Blake Ng</div>
-        <div class="post-author-bio">Co-founder of Kong, a free website-and-booking platform for Southeast Asian tour and activity operators. He's spent years helping Malaysian operators get online and take bookings.</div>
+        <div class="post-author-bio">Co-founder of Kong, a website-and-booking platform for Southeast Asian tour and activity operators. He's spent years helping Malaysian operators get online and take bookings.</div>
       </div>
     </div>
 
@@ -1424,7 +1436,7 @@ body {
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
       <h2>Run a booking business? Kong is free to try.</h2>
-      <p>If you run tours, activities, classes or rentals, Kong gives you a real site with bookings built in — free, with FPX and e-wallet support via Xendit. Set it up in an afternoon.</p>
+      <p>If you run tours, activities, classes or rentals, Kong gives you a real site with bookings built in, no monthly fee, with FPX and e-wallet support via Xendit. Set it up in an afternoon.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -1554,6 +1566,10 @@ body {
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

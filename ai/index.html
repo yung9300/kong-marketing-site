@@ -45,7 +45,7 @@
     {"@type": "Question","name": "What can ChatGPT or Claude do in my Kong account?","acceptedAnswer": {"@type": "Answer","text": "It can search and look up bookings, take bookings including walk-ins, reschedule, cancel, approve and check guests in, resend confirmations, record payments and check waiver status. It can also edit tours, change prices, close days, log expenses, make discount codes and show your sales and profit and loss. Refunds, new booking questions and gift cards stay in the Kong app. Website changes and inviting your team can't be done through the connector yet."}},
     {"@type": "Question","name": "Will the AI change bookings or prices without asking me?","acceptedAnswer": {"@type": "Answer","text": "No. Kong tells your assistant to show you exactly what it will change and wait for your yes before it takes a booking, changes a price, makes a discount code or records a payment. Kong itself blocks a cancellation with a fee and any overbooking of a full ride until you confirm, and your yes is recorded against your name."}},
     {"@type": "Question","name": "Can the AI see my guests' card details?","acceptedAnswer": {"@type": "Answer","text": "No. Card details are never stored in Kong. They stay with your payment processor, and Kong cannot pass them on, so ChatGPT and Claude cannot see them."}},
-    {"@type": "Question","name": "Does it cost extra?","acceptedAnswer": {"@type": "Answer","text": "No. Connecting Kong to ChatGPT or Claude is free, and it works on any Claude or ChatGPT plan. Your Kong plan doesn't change."}},
+    {"@type": "Question","name": "Does it cost extra?","acceptedAnswer": {"@type": "Answer","text": "No. Connecting Kong to ChatGPT or Claude costs nothing extra, and it works on any Claude or ChatGPT plan. Your Kong plan doesn't change."}},
     {"@type": "Question","name": "Do I need to be technical?","acceptedAnswer": {"@type": "Answer","text": "No. There's no code to write. You add Kong as a connector with one address, https://api.bookwithkong.com/mcp, sign in with your normal Kong login and click Allow. If you can log in to Kong, you can connect it."}},
     {"@type": "Question","name": "Can my staff connect their own assistant?","acceptedAnswer": {"@type": "Answer","text": "Yes. Each team member connects with their own Kong login, and their assistant can only do what that person's Kong role allows."}},
     {"@type": "Question","name": "Does it work in Bahasa Malaysia?","acceptedAnswer": {"@type": "Answer","text": "Yes. Ask in Bahasa Malaysia or English and your assistant answers in the language you used. Your Kong data stays exactly as you entered it."}},
@@ -125,7 +125,13 @@
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
-      <a class="kong-nav-item active" href="../ai">AI</a>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="../ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -147,7 +153,11 @@
       <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
       <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
-    <a class="kong-mobile-item" href="../ai">AI</a>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="../ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -625,7 +635,7 @@
   <table class="cmp">
     <thead><tr><th scope="col">Booking software</th><th scope="col">Run your business from ChatGPT or Claude?</th><th scope="col">Details</th></tr></thead>
     <tbody>
-      <tr class="kong"><td>Kong</td><td>Yes</td><td>Free connector for ChatGPT and Claude, on any Claude or ChatGPT plan. Live now.<span class="src">Source: Kong setup guide</span></td></tr>
+      <tr class="kong"><td>Kong</td><td>Yes</td><td>Connector for ChatGPT and Claude at no extra cost, on any Claude or ChatGPT plan. Live now.<span class="src">Source: Kong setup guide</span></td></tr>
       <tr><td>Peek Pro</td><td>Yes</td><td>Peek Pro says operators can connect workflows to "AI-powered connectors like Claude". We found no setup page or plan details.<span class="src">Source: peekpro.com homepage</span></td></tr>
       <tr><td>Bókun</td><td>Early access</td><td>Announced 24 September 2026 in the September Tide release. On Start, Plus and Premium plans for a limited time.<span class="src">Source: bokun.io/tide</span></td></tr>
       <tr><td>FareHarbor</td><td>No</td><td>Travellers can find and book FareHarbor operators inside ChatGPT (April 2026). Nothing for running your business from ChatGPT or Claude.<span class="src">Source: FareHarbor blog, 15 April 2026</span></td></tr>
@@ -642,7 +652,7 @@
 <section class="ai-section" data-screen-label="10-11 Built in and cost">
 <div class="ai-wrap two-cards">
   <div class="ai-card"><h3 class="ai-h3">Don't use ChatGPT or Claude?</h3><p class="ai-body">Kong has its own assistant built into the app. Ask it the same questions by typing or talking, with nothing to connect and no other account needed.</p><a class="ai-link" href="https://app.bookwithkong.com" target="_blank" rel="noopener">Set up Kong free to try the assistant</a></div>
-  <div class="ai-card"><h3 class="ai-h3">Does it cost extra?</h3><p class="ai-body">No. Connecting Kong to ChatGPT or Claude is free, and it works on any Claude or ChatGPT plan.</p><a class="ai-link" href="/#pricing">See pricing</a></div>
+  <div class="ai-card"><h3 class="ai-h3">Does it cost extra?</h3><p class="ai-body">No. Connecting Kong to ChatGPT or Claude costs nothing extra, and it works on any Claude or ChatGPT plan.</p><a class="ai-link" href="/#pricing">See pricing</a></div>
 </div>
 </section>
 
@@ -660,7 +670,7 @@
     <details><summary>What can ChatGPT or Claude do in my Kong account? <span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></summary><div class="faq-a"><p>It can search and look up bookings, take bookings including walk-ins, reschedule, cancel, approve and check guests in, resend confirmations, record payments and check waiver status. It can also edit tours, change prices, close days, log expenses, make discount codes and show your sales and profit and loss. Refunds, new booking questions and gift cards stay in the Kong app. Website changes and inviting your team can't be done through the connector yet.</p></div></details>
     <details><summary>Will the AI change bookings or prices without asking me? <span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></summary><div class="faq-a"><p>No. Kong tells your assistant to show you exactly what it will change and wait for your yes before it takes a booking, changes a price, makes a discount code or records a payment. Kong itself blocks a cancellation with a fee and any overbooking of a full ride until you confirm, and your yes is recorded against your name.</p></div></details>
     <details><summary>Can the AI see my guests' card details? <span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></summary><div class="faq-a"><p>No. Card details are never stored in Kong. They stay with your payment processor, and Kong cannot pass them on, so ChatGPT and Claude cannot see them.</p></div></details>
-    <details><summary>Does it cost extra? <span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></summary><div class="faq-a"><p>No. Connecting Kong to ChatGPT or Claude is free, and it works on any Claude or ChatGPT plan. Your Kong plan doesn't change.</p></div></details>
+    <details><summary>Does it cost extra? <span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></summary><div class="faq-a"><p>No. Connecting Kong to ChatGPT or Claude costs nothing extra, and it works on any Claude or ChatGPT plan. Your Kong plan doesn't change.</p></div></details>
     <details><summary>Do I need to be technical? <span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></summary><div class="faq-a"><p>No. There's no code to write. You add Kong as a connector with one address, https://api.bookwithkong.com/mcp, sign in with your normal Kong login and click Allow. If you can log in to Kong, you can connect it.</p></div></details>
     <details><summary>Can my staff connect their own assistant? <span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></summary><div class="faq-a"><p>Yes. Each team member connects with their own Kong login, and their assistant can only do what that person's Kong role allows.</p></div></details>
     <details><summary>Does it work in Bahasa Malaysia? <span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></summary><div class="faq-a"><p>Yes. Ask in Bahasa Malaysia or English and your assistant answers in the language you used. Your Kong data stays exactly as you entered it.</p></div></details>
@@ -830,6 +840,10 @@
     new IntersectionObserver(function(en,obs){en.forEach(function(e){if(e.isIntersecting&&!started){started=true;play();obs.disconnect();}});},{threshold:0.35}).observe(frame);
   }else{play();}
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

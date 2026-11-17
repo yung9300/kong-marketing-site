@@ -386,6 +386,13 @@ table.rs-table { width: 100%; border-collapse: collapse; font-family: 'Inter', s
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -409,6 +416,11 @@ table.rs-table { width: 100%; border-collapse: collapse; font-family: 'Inter', s
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -580,7 +592,7 @@ table.rs-table { width: 100%; border-collapse: collapse; font-family: 'Inter', s
     <div class="rs-body">
       <p>The problem is not the operator's rating or the demand for their tour. It is that they don't own the way guests reach them. An operator on WhatsApp and Instagram borrows their audience from those platforms. They pay for it in one of two ways: a commission to a marketplace, or the hours it takes to answer "is this available?" by hand, every day.</p>
       <p>A website often does not fix this. Among the 26% who have a live site, 70% still send every booking to phone or WhatsApp. One example: a Perhentian dive resort whose site lists the packages but asks you to call or email, with online payment available only on a marketplace. For context, Malaysia's Ministry of Tourism lists 5,284 licensed travel agencies. Almost all of them are ticketing and inbound-package agencies. The ATV parks, dive centres and island boats that visitors actually book are mostly not on that list, and not on the open web.</p>
-      <p>This is the gap Kong works on. We give Southeast Asian operators a booking channel they own. It is free for the operator. Guests pay a small booking fee at checkout. A five-star experience can take a booking without a five-message WhatsApp thread.</p>
+      <p>This is the gap Kong works on. We give Southeast Asian operators a booking channel they own. It has no monthly fee, and costs 1.8% per online booking. A five-star experience can take a booking without a five-message WhatsApp thread.</p>
     </div>
   </section>
 
@@ -630,7 +642,7 @@ table.rs-table { width: 100%; border-collapse: collapse; font-family: 'Inter', s
 <section class="rs-cta">
   <div class="rs-cta-inner">
     <h2>Run an experience business in Southeast Asia?</h2>
-    <p>Kong is a booking channel you own. It is free for operators and live in minutes. Guests book and pay online. You keep 100% of the fare.</p>
+    <p>Kong is a booking channel you own. It has no monthly fee and is live in minutes. Guests book and pay online.</p>
     <a class="rs-btn-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener"><i class="ti ti-arrow-right"></i> Get started free</a>
     <div class="rs-cta-meta">© 2026 Kong · Superstring Sdn. Bhd. · bookwithkong.com · Data available on request</div>
   </div>
@@ -658,6 +670,8 @@ table.rs-table { width: 100%; border-collapse: collapse; font-family: 'Inter', s
     <div class="kong-footer-col">
       <h4>More Resources</h4>
       <ul>
+        <li><a href="../glossary">Glossary</a></li>
+        <li><a href="../ms/glosari" lang="ms">Glosari (Bahasa Malaysia)</a></li>
         <li><a href="../state-of-tour-operator-bookability-southeast-asia">Research: Tour Operator Bookability in SEA 2026</a></li>
         <li><a href="/#faq">FAQ</a></li>
         <li><a href="../legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
@@ -746,6 +760,10 @@ table.rs-table { width: 100%; border-collapse: collapse; font-family: 'Inter', s
     });
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>

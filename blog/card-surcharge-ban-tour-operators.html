@@ -134,6 +134,13 @@
           <a href="../snorkelling-tours" role="menuitem"><i class="ti ti-ripple" aria-hidden="true"></i>Snorkelling Tours</a>
         </div>
       </div>
+        <div class="kong-nav-dd">
+          <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="kong-nav-dd-menu" role="menu">
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
+          </div>
+        </div>
       <a class="kong-nav-item" href="/#pricing">Pricing</a>
       <a class="kong-nav-item" href="../blog">Blog</a>
       <a class="kong-nav-item" href="../about">About</a>
@@ -157,6 +164,11 @@
     <a class="kong-mobile-item kong-mobile-sub" href="../dive-centres">Dive Centres</a>
     <a class="kong-mobile-item kong-mobile-sub" href="../snorkelling-tours">Snorkelling Tours</a>
     </div>
+      <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
+      <div class="kong-mobile-acc-panel" id="kong-mobile-products">
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
+      </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
     <a class="kong-mobile-item" href="../blog">Blog</a>
     <a class="kong-mobile-item" href="../about">About</a>
@@ -257,7 +269,7 @@
 
     <p>Whichever you choose, know what your booking software does at checkout on your behalf. If your platform adds a percentage to card payments under any label and you cannot switch it off or restructure it, that is a conversation to have with them now, not on 30 September. Fee structures vary widely across platforms and each platform can best explain its own; our <a href="rezdy-pricing">Rezdy pricing breakdown</a> walks through the published fees of one of the category's most established platforms, and the same checkout questions apply everywhere.</p>
 
-    <p>Kong does not get a pass on its own test. Kong's <a href="../australia">Australian pricing</a> is a 1.8% booking fee paid by the guest, with the operator paying nothing. The fee's trigger is the booking, not the payment method. That answers the surcharge test. It is not the whole story. The single-price rules this article just walked through apply to that fee too: if you run the guest-paid plan, the fee is mandatory for your guests, so it belongs in the total your guest sees up front, not a surprise at the final screen. And the channel question above applies to us as well: ask how the fee treats a booking you key in by phone, the same question you should put to every platform. Check how it all displays on your own checkout before October, hold us to that standard, and ask us the hard questions.</p>
+    <p>Kong does not get a pass on its own test. Kong's <a href="../australia">Australian pricing</a> is a 1.8% booking fee on online bookings, which you can charge to the guest or absorb. The fee's trigger is the booking, not the payment method. That answers the surcharge test. It is not the whole story. The single-price rules this article just walked through apply to that fee too: if you run the guest-paid plan, the fee is mandatory for your guests, so it belongs in the total your guest sees up front, not a surprise at the final screen. And the channel question above applies to us as well: ask how the fee treats a booking you key in by phone, the same question you should put to every platform. Check how it all displays on your own checkout before October, hold us to that standard, and ask us the hard questions.</p>
 
     <h2>The pre-October checklist</h2>
 
@@ -323,7 +335,7 @@
     <div class="post-cta">
       <div class="post-cta-eyebrow">Try Kong</div>
       <h2>Getting your checkout ready for October?</h2>
-      <p>Kong is free for operators; guests pay a 1.8% booking fee at checkout. Ask us the hard questions before October.</p>
+      <p>Kong has no monthly fee. It costs 1.8% per online booking, and you choose whether your guest pays it or you absorb it. Ask us the hard questions before October.</p>
       <div class="post-cta-actions">
         <a class="post-cta-primary" href="https://app.bookwithkong.com" target="_blank" rel="noopener">
           Get started free <i class="ti ti-arrow-right"></i>
@@ -432,6 +444,10 @@
     panel.setAttribute('data-open', String(!open));
   });
 })();
+</script>
+<script>
+/* Mobile menu: the Products group opens and closes like the Industries group */
+(function(){var b=document.querySelector('.kong-mobile-acc-products');if(!b)return;var p=document.getElementById('kong-mobile-products');b.addEventListener('click',function(e){e.stopImmediatePropagation();var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));p.setAttribute('data-open',String(!o));p.style.display=o?'none':'flex';},true);})();
 </script>
 </body>
 </html>
