@@ -1364,6 +1364,9 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
 #wbpay-g:checked~.wb-pay-g,#wbpay-s:checked~.wb-pay-s,#wbpay-y:checked~.wb-pay-y{display:block}
 .wb-cost .pricing-footnote{font-family:'Inter',system-ui,sans-serif;font-size:12px;color:rgba(26,10,46,.45);text-align:center;margin:20px auto 0;max-width:640px;line-height:1.5}
 
+.wb-faq-more{font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.6;color:rgba(26,10,46,.7);margin:28px 0 0;text-align:center}
+.wb-faq-more a{color:#3B0F5E;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
 /* homepage testimonial grid (copied from the site) */
 .testimonials-section{position: relative; padding: 80px 40px 120px; z-index: 4; overflow: hidden; background-image: url('images/bg-cameron.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;}
 .testimonials-section::before{content: ''; position: absolute; inset: 0; background: rgba(252, 250, 246, 0.72); z-index: 1; pointer-events: none;}
@@ -1803,7 +1806,7 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
           "name": "Can guests chat with my website?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Not yet. A chatbot that answers guest questions is coming soon for websites built in Kong."
+            "text": "Yes. Websites built in Kong include an AI chatbot. You set what it may answer and when it calls you."
           }
         }
       ]
@@ -1923,7 +1926,7 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
       <li data-pick="grid" data-name="Product Grid"><i class="ti ti-layout-grid"></i>Product Grid</li>
       <li><i class="ti ti-library-photo"></i>Image Gallery</li>
       <li data-pick="reviews" data-name="Reviews"><i class="ti ti-star"></i>Reviews</li>
-      <li data-pick="chat" data-name="Chatbot"><i class="ti ti-message-chatbot"></i>Chatbot<span class="wbp-soon">Coming soon</span></li>
+      <li data-pick="chat" data-name="Chatbot"><i class="ti ti-message-chatbot"></i>Chatbot</li>
     </ul>
   </aside>
   <div class="wbh-cur" id="wbs-cur" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 2 L5 19 L9.5 14.5 L12.5 21 L15.5 19.5 L12.5 13.5 L19 12 Z" fill="white" stroke="rgba(0,0,0,0.6)" stroke-width="1" stroke-linejoin="round"/></svg><span class="wbh-chip"></span></div>
@@ -2058,7 +2061,7 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
       <li class="bk-step why-card" data-y="722"><span class="why-card-ic" aria-hidden="true"><i class="ti ti-map-pin"></i></span><div><h3>Meeting point on a map</h3><p>With the address and when to arrive.</p></div></li>
       <li class="bk-step why-card" data-y="1114"><span class="why-card-ic" aria-hidden="true"><i class="ti ti-star"></i></span><div><h3>Reviews</h3><p>Show your Google reviews, or let Kong collect reviews from guests automatically after each tour.</p></div></li>
       <li class="bk-step why-card" data-y="0"><span class="why-card-ic" aria-hidden="true"><i class="ti ti-brand-whatsapp"></i></span><div><h3>WhatsApp button</h3><p>On every page, one tap to message you.</p></div></li>
-      <li class="bk-step why-card" data-y="300"><span class="why-card-ic" aria-hidden="true"><i class="ti ti-message-chatbot"></i></span><div><h3>Chatbot <span class="wbp-soon">Coming soon</span></h3><p>Answers guest questions.</p></div></li>
+      <li class="bk-step why-card" data-y="300"><span class="why-card-ic" aria-hidden="true"><i class="ti ti-message-chatbot"></i></span><div><h3>Chatbot</h3><p>Answers guest questions.</p></div></li>
     </ol>
     <p class="tw-also">Also on your site: FAQs, your opening hours, your waiver, and a link for affiliates to sign up.</p>
     </div>
@@ -5049,9 +5052,10 @@ a:focus-visible,button:focus-visible{outline:2.5px solid #7b3fb0;outline-offset:
       </div>
       <div class="faq-item">
         <h3><button class="faq-q" type="button" id="faq-q7" aria-expanded="false" aria-controls="faq-a7">Can guests chat with my website?<span class="faq-q-icon"><i class="ti ti-plus" aria-hidden="true"></i></span></button></h3>
-        <div class="faq-a-wrap" id="faq-a7" role="region" aria-labelledby="faq-q7"><div class="faq-a">Not yet. A chatbot that answers guest questions is coming soon for websites built in Kong.</div></div>
+        <div class="faq-a-wrap" id="faq-a7" role="region" aria-labelledby="faq-q7"><div class="faq-a">Yes. Websites built in Kong include an AI chatbot. You set what it may answer and when it calls you.</div></div>
       </div>
     </div>
+    <p class="wb-faq-more">Still deciding between AI, a web developer and a website builder? Read our guide on <a href="blog/tour-operator-website">how to build a tour operator website</a>.</p>
   </div>
 </section>
 </main>

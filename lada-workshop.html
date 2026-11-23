@@ -607,6 +607,12 @@ p, li { font-family: 'Inter', system-ui, sans-serif; text-wrap: pretty; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
 </style>
+<style>
+/* Footer: nothing may be wider than a narrow phone */
+.kong-footer-inner > *{ min-width: 0; }
+.kong-footer-subscribe{ max-width: min(360px, 100%); }
+.kong-footer-subscribe input{ min-width: 0; width: 100%; }
+</style>
 </head>
 <body>
 

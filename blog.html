@@ -730,6 +730,12 @@ body {
 .kong-mobile-acc-panel { display: none; flex-direction: column; gap: 4px; }
 .kong-mobile-acc-panel[data-open="true"] { display: flex; }
 </style>
+<style>
+/* Footer: nothing may be wider than a narrow phone */
+.kong-footer-inner > *{ min-width: 0; }
+.kong-footer-subscribe{ max-width: min(360px, 100%); }
+.kong-footer-subscribe input{ min-width: 0; width: 100%; }
+</style>
 </head>
 <body>
 
@@ -839,10 +845,28 @@ body {
   <!-- More posts -->
   <div class="blog-section-head">
     <h2>More from Kong</h2>
-    <span class="blog-section-head-count">24 posts</span>
+    <span class="blog-section-head-count">25 posts</span>
   </div>
 
   <div class="blog-grid">
+
+    <a class="blog-card" href="blog/tour-operator-website">
+      <div class="blog-card-thumb">
+        <img src="images/og-tour-operator-website.png" alt="How to build a tour operator website: a 2026 guide by Blake Ng" loading="lazy" width="1200" height="630" />
+      </div>
+      <div class="blog-card-body">
+        <div class="blog-card-eyebrow">Guide &middot; Tour operator websites</div>
+        <h3 class="blog-card-title">How to build a tour operator website: AI, a web developer, or a website builder?</h3>
+        <p class="blog-card-excerpt">Three ways to build a tour operator website in 2026: AI, a web developer or a website builder. Real costs, honest pros and cons, and what every tour site needs.</p>
+        <div class="blog-card-meta">
+          <strong>Blake Ng</strong>
+          <span class="dot"></span>
+          <span>November 23, 2026</span>
+          <span class="dot"></span>
+          <span>20 min read</span>
+        </div>
+      </div>
+    </a>
 
     <a class="blog-card" href="blog/lada-langkawi-operator-workshop">
       <div class="blog-card-thumb">

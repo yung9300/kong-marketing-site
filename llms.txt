@@ -44,6 +44,7 @@
 
 ## Blog: more guides
 
+- [How to build a tour operator website: AI, a web developer, or a website builder?](https://www.bookwithkong.com/blog/tour-operator-website): How to build a tour operator website: a guide for tour and activity operators comparing AI, a web developer and a website builder, with real year-one costs.
 - [Best Booking Software for Tour Operators in Malaysia (2026)](https://www.bookwithkong.com/blog/best-booking-software-malaysia)
 - [Restech 2.0: The Co-Operator](https://www.bookwithkong.com/restech-2)
 - [The Best Channel Managers for Tour Operators in 2026](https://www.bookwithkong.com/blog/best-channel-manager-tour-operators)

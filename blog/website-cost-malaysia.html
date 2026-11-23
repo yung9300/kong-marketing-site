@@ -1156,6 +1156,12 @@ body {
 .post-body .sources { font-family: 'Inter', system-ui, sans-serif; }
 .post-body .sources li { font-size: 15.5px; color: var(--ink-70); }
 </style>
+<style>
+/* Footer: nothing may be wider than a narrow phone */
+.kong-footer-inner > *{ min-width: 0; }
+.kong-footer-subscribe{ max-width: min(360px, 100%); }
+.kong-footer-subscribe input{ min-width: 0; width: 100%; }
+</style>
 </head>
 <body>
 
