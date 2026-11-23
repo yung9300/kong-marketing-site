@@ -1044,6 +1044,12 @@ body {
 .post-body .build-steps .step-title { display: block; font-family: 'Poppins', system-ui, sans-serif; font-weight: 700; font-size: 18px; color: var(--ink); margin-bottom: 6px; letter-spacing: -0.2px; }
 .post-body .build-steps ul { margin-top: 10px; }
 </style>
+<style>
+/* Footer: nothing may be wider than a narrow phone */
+.kong-footer-inner > *{ min-width: 0; }
+.kong-footer-subscribe{ max-width: min(360px, 100%); }
+.kong-footer-subscribe input{ min-width: 0; width: 100%; }
+</style>
 </head>
 <body>
 

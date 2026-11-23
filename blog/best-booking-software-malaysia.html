@@ -1410,6 +1410,12 @@ body {
 .kong-mobile-acc-panel { display: none; flex-direction: column; gap: 4px; }
 .kong-mobile-acc-panel[data-open="true"] { display: flex; }
 </style>
+<style>
+/* Footer: nothing may be wider than a narrow phone */
+.kong-footer-inner > *{ min-width: 0; }
+.kong-footer-subscribe{ max-width: min(360px, 100%); }
+.kong-footer-subscribe input{ min-width: 0; width: 100%; }
+</style>
 </head>
 <body>
 
@@ -1800,7 +1806,7 @@ body {
       </div>
 
       <p><strong>One more thing worth saying honestly:</strong> Kong also gives operators a simple website builder — a hosted booking page operators can stand up in an afternoon. That sounds like a small feature, but in the Malaysian context it's a real structural advantage. Most small Malaysian operators don't have a website at all — they take bookings via WhatsApp, Instagram DMs, and walk-ins. For those operators, the choice isn't "Kong vs. competitor on my existing website." It's "Kong (which includes a website) vs. paying a freelancer RM 2,000–5,000 to build a WordPress site and <em>then</em> paying for booking software on top."</p>
-      <p>The website builder is simple. It's not going to win a design award. But operators using it are getting real bookings — which is the only metric that matters for a booking-system website. FareHarbor and Bokun both have website-builder features too, but each comes with strings attached (FareHarbor owns and locks you into the site they build; Bokun's hosted page lives on TripAdvisor's infrastructure). Kong's is included, and operators retain control of their own URL.</p>
+      <p>The website builder is simple. It's not going to win a design award. But operators using it are getting real bookings — which is the only metric that matters for a booking-system website. FareHarbor and Bokun both have website-builder features too, but each comes with strings attached (FareHarbor owns and locks you into the site they build; Bokun's hosted page lives on TripAdvisor's infrastructure). Kong's is included, and operators retain control of their own URL. If you're still working out how to get a site in the first place, see our <a href="tour-operator-website">guide to building a tour operator website</a>.</p>
 
       <h3>The payment gateway story — where Kong gives operators a real choice</h3>
       <p>Most booking platforms in this article use Stripe as their payment processor, often white-labeled. That's a defensible choice — Stripe is genuinely one of the most reliable payment infrastructure companies in the world, and the Stripe logo at checkout carries real trust signal with international tourists who recognize it. For operators whose guests are mostly international card-paying tourists, Stripe is a sensible default.</p>

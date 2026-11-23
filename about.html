@@ -856,6 +856,12 @@ body {
 .kong-mobile-acc-panel { display: none; flex-direction: column; gap: 4px; }
 .kong-mobile-acc-panel[data-open="true"] { display: flex; }
 </style>
+<style>
+/* Footer: nothing may be wider than a narrow phone */
+.kong-footer-inner > *{ min-width: 0; }
+.kong-footer-subscribe{ max-width: min(360px, 100%); }
+.kong-footer-subscribe input{ min-width: 0; width: 100%; }
+</style>
 </head>
 <body>
 
