@@ -1162,6 +1162,7 @@ body {
 .kong-footer-subscribe{ max-width: min(360px, 100%); }
 .kong-footer-subscribe input{ min-width: 0; width: 100%; }
 </style>
+<style id="kong-footer-cols">.kong-footer .kong-footer-inner{grid-template-columns:1fr 1fr 1fr 1.25fr 1.35fr;gap:40px}@media (max-width:1000px){.kong-footer .kong-footer-inner{grid-template-columns:1fr 1fr 1fr;gap:36px 32px}}@media (max-width:760px){.kong-footer .kong-footer-inner{grid-template-columns:1fr 1fr;gap:32px 24px}}</style>
 </head>
 <body>
 
@@ -1193,7 +1194,7 @@ body {
         <div class="kong-nav-dd">
           <button type="button" class="kong-nav-dd-trigger" aria-haspopup="true" aria-expanded="false">Products<i class="ti ti-chevron-down" aria-hidden="true"></i></button>
           <div class="kong-nav-dd-menu" role="menu">
-            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a>
+            <a href="../website-builder" role="menuitem"><i class="ti ti-layout" aria-hidden="true"></i>Website Builder</a><a href="../live-chat" role="menuitem"><i class="ti ti-message-chatbot" aria-hidden="true"></i>Live Chat &amp; AI Chatbot</a>
             <a href="/ai" role="menuitem"><i class="ti ti-sparkles" aria-hidden="true"></i>AI</a>
           </div>
         </div>
@@ -1222,7 +1223,7 @@ body {
     </div>
       <button class="kong-mobile-acc kong-mobile-acc-products" type="button" aria-expanded="false" aria-controls="kong-mobile-products"><span>Products</span><i class="ti ti-chevron-down kong-mobile-acc-chev" aria-hidden="true"></i></button>
       <div class="kong-mobile-acc-panel" id="kong-mobile-products">
-        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a>
+        <a class="kong-mobile-item kong-mobile-sub" href="../website-builder">Website Builder</a><a class="kong-mobile-item kong-mobile-sub" href="../live-chat">Live Chat &amp; AI Chatbot</a>
         <a class="kong-mobile-item kong-mobile-sub" href="/ai">AI</a>
       </div>
     <a class="kong-mobile-item" href="/#pricing">Pricing</a>
@@ -1475,34 +1476,24 @@ body {
 <!-- Footer -->
 <footer class="kong-footer">
   <div class="kong-footer-inner">
-    <div class="kong-footer-brand">
-      <h3>Subscribe for the latest Kong updates</h3>
-      <form class="kong-footer-subscribe" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓';">
-        <input type="email" placeholder="name@email.com" required />
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-
     <div class="kong-footer-col">
-      <h4>Links</h4>
+      <h4>Products</h4>
       <ul>
+        <li><a href="../website-builder">Website Builder</a></li>
+        <li><a href="../live-chat">Live Chat &amp; AI Chatbot</a></li>
+        <li><a href="../booking-widget-for-website">Website Booking Widget</a></li>
         <li><a href="../class-booking-system">Class Booking System</a></li>
-        <li><a href="../australia">Kong Australia</a></li>
-        <li><a href="/#pricing">Pricing</a></li>
-        <li><a href="../blog">Blog</a></li>
+        <li><a href="../ai">Kong for ChatGPT &amp; Claude</a></li>
       </ul>
     </div>
-
     <div class="kong-footer-col">
-      <h4>More Resources</h4>
+      <h4>Company</h4>
       <ul>
-        <li><a href="../glossary">Glossary</a></li>
-        <li><a href="../ms/glosari" lang="ms">Glosari (Bahasa Malaysia)</a></li>
-        <li><a href="../state-of-tour-operator-bookability-southeast-asia">Research: Tour Operator Bookability in SEA 2026</a></li>
-        <li><a href="/#faq">FAQ</a></li>
-        <li><a href="../legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
-        <li><a href="../legal-terms/privacy-policy">Privacy Policy</a></li>
-        <li><a href="../legal-terms/refund-policy">Refund Policy</a></li>
+        <li><a href="../about">About</a></li>
+        <li><a href="/#pricing">Pricing</a></li>
+        <li><a href="../blog">Blog</a></li>
+        <li><a href="../malaysia">Kong Malaysia</a></li>
+        <li><a href="../australia">Kong Australia</a></li>
         <li><a href="../contact-us">Contact Us</a></li>
       </ul>
     </div>
@@ -1520,8 +1511,7 @@ body {
         <li><a href="../snorkelling-tours">Snorkelling Tours</a></li>
       </ul>
     </div>
-
-      <div class="kong-footer-col">
+    <div class="kong-footer-col">
       <h4>Compare platforms</h4>
       <ul>
         <li><a href="best-booking-software-malaysia">Best Booking Software for Tour Operators in Malaysia</a></li>
@@ -1534,8 +1524,19 @@ body {
         <li><a href="../compare/kong-vs-checkfront">Kong vs Checkfront</a></li>
       </ul>
     </div>
-</div>
-
+    <div class="kong-footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="../glossary">Glossary</a></li>
+        <li><a href="../ms/glosari" lang="ms">Glosari (Bahasa Malaysia)</a></li>
+        <li><a href="../state-of-tour-operator-bookability-southeast-asia">Research: Tour Operator Bookability in SEA 2026</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="../legal-terms/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="../legal-terms/privacy-policy">Privacy Policy</a></li>
+        <li><a href="../legal-terms/refund-policy">Refund Policy</a></li>
+      </ul>
+    </div>
+  </div>
   <div class="kong-footer-bottom">
     <div class="kong-footer-legal">
       <span>UEN Company Name: Kong Technologies Pte. Ltd.</span>
